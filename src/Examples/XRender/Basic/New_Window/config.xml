@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<example>
+  <description><![CDATA[]]></description>
+  <comments>
+    <comment name="geoffrey.mcgill" title="Creation inside a UserControl" time="1/14/2010 3:18:57 PM">
+      <message>How is creation inside a UserControl handled?</message>
+    </comment>
+  </comments>
+  <tags>xrender,render,dynamic</tags>
+</example>

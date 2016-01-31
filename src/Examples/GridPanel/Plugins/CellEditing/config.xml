@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>		
+	</description>
+	<include>
+		<file url="../../Shared/Plants.xml" />
+	</include>
+</example>

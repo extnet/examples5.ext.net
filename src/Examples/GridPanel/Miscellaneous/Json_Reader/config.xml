@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[AJAX request to HttpHander returns Json.]]>		
+	</description>
+	<include>
+		<file url="../../Shared/JsonHandler.ashx.cs" />
+		<file url="../../Shared/Plant.cs" />
+	</include>
+</example>

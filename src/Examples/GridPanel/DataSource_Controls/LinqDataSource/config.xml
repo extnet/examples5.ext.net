@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates how to get data using LinqDataSource.]]>
+	</description>
+	<zip-folders>
+		<folder url="../../../../Code/Northwind/"></folder>
+	</zip-folders>
+</example>

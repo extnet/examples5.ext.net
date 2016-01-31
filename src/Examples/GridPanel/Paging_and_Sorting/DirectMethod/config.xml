@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>		
+	</description>
+  <include>
+    <file zip="false" url="../../../../Code/Northwind/EntitiesAdditions.cs" />
+    <file zip="false" url="../../../../Code/Northwind/Northwind.designer.cs" />
+  </include>
+  <zip-folders>
+    <folder url="../../../../Code/Northwind/"/>
+  </zip-folders>
+</example>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<links>
+  <category id="ID1" name="Category A">
+    <link>
+      <url>link #1</url>
+    </link>
+    <link>
+      <url>link #2</url>
+    </link>
+  </category>
+  <category id="ID2" name="Category B">
+    <link>
+      <url>link #3</url>
+    </link>
+    <link>
+      <url>link #4</url>
+    </link>
+  </category>
+  <category id="ID3" name="Category C">
+    <link>
+      <url>link #5</url>
+    </link>
+    <link>
+      <url>link #6</url>
+    </link>
+  </category>
+</links>

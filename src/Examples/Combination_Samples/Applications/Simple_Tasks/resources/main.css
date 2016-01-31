@@ -1,0 +1,97 @@
+.icon-all           { background-image : url(images/icon-all.gif) !important; }
+.icon-active        { background-image : url(images/icon-active.gif) !important; }
+.icon-complete      { background-image : url(images/icon-complete.gif) !important; }
+.icon-delete        { background-image : url(images/delete.gif) !important; }
+.icon-delete-task   { background-image : url(images/icon-delete-task.gif) !important; }
+.icon-edit          { background-image : url(images/edit.gif) !important; }
+.icon-mark-complete { background-image : url(images/icon-mark-complete.gif) !important; }
+.icon-mark-active   { background-image : url(images/icon-mark-active.gif) !important; }
+.icon-folder        { background-image : url(images/icon-folder.gif) !important; }
+.icon-folder-new    { background-image : url(images/icon-folder-new.gif) !important; }
+.icon-folder-delete { background-image : url(images/icon-folder-delete.gif) !important; }
+.icon-paste-new     { background-image : url(images/icon-paste-new.gif) !important; }
+.icon-category      { background-image : url(images/icon-list.gif) !important; }
+.icon-multi-list    { background-image : url(images/icon-multi-list.gif) !important; }
+.icon-by-date       { background-image : url(images/icon-by-date.gif) !important; }
+.icon-by-category   { background-image : url(images/icon-by-category.gif) !important; }
+.icon-no-group      { background-image : url(images/icon-no-group.gif) !important; }
+.icon-save          { background-image : url(images/save.gif) !important; }
+
+#TasksTree1-placeholder_hd {
+    background : url(images/my-lists.png) no-repeat center;
+}
+
+.tasks-tree .x-panel-body {
+    background-color: white;
+    position: relative;
+    padding: 3px 1px 3px 1px;
+}
+
+.tasks-tree .x-tree-node-el{
+    border: 1px solid #fff;
+}
+
+.tasks-tree .x-tree-selected {
+    border: 1px dotted #a3bae9;
+    background: #DFE8F6;
+}
+
+.tasks-tree .x-tree-node .x-tree-selected a span{
+	background: transparent;
+	color: #1E4176;
+    font-weight: bold;
+}
+
+.tasks-tree .x-node-ctx {
+    border: 1px dotted #aaa;
+    background: #eee;
+}
+
+.task-overdue .x-grid-cell-inner {
+    color: #fb223a;
+}
+
+.task-completed .x-grid-cell-inner {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.ext-gecko .task-completed .row-cmd-cell-ct{
+    text-decoration: none !important;
+} 
+
+.task-completed .x-grid-cell-last .x-grid-cell-inner{
+    text-decoration: none !important;
+}
+
+.task-col-hd .x-column-header-inner{    
+    background: transparent url(images/hd-check.gif) no-repeat center center;    
+}
+
+.new-task-icon {
+    width: 16px;
+    height: 22px;
+    margin-left: 3px;
+    background: transparent url(images/edit.gif) no-repeat;
+    background-position:center;
+}
+
+.loading-indicator {
+    background: transparent url(images/loading.gif) no-repeat !important;
+    background-position:center;
+}
+
+.taskMessage {
+	background: #fffad7;
+	border: 1px solid #eee096;
+	padding: 3px;
+	margin: 0 0 8px 0;
+	font: normal 11px arial, tahoma, helvetica, sans-serif;
+}
+
+.task-window .divider {
+	height: 1px !important;
+	background: #a3bad9;
+	margin-bottom: 8px;
+	overflow: hidden;
+}

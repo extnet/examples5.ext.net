@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates how to get data from web-service and save using Store (with Store events).]]>
+	</description>
+	<include>
+		<file url="../../Shared/SuppliersService.asmx.cs" />
+	</include>
+	<zip-folders>
+		<folder url="../../../../Code/Northwind/"></folder>
+		<folder url="../../../../Code/SerializableEntity/"></folder>
+	</zip-folders>
+</example>

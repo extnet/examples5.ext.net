@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[A control for masking everything except a single element on the page to visually highlight it.]]>		
+	</description>  
+</example>

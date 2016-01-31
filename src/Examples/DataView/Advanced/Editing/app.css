@@ -1,0 +1,96 @@
+.todo-field{
+   padding: 6px;
+}
+
+.todo-field input { 
+        font-size: 24px;
+        font-family: inherit;
+        line-height: 1.4em;
+        border: 0;
+        outline: none;
+        border: 1px solid #999999;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+        -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+        -ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+        -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+
+.todo-list {
+        margin: 10px 0;
+        padding: 0;
+        list-style: none;
+        border: 1px solid #cccccc;
+        padding: 6px;
+}
+
+.todo-list li {
+        padding: 18px 20px 18px 0;
+        position: relative;
+        font-size: 24px;
+        border-bottom: 1px solid #cccccc;
+}
+
+.todo-list li:last-child {
+        border-bottom: none;
+}
+
+.todo-list li label {
+        padding-left:10px;
+}
+
+.todo-list li.done label {
+        color: #777777;
+        text-decoration: line-through;
+}
+
+.todo-list li .destroy {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAABGdBTUEAALGPC/xhBQAAACdQTFRFzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMAAAA////zMzMhnu0WAAAAAt0Uk5T5u3pqtV3jFQEKAC0bVelAAAAfUlEQVQI12NYtWpFsc8R865VqxhWrZpyBgg8QcylZ8AgCsjMgTCPrWJYfgYKqhjWwJgaDDVnzpw+c2bPmTPHGWzOnNm95/TuM2cOM/AARXfvBooeZAAp270bRCIz4QoOIGtDMqwJZoUEQzvCYrhzuhhWtUKYEahOX7UK6iEA3A6NUGwCTZIAAAAASUVORK5CYII=') no-repeat center center;
+}
+
+.todo-list li:hover .destroy {
+        display: block;
+}
+
+.todo-list li.editing {
+        border-bottom: none;
+        margin-top: -1px;
+        padding: 0;
+}
+
+.todo-list li.editing:last-child {
+        margin-bottom: -1px;
+}
+
+.todo-list li.editing .edit {
+        display: block;
+        width: 444px;
+        padding: 13px 15px 14px 20px;
+        margin: 0;
+}
+
+.todo-list li.editing .view {
+        display: none;
+}
+
+.todo-list li .view label {
+        word-break: break-word;
+}
+
+.todo-list li .edit {
+        display: none;
+}
+
+.instructions {
+        margin: 10px auto;
+        color: #777777;
+        text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+        text-align: center;
+}

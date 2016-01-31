@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[A simple example of rendering views from templates bound to data objects.]]>		
+	</description>  
+</example>

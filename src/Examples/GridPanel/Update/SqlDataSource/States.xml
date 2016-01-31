@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<states>
+	<state label="Alabama (AL)" data="Alabama (AL)" />
+	<state label="Alaska (AK)" data="Alaska (AK)" />
+	<state label="Alberta (AB)" data="Alberta (AB)" />
+	<state label="Arizona (AZ)" data="Arizona (AZ)" />
+	<state label="Arkansas (AR)" data="Arkansas (AR)" />
+	<state label="British Columbia (BC)" data="British Columbia (BC)" />
+	<state label="California (CA)" data="California (CA)" />
+	<state label="Colorado (CO)" data="Colorado (CO)" />
+	<state label="Connecticut (CT)" data="Connecticut (CT)" />
+	<state label="Delaware (DE)" data="Delaware (DE)" />
+	<state label="District of Columbia (DC)" data="District of Columbia (DC)" />
+	<state label="Florida (FL)" data="Florida (FL)" />
+	<state label="Georgia (GA)" data="Georgia (GA)" />
+	<state label="Hawaii (HI)" data="Hawaii (HI)" />
+	<state label="Idaho (ID)" data="Idaho (ID)" />
+	<state label="Illinois (IL)" data="Illinois (IL)" />
+	<state label="Indiana (IN)" data="Indiana (IN)" />
+	<state label="Iowa (IA)" data="Iowa (IA)" />
+	<state label="Kansas (KS)" data="Kansas (KS)" />
+	<state label="Kentucky (KY)" data="Kentucky (KY)" />
+	<state label="Louisiana (LA)" data="Louisiana (LA)" />
+	<state label="Maine (ME)" data="Maine (ME)" />
+	<state label="Manitoba (MB)" data="Manitoba (MB)" />
+	<state label="Maryland (MD)" data="Maryland (MD)" />
+	<state label="Massachusetts (MA)" data="Massachusetts (MA)" />
+	<state label="Michigan (MI)" data="Michigan (MI)" />
+	<state label="Minnesota (MN)" data="Minnesota (MN)" />
+	<state label="Mississippi (MS)" data="Mississippi (MS)" />
+	<state label="Missouri (MO)" data="Missouri (MO)" />
+	<state label="Montana (MT)" data="Montana (MT)" />
+	<state label="Nebraska (NE)" data="Nebraska (NE)" />
+	<state label="Nevada (NV)" data="Nevada (NV)" />
+	<state label="New Brunswick (NB)" data="New Brunswick (NB)" />
+	<state label="Newfoundland and Labrador (NL)" data="Newfoundland and Labrador (NL)" />
+	<state label="New Hampshire (NH)" data="New Hampshire (NH)" />
+	<state label="New Jersey (NJ)" data="New Jersey (NJ)" />
+	<state label="New Mexico (NM)" data="New Mexico (NM)" />
+	<state label="New York (NY)" data="New York (NY)" />
+	<state label="North Carolina (NC)" data="North Carolina (NC)" />
+	<state label="North Dakota (ND)" data="North Dakota (ND)" />
+	<state label="Nova Scotia (NS)" data="Nova Scotia (NS)" />
+	<state label="Ohio (OH)" data="Ohio (OH)" />
+	<state label="Oklahoma (OK)" data="Oklahoma (OK)" />
+	<state label="Ontario (ON)" data="Ontario (ON)" />
+	<state label="Oregon (OR)" data="Oregon (OR)" />
+	<state label="Pennsylvania (PA)" data="Pennsylvania (PA)" />
+	<state label="Prince Edward Island (PE)" data="Prince Edward Island (PE)" />
+	<state label="Quebec (QC)" data="Quebec (QC)" />
+	<state label="Rhode Island (RI)" data="Rhode Island (RI)" />
+	<state label="Saskatchewan (SK)" data="Saskatchewan (SK)" />
+	<state label="South Carolina (SC)" data="South Carolina (SC)" />
+	<state label="South Dakota (SD)" data="South Dakota (SD)" />
+	<state label="Tennessee (TN)" data="Tennessee (TN)" />
+	<state label="Texas (TX)" data="Texas (TX)" />
+	<state label="Utah (UT)" data="Utah (UT)" />
+	<state label="Vermont (VT)" data="Vermont (VT)" />
+	<state label="Virginia (VA)" data="Virginia (VA)" />
+	<state label="Washington (WA)" data="Washington (WA)" />
+	<state label="West Virginia (WV)" data="West Virginia (WV)" />
+	<state label="Wisconsin (WI)" data="Wisconsin (WI)" />
+	<state label="Wyoming (WY)" data="Wyoming (WY)" />
+	<state label="Puerto Rico (PR)" data="Puerto Rico (PR)" />
+	<state label="Northwest Territories (NT)" data="Northwest Territories (NT)" />
+	<state label="Nunavut (NU)" data="Nunavut (NU)" />
+	<state label="Yukon Territory (YT)" data="Yukon Territory (YT)" />
+</states>

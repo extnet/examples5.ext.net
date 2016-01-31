@@ -1,0 +1,1 @@
+﻿http://sql.codeproject.com/KB/linq/linqsqlserialization.aspx

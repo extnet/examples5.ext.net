@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Call server-side code using client-side JavaScript by just setting the [DirectMethod] Attribute.]]>
+	</description>	
+</example>

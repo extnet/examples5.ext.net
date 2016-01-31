@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[This example shows how to create a custom window for a record editing]]>		
+	</description>
+	<include>
+		<file zip="false" url="../../../../Code/Northwind/EntitiesAdditions.cs" />
+		<file url="../../Shared/EmployeesControler.ashx.cs" />
+	</include>
+	<zip-folders>
+		<folder url="../../../../Code/Northwind/"></folder>		
+	</zip-folders>
+</example>

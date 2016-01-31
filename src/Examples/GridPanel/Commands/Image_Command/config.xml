@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>		
+	</description>
+	<include>
+		<file url="../../Shared/PlantService.asmx.cs" />
+		<file url="../../Shared/Plant.cs" />
+	</include>
+</example>

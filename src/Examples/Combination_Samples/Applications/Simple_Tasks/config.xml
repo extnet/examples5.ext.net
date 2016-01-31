@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>		
+	</description>
+    <include>
+        <file zip="false" url="Classes/UI/TasksGrid.cs" />
+        <file zip="false" url="Classes/Logic/TasksGrid.cs" />
+        <file zip="false" url="Classes/UI/TasksTopBar.cs" />
+        <file zip="false" url="Classes/Logic/TasksTopBar.cs" />
+        <file zip="false" url="Classes/UI/TasksTree.cs" />
+        <file zip="false" url="Classes/Logic/TasksTree.cs" />
+        <file zip="false" url="Classes/UI/TaskWindow.cs" />
+        <file zip="false" url="Classes/Logic/TaskWindow.cs" />
+    </include>
+</example>

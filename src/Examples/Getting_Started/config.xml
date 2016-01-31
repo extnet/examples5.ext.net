@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example iconCls="fa fa-info-circle">
+    <order>
+      <folder name="Overview" />
+      <folder name="Component_Overview" />
+    </order>
+</example>

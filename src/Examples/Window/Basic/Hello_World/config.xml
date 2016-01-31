@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[This example demonstrates how to create a Window and have the Window show when the Page first loads.]]>		
+	</description>  
+</example>

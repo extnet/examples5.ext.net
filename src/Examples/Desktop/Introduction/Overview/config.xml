@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  <description>
+    <![CDATA[Mimics an operating system with support for multi-windows, task bar and start menu.]]>
+  </description>
+  <include>
+    <file zip="false" url="modules/AccordionWindow.ascx" />
+    <file zip="false" url="modules/GridWindow.ascx" />
+    <file zip="false" url="modules/SystemStatus.ascx" />
+    <file zip="false" url="modules/TabWindow.ascx" />
+    <file zip="false" url="modules/WhatsNew.ascx" />
+  </include>
+</example>

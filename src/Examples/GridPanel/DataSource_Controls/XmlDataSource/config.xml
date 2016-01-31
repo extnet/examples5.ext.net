@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates how to get data using XmlDataSource.]]>
+	</description>
+	<include>
+		<file url="../../Shared/Plants.xml" />
+		<file url="../../Shared/Plants.xsl" />
+	</include>
+</example>

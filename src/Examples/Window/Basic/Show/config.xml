@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Several client-side and server-side techniques for triggering the &lt;ext:Window> to "show" if hidden.]]>		
+	</description>  
+</example>

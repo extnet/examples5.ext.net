@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates using &lt;AutoLoad Mode="Merge"&gt; property while using DirectEvents and DirectMethods.]]>		
+	</description>  
+</example>

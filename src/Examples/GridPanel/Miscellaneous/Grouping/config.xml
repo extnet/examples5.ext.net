@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[A basic grouping grid showing collapsible data groups that can be customized via the "Group By" header menu option.]]>		
+	</description>
+	<include>
+		<file url="../../Shared/PlantService.asmx.cs" />
+		<file url="../../Shared/Plant.cs" />
+	</include>
+</example>

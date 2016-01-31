@@ -1,0 +1,64 @@
+<composers>
+  <composer name="Beethoven">
+    <composition type="Concertos">
+      <piece title="No. 1 - C" />
+      <piece title="No. 2 - B-Flat Major" />
+      <piece title="No. 3 - C Minor" />
+      <piece title="No. 4 - G Major" />
+      <piece title="No. 5 - E-Flat Major" />
+    </composition>
+    <composition type="Quartets">
+      <piece title="Six String Quartets" />
+      <piece title="Three String Quartets" />
+      <piece title="Grosse Fugue for String Quartets" />
+    </composition>
+    <composition type="Sonatas">
+      <piece title="Sonata in A Minor" />
+      <piece title="sonata in F Major" />
+    </composition>
+    <composition type="Symphonies">
+      <piece title="No. 1 - C Major" />
+      <piece title="No. 2 - D Major" />
+      <piece title="No. 3 - E-Flat Major" />
+      <piece title="No. 4 - B-Flat Major" />
+      <piece title="No. 5 - C Minor" />
+      <piece title="No. 6 - F Major" />
+      <piece title="No. 7 - A Major" />
+      <piece title="No. 8 - F Major" />
+      <piece title="No. 9 - D Minor" />
+    </composition>
+  </composer>
+  <composer name="Brahms">
+    <composition type="Concertos">
+      <piece title="Violin Concerto" />
+      <piece title="Double Concerto - A Minor" />
+      <piece title="Piano Concerto No. 1 - D Minor" />
+      <piece title="Piano Concerto No. 2 - B-Flat Major" />
+    </composition>
+    <composition type="Quartets">
+      <piece title="Piano Quartet No. 1 - G Minor" />
+      <piece title="Piano Quartet No. 2 - A Major" />
+      <piece title="Piano Quartet No. 3 - C Minor" />
+      <piece title="Piano Quartet No. 3 - B-Flat Minor" />
+    </composition>
+    <composition type="Sonatas">
+      <piece title="Two Sonatas for Clarinet - F Minor" />
+      <piece title="Two Sonatas for Clarinet - E-Flat Major" />
+    </composition>
+    <composition type="Symphonies">
+      <piece title="No. 1 - C Minor" />
+      <piece title="No. 2 - D Minor" />
+      <piece title="No. 3 - F Major" />
+      <piece title="No. 4 - E Minor" />
+    </composition>
+  </composer>
+  <composer name="Mozart">
+    <composition type="Concertos">
+      <piece title="Piano Concerto No. 12" />
+      <piece title="Piano Concerto No. 17" />
+      <piece title="Clarinet Concerto" />
+      <piece title="Violin Concerto No. 5" />
+      <piece title="Violin Concerto No. 4" />
+    </composition>
+  </composer>  
+</composers>

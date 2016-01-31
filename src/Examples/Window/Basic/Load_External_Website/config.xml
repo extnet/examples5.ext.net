@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Load an external url into a Window using the AutoLoad property.]]>		
+	</description>  
+</example>

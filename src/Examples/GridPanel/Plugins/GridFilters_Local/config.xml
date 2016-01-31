@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Grid plugins providing custom data filtering menus that support various data types.]]>		
+	</description>
+	<include>
+		<file url="../../Shared/FiltersTestData.cs" />
+	</include>
+</example>

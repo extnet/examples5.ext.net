@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates how to create a GridPanel and Store during a DirectEvent.]]>		
+	</description>  
+</example>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[Demonstrates how to create a grid from a DataTable and implement Paging and Remote reloading.]]>		
+	</description>  
+</example>

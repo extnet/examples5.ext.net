@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  <description>
+  </description>
+  <include>
+    <file zip="false" url="Code/SignalRGridPanel.cs" />
+    <file zip="false" url="Code/Stock.cs" />
+    <file zip="false" url="Code/StockTicker.cs" />
+    <file zip="false" url="Code/StockTickerHub.cs" />
+  </include>
+</example>

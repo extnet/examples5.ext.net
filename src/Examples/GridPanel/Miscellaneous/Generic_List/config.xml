@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[This example shows how to populate a GridPanel with data from a List of objects.]]>		
+	</description>  
+</example>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[This example uses the Ext.ux.DataView.Animated plugin to animate the changes to a DataView.]]>
+	</description>	
+</example>

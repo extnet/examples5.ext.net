@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example title="ODS with paging and sorting">
+	<description>
+		<![CDATA[Demonstrates how to get data using XML WebService with paging and sorting.]]>
+	</description>
+	<include>
+        <file url="../../Shared/PlantService.asmx.cs" />
+        <file url="../../Shared/Plant.cs" />
+        <file url="../../Shared/Plants.xml" />
+	</include>
+</example>

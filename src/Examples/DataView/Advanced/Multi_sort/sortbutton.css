@@ -1,0 +1,9 @@
+.x-btn .direction-asc {
+    background-image : url("/Examples/DataView/Shared/images/sort_asc.gif");
+    background-position: 4px 6px !important;
+}
+
+.x-btn .direction-desc {
+    background-image : url("/Examples/DataView/Shared/images/sort_desc.gif");
+    background-position: 4px 6px !important;
+}

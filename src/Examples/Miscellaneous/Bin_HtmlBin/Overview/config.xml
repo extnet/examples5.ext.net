@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+    Bin and HtmlBin Overview
+
+    The Bin and HtmlBin features helps a developer to organize the things modularly.
+
+    The Bin is a collection for Ext.NET controls.
+
+    The main difference between Bin and Items:
+
+        - The Bin controls are not rendered (client side to DOM) automatically;
+        - The Bin controls don't participate in the layout logic.
+
+    The HtmlBin is for raw HTML.
+  </description>  
+</example>

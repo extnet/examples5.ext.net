@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+    <![CDATA[Run timed tasks to fire client-side and server-side events.]]>
+  </description>  
+</example>

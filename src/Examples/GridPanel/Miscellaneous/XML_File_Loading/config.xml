@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+	<description>
+		<![CDATA[This example shows how to load data from xml file directly.]]>		
+	</description>
+	<include>
+		<file url="../../Shared/Plants.xml" />
+	</include>
+</example>
