@@ -17,7 +17,7 @@
     private Node CreateNode(SiteMapNode siteMapNode)
     {
         Node treeNode = new Node();
-        
+
         treeNode.NodeID = siteMapNode.Key;
         treeNode.Text = siteMapNode.Title;
         treeNode.Qtip = siteMapNode.Description;
@@ -35,7 +35,7 @@
         {
             treeNode.Leaf = true;
         }
-        
+
         return treeNode;
     }
 </script>
@@ -46,70 +46,70 @@
 <head runat="server">
     <title>Tree Filter - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var filterTree = function (tf, e) {
             var tree = App.TreePanel1,
                 store = tree.store,
                 logic = App.FilterLogic.getValue() ? tree : store,
-                text = tf.getRawValue();            
+                text = tf.getRawValue();
 
             logic.clearFilter();
-            
+
             if (Ext.isEmpty(text, false)) {
                 return;
             }
-            
+
             if (e.getKey() === e.ESC) {
                 clearFilter();
             } else {
                 var re = new RegExp(".*" + text + ".*", "i");
-                
+
                 logic.filterBy(function (node) {
                     return re.test(node.data.text);
                 });
             }
         };
-        
+
         var clearFilter = function () {
             var field = App.TriggerField1,
                 tree = App.TreePanel1,
                 store = tree.store,
                 logic = App.FilterLogic.getValue() ? tree : store;
-            
-            field.setValue(""); 
+
+            field.setValue("");
             logic.clearFilter(true);
-            tree.getView().focus();            
+            tree.getView().focus();
         };
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>Tree Filter</h1>
-        <h3>
-            <b>Notice:</b> Deactivating the 'tree' checkbox turns on 'store' filtering logic. Store logic
-            filter applies the pattern directly to the tree's store so its behavior is much different.
-            <br />
-            Example filter pattern: <b>exa|grid</b>
-        </h3>
 
-        <ext:TreePanel 
+        <h1>Tree Filter</h1>
+        <p>
+            <b>Notice:</b> Deactivating the "Tree filtering" checkbox turns on the native ExtJS Store filtering logic that
+            applies the search condition directly to the TreePanel's Store so its behavior is much different comparing
+            with the native Ext.NET TreePanel filtering. A possible search condition for the native ExtJS Store filtering could be <b>examples|grid</b>.
+
+        </p>
+
+        <ext:TreePanel
             ID="TreePanel1"
-            runat="server" 
+            runat="server"
             RootVisible="false"
             Height="300"
-            Width="300"
-            UseArrows="true">           
+            Width="400"
+            UseArrows="true">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarTextItem runat="server" Text="Filter:" />
                         <ext:ToolbarSpacer />
-                        <ext:TextField 
-                            ID="TriggerField1" 
-                            runat="server" 
+                        <ext:TextField
+                            ID="TriggerField1"
+                            runat="server"
                             EnableKeyEvents="true">
                             <Triggers>
                                 <ext:FieldTrigger Icon="Clear" />
@@ -120,14 +120,14 @@
                             </Listeners>
                         </ext:TextField>
                         <ext:ToolbarSpacer />
-                        <ext:Checkbox ID="FilterLogic" runat="server" BoxLabel="Tree filtering" Checked="true">
+                        <ext:Checkbox ID="FilterLogic" runat="server" BoxLabel="TreePanel filtering" Checked="true">
                             <ToolTips>
                                 <ext:ToolTip runat="server" Html="If checked then tree logic filtering (instead store logic)" />
                             </ToolTips>
                         </ext:Checkbox>
                     </Items>
                 </ext:Toolbar>
-            </TopBar>            
+            </TopBar>
         </ext:TreePanel>
     </form>
 </body>
