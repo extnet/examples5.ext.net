@@ -346,7 +346,6 @@
     <Content Include="App_Readme\Ext.NET\Ext.NET.Default.aspx" />
     <Content Include="App_Readme\Ext.NET\LICENSE.txt" />
     <Content Include="App_Readme\Ext.NET\README.txt" />
-    <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
     <Content Include="App_Readme\Transformer.NET\README.txt" />
     <Content Include="Code\SerializableEntity\ReadMe.txt" />
@@ -1151,7 +1150,6 @@
     <Content Include="Examples\TreePanel\Loaders\Xml_File_Loading\authors.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\config.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\Default.aspx" />
-    <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
