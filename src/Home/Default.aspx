@@ -46,7 +46,7 @@
 
                     <div class="welcome-card">
                         <div class="welcome-card-icon">
-                            <img src="../resources/images/icons/docs.svg" />
+                            <img src="../resources/icons/docs.svg" />
                         </div>
                         <div class="welcome-card-title">Getting Started</div>
                         <div class="welcome-card-body">
@@ -59,7 +59,7 @@
 
                     <div class="welcome-card">
                         <div class="welcome-card-icon">
-                            <img src="../resources/images/icons/support.svg" />
+                            <img src="../resources/icons/support.svg" />
                         </div>
                         <div class="welcome-card-title">Support</div>
                         <div class="welcome-card-body">
@@ -72,7 +72,7 @@
 
                     <div class="welcome-card">
                         <div class="welcome-card-icon">
-                            <img src="../resources/images/icons/download.svg" />
+                            <img src="../resources/icons/download.svg" />
                         </div>
                         <div class="welcome-card-title">Download</div>
                         <div class="welcome-card-body">

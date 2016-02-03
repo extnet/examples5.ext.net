@@ -1176,9 +1176,9 @@
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
     <Content Include="resources\images\icon-briefcase.png" />
-    <Content Include="resources\images\icons\docs.svg" />
-    <Content Include="resources\images\icons\download.svg" />
-    <Content Include="resources\images\icons\support.svg" />
+    <Content Include="resources\icons\docs.svg" />
+    <Content Include="resources\icons\download.svg" />
+    <Content Include="resources\icons\support.svg" />
     <Content Include="resources\images\loading.gif" />
     <Content Include="resources\images\logo.png" />
     <Content Include="resources\images\noimage.png" />
