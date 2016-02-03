@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Ext.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ext.NET.4.0.0\lib\net45\Ext.Net.dll</HintPath>
+      <HintPath>..\packages\Ext.NET.4.0.0-preview\lib\net45\Ext.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
@@ -341,11 +341,7 @@
     <Content Include="App_Readme\Ext.NET.Utilities\BREAKING_CHANGES.txt" />
     <Content Include="App_Readme\Ext.NET.Utilities\LICENSE.txt" />
     <Content Include="App_Readme\Ext.NET.Utilities\README.txt" />
-    <Content Include="App_Readme\Ext.NET\BREAKING_CHANGES.txt" />
-    <Content Include="App_Readme\Ext.NET\CHANGELOG.txt" />
     <Content Include="App_Readme\Ext.NET\Ext.NET.Default.aspx" />
-    <Content Include="App_Readme\Ext.NET\LICENSE.txt" />
-    <Content Include="App_Readme\Ext.NET\README.txt" />
     <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
     <Content Include="App_Readme\Transformer.NET\README.txt" />
     <Content Include="Code\SerializableEntity\ReadMe.txt" />
@@ -405,6 +401,10 @@
     <Content Include="Examples\Chart\Combination\Pareto\Default.aspx" />
     <Content Include="Examples\Chart\Line\CrossZoom\config.xml" />
     <Content Include="Examples\Chart\Line\CrossZoom\Default.aspx" />
+    <Content Include="App_Readme\Ext.NET\Sample.Web.config" />
+    <Content Include="App_Readme\Ext.NET\README.md" />
+    <Content Include="App_Readme\Ext.NET\LICENSE" />
+    <Content Include="App_Readme\Ext.NET\CHANGELOG.md" />
     <None Include="Examples\Chart\Line\CrossZoom\usd2eur.json" />
     <Content Include="Examples\Chart\Line\Image_Markers\circle.png" />
     <Content Include="Examples\Chart\Line\Image_Markers\pentagon.png" />
@@ -1218,7 +1218,6 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Readme\Ext.NET\Sample.Web.config" />
     <None Include="Code\Northwind\Northwind.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Northwind.designer.cs</LastGenOutput>
