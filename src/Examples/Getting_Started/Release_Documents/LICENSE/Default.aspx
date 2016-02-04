@@ -5,7 +5,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        StreamReader streamReader = File.OpenText(MapPath("~/App_Readme/Ext.NET/LICENSE.txt"));
+        StreamReader streamReader = File.OpenText(MapPath("~/App_Readme/Ext.NET/LICENSE"));
         this.pre1.InnerText = streamReader.ReadToEnd();
     }
 </script>
