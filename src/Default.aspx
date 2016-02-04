@@ -189,7 +189,7 @@
                         <li class="section-title">Ext.NET 1</li>
                         <li><a href="http://examples1.ext.net/">Web Forms Examples (1.7)</a></li>
                         <li class="separator"></li>
-                        <li><a href="http://docs.sencha.com/extjs/5.1">EXT JS Documentation</a></li>
+                        <li><a href="http://docs.sencha.com/extjs/6.0/6.0.0-classic/">EXT JS Documentation</a></li>
                         <li><a href="http://docs.ext.net/">Ext.NET Documentation</a></li>
                         <li class="separator"></li>
                         <li><a href="http://forums.ext.net/">Community Forums</a></li>
