@@ -144,7 +144,7 @@
                                                     <ext:MenuItem
                                                         runat="server"
                                                         Text="MVC Examples Explorer (4.0 Preview)"
-                                                        Href="http://mvc4.ext.net/"
+                                                        Href="http://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="448px"
                                                         Padding="12"/>
@@ -175,12 +175,12 @@
                 <Content>
                     <ul id="nav-menu" class="nav-menu">
                         <li class="section-title">Ext.NET 4</li>
-                        <li><a href="http://examples4.ext.net/">Web Forms Examples (4.0 Preview)</a></li>
-                        <li><a href="http://mvc4.ext.net/">MVC Examples (4.0 Preview)</a></li>
+                        <li><a href="http://examples.ext.net/">Web Forms Examples (4.0 Preview)</a></li>
+                        <li><a href="http://mvc.ext.net/">MVC Examples (4.0 Preview)</a></li>
                         <li class="separator"></li>
                         <li class="section-title">Ext.NET 3</li>
-                        <li><a href="http://examples.ext.net/">Web Forms Examples (3.3)</a></li>
-                        <li><a href="http://mvc.ext.net/">MVC Examples (3.3)</a></li>
+                        <li><a href="http://examples3.ext.net/">Web Forms Examples (3.3)</a></li>
+                        <li><a href="http://mvc3.ext.net/">MVC Examples (3.3)</a></li>
                         <li class="separator"></li>
                         <li class="section-title">Ext.NET 2</li>
                         <li><a href="http://examples2.ext.net/">Web Forms Examples (2.5)</a></li>
