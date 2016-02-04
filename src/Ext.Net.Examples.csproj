@@ -555,11 +555,9 @@
     <Content Include="Examples\Form\TextField\Password_Mask\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\config.xml" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\BREAKING_CHANGES\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\README\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\Sample_Web.config\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\SVN_Log\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\Default.aspx" />
@@ -1149,7 +1147,6 @@
     <Content Include="Examples\TreePanel\Loaders\Xml_File_Loading\authors.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\config.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\Default.aspx" />
-    <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
@@ -1266,8 +1263,8 @@
     <Content Include="Examples\DragDrop\Advanced\Checkbox_Selector\Default.aspx" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\config.xml" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\Default.aspx" />
-    <Content Include="Examples\Editor\Basic\FormPanel_Labels\config.xml" />
-    <Content Include="Examples\Editor\Basic\FormPanel_Labels\Default.aspx" />
+    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\config.xml" />
+    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\Overview\config.xml" />
     <Content Include="Examples\Form\DropDownField\Overview\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\ValueText_Mode\config.xml" />
@@ -1486,9 +1483,9 @@
     <Content Include="Examples\Desktop\Introduction\Overview\thumbnail.gif" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\user48x48.png" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\window48x48.png" />
-    <Content Include="Examples\Editor\Basic\Overview\config.xml" />
-    <Content Include="Examples\Editor\Basic\Overview\Default.aspx" />
-    <Content Include="Examples\Editor\config.xml" />
+    <Content Include="Examples\Draw\Editor\Basic\Overview\config.xml" />
+    <Content Include="Examples\Draw\Editor\Basic\Overview\Default.aspx" />
+    <Content Include="Examples\Draw\Editor\config.xml" />
     <Content Include="Examples\Events\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\Default.aspx" />
