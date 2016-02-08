@@ -231,7 +231,7 @@
                 </ToolConfig>
             </StartMenu>
 
-            <TaskBar TrayWidth="100">
+            <TaskBar TrayWidth="120">
                 <QuickStart>
                     <ext:Toolbar runat="server" Width="70">
                         <Items>
