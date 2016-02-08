@@ -146,7 +146,7 @@
             runat="server" 
             Cls="images-view" 
             Frame="true" 
-            Width="600" 
+            Width="800" 
             Collapsible="true" 
             Layout="FitLayout"
             Title="Simple DataView (0 items selected)">
@@ -218,7 +218,7 @@
             </Buttons>
         </ext:Panel>
         
-        <div style="width:600px; border:1px solid gray; padding:5px;">
+        <div style="width:788px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>
     </form>
