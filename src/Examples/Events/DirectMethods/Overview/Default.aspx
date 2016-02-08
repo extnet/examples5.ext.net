@@ -176,7 +176,8 @@ public void SetTimeStamp(string text)
                     runat="server" 
                     FieldLabel="# of Employees"
                     AnchorHorizontal="100%"
-                    AllowBlank="false">
+                    AllowBlank="false"
+                    Editable="false">
                     <Items>
                         <ext:ListItem Text="1-5" Value="0" />
                         <ext:ListItem Text="6-25" Value="1" />
