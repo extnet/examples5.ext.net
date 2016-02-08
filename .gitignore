@@ -236,4 +236,5 @@ _Pvt_Extensions
 .fake/
 
 src/App_Readme/*
+!/src/App_Readme/Ext.Net/
 src/Scripts/*
