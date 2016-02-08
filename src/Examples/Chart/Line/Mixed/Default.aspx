@@ -157,7 +157,6 @@
                                     <Fields>
                                         <ext:ModelField Name="Name" />
                                         <ext:ModelField Name="Data1" />
-                                        <ext:ModelField Name="Data2" />
                                     </Fields>
                                 </ext:Model>
                             </Model>
@@ -193,13 +192,13 @@
                             </StyleSpec>
                         </ext:BarSeries>
 
-                        <ext:LineSeries XField="Name" YField="Data2" Fill="false">
+                        <ext:LineSeries XField="Name" YField="Data1" Fill="false">
                             <Listeners>
                                 <ItemMouseUp Handler="Ext.net.Notification.show({title:'Item Selected', html:item.value[1] + ' visits on ' + Ext.Date.monthNames[item.value[0]]});" />
                             </Listeners>
 
                             <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">                            
-                                <Renderer Handler="toolTip.setTitle(record.get('Data2') + ' visits in ' + record.get('Name').substr(0, 3));"></Renderer>
+                                <Renderer Handler="toolTip.setTitle(record.get('Data1') + ' visits in ' + record.get('Name').substr(0, 3));"></Renderer>
                             </Tooltip>
 
                             <StyleSpec>
