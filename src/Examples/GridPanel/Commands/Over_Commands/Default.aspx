@@ -102,7 +102,7 @@
                     <ext:DateColumn 
                         runat="server" 
                         Text="Last Updated" 
-                        Width="85" 
+                        Width="110" 
                         DataIndex="lastChange" 
                         />
                     <ext:CommandColumn runat="server" Width="115" OverOnly="true">
