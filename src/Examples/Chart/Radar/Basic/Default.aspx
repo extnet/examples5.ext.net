@@ -103,7 +103,7 @@
                         <ext:CategoryAxis Position="Angular" Grid="true" />
                     </Axes>
                     <Series>
-                        <ext:RadarSeries AngleField="month" RadiusField="data1">
+                        <ext:RadarSeries XField="month" YField="data1">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.80" />
                             </StyleSpec>
@@ -111,7 +111,7 @@
                                 <ext:Sprite FillStyle="#000" LineWidth="2" StrokeStyle="#fff" />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data1') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
                     </Series>

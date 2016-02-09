@@ -9,7 +9,7 @@
 
     <script>
         var onToggleButtonBeforeRender = function () {
-            App.GridPanel1.getStore().getGroups().each(function(group) {
+            App.GridPanel1.getStore().getGroups().each(function (group) {
                 App.ButtonToggleMenu.menu.add({
                     xtype: 'menucheckitem',
                     text: group.getGroupKey(),

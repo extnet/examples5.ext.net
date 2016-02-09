@@ -345,7 +345,7 @@
                                 <ext:DataSorter Property="Count" Direction="DESC" />
                             </Sorters>
                             <Listeners>
-                                <DataChanged Handler="if (App.GridPanel1) { App.GridPanel1.setTitle('Words (' + this.getCount() + ' unique)'); }" />
+                                <DataChanged Handler="App.GridPanel1.setTitle('Words (' + this.getCount() + ' unique)');" />
                             </Listeners>
                         </ext:Store>
                     </Bin>
@@ -380,7 +380,7 @@
                                         TrackMouse="true"
                                         Width="140"
                                         Height="28">
-                                        <Renderer Handler="toolTip.setTitle(record.get('Text') + ' (' + record.get('Count') + ')');" />
+                                        <Renderer Handler="this.setTitle(storeItem.get('Text') + ' (' + storeItem.get('Count') + ')');" />
                                     </Tooltip>
                                     <Label
                                         Display="InsideEnd"

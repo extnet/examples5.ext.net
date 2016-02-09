@@ -64,9 +64,11 @@
         
         <h1>Buffered Scrolling</h1>
 
-        <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
-        <p>This grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
-        <p>This example illustrates loading of all the records up front thus acting as a data buffer used as rows are rendered.</p>
+        <p>Ext.Net 2's brand new grid supports infinite scrolling, which enables you to load any number of records into a grid without paging.</p>
+
+        <p>The new grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
+
+        <p>This example illustrates loading of all the records up front and buffering the rendering.</p>
         
         <ext:GridPanel 
             runat="server" 

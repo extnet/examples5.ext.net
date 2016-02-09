@@ -399,7 +399,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 this.AddScript("TaskWindow_{0}.down('#taskMessage').hide();", taskId);
                 this.AddScript("TaskWindow_{0}.down('#markComplete').show();", taskId);
                 this.AddScript("TaskWindow_{0}.down('#markActive').hide();", taskId);
-                this.AddScript("TaskWindow_{0}.down('#buttonsBar').updateLayout();", taskId);
+                this.AddScript("TaskWindow_{0}.down('#buttonsBar').doLayout();", taskId);
                 this.AddScript("TaskWindow_{0}.down('#hasReminder').enable();", taskId);
                 this.AddScript("TaskWindow_{0}.down('#reminder').enable();", taskId);
             }

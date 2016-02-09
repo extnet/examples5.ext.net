@@ -2,15 +2,13 @@
 using System.Runtime.InteropServices;
 using System.Web.UI;
 
-[assembly: AssemblyVersion("4.0")]
-[assembly: AssemblyFileVersion("4.0.0.0")]
-[assembly: AssemblyInformationalVersion("4.0.0-preview")]
-[assembly: AssemblyCompany("Object.NET, Inc.")]
-[assembly: AssemblyCopyright("Copyright (c) 2008-2016 Object.NET, Inc.")]
-
 [assembly: AssemblyTitle("Ext.NET Examples")]
 [assembly: AssemblyProduct("Ext.NET Examples")]
 [assembly: AssemblyDescription("Ext.NET Examples")]
+
+[assembly: AssemblyVersion("3.2.1.*")]
+[assembly: AssemblyCompany("Object.NET, Inc.")]
+[assembly: AssemblyCopyright("Copyright © 2008-2015 Object.NET, Inc.")]
 
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyTrademark("")]

@@ -50,7 +50,7 @@
                     command : "accept"
                 }));
 
-                toolbar.updateLayout();
+                toolbar.doLayout();
             }
         };
         

@@ -29,7 +29,7 @@
             }
 
             btns.add(panel);
-            btns.updateLayout();
+            btns.doLayout();
         };
     </script>
 </head>

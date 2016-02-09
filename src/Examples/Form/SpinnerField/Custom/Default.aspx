@@ -15,8 +15,6 @@
 
         this.Store1.DataSource = data;            
         this.Store1.DataBind();
-
-        this.ResourceManager1.RegisterOnReadyScript("onSpin(App.SpinnerField1);");
     }
 </script>
 
@@ -45,7 +43,7 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" ID="ResourceManager1" />
+        <ext:ResourceManager runat="server" />
         
         <h1>Custom SpinnerField</h1>
 
@@ -65,12 +63,16 @@
                     </Fields>
                 </ext:Model>
             </Model>
+            <Listeners>
+                <Load Handler="onSpin(#{SpinnerField1});" />
+            </Listeners>
         </ext:Store>
 
         <ext:FormPanel 
             runat="server" 
             Title="Form" 
             Width="400" 
+            Height="70" 
             BodyPadding="10" 
             LabelWidth="150">
             <Items>

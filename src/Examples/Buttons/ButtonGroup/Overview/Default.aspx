@@ -440,7 +440,7 @@
         
         <ext:Panel 
             runat="server" 
-            Title="Medium Icons, Text and Arrows to the Right" 
+            Title="Medium Icons, Text and Arrows to the Left" 
             MinWidth="500"
             Height="250" 
             StyleSpec="margin-top:15px" 
@@ -477,7 +477,7 @@
         
         <ext:Panel 
             runat="server" 
-            Title="Small Icons, Text and Arrows to the Right" 
+            Title="Small Icons, Text and Arrows to the Left" 
             MinWidth="500"
             Height="250" 
             StyleSpec="margin-top:15px" 

@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="MessageBus - Ext.NET Examples" Language="C#" MasterPageFile="~/Examples/MessageBus/Basic/Complex/MasterPage.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <ext:Panel runat="server" Title="Container In Content Page">
+    <ext:Panel runat="server" Title="Container in content page">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
 
         <Items>
-            <ext:Panel runat="server" PreventHeader="true" Height="200" Layout="FitLayout">
+            <ext:Panel runat="server" PreventHeader="true" Height="150" Layout="FitLayout">
                 <MessageBusListeners>
                     <ext:MessageBusListener 
                         Name="FromUserControl.*" 

@@ -119,7 +119,7 @@
                                     FontSize="17" />
                             </Items>
                             <Series>
-                                <ext:GaugeSeries AngleField="mph" Needle="true" Donut="30" />
+                                <ext:GaugeSeries Field="mph" Needle="true" Donut="30" />
                             </Series>
                         </ext:PolarChart>
 
@@ -147,7 +147,7 @@
                                 </ext:NumericAxis>
                             </Axes>
                             <Series>
-                                <ext:GaugeSeries AngleField="fuel" Donut="50" />
+                                <ext:GaugeSeries Field="fuel" Donut="50" />
                             </Series>
                         </ext:PolarChart>
                     </Items>
@@ -175,7 +175,7 @@
                                 </ext:NumericAxis>
                             </Axes>
                             <Series>
-                                <ext:GaugeSeries AngleField="temp" Donut="50" />
+                                <ext:GaugeSeries Field="temp" Donut="50" />
                             </Series>
                         </ext:PolarChart>
 
@@ -196,7 +196,7 @@
                                 </ext:NumericAxis>
                             </Axes>
                             <Series>
-                                <ext:GaugeSeries AngleField="rpm" Donut="30" Needle="true" />
+                                <ext:GaugeSeries Field="rpm" Donut="30" Needle="true" />
                             </Series>
                         </ext:PolarChart>
                     </Items>

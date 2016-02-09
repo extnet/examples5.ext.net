@@ -100,7 +100,7 @@
                             <tpl for=".">
                                 <div class="search-item">
                                     <h3><span>{lastPost:this.formatDate}<br>by {author}</span>
-                                    <a href="http://www.sencha.com/forum/showthread.php?t={topicId}&p={postId}" target="_blank">{title}</a></h3>
+                                    <a href="http://sencha.com/forum/showthread.php?t={topicId}&p={postId}" target="_blank">{title}</a></h3>
                                     <p>{excerpt}</p>
                                 </div>
                             </tpl>

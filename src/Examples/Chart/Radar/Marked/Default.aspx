@@ -104,7 +104,7 @@
                         <ext:CategoryAxis Position="Angular" Grid="true" />
                     </Axes>
                     <Series>
-                        <ext:RadarSeries Title="IE" AngleField="month" RadiusField="data1">
+                        <ext:RadarSeries Title="IE" XField="month" YField="data1">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" FillStyle="none" />
                             </StyleSpec>
@@ -115,11 +115,11 @@
                                 <ext:Sprite Radius="8" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data1') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
 
-                        <ext:RadarSeries Title="Firefox" AngleField="month" RadiusField="data2">
+                        <ext:RadarSeries Title="Firefox" XField="month" YField="data2">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" FillStyle="none" />
                             </StyleSpec>
@@ -130,11 +130,11 @@
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data2') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data2') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
 
-                        <ext:RadarSeries Title="Chrome" AngleField="month" RadiusField="data3">
+                        <ext:RadarSeries Title="Chrome" XField="month" YField="data3">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" FillStyle="none" />
                             </StyleSpec>
@@ -145,11 +145,11 @@
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data3') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data3') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
 
-                        <ext:RadarSeries Title="Safari" AngleField="month" RadiusField="data4">
+                        <ext:RadarSeries Title="Safari" XField="month" YField="data4">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" FillStyle="none" />
                             </StyleSpec>
@@ -157,7 +157,7 @@
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data4') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data4') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
                     </Series>

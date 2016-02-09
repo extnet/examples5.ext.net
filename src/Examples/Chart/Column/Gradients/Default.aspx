@@ -142,7 +142,7 @@
                                 Display="InsideEnd" 
                                 Field="Data1" 
                                 Orientation="Horizontal" 
-                                FillStyle="#000" 
+                                FillStyle="#fff" 
                                 Font="17px Arial" 
                                 TextAlign="Center">
                                 <Renderer Handler="return Ext.util.Format.number(text, '0');" />

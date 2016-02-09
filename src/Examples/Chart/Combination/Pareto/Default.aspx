@@ -28,7 +28,6 @@
     <script>
         function download() {
             var chart = App.Chart1;
-
             if (Ext.os.is.Desktop) {
                 chart.download({
                     filename: 'Redwood City Climate Data Chart'
@@ -38,15 +37,13 @@
             }
         }
 
-        function renderer(toolTip, record, context) {
+        function renderer(record, item) {
             var store = record.store,
                 i, complaints = [];
-
-            for (i = 0; i <= context.index; i++) {
+            for (i = 0; i <= item.index; i++) {
                 complaints.push(store.getAt(i).get('complaint'));
             }
-
-            toolTip.setHtml('<div style="text-align: center; font-weight: bold">' + record.get('cumpercent') + '%</div>' + complaints.join('<br>'));
+            this.setHtml('<div style="text-align: center; font-weight: bold">' + record.get('cumpercent') + '%</div>' + complaints.join('<br>'));
         }
     </script>
 </head>
@@ -56,7 +53,7 @@
 
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Container runat="server" Region="North" Height="125" PaddingSpec="20 0 0 20">
+                <ext:Container runat="server" Region="North" Height="130" PaddingSpec="20 0 0 20">
                     <Content>
                         <h1>Pareto Chart Example</h1>
 
@@ -151,7 +148,7 @@
                                             Position="Right"
                                             MajorTickSteps="10"
                                             ReconcileRange="true">
-                                            <Renderer Handler="var total = axis.getRange()[1]; return (label / total * 100).toFixed(0) + '%';" />
+                                            <Renderer Handler="var total = this.getAxis().getRange()[1]; return (label / total * 100).toFixed(0) + '%';" />
                                         </ext:NumericAxis>
                                     </Axes>
                                     <Series>
@@ -166,7 +163,7 @@
                                                 <ext:Sprite FillStyle="rgba(204, 230, 73, 1.0)" StrokeStyle="black" />
                                             </HighlightConfig>
                                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
-                                                <Renderer Handler="toolTip.setHtml(record.get('complaint') + ': ' + record.get('count') + ' responses.');" />
+                                                <Renderer Handler="this.setHtml(storeItem.get('complaint') + ': ' + storeItem.get('count') + ' responses.');" />
                                             </Tooltip>
                                         </ext:BarSeries>
 

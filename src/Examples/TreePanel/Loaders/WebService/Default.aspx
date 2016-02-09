@@ -11,12 +11,12 @@
         function getXmlResponseData(response) {
             try {
                 var xmlData = response.responseXML,
-                    root = xmlData.documentElement || xmlData;            
-                
+                    root = xmlData.documentElement || xmlData;
+
                 return Ext.decode(root.firstChild.nodeValue);
             } catch (ex) {
                 return this.createReadError(ex.message);
-            } 
+            }
         }
     </script>
 </head>

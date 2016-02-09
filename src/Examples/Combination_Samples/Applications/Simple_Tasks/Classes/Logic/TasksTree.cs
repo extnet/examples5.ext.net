@@ -66,6 +66,11 @@ namespace Ext.Net.Examples.SimpleTasks
 
             this.Store.Primary.ReadData += TasksTree_NodeLoad;
 
+            // Auto select the first node
+            this.Store.Primary.Listeners.Load.Fn = TasksTree.SCOPE + ".onLoad";
+            this.Store.Primary.Listeners.Load.Scope = TasksTree.SCOPE;
+            this.Store.Primary.Listeners.Load.Single = true;
+
             TreeSelectionModel sm = (TreeSelectionModel)this.SelectionModel.Primary;
             sm.Listeners.SelectionChange.Fn = TasksTree.SCOPE + ".selectionChange";
             sm.Listeners.SelectionChange.Scope = TasksTree.SCOPE;

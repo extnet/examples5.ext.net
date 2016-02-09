@@ -55,13 +55,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Ext.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ext.NET.4.0.0-preview\lib\net45\Ext.Net.dll</HintPath>
+    <Reference Include="Ext.Net, Version=3.2.1.19974, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ext.NET.3.2.1\lib\net45\Ext.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Ext.NET.Utilities.2.5.0\lib\Ext.Net.Utilities.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -137,7 +137,6 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Transformer.NET, Version=2.1.1.22883, Culture=neutral, PublicKeyToken=e274d618e7c603a7, processorArchitecture=MSIL">
       <HintPath>..\packages\Transformer.NET.2.1.1\lib\net35\Transformer.NET.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
@@ -309,7 +308,6 @@
       <DependentUpon>DataService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Examples\Miscellaneous\UI\Shared\ThemeListHandler.cs" />
     <Compile Include="Examples\SignalR\Basic\StockTicker\Code\SignalRGridPanel.cs" />
     <Compile Include="Examples\SignalR\Basic\StockTicker\Code\Stock.cs" />
     <Compile Include="Examples\SignalR\Basic\StockTicker\Code\StockTicker.cs" />
@@ -342,6 +340,11 @@
     <Content Include="App_Readme\Ext.NET.Utilities\BREAKING_CHANGES.txt" />
     <Content Include="App_Readme\Ext.NET.Utilities\LICENSE.txt" />
     <Content Include="App_Readme\Ext.NET.Utilities\README.txt" />
+    <Content Include="App_Readme\Ext.NET\BREAKING_CHANGES.txt" />
+    <Content Include="App_Readme\Ext.NET\CHANGELOG.txt" />
+    <Content Include="App_Readme\Ext.NET\Ext.NET.Default.aspx" />
+    <Content Include="App_Readme\Ext.NET\README.txt" />
+    <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
     <Content Include="App_Readme\Transformer.NET\README.txt" />
     <Content Include="Code\SerializableEntity\ReadMe.txt" />
@@ -401,9 +404,6 @@
     <Content Include="Examples\Chart\Combination\Pareto\Default.aspx" />
     <Content Include="Examples\Chart\Line\CrossZoom\config.xml" />
     <Content Include="Examples\Chart\Line\CrossZoom\Default.aspx" />
-    <Content Include="App_Readme\Ext.NET\README.md" />
-    <Content Include="App_Readme\Ext.NET\LICENSE" />
-    <Content Include="App_Readme\Ext.NET\CHANGELOG.md" />
     <None Include="Examples\Chart\Line\CrossZoom\usd2eur.json" />
     <Content Include="Examples\Chart\Line\Image_Markers\circle.png" />
     <Content Include="Examples\Chart\Line\Image_Markers\pentagon.png" />
@@ -539,8 +539,8 @@
     <Content Include="Examples\Form\Miscellaneous\MultiSelector\Default.aspx" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\config.xml" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\Default.aspx" />
-    <Content Include="Examples\Form\Tag\TagColumn\config.xml" />
-    <Content Include="Examples\Form\Tag\TagColumn\Default.aspx" />
+    <Content Include="Examples\GridPanel\ColumnModel\TagColumn\config.xml" />
+    <Content Include="Examples\GridPanel\ColumnModel\TagColumn\Default.aspx" />
     <Content Include="Examples\Form\Tag\TagField\config.xml" />
     <Content Include="Examples\Form\Tag\TagField\Default.aspx" />
     <Content Include="Examples\Form\Tag\TagLabel\config.xml" />
@@ -555,9 +555,11 @@
     <Content Include="Examples\Form\TextField\Password_Mask\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\config.xml" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\BREAKING_CHANGES\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\README\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\Sample_Web.config\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\SVN_Log\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\Default.aspx" />
@@ -1147,6 +1149,7 @@
     <Content Include="Examples\TreePanel\Loaders\Xml_File_Loading\authors.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\config.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\Default.aspx" />
+    <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
@@ -1170,12 +1173,11 @@
     <Content Include="resources\images\ee-ad-content.png" />
     <Content Include="resources\images\ee-ad-store-bg.png" />
     <Content Include="resources\images\ext.net-logo.png" />
+    <Content Include="resources\images\extdotnet4-preview-background.png" />
+    <Content Include="resources\images\extdotnet4-preview.svg" />
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
     <Content Include="resources\images\icon-briefcase.png" />
-    <Content Include="resources\icons\docs.svg" />
-    <Content Include="resources\icons\download.svg" />
-    <Content Include="resources\icons\support.svg" />
     <Content Include="resources\images\loading.gif" />
     <Content Include="resources\images\logo.png" />
     <Content Include="resources\images\noimage.png" />
@@ -1215,6 +1217,7 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Readme\Ext.NET\Sample.Web.config" />
     <None Include="Code\Northwind\Northwind.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Northwind.designer.cs</LastGenOutput>
@@ -1263,8 +1266,8 @@
     <Content Include="Examples\DragDrop\Advanced\Checkbox_Selector\Default.aspx" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\config.xml" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\Default.aspx" />
-    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\config.xml" />
-    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\Default.aspx" />
+    <Content Include="Examples\Editor\Basic\FormPanel_Labels\config.xml" />
+    <Content Include="Examples\Editor\Basic\FormPanel_Labels\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\Overview\config.xml" />
     <Content Include="Examples\Form\DropDownField\Overview\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\ValueText_Mode\config.xml" />
@@ -1483,9 +1486,9 @@
     <Content Include="Examples\Desktop\Introduction\Overview\thumbnail.gif" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\user48x48.png" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\window48x48.png" />
-    <Content Include="Examples\Draw\Editor\Basic\Overview\config.xml" />
-    <Content Include="Examples\Draw\Editor\Basic\Overview\Default.aspx" />
-    <Content Include="Examples\Draw\Editor\config.xml" />
+    <Content Include="Examples\Editor\Basic\Overview\config.xml" />
+    <Content Include="Examples\Editor\Basic\Overview\Default.aspx" />
+    <Content Include="Examples\Editor\config.xml" />
     <Content Include="Examples\Events\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\Default.aspx" />
@@ -1542,6 +1545,12 @@
     <Content Include="Examples\Form\Triggers\Custom_Icon\config.xml" />
     <Content Include="Examples\Form\Triggers\Custom_Icon\resources\images\custom-trigger.gif" />
     <Content Include="Examples\Form\Triggers\Custom_Icon\Default.aspx" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable2\config.xml" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable2\Default.aspx" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable2\thumbnail.png" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable\config.xml" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable\Default.aspx" />
+    <Content Include="Examples\GridPanel\ArrayGrid\_Simple_Editable\thumbnail.png" />
     <Content Include="Examples\GridPanel\ColumnModel\Ajax_Configuration\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\Ajax_Configuration\Default.aspx" />
     <Content Include="Examples\GridPanel\Miscellaneous\Export_Data_Ajax\config.xml" />
@@ -2412,7 +2421,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51297</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51299/</IISUrl>
+          <IISUrl>http://localhost:51298/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -2422,6 +2431,8 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <PropertyGroup>

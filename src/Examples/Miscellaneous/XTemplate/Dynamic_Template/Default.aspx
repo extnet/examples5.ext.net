@@ -34,7 +34,7 @@
         
         tpl.Render();
 
-        this.Panel1.UpdateLayout();
+        this.Panel1.DoLayout();
     }
 </script>
 

@@ -15,7 +15,7 @@
 <html>
 <head runat="server">
     <title>Deferred Loading - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     
     <style>
          .msg {

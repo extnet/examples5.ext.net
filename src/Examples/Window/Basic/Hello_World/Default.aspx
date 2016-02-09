@@ -47,7 +47,6 @@
             Width="350"
             BodyStyle="background-color: #fff;" 
             BodyPadding="5"
-            Hidden="true"
             Modal="true">
             <Content>
                 This is my first <a target="_blank" href="http://ext.net/"> Ext.NET</a> Window.

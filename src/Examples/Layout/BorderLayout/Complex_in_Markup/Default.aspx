@@ -26,8 +26,8 @@
         runat="server" 
         Title="Complex Layout"
         Icon="Application"
-        Width="960" 
-        Height="640" 
+        Width="640" 
+        Height="480" 
         Plain="true"
         Border="false"
         Collapsible="true"
@@ -40,9 +40,9 @@
                 runat="server"
                 Region="West" 
                 Title="West"
-                Width="250"
+                Width="175"
                 Layout="Accordion"
-                MinWidth="250" 
+                MinWidth="175" 
                 MaxWidth="400" 
                 Split="true" 
                 Collapsible="true">
@@ -99,8 +99,8 @@
                 Region="East" 
                 Collapsible="true" 
                 Split="true" 
-                MinWidth="250" 
-                Width="250" 
+                MinWidth="225" 
+                Width="225" 
                 Title="East" 
                 Layout="Fit">
                 <Items>
@@ -137,7 +137,7 @@
                 Collapsible="true"
                 Title="South" 
                 Html="South"
-                Height="250"
+                Height="150"
                 BodyPadding="6" 
                 />
         </Items>

@@ -341,7 +341,7 @@
                                         <Series>
                                             <ext:PieSeries
                                                 Donut="30"
-                                                AngleField="Memory"
+                                                XField="Memory"
                                                 ShowInLegend="true"
                                                 Highlight="true"
                                                 HighlightMargin="20">
@@ -350,7 +350,7 @@
                                                     TrackMouse="true"
                                                     Width="140"
                                                     Height="28">
-                                                    <Renderer Handler="toolTip.setTitle(record.get('Name') + ': ' + Math.round(record.get('Memory') / #{MemoryStore}.sum('Memory') * 100) + '%');" />
+                                                    <Renderer Handler="this.setTitle(storeItem.get('Name') + ': ' + Math.round(storeItem.get('Memory') / #{MemoryStore}.sum('Memory') * 100) + '%');" />
                                                 </ToolTip>                    
                                                 <Label Field="Name" Display="Rotate" Font="12px Arial" />
                                             </ext:PieSeries>

@@ -23,11 +23,12 @@
         
         <ext:Window 
             runat="server" 
-            Width="600"
+            Width="400"
             Title="Password Mask"            
             Closable="false"
             BodyPadding="5"
-            Layout="FormLayout">           
+            Layout="AnchorLayout"
+            DefaultAnchor="100%">           
             <Items>
                <ext:TextField 
                     ID="txtUsername" 
@@ -36,6 +37,7 @@
                     AllowBlank="false"
                     BlankText="Your username is required."
                     />
+
                 <ext:TextField 
                     ID="txtPassword" 
                     runat="server"                                        

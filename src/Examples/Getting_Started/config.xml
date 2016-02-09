@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<example iconCls="fa fa-info-circle">
+<example iconCls="#Information">
     <order>
       <folder name="Overview" />
       <folder name="Component_Overview" />

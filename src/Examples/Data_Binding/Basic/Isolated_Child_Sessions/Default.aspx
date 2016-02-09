@@ -126,7 +126,7 @@
         }
 
         function onRemoveOrderClick(item, command, record) {
-            var orders =  App.View1.lookupReference("orders").getStore();
+            var orders = App.View1.lookupReference("orders").getStore();
             orders.remove(record);
         }
 

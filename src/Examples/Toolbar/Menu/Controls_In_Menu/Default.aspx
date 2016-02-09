@@ -1,21 +1,24 @@
 <%@ Page Language="C#" %>
 
+<%@ Import Namespace="System.Collections.Generic" %>
+
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
-    {
+     {
         string[][] data = new string[10][];
-
+        
         for (int i = 0; i < data.Length; i++)
         {
             data[i] = new string[5];
-
+        
             for (int j = 0; j < data[i].Length; j++)
             {
-                data[i][j] = string.Format("[{0},{1}]", i + 1, j + 1);
+                data[i][j] = string.Format("[{0},{1}]", i+1, j+1);
             }
         }
-
+        
         this.Store1.DataSource = data;
+        this.Store1.DataBind();
     }
 </script>
 
@@ -25,6 +28,15 @@
 <head runat="server">
     <title>Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
+     
+    <script>
+        <%-- Fix for the GitHub issue #140 --%>
+        Ext.menu.Menu.override({
+            canActivateItem: function (item) {
+                return item && !item.isDisabled() && item.isVisible() && item.canActivate;
+            }
+        });
+    </script>
 
     <script>
         var cellSelect = function (grid, record, ceIlndex, textField, ctxMenu) {
@@ -38,15 +50,15 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-
+    
     <ext:Menu ID="ContextMenu" runat="server">
         <Items>
-            <ext:GridPanel
-                runat="server"
+            <ext:GridPanel 
+                runat="server" 
                 EnableHdMenu="false"
                 Border="false"
-                Width="500"
-                Height="370"
+                Width="420"
+                Height="245"
                 ForceFit="true">
                 <Store>
                     <ext:Store ID="Store1" runat="server">
@@ -61,67 +73,69 @@
                                 </Fields>
                             </ext:Model>
                         </Model>
-                    </ext:Store>
+                    </ext:Store>    
                 </Store>
                 <ColumnModel runat="server" DefaultWidth="75">
-                    <Columns>
+		            <Columns>
                         <ext:RowNumbererColumn runat="server" Width="25" />
                         <ext:Column runat="server" Text="Column #1" DataIndex="Col1" />
                         <ext:Column runat="server" Text="Column #2" DataIndex="Col2" />
                         <ext:Column runat="server" Text="Column #3" DataIndex="Col3" />
                         <ext:Column runat="server" Text="Column #4" DataIndex="Col4" />
                         <ext:Column runat="server" Text="Column #5" DataIndex="Col5" />
-                    </Columns>
-                </ColumnModel>
-                <Listeners>
+		            </Columns>
+                </ColumnModel> 
+                <Listeners>                                
+                    <AfterRender Handler="this.headerCt.getMenu().allowOtherMenus = true;" />
                     <CellClick Handler="cellSelect(this, record, cellIndex, #{TextField1}, #{ContextMenu});" />
-                </Listeners>
-            </ext:GridPanel>
+                </Listeners>  
+            </ext:GridPanel>                    
         </Items>
     </ext:Menu>
-
+    
     <h1>Menus with Controls</h1>
-
+    
     <h2>Click the right button on the text field for select value</h2>
-
-    <ext:TextField
-        ID="TextField1"
-        runat="server"
-        Width="200"
-        ContextMenuID="ContextMenu"
+    
+    <ext:TextField 
+        ID="TextField1" 
+        runat="server" 
+        Width="200" 
+        ContextMenuID="ContextMenu" 
         ReadOnly="true" />
-
+    
     <h2>See Menu in the Toolbar</h2>
 
     <p>The Property Grid menu has been configured to demonstrate how to keep a menu visible rather than auto-hiding as you move to other menus.</p>
     <p>See the Menu's Listeners.</p>
 
     <br />
-
-    <ext:Toolbar runat="server" Width="530">
+    
+    <ext:Toolbar runat="server" Width="500">
         <Items>
             <ext:Button runat="server" Text="Form controls" Icon="NoteEdit">
                 <Menu>
                     <ext:Menu runat="server" EnableKeyNav="false">
                         <Items>
                             <ext:MenuItem runat="server" Icon="NoteEdit" Text="Item" />
-                            <ext:TextField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
-                            <ext:DateField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
+                            <ext:TextField runat="server" Width="200" MarginSpec="0 0 2 30" CanActivate="false" />
+                            <ext:DateField runat="server" Width="200" MarginSpec="0 0 2 30" CanActivate="false" />
                             <ext:MenuSeparator runat="server" />
-                            <ext:TextArea
-                                runat="server"
-                                Width="200"
-                                Height="100"
+                            <ext:TextArea 
+                                runat="server" 
+                                Width="200" 
+                                Height="100" 
                                 MarginSpec="0 0 2 30"
-                                Focusable="false" />
+                                CanActivate="false" 
+                                />
                             <ext:MenuSeparator runat="server" />
-                            <ext:ComboBox
-                                ID="ComboBox1"
-                                runat="server"
-                                Width="200"
-                                Editable="false"
+                            <ext:ComboBox 
+                                ID="ComboBox1" 
+                                runat="server" 
+                                Width="200" 
+                                Editable="false" 
                                 MarginSpec="0 0 2 30"
-                                Focusable="false">
+                                CanActivate="false">
                                 <Items>
                                     <ext:ListItem Text="Text1" />
                                     <ext:ListItem Text="Text2" />
@@ -132,30 +146,31 @@
                                 <SelectedItems>
                                     <ext:ListItem Value="Text4" />
                                 </SelectedItems>
-                            </ext:ComboBox>
+                            </ext:ComboBox>    
                             <ext:MenuSeparator runat="server" />
-                            <ext:FieldSet
-                                runat="server"
-                                Title="Account Information"
-                                MarginSpec="0 0 2 30">
+                            <ext:FieldSet 
+                                runat="server" 
+                                Title="Account Information" 
+                                MarginSpec="0 0 2 30"
+                                CanActivate="false">
                                 <Items>
-                                    <ext:TextField runat="server" Width="170" HideLabel="true" />
-                                    <ext:TextField runat="server" Width="170" HideLabel="true" />
+                                    <ext:TextField runat="server" Width="170" HideLabel="true" />           
+                                    <ext:TextField runat="server" Width="170" HideLabel="true" />                
                                 </Items>
                             </ext:FieldSet>
                         </Items>
                     </ext:Menu>
                 </Menu>
             </ext:Button>
-
+            
             <ext:Button runat="server" Text="Panels" Icon="Application">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
-                            <ext:Panel
-                                runat="server"
+                            <ext:Panel 
+                                runat="server" 
                                 Title="Simple Panel"
-                                Width="300"
+                                Width="300" 
                                 Height="200"
                                 Html="Some content">
                                 <TopBar>
@@ -171,13 +186,13 @@
                                     </ext:Toolbar>
                                 </TopBar>
                             </ext:Panel>
-
+                                
                             <ext:MenuSeparator />
-
-                            <ext:TabPanel
-                                runat="server"
-                                ActiveTabIndex="0"
-                                Width="300"
+                            
+                            <ext:TabPanel 
+                                runat="server" 
+                                ActiveTabIndex="0" 
+                                Width="300" 
                                 Height="100">
                                 <Items>
                                     <ext:Panel runat="server" Title="Tab1" Icon="Tab">
@@ -186,30 +201,42 @@
                                                 <Listeners>
                                                     <Click Handler="this.up('menu').hide();" />
                                                 </Listeners>
-                                            </ext:Button>
+                                            </ext:Button>                        
                                         </Items>
                                     </ext:Panel>
                                     <ext:Panel runat="server" Title="Tab2" Icon="Tab" />
                                     <ext:Panel runat="server" Title="Tab3" Icon="Tab" />
-                                </Items>
-                            </ext:TabPanel>
+                                </Items>                                
+                            </ext:TabPanel>                                
                         </Items>
                     </ext:Menu>
                 </Menu>
             </ext:Button>
-            <ext:Button
-                runat="server"
-                Text="Property Grid"
-                Icon="Table"
+            <ext:Button 
+                runat="server" 
+                Text="Property Grid" 
+                Icon="Table" 
                 ToolTip="The Property Grid menu has been configured to demonstrate how to keep a menu visible rather than auto-hiding as you move to other menus.<br/>See the Menu's Listeners.">
                 <Menu>
                     <ext:Menu runat="server">
+                        <Listeners>
+                            <Show Handler="this.lockedHide = true;" />
+                            <BeforeHide Handler="return !this.lockedHide;" />
+                            <AfterRender Handler="var menu = this;
+                                                  Ext.EventManager.on(window.document, 'mouseup', function (e) {
+                                                      var t = Ext.fly(e.getTarget());
+                                                      if (!(t.parent('#' + menu.id) || t.parent('.x-grid-editor') || t.parent('.x-layer'))) {
+                                                          menu.lockedHide = false;
+                                                          menu.hide();
+                                                      }
+                                                  });" />
+                        </Listeners>
                         <Items>
-                            <ext:PropertyGrid
-                                runat="server"
-                                Width="300"
+                            <ext:PropertyGrid 
+                                runat="server" 
+                                Width="300" 
                                 Height="300"
-                                NameColumnWidth="140">
+                                ForceFit="true">
                                 <Source>
                                     <ext:PropertyGridParameter Name="(name)" Value="Properties Grid" />
                                     <ext:PropertyGridParameter Name="grouping" Value="false" Mode="Raw" />
@@ -225,10 +252,10 @@
                                     <ext:PropertyGridParameter Name="borderWidth" Value="5" Mode="Raw" />
                                 </Source>
                                 <Buttons>
-                                    <ext:Button runat="server" Text="Save" Icon="Disk" />
-                                </Buttons>
-                            </ext:PropertyGrid>
-                        </Items>
+                                    <ext:Button runat="server" Text="Save" Icon="Disk" />                    
+                                </Buttons>           
+                            </ext:PropertyGrid>                                
+                        </Items>                                                
                     </ext:Menu>
                 </Menu>
             </ext:Button>
@@ -236,35 +263,35 @@
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
-                            <ext:Panel
-                                runat="server"
-                                Width="300"
-                                Height="200"
+                            <ext:Panel 
+                                runat="server" 
+                                Width="300" 
+                                Height="200" 
                                 Layout="BorderLayout">
                                 <Items>
-                                    <ext:Panel
-                                        runat="server"
-                                        Region="West"
-                                        Split="true"
-                                        Collapsible="true"
-                                        Title="West"
+                                    <ext:Panel 
+                                        runat="server" 
+                                        Region="West" 
+                                        Split="true" 
+                                        Collapsible="true" 
+                                        Title="West" 
                                         Width="100" />
                                     <ext:Panel runat="server" Region="Center" Title="Center" />
                                 </Items>
                             </ext:Panel>
-
-                            <ext:Panel
-                                runat="server"
-                                Width="300"
-                                Height="200"
+                                
+                            <ext:Panel 
+                                runat="server" 
+                                Width="300" 
+                                Height="200" 
                                 Layout="Accordion">
                                 <Items>
                                     <ext:Panel runat="server" Title="Panel1" Collapsed="false" />
                                     <ext:Panel runat="server" Title="Panel2" />
                                     <ext:Panel runat="server" Title="Panel3" />
                                 </Items>
-                            </ext:Panel>
-                        </Items>
+                            </ext:Panel>                               
+                        </Items>                        
                     </ext:Menu>
                 </Menu>
             </ext:Button>

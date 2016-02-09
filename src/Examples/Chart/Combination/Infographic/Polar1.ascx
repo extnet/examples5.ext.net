@@ -1,15 +1,15 @@
 ﻿<%@ Control Language="C#" %>
 <%@ Register Namespace="Ext.Net.Examples" Assembly="Ext.Net.Examples" TagPrefix="ee" %>
 
-<ext:PolarChart runat="server"
-    AnchorHorizontal="100%"
+<ext:PolarChart runat="server" 
+    AnchorHorizontal="100%" 
     Height="1375"
     Animation="false"
     InsetPaddingSpec="400 0 125 0"
     StoreID="Store1">
     <HtmlBin>
         <script>
-            function onSliceRender2012(sprite, config, data, index) {
+            function pieRenderer1(sprite, config, data, index) {
                 // Please see the comments in the KitchenSink.store.Unemployment class
                 // for more info on the meaning of the record fields.
                 var record = data.store.getAt(index),
@@ -35,7 +35,7 @@
                 return style;
             }
 
-            function onSliceRenderOther(year) {
+            function pieRenderer2(field) {
                 return function (sprite, config, data, index) {
                     var record = data.store.getAt(index),
                         label = record.get('label'),
@@ -46,44 +46,21 @@
                     } else if (label === 'year') {
                         style.fillStyle = 'rgba(70, 70, 69, 1.0)';
                     } else {
-                        style.fillStyle = sprite.getSurface().getStateColor(record.get(year));
+                        style.fillStyle = sprite.getSurface().getStateColor(record.get(field));
                     }
                     return style;
                 };
             }
-
-            function onLabelRender2012(text, sprite, config, data, index) {
-                if (text === 'year') {
-                    return {
-                        text: '2012',
-                        font: 'bold 16px sans-serif'
-                    };
-                }
-            }
-
-            function onLabelRenderOther(year) {
-                return function(text, sprite, config, data, index) {
-                    if (text === 'year') {
-                        return {
-                            text: year
-                        };
-                    } else {
-                        return {
-                            hidden: true
-                        };
-                    }
-                }
-            }
         </script>
     </HtmlBin>
     <Items>
-        <ext:RectSprite
-            X="50"
-            Y="40"
-            Width="890"
-            Height="100"
+        <ext:RectSprite 
+            X="50" 
+            Y="40" 
+            Width="890" 
+            Height="100" 
             FillStyle="rgba(76, 76, 77, 1.0)" />
-
+        
         <ext:TextSprite
             Text="Changes in U.S. Unemployment"
             Font="bold 54px Charter"
@@ -269,7 +246,7 @@
             FillStyle="white"
             X="910"
             Y="1310" />
-
+        
         <ee:ArcTextSprite
             Text="Recession December 2007"
             TranslationX="495"
@@ -282,15 +259,15 @@
     </Items>
 
     <Series>
-        <ext:PieSeries
-            AngleField="span"
-            Donut="93"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="93" 
             Rotation="<%# -Math.PI/60 %>"
             AutoDataBind="true">
             <SubStyle>
                 <ext:Sprite StrokeStyle="white" LineWidth="1" />
             </SubStyle>
-            <Label
+            <Label 
                 Orientation="None"
                 Field="label"
                 Display="Inside"
@@ -298,98 +275,99 @@
                 FontWeight="bold"
                 FontSize="13"
                 FontFamily="Tahoma">
-                <Renderer Fn="onLabelRender2012" />
+                <Renderer Handler="if (text === 'year') { return { text: '2012', font: 'bold 16px sans-serif' };}" />
             </Label>
-            <Renderer Fn="onSliceRender2012" />
+            <Renderer Fn="pieRenderer1" />
         </ext:PieSeries>
 
-        <ext:PieSeries
-            AngleField="span"
-            Donut="86"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="86" 
             RadiusFactor="93"
             Rotation="<%# -Math.PI/60 %>"
+            Highlight="false"
             AutoDataBind="true">
             <SubStyle>
                 <ext:Sprite StrokeStyle="white" LineWidth="1" />
             </SubStyle>
-            <Label
+            <Label 
                 Orientation="None"
                 Field="label"
                 Display="Inside"
                 FillStyle="white"
                 FontWeight="bold"
                 FontSize="15">
-                <Renderer Fn="onLabelRenderOther('2011')" />
+                <Renderer Handler="if (text === 'year') { return { text: '2011' }; } else { return { hidden: true };}" />
             </Label>
-            <Renderer Fn="onSliceRenderOther('y2011')" />
+            <Renderer Fn="pieRenderer2('y2011')" />
         </ext:PieSeries>
 
-        <ext:PieSeries
-            AngleField="span"
-            Donut="79"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="79" 
             RadiusFactor="86"
             Rotation="<%# -Math.PI/60 %>"
             AutoDataBind="true">
             <SubStyle>
                 <ext:Sprite StrokeStyle="white" LineWidth="1" />
             </SubStyle>
-            <Label
+            <Label 
                 Orientation="None"
                 Field="label"
                 Display="Inside"
                 FillStyle="white"
                 FontWeight="bold"
                 FontSize="14">
-                <Renderer Fn="onLabelRenderOther('2010')" />
+                <Renderer Handler="if (text === 'year') { return { text: '2010' }; } else { return { hidden: true };}" />
             </Label>
-            <Renderer Fn="onSliceRenderOther('y2010')" />
+            <Renderer Fn="pieRenderer2('y2010')" />
         </ext:PieSeries>
 
-        <ext:PieSeries
-            AngleField="span"
-            Donut="73"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="73" 
             RadiusFactor="79"
             Rotation="<%# -Math.PI/60 %>"
             AutoDataBind="true">
             <SubStyle>
                 <ext:Sprite StrokeStyle="white" LineWidth="1" />
             </SubStyle>
-            <Label
+            <Label 
                 Orientation="None"
                 Field="label"
                 Display="Inside"
                 FillStyle="white"
                 FontWeight="bold"
                 FontSize="13">
-                <Renderer Fn="onLabelRenderOther('2009')" />
+                <Renderer Handler="if (text === 'year') { return { text: '2009' }; } else { return { hidden: true };}" />
             </Label>
-            <Renderer Fn="onSliceRenderOther('y2009')" />
+            <Renderer Fn="pieRenderer2('y2009')" />
         </ext:PieSeries>
 
-        <ext:PieSeries
-            AngleField="span"
-            Donut="67"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="67" 
             RadiusFactor="73"
             Rotation="<%# -Math.PI/60 %>"
             AutoDataBind="true">
             <SubStyle>
                 <ext:Sprite StrokeStyle="white" LineWidth="1" />
             </SubStyle>
-            <Label
+            <Label 
                 Orientation="None"
                 Field="label"
                 Display="Inside"
                 FillStyle="white"
                 FontWeight="bold"
                 FontSize="12">
-                <Renderer Fn="onLabelRenderOther('2008')" />
+                <Renderer Handler="if (text === 'year') { return { text: '2008' }; } else { return { hidden: true };}" />
             </Label>
-            <Renderer Fn="onSliceRenderOther('y2008')" />
+            <Renderer Fn="pieRenderer2('y2008')" />
         </ext:PieSeries>
 
-        <ext:PieSeries
-            AngleField="span"
-            Donut="57"
+        <ext:PieSeries 
+            XField="span" 
+            Donut="57" 
             RadiusFactor="63"
             Rotation="<%# -Math.PI/60 %>"
             AutoDataBind="true">
@@ -403,9 +381,9 @@
                 FillStyle="white"
                 FontWeight="bold"
                 FontSize="11">
-                <Renderer Fn="onLabelRenderOther('2007')" />
+                <Renderer Handler="if (text === 'year') { return { text: '2007' }; } else { return { hidden: true };}" />
             </Label>
-            <Renderer Fn="onSliceRenderOther('y2007')" />
+            <Renderer Fn="pieRenderer2('y2007')" />
         </ext:PieSeries>
     </Series>
 </ext:PolarChart>

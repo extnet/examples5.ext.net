@@ -21,9 +21,8 @@ Ext.define('KitchenSink.view.ArcText', {
 
     updateText: function (text) {
         var me = this;
-
-        me.clearAll();
-
+        me.instances = [];
+        me.position = 0;
         if (!me.getSurface()) {
             // Can't get the bbox of a symbol at this point,
             // so postpone symbol sprites creation until render
@@ -48,7 +47,7 @@ Ext.define('KitchenSink.view.ArcText', {
             angleIncrement = 0,
             totalAngle = 0,
             ln = text.length,
-            i, bbox, angularShift;
+            i, bbox;
 
         for (i = 0; i < ln; i++) {
             angle += angleIncrement;
@@ -75,22 +74,18 @@ Ext.define('KitchenSink.view.ArcText', {
         }
         switch (textAlign) {
             case 'start':
-                angularShift = 0;
+                totalAngle = 0;
                 break;
             case 'end':
-                angularShift = -totalAngle;
+                totalAngle = -totalAngle;
                 break;
             case 'center':
-                angularShift = -totalAngle / 2;
+                totalAngle = -totalAngle / 2;
                 break;
         }
         me.setAttributes({
-            rotationRads: me.attr.rotationRads + angularShift
+            rotationRads: me.attr.rotationRads + totalAngle
         });
-
-        // Apply the rotation set above. Otherwise changes will only
-        // become visible on next rendered frame.
-        me.applyTransformations();
     },
 
     render: function () {

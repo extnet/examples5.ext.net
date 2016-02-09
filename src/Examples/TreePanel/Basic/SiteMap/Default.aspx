@@ -108,20 +108,20 @@
             if (!tab) {
                 tab = tabPanel.add({
                     id: "node" + record.data.hash,
-                    title    : record.data.text,
-                    closable : true,
-                    loader : {
-                        url      : record.data.url,
-                        renderer     : "frame",
-                        loadMask : {
-                            showMask : true,
-                            msg  : "Loading " + record.data.url + "..."
+                    title: record.data.text,
+                    closable: true,
+                    loader: {
+                        url: record.data.url,
+                        renderer: "frame",
+                        loadMask: {
+                            showMask: true,
+                            msg: "Loading " + record.data.url + "..."
                         }
                     },
-                    autoScroll : true
-                });                
+                    autoScroll: true
+                });
             }
-            
+
             tabPanel.setActiveTab(tab);
         };
     </script>

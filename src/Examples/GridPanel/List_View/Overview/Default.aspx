@@ -117,7 +117,7 @@
         <ext:Panel 
             ID="Panel1" 
             runat="server" 
-            Width="650" 
+            Width="800" 
             Height="300"
             Title="Simple List <i>View (0 items selected)</i>"
             Layout="Fit">
@@ -202,7 +202,7 @@
             </Buttons>
         </ext:Panel>
         
-        <div style="width:650px; border:1px solid gray; padding:5px;">
+        <div style="width:788px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>
     </form>

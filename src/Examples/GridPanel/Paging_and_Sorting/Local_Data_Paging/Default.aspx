@@ -176,7 +176,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>The sample demonstrates local paging in the GridPanel</h1>
+        <h1>The following sample demonstrates local paging in the GridPanel.</h1>
         
         <p>1. Local Paging</p>
         <p>2. You can submit data from all grid's pages in one request</p>
@@ -188,8 +188,8 @@
             ID="GridPanel1" 
             runat="server" 
             Title="Array Grid" 
-            Width="850" 
-            Height="520">
+            Width="750" 
+            Height="320">
             <Store>
                 <ext:Store 
                     ID="Store1"
@@ -229,7 +229,7 @@
                     <ext:DateColumn 
                         runat="server" 
                         Text="Last Updated" 
-                        Width="120" 
+                        Width="85" 
                         DataIndex="lastChange" 
                         Format="HH:mm:ss" />
                 </Columns>

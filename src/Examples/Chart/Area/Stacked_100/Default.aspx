@@ -135,7 +135,7 @@
                                     <ext:CircleSprite Opacity="1" Scaling="1.5" />
                                 </HighlightDefaults>
                                 <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
-                                    <Renderer Handler="var browser = context.series.getTitle()[Ext.Array.indexOf(context.series.getYField(), context.field)]; toolTip.setHtml(browser + ' for ' +  Ext.Date.format(record.get('Date'), 'M d') + ': ' + record.get(context.field) + '%');" />
+                                    <Renderer Handler="var browser = item.series.getTitle()[Ext.Array.indexOf(item.series.getYField(), item.field)]; this.setHtml(browser + ' for ' +  Ext.Date.format(storeItem.get('Date'), 'M d') + ': ' + storeItem.get(item.field) + '%');" />
                                 </Tooltip>
                             </ext:AreaSeries>
                     </Series>

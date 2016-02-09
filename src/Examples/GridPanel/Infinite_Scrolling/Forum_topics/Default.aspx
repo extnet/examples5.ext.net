@@ -45,8 +45,9 @@
         
         <h1>Infinite Scrolling</h1>
 
-        <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
-        <p>This grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
+        <p>Ext.Net 2's brand new grid supports infinite scrolling, which enables you to load any number of records into a grid without paging.</p>
+        
+        <p>The new grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
         <p>The number of rendered rows is only just larger than the visible row count. As the edge of the rendered data scrolls towards being in
         view, the table is refreshed, and repositioned to maintain visual scroll position.</p>
         

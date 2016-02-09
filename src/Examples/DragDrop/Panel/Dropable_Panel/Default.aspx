@@ -73,7 +73,7 @@
             Target="${.dropable}" 
             Group="panelDD" 
             OverClass="invite">
-            <NotifyDrop Handler="var cmp = Ext.getCmp(this.el.dom.id);cmp.add(data.panel);Ext.defer(data.panel.updateLayout, 1, data.panel);" />
+            <NotifyDrop Handler="var cmp = Ext.getCmp(this.el.dom.id);cmp.add(data.panel);Ext.defer(data.panel.doLayout, 1, data.panel);" />
             <NotifyOver Handler="Ext.select('.dropable').removeCls('invite'); this.el.addCls('invite');" />
         </ext:DropTarget>
     </form>

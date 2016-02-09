@@ -96,7 +96,7 @@
                             XField="Name"
                             YField="Data1">
                             <Tooltip runat="server" TrackMouse="true">
-                                <Renderer Handler="toolTip.setTitle(record.get('Name') + ': ' + record.get('Data1'));" />
+                                <Renderer Handler="this.setTitle(storeItem.get('Name') + ': ' + storeItem.get('Data1'));" />
                             </Tooltip>
                             <Label
                                 Display="InsideEnd"

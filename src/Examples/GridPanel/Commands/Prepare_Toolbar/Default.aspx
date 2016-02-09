@@ -41,7 +41,7 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-        
+
         var prepare = function (grid, toolbar, rowIndex, record) {
             var firstButton = toolbar.items.get(0);
 
@@ -49,9 +49,9 @@
                 firstButton.setDisabled(true);
                 firstButton.setTooltip("Disabled");
             }
-            
+
             //you can return false to cancel toolbar for this record
-        };       
+        };
     </script>
 
 </head>

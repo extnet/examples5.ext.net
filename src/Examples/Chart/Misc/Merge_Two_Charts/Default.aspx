@@ -141,7 +141,7 @@
                                     </Listeners>
 
                                     <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">
-                                        <Renderer Handler="toolTip.setTitle(record.get('Data1') + ' visits in ' + record.get('Name').substr(0, 3));" />
+                                        <Renderer Handler="this.setTitle(storeItem.get('Data1') + ' visits in ' + storeItem.get('Name').substr(0, 3));" />
                                     </Tooltip>
 
                                     <StyleSpec>
@@ -200,7 +200,7 @@
                             <Series>
                                 <ext:LineSeries XField="Name" YField="Data2">
                                     <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">
-                                        <Renderer Handler="toolTip.setTitle(record.get('Data2') + ' visits in ' + record.get('Name').substr(0, 3));" />
+                                        <Renderer Handler="this.setTitle(storeItem.get('Data2') + ' visits in ' + storeItem.get('Name').substr(0, 3));" />
                                     </Tooltip>
 
                                     <StyleSpec>

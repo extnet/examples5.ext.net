@@ -113,7 +113,7 @@ namespace Ext.Net.Examples
 
             string tabs = BuildSourceTabs(id, wId, cfg, dir);
 
-            //string script = string.Format("var w = Ext.getCmp({0});w.add({1});w.updateLayout();", JSON.Serialize(wId), tabs);
+            //string script = string.Format("var w = Ext.getCmp({0});w.add({1});w.doLayout();", JSON.Serialize(wId), tabs);
             Ext.Net.Utilities.CompressionUtils.GZipAndSend(tabs);
             //context.Response.Write(tabs);
         }

@@ -107,7 +107,8 @@
             Icon="Table" 
             Width="600"
             Height="450"
-            DisableSelection="true">
+            DisableSelection="true"
+            BufferedRenderer="false">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -122,7 +123,7 @@
             </Store>
             <ColumnModel runat="server">               
                 <Columns>       
-                    <ext:Column runat="server" Text="Supplier" DataIndex="Name" Flex="1" Hideable="false" />
+                    <ext:Column runat="server" Text="Supplier" DataIndex="Name" Flex="1" />
                 </Columns>
             </ColumnModel>            
             <Plugins>

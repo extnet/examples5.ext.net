@@ -45,8 +45,6 @@
                 Split="true"                             
                 Width="175" 
                 Title="Navigation" 
-                TitleCollapse="false"
-                Floatable="false"
                 Collapsed="true"
                 BodyPadding="5"
                 Html="Collapse Panel to see image.">
@@ -66,8 +64,6 @@
                 Split="true"                            
                 Height="100" 
                 Title="Footer"
-                TitleCollapse="false"
-                Floatable="false"
                 Collapsed="true">
                 <Listeners>
                     <AfterRender Handler="this.setTitle('');" />

@@ -11,9 +11,9 @@
     <ext:ResourceManager runat="server" Theme="Gray" />
 
     <p>The example is designed for the classic themes - Gray and Blue.</p>
-    <p>It might require adjusting for other themes like Crisp, Neptune or Triton.</p>
+    <p>It might require adjusting for other themes like Crisp or Neptune.</p>
     
-    <h2>Vertical Flat Toolbar</h2>
+    <h3>Vertical Flat Toolbar</h3>
     
     <ext:Toolbar runat="server" Layout="Container" Width="25" Flat="true">
         <Items>
@@ -25,9 +25,9 @@
         </Items>
     </ext:Toolbar>
     
-    <h2>Table Toolbar</h2>
+    <h3>Table Toolbar</h3>
     
-    <ext:Panel runat="server" Title="Panel" Height="200" Width="350">
+    <ext:Panel runat="server" Title="Panel" Height="150" Width="348">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
@@ -91,13 +91,13 @@
         </TopBar>
     </ext:Panel>
     
-    <h2>Vertical Toolbar In Panel</h2>
+    <h3>Vertical Toolbar In Panel</h3>
 
     <ext:Panel 
         runat="server" 
         Title="Vertical Toolbar" 
-        Width="350" 
-        Height="200"
+        Width="300" 
+        Height="150"
         BodyPadding="5"        
         Html="Your Content">
         <DockedItems>
@@ -113,9 +113,9 @@
         </DockedItems>
     </ext:Panel>
     
-    <h2>Multiple Toolbars</h2>
+    <h3>Multiple Toolbars</h3>
     
-    <ext:Panel runat="server" Title="Panel" Width="350" Height="200">
+    <ext:Panel runat="server" Title="Panel" Width="300" Height="150">
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>

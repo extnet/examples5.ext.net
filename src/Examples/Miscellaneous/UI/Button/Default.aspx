@@ -1,24 +1,37 @@
 ﻿<%@ Page Language="C#" %>
 
 <%@ Import Namespace="ListItem=Ext.Net.ListItem" %>
-<%@ Import Namespace="Ext.Net.Examples.Examples.Miscellaneous.UI.Shared" %>
 
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
         if (this.IsPostBack && ThemeSelector.SelectedItems.Count > 0)
         {
-            this.ResourceManager1.Theme = ThemeListHandler.GetThemeFromId(ThemeSelector.SelectedItem.Value);
+            ListItem themeItem = ThemeSelector.SelectedItem;
+
+            switch (themeItem.Value)
+            {
+                case "0":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.Default;
+                    break;
+                case "1":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.Gray;
+                    break;
+                case "2":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.Neptune;
+                    break;
+                case "3":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.NeptuneTouch;
+                    break;
+                case "4":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.Crisp;
+                    break;
+                case "5":
+                    this.ResourceManager1.Theme = Ext.Net.Theme.CrispTouch;
+                    break;
+            }
         }
 
-        ThemeListHandler.AddThemeListTo(ref this.ThemeSelector);
-
-        // Set the selected theme as the current one without issuing an auto-postback.
-        this.ThemeSelector.SelectedItem.Text = this.ResourceManager1.Theme.ToString();
-        this.ThemeSelector.SelectedItem.Value = ((int)this.ResourceManager1.Theme).ToString();
-        this.ThemeSelector.Text = this.ThemeSelector.SelectedItem.Text;
-
-        // Add context menu items to buttons -- except first three
         List<Container> cts = Ext.Net.Utilities.ControlUtils.FindControls<Container>(this.Page);
 
         foreach (Container ct in cts)
@@ -54,7 +67,16 @@
             ID="ThemeSelector"
             runat="server"
             FieldLabel="Theme"
-            AutoPostBack="true" />
+            AutoPostBack="true">
+            <Items>
+                <ext:ListItem Text="Classic" Value="0" />
+                <ext:ListItem Text="Gray" Value="1" />
+                <ext:ListItem Text="Neptune" Value="2" />
+                <ext:ListItem Text="Neptune Touch" Value="3" />
+                <ext:ListItem Text="Crisp" Value="4" />
+                <ext:ListItem Text="Crisp Touch" Value="5" />
+            </Items>
+        </ext:ComboBox>
 
         <p>To use color buttons styles just set UI property of Button: </p>
 

@@ -199,14 +199,9 @@
                         </Editor>
                     </ext:Column>
 
-                    <ext:DateColumn 
-                        runat="server" 
-                        DataIndex="date" 
-                        Text="Date" 
-                        Format="dd/MM/yyyy"
-                        Width="125">
+                    <ext:DateColumn runat="server" DataIndex="date" Text="Date" Format="dd/MM/yyyy">
                         <Editor>
-                            <ext:DateField runat="server" Format="dd/MM/yyyy" />
+                            <ext:DateField runat="server" />
                         </Editor>
                     </ext:DateColumn>
                 </Columns>

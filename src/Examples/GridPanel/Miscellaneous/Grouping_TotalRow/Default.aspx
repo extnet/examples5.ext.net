@@ -117,10 +117,10 @@
 
             var field,
                 value,
-                width,                
+                width,
                 c,
                 cs = grid.headerCt.getVisibleGridColumns();
- 
+
             container.suspendLayout = true;
 
             for (var i = 0; i < cs.length; i++) {
@@ -131,9 +131,9 @@
                 } else {
                     value = "-";
                 }
- 
-                field = container.down('component[name="'+c.dataIndex+'"]');              
-                
+
+                field = container.down('component[name="' + c.dataIndex + '"]');
+
                 container.remove(field, false);
                 container.insert(i, field);
                 width = c.getWidth();
@@ -144,7 +144,7 @@
             }
 
             container.items.each(function (field) {
-                var column = grid.headerCt.down('component[dataIndex="'+field.name+'"]');
+                var column = grid.headerCt.down('component[dataIndex="' + field.name + '"]');
                 field.setVisible(column.isVisible());
             });
 

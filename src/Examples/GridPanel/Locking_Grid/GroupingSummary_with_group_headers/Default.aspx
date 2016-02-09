@@ -196,6 +196,8 @@
                                 <Editor>
                                     <ext:DateField runat="server" Format="MM/dd/yyyy" />
                                 </Editor>
+                                <%-- Remove after fixing #563 --%>
+                                <SummaryRenderer Format="Date" FormatArgs="'m/d/Y'" />
                             </ext:DateColumn>
  
                             <ext:Column
@@ -206,6 +208,8 @@
                                 DataIndex="Estimate"
                                 SummaryType="Sum">
                                 <Renderer Handler="return value +' hours';" />
+                                <%-- Remove after fixing #563 --%>
+                                <SummaryRenderer Handler="return value + ' hours';" />
                                 <Editor>
                                     <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
                                 </Editor>
@@ -219,7 +223,9 @@
                                 DataIndex="Rate"
                                 SummaryType="Average">
                                 <Renderer Format="UsMoney" />
-                                 <Editor>
+                                <%-- Remove after fixing #563 --%>
+                                <SummaryRenderer Format="UsMoney" />
+                                <Editor>
                                     <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
                                 </Editor>
                             </ext:Column>
@@ -234,7 +240,7 @@
                                 DataIndex="Cost"
                                 CustomSummaryType="totalCost">
                                 <Renderer Handler="return Ext.util.Format.usMoney(record.data.Estimate * record.data.Rate);" />
-                                <SummaryRenderer Fn="Ext.util.Format.usMoney" />
+                                <SummaryRenderer Format="UsMoney" />
                             </ext:Column>
                         </Columns>
                     </ext:Column>                    

@@ -28,7 +28,7 @@
         MoreButton.Disabled = (count + 5) >= data.Count;
         if (count != 0)
         {
-            GridPanel1.UpdateLayout();
+            GridPanel1.DoLayout();
         }
     }
 

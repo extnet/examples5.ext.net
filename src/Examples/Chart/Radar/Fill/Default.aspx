@@ -88,19 +88,19 @@
                         <ext:CategoryAxis Position="Angular" Grid="true" />
                     </Axes>
                     <series>
-                        <ext:RadarSeries AngleField="Name" RadiusField="Data1" ShowInLegend="true">
+                        <ext:RadarSeries XField="Name" YField="Data1" ShowInLegend="true">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.4" />
                             </StyleSpec>
                         </ext:RadarSeries>
 
-                        <ext:RadarSeries AngleField="Name" RadiusField="Data2" ShowInLegend="true">
+                        <ext:RadarSeries XField="Name" YField="Data2" ShowInLegend="true">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.4" />
                             </StyleSpec>
                         </ext:RadarSeries>
 
-                        <ext:RadarSeries AngleField="Name" RadiusField="Data3" ShowInLegend="true">
+                        <ext:RadarSeries XField="Name" YField="Data3" ShowInLegend="true">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.4" />
                             </StyleSpec>

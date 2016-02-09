@@ -86,8 +86,8 @@
                     </Interactions>
                     <Series>
                         <ext:PieSeries
-                            AngleField="Data1"
-                            RadiusField="Data2"
+                            XField="Data1"
+                            LengthField="Data2"
                             HighlightMargin="20">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="1" StrokeStyle="#fff" />

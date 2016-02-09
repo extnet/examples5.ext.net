@@ -47,8 +47,8 @@
             targetCt.add(data.panel);
 
             Ext.defer(function () {
-                targetPanel.updateLayout();
-                data.panel.updateLayout();
+                targetPanel.doLayout();
+                data.panel.doLayout();
             }, 1);            
         };
 

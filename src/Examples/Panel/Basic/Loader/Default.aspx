@@ -58,8 +58,8 @@
     <ext:Panel
         ID="Panel1"
         runat="server" 
+        Height="150" 
         Width="350"
-        Height="200" 
         Title="Html"
         BodyPadding="5">
         <Content>
@@ -70,7 +70,7 @@
         </Buttons>
     </ext:Panel>
     
-    <h2>Loader with Html Mode</h2>
+    <h2>AutoLoad Property</h2>
     
     <%--
     <p>The .AutoLoad property must be set with a url. The url can be either a local or remote url. A url is considered remote if it starts with "http".</p>
@@ -86,8 +86,8 @@
     <ext:Panel 
         ID="Panel2"
         runat="server" 
+        Height="150"
         Width="350"
-        Height="200" 
         Title="Merge Mode"
         BodyPadding="5">
         <Loader runat="server" Url="Child.aspx" Mode="Html">
@@ -103,13 +103,11 @@
         </Buttons>
     </ext:Panel>
     
-    <h2>Loader with Frame Mode</h2>
-
     <ext:Panel
         ID="Panel3" 
         runat="server" 
+        Height="150" 
         Width="350"
-        Height="200" 
         Title="Frame Mode">
         <Loader 
             runat="server"

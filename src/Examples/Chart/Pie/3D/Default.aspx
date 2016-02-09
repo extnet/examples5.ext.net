@@ -97,7 +97,7 @@
                     </Interactions>
                     <Series>
                         <ext:Pie3DSeries
-                            AngleField="Data1"
+                            XField="Data1"
                             Donut="30"
                             Distortion="0.6">
                             <StyleSpec>

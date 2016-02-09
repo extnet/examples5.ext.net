@@ -152,7 +152,7 @@
                                             Grid="true"
                                             Minimum="0"
                                             Maximum="24">
-                                            <Renderer Handler="return layoutContext.renderer(label) + '%';" />
+                                            <Renderer Handler="return layout.renderer(label) + '%';" />
                                         </ext:NumericAxis>
 
                                         <ext:CategoryAxis
@@ -176,7 +176,7 @@
                                                 <ext:CircleSprite GlobalAlpha="1" ScalingX="1.5" ScalingY="1.5" />
                                             </HighlightDefaults>
                                             <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
-                                                <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + ' %');" />
+                                                <Renderer Handler="this.setHtml(storeItem.get('month') + ': ' + storeItem.get('data1') + ' %');" />
                                             </Tooltip>
                                         </ext:AreaSeries>
                                     </Series>

@@ -151,7 +151,7 @@
                         </ext:NumericAxis>
                     </Axes>
                     <Series>
-                        <ext:RadarSeries AngleField="Month" RadiusField="High">
+                        <ext:RadarSeries XField="Month" YField="High">
                             <StyleSpec>
                                 <ext:SeriesSprite GlobalAlpha="0.7" />
                             </StyleSpec>

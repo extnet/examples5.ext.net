@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:CartesianChart 
-    runat="server"
+<ext:CartesianChart runat="server"
     X="300"
     Y="700"
     Width="350"

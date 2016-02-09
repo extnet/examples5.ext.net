@@ -81,7 +81,7 @@
                             Fields="value"
                             Title="USD to Euro"
                             TitleMargin="12">
-                            <Renderer Handler="return layoutContext.renderer(label) + '%';" />
+                            <Renderer Handler="return layout.renderer(label) + '%';" />
                         </ext:NumericAxis>
 
                         <ext:TimeAxis 

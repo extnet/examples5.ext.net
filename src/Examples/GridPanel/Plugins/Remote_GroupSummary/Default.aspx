@@ -157,11 +157,10 @@
                      
                     <ext:DateColumn
                         runat="server"
-                        Width="85"
+                        Width="100"
                         Text="Due Date"
                         Sortable="true"
                         DataIndex="Due"
-                        WidthSpec="100px"
                         Format="MM/dd/yyyy">
                         <SummaryRenderer Fn="Ext.util.Format.dateRenderer('m/d/Y')" />  
                     </ext:DateColumn>

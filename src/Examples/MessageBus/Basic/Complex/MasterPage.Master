@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" %>
-
 <!DOCTYPE html>
 
 <html>
@@ -13,7 +12,7 @@
 
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Panel runat="server" Title="Global logger in master page" Height="200" Region="North" Layout="FitLayout">
+                <ext:Panel runat="server" Title="Global logger in master page" Height="150" Region="North" Layout="FitLayout">
                     <MessageBusListeners>
                         <ext:MessageBusListener Name="**" Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});" />
                     </MessageBusListeners>

@@ -131,6 +131,7 @@
                     Icon="User"
                     DefaultAnchor="100%" 
                     AutoScroll="True">
+                    <FieldDefaults ReadOnly="true" />
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Employee ID" Name="EmployeeID" />
                         <ext:TextField runat="server" FieldLabel="First Name" Name="FirstName" />

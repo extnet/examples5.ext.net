@@ -95,15 +95,15 @@
         var template = 'color:{0};';
 
         var change = function (value, meta) {
-            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");            
+            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");
             return value;
         };
 
         var pctChange = function (value, meta) {
-            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");            
+            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");
             return value + "%";
         };
-        
+
         var edit = function (editor, e) {
             /*
                 "e" is an edit event with the following properties:
@@ -118,7 +118,7 @@
                     rowIdx - The row index that was edited
                     colIdx - The column index that was edited
             */
-            
+
             // Call DirectMethod
             if (!(e.value === e.originalValue || (Ext.isDate(e.value) && Ext.Date.isEqual(e.value, e.originalValue)))) {
                 CompanyX.Edit(e.record.data.ID, e.field, e.originalValue, e.value, e.record.data);

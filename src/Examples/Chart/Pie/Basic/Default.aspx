@@ -15,14 +15,14 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
-        var tipRenderer = function (toolTip, record, context) {
+        var tipRenderer = function (storeItem, item) {
             var total = 0;
 
             App.Chart1.getStore().each(function (rec) {
                 total += rec.get('Data1');
             });
 
-            toolTip.setTitle(record.get('Name') + ': ' + Math.round(record.get('Data1') / total * 100) + '%');
+            this.setTitle(storeItem.get('Name') + ': ' + Math.round(storeItem.get('Data1') / total * 100) + '%');
         };
 
         var saveChart = function (btn) {
@@ -71,7 +71,7 @@
 
                         <ext:Button runat="server" Text="Donut" EnableToggle="true">
                             <Listeners>
-                                <Toggle Handler="App.Chart1.series[0].setDonut(pressed ? 35 : false); App.Chart1.redraw();" />
+                                <Toggle Handler="App.Chart1.series[0].setDonut(pressed ? 35 : false);" />
                             </Listeners>
                         </ext:Button>
 
@@ -112,7 +112,7 @@
                     </Interactions>
                     <Series>
                         <ext:PieSeries
-                            AngleField="Data1"
+                            XField="Data1"
                             ShowInLegend="true"
                             Donut="0"
                             HighlightMargin="20">

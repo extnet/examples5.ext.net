@@ -107,7 +107,7 @@
                             Grid="true"
                             Minimum="0"
                             Maximum="24">
-                            <Renderer Handler="return layoutContext.renderer(label) + '%';" />
+                            <Renderer Handler="return layout.renderer(label) + '%';" />
                         </ext:NumericAxis>
 
                         <ext:CategoryAxis
@@ -134,7 +134,7 @@
                             <Label Field="Data1" Display="Over" />
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;" ShowDelay="0" DismissDelay="0" HideDelay="0">
-                                <Renderer Handler="toolTip.setHtml(record.get('Month') + ': ' + record.get('Data1') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('Month') + ': ' + storeItem.get('Data1') + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
                     </Series>

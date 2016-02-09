@@ -30,7 +30,7 @@
         }
         
         .dd-item {
-            position : relative; /* workaround for #1217.54 */
+            position : relative; /* fixes #1252.9 */
             height : 18px;
             border : 1px solid #a0a0a0;
             background-color : #c4d0ff;

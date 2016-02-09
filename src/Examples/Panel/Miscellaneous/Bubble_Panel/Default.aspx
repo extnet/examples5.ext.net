@@ -42,7 +42,7 @@
                 panel.setUI(uis[index + 1]);
             }
             
-            panel.updateLayout();
+            panel.doLayout();
             
             App.ToggleButton.setText('Toggle UI: ' + panel.ui);
         };

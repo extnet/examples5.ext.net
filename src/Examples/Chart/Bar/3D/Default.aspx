@@ -147,7 +147,7 @@
                                 runat="server"
                                 TrackMouse="true"
                                 StyleSpec="background: #fff">
-                                <Renderer Handler="toolTip.setHtml(record.get('Name') + ': ' + record.get('Data1') + '%');" />
+                                <Renderer Handler="this.setHtml(storeItem.get('Name') + ': ' + storeItem.get('Data1') + '%');" />
                             </Tooltip>
 
                             <Label

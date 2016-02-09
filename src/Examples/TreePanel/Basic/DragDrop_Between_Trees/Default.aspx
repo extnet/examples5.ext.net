@@ -66,7 +66,7 @@
 
 <html>
 <head runat="server">
-    <title>Drag and Drop between two TreePanels - Ext.NET Examples</title>
+    <title>Drag and Drop betweens two TreePanels - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .tree {
@@ -84,7 +84,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>Drag and Drop betweens two TreePanels</h1>
+        <h1>Drag and Drop between two TreePanels</h1>
         
         <p>The TreePanels have a TreeSorter applied in "folderSort" mode.</p>
         
@@ -119,7 +119,7 @@
                 <View>
                     <ext:TreeView runat="server">
                        <Plugins>
-                            <ext:TreeViewDragDrop runat="server" AppendOnly="true" ContainerScroll="true" />
+                            <ext:TreeViewDragDrop runat="server" AppendOnly="true" />
                         </Plugins>
                     </ext:TreeView>
                 </View>
@@ -154,7 +154,7 @@
                 <View>
                     <ext:TreeView runat="server">
                        <Plugins>
-                            <ext:TreeViewDragDrop runat="server" AppendOnly="true" ContainerScroll="true" />
+                            <ext:TreeViewDragDrop runat="server" AppendOnly="true" />
                         </Plugins>
                     </ext:TreeView>
                 </View>                

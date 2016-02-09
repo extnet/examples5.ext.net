@@ -90,7 +90,7 @@
                             XField="Name"
                             YField="Data1">
                             <Tooltip runat="server" TrackMouse="true" Width="74" Height="38">
-                                <Renderer Handler="toolTip.setTitle(record.get('Name') + '<br />' + record.get('Data1')); this.update(record.get('data1'));" />
+                                <Renderer Handler="this.setTitle(storeItem.get('Name') + '<br />' + storeItem.get('Data1')); this.update(storeItem.get('data1'));" />
                             </Tooltip>
                             <StyleSpec>
                                 <ext:Sprite FillStyle="#38B8BF" />

@@ -16,7 +16,7 @@
                 Title="North" 
                 Region="North"
                 Split="true"
-                Height="200"
+                Height="150"
                 BodyPadding="6"
                 Html="North"
                 Collapsible="true"
@@ -26,8 +26,8 @@
                 Title="West" 
                 Region="West"
                 Layout="AccordionLayout"
-                Width="250" 
-                MinWidth="250" 
+                Width="225" 
+                MinWidth="225" 
                 MaxWidth="400" 
                 Split="true" 
                 Collapsible="true">
@@ -75,8 +75,8 @@
                 Region="East"
                 Collapsible="true" 
                 Split="true" 
-                MinWidth="250"
-                Width="250" 
+                MinWidth="225"
+                Width="225" 
                 Layout="Fit">
                 <Items>
                     <ext:TabPanel 
@@ -110,7 +110,7 @@
                 Region="South"
                 Split="true"
                 Collapsible="true"
-                Height="200"
+                Height="150"
                 BodyPadding="6"
                 Html="South"
                 />

@@ -20,80 +20,48 @@
     </script>
 </head>
 <body class="welcome">
-    <ext:ResourceManager runat="server" Theme="Triton" />
+    <ext:ResourceManager runat="server" Theme="Crisp" />
 
     <ext:Container runat="server">
         <Content>
-            <div class="container">
-                <div class="ext4-notification">
-                    <div class="notification-container">
-                        <div class="notification-img">
-                            <img src="../resources/images/extdotnet4-preview.svg">
-                        </div>
-                        <div class="notification-text">
-                            We’re super excited to announce the immediate availability of Ext.NET 4 Preview! This release includes many new features and improvements and of course one of the biggest changes includes the upgrade to Sencha Ext JS 6.
-                        </div>
-                        <div class="notification-action">
-                            <a href="http://ext.net/ext-net-4-preview-now-available/" class="btn-notification">Read More</a>
-                        </div>
+            <div id="welcome-title">
+                Rapidly Build Your Vision with Ext.NET
+            </div>
+
+            <div class="ext4-notification">
+                <div class="notification-container">
+                    <div class="notification-img">
+                        <img src="../resources/images/extdotnet4-preview.svg">
+                    </div>
+                    <div class="notification-text">
+                        We’re super excited to announce the immediate availability of Ext.NET 4 Preview! This release includes many new features and improvements and of course one of the biggest changes includes the upgrade to Sencha Ext JS 6.
+                    </div>
+                    <div class="notification-action">
+                        <a href="http://ext.net/ext-net-4-preview-now-available/" class="btn-notification">Read More</a>
                     </div>
                 </div>
+            </div>
 
-                <h1>BUILD CROSS-BROWSER ENTERPRISE LEVEL APPS FASTER <span>WITH <span class="blue">100+ COMPONENTS AND 600+ EXAMPLES</span></span></h1>
-                <div class="welcome-cards">
+            <p class="welcome-text">
+                Ext.NET boosts your productivity! We offer 100+ components and 600+ examples.<br />
+                Browse the examples using the sidebar menu on the left, check their source code, open in a separate window if you like.<br />
+                If you have any questions feel free to <a href="http://ext.net/contact/">get in touch with us</a> or check our <a href="http://forums.ext.net/">community forums</a>.
+            </p>
+        </Content>
+    </ext:Container>
 
-                    <div class="welcome-card">
-                        <div class="welcome-card-icon">
-                            <img src="../resources/icons/docs.svg" />
-                        </div>
-                        <div class="welcome-card-title">Getting Started</div>
-                        <div class="welcome-card-body">
-                            <p>
-                                Learning Ext.NET is very easy. <a href="/#/Getting_Started/Introduction/Installation/">Watch these videos</a> 
-                                to learn how to install Ext.NET or start browsing the <a href="http://docs.ext.net/">Ext.NET API documentation</a>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="welcome-card">
-                        <div class="welcome-card-icon">
-                            <img src="../resources/icons/support.svg" />
-                        </div>
-                        <div class="welcome-card-title">Support</div>
-                        <div class="welcome-card-body">
-                            <p>
-                                We are proud to have a large <a href="http://forums.ext.net/">developer community</a> for exchanging information as well 
-                                as <a href="http://ext.net/store/#benefits">Premium Support</a> with a maximum 24h response time.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="welcome-card">
-                        <div class="welcome-card-icon">
-                            <img src="../resources/icons/download.svg" />
-                        </div>
-                        <div class="welcome-card-title">Download</div>
-                        <div class="welcome-card-body">
-                            <p>
-                                You can <a href="http://ext.net/download/">download</a> Ext.NET and start testing it locally right away. In order to deploy and use it 
-                                for commercial projects, you will need to <a href="http://ext.net/store/">get a license</a>. 
-                            </p>
-                        </div>
-                    </div>
-
+    <ext:Container runat="server">
+        <Content>
+            <div id="welcome-grid">
+                <div id="screens"></div>
+                <div class="popular-links">
+                    <a class="button" href="/#/Getting_Started/Introduction/Overview/">Getting Started</a>
+                    <a class="button" href="/#/Events/DirectEvents/Overview/">DirectEvents</a>
+                    <a class="button" href="/#/Events/DirectMethods/Overview/">DirectMethods</a>
+                    <a class="button" href="/#/GridPanel/ArrayGrid/ArrayWithPaging/">GridPanel</a>
+                    <a class="button" href="/#/Viewport/Basic/Built_in_Markup/">Viewport</a>
+                    <a class="button" href="/#/XRender/Basic/Add_Items/">XRender</a>
                 </div>
-
-                <h2>Popular Examples</h2>
-
-                <ul class="popular-links">
-                    <li><a href="/#/GridPanel/ArrayGrid/ArrayWithPaging/">GridPanel</a></li>
-                    <li><a href="/#/Events/DirectEvents/Overview/">DirectEvents</a></li>
-                    <li><a href="/#/Events/DirectMethods/Overview/">DirectMethods</a></li>
-                    <li><a href="/#/Viewport/Basic/Built_in_Markup/">Viewport</a></li>
-                    <li><a href="/#/XRender/Basic/Add_Items/">XRender</a></li>
-                    <li><a href="/#/Chart/Area/Basic/">Chart</a></li>
-                </ul>
-
             </div>
         </Content>
     </ext:Container>

@@ -51,7 +51,7 @@
         #customers-ct table { width : 100% !important; }
         
         #customers-ct th {
-            background  : #F0F4F5 url(/extjs/packages/theme_classic/build/resources/images/toolbar/toolbar-default-bg-gif/ext.axd) repeat-x scroll left top;            
+            background  : #F0F4F5 url(/extjs/packages/ext_theme_classic/build/resources/images/toolbar/toolbar-default-bg-gif/ext.axd) repeat-x scroll left top;            
             font-weight : bold;
             padding     : 8px 5px;
         }
@@ -81,7 +81,7 @@
         #customers-ct .letter-row div {
             border-bottom : 2px solid #99bbe8;
             cursor        : pointer;
-            background    : transparent url(/extjs/packages/theme_classic/build/resources/images/grid/group-expand-sprite-gif/ext.axd) no-repeat 0px -42px;
+            background    : transparent url(/extjs/packages/ext_theme_classic/build/resources/images/grid/group-expand-sprite-gif/ext.axd) no-repeat 0px -42px;
             margin-bottom : 5px;
         }
 

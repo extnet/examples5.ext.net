@@ -7,7 +7,7 @@
         {
             this.Store1.DataSource = this.TestData;
 
-            Theme theme = Ext.Net.Theme.Triton;
+            Theme theme = Ext.Net.Theme.Crisp;
 
             if (this.Session["Ext.Net.Theme"] != null)
             {
@@ -105,7 +105,6 @@
                         <ext:ListItem Text="Gray" Value="Gray" />
                         <ext:ListItem Text="Neptune" Value="Neptune" />
                         <ext:ListItem Text="Neptune Touch" Value="NeptuneTouch" />
-                        <ext:ListItem Text="Triton" Value="Triton" />
                     </Items>
                     <Listeners>
                         <Select Handler="window.location.search = '?theme=' + records[0].data[this.valueField];" />

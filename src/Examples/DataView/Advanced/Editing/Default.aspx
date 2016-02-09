@@ -55,7 +55,7 @@
                     </Model>
                     <Listeners>
                         <Update Fn="onListChange" />
-                        <DataChanged Fn="onListChange" Buffer="50" />
+                        <DataChanged Fn="onListChange" />
                     </Listeners>
                 </ext:Store>
             </Store>

@@ -78,8 +78,8 @@
             ID="Panel1" 
             runat="server" 
             Title="Basic StatusBar" 
-            Width="500" 
-            Height="200" 
+            Width="350" 
+            Height="150" 
             BodyPadding="10">
             <Items>
                 <ext:Button 
@@ -118,8 +118,8 @@
             ID="Panel2" 
             runat="server" 
             Title="Right-aligned StatusBar" 
-            Width="500" 
-            Height="200" 
+            Width="350" 
+            Height="150" 
             BodyPadding="10">
             <Items>
                 <ext:Button 
@@ -163,10 +163,10 @@
             Collapsible="false" 
             Icon="Application" 
             Title="StatusBar Window"
-            Width="600"
+            Width="510"
             MinWidth="350"
             Modal="true"
-            Height="200"
+            Height="150"
             BodyPadding="10"
             Hidden="true">
             <Items>

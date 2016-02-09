@@ -129,7 +129,7 @@
                             </HighlightConfig>
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
+                                <Renderer Handler="var title = item.series.getTitle(); this.setHtml(title + ' for ' + storeItem.get('Month') + ': ' + storeItem.get(item.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
 
@@ -146,7 +146,7 @@
                             </HighlightConfig>
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
+                                <Renderer Handler="var title = item.series.getTitle(); this.setHtml(title + ' for ' + storeItem.get('Month') + ': ' + storeItem.get(item.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
 
@@ -163,7 +163,7 @@
                             </HighlightConfig>
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
+                                <Renderer Handler="var title = item.series.getTitle(); this.setHtml(title + ' for ' + storeItem.get('Month') + ': ' + storeItem.get(item.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
 
@@ -180,7 +180,7 @@
                             </HighlightConfig>
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
-                                <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
+                                <Renderer Handler="var title = item.series.getTitle(); this.setHtml(title + ' for ' + storeItem.get('Month') + ': ' + storeItem.get(item.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
                     </Series>

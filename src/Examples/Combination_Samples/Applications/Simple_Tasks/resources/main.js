@@ -11,8 +11,11 @@ SimpleTasks.TasksTopBar = {
 SimpleTasks.TasksTree = {
     init : function (tree) {
         this.tree = tree;
-        
-        Ext.Function.defer(this.tree.getSelectionModel().select, 100, this.tree.getSelectionModel(), [this.tree.getRootNode()]);        
+    },
+
+    onLoad: function () {
+        this.tree.updateLayout(); // Workaround for #1252.4.1
+        this.tree.getSelectionModel().select(this.tree.getRootNode().childNodes[0]);
     },
     
     onContextMenu : function (view, record, item, index, e) {
@@ -242,7 +245,7 @@ SimpleTasks.TasksGrid = {
         }
     },
     
-    onFocusLeave : function () {
+    doBlur : function () {
         if (this.hEditing && !this.hFocused && !ntCategory.isExpanded) {
 			var title = ntTitle.getValue();
 			
@@ -310,9 +313,9 @@ SimpleTasks.TasksGrid = {
                 this.hFocused = true;
             }, 20, this);
         },
-        focusleave : function () {
+        blur : function () {
             this.hFocused = false;
-            Ext.Function.defer(this.onFocusLeave, 250, this);
+            Ext.Function.defer(this.doBlur, 250, this);
         },
         specialkey : function (f, e) {
             if (e.getKey()==e.ENTER) {

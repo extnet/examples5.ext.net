@@ -59,25 +59,25 @@
     </style>
 
     <script>
-        var tipsRenderer = function (toolTip, record, context) {
+        var tipsRenderer = function (storeItem, item) {
             var data = [{
                     name: 'Data1',
-                    data: record.get('Data1')
+                    data: storeItem.get('Data1')
                 }, {
                     name: 'Data2',
-                    data: record.get('Data2')
+                    data: storeItem.get('Data2')
                 }, {
                     name: 'Data3',
-                    data: record.get('Data3')
+                    data: storeItem.get('Data3')
                 }, {
                     name: 'Data4',
-                    data: record.get('Data4')
+                    data: storeItem.get('Data4')
                 }, {
                     name: 'Data5',
-                    data: record.get('Data5')
+                    data: storeItem.get('Data5')
                 }], i, l, html;
 
-            toolTip.setTitle("Information for " + record.get('Name'));
+            this.setTitle("Information for " + storeItem.get('Name'));
 
             App.PieStore1.loadData(data);
             App.Grid1.store.loadData(data);
@@ -163,7 +163,7 @@
                                                 </Store>
 
                                                 <Series>
-                                                    <ext:PieSeries AngleField="data" ShowInLegend="false">
+                                                    <ext:PieSeries XField="data" ShowInLegend="false">
                                                         <Label
                                                             Field="name"
                                                             Font="9px Arial"

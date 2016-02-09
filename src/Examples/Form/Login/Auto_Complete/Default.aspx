@@ -8,7 +8,11 @@
         {
             e.Success = false;
             e.ErrorMessage = "Invalid username or password.";
+            return;
         }
+
+        // Then user send to application
+        Response.Redirect("../../Desktop/Introduction/Overview/Desktop.aspx");
     }
 </script>
 
@@ -21,7 +25,7 @@
 
     <script>
         // Invalidate the login fields with the given reason.
-        var invalidateLogin = function(reason) {
+        var invalidateLogin = function (reason) {
             App.txtUsername.setValidation(reason);
             App.txtPassword.setValidation(reason);
             App.txtUsername.validate();
@@ -35,72 +39,10 @@
                 icon: 'Error'
             });
         };
-
-        var handleLogin = function() {
-            var form = App.Window1.el.up().dom; // Window1 is a direct child of the form element.
-
-            App.Window1.close();
-
-            // Now this would work for Chrome, and we already triggered autoComplete for IE.
-            // Chrome's is only triggered after the destination page is loaded.
-            setForm(form, "../../../Desktop/Introduction/Overview/Desktop.aspx", form.target);
-            form.submit();
-            restoreForm(form);
-        };
-
-        var orgFormAction, orgFormTarget,
-            btn = null, iframe = null;
-
-        // If we are on IE, we will create a button and click it (at once),
-        // so autoComplete is triggered.
-        var handleClientClick = function() {
-            var form = App.Window1.el.up().dom; // Window1 is a direct child of the form element.
-
-            if (Ext.isIE) {
-                if (iframe == null) {
-                    iframe = document.createElement("IFRAME");
-                    iframe.name = "ie_login_flush";
-                    iframe.style.display = "none";
-                    form.appendChild(iframe);
-                }
-
-                if (btn == null) {
-                    btn = document.createElement("BUTTON");
-                    btn.type = "submit";
-                    btn.id = "submitButton";
-                    btn.style.display="none";
-                    form.appendChild(btn);
-                }
-
-                // On WebForms, we have to force set the form settings as we run or else we'll
-                // break directEvent calls.
-                setForm(form, "about:blank", "ie_login_flush");
-                btn.click();
-                restoreForm(form);
-            }
-        }
-
-        var setForm = function(form, action, target) {
-            // Back up original settings once per execution.
-            if (typeof orgFormAction == 'undefined') {
-                orgFormAction = form.action;
-            }
-            if (typeof orgFormTarget == 'undefined') {
-                orgFormTarget = form.target;
-            }
-
-            form.action = action;
-            form.target = target;
-        };
-
-        var restoreForm = function(form) {
-            form.action = orgFormAction;
-            form.target = orgFormTarget;
-        };
     </script>
 </head>
 <body>
-    <form runat="server">
+    <form runat="server" target="submitTarget" method="post">
         <ext:ResourceManager runat="server" />
 
         <h1>Logging with browser saving functionality</h1>
@@ -119,7 +61,7 @@
             runat="server"
             Closable="false"
             Resizable="false"
-            Height="200"
+            Height="150"
             Icon="Lock"
             Title="Login"
             Draggable="true"
@@ -134,7 +76,15 @@
                     Name="username"
                     FieldLabel="Username"
                     AllowBlank="false"
-                    BlankText="Your username is required." />
+                    BlankText="Your username is required.">
+                    <CustomConfig>
+                        <ext:ConfigItem
+                            Name="inputAttrTpl"
+                            Value="['autocomplete=&quot;on&quot;']"
+                            Mode="Raw" />
+                    </CustomConfig>
+                </ext:TextField>
+
                 <ext:TextField
                     ID="txtPassword"
                     runat="server"
@@ -142,7 +92,16 @@
                     InputType="Password"
                     FieldLabel="Password"
                     AllowBlank="false"
-                    BlankText="Your password is required." />
+                    BlankText="Your password is required.">
+                    <CustomConfig>
+                        <ext:ConfigItem
+                            Name="inputAttrTpl"
+                            Value="['autocomplete=&quot;on&quot;']"
+                            Mode="Raw" />
+                    </CustomConfig>
+                </ext:TextField>
+                <ext:Component runat="server" Html="<iframe id='submitTarget' name='submitTarget' style='display:none'></iframe>" />
+                <ext:Component runat="server" Html="<input type='submit' id='submitButton' style='display:none' />" />
             </Items>
             <Buttons>
                 <ext:Button
@@ -151,11 +110,11 @@
                     Text="Login"
                     Icon="Accept"
                     FormBind="true"
-                    Handler="handleClientClick">
+                    Handler="Ext.getElementById('submitButton').click();">
                     <DirectEvents>
                         <Click
                             OnEvent="Button1_Click"
-                            Success="handleLogin"
+                            Success="App.Window1.close();"
                             Failure="invalidateLogin(result.errorMessage);"
                             ShowWarningOnFailure="false">
                             <EventMask ShowMask="true" Msg="Verifying..." MinDelay="1000" />

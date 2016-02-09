@@ -293,8 +293,8 @@
                             </Axes>
                             <Series>
                                 <ext:RadarSeries 
-                                    AngleField="Name" 
-                                    RadiusField="Data" 
+                                    XField="Name" 
+                                    YField="Data" 
                                     ShowMarkers="true">
                                     <Marker>
                                         <ext:CircleSprite Radius="4" FillStyle="rgb(69,109,159)" />

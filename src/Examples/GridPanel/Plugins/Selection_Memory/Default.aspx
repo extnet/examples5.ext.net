@@ -98,7 +98,7 @@
         <ext:ResourceManager runat="server" />
         
         <h1>Selection Memory</h1>
-        <p>This example shows how to keep selected rows when navigating through different grid pages.</p>
+        <p>This example shows how to maintance selection between paging</p>
         
         <ext:Store ID="Store1" runat="server" PageSize="10">
             <Model>

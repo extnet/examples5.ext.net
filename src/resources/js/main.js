@@ -1,4 +1,4 @@
-Ext.grid.NavigationModel.override({
+﻿Ext.grid.NavigationModel.override({
     onKeyUp: function (keyEvent) {
         var newRecord = keyEvent.view.walkRecs(keyEvent.record, -1);
 
@@ -12,13 +12,14 @@ Ext.grid.NavigationModel.override({
 });
 
 Ext.onReady(function () {
-    var sidebarRight = document.getElementById('rightnav-body');
-    Ps.initialize(sidebarRight);
+    var navButtonMenu = Ext.get("nav-menu", true);
 
-    Ext.get("menu-button", true).on({
+    navButtonMenu.on({
         click: function () {
-            App.rightnav[App.rightnav.isHidden() ? "show" : "hide"]();
-            Ps.update(sidebarRight);
+            navButtonMenu.toggleCls("active");
+        },
+        mouseleave: function () {
+            navButtonMenu.removeCls("active");
         }
     });
 });
@@ -81,7 +82,7 @@ var makeTab = function (id, url, title) {
         id: "w" + id,
         layout: "fit",
         title: "Source Code",
-        iconCls: "fa fa-code",
+        iconCls: "#PageWhiteCode",
         width: 925,
         height: 650,
         border: false,
@@ -124,7 +125,7 @@ var makeTab = function (id, url, title) {
             {
                 id: "b" + id,
                 text: "Download",
-                iconCls: "fa fa-download",
+                iconCls: "#Compress",
                 listeners: {
                     click: {
                         fn: function (el, e) {
@@ -143,7 +144,7 @@ var makeTab = function (id, url, title) {
         id: id,
         tbar: [{
             text: "Source Code",
-            iconCls: "fa fa-code",
+            iconCls: "#PageWhiteCode",
             listeners: {
                 "click": function () {
                     Ext.getCmp("w" + id).show(null);
@@ -179,15 +180,15 @@ var makeTab = function (id, url, title) {
         "->",
 	    {
 	        text: "Direct Link",
-	        iconCls: "fa fa-link",
+	        iconCls: "#Link",
 	        handler: function () {
 	            new Ext.Window({
 	                modal: true,
-	                iconCls: "fa fa-link",
+	                iconCls: "#Link",
 	                layout: "absolute",
 	                defaultButton: "dl" + id,
 	                width: 400,
-	                height: 140,
+	                height: 110,
 	                title: "Direct Link",
 	                closable: false,
 	                resizable: false,
@@ -205,7 +206,7 @@ var makeTab = function (id, url, title) {
 	                buttons: [{
 	                    xtype: "button",
 	                    text: " Open",
-	                    iconCls: "fa fa-external-link",
+	                    iconCls: "#ApplicationDouble",
 	                    tooltip: "Open Example in the separate window",
 	                    handler: function () {
 	                        window.open(hostName + "/#" + exampleName);
@@ -214,7 +215,7 @@ var makeTab = function (id, url, title) {
                     {
                         xtype: "button",
                         text: " Open (Direct)",
-                        iconCls: "fa fa-external-link-square",
+                        iconCls: "#ApplicationGo",
                         tooltip: "Open Example in the separate window using a direct link",
                         handler: function () {
                             window.open(hostName + "/Examples" + url, "_blank");
@@ -236,7 +237,7 @@ var makeTab = function (id, url, title) {
             handler: function () {
                 Ext.getCmp(id).reload(true)
             },
-            iconCls: "fa fa-refresh"
+            iconCls: "#ArrowRefresh"
         }],
         title: title,
         tabTip: tabTip,
@@ -339,7 +340,7 @@ var onTreeItemClick = function (record, e) {
 
 var treeRenderer = function (value, metadata, record) {
     if (record.data.isNew) {
-        value += "<span>New</span>";
+        value += "<span>&nbsp;</span>";
     }
 
     return value;
@@ -348,16 +349,6 @@ var treeRenderer = function (value, metadata, record) {
 var loadExample = function (href, id, title) {
     var tab = App.ExampleTabs.getComponent(id),
         lObj = lookup[href];
-
-    var slashFields = href.split("/");
-    if (slashFields.length > 4) {
-        href = "";
-        for (var i in [0, 1, 2, 3]) {
-            href = href + slashFields[i] + "/"
-        }
-    } else if (href[href.length - 1] != "/") {
-        href = href + "/";
-    }
 
     if (id == "-") {
         App.direct.GetHashCode(href, {
@@ -441,7 +432,7 @@ var keyUp = function (field, e) {
         return;
     }
 
-    if (e.getKey() === Ext.event.Event.ESC) {
+    if (e.getKey() === Ext.EventObject.ESC) {
         clearFilter(field);
     } else {
         changeFilterHash(field.getRawValue().replace(" ", "+"));
@@ -630,7 +621,7 @@ var swapThemeClass = function (frame, oldTheme, newTheme) {
 var themeChange = function (menu, menuItem) {
     App.direct.SetTheme(menuItem.text, {
         success: function (result) {
-            App.ExampleTabs.items.each(function(tab) {
+            App.ExampleTabs.items.each(function (tab) {
                 if (tab.id !== "tabHome") {
                     tab.getBody().location.reload();
                 }

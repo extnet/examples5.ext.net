@@ -86,8 +86,8 @@
             Collapsible="true"
             AnimCollapse="true" 
             Icon="Table" 
-            Width="600"
-            MaxHeight="800">
+            Width="600" 
+            Height="350">
             <Store>
                 <ext:Store 
                     ID="Store1" 
@@ -137,6 +137,7 @@
                         <ext:FormPanel                             
                             runat="server" 
                             BodyPadding="6" 
+                            Height="180"
                             Border="false"     
                             DefaultAnchor="-5"                            
                             Cls="white-footer">                            

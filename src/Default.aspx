@@ -11,7 +11,7 @@
         {
             this.ResourceManager1.DirectEventUrl = this.Request.Url.AbsoluteUri;
 
-            Theme theme = Ext.Net.Theme.Triton;
+            Theme theme = Ext.Net.Theme.Crisp;
 
             if (this.Session["Ext.Net.Theme"] != null)
             {
@@ -92,7 +92,6 @@
     <link rel="stylesheet" href="resources/css/main.css" />
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <script src="resources/js/perfect-scrollbar.min.js"></script>
     <script src="resources/js/main.js"></script>
 
     <script>
@@ -107,7 +106,7 @@
     </script>
 </head>
 <body>
-    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Triton" />
+    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Crisp" />
 
     <ext:History runat="server">
         <Listeners>
@@ -122,91 +121,53 @@
                 Header="false"
                 Region="North"
                 Border="false"
-                Height="70">
+                Height="90">
                 <Content>
                     <header class="site-header" role="banner">
                         <nav class="top-navigation">
                             <div class="logo-container">
-                                <img src="resources/images/extdotnet-logo.svg" />
+                                <img src="resources/images/ext.net-logo.png" />
                             </div>
                             <div class="navigation-bar">
-                                <div class="platform-selector-container">
-                                    <ext:Button 
-                                        Cls="platform-selector" 
-                                        runat="server" 
-                                        Width="450px" 
-                                        Text="Web Forms Examples Explorer (4.0 Preview)"
-                                        Height="70px"
-                                        ArrowVisible="false">
-                                        <Menu >
-                                            <ext:Menu Cls ="platform-selector-dropdown" Plain="true" runat="server">
-                                                <Items>
-                                                    <ext:MenuItem
-                                                        runat="server"
-                                                        Text="MVC Examples Explorer (4.0 Preview)"
-                                                        Href="http://mvc.ext.net/"
-                                                        Height="70px"
-                                                        Width="448px"
-                                                        Padding="12"/>
-                                                </Items>
-                                            </ext:Menu>
-                                        </Menu>
-                                    </ext:Button>
-                                </div>
-                                <input type="checkbox" id="menu-button-checkbox"/>
-                                <label id="menu-button" for="menu-button-checkbox">
-                                    <span></span>
-                                </label>
+                                <h1 class="nav-title">
+                                    Examples Explorer
+                                    <span>(3.2.1)</span>
+                                </h1>
+                                <ul id="nav-menu" class="nav-menu">
+                                    <li>
+                                        <div class="menu-button"><span class="f-icon-reorder"></span></div>
+                                        <ul>
+                                            <li><a href="http://mvc.ext.net/">MVC Examples (3.2)</a></li>
+                                            <li class="separator"></li>
+                                            <li><a href="http://examples2.ext.net/">Web Forms Examples (2.5)</a></li>
+                                            <li><a href="http://mvc2.ext.net/">MVC Examples (2.5)</a></li>
+                                            <li><a href="http://examples1.ext.net/">Web Forms Examples (1.7)</a></li>
+                                            <li class="separator"></li>
+                                            <li><a href="http://docs.sencha.com/extjs/5.1">EXT JS Documentation</a></li>
+                                            <li><a href="http://docs.ext.net/">Ext.NET Documentation</a></li>
+                                            <li class="separator"></li>
+                                            <li><a href="http://forums.ext.net/">Community Forums</a></li>
+                                            <li><a href="http://ext.net/faq/">FAQ</a></li>
+                                            <li><a href="http://ext.net/contact/">Contact</a></li>
+                                            <li><a href="http://ext.net/">Ext.NET Home</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </nav>
                     </header>
                 </Content>
             </ext:Panel>
             <ext:Panel
-                ID="rightnav"
-                runat="server"
-                Region="East"
-                Width="270"
-                Header="false"
-                MarginSpec="0"
-                Hidden="true"
-                Border="false"
-                BodyCls="right-nav-menu">
-                <Content>
-                    <ul id="nav-menu" class="nav-menu">
-                        <li class="section-title">Ext.NET 4</li>
-                        <li><a href="http://examples.ext.net/">Web Forms Examples (4.0 Preview)</a></li>
-                        <li><a href="http://mvc.ext.net/">MVC Examples (4.0 Preview)</a></li>
-                        <li class="separator"></li>
-                        <li class="section-title">Ext.NET 3</li>
-                        <li><a href="http://examples3.ext.net/">Web Forms Examples (3.3)</a></li>
-                        <li><a href="http://mvc3.ext.net/">MVC Examples (3.3)</a></li>
-                        <li class="separator"></li>
-                        <li class="section-title">Ext.NET 2</li>
-                        <li><a href="http://examples2.ext.net/">Web Forms Examples (2.5)</a></li>
-                        <li><a href="http://mvc2.ext.net/">MVC Examples (2.5)</a></li>
-                        <li class="separator"></li>
-                        <li class="section-title">Ext.NET 1</li>
-                        <li><a href="http://examples1.ext.net/">Web Forms Examples (1.7)</a></li>
-                        <li class="separator"></li>
-                        <li><a href="http://docs.sencha.com/extjs/6.0/6.0.0-classic/">EXT JS Documentation</a></li>
-                        <li><a href="http://docs.ext.net/">Ext.NET Documentation</a></li>
-                        <li class="separator"></li>
-                        <li><a href="http://forums.ext.net/">Community Forums</a></li>
-                        <li><a href="http://ext.net/faq/">FAQ</a></li>
-                        <li><a href="http://ext.net/contact/">Contact</a></li>
-                        <li><a href="http://ext.net/">Ext.NET Home</a></li>
-                    </ul>
-                    <a href="http://ext.net/store/" class="button button-success button-block button-sidebar-right">Get Ext.NET</a>
-                </Content>
-            </ext:Panel>
-            <ext:Panel
                 runat="server"
                 Region="West"
                 Layout="Fit"
-                Width="270"
+                Width="240"
                 Header="false"
-                MarginSpec="0"
+                Collapsible="true"
+                Split="true"
+                CollapseMode="Mini"
+                MarginSpec="0 0 4 4"
                 Border="false">
                 <Items>
                     <ext:TreePanel
@@ -221,7 +182,7 @@
                         Animate="false"
                         HideHeaders="true">
                         <TopBar>
-                            <ext:Toolbar runat="server" Cls="left-header">
+                            <ext:Toolbar runat="server">
                                 <Items>
                                     <ext:TextField
                                         ID="TriggerField1"
@@ -240,9 +201,9 @@
                                         </Listeners>
                                     </ext:TextField>
 
-                                    <ext:Button runat="server" id="OptionsButton" IconCls="fa fa-cog" ToolTip="Options" ArrowVisible="false">
+                                    <ext:Button runat="server" Icon="Cog" ToolTip="Options">
                                         <Menu>
-                                            <ext:Menu runat="server" MinWidth="200">
+                                            <ext:Menu runat="server">
                                                 <Items>
                                                     <ext:MenuItem runat="server" Text="Expand All" IconCls="icon-expand-all">
                                                         <Listeners>
@@ -277,7 +238,7 @@
 
                                                     <ext:MenuItem runat="server" Text="Theme" Icon="Paintcan">
                                                         <Menu>
-                                                            <ext:Menu runat="server" MinWidth="200">
+                                                            <ext:Menu runat="server">
                                                                 <Items>
                                                                     <ext:CheckMenuItem ID="AriaThemeItem" runat="server" Text="Aria" Group="theme" />
                                                                     <ext:CheckMenuItem ID="DefaultThemeItem" runat="server" Text="Blue" Group="theme" />
@@ -286,7 +247,6 @@
                                                                     <ext:CheckMenuItem ID="CrispTouchThemeItem" runat="server" Text="Crisp Touch" Group="theme" />
                                                                     <ext:CheckMenuItem ID="NeptuneThemeItem" runat="server" Text="Neptune" Group="theme" />
                                                                     <ext:CheckMenuItem ID="NeptuneTouchThemeItem" runat="server" Text="Neptune Touch" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="TritonThemeItem" runat="server" Text="Triton" Group="theme" />
                                                                 </Items>
                                                                 <Listeners>
                                                                     <Click Fn="themeChange" />
@@ -299,7 +259,7 @@
 
                                                     <ext:MenuItem runat="server" Text="Search by" Icon="Find">
                                                         <Menu>
-                                                            <ext:Menu runat="server" MinWidth="200">
+                                                            <ext:Menu runat="server">
                                                                 <Items>
                                                                     <ext:CheckMenuItem
                                                                         ID="SearchByTitles"
@@ -317,11 +277,11 @@
                                                         </Menu>
                                                     </ext:MenuItem>
 
-                                                    <%--<ext:MenuItem runat="server" Text="Tag Cloud" Icon="WeatherClouds">
+                                                    <ext:MenuItem runat="server" Text="Tag Cloud" Icon="WeatherClouds">
                                                         <Listeners>
                                                             <Click Fn="showTagCloud" />
                                                         </Listeners>
-                                                    </ext:MenuItem>--%>
+                                                    </ext:MenuItem>
                                                 </Items>
                                             </ext:Menu>
                                         </Menu>
@@ -364,7 +324,7 @@
                 ID="ExampleTabs"
                 runat="server"
                 Region="Center"
-                MarginSpec="0"
+                MarginSpec="0 4 4 0"
                 Cls="tabs"
                 MinTabWidth="115">
                 <Items>
@@ -373,7 +333,7 @@
                         runat="server"
                         Title="Home"
                         HideMode="Offsets"
-                        IconCls="fa fa-home">
+                        Icon="Application">
                         <Loader runat="server" Mode="Frame" Url="Home/">
                             <LoadMask ShowMask="true" />
                         </Loader>
@@ -388,5 +348,62 @@
             </ext:TabPanel>
         </Items>
     </ext:Viewport>
+
+    <ext:Window
+        ID="LinkWindow"
+        runat="server"
+        Modal="true"
+        Hidden="true"
+        Icon="Link"
+        Layout="absolute"
+        Width="400"
+        Height="110"
+        Title="Direct Link"
+        Closable="false"
+        Resizable="false">
+        <Items>
+            <ext:TextField
+                ID="exampleLink"
+                runat="server"
+                Width="364"
+                Cls="dlText"
+                X="10"
+                Y="10"
+                SelectOnFocus="true"
+                ReadOnly="true" />
+        </Items>
+        <Listeners>
+            <Show Handler="exampleLink.setValue(this.exampleName);" />
+        </Listeners>
+        <Buttons>
+            <ext:Button
+                runat="server"
+                Text=" Open"
+                Icon="ApplicationDouble">
+                <Listeners>
+                    <Click Handler="window.open(LinkWindow.exampleName);" />
+                </Listeners>
+                <ToolTips>
+                    <ext:ToolTip runat="server" Title="Open Example in the separate window" />
+                </ToolTips>
+            </ext:Button>
+            <ext:Button
+                runat="server"
+                Text=" Open (Direct)"
+                Icon="ApplicationGo">
+                <Listeners>
+                    <Click Handler="window.open(LinkWindow.exampleUrl, '_blank');" />
+                </Listeners>
+                <ToolTips>
+                    <ext:ToolTip runat="server" Title="Open Example in the separate window using a direct link" />
+                </ToolTips>
+            </ext:Button>
+            <ext:Button runat="server" Text="Close">
+                <Listeners>
+                    <Click Handler="this.findParentByType('window').hide(null);" />
+                </Listeners>
+            </ext:Button>
+        </Buttons>
+    </ext:Window>
 </body>
 </html>

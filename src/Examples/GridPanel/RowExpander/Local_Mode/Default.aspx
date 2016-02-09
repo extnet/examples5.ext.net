@@ -40,7 +40,7 @@
 
         this.Store1.DataBind();
 
-        const string desc = "var desc_data = \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales a, porta at, " +
+        const string desc = "this.desc_data = \"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales a, porta at, " +
                             "vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis, interdum non, sodales non, " +
                             "iaculis ac, lacus. Vestibulum auctor, tortor quis iaculis malesuada, libero lectus bibendum purus, " +
                             "sit amet tincidunt quam turpis vel lacus. In pellentesque nisl non sem. Suspendisse nunc sem, " +
@@ -49,19 +49,8 @@
                             "nonummy non, nisi. Morbi nunc est, dignissim non, ornare sed, luctus eu, massa. Vivamus eget quam. " +
                             "Vivamus tincidunt diam nec urna. Curabitur velit.\";";
 
-        string push = string.Format(@"
-for (var i in {0}.proxy.data) {{
-    {0}.proxy.data[i].push(desc_data);
-}};
-{0}.setData({0}.proxy.data);
-", this.Store1.ClientID);
-
-        // "minify" code if resource manager's SourceFormatting is not set.
-        if (!this.ResourceManager1.SourceFormatting)
-        {
-            push = Regex.Replace(push, "(\n|\r)", "");
-            push = Regex.Replace(push, "(  *)", " ");
-        }
+        string dataID = string.Concat(this.Store1.ClientID, ".proxy.data");
+        string push = string.Format(@"for (var i = 0; i < {0}.length; i++) {{{0}[i].push(desc_data);}}", dataID);
 
         this.ResourceManager1.RegisterClientScriptBlock("desc_data", desc);
         this.ResourceManager1.RegisterOnReadyScript(push);

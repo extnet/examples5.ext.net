@@ -31,7 +31,8 @@
         
         <h2>4. FormPanel with notes</h2>      
         
-        <ext:FormPanel runat="server" BodyPadding="5" Width="270" Height="180">
+        <ext:FormPanel runat="server" BodyPadding="5" Width="280" Height="180">
+            <FieldDefaults LabelWidth="50" />
             <Items>
                 <ext:TextField runat="server" FieldLabel="Field1" Note="Description" />
                 <ext:TextField runat="server" FieldLabel="Field2" Note="Description" />

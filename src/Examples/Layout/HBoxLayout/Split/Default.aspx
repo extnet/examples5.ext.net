@@ -13,8 +13,8 @@
     <ext:Window 
         runat="server" 
         Width="600" 
-        Height="200" 
-        Title="HBox Window With Splitters">
+        Height="150" 
+        Title="HBox window with splitters">
         <LayoutConfig>
             <ext:HBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>

@@ -15,7 +15,7 @@
 
         if (cmp == null)    
         {
-            this.Spot.Hide();
+            Spot.Hide();
 
             this.UpdateButtons(null);
         }
@@ -23,7 +23,7 @@
         {
             Ext.Net.Panel panel = (Ext.Net.Panel)Ext.Net.Utilities.ControlUtils.FindControl(this, cmp);
                 
-            this.Spot.Show(panel);
+            Spot.Show(panel);
 
             this.UpdateButtons(panel);
         }
@@ -31,9 +31,9 @@
         
     private void UpdateButtons(Ext.Net.Panel panel)
     {
-        this.Button1.Disabled = panel != null ? panel.ID != "Panel1" : true;
-        this.Button2.Disabled = panel != null ? panel.ID != "Panel2" : true;
-        this.Button3.Disabled = panel != null ? panel.ID != "Panel3" : true;
+        Button1.Disabled = panel != null ? panel.ID != "Panel1" : true;
+        Button2.Disabled = panel != null ? panel.ID != "Panel2" : true;
+        Button3.Disabled = panel != null ? panel.ID != "Panel3" : true;
     }
 </script>
 
@@ -69,13 +69,11 @@
                 <ext:TableLayoutConfig Columns="3" />
             </LayoutConfig>
             <Items>
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
+                <ext:Panel ID="Panel1" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -90,13 +88,11 @@
                         </ext:Button>
                     </Buttons>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="Panel2" 
-                    runat="server" 
+                <ext:Panel ID="Panel2" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -112,13 +108,11 @@
                     </Buttons>
                 </ext:Panel>
                         
-                <ext:Panel 
-                    ID="Panel3" 
-                    runat="server" 
+                <ext:Panel ID="Panel3" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>

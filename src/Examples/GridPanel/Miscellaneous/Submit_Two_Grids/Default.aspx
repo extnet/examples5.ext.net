@@ -3,6 +3,8 @@
 <%@ Import Namespace="System.Collections.Generic" %>
 <%@ Import Namespace="System.Xml" %>
 
+<!DOCTYPE html>
+
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -46,8 +48,6 @@
     }
 </script>
 
-<!DOCTYPE html>
-
 <html>
 <head runat="server">
     <title>Ext.NET Examples</title>
@@ -57,7 +57,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>Submit Two GridPanels In One Request</h1>
+        <h1>Submit two grids in one request</h1>
         
         <ext:Store ID="Store1" runat="server">
             <Model>
@@ -89,7 +89,7 @@
             StoreID="Store1" 
             Title="Grid" 
             Width="600" 
-            Height="250">
+            Height="150">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
@@ -105,7 +105,7 @@
             StoreID="Store2" 
             Title="Grid" 
             Width="600" 
-            Height="250">
+            Height="150">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
@@ -115,7 +115,7 @@
             </ColumnModel>
         </ext:GridPanel>  
         
-        <ext:Button ID="Button1" runat="server" Text="Submit Two GridPanels">
+        <ext:Button ID="Button1" runat="server" Text="Submit two grids">
             <DirectEvents>
                 <Click OnEvent="SubmitGrids">
                     <ExtraParams>

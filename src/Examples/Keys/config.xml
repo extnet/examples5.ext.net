@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<example iconCls="fa fa-keyboard-o">
+<example iconCls="#Keyboard">
 	<order>
 		<!--<folder name="WebService_Connections" />-->		
 	</order>	

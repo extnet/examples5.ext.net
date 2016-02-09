@@ -58,13 +58,11 @@
                 <ext:TableLayoutConfig Columns="3" />
             </LayoutConfig>
             <Items>
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
+                <ext:Panel ID="Panel1" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -75,13 +73,11 @@
                         </ext:Button>
                     </Buttons>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="Panel2" 
-                    runat="server" 
+                <ext:Panel ID="Panel2" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -92,13 +88,11 @@
                         </ext:Button>
                     </Buttons>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="Panel3" 
-                    runat="server" 
+                <ext:Panel ID="Panel3" runat="server" 
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="150"
                     Html="Some panel content goes here!" 
                     PaddingSummary="10px 15px">
                     <Buttons>
