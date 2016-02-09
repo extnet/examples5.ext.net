@@ -86,8 +86,7 @@
             Collapsible="true"
             AnimCollapse="true" 
             Icon="Table" 
-            Width="600"
-            MaxHeight="800">
+            Width="800">
             <Store>
                 <ext:Store 
                     ID="Store1" 
@@ -128,7 +127,8 @@
                         runat="server" 
                         Text="Last Updated" 
                         DataIndex="lastChange" 
-                        Format="yyyy/MM/dd" />
+                        Format="yyyy/MM/dd"
+                        Width="105" />
                 </Columns>
             </ColumnModel>
             <Plugins>

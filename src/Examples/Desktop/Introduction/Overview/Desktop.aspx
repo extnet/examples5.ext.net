@@ -192,10 +192,10 @@
                    <ext:DisplayField runat="server" Text="You can place controls to desktop" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;"/> 
                    <ext:DisplayField runat="server" Text="Move mouse to the right edge -->" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;right:50px;top:50px;"/> 
 
-                   <ext:Toolbar runat="server" Width="520" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
+                   <ext:Toolbar runat="server" Width="545" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
                         <Defaults>
                             <ext:Parameter Name="IconAlign" Value="top" />                            
-                            <ext:Parameter Name="Width" Value="100" />
+                            <ext:Parameter Name="Width" Value="105" />
                             <ext:Parameter Name="Icon" Value="resources/cmd.png" />
                             <ext:Parameter Name="Scale" Value="large" />
                             <ext:Parameter Name="Handler" Value="function () {Ext.Msg.alert('Launch', this.text);}" Mode="Raw" />
@@ -233,7 +233,7 @@
 
             <TaskBar TrayWidth="120">
                 <QuickStart>
-                    <ext:Toolbar runat="server" Width="70">
+                    <ext:Toolbar runat="server" Width="80">
                         <Items>
                             <ext:Button runat="server" Handler="tile" Icon="ApplicationTileVertical" OverflowText="Tile windows">
                                 <QTipCfg Text="Tile windows" />
