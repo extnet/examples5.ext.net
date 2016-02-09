@@ -122,9 +122,8 @@
             StoreID="Store1"
             Title="Company List" 
             Collapsible="true"
-            Width="600"
-            EnableColumnMove="true"
-            Height="350">
+            Width="700"
+            EnableColumnMove="true">
             <ColumnModel runat="server">
 		        <Columns>
                     <ext:Column runat="server" Text="Company" Width="160" DataIndex="Name" Flex="1" />
@@ -143,7 +142,7 @@
                 </ext:CellSelectionModel>
             </SelectionModel>           
             <BottomBar>
-                <ext:PagingToolbar runat="server" Weight="10" />
+                <ext:PagingToolbar runat="server" Weight="10" HideRefresh="true" />
             </BottomBar>
             <Buttons>
                 <ext:Button ID="Button2" runat="server" Text="Clear">
@@ -160,7 +159,7 @@
             </Buttons>      
         </ext:GridPanel>
        
-        <div style="width:590px; border:1px solid gray; padding:5px;">
+        <div style="width:688px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>        
     </form>

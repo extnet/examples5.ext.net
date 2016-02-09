@@ -84,7 +84,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>Drag and Drop betweens two TreePanels</h1>
+        <h1>Drag and Drop between two TreePanels</h1>
         
         <p>The TreePanels have a TreeSorter applied in "folderSort" mode.</p>
         

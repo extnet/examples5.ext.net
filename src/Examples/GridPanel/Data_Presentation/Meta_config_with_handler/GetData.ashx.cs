@@ -15,6 +15,7 @@ namespace Ext.Net.Examples.Examples.GridPanel.Data_Presentation.Meta_config_with
         {
             context.Response.ContentType = "text/javascript";
             string meta = context.Request["meta"] ?? "1";
+            int secondColumnWidth = 100;
 
             object data;
             if (meta == "1")
@@ -36,9 +37,12 @@ namespace Ext.Net.Examples.Examples.GridPanel.Data_Presentation.Meta_config_with
                     new { ID = 4,  DateField = DateTime.Now, NumberField = 472.96},
                     new { ID = 5,  DateField = DateTime.Now, NumberField = 472.96}
                 };
+
+                secondColumnWidth = 350;
             }
 
             MetaConfig metaData = MetaConfig.From(data);
+            metaData.Columns[1].Width = secondColumnWidth;
             metaData.IDProperty = "ID";
             metaData.RootProperty = "data";
 

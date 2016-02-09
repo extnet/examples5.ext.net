@@ -33,8 +33,7 @@
         <ext:GridPanel 
             runat="server" 
             Title="Multiple Editors" 
-            Width="400" 
-            Height="180">
+            Width="400">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

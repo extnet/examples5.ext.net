@@ -539,8 +539,8 @@
     <Content Include="Examples\Form\Miscellaneous\MultiSelector\Default.aspx" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\config.xml" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\Default.aspx" />
-    <Content Include="Examples\Form\Tag\TagColumn\config.xml" />
-    <Content Include="Examples\Form\Tag\TagColumn\Default.aspx" />
+    <Content Include="Examples\GridPanel\ColumnModel\TagColumn\config.xml" />
+    <Content Include="Examples\GridPanel\ColumnModel\TagColumn\Default.aspx" />
     <Content Include="Examples\Form\Tag\TagField\config.xml" />
     <Content Include="Examples\Form\Tag\TagField\Default.aspx" />
     <Content Include="Examples\Form\Tag\TagLabel\config.xml" />

@@ -26,7 +26,7 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
-        var getFilters = function() {
+        var getFilters = function () {
             var out = [],
                 filters = this.up('grid').store.getFilters().items,
                 length = filters.length,
@@ -49,7 +49,7 @@
     
     <ext:Window 
         runat="server"         
-        Width="700" 
+        Width="950" 
         Height="400" 
         Closable="false"
         Collapsible="true"
@@ -84,7 +84,7 @@
                                 <ext:NumberFilter />
                             </Filter>
                         </ext:Column>
-                        <ext:Column ID="CompanyColumn" runat="server" Text="Company" DataIndex="Company">
+                        <ext:Column ID="CompanyColumn" runat="server" Text="Company" DataIndex="Company" Flex="1">
                             <Filter>
                                 <ext:StringFilter />
                             </Filter>

@@ -16,6 +16,14 @@
             bar.setWidth(win.body.getWidth() - 2);
             bar.el.alignTo(sensorEl, "t-t", [0, 44]);
         };
+
+        var onAfterRender = function () {
+            this.getEl().on("mousedown", function () {
+                if (App.Toolbar1.isVisible()) {
+                    App.Toolbar1.toFront();
+                }
+            });
+        };
     </script>
 </head>
 <body>
@@ -49,6 +57,7 @@
         </Plugins>
         <Listeners>
             <Drag Handler="App.Toolbar1.hide();" />
+            <AfterRender Fn="onAfterRender" />
         </Listeners>
     </ext:Window>
     

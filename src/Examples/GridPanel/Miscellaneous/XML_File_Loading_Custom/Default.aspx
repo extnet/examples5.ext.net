@@ -52,8 +52,8 @@
         runat="server"
         Title="Categories"
         Frame="true" 
-        Height="300" 
-        Width="300">
+        Height="400" 
+        Width="400">
         <Store>
             <ext:Store runat="server">
                 <Proxy>
@@ -97,7 +97,7 @@
         <Plugins>
             <ext:RowExpander runat="server">
                 <Component>
-                    <ext:GridPanel runat="server" Height="150" Title="Links">
+                    <ext:GridPanel runat="server" Height="175" Title="Links">
                         <Store>
                             <ext:Store ID="StoreLinks" runat="server">
                                 <Model>

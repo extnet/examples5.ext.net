@@ -199,7 +199,8 @@
                     FieldLabel="Terms of Use"
                     HideLabel="true"
                     StyleSpec="margin-top:15px;"
-                    BoxLabel="I have read and accept the <a href='#' class='terms'>Terms of Use</a>.">
+                    BoxLabel="I have read and accept the <a href='#' class='terms'>Terms of Use</a>."
+                    InputValue="true">
                     <Listeners>
                         <AfterRender Handler="this.boxLabelEl.on('click', boxLabelClick);" />
                     </Listeners>

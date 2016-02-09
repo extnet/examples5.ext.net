@@ -61,8 +61,7 @@
         <ext:GridPanel 
             runat="server" 
             ID="GridPanel1" 
-            Title="Employees" 
-            Height="200">
+            Title="Employees">
             <Store>
                 <ext:Store runat="server" PageSize="5">
                     <Proxy>

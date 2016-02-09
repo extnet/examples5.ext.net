@@ -26,7 +26,7 @@
             ID="Panel1" 
             runat="server" 
             Title="Simple Form"
-            Width="210"
+            Width="250"
             Frame="true"
             Layout="Form"
             BodyPadding="5">

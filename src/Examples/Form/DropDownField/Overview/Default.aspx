@@ -60,7 +60,7 @@
         
         <ext:DropDownField ID="Field1" runat="server" TriggerIcon="Search">
             <Component>
-                <ext:Panel runat="server" Height="200" Layout="Accordion">
+                <ext:Panel runat="server" Height="250" Layout="Accordion">
                     <Items>
                         <ext:MenuPanel runat="server" Title="Group 1" Icon="Group">
                             <Menu runat="server">
