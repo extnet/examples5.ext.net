@@ -17,8 +17,7 @@
             runat="server" 
             Title="Parent" 
             Width="400" 
-            Height="200" 
-            Layout="HBoxLayout">
+            Height="200">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

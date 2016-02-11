@@ -282,7 +282,9 @@
                         hideDelay  : 5000, 
                         width      : 300, 
                         height     : 200
-                    });" />
+                    });"
+                    
+                    Buffer="10" />
             </Listeners>
         </ext:Store>
         
@@ -364,13 +366,13 @@
                         </Editor>
                     </ext:Column>
                     
-                    <ext:Column runat="server" Text="First" Flex="1" DataIndex="First">
+                    <ext:Column runat="server" Text="First" DataIndex="First">
                         <Editor>
                             <ext:TextField runat="server" />    
                         </Editor>
                     </ext:Column>
                     
-                    <ext:Column runat="server" Text="Last" Flex="1" DataIndex="Last">
+                    <ext:Column runat="server" Text="Last" DataIndex="Last">
                         <Editor>
                             <ext:TextField runat="server" />    
                         </Editor>
