@@ -10,7 +10,7 @@
     <folder name="Form\Login\Auto_Complete" />
   </new>
 
-  <new version="3.1.0">
+  <!--<new version="3.1.0">
     <folder name="Kitchen_Sink\TabPanels\Header_Tabs" />
     <folder name="Layout\Center\Basic" />
   </new>
@@ -71,7 +71,7 @@
 
   <updated version="3.0">
     <folder name="GridPanel\ColumnModel\Ajax_Configuration" />
-  </updated>
+  </updated>-->
 
   <!--<new version="2.5">
     <folder name="Buttons\Basic\LoadingState" />
