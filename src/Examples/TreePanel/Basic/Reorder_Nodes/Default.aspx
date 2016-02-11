@@ -78,7 +78,7 @@
             Width="250"
             UseArrows="true">           
             <Listeners>
-                <ItemMove Fn="moveNode" />
+                <ItemMove Fn="moveNode" Delay="1" />
             </Listeners>
             <View>
                 <ext:TreeView runat="server">
