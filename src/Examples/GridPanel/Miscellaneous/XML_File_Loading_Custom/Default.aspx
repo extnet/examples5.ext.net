@@ -39,6 +39,24 @@
 
             return links;
         };
+
+        // This handler will override default load() call (on row expand) that will try to load
+        // data from an inexistent proxy in the store.
+        var innerStoreLoadHandler = function (store, records, successful, operation) {
+            // Only attempt to load data if the expand opearion correctly bound it to the store's placeholder
+            if (this.outerRecord) {
+                this.loadData(this.outerRecord);
+            }
+        }
+
+        // This handler will prepare the inner store to load the corresponding row's inner data.
+        var expandRowHandler = function (item, record, body, row, rowIndex) {
+            // Bind the inner panel's store the data we want it to load.
+            App.StoreLinks.outerRecord = record.get('links');
+
+            // Block events from outside controls from triggering on the expanded row.
+            body.swallowEvent(['click', 'mousedown', 'mouseup', 'dblclick'], true);
+        }
     </script>
 </head>
 <body>
@@ -107,9 +125,9 @@
                                         </Fields>
                                     </ext:Model>
                                 </Model>
-                                <Reader>
-                                    <ext:ArrayReader />
-                                </Reader>
+                                <Listeners>
+                                    <Load Fn="innerStoreLoadHandler" />
+                                </Listeners>
                             </ext:Store>
                         </Store>
                         <ColumnModel>
@@ -120,8 +138,7 @@
                     </ext:GridPanel>
                 </Component>
                 <Listeners>
-                    <Expand Handler="#{StoreLinks}.loadData(record.get('links'));
-                                     body.swallowEvent([ 'click', 'mousedown', 'mouseup', 'dblclick'], true);" />
+                    <Expand Fn="expandRowHandler" />
                 </Listeners>
             </ext:RowExpander>
         </Plugins>
