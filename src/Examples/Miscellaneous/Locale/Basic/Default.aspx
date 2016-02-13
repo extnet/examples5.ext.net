@@ -15,9 +15,9 @@
         {
             bool isParent;
 
-            if (Ext.Net.ResourceManager.IsSupportedCulture(this.ResourceManager1.Locale, out isParent))
+            if (Ext.Net.ResourceManager.IsSupportedCulture(Request.UserLanguages[0], out isParent))
             {
-                string cultureName = isParent ? this.ResourceManager1.Locale.Split(new char[] { '-' })[0] : this.ResourceManager1.Locale;
+                string cultureName = isParent ? Request.UserLanguages[0].Split(new char[] { '-' })[0] : Request.UserLanguages[0];
                 this.ComboBox1.SelectedItems.Add(new Ext.Net.ListItem { Value = cultureName });
             }
         }
