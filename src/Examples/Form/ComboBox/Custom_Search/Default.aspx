@@ -9,7 +9,7 @@
             RootProperty = "plants",
             TotalProperty = "total"
         };
-        
+
         // Create Proxy
         AjaxProxy proxy = new AjaxProxy
         {
@@ -20,7 +20,7 @@
                 Read = HttpMethod.POST
             }
         };
-        
+
         Model model = new Model()
         {
             Fields = {
@@ -31,9 +31,9 @@
                 new ModelField("Indoor", ModelFieldType.Boolean)
             }
         };
-        
+
         // Add Proxy and Reader to Store
-        Store store = new Store { 
+        Store store = new Store {
             Proxy = { proxy },
             Model = { model },
             AutoLoad = false
@@ -87,7 +87,7 @@
             white-space   : normal;
             color         : #555;
         }
-        
+
         .search-item h3 {
             display     : block;
             font        : inherit;
@@ -103,10 +103,10 @@
             width       : 100px;
             display     : block;
             clear       : none;
-        } 
-        
+        }
+
         p { width: 650px; }
-        
+
         .ext-ie .x-form-text { position : static !important; }
     </style>
     <link href="/resources/css/examples.css" rel="stylesheet" />
@@ -114,19 +114,19 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>ComboBox with Templates and AJAX</h1>
 
         <p>This is a more advanced example demonstrating how to combine Store Paging and a Template to create "live search" functionality.</p>
-    
+
         <div style="width:600px;">
             <div class="x-box-tl"><div class="x-box-tr"><div class="x-box-tc"></div></div></div>
             <div class="x-box-ml"><div class="x-box-mr"><div class="x-box-mc">
                 <h3 style="margin-bottom:5px;">Search the plants</h3>
-                
-            <ext:ComboBox 
-                runat="server" 
-                DisplayField="Common" 
+
+            <ext:ComboBox
+                runat="server"
+                DisplayField="Common"
                 ValueField="Common"
                 TypeAhead="false"
                 Width="570"
@@ -138,9 +138,9 @@
                     <ItemTpl runat="server">
                         <Html>
                             <div class="search-item">
-							    <h3><span>${Price}</span>{Common}</h3>
-							    {Botanical}
-						    </div>
+                                <h3><span>${Price}</span>{Common}</h3>
+                                {Botanical}
+                            </div>
                         </html>                    </ItemTpl>
                 </ListConfig>
                 <Store>
@@ -162,23 +162,23 @@
                                     <ext:ModelField Name="Price" Type="Float" />
                                     <ext:ModelField Name="Indoor" Type="Boolean" />
                                 </Fields>
-                            </ext:Model>                            
+                            </ext:Model>
                         </Model>
                     </ext:Store>
                 </Store>
-            </ext:ComboBox>    
-            
+            </ext:ComboBox>
+
             <div style="padding-top:4px;">
                 Plants search (type '*' (asterisk) for showing all)
             </div>
             </div></div></div>
             <div class="x-box-bl"><div class="x-box-br"><div class="x-box-bc"></div></div></div>
         </div>
-            
+
         <br />
         <br />
         <br />
-            
+
         <div style="width:600px;">
             <div class="x-box-tl">
                 <div class="x-box-tr">

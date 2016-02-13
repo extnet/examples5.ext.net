@@ -28,14 +28,14 @@
 
     <p>See the <a href="http://ext.net/signalr-with-ext-net" target="_blank">blog post</a> for more details.</p>
 
-    <ext:Window 
-        runat="server" 
-        Layout="FitLayout" 
-        Icon="Table" 
-        Title="SignalR Stock Ticker with Ext.NET" 
-        Closable="false" 
-        Width="675" 
-        Height="300" 
+    <ext:Window
+        runat="server"
+        Layout="FitLayout"
+        Icon="Table"
+        Title="SignalR Stock Ticker with Ext.NET"
+        Closable="false"
+        Width="675"
+        Height="300"
         Border="false">
         <Items>
             <ext:SignalRGridPanel ID="GridPanel1" runat="server" />

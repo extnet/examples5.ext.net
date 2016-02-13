@@ -22,17 +22,17 @@
 <html>
 <head runat="server">
     <title>Multiple Editors - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>Multiple Editors</h1>        
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="Multiple Editors" 
+        <h1>Multiple Editors</h1>
+
+        <ext:GridPanel
+            runat="server"
+            Title="Multiple Editors"
             Width="400">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -78,7 +78,7 @@
                      </ext:ComponentColumn>
                 </Columns>
             </ColumnModel>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

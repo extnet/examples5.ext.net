@@ -9,8 +9,8 @@
      {
          if (!X.IsAjaxRequest)
          {
-             this.Store1.DataSource = new List<Company> 
-             { 
+             this.Store1.DataSource = new List<Company>
+             {
                  new Company("3m Co", 71.72, 0.02, 0.03),
                  new Company("Alcoa Inc", 29.01, 0.42, 1.47),
                  new Company("Altria Group Inc", 83.81, 0.28, 0.34),
@@ -102,7 +102,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Store ID="Store1" runat="server" PageSize="10">
             <Model>
                 <ext:Model runat="server" IDProperty="Name">
@@ -115,32 +115,32 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             StoreID="Store1"
-            Title="Company List" 
+            Title="Company List"
             Collapsible="true"
             Width="700"
             EnableColumnMove="true">
             <ColumnModel runat="server">
-		        <Columns>
+                <Columns>
                     <ext:Column runat="server" Text="Company" Width="160" DataIndex="Name" Flex="1" />
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="Change" />
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange" />
-		        </Columns>
+                </Columns>
             </ColumnModel>
             <SelectionModel>
                 <ext:CellSelectionModel runat="server">
                     <DirectEvents>
-                        <Select OnEvent="Cell_Click" />                        
+                        <Select OnEvent="Cell_Click" />
                     </DirectEvents>
                 </ext:CellSelectionModel>
-            </SelectionModel>           
+            </SelectionModel>
             <BottomBar>
                 <ext:PagingToolbar runat="server" Weight="10" HideRefresh="true" />
             </BottomBar>
@@ -150,18 +150,18 @@
                         <Click OnEvent="Clear_Click" />
                     </DirectEvents>
                 </ext:Button>
-                
+
                 <ext:Button ID="Button3" runat="server" Text="Set selection to [2,2]">
                     <DirectEvents>
                         <Click OnEvent="Set_Click" />
                     </DirectEvents>
                 </ext:Button>
-            </Buttons>      
+            </Buttons>
         </ext:GridPanel>
-       
+
         <div style="width:688px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
-        </div>        
+        </div>
     </form>
   </body>
 </html>

@@ -3,23 +3,23 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Store1.DataSource = new List<object>() 
-        { 
+        this.Store1.DataSource = new List<object>()
+        {
             new {name = "User 1"},
             new {name = "User 2"},
             new {name = "User 3"},
             new {name = "User 4"},
             new {name = "User 5"}
-        };            
-    }        
+        };
+    }
 </script>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>Callout - Ext.NET Examples</title>       
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <title>Callout - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
         h3.x-callout-header {
@@ -42,23 +42,23 @@
             margin: 0;
         }
 
-        .list li {            
+        .list li {
             white-space: nowrap;
             width:       100%;
-            display:     block;   
-            height:      40px;     
-            padding:     7px 15px 7px 10px;    
+            display:     block;
+            height:      40px;
+            padding:     7px 15px 7px 10px;
             cursor:      pointer;
         }
 
         .list li a {
-            font-size:   14px;            
+            font-size:   14px;
             color:       #66757F;
             line-height: 24px;
         }
 
         .over {
-            background-color: #0084B4;            
+            background-color: #0084B4;
         }
 
         li.over a {
@@ -69,23 +69,23 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Widget</h1>
-    
+
     <ext:TextField runat="server" EmptyText="Focus the field to see the Callout" Width="250">
         <Callouts>
-            <ext:Callout 
-                runat="server" 
-                Alignment="BottomLeft" 
-                Trigger="Focus" 
+            <ext:Callout
+                runat="server"
+                Alignment="BottomLeft"
+                Trigger="Focus"
                 BodyStyle="padding:2px 0px;">
                 <BodyWidget>
-                    <ext:DataView 
-                        runat="server" 
-                        Width="250" 
-                        Cls="list" 
-                        ItemSelector="li" 
-                        OverItemCls="over" 
+                    <ext:DataView
+                        runat="server"
+                        Width="250"
+                        Cls="list"
+                        ItemSelector="li"
+                        OverItemCls="over"
                         TrackOver="true" >
                         <Store>
                             <ext:Store ID="Store1" runat="server">
@@ -104,7 +104,7 @@
                                         </li>
                                     </tpl>
                                 </ul>
-                            </Html>                            
+                            </Html>
                         </Tpl>
                         <Listeners>
                             <ItemClick Handler="this.callout.calloutOwner.setValue(record.data.name);" />

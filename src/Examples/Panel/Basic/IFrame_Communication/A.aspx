@@ -8,9 +8,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:TextField ID="TextField1" runat="server" />
-        
+
         <ext:Button runat="server" Text="To the B" Icon="ArrowRight">
             <Listeners>
                 <Click Handler="parent.App.Panel2.getBody().App.TextField1.setValue(App.TextField1.getValue());" />

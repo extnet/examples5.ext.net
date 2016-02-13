@@ -148,7 +148,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Danger" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Danger" />
@@ -176,7 +176,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Info" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Info" />
@@ -204,7 +204,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Success" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Success" />
@@ -232,7 +232,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Warning" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Warning" />

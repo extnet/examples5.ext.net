@@ -24,7 +24,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 msg.Hidden = false;
                 msg.AutoEl.Html = "This task was completed on " + task.CompletedDate.Value.ToString("dddd, MMMM dd, yyyy");
             }
-           
+
             this.toolbar.Items[0].Hidden = task.Completed;
             this.toolbar.Items[1].Hidden = !task.Completed;
 

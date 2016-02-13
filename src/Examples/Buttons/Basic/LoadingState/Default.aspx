@@ -8,7 +8,7 @@
         X.Msg.Info("Server Time", DateTime.Now.ToLongTimeString()).Show();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -19,18 +19,18 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-   
+
     <h1>Button Loading Variations</h1>
-    
+
     <p>Each sample runs with a two second delay server-side to simulate a long running process.</p>
 
     <h2>1. Button with AutoLoadingState</h2>
-    
-    <ext:Button 
-        runat="server" 
-        Text="Click Me" 
-        AutoLoadingState="true" 
-        OnDirectClick="Button1_Click" 
+
+    <ext:Button
+        runat="server"
+        Text="Click Me"
+        AutoLoadingState="true"
+        OnDirectClick="Button1_Click"
         />
 
     <h2>2. Button with custom &lt;LoadingState&gt; configuration</h2>

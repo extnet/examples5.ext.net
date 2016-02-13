@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Color Palette - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .my-color-pallete {
             width: 310px;
@@ -45,17 +45,17 @@
         <ext:ColorPicker runat="server" Cls="my-color-pallete">
             <Template runat="server">
                 <Html>
-					<tpl for="colors">
-						<a href="#" class="color-{.}" hidefocus="on">
-							<em style="padding:2px;">
-								<span style="background:#{.}; width:50px; height:20px; border:1px solid black;" unselectable="on">
-									&#160;
-								</span>
-								<div style="font-size:10px;text-align:center;">#{.}</div>
-							</em>
-						</a>
-					</tpl>
-				</html>            </Template>
+                    <tpl for="colors">
+                        <a href="#" class="color-{.}" hidefocus="on">
+                            <em style="padding:2px;">
+                                <span style="background:#{.}; width:50px; height:20px; border:1px solid black;" unselectable="on">
+                                    &#160;
+                                </span>
+                                <div style="font-size:10px;text-align:center;">#{.}</div>
+                            </em>
+                        </a>
+                    </tpl>
+                </html>            </Template>
         </ext:ColorPicker>
     </form>
 </body>

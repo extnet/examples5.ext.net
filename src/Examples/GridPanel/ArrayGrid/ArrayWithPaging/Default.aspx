@@ -17,9 +17,9 @@
     private void BindData()
     {
         Store store = this.GridPanel1.GetStore();
-        
+
         store.DataSource = this.Data;
-        store.DataBind(); 
+        store.DataBind();
     }
 
     private object[] Data
@@ -86,18 +86,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Array Grid with Local Paging and Remote Reloading</h1>
-        
+
         <p>Demonstrates how to create a grid from Array data with Local Paging and Remote Reloading.</p>
-        
+
         <p>Notice <b>Last Updated</b> column is revised with a new server-side DateTime stamp when the GridPanel "Refresh" button is clicked.<br />
            This demonstrates that when the GridPanel is refreshed, the Data is requested again from the server via a DirectEvent, but the Paging and Sorting is done completely client-side in the browser.</p>
-        
+
         <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
-            Title="Array Grid" 
+            runat="server"
+            Title="Array Grid"
             Width="800">
             <Store>
                 <ext:Store ID="Store1" runat="server" OnReadData="MyData_Refresh" PageSize="10">
@@ -111,7 +111,7 @@
                                 <ext:ModelField Name="lastChange" Type="Date" />
                             </Fields>
                         </ext:Model>
-                    </Model>                  
+                    </Model>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
@@ -134,8 +134,8 @@
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
             </SelectionModel>
             <View>
-                <ext:GridView runat="server" StripeRows="true" />                   
-            </View>            
+                <ext:GridView runat="server" StripeRows="true" />
+            </View>
             <BottomBar>
                  <ext:PagingToolbar runat="server">
                     <Items>

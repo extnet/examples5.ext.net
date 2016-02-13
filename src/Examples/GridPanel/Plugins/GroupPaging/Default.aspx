@@ -2,16 +2,16 @@
 
 <%@ Import Namespace="System.Globalization" %>
 <%@ Import Namespace="System.Collections.Generic" %>
- 
+
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
         CultureInfo ci = new CultureInfo("en-US");
 
         Store store = this.GridPanel1.GetStore();
-        
-        store.DataSource = new List<Project> 
-        { 
+
+        store.DataSource = new List<Project>
+        {
             new Project(100, "Ext Forms: Field Anchoring",      112, "Integrate 2.0 Forms with 2.0 Layouts", 6, 150, 0, ParseExact("06/24/2007", ref ci)),
             new Project(100, "Ext Forms: Field Anchoring",      113, "Implement AnchorLayout", 4, 150, 0, ParseExact("06/25/2007", ref ci)),
             new Project(100, "Ext Forms: Field Anchoring",      114, "Add support for multiple types of anchors", 4, 150, 0, ParseExact("06/27/2007", ref ci)),
@@ -29,7 +29,7 @@
             new Project(102, "Ext Grid: Summary Rows",          110, "Integrate summaries with GroupingView", 10, 125, 0, ParseExact("07/11/2007", ref ci)),
             new Project(102, "Ext Grid: Summary Rows",          111, "Testing and debugging", 8, 125, 0, ParseExact("07/15/2007", ref ci))
         };
- 
+
         store.DataBind();
     }
 
@@ -50,7 +50,7 @@
             this.Rate = rate;
             this.Due = due;
         }
- 
+
         public int ProjectID { get; set; }
         public string Name { get; set; }
         public int TaskID { get; set; }
@@ -72,12 +72,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server"/>
-         
+
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
             Frame="true"
-            Title="Sponsored Projects"            
+            Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
             Width="800"
             Height="450">
@@ -94,7 +94,7 @@
                                 <ext:ModelField Name="TaskID" />
                                 <ext:ModelField Name="Description" />
                                 <ext:ModelField Name="Estimate" Type="Int" />
-                                <ext:ModelField Name="Rate" Type="Float" />                                
+                                <ext:ModelField Name="Rate" Type="Float" />
                                 <ext:ModelField Name="Due" Type="Date" />
                             </Fields>
                         </ext:Model>
@@ -103,45 +103,45 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column                        
+                    <ext:Column
                         runat="server"
                         TdCls="task"
-                        Text="Task"                       
+                        Text="Task"
                         Sortable="true"
                         DataIndex="Description"
                         Hideable="false"
                         Flex="1"
                         />
-                     
+
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Width="20" />
-                     
+
                     <ext:Column
                         runat="server"
                         Width="100"
                         Text="Due Date"
                         Sortable="true"
                         DataIndex="Due">
-                        <Renderer Format="Date" FormatArgs="'m/d/Y'" />                        
+                        <Renderer Format="Date" FormatArgs="'m/d/Y'" />
                     </ext:Column>
- 
+
                     <ext:Column
-                        runat="server"  
+                        runat="server"
                         Width="75"
                         Text="Estimate"
                         Sortable="true"
                         DataIndex="Estimate">
                         <Renderer Handler="return value +' hours';" />
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
                         Text="Rate"
                         Sortable="true"
                         DataIndex="Rate">
-                        <Renderer Format="UsMoney" />                       
+                        <Renderer Format="UsMoney" />
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -152,15 +152,15 @@
                         DataIndex="Cost">
                         <Renderer Handler="return Ext.util.Format.usMoney(record.data.Estimate * record.data.Rate);" />
                     </ext:Column>
-                </Columns>                
-            </ColumnModel>            
+                </Columns>
+            </ColumnModel>
             <Features>
-                <ext:Grouping 
-                    ID="Group1" 
-                    runat="server" 
-                    GroupHeaderTplString="{name}" 
-                    HideGroupedHeader="true" 
-                    EnableGroupingMenu="false" 
+                <ext:Grouping
+                    ID="Group1"
+                    runat="server"
+                    GroupHeaderTplString="{name}"
+                    HideGroupedHeader="true"
+                    EnableGroupingMenu="false"
                     />
             </Features>
             <BottomBar>

@@ -29,7 +29,7 @@
 <html>
 <head runat="server">
     <title>Over Row Commands - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -46,14 +46,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Over Row Commands</h1>
 
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Over Row Commands"             
-            Width="700" 
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Over Row Commands"
+            Width="700"
             Height="420">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -72,38 +72,38 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="110" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="110"
+                        DataIndex="lastChange"
                         />
                     <ext:CommandColumn runat="server" Width="115" OverOnly="true">
                         <Commands>
@@ -114,8 +114,8 @@
                                         <ext:MenuCommand Text="Submenu" Icon="ArrowRight">
                                             <Menu EnableScrolling="false">
                                                 <Items>
-                                                    <ext:MenuCommand Text="Item11" Icon="ArrowRight" CommandName="Item11" />        
-                                                    <ext:MenuCommand Text="Item12" Icon="ArrowRight" CommandName="Item12" />        
+                                                    <ext:MenuCommand Text="Item11" Icon="ArrowRight" CommandName="Item11" />
+                                                    <ext:MenuCommand Text="Item12" Icon="ArrowRight" CommandName="Item12" />
                                                 </Items>
                                             </Menu>
                                         </ext:MenuCommand>
@@ -123,9 +123,9 @@
                                 </Menu>
                                 <ToolTip Text="Menu" />
                             </ext:GridCommand>
-                            
+
                             <ext:CommandSeparator />
-                            
+
                             <ext:SplitCommand Icon="ArrowDown" CommandName="Split">
                                 <Menu EnableScrolling="false">
                                     <Items>
@@ -133,8 +133,8 @@
                                         <ext:MenuCommand Text="Submenu" Icon="ArrowRight">
                                             <Menu EnableScrolling="false">
                                                 <Items>
-                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />        
-                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />        
+                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />
+                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />
                                                 </Items>
                                             </Menu>
                                         </ext:MenuCommand>
@@ -151,8 +151,8 @@
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
-            </SelectionModel>            
-        </ext:GridPanel>  
+            </SelectionModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

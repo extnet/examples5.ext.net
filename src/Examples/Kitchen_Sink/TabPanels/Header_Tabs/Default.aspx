@@ -16,10 +16,10 @@
         <p>The example demonstrates the use of TabBarHeaderPostion.</p>
         <p>If specified the tabs are rendered into a TabPanel's header.</p>
 
-        <ext:TabPanel 
+        <ext:TabPanel
             runat="server"
-            Title="Examples" 
-            Width="400" 
+            Title="Examples"
+            Width="400"
             Height="300"
             TabBarHeaderPosition="2">
             <Defaults>

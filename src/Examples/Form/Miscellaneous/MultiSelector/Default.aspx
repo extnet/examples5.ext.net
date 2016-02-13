@@ -15,23 +15,23 @@
         string[] lastNames = new string[] { "Wood", "Lewis", "Scott", "Parker", "Ross", "Garcia", "Bell", "Kelly", "Powell", "Moore", "Cook" };
 
         var data = new List<object>();
-        var rand = 37;      
+        var rand = 37;
         int k;
-        int id = 0;       
+        int id = 0;
 
-        for (int i = 0; i < lastNames.Length; ++i) 
+        for (int i = 0; i < lastNames.Length; ++i)
         {
             var map = new Dictionary<string, int>();
-            
+
             var s = firstNames[i];
-            
+
             data.Add(new
             {
                 ID = ++id,
                 Forename = s,
                 Surname = lastNames[i]
             });
-            
+
             map[s] = 1;
 
             for (int j = 0; j < 3; ++j)
@@ -53,7 +53,7 @@
                 });
             }
         }
-        
+
         this.Store1.DataSource = data;
         this.Store2.DataSource = data.GetRange(1, 3);
     }
@@ -85,12 +85,12 @@
 <html>
 <head runat="server">
     <title>MultiSelector - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />       
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>MultiSelector</h1>
 
         <ext:Model runat="server" Name="Employee" IDProperty="ID">
@@ -104,11 +104,11 @@
             </Fields>
         </ext:Model>
 
-        <ext:MultiSelector 
-            runat="server" 
+        <ext:MultiSelector
+            runat="server"
             ID="Selector1"
-            Width="400" 
-            Height="300" 
+            Width="400"
+            Height="300"
             Title="Selected Employees"
             FieldName="Name">
             <Store>

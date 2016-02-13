@@ -19,7 +19,7 @@
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Title="Meta Grid" 
+            Title="Meta Grid"
             Width="800"
             Height="300">
             <Store>
@@ -71,8 +71,8 @@
     <p>The store/model automatically read the <code>fields</code> config to reconfigure the data model, but you can add any
     additional custom data into the <code>metaData</code> that you need. In this example we've added a <code>columns</code>
     config that contains a grid-specific column configuration that can be passed to the <code>grid.reconfigure()</code> method
-    in the store's load event handler. You could easily add other widget-specific configurations into the response as well.</p>       
-        
+    in the store's load event handler. You could easily add other widget-specific configurations into the response as well.</p>
+
     </form>
 </body>
 </html>

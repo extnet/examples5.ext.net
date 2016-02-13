@@ -6,7 +6,7 @@
         if (!X.IsAjaxRequest)
         {
             Store store = this.GridPanel1.GetStore();
-            
+
             store.DataSource = new object[]
             {
                 new object[] { "3m Co", 71.72, 0.02, 0.03, "9/1 12:00am" },
@@ -46,31 +46,31 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>Move Component to TabPanel - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server">
             <Listeners>
-                <DocumentReady 
-                    Handler="#{TabPanel1}.add(#{GridPanel1}); #{TabPanel1}.setActiveTab(0);"  
-                    Delay="100" 
+                <DocumentReady
+                    Handler="#{TabPanel1}.add(#{GridPanel1}); #{TabPanel1}.setActiveTab(0);"
+                    Delay="100"
                     />
             </Listeners>
         </ext:ResourceManager>
-        
+
         <h1>Move Component to TabPanel</h1>
-        
+
         <p>During the render process on the client, GridPanel is added as a child item of the TabPanel</p>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
-            Title="Array Grid"            
+            Title="Array Grid"
             Border="false">
             <Store>
                 <ext:Store runat="server">
@@ -99,8 +99,8 @@
             <View>
                 <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
             </View>
-        </ext:GridPanel>  
-        
+        </ext:GridPanel>
+
         <ext:TabPanel ID="TabPanel1" runat="server" Width="600" Height="400" />
     </form>
 </body>

@@ -8,47 +8,47 @@
             this.Chart1.GetStore().DataSource = CreateData(50);
         }
     }
-    
+
     private static double seed = 1.3;
     private static double Random() {
         seed *= 7.3;
         seed -= Math.Floor(seed);
         return seed;
     }
-    
-    private static object CreateData(int count, bool allNull = false) 
+
+    private static object CreateData(int count, bool allNull = false)
     {
         var data = new List<object>();
         double g0 = allNull ? 0 : 300;
         double g1 = allNull ? 0 : (700 * Random() + 100);
         double g2 = allNull ? 0 : (700 * Random() + 100);
         double g3 = allNull ? 0 : (700 * Random() + 100);
-        
-        data.Add(new 
+
+        data.Add(new
         {
             id = 0,
             g0,
             g1,
             g2,
-            g3            
+            g3
         });
-        
+
         for (int i = 1; i < count; i++) {
             g0 = allNull ? 0 : (g0 + 30 * Random());
             g1 = allNull ? 0 : (Math.Abs(g1 + 300 * Random() - 140));
             g2 = allNull ? 0 : (Math.Abs(g1 + 300 * Random() - 140));
             g3 = allNull ? 0 : (Math.Abs(g1 + 300 * Random() - 140));
-        
-            data.Add(new 
+
+            data.Add(new
             {
                 id = i,
                 g0,
                 g1,
                 g2,
-                g3            
+                g3
             });
         }
-        
+
         return data;
     }
 
@@ -59,7 +59,7 @@
         this.Chart1.Axes[0].SetMaximum(double.NaN);
         this.Chart1.GetStore().DataSource = CreateData(50);
         this.Chart1.GetStore().DataBind();
-        
+
     }
 
     protected void OnDrop(object sender, DirectEventArgs e)
@@ -115,15 +115,15 @@
         <h1>Scatter Chart Example</h1>
         <p>
             Demonstrates how to make a bubble chart using Ext.chart.series.Scatter
-         <br />     
+         <br />
          <br /> Bubble charts, similarly to Line charts, allow to visualize the evolution of a
          <br /> parameter over time or the ratio between any two parameters, but in addition they
          <br /> can also display intrinsic values of these parameters by assigning them to the
          <br /> diameter or the color of the bubbles.
         </p>
 
-        <ext:Panel 
-            runat="server" 
+        <ext:Panel
+            runat="server"
             Layout="FitLayout"
             Width="650">
             <TopBar>
@@ -144,10 +144,10 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
-                    runat="server" 
-                    Height="500" 
+                <ext:CartesianChart
+                    ID="Chart1"
+                    runat="server"
+                    Height="500"
                     InsetPadding="20">
                     <Store>
                         <ext:Store runat="server">
@@ -166,12 +166,12 @@
                     </Store>
 
                     <Background Fill="#242021" />
-                    
+
                     <Interactions>
                         <ext:PanZoomInteraction />
                         <ext:ItemHighlightInteraction />
                     </Interactions>
-                    
+
                     <Axes>
                         <ext:NumericAxis Position="Left" Fields="g2" Minimum="0">
                             <Style MajorTickSize="10" LineWidth="3" StrokeStyle="#888" EstStepSize="50" />
@@ -180,14 +180,14 @@
                                 <Odd FillStyle="#333" />
                             </GridConfig>
                         </ext:NumericAxis>
-                        
+
                         <ext:NumericAxis Position="Bottom" Fields="id" Minimum="0" Maximum="50">
                             <Style MajorTickSize="10" LineWidth="3" StrokeStyle="#888" EstStepSize="100" />
                             <Label Color="#888" FontFamily="Chalkboard, sans-serif" FontSize="20" />
                             <GridConfig Stroke="#444" />
                         </ext:NumericAxis>
                     </Axes>
-                    
+
                     <Series>
                         <ext:ScatterSeries XField="id" YField="g2">
                             <Marker>
@@ -202,6 +202,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

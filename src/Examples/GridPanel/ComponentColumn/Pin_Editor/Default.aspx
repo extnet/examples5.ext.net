@@ -28,7 +28,7 @@
 <html>
 <head runat="server">
     <title>ComponentColumn Pin Editor - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var pinEditors = function (btn, pressed) {
@@ -49,20 +49,20 @@
         .x-over-editor-grid tr.x-grid-row {
             height: 25px;
         }
-    </style>   
+    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>ComponentColumn as Pin Editor</h1>        
 
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+        <h1>ComponentColumn as Pin Editor</h1>
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Title="ComponentColumn Pin Editor"
-            Cls="x-over-editor-grid" 
-            Width="620" 
+            Cls="x-over-editor-grid"
+            Width="620"
             Height="300">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -80,8 +80,8 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="IntField"
@@ -93,13 +93,13 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="ComboField"
                         Pin="true"
-                        Flex="1"                        
+                        Flex="1"
                         Text="ComboBox">
                         <Component>
                             <ext:ComboBox runat="server">
@@ -118,8 +118,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="TextField"
@@ -131,32 +131,32 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="DateField"
                         Pin="true"
                         Flex="1"
                         Text="Date">
-                        <Renderer Format="Date" FormatArgs="'d/m/Y'" />                            
+                        <Renderer Format="Date" FormatArgs="'d/m/Y'" />
                         <Component>
                             <ext:DateField runat="server" Format="dd/MM/yyyy" />
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
+                    <ext:ComponentColumn
                         runat="server"
                         Width="25"
                         PinAllColumns="false"
                         AutoWidthComponent="false"
                         OverOnly="true">
                         <Component>
-                            <ext:Button 
-                                runat="server" 
-                                ToolTip="Pin editors" 
-                                Icon="Pencil" 
-                                AllowDepress="true" 
+                            <ext:Button
+                                runat="server"
+                                ToolTip="Pin editors"
+                                Icon="Pencil"
+                                AllowDepress="true"
                                 EnableToggle="true">
                                 <Listeners>
                                     <Toggle Fn="pinEditors" />
@@ -165,8 +165,8 @@
                         </Component>
                     </ext:ComponentColumn>
                 </Columns>
-            </ColumnModel>          
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

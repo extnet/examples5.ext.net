@@ -11,7 +11,7 @@
         }
         this.BindData();
     }
-    
+
     public class TestPerson
     {
         public int? Id
@@ -36,7 +36,7 @@
             set;
         }
     }
-    
+
     //----------------Page------------------------
     private List<TestPerson> TestPersons
     {
@@ -56,7 +56,7 @@
 
     private static int curId = 7;
     private static object lockObj = new object();
-    
+
     private int NewId
     {
         get
@@ -64,13 +64,13 @@
             return System.Threading.Interlocked.Increment(ref curId);
         }
     }
-    
+
     private List<TestPerson> CurrentData
     {
         get
         {
             object persons = this.Session["TestPersons"];
-            
+
             if (persons == null)
             {
                 persons = this.TestPersons;
@@ -80,7 +80,7 @@
             return (List<TestPerson>)persons;
         }
     }
-    
+
     private int? AddPerson(TestPerson person)
     {
         lock (lockObj)
@@ -100,7 +100,7 @@
         {
             List<TestPerson> persons = this.CurrentData;
             TestPerson person = null;
-            
+
             foreach (TestPerson p in persons)
             {
                 if (p.Id == id)
@@ -109,18 +109,18 @@
                     break;
                 }
             }
-            
+
             if (person == null)
             {
                 throw new Exception("TestPerson not found");
             }
 
             persons.Remove(person);
-            
+
             this.Session["TestPersons"] = persons;
         }
     }
-    
+
     private void UpdatePerson(TestPerson person)
     {
         lock (lockObj)
@@ -132,7 +132,7 @@
 
             List<TestPerson> persons = this.CurrentData;
             TestPerson updatingPerson = null;
-            
+
             foreach (TestPerson p in persons)
             {
                 if (p.Id == person.Id)
@@ -154,7 +154,7 @@
             this.Session["TestPersons"] = persons;
         }
     }
-    
+
     private void BindData()
     {
         if (X.IsAjaxRequest)
@@ -165,7 +165,7 @@
         this.Store1.DataSource = this.CurrentData;
         this.Store1.DataBind();
     }
-    
+
     protected void HandleChanges(object sender, BeforeStoreChangedEventArgs e)
     {
         List<TestPerson> persons = e.DataHandler.ObjectData<TestPerson>();
@@ -199,19 +199,19 @@
         e.Cancel = true;
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Grid with AutoSave - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <script>
        var updateRecord = function (form) {
             if (form.getForm()._record == null) {
                 return;
             }
-            
+
             if (!form.getForm().isValid()) {
                 Ext.net.Notification.show({
                     iconCls  : "icon-exclamation",
@@ -220,10 +220,10 @@
                 });
                 return false;
             }
-            
+
             form.getForm().updateRecord();
        };
-       
+
        var addRecord = function (form, grid) {
             if (!form.getForm().isValid()) {
                 Ext.net.Notification.show({
@@ -231,10 +231,10 @@
                     html     : "Form is invalid",
                     title    : "Error"
                 });
-            
+
                 return false;
             }
-            
+
             grid.store.insert(0, new Person(form.getForm().getFieldValues()));
             form.getForm().reset();
        };
@@ -243,15 +243,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Grid with AutoSave</h1>
-        
+
         <p>An Error has been simulated on the server-side: Attempting to update a record having ODD-numbered id will generate this errror. This error can be handled by listening to the "exception" event upon your Store.</p>
-        
-        <ext:Store 
-            ID="Store1" 
-            runat="server" 
-            AutoSync="true" 
+
+        <ext:Store
+            ID="Store1"
+            runat="server"
+            AutoSync="true"
             ShowWarningOnFailure="false"
             OnBeforeStoreChanged="HandleChanges">
             <Model>
@@ -265,34 +265,34 @@
                     <Validators>
                         <ext:PresenceValidator Field="Email" />
                         <ext:PresenceValidator Field="First" />
-                        <ext:PresenceValidator Field="Last" />                                
+                        <ext:PresenceValidator Field="Last" />
                     </Validators>
                 </ext:Model>
             </Model>
-            
+
             <Listeners>
                 <Exception Handler="
                     var error = operation.getError(),
                         message = Ext.isString(error) ? error : ('(' + error.status + ')' + error.statusText);
                     Ext.net.Notification.show({
-                        iconCls    : 'icon-exclamation', 
-                        html       : message, 
-                        title      : 'EXCEPTION', 
-                        autoScroll : true, 
-                        hideDelay  : 5000, 
-                        width      : 300, 
+                        iconCls    : 'icon-exclamation',
+                        html       : message,
+                        title      : 'EXCEPTION',
+                        autoScroll : true,
+                        hideDelay  : 5000,
+                        width      : 300,
                         height     : 200
                     });"
-                    
+
                     Buffer="10" />
             </Listeners>
         </ext:Store>
-        
-        <ext:FormPanel 
-            ID="UserForm" 
+
+        <ext:FormPanel
+            ID="UserForm"
             runat="server"
             Icon="User"
-            Frame="true"            
+            Frame="true"
             Title="User -- All fields are required"
             DefaultAnchor="100%"
             Width="500">
@@ -303,20 +303,20 @@
                     Name="Email"
                     Vtype="email"
                     />
-                
+
                 <ext:TextField runat="server"
                     FieldLabel="First"
                     Name="First"
                     />
-                
+
                 <ext:TextField runat="server"
                     FieldLabel="Last"
                     Name="Last"
                     />
-            </Items>            
-            
+            </Items>
+
             <Buttons>
-                <ext:Button 
+                <ext:Button
                     runat="server"
                     Text="Save"
                     Icon="Disk">
@@ -324,8 +324,8 @@
                         <Click Handler="updateRecord(#{UserForm});" />
                     </Listeners>
                 </ext:Button>
-                
-                <ext:Button 
+
+                <ext:Button
                     runat="server"
                     Text="Create"
                     Icon="UserAdd">
@@ -333,8 +333,8 @@
                         <Click Handler="addRecord(#{UserForm}, #{GridPanel1});" />
                     </Listeners>
                 </ext:Button>
-                
-                <ext:Button 
+
+                <ext:Button
                     runat="server"
                     Text="Reset">
                     <Listeners>
@@ -343,9 +343,9 @@
                 </ext:Button>
             </Buttons>
         </ext:FormPanel>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
             Icon="Table"
             Frame="true"
@@ -359,25 +359,25 @@
                     <ext:Column runat="server" Text="ID" Width="40" DataIndex="Id">
                         <Renderer Handler="return record.phantom ? '' : value;" />
                     </ext:Column>
-                    
+
                     <ext:Column runat="server" Text="Email" Flex="1" DataIndex="Email">
                         <Editor>
-                            <ext:TextField runat="server" />    
+                            <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    
+
                     <ext:Column runat="server" Text="First" DataIndex="First">
                         <Editor>
-                            <ext:TextField runat="server" />    
+                            <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    
+
                     <ext:Column runat="server" Text="Last" DataIndex="Last">
                         <Editor>
-                            <ext:TextField runat="server" />    
+                            <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    
+
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
                             <ext:GridCommand Text="Reject" ToolTip-Text="Reject row changes" CommandName="reject" Icon="ArrowUndo" />
@@ -389,7 +389,7 @@
                     </ext:CommandColumn>
                 </Columns>
             </ColumnModel>
-           
+
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -398,17 +398,17 @@
                                 <Click Handler="#{Store1}.insert(0, new Person());" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Delete" Icon="Exclamation">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.deleteSelected(); #{UserForm}.getForm().reset();" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:ToolbarSeparator />
-                        
-                        <ext:Button 
-                            runat="server" 
+
+                        <ext:Button
+                            runat="server"
                             Text="Auto Sync"
                             EnableToggle="true"
                             Pressed="true"
@@ -420,10 +420,10 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-            
+
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single">
-                    <Listeners>                        
+                    <Listeners>
                         <Select Handler="#{UserForm}.getForm().loadRecord(record);" />
                     </Listeners>
                 </ext:RowSelectionModel>

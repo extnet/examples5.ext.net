@@ -9,12 +9,12 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <ext:TabPanel runat="server" Width="450">
         <Items>
-            <ext:Panel 
-                runat="server" 
-                Title="Short Text" 
+            <ext:Panel
+                runat="server"
+                Title="Short Text"
                 BodyPadding="6">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales
@@ -27,8 +27,8 @@
                 </Content>
             </ext:Panel>
             <ext:Panel
-                runat="server" 
-                Title="Long Text" 
+                runat="server"
+                Title="Long Text"
                 BodyPadding="6">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales

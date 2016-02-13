@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-    
+
 <script runat="server">
     protected void Color_Changed(object sender, EventArgs e)
     {
@@ -25,26 +25,26 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h2>1. PostBack model</h2>
-        
+
         <ext:ColorPicker
-            ID="ColorPalette1" 
-            runat="server" 
-            AutoPostBack="true" 
+            ID="ColorPalette1"
+            runat="server"
+            AutoPostBack="true"
             OnColorChanged="Color_Changed"
             />
-        
+
         <ext:Label ID="Label1" runat="server" />
-        
+
         <h2>2. DirectEvent model</h2>
-        
+
         <ext:ColorPicker ID="ColorPalette2" runat="server">
             <DirectEvents>
                 <Select OnEvent="AjaxColor_Changed" />
             </DirectEvents>
         </ext:ColorPicker>
-        
+
         <ext:Label ID="Label2" runat="server" />
     </form>
 </body>

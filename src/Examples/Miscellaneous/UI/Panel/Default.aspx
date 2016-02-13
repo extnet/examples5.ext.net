@@ -8,7 +8,7 @@
         if (this.IsPostBack && ThemeSelector.SelectedItems.Count > 0)
         {
             ListItem themeItem = ThemeSelector.SelectedItem;
-                
+
             switch (themeItem.Value)
             {
                 case "0":
@@ -30,7 +30,7 @@
                     this.ResourceManager1.Theme = Ext.Net.Theme.CrispTouch;
                     break;
             }
-        }            
+        }
     }
 </script>
 
@@ -63,7 +63,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Panel runat="server" UI="Primary" Flex="1" Title='UI="Primary"' />
                 <ext:Panel runat="server" UI="Success" Flex="1" Title='UI="Success"' />
@@ -81,7 +81,7 @@
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-            </Defaults>  
+            </Defaults>
             <Items>
                 <ext:Panel runat="server" UI="Primary" Flex="1" Title='UI="Primary"' Frame="true" />
                 <ext:Panel runat="server" UI="Success" Flex="1" Title='UI="Success"' Frame="true" />
@@ -93,13 +93,13 @@
 
         <br />
 
-        <ext:Panel 
-            runat="server" 
-            Width="800" 
-            Height="250" 
-            Title="Tools" 
-            UI="Primary" 
-            Frame="true" 
+        <ext:Panel
+            runat="server"
+            Width="800"
+            Height="250"
+            Title="Tools"
+            UI="Primary"
+            Frame="true"
             Layout="AccordionLayout">
             <Tools>
                 <ext:Tool Type="Toggle" />
@@ -132,57 +132,57 @@
 
         <br />
 
-        <ext:Panel 
-            runat="server" 
-            Width="800" 
-            Height="500" 
-            Title="Border Layout" 
-            UI="Primary" 
-            Frame="true" 
-            Layout="BorderLayout">                       
+        <ext:Panel
+            runat="server"
+            Width="800"
+            Height="500"
+            Title="Border Layout"
+            UI="Primary"
+            Frame="true"
+            Layout="BorderLayout">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    UI="Primary" 
-                    Width="200" 
-                    Title='UI="Primary"' 
-                    Region="West" 
-                    Collapsible="true" 
-                    MarginSpec="3" 
+                <ext:Panel
+                    runat="server"
+                    UI="Primary"
+                    Width="200"
+                    Title='UI="Primary"'
+                    Region="West"
+                    Collapsible="true"
+                    MarginSpec="3"
                     />
-                <ext:Panel 
-                    runat="server" 
-                    UI="Success" 
-                    Width="200" 
-                    Title='UI="Success"' 
-                    Region="East" 
-                    Collapsible="true" 
-                    MarginSpec="3" 
+                <ext:Panel
+                    runat="server"
+                    UI="Success"
+                    Width="200"
+                    Title='UI="Success"'
+                    Region="East"
+                    Collapsible="true"
+                    MarginSpec="3"
                     />
-                <ext:Panel 
-                    runat="server" 
-                    UI="Info" 
-                    Title='UI="Info"' 
-                    Region="Center" 
-                    MarginSpec="3" 
+                <ext:Panel
+                    runat="server"
+                    UI="Info"
+                    Title='UI="Info"'
+                    Region="Center"
+                    MarginSpec="3"
                     />
-                <ext:Panel 
-                    runat="server" 
-                    UI="Danger" 
-                    Height="100" 
-                    Title='UI="Danger"' 
-                    Region="North" 
-                    Collapsible="true" 
-                    MarginSpec="3" 
+                <ext:Panel
+                    runat="server"
+                    UI="Danger"
+                    Height="100"
+                    Title='UI="Danger"'
+                    Region="North"
+                    Collapsible="true"
+                    MarginSpec="3"
                     />
-                <ext:Panel 
-                    runat="server" 
-                    UI="Warning" 
-                    Height="100" 
-                    Title='UI="Warning"' 
-                    Region="South" 
-                    Collapsible="true" 
-                    MarginSpec="3" 
+                <ext:Panel
+                    runat="server"
+                    UI="Warning"
+                    Height="100"
+                    Title='UI="Warning"'
+                    Region="South"
+                    Collapsible="true"
+                    MarginSpec="3"
                     />
             </Items>
         </ext:Panel>

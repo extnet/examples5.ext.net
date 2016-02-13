@@ -48,7 +48,7 @@
 <html>
 <head runat="server">
     <title>GridPanel Row with ToolTip - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -65,7 +65,7 @@
             var view = grid.getView(),
                 record = view.getRecord(toolTip.triggerElement),
                 data = Ext.encode(record.data);
-                
+
             toolTip.update(data);
         };
     </script>
@@ -73,14 +73,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel Row with ToolTip</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Array Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Array Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -118,17 +118,17 @@
             <View>
                 <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
             </View>
-        </ext:GridPanel>     
-        
-        <ext:ToolTip 
-            runat="server" 
+        </ext:GridPanel>
+
+        <ext:ToolTip
+            runat="server"
             Target="={#{GridPanel1}.getView().el}"
             Delegate="={#{GridPanel1}.getView().itemSelector}"
             TrackMouse="true">
             <Listeners>
                 <Show Handler="onShow(this, #{GridPanel1});" />
             </Listeners>
-        </ext:ToolTip>     
+        </ext:ToolTip>
     </form>
 </body>
 </html>

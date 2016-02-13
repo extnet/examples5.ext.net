@@ -11,7 +11,7 @@ namespace Ext.Net.Examples.Examples.Loader.Component.Http_Handler
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "application/json";
-            
+
             switch (context.Request["mode"])
             {
                 case "uc":
@@ -21,14 +21,14 @@ namespace Ext.Net.Examples.Examples.Loader.Component.Http_Handler
                 case "items":
                 default:
                     ComponentLoader.Render(new List<AbstractComponent>()
-                        { 
+                        {
                             new Panel { Title="Item 1", Icon = Icon.UserBrown },
                             new Panel { Title="Item 2", Icon = Icon.UserGray },
                             new Panel { Title="Item 3", Icon = Icon.UserGreen }
                         }
                     );
                     break;
-            }            
+            }
         }
 
         public bool IsReusable

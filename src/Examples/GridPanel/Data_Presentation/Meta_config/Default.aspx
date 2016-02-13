@@ -222,9 +222,9 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Metadata" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Metadata"
                             Handler="#{GridPanel1}.editingPlugin.completeEdit();
                                      #{GridPanel1}.editingPlugin.editor = null; // workaround for the GitHub issue #303. Remove after Sencha fix.
                                      #{GridPanel1}.store.load();" />

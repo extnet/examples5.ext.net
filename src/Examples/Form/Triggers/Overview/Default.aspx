@@ -14,7 +14,7 @@
 <head runat="server">
     <title>Overview of triggers - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var triggerHandler = function (field, trigger, index) {
             switch (index) {
@@ -34,15 +34,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Overview of triggers</h1>
 
         <h2>1. With TriggerClick Listener</h2>
-        
-        <ext:TextField 
-            ID="TextField1" 
-            runat="server" 
-            Width="200" 
+
+        <ext:TextField
+            ID="TextField1"
+            runat="server"
+            Width="200"
             EmptyText="Click Trigger Button -->">
             <Triggers>
                 <ext:FieldTrigger Icon="Combo" />
@@ -51,13 +51,13 @@
                 <TriggerClick Handler="Ext.Msg.alert('Message', 'You Clicked the Trigger!');" />
             </Listeners>
         </ext:TextField>
-        
+
         <h2>2. With Dialog Editor</h2>
-        
-        <ext:TextField 
-            ID="TextField2" 
-            runat="server" 
-            Width="200" 
+
+        <ext:TextField
+            ID="TextField2"
+            runat="server"
+            Width="200"
             Editable="false">
             <Triggers>
                 <ext:FieldTrigger Icon="Clear" QTip="Click to clear field" Hidden="true" />
@@ -67,22 +67,22 @@
                 <TriggerClick Fn="triggerHandler" />
             </Listeners>
         </ext:TextField>
-        
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
-            MinWidth="165" 
-            MinHeight="125" 
-            Resizable="false" 
-            Title="Choose value" 
-            Hidden="true" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            MinWidth="165"
+            MinHeight="125"
+            Resizable="false"
+            Title="Choose value"
+            Hidden="true"
             Icon="ColorSwatch"
             BodyPadding="3"
             Layout="FitLayout">
             <Items>
                 <ext:ColorPicker runat="server">
                     <Listeners>
-                        <Select 
+                        <Select
                             Handler="
                                 var tf = #{TextField2};
                                 tf.getTrigger(0).show();
@@ -92,11 +92,11 @@
                                 />
                     </Listeners>
                 </ext:ColorPicker>
-            </Items>        
+            </Items>
         </ext:Window>
-        
+
         <h2>3. With Multiple Triggers</h2>
-        
+
         <ext:TextField ID="TextField3" runat="server" Width="200">
             <Triggers>
                 <ext:FieldTrigger Icon="Date" QTip="Custom tip" />
@@ -107,10 +107,10 @@
             <Listeners>
                 <TriggerClick Handler="Ext.Msg.alert('Message', 'TriggerIndex: ' + index + '<br /><br />Text: ' + this.getValue());" />
             </Listeners>
-        </ext:TextField> 
-        
+        </ext:TextField>
+
         <br/>
-        
+
         <ext:Button ID="Button3" runat="server" Text="Show hidden Trigger (via DirectEvent)">
             <%--<Listeners>
                 <Click Handler="#{TextField3}.getTrigger(3).show();" />

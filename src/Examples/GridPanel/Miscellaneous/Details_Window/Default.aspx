@@ -8,38 +8,38 @@
 <head runat="server">
     <title>Custom Window with Record Details - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
-        var CompanyX = {               
+        var CompanyX = {
             _index : 0,
-            
+
             getIndex : function () {
                 return this._index;
             },
-            
+
             setIndex : function (index) {
                 if (index > -1 && index < App.GridPanel1.getStore().getCount()) {
                     this._index = index;
                 }
             },
-            
+
             getRecord : function () {
                 var rec = App.GridPanel1.getStore().getAt(this.getIndex());  // Get the Record
-                
+
                 if (rec != null) {
                     return rec;
                 }
             },
-            
+
             edit : function (index) {
                 this.setIndex(index);
                 this.open();
             },
-            
+
             next : function () {
                 this.edit(this.getIndex() + 1);
             },
-            
+
             previous : function () {
                 this.edit(this.getIndex() - 1);
             },
@@ -53,14 +53,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Custom Window with Record Details</h1>
-        
+
         <p>For view/edit additional properties please click on the image in last column.</p>
-        
-        <ext:GridPanel 
-            runat="server" 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            runat="server"
+            ID="GridPanel1"
             Title="Employees">
             <Store>
                 <ext:Store runat="server" PageSize="5">
@@ -100,13 +100,13 @@
                     </Model>
                     <Sorters>
                         <ext:DataSorter Property="LastName" Direction="ASC" />
-                    </Sorters>                                       
+                    </Sorters>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
-			    <Columns>
-                    <ext:Column runat="server" Text="Full Name" DataIndex="LastName" Flex="1">  
-                        <Renderer Handler="return '<b>' + record.data['LastName'] + '</b>,' + record.data['FirstName']" />                 
+                <Columns>
+                    <ext:Column runat="server" Text="Full Name" DataIndex="LastName" Flex="1">
+                        <Renderer Handler="return '<b>' + record.data['LastName'] + '</b>,' + record.data['FirstName']" />
                     </ext:Column>
                     <ext:Column runat="server" Text="Title" DataIndex="Title" Width="150" />
                     <ext:DateColumn runat="server" Text="Birth Date" DataIndex="BirthDate" Format="yyyy-MM-dd" />
@@ -120,20 +120,20 @@
                         </Commands>
                         <Listeners>
                             <Command Handler="CompanyX.edit(recordIndex);" />
-                        </Listeners>   
+                        </Listeners>
                     </ext:CommandColumn>
-			    </Columns>
-            </ColumnModel>          
+                </Columns>
+            </ColumnModel>
             <BottomBar>
-                <ext:PagingToolbar 
-                    runat="server"                      
+                <ext:PagingToolbar
+                    runat="server"
                     DisplayInfo="true"
                     DisplayMsg="Displaying employees {0} - {1} of {2}"
                     EmptyMsg="No employees to display"
                     />
-            </BottomBar>                   
+            </BottomBar>
         </ext:GridPanel>
-        
+
         <uc1:WindowEditor ID="WindowEditor1" runat="server" />
     </form>
 </body>

@@ -4,11 +4,11 @@
 
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
-    {        
+    {
         if (this.IsPostBack && ThemeSelector.SelectedItems.Count > 0)
         {
             ListItem themeItem = ThemeSelector.SelectedItem;
-            
+
             switch (themeItem.Value)
             {
                 case "0":
@@ -46,10 +46,10 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:ComboBox 
-            ID="ThemeSelector" 
-            runat="server" 
-            FieldLabel="Theme" 
+        <ext:ComboBox
+            ID="ThemeSelector"
+            runat="server"
+            FieldLabel="Theme"
             AutoPostBack="true">
             <Items>
                 <ext:ListItem Text="Classic" Value="0" />
@@ -63,12 +63,12 @@
 
         <h3>Window UI</h3>
 
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
-            Title="Window" 
-            Width="500" 
-            Height="300" 
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            Title="Window"
+            Width="500"
+            Height="300"
             BodyPadding="10">
             <Tools>
                 <ext:Tool Type="Toggle" />
@@ -99,7 +99,7 @@
                         <ext:ListItem Text="info" />
                         <ext:ListItem Text="danger" />
                         <ext:ListItem Text="warning" />
-                    </Items>                    
+                    </Items>
                     <Listeners>
                         <Change Handler="this.up('window').setUI(this.getValue());" />
                     </Listeners>

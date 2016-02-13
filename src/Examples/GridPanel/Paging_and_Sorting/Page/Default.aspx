@@ -2,13 +2,13 @@
 
 <script runat="server">
     StoreReadDataEventArgs e;
-    
+
     protected void Store1_RefreshData(object sender, StoreReadDataEventArgs e)
     {
         string tpl = "Start: {0}<br />Limit: {1}<br />Sort: {2}<br />Dir: {3}";
 
         this.Label1.Html = string.Format(tpl, e.Start, e.Limit, e.Sort[0].Property, e.Sort[0].Direction);
-        
+
         //this.Label1.Text = e.Sort[0].Property + ":" + e.Sort[0].Direction.ToString();
 
         this.e = e;
@@ -45,7 +45,7 @@
             color       : #385F95;
             white-space : normal;
         }
-        
+
         .x-grid-rowbody p {
             margin : 5px 5px 10px 5px !important;
             width  : 99%;
@@ -64,33 +64,33 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:ObjectDataSource 
-            ID="ObjectDataSource1" 
-            runat="server" 
+
+        <asp:ObjectDataSource
+            ID="ObjectDataSource1"
+            runat="server"
             OnSelecting="EmployeeSelecting"
             OnSelected="ObjectDataSource1_Selected"
-            SelectMethod="GetEmployeesFilter" 
+            SelectMethod="GetEmployeesFilter"
             TypeName="Ext.Net.Examples.Northwind.Employee">
             <SelectParameters>
                 <asp:Parameter Name="start" Type="Int32" />
                 <asp:Parameter Name="limit" Type="Int32" />
-                <asp:Parameter Name="sort" Type="Object" />                
+                <asp:Parameter Name="sort" Type="Object" />
                 <asp:Parameter Name="count" Direction="Output" Type="Int32" />
             </SelectParameters>
         </asp:ObjectDataSource>
-        
-        <ext:GridPanel 
-            runat="server" 
-            ID="GridPanel1" 
-            Title="Employees" 
+
+        <ext:GridPanel
+            runat="server"
+            ID="GridPanel1"
+            Title="Employees"
             Frame="true"
             Height="300">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
-                    runat="server" 
-                    RemoteSort="true" 
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    RemoteSort="true"
                     DataSourceID="ObjectDataSource1"
                     OnReadData="Store1_RefreshData"
                     PageSize="3">
@@ -150,20 +150,20 @@
             </SelectionModel>
             <Features>
                 <ext:RowBody runat="server">
-                    <GetAdditionalData 
+                    <GetAdditionalData
                         Handler="return {rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>'};" />
                 </ext:RowBody>
-            </Features>          
+            </Features>
             <BottomBar>
-                <ext:PagingToolbar 
-                    runat="server"                      
-                    DisplayInfo="true" 
-                    DisplayMsg="Displaying employees {0} - {1} of {2}" 
-                    EmptyMsg="No employees to display" 
+                <ext:PagingToolbar
+                    runat="server"
+                    DisplayInfo="true"
+                    DisplayMsg="Displaying employees {0} - {1} of {2}"
+                    EmptyMsg="No employees to display"
                     />
             </BottomBar>
         </ext:GridPanel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

@@ -10,7 +10,7 @@ namespace Ext.Net.Examples.SimpleTasks
     public partial class TasksTree
     {
         public const string SCOPE = "SimpleTasks.TasksTree";
-        
+
         private void InitLogic()
         {
             //Remote tree actions
@@ -78,7 +78,7 @@ namespace Ext.Net.Examples.SimpleTasks
             TreeView view = this.View[0];
             view.Listeners.BeforeDrop.Fn = TasksTree.SCOPE + ".beforeNodeDrop";
             view.Listeners.BeforeDrop.Scope = TasksTree.SCOPE;
-            
+
             Button button = (Button)this.bBar.Items[0];
             button.Listeners.Click.Handler = TasksTree.SCOPE + ".insertCategory();";
             button.Listeners.Click.Scope = TasksTree.SCOPE;
@@ -197,7 +197,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 }
 
                 SimpleTasksDataContext ctx = this.DBContext;
-                
+
                 Category category = (from tl in ctx.Categories
                                   where tl.ID == nodeId
                                   select tl).First();
@@ -210,7 +210,7 @@ namespace Ext.Net.Examples.SimpleTasks
 
                 // remove category
                 ctx.Categories.DeleteOnSubmit(category);
-                
+
                 ctx.SubmitChanges();
                 e.Accept = true;
             }
@@ -283,7 +283,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 node.NodeID = tasksList.ID.ToString();
                 node.Text = tasksList.Name;
                 node.Leaf = !tasksList.IsFolder;
-                node.IconCls = tasksList.IsFolder ? "icon-folder" : "icon-category";                
+                node.IconCls = tasksList.IsFolder ? "icon-folder" : "icon-category";
                 node.CustomAttributes.Add(new ConfigItem("isFolder", JSON.Serialize(tasksList.IsFolder), ParameterMode.Raw));
                 if (!tasksList.IsFolder)
                 {

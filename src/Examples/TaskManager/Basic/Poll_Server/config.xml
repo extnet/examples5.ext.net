@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-	<description>
+    <description>
     The example demonstrates how to poll a server during some long action executed in a separate thread.
-  </description>  
+  </description>
 </example>

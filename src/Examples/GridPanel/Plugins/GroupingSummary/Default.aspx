@@ -7,8 +7,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
      {
-         this.Store1.DataSource = new List<Project> 
-         { 
+         this.Store1.DataSource = new List<Project>
+         {
             new Project(100, "Ext Forms: Field Anchoring", 112, "Integrate 2.0 Forms with 2.0 Layouts", 6, 150, 0, new DateTime(2007, 06, 24)),
             new Project(100, "Ext Forms: Field Anchoring", 113, "Implement AnchorLayout", 4, 150, 0, new DateTime(2007, 06, 25)),
             new Project(100, "Ext Forms: Field Anchoring", 114, "Add support for multiple types of anchors", 4, 150, 0, new DateTime(2007, 06, 27)),
@@ -57,17 +57,17 @@
 <html>
 <head runat="server">
     <title>GroupingSummary Plugin - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-   
+
     <style>
         .x-grid-body .x-grid-cell-Cost {
             background-color : #f1f2f4;
         }
-         
+
         .x-grid-row-summary .x-grid-cell-Cost .x-grid-cell-inner{
             background-color : #e1e2e4;
-        }    
+        }
 
         .task .x-grid-cell-inner {
             padding-left: 15px;
@@ -77,7 +77,7 @@
             font-weight: bold;
             font-size: 11px;
             background-color : #f1f2f4;
-        } 
+        }
     </style>
 
     <script>
@@ -102,7 +102,7 @@
         <p>Advanced grouping grid that allows cell editing and includes custom dynamic summary calculations.</p>
 
         <ext:ResourceManager runat="server"/>
-        
+
         <ext:Store ID="Store1" runat="server" GroupField="Name">
             <Sorters>
                 <ext:DataSorter Property="Due" Direction="ASC" />
@@ -122,13 +122,13 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Frame="true"
             StoreID="Store1"
-            Title="Sponsored Projects" 
+            Title="Sponsored Projects"
             Collapsible="true"
             AnimCollapse="false"
             Icon="ApplicationViewColumns"
@@ -139,20 +139,20 @@
             </Plugins>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column                        
+                    <ext:Column
                         runat="server"
                         TdCls="task"
-                        Text="Task"                       
+                        Text="Task"
                         Sortable="true"
                         DataIndex="Description"
                         Hideable="false"
                         SummaryType="Count"
                         Flex="1">
-                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />                            
+                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                     </ext:Column>
-                     
+
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Width="20" />
-                     
+
                     <ext:DateColumn
                         runat="server"
                         Text="Due Date"
@@ -166,9 +166,9 @@
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Format="Date" FormatArgs="'m/d/Y'" />
                     </ext:DateColumn>
- 
+
                     <ext:Column
-                        runat="server"  
+                        runat="server"
                         Width="75"
                         Text="Estimate"
                         Sortable="true"
@@ -178,14 +178,14 @@
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Handler="return value + ' hours';" />
                         <Editor>
-                            <ext:NumberField 
-                                runat="server" 
-                                AllowBlank="false" 
-                                MinValue="0" 
+                            <ext:NumberField
+                                runat="server"
+                                AllowBlank="false"
+                                MinValue="0"
                                 StyleSpec="text-align:left" />
                         </Editor>
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -197,14 +197,14 @@
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Format="UsMoney" />
                         <Editor>
-                            <ext:NumberField 
-                                runat="server" 
-                                AllowBlank="false" 
-                                MinValue="0" 
+                            <ext:NumberField
+                                runat="server"
+                                AllowBlank="false"
+                                MinValue="0"
                                 StyleSpec="text-align:left" />
                         </Editor>
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -217,26 +217,26 @@
                         <Renderer Handler="return Ext.util.Format.usMoney(record.data.Estimate * record.data.Rate);" />
                         <SummaryRenderer Format="UsMoney" />
                     </ext:Column>
-                </Columns>                
+                </Columns>
             </ColumnModel>
             <View>
                 <ext:GridView runat="server" StripeRows="true" MarkDirty="false" />
             </View>
-            <Features>               
-                <ext:GroupingSummary 
-                    ID="GroupingSummary1" 
-                    runat="server" 
-                    GroupHeaderTplString="{name}" 
-                    HideGroupedHeader="true" 
+            <Features>
+                <ext:GroupingSummary
+                    ID="GroupingSummary1"
+                    runat="server"
+                    GroupHeaderTplString="{name}"
+                    HideGroupedHeader="true"
                     EnableGroupingMenu="false" />
-            </Features>     
-            
+            </Features>
+
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Toggle" 
+                        <ext:Button
+                            runat="server"
+                            Text="Toggle"
                             ToolTip="Toggle the visibility of summary row"
                             EnableToggle="true"
                             Pressed="true"

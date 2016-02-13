@@ -4,7 +4,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+
     }
 </script>
 
@@ -44,9 +44,9 @@
         <p>The unique look is achieved by a heavy use of sprites and renderers</p>
         <p>to style the chart, and the only custom component is the 'arctext' sprite that</p>
         <p>is used to put a text along a curve.</p>--%>
-        
+
         <uc:UnemploymentStore runat="server" />
-        
+
         <ext:Viewport runat="server" Layout="FitLayout">
             <Items>
                 <ext:Container runat="server" OverflowY="Auto">
@@ -63,7 +63,7 @@
                         </ext:Container>
                     </Items>
                 </ext:Container>
-            </Items>            
+            </Items>
         </ext:Viewport>
     </form>
 </body>

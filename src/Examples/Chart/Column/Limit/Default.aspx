@@ -6,19 +6,19 @@
         public string Month
         {
             get;
-            set;    
+            set;
         }
-        
+
         public double High
         {
             get;
-            set;    
-        }    
-        
+            set;
+        }
+
         public double Low
         {
             get;
-            set;    
+            set;
         }
     }
 
@@ -32,7 +32,7 @@
 
     private void BindData(int counter = -1)
     {
-        var data = new List<Temperature> 
+        var data = new List<Temperature>
         {
             new Temperature { Month = "Jan", High = 14.7, Low = 5.6  },
             new Temperature { Month = "Feb", High = 16.5, Low = 6.6  },
@@ -49,12 +49,12 @@
         };
 
         if (counter >= 0)
-        {            
-            int i;            
+        {
+            int i;
             int temp = 15;
             int min = counter % 2 == 1 ? 0 : temp;
             var rand = new Random();
-            
+
             for (i = 0; i < data.Count; i++) {
                 data[i].High = min + temp + rand.NextDouble() * temp;
                 data[i].Low = min + rand.NextDouble() * temp;
@@ -67,10 +67,10 @@
         var value = data.Average(t => t.High);
         axis.Limits = new Limits
         {
-            new AxisLimit 
+            new AxisLimit
             {
                 Value = value,
-                Line = new LimitSprite 
+                Line = new LimitSprite
                 {
                     LineDash = new int[] {2,2},
                     Title = new Sprite
@@ -80,7 +80,7 @@
                 }
             }
         };
-        
+
     }
 
     static int counter;
@@ -167,11 +167,11 @@
 
                     <Interactions>
                         <ext:ItemHighlightInteraction />
-                    </Interactions>                    
+                    </Interactions>
 
                     <Axes>
                         <ext:NumericAxis
-                            Position="Left"                                                        
+                            Position="Left"
                             Minimum="10"
                             TitleMargin="20"
                             Title="Temperature in °C">
@@ -200,10 +200,10 @@
                     </Series>
 
                     <Items>
-                        <ext:TextSprite 
-                            Text="Redwood City Climate Data" 
-                            FontSize="22" 
-                            Width="100" 
+                        <ext:TextSprite
+                            Text="Redwood City Climate Data"
+                            FontSize="22"
+                            Width="100"
                             Height="30"
                             X="40"
                             Y="20" />

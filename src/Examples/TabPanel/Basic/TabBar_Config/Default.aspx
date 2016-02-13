@@ -15,14 +15,14 @@
                 Title = "New Tab",
                 Closable = true,
                 Layout = "Fit",
-                Items = { 
+                Items = {
                     new UserControlLoader{Path="ElementChooser.ascx"}
                 }
             };
             TabPanel1.Add(panel);
             panel.Render();
 
-            TabPanel1.SetLastTabAsActive();            
+            TabPanel1.SetLastTabAsActive();
         }
     </script>
 
@@ -34,8 +34,8 @@
             width:200px;
             height:200px;
             border: 2px solid #E0E0E0;
-            cursor: pointer;        
-            text-align:center;        
+            cursor: pointer;
+            text-align:center;
         }
 
         .x-newtab-over-item
@@ -53,17 +53,17 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Title="TabBar Config"
-            Width="680" 
+            Width="680"
             Resizable="false"
             Closable="false"
-            Height="500" 
-            Icon="Link" 
+            Height="500"
+            Icon="Link"
             Layout="FitLayout">
-            <Items>                
+            <Items>
                 <ext:TabPanel ID="TabPanel1" runat="server">
                     <TabBar>
                         <ext:Button runat="server" Flat="true" Icon="Add">

@@ -14,7 +14,7 @@
         <author>Shea Frederick, Colin Ramsay &amp; Steve 'Cutter' Blades</author>
         <detail>As more and more of our work is done through a web browser, and more businesses build web rather than desktop applications, users want web applications that look and feel like desktop applications. Ext JS is a JavaScript library that makes it (relatively) easy to create desktop-style user interfaces in a web application, including multiple windows, toolbars, drop-down menus, dialog boxes, and much more. Both Commercial and Open Source licenses are available for Ext JS.&lt;br /&gt;&lt;br /&gt;Ext JS has the unique advantage of being the only client-side UI library that also works as an application development library. Learning Ext JS will help you create rich, dynamic, and AJAX-enabled web applications that look good and perform beyond the expectations of your users.&lt;br /&gt;&lt;br /&gt;From the building blocks of the application layout, to complex dynamic Grids and Forms, this book will guide you through the basics of using Ext JS, giving you the knowledge required to create rich user experiences beyond typical web interfaces. It will also provide you with the tools you need to use AJAX, by consuming server-side data directly into the many interfaces of the Ext JS component library.</detail>
         <price>38.21</price>
-        <image>images/books/learning-extjs.jpg</image>        
+        <image>images/books/learning-extjs.jpg</image>
         <review>
             <author>Kyle D. Wagner</author>
             <rating>4</rating>

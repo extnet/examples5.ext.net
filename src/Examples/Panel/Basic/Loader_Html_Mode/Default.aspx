@@ -14,7 +14,7 @@
         X.Msg.Alert("DirectMethod", "Parent Button Clicked").Show();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -28,20 +28,20 @@
     <br />
 
     <form id="form1" runat="server">
-        <ext:ResourceManager ID="ResourceManager1" runat="server" />        
-        <ext:Panel 
-            runat="server" 
-            Title="Parent" 
-            Height="300" 
+        <ext:ResourceManager ID="ResourceManager1" runat="server" />
+        <ext:Panel
+            runat="server"
+            Title="Parent"
+            Height="300"
             Width="500"
             BodyPadding="6">
             <Loader runat="server" Url="Child.aspx" Mode="Html" Scripts="true" />
             <Buttons>
-                <ext:Button 
-                    ID="btnParent" 
-                    runat="server" 
-                    Text="Submit [DirectEvent]" 
-                    OnDirectClick="btnParent_Click" 
+                <ext:Button
+                    ID="btnParent"
+                    runat="server"
+                    Text="Submit [DirectEvent]"
+                    OnDirectClick="btnParent_Click"
                     />
                 <ext:Button runat="server" Text="Submit [DirectMethod]">
                     <Listeners>
@@ -50,7 +50,7 @@
                 </ext:Button>
             </Buttons>
         </ext:Panel>
-    
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

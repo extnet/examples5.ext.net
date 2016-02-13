@@ -11,7 +11,7 @@
         }
 
         X.Msg.Alert("Selection", sb.ToString()).Show();
-    }    
+    }
 </script>
 
 <!DOCTYPE html>
@@ -89,8 +89,8 @@
                                             runat="server"
                                             Text="Toggle enabled"
                                             Checked="true"
-                                            CheckHandler="function (item, checked) { 
-                                                              App.ItemSelector1.setDisabled(!checked); 
+                                            CheckHandler="function (item, checked) {
+                                                              App.ItemSelector1.setDisabled(!checked);
                                                           }" />
                                     </Items>
                                 </ext:Menu>

@@ -52,8 +52,8 @@ namespace Ext.Net.Examples
             }
             set
             {
-                this.dataIndex = value; 
-            } 
+                this.dataIndex = value;
+            }
         }
 
         public override ConfigOptionsCollection ConfigOptions

@@ -61,11 +61,11 @@
         }
         return System.Drawing.Color.FromArgb(Convert.ToByte(r * 255.0f), Convert.ToByte(g * 255.0f), Convert.ToByte(b * 255.0f));
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<Pair> data = new List<Pair> 
-        { 
+        List<Pair> data = new List<Pair>
+        {
             new Pair("Ruby", 40),
             new Pair("JavaScript", 26),
             new Pair("Shell", 5),
@@ -83,7 +83,7 @@
 
     private double angle = 0;
     private double start = 0;
-        
+
     private void Draw(List<Pair> data)
     {
         DrawContainer draw = this.Draw1;
@@ -107,15 +107,15 @@
 
     private void Process(DrawContainer draw, int i, Pair item, int total)
     {
-        int value = (int)item.Second;                
+        int value = (int)item.Second;
         double angleplus = 360 * value * 1.0 / total;
-        double popangle = this.angle + (angleplus / 2);            
-        System.Drawing.Color color = this.ColorFromHSL(this.start, 0.5, 0.5);                            
+        double popangle = this.angle + (angleplus / 2);
+        System.Drawing.Color color = this.ColorFromHSL(this.start, 0.5, 0.5);
         int delta = 30;
-        System.Drawing.Color bcolor = this.ColorFromHSL(this.start, 1, 0.5);                
+        System.Drawing.Color bcolor = this.ColorFromHSL(this.start, 1, 0.5);
         int r = 200;
         double rad = Math.PI / 180;
-            
+
         draw.Gradients.Add(new LinearGradient{
             Degrees = 90,
             GradientID = "Grd"+i,
@@ -129,7 +129,7 @@
         sector.FillStyle = "url(#Grd"+i+")";
         sector.StrokeStyle = "#fff";
         sector.LineWidth = 3;
-            
+
         draw.Items.Add(sector);
 
         TextSprite text = new TextSprite
@@ -152,18 +152,18 @@
         this.angle += angleplus;
         this.start += 0.1;
     }
-        
+
     private AbstractSprite Sector(int cx, int cy, int r, double startAngle, double endAngle) {
         double rad = Math.PI / 180;
-            
+
         string x1 = JSON.Serialize(cx + r * Math.Cos(-startAngle * rad));
         string x2 = JSON.Serialize(cx + r * Math.Cos(-endAngle * rad));
         string y1 = JSON.Serialize(cy + r * Math.Sin(-startAngle * rad));
         string y2 = JSON.Serialize(cy + r * Math.Sin(-endAngle * rad));
-            
+
         return new PathSprite{
             Path = String.Join<string>(" ", new string[] { "M" + cx, cy.ToString(), "L" + x1, y1.ToString(), "A" + r, r.ToString(), "0", (endAngle - startAngle) > 180 ? "1" : "0", "0", x2, y2, "z" })
-        };            
+        };
     }
 </script>
 
@@ -201,7 +201,7 @@
             <Items>
                 <ext:DrawContainer ID="Draw1" runat="server" Border="false" />
             </Items>
-        </ext:Viewport>   
-    </form>    
+        </ext:Viewport>
+    </form>
 </body>
 </html>

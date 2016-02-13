@@ -15,15 +15,15 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:GridPanel 
-                runat="server" 
-                Title="Restaurant Reviews" 
+            <ext:GridPanel
+                runat="server"
+                Title="Restaurant Reviews"
                 Frame="true"
                 Width="500"
                 Height="400">
                 <Store>
-                    <ext:Store 
-                        runat="server" 
+                    <ext:Store
+                        runat="server"
                         Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>">
                         <Model>
                             <ext:Model runat="server">
@@ -43,11 +43,11 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column 
-                            runat="server" 
-                            Text="Name" 
-                            Width="150" 
-                            DataIndex="name" 
+                        <ext:Column
+                            runat="server"
+                            Text="Name"
+                            Width="150"
+                            DataIndex="name"
                             Locked="true" />
 
                         <ext:RatingColumn
@@ -57,16 +57,16 @@
                             Width="90"
                             Sortable="false" />
 
-                        <ext:Column 
-                            runat="server" 
-                            Text="Cuisine" 
-                            Width="90" 
+                        <ext:Column
+                            runat="server"
+                            Text="Cuisine"
+                            Width="90"
                             DataIndex="cuisine" />
 
-                        <ext:Column 
-                            runat="server" 
-                            Text="Review" 
-                            Flex="1" 
+                        <ext:Column
+                            runat="server"
+                            Text="Review"
+                            Flex="1"
                             DataIndex="description"
                             Sortable="false" />
                     </Columns>

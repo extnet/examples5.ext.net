@@ -11,12 +11,12 @@
         protected void ChangeWeights(object sender, DirectEventArgs e)
         {
             X.ControlsScripting = false;
-            
+
             this.BorderLayoutPanel.Items[0].Weight = Convert.ToInt32(WestWeight.Number);
             this.BorderLayoutPanel.Items[1].Weight = Convert.ToInt32(NorthWeight.Number);
             this.BorderLayoutPanel.Items[2].Weight = Convert.ToInt32(SouthWeight.Number);
             this.BorderLayoutPanel.Items[3].Weight = Convert.ToInt32(EastWeight.Number);
-            
+
             X.ControlsScripting = true;
 
             this.BorderLayoutPanel.Render(Window1, 0, RenderMode.InsertTo);
@@ -27,14 +27,14 @@
     <ext:ResourceManager runat="server" />
 
     <h1>Regions Weights</h1>
-        
-    <ext:Window 
-        ID="Window1" 
-        runat="server" 
-        Title="Regions Weights" 
-        Width="800" 
+
+    <ext:Window
+        ID="Window1"
+        runat="server"
+        Title="Regions Weights"
+        Width="800"
         Height="550"
-        Border="false" 
+        Border="false"
         Closable="false">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
@@ -56,11 +56,11 @@
                     <ext:HBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
-                    <ext:FormPanel ID="Weights" runat="server" Border="false" Width="300">                                
+                    <ext:FormPanel ID="Weights" runat="server" Border="false" Width="300">
                         <Defaults>
                             <ext:Parameter Name="allowBlank" Value="false" Mode="Raw" />
                         </Defaults>
-                
+
                         <Items>
                             <ext:NumberField ID="WestWeight" runat="server" FieldLabel="West" Number="0" />
                             <ext:NumberField ID="NorthWeight" runat="server" FieldLabel="North" Number="0" />
@@ -73,21 +73,21 @@
                         </DirectEvents>
                     </ext:FormPanel>
 
-                    <ext:Container runat="server" Flex="1">                        
-                        <Items>     
-                            <ext:DisplayField runat="server" Text="Cases:" />                       
+                    <ext:Container runat="server" Flex="1">
+                        <Items>
+                            <ext:DisplayField runat="server" Text="Cases:" />
 
-                            <ext:Container runat="server">                 
+                            <ext:Container runat="server">
                                 <Defaults>
                                     <ext:Parameter Name="margin" Value="5 0 0 20" />
-                                </Defaults>                
+                                </Defaults>
                                 <Items>
                                     <ext:HyperlinkButton runat="server" Text="Case 1 (West : 20)">
                                         <Listeners>
                                             <Click Handler="#{Weights}.setValue({WestWeight:20, NorthWeight:0, SouthWeight:0, EastWeight:0});" />
                                         </Listeners>
                                     </ext:HyperlinkButton>
-                                    
+
                                     <ext:HyperlinkButton runat="server" Text="Case 2 (East : 20)">
                                         <Listeners>
                                             <Click Handler="#{Weights}.setValue({EastWeight:20, NorthWeight:0, SouthWeight:0, WestWeight:0});" />
@@ -105,7 +105,7 @@
                                             <Click Handler="#{Weights}.setValue({WestWeight:20, NorthWeight:0, SouthWeight:30, EastWeight:20});" />
                                         </Listeners>
                                     </ext:HyperlinkButton>
-                                    
+
                                     <ext:HyperlinkButton runat="server" Text="Case 5 (West : 20, North : 30, East : 20)">
                                         <Listeners>
                                             <Click Handler="#{Weights}.setValue({WestWeight:20, NorthWeight:30, SouthWeight:0, EastWeight:20});" />

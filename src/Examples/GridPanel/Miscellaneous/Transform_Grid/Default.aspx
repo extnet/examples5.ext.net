@@ -4,28 +4,28 @@
 <head runat="server">
     <title>Converting an HTML table into a GridPanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
-        #data { 
-            width: 400px; 
-            border: 1px solid #bbb; 
-            border-collapse: collapse; 
+        #data {
+            width: 400px;
+            border: 1px solid #bbb;
+            border-collapse: collapse;
         }
-        
-        #data td, #data th { 
-            border: 1px solid #ccc; 
-            border-collapse: collapse; 
-            padding: 5px; 
+
+        #data td, #data th {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            padding: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Convert an HTML &lt;table> into a GridPanel</h1>
-    
+
     <ext:ResourceManager runat="server" />
 
     <ext:TransformGrid runat="server" Table="data" />
-    
+
     <table style="visibility:hidden;" id="data">
         <thead>
             <tr>

@@ -35,7 +35,7 @@
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [System.Xml.Serialization.XmlIgnore]
         [Newtonsoft.Json.JsonIgnore]
@@ -82,19 +82,19 @@
                 XField = "Month",
                 YField = new string[] { "High" },
 
-                StyleSpec = 
-                { 
+                StyleSpec =
+                {
                     new SeriesSprite { MaxBarWidth = 50 }
                 }
             });
-            
+
             this.BindData();
         }
     }
 
     private void BindData(int counter = -1)
     {
-        var data = new List<Temperature> 
+        var data = new List<Temperature>
         {
             new Temperature { Month = "Jan", High = 14.7, Low = 5.6  },
             new Temperature { Month = "Feb", High = 16.5, Low = 6.6  },

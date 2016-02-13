@@ -11,7 +11,7 @@
         item = new Ext.Net.MenuItem();
         item.Text = "Disabled Item";
         item.Disabled = true;
-        
+
         this.MenuButton.Menu.Primary.Items.Add(item);
 
         Ext.Net.Menu scrollingMenu = new Ext.Net.Menu{ MaxHeight = 250 };
@@ -20,7 +20,7 @@
         {
             scrollingMenu.Items.Add(new Ext.Net.MenuItem { Text = "Item " + (i + 1), Width = 100 });
         }
-        
+
         this.ScrollingMenuButton.Menu.Add(scrollingMenu);
     }
 </script>
@@ -72,9 +72,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Toolbar with Menus</h1>
-        
+
         <ext:Toolbar runat="server" Width="750">
             <Items>
                 <ext:Button ID="MenuButton" runat="server" Text="Button w/Menu" Icon="ArrowDown">
@@ -88,7 +88,7 @@
                                 <ext:MenuItem runat="server" Text="Radio Options">
                                     <Menu>
                                         <ext:Menu runat="server">
-                                            <Items>                                                        
+                                            <Items>
                                                 <ext:MenuItem runat="server" Text="<b class='menu-title'>Choose a Theme</b>" Plain="true" />
                                                 <ext:CheckMenuItem runat="server" Text="Aero Glass" Checked="true" Group="theme" CheckHandler="onItemCheck" />
                                                 <ext:CheckMenuItem runat="server" Text="Vista Black" Group="theme" CheckHandler="onItemCheck" />
@@ -110,7 +110,7 @@
                                 </ext:MenuItem>
                                 <ext:MenuItem runat="server" Text="Choose a Color" Icon="ColorSwatch">
                                     <Menu>
-                                        <ext:ColorMenu runat="server">                                                    
+                                        <ext:ColorMenu runat="server">
                                             <Listeners>
                                                 <Select Handler="msg('Color Selected', 'You chose {0}.', color);" />
                                             </Listeners>

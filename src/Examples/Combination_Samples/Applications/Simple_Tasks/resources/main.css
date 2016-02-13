@@ -37,8 +37,8 @@
 }
 
 .tasks-tree .x-tree-node .x-tree-selected a span{
-	background: transparent;
-	color: #1E4176;
+    background: transparent;
+    color: #1E4176;
     font-weight: bold;
 }
 
@@ -58,14 +58,14 @@
 
 .ext-gecko .task-completed .row-cmd-cell-ct{
     text-decoration: none !important;
-} 
+}
 
 .task-completed .x-grid-cell-last .x-grid-cell-inner{
     text-decoration: none !important;
 }
 
-.task-col-hd .x-column-header-inner{    
-    background: transparent url(images/hd-check.gif) no-repeat center center;    
+.task-col-hd .x-column-header-inner{
+    background: transparent url(images/hd-check.gif) no-repeat center center;
 }
 
 .new-task-icon {
@@ -82,16 +82,16 @@
 }
 
 .taskMessage {
-	background: #fffad7;
-	border: 1px solid #eee096;
-	padding: 3px;
-	margin: 0 0 8px 0;
-	font: normal 11px arial, tahoma, helvetica, sans-serif;
+    background: #fffad7;
+    border: 1px solid #eee096;
+    padding: 3px;
+    margin: 0 0 8px 0;
+    font: normal 11px arial, tahoma, helvetica, sans-serif;
 }
 
 .task-window .divider {
-	height: 1px !important;
-	background: #a3bad9;
-	margin-bottom: 8px;
-	overflow: hidden;
+    height: 1px !important;
+    background: #a3bad9;
+    margin-bottom: 8px;
+    overflow: hidden;
 }

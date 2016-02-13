@@ -4,10 +4,10 @@
 
 <html>
 <head runat="server">
-    <title>Isolated Child Sessions - Ext.Net Examples</title>        
+    <title>Isolated Child Sessions - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <script runat="server">    
+    <script runat="server">
         [DirectMethod]
         public object GetOrders(string action, Dictionary<string, object> extraParams)
         {
@@ -19,13 +19,13 @@
             {
                 var key = prms.Filter[0].Property;
                 int cId;
-                    
+
                 if (!Int32.TryParse(prms.Filter[0].Value, out cId))
                 {
                     return new { data = (object)null };
                 }
 
-                var searchValue = cId;    
+                var searchValue = cId;
 
                 return new
                 {
@@ -41,10 +41,10 @@
                         })
                 };
             }
-            
+
             return new { data };
-        }    
-    
+        }
+
         public class MyModel
         {
             public static object Model = new
@@ -146,7 +146,7 @@
                 }
                 dialog.getSession().save();
                 if (!isEdit) {
-                    // Use the id of that child record to find the phantom in the parent session, 
+                    // Use the id of that child record to find the phantom in the parent session,
                     // we can then use it to insert the record into our store
                     App.View1.getViewModel().getStore('customers').add(App.View1.getSession().getRecord('Customer', id));
                 }
@@ -158,12 +158,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Isolated Child Sessions</h1>
 
         <p>This form is a popup window used by the ChildSession view. This view is
            added as a contained window so we use the same ViewController instance.
-        </p>        
+        </p>
 
         <ext:Model runat="server" Name="Customer">
             <Fields>
@@ -195,12 +195,12 @@
         <ext:Window runat="server"
             LazyMode="Config"
             Layout="FitLayout"
-            Modal="true" 
+            Modal="true"
             Width="500"
             Height="430"
             Closable="true"
             CloseAction="Destroy"
-            TemplateWidget="true" 
+            TemplateWidget="true"
             TemplateWidgetFnName="getChildSessionForm">
             <Bind>
                 <ext:Parameter Name="title" Value="{title}" />
@@ -216,14 +216,14 @@
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:TextField runat="server" 
-                            FieldLabel="Name" 
+                        <ext:TextField runat="server"
+                            FieldLabel="Name"
                             Reference="name"
                             MsgTarget="Side"
                             BindString="{theCustomer.name}" />
 
-                        <ext:TextField runat="server" 
-                            FieldLabel="Phone" 
+                        <ext:TextField runat="server"
+                            FieldLabel="Phone"
                             Reference="phone"
                             MsgTarget="Side"
                             BindString="{theCustomer.phone}" />
@@ -263,7 +263,7 @@
                             </ColumnModel>
                         </ext:GridPanel>
                     </Items>
-                </ext:FormPanel>                    
+                </ext:FormPanel>
             </Items>
             <Buttons>
                 <ext:Button runat="server" Text="Save" Handler="onSaveClick" />
@@ -271,14 +271,14 @@
             </Buttons>
         </ext:Window>
 
-        <ext:Panel ID="View1" runat="server" 
+        <ext:Panel ID="View1" runat="server"
             Title="All Customers"
             ReferenceHolder="true"
             Frame="true"
             Width="420"
             Height="320"
             Session="true"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
@@ -290,12 +290,12 @@
                    Flex="1">
                    <ColumnModel>
                        <Columns>
-                           <ext:Column runat="server" 
-                               Text="Name" 
-                               DataIndex="name" 
+                           <ext:Column runat="server"
+                               Text="Name"
+                               DataIndex="name"
                                Flex="1" />
-                           <ext:Column runat="server" 
-                               Text="Phone" 
+                           <ext:Column runat="server"
+                               Text="Phone"
                                DataIndex="phone"
                                Width="115" />
 

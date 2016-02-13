@@ -15,18 +15,18 @@
         root.Expanded = true;
 
         tree.Root.Add(root);
-        
+
         Ext.Net.Node node1 = new Ext.Net.Node();
-        
+
         node1.Text = "Friends";
         node1.Expanded = true;
-        
+
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "George",
                 Icon = Icon.User,
                 Leaf = true
-            });             
+            });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Brian",
@@ -69,7 +69,7 @@
         Ext.Net.Node node2 = new Ext.Net.Node();
         node2.Text = "Family";
         node2.Expanded = true;
-        
+
         node2.Children.Add(new Ext.Net.Node()
             {
                 Text = "Kelly",
@@ -96,7 +96,7 @@
             });
 
         root.Children.Add(node2);
-        
+
         Ext.Net.Panel panel1 = new Ext.Net.Panel("Settings");
         Ext.Net.Panel panel2 = new Ext.Net.Panel("Even More Stuff");
         Ext.Net.Panel panel3 = new Ext.Net.Panel("My Stuff");
@@ -111,17 +111,17 @@
         tooltip.Html = "Let your users know what they can do!";
 
         button1.ToolTips.Add(tooltip);
-        
+
         Ext.Net.Button button2 = new Ext.Net.Button();
         button2.Icon = Icon.UserAdd;
-        
+
         Ext.Net.Button button3 = new Ext.Net.Button();
         button3.Icon = Icon.UserDelete;
 
         toolbar.Items.Add(button1);
         toolbar.Items.Add(button2);
         toolbar.Items.Add(button3);
-        
+
         Window window = new Window();
 
         window.Title = "Accordion Window";
@@ -152,9 +152,9 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Accordion Layout in Code-Behind</h1>
-    
+
     <asp:PlaceHolder ID="PlaceHolder1" runat="server" />
 </body>
 </html>

@@ -58,7 +58,7 @@
                                                 Icon = Icon.UserGray
                                             };
             root.Children.Add(composerNode);
-            
+
             foreach(Composition composition in composer.Compositions)
             {
                 Ext.Net.Node compositionNode = new Ext.Net.Node()
@@ -78,17 +78,17 @@
                     compositionNode.Children.Add(pieceNode);
                 }
             }
-        } 
+        }
     }
-    
+
     public class Composer
     {
         public Composer(string name) { this.Name = name; }
         public string Name { get; set; }
-        
+
         private List<Composition> compositions;
         public List<Composition> Compositions
-        { 
+        {
             get
             {
                 if (this.compositions == null)
@@ -96,7 +96,7 @@
                     this.compositions = new List<Composition>();
                 }
                 return this.compositions;
-            } 
+            }
         }
     }
 
@@ -108,7 +108,7 @@
         {
             this.Type = type;
         }
-        
+
         public CompositionType Type { get; set; }
 
         private List<Piece> pieces;
@@ -122,18 +122,18 @@
                 }
                 return this.pieces;
             }
-        } 
+        }
     }
-        
+
     public class Piece
     {
         public Piece() {}
 
-        public Piece(string title) 
-        { 
-            this.Title = title; 
+        public Piece(string title)
+        {
+            this.Title = title;
         }
-        
+
         public string Title { get; set; }
     }
 
@@ -146,7 +146,7 @@
     }
 
     public List<Composer> GetData()
-    { 
+    {
         Composer beethoven = new Composer("Beethoven");
 
         Composition beethovenConcertos = new Composition(CompositionType.Concertos);
@@ -154,7 +154,7 @@
         Composition beethovenSonatas = new Composition(CompositionType.Sonatas);
         Composition beethovenSymphonies = new Composition(CompositionType.Symphonies);
 
-        beethovenConcertos.Pieces.AddRange(new List<Piece> { 
+        beethovenConcertos.Pieces.AddRange(new List<Piece> {
             new Piece{ Title = "No. 1 - C" },
             new Piece{ Title = "No. 2 - B-Flat Major" },
             new Piece{ Title = "No. 3 - C Minor" },
@@ -186,10 +186,10 @@
         });
 
         beethoven.Compositions.AddRange(new List<Composition>{
-            beethovenConcertos, 
+            beethovenConcertos,
             beethovenQuartets,
             beethovenSonatas,
-            beethovenSymphonies 
+            beethovenSymphonies
         });
 
 
@@ -227,13 +227,13 @@
         });
 
         brahms.Compositions.AddRange(new List<Composition>{
-            brahmsConcertos, 
+            brahmsConcertos,
             brahmsQuartets,
             brahmsSonatas,
-            brahmsSymphonies 
+            brahmsSymphonies
         });
-        
-        
+
+
         Composer mozart = new Composer("Mozart");
 
         Composition mozartConcertos = new Composition(CompositionType.Concertos);
@@ -253,7 +253,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>Multi Node TreePanel built from code-behind - Ext.NET Examples</title>
@@ -262,7 +262,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
+
         <h1>Multi Node TreePanel Built From Code-Behind</h1>
 
         <asp:PlaceHolder ID="PlaceHolder1" runat="server" />

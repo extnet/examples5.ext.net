@@ -27,15 +27,15 @@
                 }
             },
 
-            Items = 
-            { 
+            Items =
+            {
                 new Component()
                 {
                     Width = 60,
                     Height = 60,
                     Html = "<div class='icon'></div>"
                 },
-                    
+
                 new Container()
                 {
                     Flex = 1,
@@ -47,13 +47,13 @@
                             Cls = "title",
                             Text = title
                         },
-                            
+
                         new DisplayField()
                         {
                             Cls = "message",
                             Text = message
                         },
-                            
+
                         new Ext.Net.Button()
                         {
                             Cls= "close",

@@ -5,7 +5,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<object> data = new List<object> { 
+        List<object> data = new List<object> {
             new { FirstName = "Bill", LastName = "Foot" },
             new { FirstName = "Bill", LastName = "Little" },
             new { FirstName = "Bob", LastName = "Jones" },
@@ -13,7 +13,7 @@
             new { FirstName = "Chris", LastName = "Johnson" }
         };
 
-        this.Store1.DataSource = data;            
+        this.Store1.DataSource = data;
         this.Store1.DataBind();
     }
 </script>
@@ -30,10 +30,10 @@
             var step = 0,
                 minValue = 0,
                 maxValue = App.Store1.getCount() - 1;
-            
+
             if (direction) {
                 step = direction === "up" ? -1 : 1;
-            } 
+            }
 
             newIndex = Ext.Number.constrain(spinner.index + step, minValue, maxValue);
             spinner.index = newIndex;
@@ -44,13 +44,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Custom SpinnerField</h1>
 
         <p>This demonstrates custom implementation of the SpinnerField functionality.</p>
 
         <p>It's just an example. In a real application it would be best to create a custom control inherited from a SpinnerField.</p>
-        
+
         <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server">
@@ -68,24 +68,24 @@
             </Listeners>
         </ext:Store>
 
-        <ext:FormPanel 
-            runat="server" 
-            Title="Form" 
-            Width="400" 
-            Height="70" 
-            BodyPadding="10" 
+        <ext:FormPanel
+            runat="server"
+            Title="Form"
+            Width="400"
+            Height="70"
+            BodyPadding="10"
             LabelWidth="150">
             <Items>
-                <ext:SpinnerField 
-                    ID="SpinnerField1" 
-                    runat="server"                    
+                <ext:SpinnerField
+                    ID="SpinnerField1"
+                    runat="server"
                     Index="2">
                     <Listeners>
                         <Spin Fn="onSpin" Buffer="100" />
                     </Listeners>
                 </ext:SpinnerField>
             </Items>
-        </ext:FormPanel>       
+        </ext:FormPanel>
    </form>
 </body>
 </html>

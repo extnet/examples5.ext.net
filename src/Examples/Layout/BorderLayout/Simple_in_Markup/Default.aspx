@@ -11,61 +11,61 @@
     <ext:ResourceManager runat="server" />
 
     <h1>Simple BorderLayout in Markup</h1>
-    
-    <ext:Button 
-        ID="Button1" 
-        runat="server" 
-        Text="Show Window" 
+
+    <ext:Button
+        ID="Button1"
+        runat="server"
+        Text="Show Window"
         Icon="Application">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
-        </Listeners>    
+        </Listeners>
     </ext:Button>
-        
-    <ext:Window 
-        ID="Window1" 
-        runat="server" 
-        Title="Simple Layout" 
+
+    <ext:Window
+        ID="Window1"
+        runat="server"
+        Title="Simple Layout"
         Icon="Application"
-        Width="600" 
+        Width="600"
         Height="350"
-        Border="false" 
+        Border="false"
         Collapsible="true"
         Plain="true"
         Layout="BorderLayout">
         <Items>
-            <ext:Panel 
-                runat="server" 
-                Region="West" 
-                Collapsible="true" 
-                MinWidth="175" 
-                Split="true" 
-                Width="175" 
+            <ext:Panel
+                runat="server"
+                Region="West"
+                Collapsible="true"
+                MinWidth="175"
+                Split="true"
+                Width="175"
                 Title="Navigation" />
-            <ext:TabPanel 
-                runat="server" 
+            <ext:TabPanel
+                runat="server"
                 Region="Center"
                 ActiveTabIndex="0">
                 <Items>
-                    <ext:Panel 
-                        ID="Tab1" 
-                        runat="server" 
-                        Title="First Tab" 
+                    <ext:Panel
+                        ID="Tab1"
+                        runat="server"
+                        Title="First Tab"
                         BodyPadding="6"
                         Html="First Tab"
                         />
-                    <ext:Panel 
-                        ID="Tab2" 
-                        runat="server" 
-                        Title="Another Tab" 
+                    <ext:Panel
+                        ID="Tab2"
+                        runat="server"
+                        Title="Another Tab"
                         BodyPadding="6"
                         Html="Another Tab"
                         />
-                    <ext:Panel 
-                        ID="Tab3" 
-                        runat="server" 
-                        Title="Closeable Tab" 
-                        Closable="true" 
+                    <ext:Panel
+                        ID="Tab3"
+                        runat="server"
+                        Title="Closeable Tab"
+                        Closable="true"
                         BodyPadding="6"
                         Html="Closable Tab"
                         />

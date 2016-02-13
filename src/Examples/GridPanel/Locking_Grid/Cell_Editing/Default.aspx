@@ -46,7 +46,7 @@
 <html>
 <head runat="server">
     <title>Locking Column Cell Editing - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -62,18 +62,18 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Locking Column Cell Editing Example</h1>
 
     <p>This example shows how to edit a locking Panel using cell editing.</p>
     <p>It is not possible to lock or unlock <i>all</i> columns using the user interface. Each side, locked or unlocked must always contain at least one column.</p>
-    
-    <ext:GridPanel 
+
+    <ext:GridPanel
         ID="GridPanel1"
-        runat="server" 
+        runat="server"
         ColumnLines="true"
-        Title="Locking Grid Column" 
-        Width="600" 
+        Title="Locking Grid Column"
+        Width="600"
         Height="350">
         <Store>
             <ext:Store runat="server">
@@ -91,13 +91,13 @@
             </ext:Store>
         </Store>
         <ColumnModel>
-            <Columns>                
-                <ext:Column 
-                    runat="server" 
-                    Text="Company<br>Name" 
-                    DataIndex="company" 
-                    Width="200" 
-                    Locked="true" 
+            <Columns>
+                <ext:Column
+                    runat="server"
+                    Text="Company<br>Name"
+                    DataIndex="company"
+                    Width="200"
+                    Locked="true"
                     Sortable="false">
                     <Editor>
                         <ext:TextField runat="server" />
@@ -138,6 +138,6 @@
         <Plugins>
             <ext:CellEditing runat="server" ClicksToEdit="1" />
         </Plugins>
-    </ext:GridPanel>          
+    </ext:GridPanel>
 </body>
 </html>

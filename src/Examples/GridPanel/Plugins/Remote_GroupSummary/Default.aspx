@@ -5,14 +5,14 @@
 
 <!DOCTYPE html>
 
-<script runat="server">    
+<script runat="server">
     protected void OnReadData(object sender, StoreReadDataEventArgs e)
     {
         CultureInfo ci = new CultureInfo("en-US");
         Store store = GridPanel1.Store.Primary;
-        
-        List<Project> data = new List<Project> 
-             { 
+
+        List<Project> data = new List<Project>
+             {
                  new Project(100, "Ext Forms: Field Anchoring", 112, "Integrate 2.0 Forms with 2.0 Layouts", 6, 150, 0, ParseExact("06/24/2007", ref ci)),
                  new Project(100, "Ext Forms: Field Anchoring", 113, "Implement AnchorLayout", 4, 150, 0, ParseExact("06/25/2007", ref ci)),
                  new Project(100, "Ext Forms: Field Anchoring", 114, "Add support for multiple types of anchors", 4, 150, 0, ParseExact("06/27/2007", ref ci)),
@@ -31,11 +31,11 @@
                  new Project(102, "Ext Grid: Summary Rows", 111, "Testing and debugging", 8, 125, 0, ParseExact("07/15/2007", ref ci))
              };
 
-        List<object> summaryData = new List<object> 
+        List<object> summaryData = new List<object>
         {
             new {Name = "Ext Grid: Single-level Grouping", Description = 13, Estimate = 6, Rate = 100, Due = ParseExact("07/06/2012", ref ci), Cost = 1234},
-	        new {Name = "Ext Forms: Field Anchoring", Description = 14, Estimate = 9, Rate = 50, Due = ParseExact("06/29/2007", ref ci), Cost = 999},
-	        new {Name = "Ext Grid: Summary Rows", Description = 11, Estimate = 4, Rate = 44, Due = ParseExact("06/29/2011", ref ci), Cost = 789}
+            new {Name = "Ext Forms: Field Anchoring", Description = 14, Estimate = 9, Rate = 50, Due = ParseExact("06/29/2007", ref ci), Cost = 999},
+            new {Name = "Ext Grid: Summary Rows", Description = 11, Estimate = 4, Rate = 44, Due = ParseExact("06/29/2011", ref ci), Cost = 789}
         };
 
         store.Data = new { data, summaryData };
@@ -74,17 +74,17 @@
 <html>
 <head runat="server">
     <title>Grouping with Remote Summary - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-   
+
     <style>
         .x-grid-body .x-grid-cell-Cost {
             background-color : #f1f2f4;
         }
-         
+
         .x-grid-row-summary .x-grid-cell-Cost .x-grid-cell-inner{
             background-color : #e1e2e4;
-        }    
+        }
 
         .task .x-grid-cell-inner {
             padding-left: 15px;
@@ -94,20 +94,20 @@
             font-weight: bold;
             font-size: 11px;
             background-color : #f1f2f4;
-        } 
+        }
     </style>
 </head>
 <body>
     <form runat="server">
         <h1>Grouping with Remote Summary</h1>
 
-        <p>This example demonstrates the use of the GroupingSummaryFeature with server-side summary calculation (results are intentionally wrong).</p>        
+        <p>This example demonstrates the use of the GroupingSummaryFeature with server-side summary calculation (results are intentionally wrong).</p>
 
         <ext:ResourceManager runat="server"/>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
             Width="800"
@@ -116,7 +116,7 @@
                 <ext:Store runat="server" GroupField="Name" OnReadData="OnReadData">
                     <Sorters>
                         <ext:DataSorter Property="Due" Direction="ASC" />
-                    </Sorters>                    
+                    </Sorters>
                     <Model>
                         <ext:Model runat="server" IDProperty="TaskID">
                             <Fields>
@@ -142,19 +142,19 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column                        
+                    <ext:Column
                         runat="server"
                         TdCls="task"
-                        Text="Task"                       
+                        Text="Task"
                         Sortable="true"
                         DataIndex="Description"
                         Hideable="false"
                         Flex="1">
-                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />                            
+                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                     </ext:Column>
-                     
+
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Width="20" />
-                     
+
                     <ext:DateColumn
                         runat="server"
                         Width="100"
@@ -162,19 +162,19 @@
                         Sortable="true"
                         DataIndex="Due"
                         Format="MM/dd/yyyy">
-                        <SummaryRenderer Fn="Ext.util.Format.dateRenderer('m/d/Y')" />  
+                        <SummaryRenderer Fn="Ext.util.Format.dateRenderer('m/d/Y')" />
                     </ext:DateColumn>
- 
+
                     <ext:Column
-                        runat="server"  
+                        runat="server"
                         Width="75"
                         Text="Estimate"
                         Sortable="true"
                         DataIndex="Estimate">
                         <Renderer Handler="return value +' hours';" />
-                        <SummaryRenderer Handler="return value +' hours';" />                        
+                        <SummaryRenderer Handler="return value +' hours';" />
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -182,9 +182,9 @@
                         Sortable="true"
                         DataIndex="Rate">
                         <Renderer Format="UsMoney" />
-                        <SummaryRenderer Fn="Ext.util.Format.usMoney" />                         
+                        <SummaryRenderer Fn="Ext.util.Format.usMoney" />
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -200,7 +200,7 @@
             </ColumnModel>
             <View>
                 <ext:GridView runat="server" StripeRows="false" />
-            </View>         
+            </View>
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -212,15 +212,15 @@
                         </ext:Button>
                     </Items>
                 </ext:Toolbar>
-            </TopBar>   
-            <Features>               
-                <ext:GroupingSummary 
-                    ID="GroupingSummary1" 
-                    runat="server" 
-                    GroupHeaderTplString="{name}" 
-                    HideGroupedHeader="true" 
-                    RemoteRoot="data.summaryData" />                   
-            </Features>  
+            </TopBar>
+            <Features>
+                <ext:GroupingSummary
+                    ID="GroupingSummary1"
+                    runat="server"
+                    GroupHeaderTplString="{name}"
+                    HideGroupedHeader="true"
+                    RemoteRoot="data.summaryData" />
+            </Features>
         </ext:GridPanel>
     </form>
   </body>

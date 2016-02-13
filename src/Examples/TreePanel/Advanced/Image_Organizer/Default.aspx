@@ -14,7 +14,7 @@
             Session["newIndex"] = value;
         }
     }
-     
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -23,7 +23,7 @@
             string[] files = System.IO.Directory.GetFiles(path);
 
             List<object> data = new List<object>(files.Length);
-                
+
             foreach (string fileName in files)
             {
                 System.IO.FileInfo fi = new System.IO.FileInfo(fileName);
@@ -45,7 +45,7 @@
         TreePanel1.GetRootNode().AppendChild(new Node
         {
             NodeID = (++NewIndex).ToString(),
-            CustomAttributes = 
+            CustomAttributes =
             {
                 new ConfigItem("name", "Album " + NewIndex, ParameterMode.Value)
             },
@@ -66,8 +66,8 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" />        
-        
+        <ext:ResourceManager runat="server" />
+
         <h1>Organizing Images into Albums</h1>
         <p>This example shows demonstrates how you can drop anything into the tree.</p>
         <p>This example also shows how a customized DragZone can be
@@ -76,15 +76,15 @@
         <p>For simplicity, there is no validation on the names you enter in the tree node editor and you can drag the same picture
         into an album as many times as you want.</p>
         <p>Hold shift/control to select multiple images in the main images view. You can drag those images into the tree.</p>
-        
-        <ext:Panel 
+
+        <ext:Panel
             runat="server"
             Width="700"
             Height="490"
             Layout="BorderLayout">
             <Items>
-                <ext:TreePanel 
-                    ID="TreePanel1" 
+                <ext:TreePanel
+                    ID="TreePanel1"
                     runat="server"
                     Region="West"
                     Width="200"
@@ -92,7 +92,7 @@
                     Title="My Albums"
                     RootVisible="false"
                     DisplayField="name">
-                    
+
                     <View>
                         <ext:TreeView runat="server">
                             <Plugins>
@@ -126,13 +126,13 @@
                             <Root>
                                 <ext:Node NodeID="root" Expanded="true" AllowDrop="false">
                                     <Children>
-                                        <ext:Node 
+                                        <ext:Node
                                             AllowDrag="false"
                                             EmptyChildren="true"
                                             IconCls="album-btn">
                                             <CustomAttributes>
                                                 <ext:ConfigItem Name="name" Value="Album 1" Mode="Value" />
-                                            </CustomAttributes>    
+                                            </CustomAttributes>
                                         </ext:Node>
                                     </Children>
                                 </ext:Node>
@@ -141,10 +141,10 @@
                     </Store>
 
                     <Editor>
-                        <ext:TextField 
-                            runat="server" 
-                            AllowBlank="false" 
-                            BlankText="A name is required" 
+                        <ext:TextField
+                            runat="server"
+                            AllowBlank="false"
+                            BlankText="A name is required"
                             SelectOnFocus="true" />
                     </Editor>
 
@@ -153,15 +153,15 @@
                     </Plugins>
                 </ext:TreePanel>
 
-                <ext:Panel 
+                <ext:Panel
                     runat="server"
-                    Region="Center" 
-                    Title="My Images" 
-                    Layout="FitLayout" 
+                    Region="Center"
+                    Title="My Images"
+                    Layout="FitLayout"
                     PaddingSpec="5 5 5 0">
                     <Items>
-                        <ext:DataView 
-                            ID="ImageView" 
+                        <ext:DataView
+                            ID="ImageView"
                             runat="server"
                             TrackOver="true"
                             Cls="x-image-view"
@@ -171,7 +171,7 @@
                             SingleSelect="false">
                             <Tpl runat="server">
                                 <Html>
-									<tpl for=".">
+                                    <tpl for=".">
                                         <div class="thumb-wrap">
                                             <div class="thumb">
                                                  <tpl if="!Ext.isIE6">
@@ -179,12 +179,12 @@
                                                 </tpl>
                                                 <tpl if="Ext.isIE6">
                                                     <div style="width:76px;height:76px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\"{url}\")"></div>
-                                                </tpl>              
+                                                </tpl>
                                             </div>
                                             <span>{name}</span>
                                         </div>
                                     </tpl>
-								</Html>
+                                </Html>
                             </Tpl>
                             <Store>
                                 <ext:Store ID="Store1" runat="server">
@@ -192,12 +192,12 @@
                                         <ext:Model runat="server" IDProperty="name">
                                             <Fields>
                                                 <ext:ModelField Name="name" />
-                                                <ext:ModelField Name="url" /> 
+                                                <ext:ModelField Name="url" />
                                                 <ext:ModelField Name="leaf" DefaultValue="true" />
                                             </Fields>
                                         </ext:Model>
                                     </Model>
-                                </ext:Store>   
+                                </ext:Store>
                             </Store>
 
                             <Plugins>

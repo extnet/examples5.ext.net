@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
-        { 
+        this.Chart1.GetStore().DataSource = new List<object>
+        {
             new { Month = "Jan", Data1 = 20, Data2 = 37, Data3 = 35, Data4 = 4 },
             new { Month = "Feb", Data1 = 20, Data2 = 37, Data3 = 36, Data4 = 5 },
             new { Month = "Mar", Data1 = 19, Data2 = 36, Data3 = 37, Data4 = 4 },
@@ -73,9 +73,9 @@
                                 </ext:Model>
                             </Model>
                         </ext:Store>
-                    </Store>         
-                    
-                    <LegendConfig Dock="Right" />          
+                    </Store>
+
+                    <LegendConfig Dock="Right" />
 
                     <Items>
                         <ext:TextSprite
@@ -116,14 +116,14 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
+                        <ext:LineSeries
                             Title="IE"
-                            XField="Month" 
+                            XField="Month"
                             YField="Data1">
                             <Marker>
                                 <ext:Sprite SpriteType="Square" Duration="200" Easing="BackOut" />
                             </Marker>
-                            
+
                             <HighlightConfig>
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
@@ -133,14 +133,14 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
+                        <ext:LineSeries
                             Title="Firefox"
-                            XField="Month" 
+                            XField="Month"
                             YField="Data2">
                             <Marker>
                                 <ext:Sprite SpriteType="Triangle" Duration="200" Easing="BackOut" />
                             </Marker>
-                            
+
                             <HighlightConfig>
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
@@ -150,14 +150,14 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
+                        <ext:LineSeries
                             Title="Chrome"
-                            XField="Month" 
+                            XField="Month"
                             YField="Data3">
                             <Marker>
                                 <ext:Sprite SpriteType="Arrow" Duration="200" Easing="BackOut" />
                             </Marker>
-                            
+
                             <HighlightConfig>
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
@@ -167,14 +167,14 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
+                        <ext:LineSeries
                             Title="Safari"
-                            XField="Month" 
+                            XField="Month"
                             YField="Data4">
                             <Marker>
                                 <ext:Sprite SpriteType="Cross" Duration="200" Easing="BackOut" />
                             </Marker>
-                            
+
                             <HighlightConfig>
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>

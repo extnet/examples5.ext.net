@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
-        X.Msg.Notify(new NotificationConfig { 
+        X.Msg.Notify(new NotificationConfig {
             Icon  = Icon.Accept,
             Title = "Working",
             Html  = this.TextArea1.Text
@@ -12,7 +12,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>Ext.NET Example</title>
@@ -31,11 +31,11 @@
         <p>Thank you for installing Ext.NET.</p>
         <p class="last">You can check that everything is working correctly by submitting a value in the message box below.</p>
     </div>
-    
+
     <form runat="server">
-        <ext:Panel 
+        <ext:Panel
             ID="Window1"
-            runat="server" 
+            runat="server"
             Title="Welcome to Ext.NET"
             Height="215"
             Width="350"
@@ -47,21 +47,21 @@
             Layout="AnchorLayout"
             DefaultAnchor="100%">
             <Items>
-                <ext:TextArea 
-                    ID="TextArea1" 
-                    runat="server" 
+                <ext:TextArea
+                    ID="TextArea1"
+                    runat="server"
                     EmptyText=">> Enter a Test Message Here <<"
-                    FieldLabel="Message" 
-                    Height="85" 
+                    FieldLabel="Message"
+                    Height="85"
                     />
             </Items>
             <Buttons>
-                <ext:Button 
+                <ext:Button
                     ID="Button1"
-                    runat="server" 
+                    runat="server"
                     Text="Submit"
-                    Icon="Accept" 
-                    OnDirectClick="Button1_Click" 
+                    Icon="Accept"
+                    OnDirectClick="Button1_Click"
                     />
             </Buttons>
         </ext:Panel>

@@ -8,8 +8,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-         this.Store1.DataSource = new List<Company> 
-         { 
+         this.Store1.DataSource = new List<Company>
+         {
              new Company("3m Co", 71.72, 0.02, 0.03),
              new Company("Alcoa Inc", 29.01, 0.42, 1.47),
              new Company("Altria Group Inc", 83.81, 0.28, 0.34),
@@ -84,7 +84,7 @@
         StringBuilder sb = new StringBuilder();
         sb.Append("<table  cellspacing='15'>");
         bool addHeader = true;
-        
+
         foreach (Dictionary<string, string> row in companies)
         {
             if (addHeader)
@@ -102,7 +102,7 @@
 
                 addHeader = false;
             }
-            
+
             sb.Append("<tr>");
             foreach (KeyValuePair<string, string> keyValuePair in row)
             {
@@ -142,13 +142,13 @@
 <html>
 <head runat="server">
     <title>Row Selection Model</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
      <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server" IDProperty="Name">
@@ -161,35 +161,35 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-    
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             StoreID="Store1"
             Title="Company List"
             Collapsible="true"
             Width="600"
             Height="350">
             <ColumnModel runat="server">
-	            <Columns>
+                <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="Name" Flex="1" />
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="Change" />
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange" />
-	            </Columns>
+                </Columns>
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
-            </SelectionModel>           
+            </SelectionModel>
             <Buttons>
                 <ext:Button runat="server" Text="Submit">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" />
                     </DirectEvents>
                 </ext:Button>
-            
+
                 <ext:Button runat="server" Text="Submit with values">
                     <DirectEvents>
                         <Click OnEvent="SubmitSelection">
@@ -199,13 +199,13 @@
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-            
+
                 <ext:Button runat="server" Text="Clear">
                     <DirectEvents>
                         <Click OnEvent="Clear_Click" />
                     </DirectEvents>
                 </ext:Button>
-            
+
                 <ext:Button runat="server" Text="Add 'Boeing Co.' to selection ">
                     <DirectEvents>
                         <Click OnEvent="Add_Click" />
@@ -213,11 +213,11 @@
                 </ext:Button>
             </Buttons>
         </ext:GridPanel>
-     
+
         <div style="width:590px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
-        </div>    
-    
+        </div>
+
     </form>
 </body>
 </html>

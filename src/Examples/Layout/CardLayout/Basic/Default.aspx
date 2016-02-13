@@ -9,26 +9,26 @@
         {
             this.WizardPanel.ActiveIndex = index + 1;
         }
-        
+
         this.CheckButtons();
     }
 
     protected void Prev_Click(object sender, DirectEventArgs e)
     {
         int index = int.Parse(e.ExtraParams["index"]);
-        
+
         if ((index - 1) >= 0)
         {
             this.WizardPanel.ActiveIndex = index - 1;
         }
-        
+
         this.CheckButtons();
     }
 
     private void CheckButtons()
     {
         int index = this.WizardPanel.ActiveIndex;
-        
+
         this.btnNext.Disabled = index == (this.WizardPanel.Items.Count - 1);
         this.btnPrev.Disabled = index == 0;
     }
@@ -44,29 +44,29 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Panel 
-            ID="WizardPanel" 
-            runat="server" 
-            Title="Example Wizard" 
-            BodyPadding="15" 
-            Height="300" 
-            Layout="card" 
-            ActiveIndex="0">       
+
+        <ext:Panel
+            ID="WizardPanel"
+            runat="server"
+            Title="Example Wizard"
+            BodyPadding="15"
+            Height="300"
+            Layout="card"
+            ActiveIndex="0">
             <Items>
-                <ext:Container 
-                    runat="server" 
-                    Html="<h1>Welcome to the Wizard!</h1><p>Step 1 of 3</p>" 
+                <ext:Container
+                    runat="server"
+                    Html="<h1>Welcome to the Wizard!</h1><p>Step 1 of 3</p>"
                     />
-                <ext:Container 
-                    runat="server" 
-                    Html="<h1>Card 2</h1><p>Step 2 of 3</p>" 
+                <ext:Container
+                    runat="server"
+                    Html="<h1>Card 2</h1><p>Step 2 of 3</p>"
                     />
-                <ext:Container 
-                    runat="server" 
-                    Html="<h1>Congratulations!</h1><p>Step 3 of 3 - Complete</p>" 
+                <ext:Container
+                    runat="server"
+                    Html="<h1>Congratulations!</h1><p>Step 3 of 3 - Complete</p>"
                     />
-            </Items>         
+            </Items>
             <Buttons>
                 <ext:Button ID="btnPrev" runat="server" Text="Prev" Disabled="true" Icon="PreviousGreen">
                     <DirectEvents>
@@ -86,7 +86,7 @@
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-            </Buttons>     
+            </Buttons>
         </ext:Panel>
     </form>
 </body>

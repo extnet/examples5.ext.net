@@ -10,19 +10,19 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:XmlDataSource 
-            ID="XmlDataSource1" 
-            runat="server" 
+
+        <asp:XmlDataSource
+            ID="XmlDataSource1"
+            runat="server"
             DataFile="../../Shared/Plants.xml"
-            TransformFile="../../Shared/Plants.xsl" 
+            TransformFile="../../Shared/Plants.xsl"
             />
-        
-        <ext:GridPanel 
-            runat="server" 
-            Width="600" 
+
+        <ext:GridPanel
+            runat="server"
+            Width="600"
             Height="300"
-            Title="Plants" 
+            Title="Plants"
             Frame="true">
             <Store>
                 <ext:Store runat="server" DataSourceID="XmlDataSource1" PageSize="10">
@@ -51,11 +51,11 @@
                     <ext:DateColumn runat="server" Text="Available" DataIndex="Availability" Width="95" Format="yyyy-MM-dd" />
                     <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
                 </Columns>
-            </ColumnModel>           
+            </ColumnModel>
             <BottomBar>
                 <ext:PagingToolbar runat="server" HideRefresh="true" />
             </BottomBar>
-        </ext:GridPanel>    
+        </ext:GridPanel>
     </form>
 </body>
 </html>

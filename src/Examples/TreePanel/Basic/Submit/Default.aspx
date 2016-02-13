@@ -19,9 +19,9 @@
         Node root = new Node();
         root.Text = "Root";
         nodes.Add(root);
-        
+
         bool submit = true;
-        
+
         for (int i = 0; i < 10; i++)
         {
             Node node = new Node();
@@ -30,7 +30,7 @@
             node.Leaf = true;
             node.CustomAttributes.Add(new ConfigItem("submit", JSON.Serialize(submit), ParameterMode.Raw));
             root.Children.Add(node);
-            submit = !submit;            
+            submit = !submit;
         }
 
         return nodes;
@@ -52,13 +52,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>TreePanel Submit</h1>
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
-            Icon="Anchor" 
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
+            Icon="Anchor"
             Title="Tree"
             Width="550"
             RootVisible="false"
@@ -72,19 +72,19 @@
                         <Click Handler="#{TreePanel1}.submitNodes();" />
                     </Listeners>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Submit with Callback">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.submitNodes({text : 'Submit finish', callback : function (o, success, r) { alert(o.text + ', Status : ' + success); }});" />
                     </Listeners>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Submit with Node Filter">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.submitNodes({ nodeFilter : function (node) { return node.data.submit || node.isRoot();}});" />
                     </Listeners>
                 </ext:Button>
-            </Buttons>            
+            </Buttons>
          </ext:TreePanel>
     </form>
 </body>

@@ -1,13 +1,13 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     protected void Store_ReadData(object sender, StoreReadDataEventArgs e)
     {
         var data = FiltersTestData.Data;
 
         //-- start filtering -----------------------------------------------------------
         FilterHeaderConditions fhc = new FilterHeaderConditions(e.Parameters["filterheader"]);
-        
+
         foreach (FilterHeaderCondition condition in fhc.Conditions)
         {
             string dataIndex = condition.DataIndex;
@@ -140,7 +140,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>FilterHeader plugin overview - Ext.NET Examples</title>
@@ -149,9 +149,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
-        <h1>FilterHeader plugin</h1> 
-        
+
+        <h1>FilterHeader plugin</h1>
+
         <p>FilterHeader plugin allows use of the following operators:</p>
 
         <ul>
@@ -160,23 +160,23 @@
             <li>Number: >, <, >=, <= or number for equals</li>
             <li>Boolean: 1, 0, true, false</li>
         </ul>
-    
-        <ext:Window 
-            ID="Window1" 
-            runat="server"         
-            Width="800" 
-            Height="400" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            Width="800"
+            Height="400"
             Closable="false"
-            Title="Example" 
+            Title="Example"
             Maximizable="true"
             Layout="Fit">
             <Items>
                 <ext:GridPanel runat="server">
                     <Store>
-                        <ext:Store 
-                            ID="Store1" 
-                            runat="server" 
-                            PageSize="10" 
+                        <ext:Store
+                            ID="Store1"
+                            runat="server"
+                            PageSize="10"
                             RemoteSort="true"
                             OnReadData="Store_ReadData" >
                             <Model>
@@ -193,10 +193,10 @@
                             </Model>
                             <Sorters>
                                 <ext:DataSorter Property="Company" Direction="ASC" />
-                            </Sorters>  
+                            </Sorters>
                             <Proxy>
                                 <ext:PageProxy />
-                            </Proxy>      
+                            </Proxy>
                         </ext:Store>
                     </Store>
                     <ColumnModel runat="server">
@@ -218,7 +218,7 @@
                     </Plugins>
                     <BottomBar>
                         <ext:PagingToolbar runat="server" HideRefresh="True" />
-                    </BottomBar>                       
+                    </BottomBar>
                 </ext:GridPanel>
             </Items>
         </ext:Window>

@@ -29,7 +29,7 @@
         .custom .x-grouptabs-corner {
             background-image : none;
         }
-        
+
         .custom .x-active-group .x-grouptab-cell {
             background : #DBDBDB;
             border : none !important;
@@ -38,7 +38,7 @@
         .custom .x-grouptabbar .x-panel-body  {
             background-color: gray;
         }
-        
+
         .custom .x-grouptab-row .x-active-tab,
         .custom .x-grouptabbar .x-active-tab .x-grid-cell-inner{
             background-color : white;
@@ -51,7 +51,7 @@
     <p>GroupTabPanel doesn't work.</p>
     <p>There is an <a href="https://github.com/extnet/Ext.NET.Pro/issues/548">Issue</a> opened.</p>
     <p>We are sorry for the inconveniece.</p>
-    
+
     <%--<ext:Viewport runat="server" Layout="FitLayout">
         <Items>
             <ext:Panel runat="server" Layout="FitLayout" Border="false">
@@ -60,83 +60,83 @@
                         <Items>
                             <ext:Panel runat="server">
                                 <Items>
-                                    <ext:Portal 
-                                        runat="server" 
+                                    <ext:Portal
+                                        runat="server"
                                         Title="Dashboard"
                                         Border="false">
                                         <Items>
-                                            <ext:PortalColumn 
-                                                runat="server"                                        
+                                            <ext:PortalColumn
+                                                runat="server"
                                                 ColumnWidth="1">
                                                 <Items>
-                                                    <ext:Portlet 
-                                                        runat="server" 
-                                                        Title="Portlet 1" 
+                                                    <ext:Portlet
+                                                        runat="server"
+                                                        Title="Portlet 1"
                                                         Padding="6"
-                                                        Html="={shortTestMarkup}" 
+                                                        Html="={shortTestMarkup}"
                                                         />
-                                            
+
                                                     <ext:Portlet runat="server" Title="Stock Portlet" Layout="FitLayout" Height="300">
                                                         <Items>
-                                                            <ext:UserControlLoader runat="server" Path="StockPortlet.ascx" />    
+                                                            <ext:UserControlLoader runat="server" Path="StockPortlet.ascx" />
                                                         </Items>
                                                     </ext:Portlet>
 
-                                                    <ext:Portlet 
-                                                        runat="server" 
-                                                        Title="Portlet 2" 
+                                                    <ext:Portlet
+                                                        runat="server"
+                                                        Title="Portlet 2"
                                                         Padding="6"
-                                                        Html="={shortTestMarkup}" 
+                                                        Html="={shortTestMarkup}"
                                                         />
                                                 </Items>
-                                            </ext:PortalColumn>                                  
+                                            </ext:PortalColumn>
                                         </Items>
                                     </ext:Portal>
-                            
+
                                     <ext:UserControlLoader runat="server" Path="Tickets.ascx" />
-                            
-                                    <ext:Panel 
-                                        runat="server" 
-                                        Title="Subscriptions" 
-                                        Icon="Newspaper" 
-                                        StyleSpec="padding: 10px;" 
+
+                                    <ext:Panel
+                                        runat="server"
+                                        Title="Subscriptions"
+                                        Icon="Newspaper"
+                                        StyleSpec="padding: 10px;"
                                         Border="false"
                                         Layout="Fit">
                                         <Items>
                                             <ext:TabPanel runat="server" ActiveTabIndex="0">
                                                 <Items>
-                                                    <ext:Panel 
-                                                        runat="server" 
-                                                        Title="Subscriptions" 
+                                                    <ext:Panel
+                                                        runat="server"
+                                                        Title="Subscriptions"
                                                         BodyPadding="5"
-                                                        Html="={shortTestMarkup}" 
+                                                        Html="={shortTestMarkup}"
                                                         />
                                                 </Items>
                                             </ext:TabPanel>
                                         </Items>
                                     </ext:Panel>
                                     <ext:Panel
-                                        runat="server" 
-                                        Title="Users" 
-                                        Icon="Group" 
+                                        runat="server"
+                                        Title="Users"
+                                        Icon="Group"
                                         StyleSpec="padding: 10px;"
-                                        Html="={shortTestMarkup}" 
+                                        Html="={shortTestMarkup}"
                                         />
                                 </Items>
                             </ext:Panel>
                             <ext:Panel runat="server">
                                 <Items>
-                                    <ext:Panel 
-                                        runat="server" 
-                                        Title="Configuration" 
+                                    <ext:Panel
+                                        runat="server"
+                                        Title="Configuration"
                                         StyleSpec="padding: 10px;"
-                                        Html="={shortTestMarkup}" 
+                                        Html="={shortTestMarkup}"
                                         />
-                                    <ext:Panel 
-                                        runat="server" 
-                                        Title="Email Templates" 
+                                    <ext:Panel
+                                        runat="server"
+                                        Title="Email Templates"
                                         Icon="Email"
-                                        StyleSpec="padding: 10px;" 
+                                        StyleSpec="padding: 10px;"
                                         Border="false">
                                         <Items>
                                             <ext:FormPanel runat="server" Title="Form Layout" BodyStyle="padding:15px">
@@ -156,23 +156,23 @@
                                                     <ext:Button runat="server" Text="Cancel" />
                                                 </Buttons>
                                             </ext:FormPanel>
-                                        </Items>    
+                                        </Items>
                                     </ext:Panel>
                                 </Items>
                             </ext:Panel>
-                        </Items>                
-                    </ext:GroupTabPanel>    
+                        </Items>
+                    </ext:GroupTabPanel>
                 </Items>
 
                 <BottomBar>
                     <ext:Toolbar runat="server">
                         <Items>
                             <ext:SplitButton
-                                runat="server" 
+                                runat="server"
                                 AllowDepress="false"
-                                Icon="Tab" 
+                                Icon="Tab"
                                 ToggleGroup="group"
-                                Pressed="true" 
+                                Pressed="true"
                                 Text="Dashboard">
                                 <Menu>
                                     <ext:Menu runat="server">
@@ -200,12 +200,12 @@
                                 </Listeners>
                             </ext:SplitButton>
                             <ext:ToolbarSpacer runat="server" />
-                            <ext:SplitButton 
-                                ID="Group2Btn" 
+                            <ext:SplitButton
+                                ID="Group2Btn"
                                 AllowDepress="false"
-                                runat="server" 
-                                Icon="Tab" 
-                                ToggleGroup="group" 
+                                runat="server"
+                                Icon="Tab"
+                                ToggleGroup="group"
                                 Text="Configuration">
                                 <Menu>
                                     <ext:Menu runat="server">
@@ -228,7 +228,7 @@
                                     <Click Handler="#{GroupTabPanel1}.addCls('custom'); this.disable(); #{Button2}.enable();" />
                                 </Listeners>
                             </ext:Button>
-                            
+
                             <ext:Button ID="Button2" runat="server" Text="Remove Customer Css Class" Disabled="true" Icon="BulletBlack">
                                 <Listeners>
                                     <Click Handler="#{GroupTabPanel1}.removeCls('custom'); this.disable(); #{Button1}.enable();" />

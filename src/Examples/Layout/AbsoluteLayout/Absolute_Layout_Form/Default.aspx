@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Form with AbsoluteLayout - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         /* Custom rule to make the toolbar fit within a framed panel with no margin: */
         .email-form .x-panel-mc .x-panel-tbar .x-toolbar {
@@ -20,22 +20,22 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <ext:Viewport runat="server" Layout="Fit">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    Header="false" 
-                    Border="false" 
-                    BodyPadding="15" 
+                <ext:Panel
+                    runat="server"
+                    Header="false"
+                    Border="false"
+                    BodyPadding="15"
                     Layout="Fit">
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
-                            Title="New Email" 
-                            Cls="email-form" 
-                            Frame="true" 
-                            BodyStyle="10px 5px 5px;" 
+                        <ext:Panel
+                            runat="server"
+                            Title="New Email"
+                            Cls="email-form"
+                            Frame="true"
+                            BodyStyle="10px 5px 5px;"
                             Layout="Fit">
                             <TopBar>
                                 <ext:Toolbar runat="server">
@@ -59,11 +59,11 @@
                                         <ext:TextField runat="server" X="135" Y="37" AnchorHorizontal="100%" />
                                         <ext:Label runat="server" X="0" Y="65" Text="Subject:" />
                                         <ext:TextField runat="server" X="55" Y="64" AnchorHorizontal="100%" />
-                                        <ext:TextArea 
-                                            runat="server" 
-                                            X="0" 
-                                            Y="91" 
-                                            AnchorHorizontal="100%" 
+                                        <ext:TextArea
+                                            runat="server"
+                                            X="0"
+                                            Y="91"
+                                            AnchorHorizontal="100%"
                                             AnchorVertical="100%" />
                                     </Items>
                                 </ext:Container>
@@ -71,7 +71,7 @@
                         </ext:Panel>
                     </Items>
                 </ext:Panel>
-            </Items>           
+            </Items>
         </ext:Viewport>
     </form>
 </body>

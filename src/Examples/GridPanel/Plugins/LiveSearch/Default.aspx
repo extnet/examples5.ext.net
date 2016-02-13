@@ -55,7 +55,7 @@
 <html>
 <head runat="server">
     <title>Simple Array Grid - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
         .x-grid-row-over .x-grid-cell-inner {
@@ -94,15 +94,15 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Simple Array Grid</h1>
-    
-    <ext:GridPanel 
+
+    <ext:GridPanel
         ID="GridPanel1"
-        runat="server" 
-        Title="Live Search Grid" 
+        runat="server"
+        Title="Live Search Grid"
         ColumnLines="true"
-        Width="800" 
+        Width="800"
         Height="350">
         <Store>
             <ext:Store ID="Store1" runat="server">
@@ -122,7 +122,7 @@
         <ColumnModel>
             <Columns>
                 <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
-                <ext:Column runat="server" Text="Price" DataIndex="price">                  
+                <ext:Column runat="server" Text="Price" DataIndex="price">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
                 <ext:Column runat="server" Text="Change" DataIndex="change">
@@ -132,8 +132,8 @@
                     <Renderer Fn="pctChange" />
                 </ext:Column>
                 <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" />
-            </Columns>            
-        </ColumnModel>       
+            </Columns>
+        </ColumnModel>
         <SelectionModel>
             <ext:RowSelectionModel runat="server" />
         </SelectionModel>
@@ -150,18 +150,18 @@
             <ext:LiveSearchToolbar runat="server">
                 <Items>
                     <ext:ToolbarFill />
-                    <ext:Button runat="server" 
-                        ToolTip="Yellow highlight" 
-                        IconCls="x-yellow-highlight" 
-                        Pressed="true" 
-                        EnableToggle="true" 
+                    <ext:Button runat="server"
+                        ToolTip="Yellow highlight"
+                        IconCls="x-yellow-highlight"
+                        Pressed="true"
+                        EnableToggle="true"
                         ToggleGroup="highlightColor"
                         ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-livesearch-match';}}" />
 
-                    <ext:Button runat="server" 
-                        ToolTip="Blue highlight" 
-                        IconCls="x-blue-highlight" 
-                        EnableToggle="true" 
+                    <ext:Button runat="server"
+                        ToolTip="Blue highlight"
+                        IconCls="x-blue-highlight"
+                        EnableToggle="true"
                         ToggleGroup="highlightColor"
                         ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-blue-livesearch-match';}}" />
 

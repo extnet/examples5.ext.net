@@ -34,20 +34,20 @@
         }
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Field Indicator - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .red-text {
             color     : red;
             font-size : large;
         }
-        
+
         .blue-text {
             color     : blue;
             font-size : large;
@@ -57,44 +57,44 @@
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
-        <ext:FormPanel 
-            ID="FormPanel1" 
-            runat="server" 
-            Width="785" 
-            Title="Example" 
+
+        <ext:FormPanel
+            ID="FormPanel1"
+            runat="server"
+            Width="785"
+            Title="Example"
             BodyPadding="6">
             <Items>
-                <ext:TextField 
-                    ID="Field1" 
-                    runat="server" 
-                    FieldLabel="Field1" 
+                <ext:TextField
+                    ID="Field1"
+                    runat="server"
+                    FieldLabel="Field1"
                     IndicatorIcon="Information"
-                    Anchor="-5" 
-                    IndicatorTip="A Indicator ToolTip" 
+                    Anchor="-5"
+                    IndicatorTip="A Indicator ToolTip"
                     />
-                <ext:TextField 
-                    ID="Field2" 
-                    runat="server" 
-                    FieldLabel="Field2" 
+                <ext:TextField
+                    ID="Field2"
+                    runat="server"
+                    FieldLabel="Field2"
                     IndicatorIcon="Add"
-                    IndicatorText="Indicator" 
-                    Anchor="-5" 
-                    AllowBlank="false" 
-                    MsgTarget="Side" 
-                    />
-                <ext:TextField 
-                    ID="Field3" 
-                    runat="server" 
-                    FieldLabel="Field3" 
-                    IndicatorText="*" 
-                    IndicatorCls="red-text" 
-                    />
-                <ext:TextField 
-                    ID="Field4" 
-                    runat="server" 
+                    IndicatorText="Indicator"
+                    Anchor="-5"
                     AllowBlank="false"
-                    FieldLabel="Field4" 
+                    MsgTarget="Side"
+                    />
+                <ext:TextField
+                    ID="Field3"
+                    runat="server"
+                    FieldLabel="Field3"
+                    IndicatorText="*"
+                    IndicatorCls="red-text"
+                    />
+                <ext:TextField
+                    ID="Field4"
+                    runat="server"
+                    AllowBlank="false"
+                    FieldLabel="Field4"
                     IndicatorIcon="BulletRed"
                     IndicatorTip="It is required field"
                     />
@@ -108,18 +108,18 @@
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
-                                <ext:CheckMenuItem 
-                                    ID="mnuHideIndicator" 
-                                    runat="server" 
+                                <ext:CheckMenuItem
+                                    ID="mnuHideIndicator"
+                                    runat="server"
                                     Icon="Decline"
                                     Text="Hide indicator - Field3"
-                                    Checked="true" 
+                                    Checked="true"
                                     />
-                                <ext:CheckMenuItem 
-                                    ID="mnuShowIndicator" 
+                                <ext:CheckMenuItem
+                                    ID="mnuShowIndicator"
                                     runat="server"
-                                    Icon="Add" 
-                                    Text="Show indicator - Field3" 
+                                    Icon="Add"
+                                    Text="Show indicator - Field3"
                                     />
                             </Items>
                         </ext:Menu>
@@ -134,6 +134,6 @@
                 </ext:CycleButton>
             </Buttons>
         </ext:FormPanel>
-    </form>    
+    </form>
 </body>
 </html>

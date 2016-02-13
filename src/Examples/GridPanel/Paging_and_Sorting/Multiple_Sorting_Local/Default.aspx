@@ -47,27 +47,27 @@
 <html>
 <head runat="server">
     <title>Multiple Sorting- Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <script>        
+    <script>
         var doSort = function () {
             App.Store1.sort(getSorters());
         };
 
         var getSorters = function () {
             var sorters = [];
-            
+
             Ext.each(App.Toolbar1.query('button'), function (button) {
                 sorters.push(button.sortData);
             }, this);
-            
+
             return sorters;
         };
 
         var changeSortDirection = function (button, changeDirection) {
             var sortData = button.sortData,
                 iconCls  = button.iconCls;
-        
+
             if (sortData) {
                 if (changeDirection !== false) {
                     button.sortData.direction = Ext.String.toggle(button.sortData.direction, "ASC", "DESC");
@@ -82,9 +82,9 @@
             var header = data.header,
                 headerCt = header.ownerCt,
                 reorderer = headerCt.reorderer;
-            
+
             // Hide the drop indicators of the standard HeaderDropZone
-            // in case user had a pending valid drop in 
+            // in case user had a pending valid drop in
             if (reorderer) {
                 reorderer.dropZone.invalidateDrop();
             }
@@ -97,14 +97,14 @@
                 }
             });
         };
-        
+
         var createSorterButtonConfig = function (config) {
             config = config || {};
-                  
+
             Ext.applyIf(config, {
                 listeners : {
                     click : function (button, e) {
-                        changeSortDirection(button, true);             
+                        changeSortDirection(button, true);
                     }
                 },
                 iconCls     : config.sortData.direction.toLowerCase() == "asc" ? "icon-sortascending" : "icon-sortdescending",
@@ -120,10 +120,10 @@
                     ]
                 }
             });
-            
+
             return config;
         };
-        
+
         var canDrop = function (dragSource, event, data) {
             var sorters = getSorters(),
                 header  = data.header,
@@ -146,9 +146,9 @@
 
             return true;
         };
-        
+
         var remove = function (menu) {
-            App.Toolbar1.remove(menu.up('button'));            
+            App.Toolbar1.remove(menu.up('button'));
             App.Store1.clearFilter();
             doSort();
         };
@@ -158,23 +158,23 @@
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
+
         <h1>Multiple Grid Sorting Example</h1>
-        
+
         <p>This example demontrates how to sort a grid by more than a single field.</p>
-        
+
         <p>The store is initially sorted by Rating DESC then by Salary ASC, as indicated in the toolbar.</p>
-        
+
         <p>Click a button to change sorting direction, drag buttons to reorder them.</p>
-        
-        <p>This example also uses the ToolbarDroppable plugin to allow column headers to be dropped onto the toolbar. Try it with 
+
+        <p>This example also uses the ToolbarDroppable plugin to allow column headers to be dropped onto the toolbar. Try it with
           Name column header. Each column is only allowed one button, so Rating and Salary cannot be dropped in this example.</p>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Array Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Array Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -186,26 +186,26 @@
                                 <ext:ModelField Name="salary" Type="Float" />
                             </Fields>
                         </ext:Model>
-                    </Model>            
+                    </Model>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Name" Flex="1" DataIndex="name" Sortable="false" /> 
+                    <ext:Column runat="server" Text="Name" Flex="1" DataIndex="name" Sortable="false" />
                     <ext:Column runat="server" Text="Rating" Width="125" DataIndex="rating" Sortable="false"/>
                     <ext:Column runat="server" Text="Salary" Width="125" DataIndex="salary" Sortable="false" Align="Right">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
             <TopBar>
                 <ext:Toolbar ID="Toolbar1" runat="server">
                     <Items>
                         <ext:ToolbarTextItem runat="server" Text="Sorting order:" Reorderable="false" />
                         <ext:ToolbarSeparator runat="server" Reorderable="false" />
-                        <ext:SplitButton 
-                            runat="server" 
-                            Text="Rating" 
+                        <ext:SplitButton
+                            runat="server"
+                            Text="Rating"
                             Icon="SortDescending"
                             OnClientClick="changeSortDirection(this, true);"
                             SortData="={{property:'rating',direction:'DESC'}}"
@@ -218,9 +218,9 @@
                                 </ext:Menu>
                             </Menu>
                         </ext:SplitButton>
-                        <ext:SplitButton 
-                            runat="server" 
-                            Text="Salary" 
+                        <ext:SplitButton
+                            runat="server"
+                            Text="Salary"
                             Icon="SortAscending"
                             OnClientClick="changeSortDirection(this, true);"
                             SortData="={{property:'salary',direction:'ASC'}}"
@@ -253,7 +253,7 @@
             <Listeners>
                 <AfterLayout Handler="#{ToolbarDroppable1}.addDDGroup(this.child('headercontainer').reorderer.dragZone.ddGroup); doSort();" Single="true" />
             </Listeners>
-        </ext:GridPanel> 
+        </ext:GridPanel>
     </form>
 </body>
 </html>

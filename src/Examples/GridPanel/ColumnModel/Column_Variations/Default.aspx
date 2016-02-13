@@ -24,18 +24,18 @@
 <html>
 <head runat="server">
     <title>Columns Variations - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Column Variations" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Column Variations"
             DisableSelection="true"
-            Width="600" 
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store runat="server">
@@ -60,12 +60,12 @@
                     <ext:TemplateColumn runat="server" DataIndex="" MenuDisabled="true" Text="Template">
                         <Template runat="server">
                             <Html>
-						        <tpl for=".">
-							        {booleanCol}<br />
-								    {dateCol:date("d/m/Y")}<br />
-								    {numberCol}<br />
-						        </tpl>
-					        </Html>
+                                <tpl for=".">
+                                    {booleanCol}<br />
+                                    {dateCol:date("d/m/Y")}<br />
+                                    {numberCol}<br />
+                                </tpl>
+                            </Html>
                         </Template>
                     </ext:TemplateColumn>
                 </Columns>
@@ -73,7 +73,7 @@
             <View>
                 <ext:GridView runat="server" StripeRows="true" />
             </View>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

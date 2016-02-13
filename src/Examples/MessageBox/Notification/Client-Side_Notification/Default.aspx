@@ -1,8 +1,8 @@
 <%@ Page Language="C#" %>
 
-  
 
-    
+
+
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -17,27 +17,27 @@
 
 <html>
 <head runat="server">
-    <title>Summary of Client-Side Notification Options - Ext.NET Examples</title>  
+    <title>Summary of Client-Side Notification Options - Ext.NET Examples</title>
     <style>
         .menu-label {
             border-bottom : dotted 1px;
             margin-left   : 25px;
         }
-    </style> 
-    
+    </style>
+
     <script>
         var stub = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ...";
     </script>
 </head>
 <body>
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    
-    <ext:Window 
-        ID="Window1" 
-        runat="server" 
-        Title="Notifications" 
-        Width="300" 
-        Height="400" 
+
+    <ext:Window
+        ID="Window1"
+        runat="server"
+        Title="Notifications"
+        Width="300"
+        Height="400"
         Layout="Accordion">
         <Items>
             <ext:MenuPanel runat="server" Title="Basic Align" SaveSelection="false">
@@ -54,23 +54,23 @@
                                      });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Top Right">
                             <Listeners>
                                 <Click Handler="
                                     Ext.net.Notification.show({
                                         hideFx     : {
-                                            fxName : 'ghost', 
+                                            fxName : 'ghost',
                                             args   : [ 'tr', {} ]
                                         },
                                         showFx     : {
-                                            fxName : 'slideIn', 
-                                            args   : [ 
-                                            'tr', { 
+                                            fxName : 'slideIn',
+                                            args   : [
+                                            'tr', {
                                                 easing   : 'bounceOut',
                                                 duration : 1000
                                                 }
-                                            ]},                                    
+                                            ]},
                                         alignToCfg : {
                                             offset   : [ -20, 20 ],
                                             position : 'tr-tr'
@@ -80,23 +80,23 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Top Left">
                             <Listeners>
                                 <Click Handler="
                                     Ext.net.Notification.show({
-                                        hideFx    : { 
-                                            fxName : 'switchOff', 
+                                        hideFx    : {
+                                            fxName : 'switchOff',
                                             args   : [ {} ]
                                         },
                                         showFx     : {
-                                            fxName : 'slideIn', 
-                                            args   : [ 
-                                            'tl', { 
+                                            fxName : 'slideIn',
+                                            args   : [
+                                            'tl', {
                                                 easing   : 'bounceOut',
                                                 duration : 1000
                                                 }
-                                        ]}, 
+                                        ]},
                                         pinEvent   : 'click',
                                         alignToCfg : {
                                             offset   : [ 20, 20 ],
@@ -107,15 +107,15 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Bottom Left">
                             <Listeners>
                                 <Click Handler="
                                     Ext.net.Notification.show({
                                         hideFx     : {
-                                            args   : 
-                                            [ 
-                                                { 
+                                            args   :
+                                            [
+                                                {
                                                     duration   : 2000,
                                                     endOpacity : 0.25
                                                 }
@@ -140,7 +140,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Custom Align" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -167,7 +167,7 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Bottom Right Inside Window">
                             <Listeners>
                                 <Click Handler="
@@ -184,7 +184,7 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Above Top Edge">
                             <Listeners>
                                 <Click Handler="
@@ -195,18 +195,18 @@
                                             position : 'b-t',
                                             el       : Ext.net.getEl('Window1')
                                         },
-                                        width      : 300,                                    
+                                        width      : 300,
                                         html       : stub,
                                         title      : 'Title'
                                    });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Below Bottom Edge">
                             <Listeners>
                                 <Click Handler="
                                     Ext.net.Notification.show({
-                                        hideFx   : { 
+                                        hideFx   : {
                                             args   : [ 't', {} ],
                                             fxName : 'ghost'
                                         },
@@ -226,7 +226,7 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem ID="MenuItem1" runat="server" Text="Show Right">
                             <Listeners>
                                 <Click Handler="
@@ -235,7 +235,7 @@
                                             args   : [ 'l', {} ],
                                             fxName : 'ghost'
                                         },
-                                        showFx     : { 
+                                        showFx     : {
                                             args   : [ 'l', {} ],
                                             fxName : 'slideIn'
                                         },
@@ -254,7 +254,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="ShowMode" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -281,11 +281,11 @@
                                         title     : 'Title'
                                    });" />
                             </Listeners>
-                        </ext:MenuItem>                                
+                        </ext:MenuItem>
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Hide Functionality" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -299,8 +299,8 @@
                                         title    : 'Title'
                                     });" />
                             </Listeners>
-                        </ext:MenuItem>    
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="2 Second Delay">
                             <Listeners>
                                 <Click Handler="
@@ -312,8 +312,8 @@
                                         title     : 'Title'
                                     });" />
                             </Listeners>
-                        </ext:MenuItem>                                                            
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="Mouseover Stop Hiding">
                             <Listeners>
                                 <Click Handler="
@@ -324,8 +324,8 @@
                                         title     : 'Title'
                                     });" />
                             </Listeners>
-                        </ext:MenuItem>   
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="Close All Other Notifications">
                             <Listeners>
                                 <Click Handler="
@@ -336,11 +336,11 @@
                                         title        : 'Title'
                                     });" />
                             </Listeners>
-                        </ext:MenuItem>   
+                        </ext:MenuItem>
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Content Functionality" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -362,14 +362,14 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show with Content Element">
                             <Listeners>
                                 <Click Handler="
                                     Ext.net.Notification.show({
                                         listeners    : {
                                             beforeshow : {
-                                                fn : function (el) { 
+                                                fn : function (el) {
                                                     #{BarLabel}.setText(Ext.Date.format(new Date(), 'g:i:s A'));
                                                 }
                                             }
@@ -387,7 +387,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Tools" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -403,7 +403,7 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Pinned Pin Tool Button">
                             <Listeners>
                                 <Click Handler="
@@ -416,7 +416,7 @@
                                     });" />
                             </Listeners>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Custom Tool Button">
                             <Listeners>
                                 <Click Handler="
@@ -433,7 +433,7 @@
                                                 },
                                                 type : 'help'
                                             }
-                                        ],                                        
+                                        ],
                                         html     : stub,
                                         title    : 'Title'
                                     });" />
@@ -442,7 +442,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Other" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -460,9 +460,9 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-        </Items>      
+        </Items>
     </ext:Window>
-    
+
     <div id="customEl" class="x-hidden">
         <ext:Panel runat="server" Border="false" BodyPadding="2" Html="={stub}" Height="113" Width="180">
             <BottomBar>

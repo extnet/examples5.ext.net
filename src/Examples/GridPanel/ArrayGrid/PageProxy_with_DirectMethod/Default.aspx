@@ -1,18 +1,18 @@
 <%@ Page Language="C#" %>
 
 <script runat="server">
-    
+
     /// <summary>
-    /// Possible arguments: 
+    /// Possible arguments:
     ///     - string action
     ///     - string action, Dictionary<string, object> extraParams
     ///     - string action, Dictionary<string, object> extraParams, object serviceParams
     /// </summary>
     /// <returns></returns>
-    [DirectMethod]    
+    [DirectMethod]
     public static object BindData()
     {
-        return Data; 
+        return Data;
     }
 
     private static object[] Data
@@ -61,7 +61,7 @@
 
 <html>
 <head runat="server">
-    <title>PageProxy with DirectMethod - Ext.NET Examples</title>  
+    <title>PageProxy with DirectMethod - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -74,19 +74,19 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-    </script>  
+    </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
         <h1>PageProxy with DirectMethod</h1>
-       
+
         <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
-            Title="Array Grid" 
-            Width="700" 
+            runat="server"
+            Title="Array Grid"
+            Width="700"
             Height="310">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -100,7 +100,7 @@
                                 <ext:ModelField Name="lastChange" Type="Date" />
                             </Fields>
                         </ext:Model>
-                    </Model>                                      
+                    </Model>
                     <Proxy>
                         <ext:PageProxy DirectFn="App.direct.BindData">
                             <Reader>
@@ -125,7 +125,7 @@
                     </ext:Column>
                     <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="H:mm:ss" />
                 </Columns>
-            </ColumnModel>                  
+            </ColumnModel>
         </ext:GridPanel>
     </form>
 </body>

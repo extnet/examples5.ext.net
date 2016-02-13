@@ -5,7 +5,7 @@
     {
         this.Chart1.GetStore().DataBind();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -32,7 +32,7 @@
 
         <p>Display 3 sets of random data using a line, bar, and scatter series. Reload data will randomly generate a new set of data in the store.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Mixed Charts"
             Width="800"
@@ -41,16 +41,16 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save Chart"
                             Icon="Disk"
                             Handler="saveChart"
                             />
@@ -58,17 +58,17 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server"
-                    StyleSpec="background:#fff;"                   
+                    StyleSpec="background:#fff;"
                     StandardTheme="Category1"
                     Animate="true">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(8) %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(8) %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -96,7 +96,7 @@
                             <Marker>
                                 <ext:Sprite SpriteType="Cross" />
                             </Marker>
-                            <StyleSpec>                                
+                            <StyleSpec>
                                 <ext:Sprite FillOpacity="0.5" />
                             </StyleSpec>
                         </ext:LineSeries>
@@ -104,6 +104,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

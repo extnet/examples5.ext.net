@@ -21,7 +21,7 @@
         public int No { get; set; }
         public string Department { get; set; }
     }
-    
+
     private string GetUnigueCity(List<string> usedCities)
     {
         string city = CITIES[RANDOM.Next(CITIES.Length)];
@@ -120,7 +120,7 @@
             {
                 Text = "City",
                 DataIndex = "City",
-                Flex = 1   
+                Flex = 1
             },
             new Column()
             {
@@ -145,13 +145,13 @@
             {
                 Text = "First Name",
                 DataIndex = "FirstName",
-                Flex = 1   
+                Flex = 1
             },
             new Column()
             {
                 Text = "Last Name",
                 DataIndex = "LastName",
-                Flex = 1   
+                Flex = 1
             },
             new Column()
             {
@@ -211,24 +211,24 @@
                     <Items>
                         <ext:Container runat="server" Layout="HBoxLayout">
                             <Items>
-                                <ext:Button 
-                                    ID="ShowOfficesButton" 
-                                    runat="server" 
-                                    Text="Show Offices" 
+                                <ext:Button
+                                    ID="ShowOfficesButton"
+                                    runat="server"
+                                    Text="Show Offices"
                                     OnDirectClick="ShowOfficesButton_Click" />
-                            
-                                <ext:Button 
-                                    ID="ShowEmployeesButton" 
-                                    runat="server" 
-                                    Text="Show Employees" 
+
+                                <ext:Button
+                                    ID="ShowEmployeesButton"
+                                    runat="server"
+                                    Text="Show Employees"
                                     OnDirectClick="ShowEmployeesButton_Click"
                                     MarginSpec="0 0 0 10" />
                             </Items>
                         </ext:Container>
-                        <ext:GridPanel 
-                            ID="GridPanel1" 
-                            runat="server" 
-                            MarginSpec="10 0 0 0" 
+                        <ext:GridPanel
+                            ID="GridPanel1"
+                            runat="server"
+                            MarginSpec="10 0 0 0"
                             Flex="1">
                             <ViewConfig EmptyText="Click a button to show a dataset" DeferEmptyText="false" />
                         </ext:GridPanel>

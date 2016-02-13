@@ -29,7 +29,7 @@
 <head runat="server">
     <title>Click and Drag to Select Items - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         div.tracked-item {
             border           : 1px solid silver;
@@ -43,63 +43,63 @@
             position         : absolute;
             cursor           : default;
         }
-        
+
         .drag-area {
             background-color : #f0f0f0 ! important;
             position         : relative;
         }
-        
+
         .dd-proxy {
             opacity      : 0.4;
             -moz-opacity : 0.4;
             filter       : alpha(opacity=40);
             cursor       : default ! important;
         }
-        
+
         div.tracked-item.selected {
             background-color : blue;
             color            : white;
             font-weight      : bold;
         }
     </style>
-    
-    <script>        
+
+    <script>
         var startTrack = function () {
-	        Ext.select("div.tracked-item.selected").removeCls("selected");
-	        this.items = Ext.select("div.tracked-item", true);
+            Ext.select("div.tracked-item.selected").removeCls("selected");
+            this.items = Ext.select("div.tracked-item", true);
         };
-        
-        var dragTrack = function () {			
-	        this.items.each(function (item) {
-	            var r = item.getRegion(),
-	                sel = this.dragRegion.intersect(r);
-	            
-	            if (sel) {
-					item.addCls("selected");
-	            } else {
-	                item.removeCls("selected");
-	            }
-	        }, this);
-		};
-        
-        var endTrack = function () {				
-	        delete this.items;
-		};
+
+        var dragTrack = function () {
+            this.items.each(function (item) {
+                var r = item.getRegion(),
+                    sel = this.dragRegion.intersect(r);
+
+                if (sel) {
+                    item.addCls("selected");
+                } else {
+                    item.removeCls("selected");
+                }
+            }, this);
+        };
+
+        var endTrack = function () {
+            delete this.items;
+        };
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:ObjectHolder ID="divsData" runat="server" />
-        
+
         <ext:XTemplate ID="Tpl1" runat="server">
             <Html>
-				<tpl for=".">
-					 <div id="item-{#}" index="{#}" class="tracked-item" style="top:{Y}px;left:{X}px;">Item {#}</div>
-				</tpl>
-			</html>        </ext:XTemplate>
-        
+                <tpl for=".">
+                     <div id="item-{#}" index="{#}" class="tracked-item" style="top:{Y}px;left:{X}px;">Item {#}</div>
+                </tpl>
+            </html>        </ext:XTemplate>
+
         <ext:DragTracker ID="DragTracker1" runat="server">
             <Listeners>
                 <DragStart Fn="startTrack" />
@@ -107,7 +107,7 @@
                 <DragEnd Fn="endTrack" />
             </Listeners>
         </ext:DragTracker>
-        
+
         <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Panel runat="server" Region="North" Height="70">
@@ -115,16 +115,16 @@
                          <h3>Click and Drag to Select Items</h3>
                     </Content>
                 </ext:Panel>
-                <ext:Panel 
-                    runat="server" 
+                <ext:Panel
+                    runat="server"
                     Region="Center"
                     BodyCssClass="drag-area">
                     <Listeners>
-                        <AfterRender Handler="#{Tpl1}.overwrite(this.body, #{divsData}.divs);#{DragTracker1}.initEl(this.el);" />                        
+                        <AfterRender Handler="#{Tpl1}.overwrite(this.body, #{divsData}.divs);#{DragTracker1}.initEl(this.el);" />
                     </Listeners>
                 </ext:Panel>
             </Items>
         </ext:Viewport>
-    </form>    
+    </form>
 </body>
 </html>

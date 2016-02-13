@@ -4,13 +4,13 @@
 
 <html>
 <head runat="server">
-    <title>Template Widget Rendering - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Template Widget Rendering - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <script type="text/javascript">        
+    <script type="text/javascript">
         function addTab(tabPanel) {
             var title = Ext.Date.format(new Date(), 'H:i:s'),
-                data = [],                
+                data = [],
                 tab = App.getTab({title: title});
 
             for ( var i = 0; i < 6; i++ ) {
@@ -28,7 +28,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Template Widget Rendering</h1>          
+        <h1>Template Widget Rendering</h1>
 
         <ext:Window runat="server"
             Title="Tabs"

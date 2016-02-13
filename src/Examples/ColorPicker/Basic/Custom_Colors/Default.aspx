@@ -17,7 +17,7 @@
         this.ColorPalette1.Colors = customColorsBlue;
         this.ColorPalette2.Colors = customColorsGreen;
         this.ColorPalette3.Colors = customColorsRed;
-            
+
         if (this.IsPostBack && !X.IsAjaxRequest)
         {
             ColorPalette1.Value = "";
@@ -35,38 +35,38 @@
         this.ColorPalette3.AddScript(string.Format("setColor({0},\"{1}\");", this.ColorPalette3.ClientID, this.ColorPalette3.Value));
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>ColorPalate Overview - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         body {
-        	padding:20px;
+            padding:20px;
         }
-        
+
         .column {
-        	 float: left;
+             float: left;
         }
-        
+
         .palette {
-            color: #fff; 
+            color: #fff;
             text-align: center;
             width: 138px;
             height: 45px;
             margin: 0px 9px 0px 3px;
         }
-        
+
         #swatch {
-        	margin-top: 2px;
-        	height: 570px;
-        	border: 1px solid black;
+            margin-top: 2px;
+            height: 570px;
+            border: 1px solid black;
         }
     </style>
-    
+
     <script>
         var setColor = function (el, color) {
             if (Ext.isEmpty(color, false)) {
@@ -81,9 +81,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Custom Colors using ColorPalette</h1>
-        
+
         <div class="column">
             <div class="palette" style="background-color:Blue;">Blue Palette<br />(Listener)</div>
             <ext:ColorPicker ID="ColorPalette1" runat="server">
@@ -92,7 +92,7 @@
                 </Listeners>
             </ext:ColorPicker>
         </div>
-        
+
         <div class="column">
             <div class="palette" style="background-color:Green;">Green Palette<br />(DirectEvent)</div>
             <ext:ColorPicker ID="ColorPalette2" runat="server">
@@ -103,17 +103,17 @@
                 </DirectEvents>
             </ext:ColorPicker>
         </div>
-        
+
         <div class="column">
             <div class="palette" style="background-color:Red;">Red Palette<br />(PostBack)</div>
-            <ext:ColorPicker 
-                ID="ColorPalette3" 
-                runat="server" 
+            <ext:ColorPicker
+                ID="ColorPalette3"
+                runat="server"
                 OnColorChanged="ColorPalette3_Changed"
                 AutoPostBack="true"
                 />
         </div>
-        
+
         <div class="column">
             <div class="palette" style="background-color:black;width:80px;margin:0;">Swatch</div>
             <div id="swatch" style="width:78px;"></div>

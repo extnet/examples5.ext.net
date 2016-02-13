@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
-        { 
+        this.Chart1.GetStore().DataSource = new List<object>
+        {
             new { theta = 0, sin = 0.00 },
             new { theta = 10, sin = 0.17 },
             new { theta = 20, sin = 0.34 },
@@ -98,7 +98,7 @@
                             </Model>
                         </ext:Store>
                     </Store>
-                    
+
                     <Items>
                         <ext:TextSprite
                             Text="Line Charts - Spline"
@@ -114,7 +114,7 @@
                             Position="Left"
                             Fields="sin"
                             Grid="true"
-                            Title="Sin (Theta)">                            
+                            Title="Sin (Theta)">
                             <Renderer Handler="return Ext.util.Format.number(label, '0.00');" />
                         </ext:NumericAxis>
 
@@ -127,12 +127,12 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
-                            XField="theta" 
-                            YField="sin" 
-                            UseSmooth="true" 
-                            Highlight="true" 
-                            ShowMarkers="false">                            
+                        <ext:LineSeries
+                            XField="theta"
+                            YField="sin"
+                            UseSmooth="true"
+                            Highlight="true"
+                            ShowMarkers="false">
                         </ext:LineSeries>
                     </Series>
                 </ext:CartesianChart>

@@ -7,8 +7,8 @@
     {
         if (!X.IsAjaxRequest)
         {
-            this.Store1.DataSource = new List<Company> 
-            { 
+            this.Store1.DataSource = new List<Company>
+            {
                 new Company(0, "3m Co", 71.72, 0.02, 0.03),
                 new Company(1, "Alcoa Inc", 29.01, 0.42, 1.47),
                 new Company(2, "Altria Group Inc", 83.81, 0.28, 0.34),
@@ -53,7 +53,7 @@
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         StringBuilder result = new StringBuilder();
-        
+
         result.Append("<b>Selected Rows (ids)</b></br /><ul>");
         RowSelectionModel sm = this.GridPanel1.GetSelectionModel() as RowSelectionModel;
 
@@ -90,9 +90,9 @@
 <html>
 <head runat="server">
     <title>GridPanel with Checkbox Selection Model - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         /* A header Checkbox of CheckboxSelectionModel deals with the current page only.
            This override demonstrates how to take into account all the pages.
@@ -223,8 +223,8 @@
                 }
             }
         });
-    </script>    
-       
+    </script>
+
     <script>
         var template = '<span style="color:{0};">{1}</span>';
 
@@ -235,17 +235,17 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-    </script>    
+    </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel with Checkbox Selection Model</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Title="Company List"
             Collapsible="true"
             Width="600">
@@ -265,14 +265,14 @@
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
-		        <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        Width="160" 
-                        DataIndex="Name" 
-                        Resizable="false" 
-                        MenuDisabled="true" 
+                <Columns>
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="Name"
+                        Resizable="false"
+                        MenuDisabled="true"
                         Flex="1" />
 
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
@@ -286,7 +286,7 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-		        </Columns>
+                </Columns>
             </ColumnModel>
             <BottomBar>
                 <ext:PagingToolbar runat="server" DisplayInfo="false" HideRefresh="true">
@@ -303,9 +303,9 @@
             </BottomBar>
             <SelectionModel>
                 <ext:CheckboxSelectionModel runat="server" Mode="Multi" />
-            </SelectionModel>            
+            </SelectionModel>
         </ext:GridPanel>
-        
+
         <div style="width:590px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>

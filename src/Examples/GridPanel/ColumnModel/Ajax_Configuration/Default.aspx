@@ -39,7 +39,7 @@
             };
         }
     }
-    
+
     protected void ToggleChange(object sender, DirectEventArgs e)
     {
         Ext.Net.Button button = sender as Ext.Net.Button;
@@ -50,7 +50,7 @@
     protected void ChangeHeader(object sender, DirectEventArgs e)
     {
         Ext.Net.Button button = sender as Ext.Net.Button;
-        this.GridPanel1.ColumnModel.Columns[0].Text = "New label"; 
+        this.GridPanel1.ColumnModel.Columns[0].Text = "New label";
         button.Disabled = true;
     }
 
@@ -65,7 +65,7 @@
     {
         Ext.Net.Button button = sender as Ext.Net.Button;
         Renderer r = new Renderer();
-        r.Fn = "change";        
+        r.Fn = "change";
         this.GridPanel1.ColumnModel.Columns[2].Renderer = r;
         button.Disabled = true;
     }
@@ -83,7 +83,7 @@
 <html>
 <head runat="server">
     <title>Configure Columns on the fly - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -100,14 +100,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Configuring GridPanel's Columns on the fly via DirectEvents</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Title="Array Grid"
-            Width="600" 
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -126,47 +126,47 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        ID="CompanyColumn" 
-                        runat="server" 
-                        Text="Company" 
-                        Width="160" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        ID="CompanyColumn"
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="company"
+                        Flex="1"
                         Pattern="{value:uppercase}"
                         />
 
-                    <ext:Column 
-                        ID="PriceColumn" 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        ID="PriceColumn"
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
 
-                    <ext:Column 
-                        ID="ChangeColumn" 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
-                        DataIndex="change" 
+                    <ext:Column
+                        ID="ChangeColumn"
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
                         />
 
-                    <ext:Column 
-                        ID="ChangePrtColumn" 
-                        runat="server" 
-                        Text="Change %" 
-                        Width="75" 
-                        DataIndex="pctChange" 
+                    <ext:Column
+                        ID="ChangePrtColumn"
+                        runat="server"
+                        Text="Change %"
+                        Width="75"
+                        DataIndex="pctChange"
                         />
 
-                    <ext:DateColumn 
-                        ID="LastChangeColumn" 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="85" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        ID="LastChangeColumn"
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
                         />
                 </Columns>
             </ColumnModel>
@@ -177,46 +177,46 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button 
+                        <ext:Button
                             runat="server"
                             Text="Change Header">
                             <DirectEvents>
                                 <Click OnEvent="ChangeHeader" Single="true" />
                             </DirectEvents>
                         </ext:Button>
-                        
-                        <ext:Button 
+
+                        <ext:Button
                             runat="server"
                             Text="Change Width">
                             <DirectEvents>
                                 <Click OnEvent="ChangeWidth" Single="true" />
                             </DirectEvents>
                         </ext:Button>
-                        
-                         <ext:Button 
+
+                         <ext:Button
                             runat="server"
                             Text="Change Renderer">
                             <DirectEvents>
                                 <Click OnEvent="ChangeRenderer" Success="#{GridPanel1}.getView().refresh(false);" />
                             </DirectEvents>
                         </ext:Button>
-                        
-                        <ext:Button 
+
+                        <ext:Button
                             runat="server"
                             Text="Hide 'Change'"
-                            EnableToggle="true" 
-                            OnDirectClick="ToggleChange" 
+                            EnableToggle="true"
+                            OnDirectClick="ToggleChange"
                             />
 
-                         <ext:Button 
+                         <ext:Button
                             runat="server"
                             Text="Set New Pattern"
-                            OnDirectClick="SetNewPattern" 
+                            OnDirectClick="SetNewPattern"
                             />
                     </Items>
                 </ext:Toolbar>
             </BottomBar>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

@@ -10,7 +10,7 @@ namespace Ext.Net.Calendar.Demo
             {
                 DateTime now = DateTime.Now.Date;
 
-                return new EventModelCollection { 
+                return new EventModelCollection {
                     new EventModel
                     {
                         EventId = 1001,

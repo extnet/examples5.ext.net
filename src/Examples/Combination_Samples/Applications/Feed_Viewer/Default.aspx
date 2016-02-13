@@ -7,7 +7,7 @@
         {
             return;
         }
-        
+
         Ext.Net.Panel panel = (Ext.Net.Panel)e.Control;
         panel.Region = Region.West;
         panel.Collapsible = true;
@@ -24,7 +24,7 @@
         {
             return;
         }
-        
+
         TabPanel tab = (TabPanel)e.Control;
         tab.Region = Region.Center;
         tab.MinWidth = 300;
@@ -35,8 +35,8 @@
 
 <html>
 <head runat="server">
-    <title>FeedViewer - Ext.NET Examples</title>    
-    
+    <title>FeedViewer - Ext.NET Examples</title>
+
     <link href="resources/FeedViewer.css" rel="stylesheet" />
 
     <script src="resources/FeedViewer.js"></script>
@@ -62,6 +62,6 @@
                 <ext:UserControlLoader runat="server" Path="uc/FeedInfo.ascx" OnComponentAdded="FeedInfoAdded" />
             </Items>
         </ext:Viewport>
-    </form>    
+    </form>
 </body>
 </html>

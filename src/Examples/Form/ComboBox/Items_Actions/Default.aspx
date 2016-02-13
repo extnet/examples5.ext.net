@@ -2,7 +2,7 @@
 
 <%@ Import Namespace="System.Collections.Generic" %>
 
-<script runat="server">     
+<script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -13,17 +13,17 @@
                 new {Text = "Text4", Value = 4},
                 new {Text = "Text5", Value = 5}
             };
-            
+
             this.Store1.DataSource = list;
             this.Store1.DataBind();
-            
+
             //Please note that inner items will be above store's items
             this.ComboBox1.Items.Insert(0, new Ext.Net.ListItem("None", "-"));
 
             this.ComboBox1.SelectedItems.Add(new Ext.Net.ListItem("-"));
         }
     }
-    
+
     protected void InsertRecord(object sender, DirectEventArgs e)
     {
         Dictionary<string, object> values = new Dictionary<string, object>(2);
@@ -59,18 +59,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <p>1. Combo with a store and inner items (merge mode)</p>
         <br />
-        
-        <ext:ComboBox 
-            ID="ComboBox1" 
-            runat="server" 
-            DisplayField="Text" 
+
+        <ext:ComboBox
+            ID="ComboBox1"
+            runat="server"
+            DisplayField="Text"
             ValueField="Value"
             QueryMode="Local">
             <Store>
-                <ext:Store ID="Store1" runat="server">          
+                <ext:Store ID="Store1" runat="server">
                     <Model>
                         <ext:Model runat="server" IDProperty="Value">
                             <Fields>
@@ -92,16 +92,16 @@
                                        this.clearValue();" />
             </Listeners>
         </ext:ComboBox>
-        
+
         <br />
-        
-        <ext:Container runat="server" Layout="HBoxLayout">            
+
+        <ext:Container runat="server" Layout="HBoxLayout">
             <Items>
                 <ext:Button runat="server" Text="Insert: client side">
                     <Listeners>
-                        <Click Handler="#{ComboBox1}.insertRecord(1, { 
-                                            Text  : 'Text1', 
-                                            Value : 1 
+                        <Click Handler="#{ComboBox1}.insertRecord(1, {
+                                            Text  : 'Text1',
+                                            Value : 1
                                         });
                                         #{ComboBox1}.setValue(1);
                                         this.disable();" />
@@ -114,19 +114,19 @@
                 </ext:Button>
             </Items>
         </ext:Container>
-        
+
         <br />
         <br />
         <p>2. Combo with inner items</p>
         <br />
-        
+
         <%-- please note that the insertRecord function works with inner items also --%>
         <ext:ComboBox ID="ComboBox2" runat="server">
             <Items>
                 <ext:ListItem Text="Text2" Value="2" />
                 <ext:ListItem Text="Text3" Value="3" />
                 <ext:ListItem Text="Text4" Value="4" />
-                <ext:ListItem Text="Text5" Value="5" />                
+                <ext:ListItem Text="Text5" Value="5" />
             </Items>
             <Triggers>
                 <ext:FieldTrigger Icon="Clear" Qtip="Remove selected" />
@@ -136,9 +136,9 @@
                                        this.clearValue();" />
             </Listeners>
         </ext:ComboBox>
-        
+
         <br />
-        
+
         <ext:Container runat="server" Layout="HBoxLayout">
             <Items>
                 <ext:Button runat="server" Text="Insert: client side">
@@ -155,11 +155,11 @@
                 </ext:Button>
             </Items>
         </ext:Container>
-        
+
         <br />
-        
+
         <h2>Other functions:</h2>
-        
+
         <ul>
             <li>addRecord: function (values)</li>
             <li>addItem: function (text, value)</li>

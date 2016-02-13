@@ -10,27 +10,27 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Drag Me" 
+
+        <ext:Panel
+            runat="server"
+            Title="Drag Me"
             Icon="ArrowNsew"
-            Frame="true" 
-            Width="150" 
-            Height="150" 
+            Frame="true"
+            Width="150"
+            Height="150"
             Floating="true"
             Draggable="true"
             X="50"
-            Y="50">            
+            Y="50">
         </ext:Panel>
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Drag Me Too" 
+
+        <ext:Panel
+            runat="server"
+            Title="Drag Me Too"
             Icon="ArrowNsew"
-            Frame="true"             
-            Width="150" 
-            Height="150" 
+            Frame="true"
+            Width="150"
+            Height="150"
             Floating="true"
             Draggable="true"
             X="100"

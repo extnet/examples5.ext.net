@@ -32,8 +32,8 @@
                                 Params = {
                                     new Ext.Net.Parameter("tag", "this.tag", ParameterMode.Raw)
                                 }
-                            } 
-                        }   
+                            }
+                        }
                     }
                 });
                 items.Add(new Ext.Net.MenuItem("Print")

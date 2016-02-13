@@ -23,7 +23,7 @@
 
                 data.Add(new { Id = id, Name = name });
             }
-            
+
             this.CitiesStore.DataSource = data;
 
             this.CitiesStore.DataBind();
@@ -34,17 +34,17 @@
 <body>
 <form runat="server">
     <ext:ResourceManager runat="server" />
-    
-    <ext:ComboBox 
-        ID="ComboBox1" 
-        runat="server" 
-        Editable="false" 
+
+    <ext:ComboBox
+        ID="ComboBox1"
+        runat="server"
+        Editable="false"
         QueryMode="Local"
-        TriggerAction="All" 
+        TriggerAction="All"
         EmptyText="Select a country">
         <Listeners>
             <Select Handler="#{ComboBox2}.clearValue(); #{CitiesStore}.reload();" />
-        </Listeners>        
+        </Listeners>
         <Items>
             <ext:ListItem Text="Belgium" Value="BE" />
             <ext:ListItem Text="Brazil" Value="BR" />
@@ -75,24 +75,24 @@
             <ext:ListItem Text="United Kingdom" Value="GB" />
         </Items>
     </ext:ComboBox>
-    
-    <ext:ComboBox 
-        ID="ComboBox2" 
-        runat="server" 
-        TypeAhead="true" 
+
+    <ext:ComboBox
+        ID="ComboBox2"
+        runat="server"
+        TypeAhead="true"
         QueryMode="Local"
-        ForceSelection="true" 
-        TriggerAction="All" 
-        DisplayField="name" 
+        ForceSelection="true"
+        TriggerAction="All"
+        DisplayField="name"
         ValueField="id"
-        EmptyText="Loading..." 
+        EmptyText="Loading..."
         ValueNotFoundText="Loading...">
         <Store>
-            <ext:Store 
-                runat="server" 
-                ID="CitiesStore" 
-                AutoLoad="false" 
-                OnReadData="CitiesRefresh">               
+            <ext:Store
+                runat="server"
+                ID="CitiesStore"
+                AutoLoad="false"
+                OnReadData="CitiesRefresh">
                 <Model>
                     <ext:Model runat="server" IDProperty="Id">
                         <Fields>
@@ -105,7 +105,7 @@
                     <Load Handler="#{ComboBox2}.setValue(#{ComboBox2}.store.getAt(0).get('id'));" />
                 </Listeners>
             </ext:Store>
-        </Store>    
+        </Store>
     </ext:ComboBox>
 </form>
 </body>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-	<description>
-		<![CDATA[A slider component that supports vertical mode, snapping, tooltips, customized styles and more.]]>		
-	</description>
+    <description>
+        <![CDATA[A slider component that supports vertical mode, snapping, tooltips, customized styles and more.]]>
+    </description>
   <tags>SliderTip</tags>
 </example>

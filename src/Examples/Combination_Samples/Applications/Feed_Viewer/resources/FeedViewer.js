@@ -145,7 +145,7 @@ FeedViewer.FeedWindow = {
             form = wnd.down("form");
 
         form.setLoading(false);
-        
+
         var dq = Ext.DomQuery,
             url = form.getComponent('feed').getValue(),
             xml,
@@ -164,9 +164,9 @@ FeedViewer.FeedWindow = {
         } catch(e) {
         }
 
-        FeedViewer.FeedWindow.markInvalid.call(this);        
+        FeedViewer.FeedWindow.markInvalid.call(this);
     },
-    
+
     markInvalid: function () {
         var form = this.up("window").down("form");
 
@@ -209,7 +209,7 @@ FeedViewer.FeedInfo = {
     getTabByTitle: function (title) {
         var items = FeedViewer.FeedInfo.getPanel().items,
             index = items.findIndex('title', title);
-        return (index < 0) ? null : items.getAt(index); 
+        return (index < 0) ? null : items.getAt(index);
     },
 
     tabOpen: function (rec) {
@@ -217,7 +217,7 @@ FeedViewer.FeedInfo = {
             item,
             title,
             me = FeedViewer.FeedInfo,
-            tab = me.getPanel();            
+            tab = me.getPanel();
 
         Ext.each(rec, function (rec) {
             title = rec.get('title');
@@ -233,8 +233,8 @@ FeedViewer.FeedInfo = {
                 }, 1);
             }
         });
-        
-            
+
+
          /*item = this.add({
                     inTab: true,
                     xtype: 'feedpost',

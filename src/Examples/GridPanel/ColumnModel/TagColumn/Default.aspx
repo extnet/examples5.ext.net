@@ -19,14 +19,14 @@
                 new {tags = "Tag 1,Tag 2,Tag 3"},
                 new {tags = new string[] {"Tag 1", "Tag 2", "Tag 3" }},
                 new {tags = new object[] {
-                    new {text = "Tag 1", iconCls = "#User"}, 
-                    new {text = "Tag 2", iconCls = "#UserAdd"}, 
+                    new {text = "Tag 1", iconCls = "#User"},
+                    new {text = "Tag 2", iconCls = "#UserAdd"},
                     new {text = "Tag 3", iconCls = "#UserDelete"}
                 }},
                 new {tags = new Tags {
-                    new Tag{Text = "Tag 1", Icon = Icon.CommentAdd},  
-                    new Tag{Text = "Tag 2", Icon = Icon.CommentDelete}, 
-                    new Tag{Text = "Tag 3", Icon = Icon.CommentEdit} 
+                    new Tag{Text = "Tag 1", Icon = Icon.CommentAdd},
+                    new Tag{Text = "Tag 2", Icon = Icon.CommentDelete},
+                    new Tag{Text = "Tag 3", Icon = Icon.CommentEdit}
                 }}
             };
         }
@@ -38,13 +38,13 @@
 <html>
 <head runat="server">
     <title>TagColumn - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>TagColumn</h1>
-    
+
     <ext:GridPanel runat="server" Title="Grid with TagColumn" Width="250">
         <Store>
             <ext:Store ID="Store1" runat="server">
@@ -61,8 +61,8 @@
             <Columns>
                 <ext:RowNumbererColumn runat="server" />
                 <ext:TagColumn runat="server" Text="Tags" DataIndex="tags" Flex="1" />
-            </Columns>            
+            </Columns>
         </ColumnModel>
-    </ext:GridPanel>    
+    </ext:GridPanel>
 </body>
 </html>

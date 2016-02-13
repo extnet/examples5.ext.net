@@ -28,25 +28,25 @@
 <html>
 <head runat="server">
     <title>ComponentColumn Over Editor - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <style>
         .x-over-editor-grid tr.x-grid-row {
             height: 22px;
         }
-    </style>   
+    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>ComponentColumn as Over Editor</h1>        
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="ComponentColumn Over Editor" 
+        <h1>ComponentColumn as Over Editor</h1>
+
+        <ext:GridPanel
+            runat="server"
+            Title="ComponentColumn Over Editor"
             Cls="x-over-editor-grid"
-            Width="600" 
+            Width="600"
             Height="300">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -64,8 +64,8 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="IntField"
@@ -76,8 +76,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="ComboField"
@@ -102,8 +102,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="TextField"
@@ -114,8 +114,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         OverOnly="true"
                         DataIndex="DateField"
@@ -123,14 +123,14 @@
                         PinEvents="expand"
                         UnpinEvents="collapse"
                         Text="Date">
-                        <Renderer Format="Date" FormatArgs="'d/m/Y'" />                            
+                        <Renderer Format="Date" FormatArgs="'d/m/Y'" />
                         <Component>
                             <ext:DateField runat="server" Format="dd/MM/yyyy" />
                         </Component>
                     </ext:ComponentColumn>
                 </Columns>
-            </ColumnModel>          
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

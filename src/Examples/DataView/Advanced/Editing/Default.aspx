@@ -5,20 +5,20 @@
 <html>
 <head runat="server">
     <title>Ext.Net Examples - Editing</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />   
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="app.css" rel="stylesheet" />
     <script src="app.js"></script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>Editable DataView</h1>        
-              
+
+        <h1>Editable DataView</h1>
+
         <h2>Todos</h2>
-        
-        <ext:TextField 
-            runat="server" 
+
+        <ext:TextField
+            runat="server"
             Cls="todo-field"
             Width="470"
             EmptyText="What needs to be done?"
@@ -27,15 +27,15 @@
                 <KeyDown  Fn="addTodo" />
             </Listeners>
         </ext:TextField>
-        
+
         <ext:Checkbox ID="Checkbox1" runat="server" BoxLabel="Mark all as complete" Hidden="true">
             <Listeners>
                 <Change Fn="checkAllClick" />
             </Listeners>
         </ext:Checkbox>
-        
+
         <br />
-        <ext:DataView 
+        <ext:DataView
             ID="TodoList"
             runat="server"
             Width="470"
@@ -62,15 +62,15 @@
             <Tpl>
                 <Html>
                     <tpl for=".">
-		                <li class="<tpl if="Checked">done</tpl> <tpl if="editing">editing</tpl>">
-		                    <div class="view">
-		                        <input type="checkbox" <tpl if="Checked">checked</tpl> />
-		                        <label>{Label}</label>
-		                        <a class="destroy"></a>
-		                    </div>
-		                    <input class="edit" type="text" value="{Label}">
-		                </li>
-		            </tpl>
+                        <li class="<tpl if="Checked">done</tpl> <tpl if="editing">editing</tpl>">
+                            <div class="view">
+                                <input type="checkbox" <tpl if="Checked">checked</tpl> />
+                                <label>{Label}</label>
+                                <a class="destroy"></a>
+                            </div>
+                            <input class="edit" type="text" value="{Label}">
+                        </li>
+                    </tpl>
                 </html>            </Tpl>
             <Listeners>
                 <AfterRender Fn="initEvents" />
@@ -88,7 +88,7 @@
 
         <div id="instructions">
             Double-click to edit a todo
-	    </div> 
+        </div>
     </form>
 </body>
 </html>

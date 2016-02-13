@@ -209,7 +209,7 @@ namespace Ext.Net.Examples
 
             return false;
         }
-        
+
         private static DirectoryInfo[] SortFolders(DirectoryInfo root, DirectoryInfo[] folders)
         {
             string cfgPath = root.FullName + "\\config.xml";
@@ -277,7 +277,7 @@ namespace Ext.Net.Examples
                     string imgUrl = UIHelpers.ApplicationRoot+"/resources/images/noimage.gif";
                     string descr = "No description";
                     string name = folder.Name.Replace("_", " ");
-                    
+
                     if (UIHelpers.IsNew(folder.FullName))
                     {
                         name += "<span>&nbsp;</span>";
@@ -359,7 +359,7 @@ namespace Ext.Net.Examples
                 catch (FileNotFoundException)
                 {
                     return;
-                } 
+                }
             }
 
             XmlNode root = xml.SelectSingleNode("example");
@@ -643,7 +643,7 @@ namespace Ext.Net.Examples
                 sTags += tag;
 
                 tagsNode.InnerText = sTags;
-                
+
                 xml.Save(path);
             }
         }
@@ -670,7 +670,7 @@ namespace Ext.Net.Examples
             {
                 return;
             }
-            
+
             XmlElement elem;
             XmlNode commentsNode = root.SelectSingleNode("comments");
 

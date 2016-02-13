@@ -10,7 +10,7 @@
         html.Append("<table class=\"data\">");
         html.Append("<tr><th>Name</th><th>Value</th></tr>");
 
-        // Loop through all PropertyGridParameters and reference by Index. 
+        // Loop through all PropertyGridParameters and reference by Index.
 
         foreach (PropertyGridParameter param in this.PropertyGrid1.Source)
         {
@@ -23,7 +23,7 @@
 
         this.Label1.Html = html.ToString();
 
-        // Data can be referenced by the PropertyGridParameter 
+        // Data can be referenced by the PropertyGridParameter
         // "Name" value as well.
         // string name = this.PropertyGrid1.Source["(name)"].Value;
     }
@@ -43,20 +43,20 @@
             {
                 new TextField
                 {
-                   Triggers = 
+                   Triggers =
                    {
                       new FieldTrigger
                       {
                          Icon = TriggerIcon.SimpleEllipsis,
-                         Tag = "ellipsis"   
+                         Tag = "ellipsis"
                       }
-                   }, 
-                   
-                   Listeners = 
+                   },
+
+                   Listeners =
                    {
                       TriggerClick = {
-                          Handler = PropertyGrid1.ClientID + ".editingPlugin.completeEdit(); Ext.Msg.alert('Trigger click', tag + ' trigger click');"   
-                      }    
+                          Handler = PropertyGrid1.ClientID + ".editingPlugin.completeEdit(); Ext.Msg.alert('Trigger click', tag + ' trigger click');"
+                      }
                    }
                 }
             }
@@ -77,18 +77,18 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .data th {
-        	font-weight : bold;
+            font-weight : bold;
         }
-        
+
         .data th, .data td {
             padding : 4px;
             border  : 1px solid black;
         }
-        
+
         .red-label{
             color:Red;
         }
-        
+
         .blue-label{
             color:Blue;
         }
@@ -97,12 +97,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>PropertyGrid with Button DirectEvent</h1>
-        
-        <ext:PropertyGrid 
-            ID="PropertyGrid1" 
-            runat="server" 
+
+        <ext:PropertyGrid
+            ID="PropertyGrid1"
+            runat="server"
             Width="300"
             SortableColumns="false">
             <Source>
@@ -128,16 +128,16 @@
                     <Editor>
                         <ext:ComboBox runat="server" ForceSelection="true">
                             <Items>
-                                <ext:ListItem Text="Red" /> 
-                                <ext:ListItem Text="Green" /> 
-                                <ext:ListItem Text="Blue" /> 
+                                <ext:ListItem Text="Red" />
+                                <ext:ListItem Text="Green" />
+                                <ext:ListItem Text="Blue" />
                             </Items>
                         </ext:ComboBox>
                     </Editor>
                     <Renderer Handler="return Ext.String.format('<span style=\'color: {0};\'>{1}</span>', value.toLowerCase(), value);" />
                 </ext:PropertyGridParameter>
                 <ext:PropertyGridParameter Name="trigger" Value="TriggerField" DisplayName="Trigger Field">
-                    <Renderer Handler="metadata.tdCls = 'blue-label'; 
+                    <Renderer Handler="metadata.tdCls = 'blue-label';
                                        return value;" />
                     <Editor>
                         <ext:TextField runat="server">
@@ -145,7 +145,7 @@
                                 <ext:FieldTrigger Icon="SimpleEllipsis" Tag="ellipsis" />
                             </Triggers>
                             <Listeners>
-                                <TriggerClick Handler="#{PropertyGrid1}.editingPlugin.completeEdit(); 
+                                <TriggerClick Handler="#{PropertyGrid1}.editingPlugin.completeEdit();
                                                        Ext.Msg.alert('Trigger click', tag + ' trigger click');" />
                             </Listeners>
                         </ext:TextField>
@@ -168,10 +168,10 @@
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" />
                     </DirectEvents>
-                </ext:Button>                
-            </Buttons>           
+                </ext:Button>
+            </Buttons>
         </ext:PropertyGrid>
-        
+
         <p><ext:Label ID="Label1" runat="server" /></p>
     </form>
 

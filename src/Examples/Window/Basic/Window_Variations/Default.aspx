@@ -23,9 +23,9 @@
         <p>The third Window owns two floating Windows who's z-indices are managed relative
             to <i>its</i> z-index. When that Window is occluded by another Window, and you click
             to bring it to the front, both its dependent Windows move to the front too.</p>
-        <p>This also illustrates constraining Windows.</p>    
+        <p>This also illustrates constraining Windows.</p>
 
-        <ext:Window 
+        <ext:Window
             runat="server"
             Height="200"
             Width="400"
@@ -36,7 +36,7 @@
             Plain="true"
             Layout="FitLayout">
             <Items>
-                <ext:Window 
+                <ext:Window
                     runat="server"
                     Title="Constrained Window"
                     Width="200"
@@ -50,7 +50,7 @@
                     </Items>
                 </ext:Window>
 
-                <ext:Window 
+                <ext:Window
                     runat="server"
                     Title="Header-Constrained Win"
                     Width="200"
@@ -68,7 +68,7 @@
             </Items>
         </ext:Window>
 
-        <ext:Window 
+        <ext:Window
             runat="server"
             Title="Left Header, plain: true"
             Width="400"
@@ -83,7 +83,7 @@
             </Items>
         </ext:Window>
 
-        <ext:Window 
+        <ext:Window
             runat="server"
             Title="Right Header, plain: true"
             Width="400"
@@ -97,7 +97,7 @@
             </Items>
         </ext:Window>
 
-        <ext:Window 
+        <ext:Window
             runat="server"
             Title="Bottom Header, plain: true"
             Width="400"

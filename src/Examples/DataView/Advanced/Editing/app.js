@@ -3,28 +3,28 @@
     this.el.on('keyup', completeEdit, this, {delegate:'input[type=text]'});
     this.el.on('click', removeTodo, this, {delegate:'a'});
 }
-        
+
 function toggleCheck(e, el) {
-	var record = this.getRecord(Ext.fly(el).parent('li'));
+    var record = this.getRecord(Ext.fly(el).parent('li'));
     record.set('Checked', !record.get('Checked'));
 }
 
 function completeEdit(e) {
-	var el = Ext.get(e.getTarget());
-    var record = this.getRecord(el.parent('li'));            
+    var el = Ext.get(e.getTarget());
+    var record = this.getRecord(el.parent('li'));
 
-	if (e.keyCode == 13) {
-		var value = el.getValue().trim();
+    if (e.keyCode == 13) {
+        var value = el.getValue().trim();
 
-		if (!value) {
-			this.store.remove(record);
-		} else {
-			record.set('Label', value);
-			record.set('editing', false);			        
-		}
+        if (!value) {
+            this.store.remove(record);
+        } else {
+            record.set('Label', value);
+            record.set('editing', false);
+        }
         e.stopEvent();
         return false;
-	}
+    }
 }
 
 function startEdit(view, record) {
@@ -38,63 +38,63 @@ function removeTodo(e) {
 }
 
 function addTodo(field, e) {
-	var value = field.getValue().trim();
+    var value = field.getValue().trim();
 
-	if (e.keyCode === 13 && value != '') {
-		App.TodoList.store.add({Label: value, Checked: false});
-		field.reset();        
+    if (e.keyCode === 13 && value != '') {
+        App.TodoList.store.add({Label: value, Checked: false});
+        field.reset();
         e.stopEvent();
-        return false;       
-	}
+        return false;
+    }
 }
 
 function checkAllClick (field, checked) {
-	App.TodoList.store.each(function (record) {
-		record.set('Checked', checked);
-	});
+    App.TodoList.store.each(function (record) {
+        record.set('Checked', checked);
+    });
 }
 
 function clearAll() {
-	var records = [],
-		store = App.TodoList.store;
+    var records = [],
+        store = App.TodoList.store;
 
-	store.each(function (record) {
-		if (record.get('Checked')) {
-			records.push(record);
-		}
-	});
-	store.remove(records);
+    store.each(function (record) {
+        if (record.get('Checked')) {
+            records.push(record);
+        }
+    });
+    store.remove(records);
 }
 
 function onListChange () {
-	var info = '', 
+    var info = '',
         text = '',
-		store = this,
-		totalCount = store.getCount(),
+        store = this,
+        totalCount = store.getCount(),
         checkbox = App.Checkbox1,
-		toolbar = App.Toolbar1,
-		button = toolbar.items.last(),
-		container = toolbar.items.first(),
-		records = store.queryBy(function (record) {
-			return !record.get('Checked');
-		}),
-		count = records.getCount(),
-		checkedCount = totalCount - count;
+        toolbar = App.Toolbar1,
+        button = toolbar.items.last(),
+        container = toolbar.items.first(),
+        records = store.queryBy(function (record) {
+            return !record.get('Checked');
+        }),
+        count = records.getCount(),
+        checkedCount = totalCount - count;
 
-	if (count) {
-		info = '<b>' + count + '</b> item' + (count > 1 ? 's' : '') + ' left.';
-	}
+    if (count) {
+        info = '<b>' + count + '</b> item' + (count > 1 ? 's' : '') + ' left.';
+    }
 
-	if (checkedCount) {
-		text = 'Clear '+ checkedCount +' completed item' + (checkedCount > 1 ? 's' : '');
-	}
+    if (checkedCount) {
+        text = 'Clear '+ checkedCount +' completed item' + (checkedCount > 1 ? 's' : '');
+    }
 
-	checkbox.suspendEvents();
+    checkbox.suspendEvents();
     checkbox.setValue(totalCount == checkedCount);
     checkbox.resumeEvents();
     checkbox.setVisible(!!totalCount);
-	container.update(info);
-	button.setText(text);
-	button.setVisible(checkedCount);
-	toolbar.setVisible(totalCount);
+    container.update(info);
+    button.setText(text);
+    button.setVisible(checkedCount);
+    toolbar.setVisible(totalCount);
 }

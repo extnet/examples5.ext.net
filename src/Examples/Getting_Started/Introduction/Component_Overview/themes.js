@@ -7,9 +7,9 @@
 
 Ext.onReady(function () {
     var items = [];
-    
+
     Ext.QuickTips.init();
-    
+
     //=============================================================
     // Layout grid toggle button
     //=============================================================
@@ -19,14 +19,14 @@ Ext.onReady(function () {
 //        width: 120,
 //        x: 50, y: 20,
 //        items: {
-//	        xtype: 'button',
-//	        text: 'Toggle Layout Grid',
-//	        handler: function () {
-//		        Ext.getBody().toggleClass('x-layout-grid');
-//	        }
+//            xtype: 'button',
+//            text: 'Toggle Layout Grid',
+//            handler: function () {
+//                Ext.getBody().toggleClass('x-layout-grid');
+//            }
 //        }
 //    });
-    
+
     //=============================================================
     // Panel / Window
     //=============================================================
@@ -40,7 +40,7 @@ Ext.onReady(function () {
         collapsible: true,
         x: 50, y: 100
     });
-    
+
     items.push({
         xtype: 'panel',
         width: 150,
@@ -57,7 +57,7 @@ Ext.onReady(function () {
             delay: 50
         }
     });
-    
+
     items.push({
         xtype: 'panel',
         width: 150,
@@ -68,7 +68,7 @@ Ext.onReady(function () {
         collapsible: true,
         x: 370, y: 100
     });
-    
+
     new Ext.Window({
         width: 150,
         height: 150,
@@ -94,7 +94,7 @@ Ext.onReady(function () {
             }
         }]
     }).show();
-    
+
     //=============================================================
     // Toolbar / Menu
     //=============================================================
@@ -150,7 +150,7 @@ Ext.onReady(function () {
             text: 'Bottom Bar'
         }]
     });
-    
+
     //=============================================================
     // Form widgets
     //=============================================================
@@ -269,7 +269,7 @@ Ext.onReady(function () {
             }
         }]
     });
-    
+
     //=============================================================
     // BorderLayout
     //=============================================================
@@ -318,7 +318,7 @@ Ext.onReady(function () {
             html: 'Center'
         }]
     });
-    
+
     //=============================================================
     // Grid
     //=============================================================
@@ -347,13 +347,13 @@ Ext.onReady(function () {
             field: 'company', direction: 'ASC'
         }
     });
-    var pagingBar = new Ext.PagingToolbar({        
+    var pagingBar = new Ext.PagingToolbar({
         store: store,
         displayInfo: true,
         displayMsg: 'Displaying topics {0} - {1} of {2}'
     });
     store.loadData(myData);
-    
+
     items.push({
         xtype: 'grid',
         store: store,
@@ -364,8 +364,8 @@ Ext.onReady(function () {
             {text: "% Change", width: 75, sortable: true, dataIndex: 'pctChange'},
             {text: "Last Updated", width: 85, sortable: true, renderer: Ext.util.Format.dateRenderer('m/d/Y'), dataIndex: 'lastChange'}
         ],
-        viewConfig: { 
-            stripeRows: true 
+        viewConfig: {
+            stripeRows: true
         },
         loadMask: true,
         height: 200,
@@ -399,7 +399,7 @@ Ext.onReady(function () {
             {text: "Change", width: .25, sortable: true, dataIndex: 'change'}
         ]
     });
-    
+
     items.push({
         xtype:'panel',
         id:'images-view',
@@ -410,9 +410,9 @@ Ext.onReady(function () {
         layout:'fit',
         title:'Simple ListView', // <i>(0 items selected)</i>
         items: listView
-        
+
     });
-    
+
     //=============================================================
     // Accordion / Tree
     //=============================================================
@@ -433,7 +433,7 @@ Ext.onReady(function () {
     var node = new Ext.tree.TreeNode({text: 'Folder'});
     node.appendChild(new Ext.tree.TreeNode({text: 'Item 3'}));
     root.appendChild(node);
-    
+
     var accConfig = {
         title: 'Accordion and TreePanel',
         layout: 'accordion',
@@ -456,7 +456,7 @@ Ext.onReady(function () {
     }
 
     items.push(accConfig);
-    
+
     //=============================================================
     // Tabs
     //=============================================================
@@ -479,7 +479,7 @@ Ext.onReady(function () {
             closable: true
         }]
     };
-    
+
     items.push(Ext.applyIf({
         x: 50, y: 970,
         items: [{
@@ -505,13 +505,13 @@ Ext.onReady(function () {
             closable: true
         }]  // enable 4 through 7 to see tab scrolling
     }, tabCfg));
-    
+
     items.push(Ext.apply({
         plain: true,
         x: 370, y: 970
     }, tabCfg));
-    
-    
+
+
     //=============================================================
     // DatePicker
     //=============================================================
@@ -524,7 +524,7 @@ Ext.onReady(function () {
             xtype: 'datepicker'
         }
     });
-    
+
     //=============================================================
     // Resizable
     //=============================================================
@@ -537,7 +537,7 @@ Ext.onReady(function () {
         handles: 'all',
         pinned: true
     });
-    
+
     //=============================================================
     // ProgressBar / Slider
     //=============================================================
@@ -562,8 +562,8 @@ Ext.onReady(function () {
             height: 100
         }]
     });
-    
-    
+
+
     //=============================================================
     // Render everything!
     //=============================================================
@@ -573,9 +573,9 @@ Ext.onReady(function () {
         autoScroll: true,
         items: items
     });
-    
+
     Ext.getCmp('menu-btn').showMenu();
-    
+
     //=============================================================
     // Stylesheet Switcher
     //=============================================================
@@ -583,7 +583,7 @@ Ext.onReady(function () {
         var name = select[select.selectedIndex].value;
         setActiveStyleSheet(name);
     });
-    
+
     var cookie = readCookie("style");
     var title = cookie ? cookie : getPreferredStyleSheet();
     Ext.get('styleswitcher_select').dom.value=title;

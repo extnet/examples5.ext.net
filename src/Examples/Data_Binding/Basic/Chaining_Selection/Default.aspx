@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     public class MyModel
     {
         public static object Model = new
@@ -21,7 +21,7 @@
 
 <html>
 <head runat="server">
-    <title>Chaining Selection - Ext.Net Examples</title>        
+    <title>Chaining Selection - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .binding-selection-view .customer {
@@ -50,14 +50,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Chaining Selection</h1>
 
         <p>This example shows selection binding. The selection from each component <br />
            is bound to the same source and is automatically updated when a selection <br />
            in any component changes.
         </p>
-        
+
        <ext:Model runat="server" Name="Customer">
             <Fields>
                 <ext:ModelField Name="name" />
@@ -68,15 +68,15 @@
             </Proxy>
         </ext:Model>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Width="600"
             Height="270"
             Layout="VBoxLayout"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
-                <ext:ComboBox 
+                <ext:ComboBox
                     runat="server"
                     MarginSpec="10 0 0 10"
                     ForceSelection="true"
@@ -93,16 +93,16 @@
                     </Bind>
                 </ext:ComboBox>
 
-                <ext:Container 
-                    runat="server" 
-                    Width="600" 
-                    MarginSpec="15 0 0 0" 
+                <ext:Container
+                    runat="server"
+                    Width="600"
+                    MarginSpec="15 0 0 0"
                     Flex="1">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:GridPanel 
+                        <ext:GridPanel
                             runat="server"
                             Title="Customers Grid"
                             Flex="1">
@@ -118,7 +118,7 @@
                             </ColumnModel>
                         </ext:GridPanel>
 
-                        <ext:DataView 
+                        <ext:DataView
                             runat="server"
                             Flex="1"
                             Cls="binding-selection-view"

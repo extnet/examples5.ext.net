@@ -16,18 +16,18 @@
             color       : #385F95;
             white-space : normal;
         }
-        
+
         .x-grid-rowbody div {
             margin : 2px 5px 20px 5px !important;
             width  : 99%;
             color  : Gray;
         }
-        
+
         .x-grid-row-expanded td.x-grid-cell{
             border-bottom-width:0px;
         }
     </style>
-    
+
     <script>
         var fullName = function (value, metadata, record, rowIndex, colIndex, store) {
            return "<b>" + record.data.LastName + " " + record.data.FirstName + "</b>";
@@ -37,34 +37,34 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
-        <asp:LinqDataSource 
-            ID="LinqDataSource1" 
-            runat="server" 
-            ContextTypeName="Ext.Net.Examples.Northwind.NorthwindDataContext" 
+
+        <asp:LinqDataSource
+            ID="LinqDataSource1"
+            runat="server"
+            ContextTypeName="Ext.Net.Examples.Northwind.NorthwindDataContext"
             Select="new (EmployeeID,
                          LastName,
                          FirstName,
-                         Title, 
-                         TitleOfCourtesy, 
-                         BirthDate, 
-                         HireDate, 
-                         Address, 
-                         City, 
-                         Region, 
-                         PostalCode, 
-                         Country, 
-                         HomePhone, 
-                         Extension, 
-                         Notes)" 
+                         Title,
+                         TitleOfCourtesy,
+                         BirthDate,
+                         HireDate,
+                         Address,
+                         City,
+                         Region,
+                         PostalCode,
+                         Country,
+                         HomePhone,
+                         Extension,
+                         Notes)"
             TableName="Employees"
             />
-    
-        <ext:GridPanel 
-            runat="server" 
-            ID="GridPanel1" 
-            Height="570" 
-            Title="Employees" 
+
+        <ext:GridPanel
+            runat="server"
+            ID="GridPanel1"
+            Height="570"
+            Title="Employees"
             Frame="true">
             <Store>
                 <ext:Store runat="server" DataSourceID="LinqDataSource1">
@@ -92,8 +92,8 @@
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
-			    <Columns>
-                    <ext:Column ID="fullName" runat="server" Text="Full Name" Width="150">            
+                <Columns>
+                    <ext:Column ID="fullName" runat="server" Text="Full Name" Width="150">
                         <Renderer Fn="fullName" />
                     </ext:Column>
                     <ext:Column runat="server" DataIndex="Title" Text="Title"  Width="150" />
@@ -107,22 +107,22 @@
                     <ext:Column runat="server" DataIndex="Country" Text="Country" Width="100" />
                     <ext:Column runat="server" DataIndex="HomePhone" Text="HomePhone" Width="150" />
                     <ext:Column runat="server" DataIndex="Extension" Text="Extension" Width="100" />
-			    </Columns>
-            </ColumnModel>    
+                </Columns>
+            </ColumnModel>
             <View>
                 <ext:GridView runat="server">
                     <GetRowClass Handler="return 'x-grid-row-expanded';" />
-                </ext:GridView>        
+                </ext:GridView>
             </View>
             <SelectionModel>
-                <ext:RowSelectionModel runat="server" Mode="Multi" /> 
+                <ext:RowSelectionModel runat="server" Mode="Multi" />
             </SelectionModel>
             <Features>
                 <ext:RowBody runat="server" >
                     <GetAdditionalData Handler="orig.rowBody = '<div>' + data.Notes + '</div>'; orig.rowBodyColspan = record.getFields().length;" />
                 </ext:RowBody>
             </Features>
-        </ext:GridPanel>    
+        </ext:GridPanel>
     </form>
 </body>
 </html>

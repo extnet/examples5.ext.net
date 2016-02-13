@@ -18,7 +18,7 @@ namespace Ext.Net.Examples
         public void ProcessRequest(HttpContext context)
         {
             Response sr = new Response(true);
-            
+
             try
             {
                 NorthwindDataContext db = new NorthwindDataContext();
@@ -65,7 +65,7 @@ namespace Ext.Net.Examples
                     //confirmationList[supplier.TemporaryID.ToString()].ConfirmRecord(supplier.SupplierID.ToString());
                 }
 
-                
+
                 StoreResponseData response = new StoreResponseData();
                 //response.Confirmation = confirmationList;
 

@@ -10,8 +10,8 @@
 
         Store store = this.GridPanel1.GetStore();
 
-        store.DataSource = new List<Project> 
-        { 
+        store.DataSource = new List<Project>
+        {
             new Project(100, "Ext Forms: Field Anchoring", 112, "Integrate 2.0 Forms with 2.0 Layouts", 6, 150, 0, ParseExact("06/24/2007", ref ci)),
             new Project(100, "Ext Forms: Field Anchoring", 113, "Implement AnchorLayout", 4, 150, 0, ParseExact("06/25/2007", ref ci)),
             new Project(100, "Ext Forms: Field Anchoring", 114, "Add support for multiple types of anchors", 4, 150, 0, ParseExact("06/27/2007", ref ci)),
@@ -61,17 +61,17 @@
 <html>
 <head runat="server">
     <title>Summary Plugin - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-   
+
     <style>
         .x-grid-body .x-grid-cell-Cost {
             background-color : #f1f2f4;
         }
-         
+
         .x-grid-row-summary .x-grid-cell-Cost .x-grid-cell-inner{
             background-color : #e1e2e4;
-        }    
+        }
 
         .task .x-grid-cell-inner {
             padding-left: 15px;
@@ -81,7 +81,7 @@
             font-weight      : bold;
             font-size        : 11px;
             background-color : #f1f2f4;
-        } 
+        }
     </style>
 
     <script>
@@ -105,11 +105,11 @@
         <h1>Summary Plugin</h1>
 
         <ext:ResourceManager runat="server"/>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Sponsored Projects" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
             Frame="true"
             Collapsible="true"
@@ -141,22 +141,22 @@
             </Plugins>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column                        
+                    <ext:Column
                         runat="server"
                         TdCls="task"
-                        Text="Task"                       
+                        Text="Task"
                         Sortable="true"
                         DataIndex="Description"
                         Hideable="false"
                         SummaryType="Count"
                         Flex="1">
-                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />                            
+                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                     </ext:Column>
-                     
+
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Flex="1">
                         <SummaryRenderer Handler="return '&nbsp;';" />
                     </ext:Column>
-                     
+
                     <ext:DateColumn
                         runat="server"
                         Text="Due Date"
@@ -171,9 +171,9 @@
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Format="Date" FormatArgs="'m/d/Y'" />
                     </ext:DateColumn>
- 
+
                     <ext:Column
-                        runat="server"  
+                        runat="server"
                         Width="75"
                         Text="Estimate"
                         Sortable="true"
@@ -183,14 +183,14 @@
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Handler="return value + ' hours';" />
                         <Editor>
-                            <ext:NumberField 
-                                runat="server" 
-                                AllowBlank="false" 
-                                AllowNegative="false" 
+                            <ext:NumberField
+                                runat="server"
+                                AllowBlank="false"
+                                AllowNegative="false"
                                 StyleSpec="text-align:left" />
                         </Editor>
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -200,16 +200,16 @@
                         SummaryType="Average">
                         <Renderer Format="UsMoney" />
                         <Editor>
-                            <ext:NumberField 
-                                runat="server" 
-                                AllowBlank="false" 
-                                AllowNegative="false" 
+                            <ext:NumberField
+                                runat="server"
+                                AllowBlank="false"
+                                AllowNegative="false"
                                 StyleSpec="text-align:left" />
                         </Editor>
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Format="UsMoney" />
                     </ext:Column>
-                     
+
                     <ext:Column
                         runat="server"
                         Width="75"
@@ -222,11 +222,11 @@
                         <Renderer Handler="return Ext.util.Format.usMoney(record.data.Estimate * record.data.Rate);" />
                         <SummaryRenderer Format="UsMoney" />
                     </ext:Column>
-                </Columns>                
-            </ColumnModel>            
-            <Features>               
-                <ext:Summary ID="Summary1" runat="server" />                   
-            </Features>            
+                </Columns>
+            </ColumnModel>
+            <Features>
+                <ext:Summary ID="Summary1" runat="server" />
+            </Features>
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

@@ -8,7 +8,7 @@ namespace Ext.Net.Calendar.Demo
     public partial class EventsViewer : System.Web.UI.UserControl
     {
         public void Render(List<EventModel> events)
-        {            
+        {
             this.SubmittedEventsStore1.DataSource = events;
             this.Window1.Render();
         }

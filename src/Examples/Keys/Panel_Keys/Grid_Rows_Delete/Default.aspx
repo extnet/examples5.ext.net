@@ -48,7 +48,7 @@
 <html>
 <head runat="server">
     <title>Deleting Rows using Delete Key - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var processEvent = function (view, record, node, index, event) {
@@ -62,9 +62,9 @@
 
         var deleteRows = function (keyCode, e) {
             Ext.Msg.confirm(
-                'Delete Rows',      
-                'Are you sure?', 
-                function (btn) {                    
+                'Delete Rows',
+                'Are you sure?',
+                function (btn) {
                     if (btn == 'yes') {
                         e.store.remove(e.record);
                     }
@@ -78,14 +78,14 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Deleting Rows using Delete Key</h1>
-    
-    <ext:GridPanel 
-        ID="GridPanel1" 
-        runat="server" 
-        Title="Array Grid" 
-        Width="600" 
+
+    <ext:GridPanel
+        ID="GridPanel1"
+        runat="server"
+        Title="Array Grid"
+        Width="600"
         Height="350">
         <Store>
             <ext:Store ID="Store1" runat="server">
@@ -104,11 +104,11 @@
         </Store>
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column 
-                    runat="server" 
-                    Text="Company" 
-                    DataIndex="company" 
-                    Flex="1" 
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="company"
+                    Flex="1"
                     />
                 <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
                     <Renderer Format="UsMoney" />
@@ -124,17 +124,17 @@
         <View>
             <ext:GridView runat="server">
                <KeyMap EventName="itemkeydown" ComponentEvent="true">
-                   <ProcessEvent Fn="processEvent" /> 
+                   <ProcessEvent Fn="processEvent" />
                    <Binding>
                         <ext:KeyBinding Handler="deleteRows">
                             <Keys>
                                 <ext:Key Code="DELETE" />
                             </Keys>
-                        </ext:KeyBinding> 
+                        </ext:KeyBinding>
                    </Binding>
                 </KeyMap>
             </ext:GridView>
-        </View>        
+        </View>
     </ext:GridPanel>
 </body>
 </html>

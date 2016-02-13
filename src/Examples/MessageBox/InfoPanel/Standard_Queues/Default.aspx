@@ -22,10 +22,10 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
-    <title>Standard Alignment Queues - Ext.NET Examples</title>      
+    <title>Standard Alignment Queues - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script type="text/javascript">
@@ -36,11 +36,11 @@
 </head>
 <body style="overflow: hidden;">
     <form runat="server">
-        <ext:ResourceManager runat="server" />    
-    
-        <ext:Window 
-            runat="server" 
-            Title="Standard Alignment Queues" 
+        <ext:ResourceManager runat="server" />
+
+        <ext:Window
+            runat="server"
+            Title="Standard Alignment Queues"
             Layout="HBoxLayout"
             Width="500"
             Height="400"

@@ -5,8 +5,8 @@
     {
         get
         {
-            return new List<object> 
-            { 
+            return new List<object>
+            {
                 new { Month = "Jan", Data1 = 20, Data2 = 37, Data3 = 35, Data4 = 4 },
                 new { Month = "Feb", Data1 = 20, Data2 = 37, Data3 = 36, Data4 = 5 },
                 new { Month = "Mar", Data1 = 19, Data2 = 36, Data3 = 37, Data4 = 4 },
@@ -41,19 +41,19 @@
         <p>other. This is typically done to visually represent the total of all categories for a</p>
         <p>given period or value.</p>
 
-        <ext:Container 
+        <ext:Container
             runat="server"
             Width="800"
             Height="500"
             Layout="FitLayout">
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server"
                     FlipXY="true"
                     InsetPadding="40">
                     <Store>
-                        <ext:Store runat="server" Data="<%# Data %>" AutoDataBind="true">                           
+                        <ext:Store runat="server" Data="<%# Data %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -93,21 +93,21 @@
                     </Items>
 
                     <Axes>
-                        <ext:NumericAxis 
-                            Fields="Data1" 
-                            Position="Bottom" 
-                            Grid="true" 
+                        <ext:NumericAxis
+                            Fields="Data1"
+                            Position="Bottom"
+                            Grid="true"
                             AdjustByMajorUnit="true"
                             Minimum="0">
                             <Renderer Handler="return label + '%';" />
-                        </ext:NumericAxis>                            
+                        </ext:NumericAxis>
 
                         <ext:CategoryAxis Fields="Month" Position="Left" Grid="true" />
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries                             
-                            XField="Month" 
+                        <ext:BarSeries
+                            XField="Month"
                             YField="Data1,Data2,Data3,Data4"
                             Titles="IE,Firefox,Chrome,Safari"
                             Stacked="true">
@@ -125,6 +125,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Container>
-    </form>    
+    </form>
 </body>
 </html>

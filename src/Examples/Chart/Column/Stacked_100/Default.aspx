@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
+        this.Chart1.GetStore().DataSource = new List<object>
         {
             new { Month = "Jan", Data1 = 20, Data2 = 37, Data3 = 35, Data4 = 4 },
             new { Month = "Feb", Data1 = 20, Data2 = 37, Data3 = 36, Data4 = 5 },
@@ -16,7 +16,7 @@
             new { Month = "Sep", Data1 = 16, Data2 = 32, Data3 = 44, Data4 = 4 },
             new { Month = "Oct", Data1 = 16, Data2 = 32, Data3 = 45, Data4 = 4 },
             new { Month = "Nov", Data1 = 15, Data2 = 31, Data3 = 46, Data4 = 4 },
-            new { Month = "Dec", Data1 = 15, Data2 = 31, Data3 = 47, Data4 = 4 }   
+            new { Month = "Dec", Data1 = 15, Data2 = 31, Data3 = 47, Data4 = 4 }
         };
     }
 </script>
@@ -50,8 +50,8 @@
 
         <ext:Panel
             runat="server"
-            Width="650"            
-            Layout="AnchorLayout" 
+            Width="650"
+            Layout="AnchorLayout"
             DefaultAnchor="100%">
             <TopBar>
                 <ext:Toolbar runat="server">

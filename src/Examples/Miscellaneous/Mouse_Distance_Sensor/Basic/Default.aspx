@@ -70,7 +70,7 @@
     </script>
 </head>
 <body>
-    <ext:ResourceManager runat="server" />    
+    <ext:ResourceManager runat="server" />
 
     <ext:Viewport runat="server" Layout="BorderLayout">
         <Items>

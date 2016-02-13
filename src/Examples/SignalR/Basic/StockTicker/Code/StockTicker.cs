@@ -19,7 +19,7 @@ namespace Microsoft.AspNet.SignalR.StockTicker
 
         // Stock can go up or down by a percentage of this factor on each change
         private readonly double _rangePercent = 0.002;
-        
+
         private readonly TimeSpan _updateInterval = TimeSpan.FromMilliseconds(250);
         private readonly Random _updateOrNotRandom = new Random();
 
@@ -99,7 +99,7 @@ namespace Microsoft.AspNet.SignalR.StockTicker
                 {
                     throw new InvalidOperationException("Market must be closed before it can be reset.");
                 }
-                
+
                 LoadDefaultStocks();
                 BroadcastMarketReset();
             }

@@ -55,7 +55,7 @@
             buf.push("New parent = " + newParent.data.text);
             buf.push("<br/>");
             buf.push("Index = " + index);
-            
+
             Ext.Msg.alert("Node droped", buf.join(""));
         };
     </script>
@@ -63,20 +63,20 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Drag and Drop ordering of TreePanel Nodes</h1>
-        
-        <p>This example shows basic drag and drop node moving in a tree. In this implementation there are no restrictions and 
-        anything can be dropped anywhere except appending to nodes marked "leaf".</p>        
-        
+
+        <p>This example shows basic drag and drop node moving in a tree. In this implementation there are no restrictions and
+        anything can be dropped anywhere except appending to nodes marked "leaf".</p>
+
         <p>In order to demonstrate drag and drop insertion points, sorting was <b>not</b> enabled.</p>
-        
-        <ext:TreePanel 
+
+        <ext:TreePanel
             ID="TreePanel1"
-            runat="server" 
-            Height="300" 
+            runat="server"
+            Height="300"
             Width="250"
-            UseArrows="true">           
+            UseArrows="true">
             <Listeners>
                 <ItemMove Fn="moveNode" Delay="1" />
             </Listeners>
@@ -84,9 +84,9 @@
                 <ext:TreeView runat="server">
                    <Plugins>
                        <ext:TreeViewDragDrop runat="server" ContainerScroll="true" />
-                   </Plugins> 
+                   </Plugins>
                 </ext:TreeView>
-            </View>            
+            </View>
         </ext:TreePanel>
     </form>
 </body>

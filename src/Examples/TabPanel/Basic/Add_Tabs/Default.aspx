@@ -13,9 +13,9 @@
                 var tab = tabPanel.getComponent(id);
 
                 if (!tab) {
-                    tab = tabPanel.add({ 
-                        id       : id, 
-                        title    : url, 
+                    tab = tabPanel.add({
+                        id       : id,
+                        title    : url,
                         closable : true,
                         menuItem : menuItem,
                         loader   : {
@@ -32,7 +32,7 @@
                         #{MenuPanel1}.setSelection(tab.menuItem);
                     });
                 }
-            
+
                 tabPanel.setActiveTab(tab);
             }
         </script>
@@ -41,19 +41,19 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Title="Adding tab"
-            Width="700" 
-            Height="500" 
-            Icon="Link" 
+            Width="700"
+            Height="500"
+            Icon="Link"
             Layout="BorderLayout">
             <Items>
-                <ext:MenuPanel 
-                    ID="MenuPanel1" 
-                    runat="server" 
-                    Width="200" 
+                <ext:MenuPanel
+                    ID="MenuPanel1"
+                    runat="server"
+                    Width="200"
                     Region="West">
                     <Menu runat="server">
                         <Items>
@@ -62,17 +62,17 @@
                                     <Click Handler="addTab(#{TabPanel1}, 'idClt', 'http://ext.net', this);" />
                                 </Listeners>
                             </ext:MenuItem>
-                            
+
                             <ext:MenuSeparator />
-                            
+
                             <ext:MenuItem runat="server" Text="Ext.NET forums">
                                 <Listeners>
                                     <Click Handler="addTab(#{TabPanel1}, 'idGgl', 'http://forums.ext.net', this);" />
                                 </Listeners>
                             </ext:MenuItem>
-                            
+
                             <ext:MenuSeparator />
-                            
+
                             <ext:MenuItem runat="server" Text="Sencha">
                                 <Listeners>
                                     <Click Handler="addTab(#{TabPanel1}, 'idExt', 'http://www.sencha.com', this);" />

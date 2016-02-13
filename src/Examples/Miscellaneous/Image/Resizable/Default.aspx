@@ -4,27 +4,27 @@
 
 <html>
 <head runat="server">
-    <title>Resizable Image - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
-    
+    <title>Resizable Image - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
         var resize = function (image, factor) {
             if (!factor || !image.complete) {
                 return;
             }
-            
+
             var orgSize = image.getOriginalSize();
-            
+
             factor = parseFloat(factor);
             image.setSize(parseInt(orgSize.width * factor), parseInt(orgSize.height * factor));
         };
-        
+
         var newFactor = function (combo, dir) {
             var index = combo.store.indexOf(combo.valueCollection.getAt(0)),
                 count = combo.store.getCount();
-                
+
             index += dir;
-            
+
             if (index >=0 && index < count) {
                 combo.setValueAndFireSelect(combo.store.getAt(index).get(combo.valueField));
             }
@@ -34,7 +34,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server"/>
-        
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
                 <ext:Panel runat="server" Border="false" Region="North" Height="160" BodyPadding="20">
@@ -49,10 +49,10 @@
                                         <Click Handler="newFactor(#{SizesCombo}, -1);" />
                                     </Listeners>
                                 </ext:Button>
-                                <ext:ComboBox 
-                                    ID="SizesCombo" 
-                                    runat="server" 
-                                    TriggerIcon="SimpleMagnify" 
+                                <ext:ComboBox
+                                    ID="SizesCombo"
+                                    runat="server"
+                                    TriggerIcon="SimpleMagnify"
                                     Editable="false">
                                     <Items>
                                         <ext:ListItem Text="1%" Value="0.01" />
@@ -84,7 +84,7 @@
                                         <Select Handler="resize(#{Image1}, records[0].get(this.valueField));" />
                                     </Listeners>
                                 </ext:ComboBox>
-                                
+
                                 <ext:Button runat="server" Icon="MagnifierZoomIn">
                                     <Listeners>
                                         <Click Handler="newFactor(#{SizesCombo}, 1);" />
@@ -94,24 +94,24 @@
                         </ext:Toolbar>
                     </Content>
                 </ext:Panel>
-                
-                <ext:Panel 
-                    runat="server" 
-                    Border="false" 
-                    AutoScroll="true" 
-                    Region="Center" 
+
+                <ext:Panel
+                    runat="server"
+                    Border="false"
+                    AutoScroll="true"
+                    Region="Center"
                     BodyPadding="20">
                     <Items>
-                        <ext:Image 
-                            ID="Image1" 
-                            runat="server"                            
+                        <ext:Image
+                            ID="Image1"
+                            runat="server"
                             ImageUrl="../Shared/tokyo-subway-map.jpg">
                             <ResizableConfig runat="server" PreserveRatio="true" HandlesSummary="s e se"/>
                             <Listeners>
                                 <Complete Handler="newFactor(#{SizesCombo}, 0);" />
                                 <ResizerResize Handler="#{SizesCombo}.setValue('');" />
                             </Listeners>
-                        </ext:Image> 
+                        </ext:Image>
                     </Items>
                 </ext:Panel>
             </Items>

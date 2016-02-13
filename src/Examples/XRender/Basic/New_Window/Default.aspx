@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
-        Window win = new Window 
+        Window win = new Window
         {
             ID = "Window1",
             Title = "Example",
@@ -29,15 +29,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Dynamically create a new Window during a DirectEvent</h1>
-        
-        <ext:Button 
-            ID="Button1" 
-            runat="server" 
-            Text="Add Window" 
-            Icon="Add" 
-            OnDirectClick="Button1_Click" 
+
+        <ext:Button
+            ID="Button1"
+            runat="server"
+            Text="Add Window"
+            Icon="Add"
+            OnDirectClick="Button1_Click"
             />
     </form>
 </body>

@@ -57,7 +57,7 @@
                 new object[] { "WA", "Washington", "Green Tree State" },
                 new object[] { "WV", "West Virginia", "Mountain State" },
                 new object[] { "WI", "Wisconsin", "America's Dairyland" },
-                new object[] { "WY", "Wyoming", "Like No Place on Earth" } 
+                new object[] { "WY", "Wyoming", "Like No Place on Earth" }
             };
         }
     }
@@ -77,7 +77,7 @@
             padding: 0px 10px 10px 10px;
             margin: 0 0 10px;
         }
-        
+
         #transformCombo label {
             display: block;
             margin: 1em 0 2px;
@@ -89,8 +89,8 @@
         <ext:ResourceManager runat="server" />
 
         <ext:ObjectHolder ID="DataHolder" runat="server" />
-       
-        <h1>Combo Boxes</h1>        
+
+        <h1>Combo Boxes</h1>
 
         <div class="example">
             <h2>Data Sources</h2>
@@ -98,13 +98,13 @@
             This means your data can be XML, JSON, arrays or any other supported format. It can be loaded using
             Ajax, via script tags or locally. This combo uses local data:</p>
 
-            <ext:ComboBox 
+            <ext:ComboBox
                 runat="server"
                 FieldLabel="Select a single state"
                 DisplayField="name"
                 Width="320"
                 LabelWidth="130"
-                QueryMode="Local"               
+                QueryMode="Local"
                 TypeAhead="true">
                 <Store>
                     <ext:Store runat="server" Data="<%# TestData %>" AutoDataBind="true">
@@ -119,7 +119,7 @@
                         </Model>
 
                         <Reader>
-                            <ext:ArrayReader />    
+                            <ext:ArrayReader />
                         </Reader>
                     </ext:Store>
                 </Store>
@@ -132,14 +132,14 @@
             custom template to create custom UI renditions for list items by overriding the getInnerTpl method. In this case
             each item shows the state's abbreviation, and has a QuickTip which displays the state's nickname when hovered over.</p>
 
-            <ext:ComboBox 
+            <ext:ComboBox
                 runat="server"
                 FieldLabel="Select a single state"
                 DisplayField="name"
                 Width="320"
                 LabelWidth="130"
-                QueryMode="Local">     
-                
+                QueryMode="Local">
+
                 <Store>
                     <ext:Store runat="server" Data="<%# TestData %>" AutoDataBind="true">
                         <Model>
@@ -153,11 +153,11 @@
                         </Model>
 
                         <Reader>
-                            <ext:ArrayReader />    
+                            <ext:ArrayReader />
                         </Reader>
                     </ext:Store>
                 </Store>
-                           
+
                 <ListConfig>
                     <ItemTpl runat="server">
                         <Html>
@@ -173,7 +173,7 @@
             <h2>Multiple Selection</h2>
             <p>The combo below uses the same data once again, but allows selecting multiple values.</p>
 
-            <ext:ComboBox 
+            <ext:ComboBox
                 runat="server"
                 FieldLabel="Select multiple states"
                 MultiSelect="true"
@@ -194,7 +194,7 @@
                         </Model>
 
                         <Reader>
-                            <ext:ArrayReader />    
+                            <ext:ArrayReader />
                         </Reader>
                     </ext:Store>
                 </Store>
@@ -207,8 +207,8 @@
             specifying the <code>transform</code> config. This allows creation of rich ComboBox fields with autocompletion
             and list filtering, in an unobtrusive way.</p>
 
-            <ext:ComboBox 
-                runat="server" 
+            <ext:ComboBox
+                runat="server"
                 TypeAhead="true"
                 Transform="stateSelect"
                 Width="135"

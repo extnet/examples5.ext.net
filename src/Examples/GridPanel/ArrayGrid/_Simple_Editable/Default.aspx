@@ -8,14 +8,14 @@
         if (!X.IsAjaxRequest)
         {
             this.Store1.DataSource = this.TestData;
-            this.Store1.DataBind(); 
+            this.Store1.DataBind();
         }
     }
 
     protected void Store1_ReadData(object sender, StoreReadDataEventArgs e)
     {
         this.Store1.DataSource = this.TestData;
-        this.Store1.DataBind(); 
+        this.Store1.DataBind();
     }
 
     private object[] TestData
@@ -58,7 +58,7 @@
             };
         }
     }
-    
+
     protected void Store1_RecordUpdated(object sender, AfterRecordUpdatedEventArgs e)
     {
         // This event is fired once for each Record that is Updated.
@@ -91,15 +91,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel with editable rows and server save</h1>
-        
+
         <p></p>
-        
-        <ext:Store 
-            ID="Store1" 
-            runat="server" 
-            OnAfterRecordUpdated="Store1_RecordUpdated" 
+
+        <ext:Store
+            ID="Store1"
+            runat="server"
+            OnAfterRecordUpdated="Store1_RecordUpdated"
             OnReadData="Store1_ReadData"
             PageSize="10">
             <Model>
@@ -112,15 +112,15 @@
                         <ext:ModelField Name="lastChange" Type="Date" />
                     </Fields>
                 </ext:Model>
-            </Model>            
+            </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Array Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            StoreID="Store1"
+            Title="Array Grid"
+            Width="600"
             Height="290">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -143,7 +143,7 @@
             </Plugins>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />                        
+                    <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
@@ -165,12 +165,12 @@
             </SelectionModel>
             <View>
                 <ext:GridView runat="server" StripeRows="true" />
-            </View>            
+            </View>
             <BottomBar>
                 <ext:PagingToolbar ID="PagingToolBar1" runat="server" />
             </BottomBar>
         </ext:GridPanel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

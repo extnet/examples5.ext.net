@@ -8,7 +8,7 @@
         if (this.IsPostBack && ThemeSelector.SelectedItems.Count > 0)
         {
             ListItem themeItem = ThemeSelector.SelectedItem;
-            
+
             switch (themeItem.Value)
             {
                 case "0":
@@ -30,7 +30,7 @@
                     this.ResourceManager1.Theme = Ext.Net.Theme.CrispTouch;
                     break;
             }
-        }        
+        }
     }
 </script>
 
@@ -42,17 +42,17 @@
 
     <script type="text/javascript">
         var runProgressbar = function (bar) {
-			bar.wait({
-				interval: 500, 
-				duration: 50000,
-				increment: 15,
-				text: 'Updating...',
-				scope: bar,
-				fn: function () {
-					this.updateText('Done!');
-				}
-			});
-		};
+            bar.wait({
+                interval: 500,
+                duration: 50000,
+                increment: 15,
+                text: 'Updating...',
+                scope: bar,
+                fn: function () {
+                    this.updateText('Done!');
+                }
+            });
+        };
     </script>
 </head>
 <body style="padding:30px;">

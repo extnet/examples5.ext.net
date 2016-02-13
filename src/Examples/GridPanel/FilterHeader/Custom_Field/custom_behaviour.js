@@ -15,7 +15,7 @@
                 tmp.push(v);
             }
         });
-            
+
         values = tmp;
 
         return {value: values, valid: values.length > 0};

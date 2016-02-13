@@ -1,12 +1,12 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">        
+<script runat="server">
     protected void SubmitModel(object sender, DirectEventArgs e)
     {
         var model = e.ExtraParams["model"];
         X.Msg.Alert("Data", model).Show();
     }
-    
+
     public class MyModel
     {
         public static object Model = new
@@ -25,7 +25,7 @@
             // More information at http://docs-origin.sencha.com/extjs/5.0.1/#!/api/Ext.app.bind.Formula
             formulas = new
             {
-                age = new 
+                age = new
                 {
                     get = new JFunction("TwoWayFormulasModel.formulas.age.get"),
                     set = new JFunction("TwoWayFormulasModel.formulas.age.set")
@@ -47,7 +47,7 @@
 
 <html>
 <head runat="server">
-    <title>Formulas - Ext.Net Examples</title>        
+    <title>Formulas - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -122,27 +122,27 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Formulas</h1>
 
         <p>This example shows data binding using formulas that can be edited. That is, "virtual properties"!</p>
-        
-        <ext:Panel 
-            runat="server" 
-            Width="450" 
+
+        <ext:Panel
+            runat="server"
+            Width="450"
             AutoScroll="true"
-            BodyPadding="10" 
+            BodyPadding="10"
             Frame="true"
             Resizable="true"
             Layout="FormLayout"
             Title="Two-Way Formulas"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
                 <ext:TextField runat="server" FieldLabel="First Name" BindString="{firstName}" />
                 <ext:TextField runat="server" FieldLabel="Last Name" BindString="{lastName}" />
                 <ext:TextField runat="server" FieldLabel="Full Name (virtual)" BindString="{fullName}" />
-                
+
                 <ext:FieldContainer runat="server" FieldLabel="Age">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />
@@ -154,13 +154,13 @@
                     </Items>
                 </ext:FieldContainer>
 
-                <ext:DateField 
-                    runat="server" 
-                    Format="MM/dd/yyyy" 
-                    FieldLabel="Birth Date" 
-                    BindString="{birthDate}" 
-                    MaxDate="<%# DateTime.Now %>" 
-                    AutoDataBind="true" 
+                <ext:DateField
+                    runat="server"
+                    Format="MM/dd/yyyy"
+                    FieldLabel="Birth Date"
+                    BindString="{birthDate}"
+                    MaxDate="<%# DateTime.Now %>"
+                    AutoDataBind="true"
                     />
             </Items>
             <Buttons>

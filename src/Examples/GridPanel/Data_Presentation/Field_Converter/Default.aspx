@@ -28,11 +28,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            runat="server" 
-            Title="Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -59,8 +59,8 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
                     <ext:CheckColumn runat="server" Text="Active" Width="50" DataIndex="active" />
                 </Columns>
-            </ColumnModel>            
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

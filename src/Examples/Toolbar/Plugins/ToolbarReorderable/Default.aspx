@@ -12,7 +12,7 @@
         <ext:ResourceManager runat="server" />
 
         <h1>Reorderable Toolbars</h1>
-        
+
         <p>This toolbar has the Ext.ux.ToolbarReorderer plugin applied to it.</p>
 
         <p>Each item in the Toolbar has an optional 'reorderable' property, which will make the button draggable if set to true. In this example the 4 rightmost buttons are reorderable.</p>
@@ -21,15 +21,15 @@
             <Plugins>
                 <ext:BoxReorderer runat="server" DefaultReorderable="true">
                     <Listeners>
-                        <Drop Handler="var sb = []; 
+                        <Drop Handler="var sb = [];
                                        container.items.each(function (item) {
                                            sb.push(item.text);
-                                       }); 
+                                       });
                                        #{Label1}.setText(sb.join(', '));" />
                     </Listeners>
                 </ext:BoxReorderer>
             </Plugins>
-            
+
             <Items>
                 <ext:SplitButton ID="SplitButton1" runat="server" Text="Menu Button" Icon="Add" Reorderable="false">
                     <Menu>
@@ -40,7 +40,7 @@
                         </ext:Menu>
                     </Menu>
                 </ext:SplitButton>
-                
+
                 <ext:SplitButton ID="SplitButton2" runat="server" Text="Cut" Icon="Add">
                     <Menu>
                         <ext:Menu runat="server">
@@ -50,9 +50,9 @@
                         </ext:Menu>
                     </Menu>
                 </ext:SplitButton>
-                
+
                 <ext:Button ID="Button1" runat="server" Text="Copy" Icon="Add" />
-                
+
                 <ext:Button ID="Button2" runat="server" Text="Paste" Icon="Add">
                     <Menu>
                         <ext:Menu runat="server">
@@ -65,7 +65,7 @@
                 <ext:Button ID="Button3" runat="server" Text="Format" Icon="Add" />
             </Items>
         </ext:Toolbar>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

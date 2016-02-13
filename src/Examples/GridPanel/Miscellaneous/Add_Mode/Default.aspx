@@ -83,12 +83,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Add mode of Store</h1>
-        
+
         <ext:GridPanel ID="GridPanel1" runat="server" Title="Grid" Width="600">
             <Store>
-                <ext:Store ID="Store1" runat="server" OnReadData="AddRecords" WarningOnDirty="false">                
+                <ext:Store ID="Store1" runat="server" OnReadData="AddRecords" WarningOnDirty="false">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
@@ -103,7 +103,7 @@
                     <ext:RowNumbererColumn runat="server" Width="25" />
                     <ext:Column runat="server" ID="Company" Text="Company" Flex="1" DataIndex="company" />
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
             <View>
                 <ext:GridView runat="server" ScrollOffset="0" />
             </View>

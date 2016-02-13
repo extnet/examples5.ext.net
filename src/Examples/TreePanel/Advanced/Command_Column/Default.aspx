@@ -14,7 +14,7 @@
             // Suspend script generation during property changing
             ((CommandColumn)TreePanel1.ColumnModel.Columns[1]).OverOnly = ToggleButton.Pressed;
             X.ControlsScripting = true;
-            
+
             TreePanel1.Update();
         }
     </script>
@@ -22,33 +22,33 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>TreePanel with CommandColumn</h1>
-        
+
         <br />
         <br />
 
-        <ext:Button ID="ToggleButton" runat="server" 
-            Text="Over only" 
-            AllowDepress="true" 
+        <ext:Button ID="ToggleButton" runat="server"
+            Text="Over only"
+            AllowDepress="true"
             EnableToggle="true">
             <DirectEvents>
                 <Toggle OnEvent="ToggleMode" />
             </DirectEvents>
         </ext:Button>
-            
+
         <br />
 
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
             Title="My Task List"
             Icon="Accept"
             Height="400"
             Width="250"
             UseArrows="true"
             AutoScroll="true"
-            Animate="true"            
+            Animate="true"
             HideHeaders="true"
             RootVisible="false">
             <Root>
@@ -61,13 +61,13 @@
                                 <ext:Node Text="Clean house" Leaf="true" />
                             </Children>
                         </ext:Node>
-                        
+
                         <ext:Node Text="Grocery List" Icon="Folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Bananas" Leaf="true" />
                                 <ext:Node Text="Milk" Leaf="true" />
                                 <ext:Node Text="Cereal" Leaf="true" />
-                                
+
                                 <ext:Node Text="Energy foods" Icon="Folder" Expanded="true">
                                     <Children>
                                         <ext:Node Text="Coffee" Leaf="true" />
@@ -76,7 +76,7 @@
                                 </ext:Node>
                             </Children>
                         </ext:Node>
-                        
+
                         <ext:Node Text="Kitchen Remodel" Icon="Folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Finish the budget" Leaf="true" />
@@ -87,7 +87,7 @@
                     </Children>
                 </ext:Node>
             </Root>
-            
+
             <ColumnModel>
                 <Columns>
                     <ext:TreeColumn runat="server" Flex="1" DataIndex="text" />
@@ -102,7 +102,7 @@
                     </ext:CommandColumn>
                 </Columns>
             </ColumnModel>
-                  
+
          </ext:TreePanel>
     </form>
 </body>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-	<description>		
-	</description>
+    <description>
+    </description>
     <include>
         <file zip="false" url="Classes/UI/TasksGrid.cs" />
         <file zip="false" url="Classes/Logic/TasksGrid.cs" />

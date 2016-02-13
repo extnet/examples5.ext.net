@@ -9,7 +9,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Advanced Password Mask</h1>
 
         <p>PasswordMask allows :</p>
@@ -20,40 +20,40 @@
             <li>Show/Hide password</li>
             <li>Check that password doesn't equal the login</li>
         </ul>
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Width="400"
-            Title="Password Mask"            
+            Title="Password Mask"
             Closable="false"
             BodyPadding="5"
             Layout="AnchorLayout"
-            DefaultAnchor="100%">           
+            DefaultAnchor="100%">
             <Items>
-               <ext:TextField 
-                    ID="txtUsername" 
-                    runat="server"                     
-                    FieldLabel="Username" 
+               <ext:TextField
+                    ID="txtUsername"
+                    runat="server"
+                    FieldLabel="Username"
                     AllowBlank="false"
                     BlankText="Your username is required."
                     />
 
-                <ext:TextField 
-                    ID="txtPassword" 
-                    runat="server"                                        
-                    FieldLabel="Password" 
+                <ext:TextField
+                    ID="txtPassword"
+                    runat="server"
+                    FieldLabel="Password"
                     AllowBlank="false"
-                    RemoveClearTrigger="true" 
+                    RemoveClearTrigger="true"
                     BlankText="Your password is required."
                     RightButtonsShowMode="MouseOverOrFocus"
                     MsgTarget="Under">
                     <RightButtons>
-                        <ext:Button runat="server" 
-                            Icon="ArrowSwitch" 
-                            ToolTip="Generate password" 
+                        <ext:Button runat="server"
+                            Icon="ArrowSwitch"
+                            ToolTip="Generate password"
                             Handler="this.up('textfield').passwordMask.generatePassword(); #{PassMode}.toggle(true, true);" />
 
-                        <ext:Button runat="server" 
+                        <ext:Button runat="server"
                             ID="PassMode"
                             Icon="TextAb"
                             AllowDepress="true"
@@ -68,8 +68,8 @@
                         <ext:PasswordMask runat="server" LoginField="#{txtUsername}" Mode="HideAll" />
                     </Plugins>
                 </ext:TextField>
-            </Items>            
-        </ext:Window>                
+            </Items>
+        </ext:Window>
    </form>
 </body>
 </html>

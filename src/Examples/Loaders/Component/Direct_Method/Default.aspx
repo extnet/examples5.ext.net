@@ -6,7 +6,7 @@
     [DirectMethod]
     public string Items()
     {
-        return ComponentLoader.ToConfig(new List<AbstractComponent>() { 
+        return ComponentLoader.ToConfig(new List<AbstractComponent>() {
                 new Panel { Title="Item 1", Icon = Icon.UserBrown },
                 new Panel { Title="Item 2", Icon = Icon.UserGray },
                 new Panel { Title="Item 3", Icon = Icon.UserGreen }
@@ -30,11 +30,11 @@
     public static string AddTab(string parameters)
     {
         Dictionary<string, string> prms = JSON.Deserialize<Dictionary<string, string>>(parameters);
-        
-        return ComponentLoader.ToConfig(new Panel { 
-            Title = prms["name"], 
-            Icon = Icon.TabAdd, 
-            Html = "Server time: " + DateTime.Now.ToLongTimeString() 
+
+        return ComponentLoader.ToConfig(new Panel {
+            Title = prms["name"],
+            Icon = Icon.TabAdd,
+            Html = "Server time: " + DateTime.Now.ToLongTimeString()
         });
     }
 </script>
@@ -48,17 +48,17 @@
 </head>
 <body>
     <h1>Component Loader (DirectMethod)</h1>
-    
-    <ext:ResourceManager runat="server" />    
-    
+
+    <ext:ResourceManager runat="server" />
+
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="350"
         Layout="AccordionLayout"
         Title="Load Items from the Page (DirectMethod, AutoLoad)">
-        <Loader 
-            runat="server" 
+        <Loader
+            runat="server"
             DirectMethod="#{DirectMethods}.Items"
             Mode="Component">
             <LoadMask ShowMask="true" />
@@ -69,15 +69,15 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="500"
         Layout="FitLayout"
         Title="Load UserControl from the Page (static DirectMethod, manual loading)">
-        <Loader 
-            runat="server" 
+        <Loader
+            runat="server"
             AutoLoad="false"
-            DirectMethod="#{DirectMethods}.UserControl" 
+            DirectMethod="#{DirectMethods}.UserControl"
             Mode="Component">
             <LoadMask ShowMask="true" />
         </Loader>
@@ -94,17 +94,17 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="500"
         Layout="AccordionLayout"
         Title="Load UserControl from the Page (static DirectMethod, dynamic inner items)">
-        <Loader 
-            runat="server" 
-            DirectMethod="#{DirectMethods}.DynamicUserControl" 
+        <Loader
+            runat="server"
+            DirectMethod="#{DirectMethods}.DynamicUserControl"
             Mode="Component">
             <LoadMask ShowMask="true" />
-        </Loader>        
+        </Loader>
     </ext:Panel>
 
     <br />
@@ -113,14 +113,14 @@
     <p>Load Tab from the Page (persist current items)</p>
 
     <ext:TabPanel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="500">
-        <Loader 
-            runat="server" 
+        <Loader
+            runat="server"
             AutoLoad="false"
             RemoveAll="false"
-            DirectMethod="#{DirectMethods}.AddTab" 
+            DirectMethod="#{DirectMethods}.AddTab"
             Mode="Component">
             <LoadMask ShowMask="true" />
             <Params>

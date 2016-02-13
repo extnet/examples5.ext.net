@@ -10,7 +10,7 @@ namespace Ext.Net.Examples.SimpleTasks
         {
             this.Listeners.Render.Fn = TasksTopBar.SCOPE + ".init";
             this.Listeners.Render.Scope = TasksTopBar.SCOPE;
-            
+
             SplitButton sBut = (SplitButton)this.tBar.Items[0];
             sBut.Listeners.Click.Fn = TasksGrid.SCOPE + ".focusTaskField";
             sBut.Listeners.Click.Scope = TasksGrid.SCOPE;

@@ -9,16 +9,16 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Buttons of Field</h1>
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Width="550"
-            Title="Buttons of Field"            
+            Title="Buttons of Field"
             Closable="false"
             Layout="Form"
-            BodyPadding="5">           
+            BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="LabelWidth" Value="200" />
             </Defaults>
@@ -66,15 +66,15 @@
                     <LeftButtons>
                         <ext:Button runat="server" Icon="UserAdd" />
                         <ext:Button runat="server" Icon="UserAlert" />
-                    </LeftButtons> 
+                    </LeftButtons>
                     <RightButtons>
                         <ext:Button runat="server" Icon="Add" />
                         <ext:Button runat="server" Icon="Accept" />
                     </RightButtons>
                 </ext:TextField>
 
-                <ext:TextField runat="server" 
-                    FieldLabel="Show buttons on mouse over" 
+                <ext:TextField runat="server"
+                    FieldLabel="Show buttons on mouse over"
                     RightButtonsShowMode="MouseOver"
                     EmptyText="Move mouse here">
                     <RightButtons>
@@ -83,8 +83,8 @@
                     </RightButtons>
                 </ext:TextField>
 
-                <ext:TextField runat="server" 
-                    FieldLabel="Show buttons on focus" 
+                <ext:TextField runat="server"
+                    FieldLabel="Show buttons on focus"
                     RightButtonsShowMode="Focus"
                     EmptyText="Click here">
                     <RightButtons>
@@ -93,8 +93,8 @@
                     </RightButtons>
                 </ext:TextField>
 
-                <ext:TextField runat="server" 
-                    FieldLabel="Show buttons if non blank" 
+                <ext:TextField runat="server"
+                    FieldLabel="Show buttons if non blank"
                     RightButtonsShowMode="NonBlank"
                     EmptyText="Type something">
                     <RightButtons>
@@ -102,8 +102,8 @@
                         <ext:Button runat="server" Icon="Accept" />
                     </RightButtons>
                 </ext:TextField>
-            </Items>            
-        </ext:Window>                
+            </Items>
+        </ext:Window>
    </form>
 </body>
 </html>

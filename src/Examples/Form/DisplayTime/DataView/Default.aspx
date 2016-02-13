@@ -5,8 +5,8 @@
     {
         JSON.RequestSettings = new Newtonsoft.Json.JsonSerializerSettings();
         JSON.RequestSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
-            
-        this.Store1.DataSource = new List<object> { 
+
+        this.Store1.DataSource = new List<object> {
             new { message = "Message1", date = DateTime.Now.AddMinutes(-1) },
             new { message = "Message2", date = DateTime.Now.AddMinutes(-25) },
             new { message = "Message3", date = DateTime.Now.AddHours(-1) },
@@ -26,17 +26,17 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Window 
+
+        <ext:Window
             ID="Window1"
-            runat="server" 
+            runat="server"
             Width="500"
             Height="500"
             Title="Messages"
             Icon="Date"
             Closable="false"
-            BodyPadding="5"   
-            BodyStyle="background-color:white;"         
+            BodyPadding="5"
+            BodyStyle="background-color:white;"
             Layout="FitLayout">
             <Items>
                 <ext:DataView runat="server">
@@ -53,11 +53,11 @@
                             <p>{message}</p>
                             <div style="color:gray;">{date:time}</div>
                             <hr />
-                        </Html>                        
+                        </Html>
                     </ItemTpl>
                 </ext:DataView>
             </Items>
-        </ext:Window>                
+        </ext:Window>
    </form>
 </body>
 </html>

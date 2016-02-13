@@ -7,7 +7,7 @@
     <title>Australia - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <script runat="server">       
+    <script runat="server">
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!X.IsAjaxRequest)
@@ -16,13 +16,13 @@
                 draw.Width = 300;
                 draw.Height = 300;
 
-                string[] colors = new string[] { 
-                        "#8D38C9", 
-                        "#00FFFF", 
-                        "#FF00FF", 
-                        "#008000", 
-                        "#FFFF00", 
-                        "#0000FF", 
+                string[] colors = new string[] {
+                        "#8D38C9",
+                        "#00FFFF",
+                        "#FF00FF",
+                        "#008000",
+                        "#FFFF00",
+                        "#0000FF",
                         "#FF0000"
                 };
 
@@ -34,8 +34,8 @@
                 int i = 0;
                 foreach (System.Xml.XmlNode state in doc.SelectNodes("states/state"))
                 {
-                    PathSprite sprite = new PathSprite 
-                    { 
+                    PathSprite sprite = new PathSprite
+                    {
                         Path = state.SelectSingleNode("path").InnerText,
                         FillStyle = "#808080",
                         StrokeStyle = "#000",
@@ -50,7 +50,7 @@
                     draw.Items.Add(sprite);
                     i++;
 
-                    info.Add(new { 
+                    info.Add(new {
                         state = state.SelectSingleNode("name").InnerText,
                         desc = state.SelectSingleNode("description").InnerText
                     });
@@ -60,7 +60,7 @@
             }
         }
 
-        
+
     </script>
 
     <script>
@@ -69,7 +69,7 @@
             sprite.setAttributes({
                 fill : color,
                 duration: 500
-            });   
+            });
             sprite.getSurface().renderFrame();
 
             App.StateName.setValue(App.InfoHolder.mapInfo[idx].state);
@@ -118,7 +118,7 @@
                     </Items>
                 </ext:Container>
             </Items>
-        </ext:Viewport>   
-    </form>    
+        </ext:Viewport>
+    </form>
 </body>
 </html>

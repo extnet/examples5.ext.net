@@ -34,7 +34,7 @@
         <ext:Button runat="server" Text="Animate rectangles (server side)" OnDirectClick="AnimateRect" />
 
         <br />
-        
+
         <ext:DrawContainer ID="Draw1" runat="server"
             Width="800"
             Height="600">
@@ -55,7 +55,7 @@
                     </Items>
                 </ext:CompositeSprite>
             </Items>
-        </ext:DrawContainer>       
-    </form>    
+        </ext:DrawContainer>
+    </form>
 </body>
 </html>

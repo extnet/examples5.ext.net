@@ -24,7 +24,7 @@ namespace Ext.Net.Examples.Restful
                 Regex ca = new Regex("^\\/([a-z]+\\w)\\/([a-z]+\\w)\\/([0-9]+)$");  //   /controller/action
                 Regex ci = new Regex("^\\/([a-z]+\\w)\\/([0-9]+)$");                //   /controller/id
                 Regex c = new Regex("^\\/([a-z]+\\w)$");                            //   /controller
-                Regex i = new Regex("^\\/([0-9]+)$");                               //   /id   
+                Regex i = new Regex("^\\/([0-9]+)$");                               //   /id
 
                 Match match;
 

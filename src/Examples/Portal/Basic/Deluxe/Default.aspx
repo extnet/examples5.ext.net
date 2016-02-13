@@ -35,18 +35,18 @@
             background-color : #284051;
             font-family : "Trebuchet MS",sans-serif;
         }
-    
+
         #settingsWrapper {
             border-bottom    : 1px solid #111;
             background-color : #323232;
             padding-left     : 4px;
         }
-    
+
         #settings {
             padding : 2px;
             border-bottom : 1px solid #3B3B3B;
         }
-    
+
         #settings ul li {
             display      : inline;
             color        : #fff;
@@ -55,16 +55,16 @@
             padding      : 2px;
             padding-left : 19px;
         }
-    
+
         #settings ul li a, #settings ul li a:link {
             color : #fff;
             text-decoration : none;
         }
-    
+
         #settings ul li a:hover {
             text-decoration : underline;
         }
-    
+
         #pageTitle {
             font-family : "Trebuchet MS",sans-serif;
             font-size   : 17px;
@@ -72,28 +72,28 @@
             color       : #fff;
             margin-top  : 20px;
         }
-    
+
         #itemAddContent {
             background : url(<%= this.ResourceManager1.GetIconUrl(Icon.Add) %>) no-repeat 0 2px;
         }
-    
+
         #itemComments {
             background : url(<%= this.ResourceManager1.GetIconUrl(Icon.Comment) %>) no-repeat 0 2px;
         }
-    
+
         #itemActivities {
             background : url(<%= this.ResourceManager1.GetIconUrl(Icon.Star) %>) no-repeat 0 2px;
         }
-    
+
         #itemContacts {
             background : url(<%= this.ResourceManager1.GetIconUrl(Icon.Vcard) %>) no-repeat 0 2px;
         }
-    
+
         #TabPanel1 ul.x-tab-strip-top {
             background-image : none !important;
             background-color : #284051;
         }
-  
+
         .x-panel-dd-spacer {
             border : 2px dashed #284051;
         }
@@ -103,9 +103,9 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:Viewport 
-            runat="server" 
-            StyleSpec="background-color: transparent;" 
+        <ext:Viewport
+            runat="server"
+            StyleSpec="background-color: transparent;"
             Layout="BorderLayout">
             <Items>
                 <ext:Panel

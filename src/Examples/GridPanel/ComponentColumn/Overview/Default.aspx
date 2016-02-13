@@ -39,23 +39,23 @@
             int id = JSON.Deserialize<int>(task["TaskID"]);
             float progress = JSON.Deserialize<float>(task["Progress"]);
             int status = JSON.Deserialize<int>(task["Status"]);
-            
+
             ModelProxy record = Store2.GetById(id);
             record.BeginEdit();
-            
+
             if (status == 1) {
                 record.Set("Status", 2);
             }
 
             progress += 0.2f;
-            
+
             record.Set("Progress", progress);
 
             if (progress >= 1)
             {
-                record.Set("Status", 3);                
+                record.Set("Status", 3);
             }
-            
+
             record.EndEdit();
         }
     }
@@ -66,14 +66,14 @@
 <html>
 <head runat="server">
     <title>ComponentColumn Overview - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var bindWidgets = function (column, cmp, record) {
             var status = record.get('Status'),
                 statusLbl = cmp.down('#Status'),
                 progressWidget = cmp.down('#Progress'),
-                triggerButton = cmp.down('#Trigger'); 
+                triggerButton = cmp.down('#Trigger');
 
             // 0 - Ready to run
             // 1 - Starting
@@ -81,8 +81,8 @@
             // 3 - Complete
 
             cmp.suspendLayout = true;
-            
-            statusLbl.setVisible(status == 1 || status == 3);            
+
+            statusLbl.setVisible(status == 1 || status == 3);
             triggerButton.setVisible(status == 0);
             progressWidget.setVisible(status == 2);
 
@@ -121,17 +121,17 @@
         .x-over-editor-grid tr.x-grid-row {
             height: 25px;
         }
-    </style>   
+    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>ComponentColumn Overview</h1>        
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="ComponentColumn Overview" 
+        <h1>ComponentColumn Overview</h1>
+
+        <ext:GridPanel
+            runat="server"
+            Title="ComponentColumn Overview"
             Cls="x-over-editor-grid"
             Width="320">
             <Store>
@@ -172,15 +172,15 @@
                      </ext:ComponentColumn>
                 </Columns>
             </ColumnModel>
-        </ext:GridPanel>  
+        </ext:GridPanel>
 
         <br />
         <h3>Tasks Emulation</h3>
         <br />
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="Tasks" 
+        <ext:GridPanel
+            runat="server"
+            Title="Tasks"
             Width="320">
             <Bin>
                 <ext:TaskManager runat="server">

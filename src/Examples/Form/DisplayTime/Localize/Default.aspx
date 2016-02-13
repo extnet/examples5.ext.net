@@ -5,7 +5,7 @@
     {
         JSON.RequestSettings = new Newtonsoft.Json.JsonSerializerSettings();
         JSON.RequestSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
-            
+
         var date = DateTime.Now;
         var field = new DisplayTimeField { FieldLabel = date.ToShortTimeString(), Date = date };
         Window1.Items.Add(field);
@@ -60,15 +60,15 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
-        var timeConverter = function (value, texts) {            
+        var timeConverter = function (value, texts) {
             var value10 = value % 10;
 
             if ((value10 == 1) && ((value == 1) || (value > 20))) {
               return texts[0];
             } else if ((value10 > 1) && (value10 < 5) && ((value > 20) || (value < 10) )) {
               return texts[1];
-            } 
-            
+            }
+
             return texts[2];
         }
 
@@ -89,18 +89,18 @@
             year: "год",
             years: function (value) { return timeConverter(value, ["{0} год", "{0} года", "{0} лет"]); }
         });
-        
+
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DisplayTime - Russian localization</h1>
-        
-        <ext:Window 
+
+        <ext:Window
             ID="Window1"
-            runat="server" 
+            runat="server"
             Width="500"
             Height="500"
             Title="DisplayTime"
@@ -120,8 +120,8 @@
                         <ext:DisplayField ID="DisplayField1" runat="server" />
                     </Items>
                 </ext:Toolbar>
-            </BottomBar>            
-        </ext:Window>                
+            </BottomBar>
+        </ext:Window>
    </form>
 </body>
 </html>

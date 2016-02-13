@@ -5,15 +5,15 @@
     {
         if (!X.IsAjaxRequest)
         {
-            this.Store1.DataSource = new List<object> 
-            { 
+            this.Store1.DataSource = new List<object>
+            {
                 new { Number = 1, Text = "Text 1", Date = DateTime.Now, Combo = 1, Bool = true  },
                 new { Number = 2, Text = "Text 2", Date = DateTime.Now, Combo = 2, Bool = false },
                 new { Number = 3, Text = "Text 3", Date = DateTime.Now, Combo = 3, Bool = true  }
             };
 
-            this.ComboStore.DataSource = new List<object> 
-            { 
+            this.ComboStore.DataSource = new List<object>
+            {
                 new { Value = 1, Text = "Item1" },
                 new { Value = 2, Text = "Item2" },
                 new { Value = 3, Text = "Item3" },
@@ -83,7 +83,7 @@
                             <p>Combo: {[renderText(values.Combo)]}</p>
                             <p>Bool: {Bool}</p>
                             <div class="edit-button" style="position:absolute; right: 10px; bottom:10px;"></div>
-                        </div>                        
+                        </div>
                     </tpl>
 
                     <tpl if="editing">
@@ -95,7 +95,7 @@
                             <p>{BoolField}</p>
                             <div class="edit-button" style="position:absolute; right: 10px; bottom:35px;"></div>
                             <div class="cancel-button" style="position:absolute; right: 10px; bottom:10px;"></div>
-                        </div>                        
+                        </div>
                     </tpl>
                 </Html>
             </ItemTpl>

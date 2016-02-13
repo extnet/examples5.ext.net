@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     [DirectMethod]
     public object GetOrders(string action, Dictionary<string, object> extraParams)
     {
@@ -27,10 +27,10 @@
                     })
             };
         }
-            
+
         return new { data };
-    }    
-    
+    }
+
     public class MyModel
     {
         public static object Model = new
@@ -56,19 +56,19 @@
 
 <html>
 <head runat="server">
-    <title>Associations - Ext.Net Examples</title>        
+    <title>Associations - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Associations</h1>
 
         <p>This example shows simple association binding. The orders grid is bound to the orders <br />
            of the selected customer. The binding statement is able to interpret that orders is an <br />
            association and can show the orders for our customer.
-        </p>        
+        </p>
 
         <ext:Model runat="server" Name="Customer">
             <Fields>
@@ -93,16 +93,16 @@
             </Proxy>
         </ext:Model>
 
-        <ext:Panel 
-            runat="server" 
-            Width="500" 
+        <ext:Panel
+            runat="server"
+            Width="500"
             Height="300"
             ReferenceHolder="true"
             Layout="HBoxLayout"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
            <Items>
-               <ext:GridPanel 
+               <ext:GridPanel
                    runat="server"
                    Title="All Customers"
                    BindString="{customers}"
@@ -110,23 +110,23 @@
                    Flex="1">
                    <ColumnModel>
                        <Columns>
-                           <ext:Column 
-                               runat="server" 
-                               Text="Name" 
-                               DataIndex="name" 
-                               Flex="1" 
+                           <ext:Column
+                               runat="server"
+                               Text="Name"
+                               DataIndex="name"
+                               Flex="1"
                                />
                            <ext:Column
-                               runat="server" 
-                               Text="Phone" 
+                               runat="server"
+                               Text="Phone"
                                DataIndex="phone"
-                               Width="115" 
+                               Width="115"
                                />
                        </Columns>
                    </ColumnModel>
                </ext:GridPanel>
 
-                <ext:GridPanel 
+                <ext:GridPanel
                     runat="server"
                     Title="Orders"
                     BindString="{customerGrid.selection.orders}"
@@ -134,18 +134,18 @@
                     Flex="1">
                     <ColumnModel>
                         <Columns>
-                            <ext:DateColumn 
-                                runat="server" 
-                                Text="Date" 
-                                DataIndex="date" 
-                                Flex="1" 
+                            <ext:DateColumn
+                                runat="server"
+                                Text="Date"
+                                DataIndex="date"
+                                Flex="1"
                                 Format="yyyy-MM-dd" />
-                            <ext:BooleanColumn runat="server" 
-                                Text="Shipped" 
-                                DataIndex="shipped" 
+                            <ext:BooleanColumn runat="server"
+                                Text="Shipped"
+                                DataIndex="shipped"
                                 Align="Center"
                                 TrueText="&#x2713;"
-                                FalseText="-" 
+                                FalseText="-"
                                 />
                         </Columns>
                     </ColumnModel>

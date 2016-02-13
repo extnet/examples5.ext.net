@@ -8,7 +8,7 @@
 </head>
 <body style="padding:10px;">
     <% System.Threading.Thread.Sleep(1000); %>
-    
+
     Child page creation time:&nbsp;
     <%= DateTime.Now.ToLongTimeString() %>
 </body>

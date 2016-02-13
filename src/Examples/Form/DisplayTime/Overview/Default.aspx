@@ -5,7 +5,7 @@
     {
         JSON.RequestSettings = new Newtonsoft.Json.JsonSerializerSettings();
         JSON.RequestSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
-            
+
         var date = DateTime.Now;
         var field = new DisplayTimeField { FieldLabel = date.ToShortTimeString(), Date = date };
         Window1.Items.Add(field);
@@ -62,23 +62,23 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DisplayTime</h1>
-        
+
         <p>DisplayTime converts passed date to friendly format</p>
 
         <p>DisplayTime can automatically update text if set AutoUpdate=true (update interval is controled by UpdateInterval property)</p>
-        
-        <ext:Window 
+
+        <ext:Window
             ID="Window1"
-            runat="server" 
+            runat="server"
             Width="500"
             Height="500"
             Title="DisplayTime"
             Icon="Date"
             Closable="false"
             BodyPadding="5"
-            DefaultLabelSeparator=" ">                        
+            DefaultLabelSeparator=" ">
             <BottomBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -91,8 +91,8 @@
                         <ext:DisplayField ID="DisplayField1" runat="server" />
                     </Items>
                 </ext:Toolbar>
-            </BottomBar>            
-        </ext:Window>                
+            </BottomBar>
+        </ext:Window>
    </form>
 </body>
 </html>

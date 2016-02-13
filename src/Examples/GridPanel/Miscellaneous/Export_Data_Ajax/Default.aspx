@@ -45,7 +45,7 @@
             };
         }
     }
-    
+
     protected void Store1_RefreshData(object sender, StoreReadDataEventArgs e)
     {
         this.Store1.DataSource = this.TestData;
@@ -66,7 +66,7 @@
         XmlNode xml = e.Xml;
 
         this.Response.Clear();
-        
+
         switch(format)
         {
             case "xml":
@@ -76,7 +76,7 @@
                     this.Response.ContentType = "application/xml";
                     this.Response.Write(strXml);
                 break;
-            
+
             case "xls":
                     this.Response.ContentType = "application/vnd.ms-excel";
                     this.Response.AddHeader("Content-Disposition", "attachment; filename=submittedData.xls");
@@ -95,7 +95,7 @@
 
                 break;
         }
-        
+
         this.Response.End();
     }
 </script>
@@ -105,14 +105,14 @@
 <html>
 <head runat="server">
     <title>Export Data from GridPanel into XML, Excel or CSV using an AjaxRequest - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
         var submitValue = function (grid, hiddenFormat, format) {
             hiddenFormat.setValue(format);
             grid.submitData(false, {isUpload:true});
         };
-        
+
         var template = '<span style="color:{0};">{1}</span>';
 
         var change = function (value) {
@@ -127,27 +127,27 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Export Data from GridPanel into XML, Excel or CSV using an AjaxRequest</h1>
-        
+
         <p>Please note that the converting to formats is not built to Ext.Net. The sample uses simple XSL converting</p>
-        
+
         <%--<p>Limitations of ajax file downloading: success/failure events don't fired. Therefore the mask is impossible.</p>--%>
-        
+
         <ext:Hidden ID="FormatType" runat="server" />
-        
-        <ext:Store 
-            ID="Store1" 
-            runat="server" 
-            OnAfterRecordUpdated="Store1_RecordUpdated" 
+
+        <ext:Store
+            ID="Store1"
+            runat="server"
+            OnAfterRecordUpdated="Store1_RecordUpdated"
             OnReadData="Store1_RefreshData"
             OnSubmitData="Store1_Submit"
-            RemoteSort="true">            
+            RemoteSort="true">
             <Proxy>
                 <ext:PageProxy>
                     <Reader>
                         <ext:ArrayReader></ext:ArrayReader>
-                    </Reader>                    
+                    </Reader>
                 </ext:PageProxy>
             </Proxy>
             <Model>
@@ -163,13 +163,13 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             StoreID="Store1"
-            Title="Array Grid" 
-            Width="600" 
+            Title="Array Grid"
+            Width="600"
             Height="290">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -180,13 +180,13 @@
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'xml');" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button ID="Button3" runat="server" Text="To Excel" Icon="PageExcel">
                             <Listeners>
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'xls');" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button ID="Button4" runat="server" Text="To CSV" Icon="PageAttach">
                             <Listeners>
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'csv');" />
@@ -197,9 +197,9 @@
             </TopBar>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server"                        
-                        Text="Company" 
-                        Sortable="true" 
+                    <ext:Column runat="server"
+                        Text="Company"
+                        Sortable="true"
                         DataIndex="company"
                         Flex="1">
                         <Editor>
@@ -216,9 +216,9 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
                     <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="HH:mm:ss" />
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
         </ext:GridPanel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

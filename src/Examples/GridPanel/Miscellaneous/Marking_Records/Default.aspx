@@ -30,25 +30,25 @@
 <head runat="server">
     <title>Marking Records - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .dirty-row .x-grid-cell, .dirty-row .x-grid-rowwrap-div {
-	        background-color: #FFFDD8 !important;
+            background-color: #FFFDD8 !important;
         }
-        
+
         .new-row .x-grid-cell, .new-row .x-grid-rowwrap-div {
-	        background: #c8ffc8 !important;
-        } 
+            background: #c8ffc8 !important;
+        }
     </style>
 </head>
-<body>    
+<body>
     <form runat="server">
         <script>
             var getRowClass = function (record) {
                 if (record.phantom) {
                     return "new-row";
                 }
-                
+
                 if (record.dirty) {
                     return "dirty-row";
                 }
@@ -56,31 +56,31 @@
 
             var insertRecord = function () {
                 var grid = <%= GridPanel1.ClientID %>;
-                
+
                 grid.store.insert(0, {});
                 grid.getView().focusRow(0);
                 grid.editingPlugin.startEdit(grid.store.getAt(0), grid.columns[0]);
             };
-        </script>  
-        
+        </script>
+
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Marking Records</h1>
-        
+
         <p>Demonstrates how to mark rows with custom colors. Edit any cell or insert new record.</p>
-       
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Test Grid" 
-            Width="600"  
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Test Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store runat="server">
                     <Model>
                         <ext:Model runat="server" IDProperty="TestCell">
                             <Fields>
-                                <ext:ModelField Name="TestCell" />                       
+                                <ext:ModelField Name="TestCell" />
                             </Fields>
                         </ext:Model>
                     </Model>
@@ -92,12 +92,12 @@
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
-                    </ext:Column>                    
+                    </ext:Column>
                 </Columns>
             </ColumnModel>
             <View>
                 <ext:GridView runat="server" StripeRows="true">
-                    <GetRowClass Fn="getRowClass" />                       
+                    <GetRowClass Fn="getRowClass" />
                 </ext:GridView>
             </View>
             <Plugins>
@@ -114,7 +114,7 @@
                     </Listeners>
                 </ext:Button>
             </Buttons>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

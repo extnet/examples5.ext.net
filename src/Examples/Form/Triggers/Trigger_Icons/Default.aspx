@@ -9,11 +9,11 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>TextField with Icons</h1>
-    
+
     <h2>TextField</h2>
-    
+
     <ext:TextField runat="server">
         <Triggers>
             <ext:FieldTrigger Icon="SimpleEllipsis" />
@@ -21,9 +21,9 @@
             <ext:FieldTrigger Icon="SimplePlus" />
         </Triggers>
     </ext:TextField>
-    
+
    <h2>ComboBox</h2>
-   
+
     <ext:ComboBox runat="server" TriggerIcon="SimpleArrowDown">
         <Items>
             <ext:ListItem Text="Item 1" />
@@ -38,12 +38,12 @@
             <ext:FieldTrigger Icon="SimplePlus" />
         </Triggers>
     </ext:ComboBox>
-    
+
     <h2>DateField</h2>
-   
+
     <ext:DateField runat="server" TriggerIcon="SimpleDate" />
-    
+
     <h2>TimeField</h2>
-   
+
     <ext:TimeField runat="server" TriggerIcon="SimpleTime" />
 </html>

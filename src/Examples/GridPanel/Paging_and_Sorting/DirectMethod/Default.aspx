@@ -10,7 +10,7 @@
         List<Ext.Net.Examples.Northwind.Employee> data = Ext.Net.Examples.Northwind.Employee.GetEmployeesFilter(prms.Start, prms.Limit, prms.Sort[0], out total);
 
         return new { data, total };
-    }    
+    }
 </script>
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
             color       : #385F95;
             white-space : normal;
         }
-        
+
         .x-grid-rowbody p {
             margin : 5px 5px 10px 5px !important;
             width  : 99%;
@@ -48,18 +48,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            runat="server" 
-            ID="GridPanel1" 
-            Title="Employees" 
+
+        <ext:GridPanel
+            runat="server"
+            ID="GridPanel1"
+            Title="Employees"
             Frame="true"
             Height="300">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
-                    runat="server" 
-                    RemoteSort="true" 
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    RemoteSort="true"
                     PageSize="3">
                     <Proxy>
                         <ext:PageProxy DirectFn="App.direct.BindData" />
@@ -117,20 +117,20 @@
             </SelectionModel>
             <Features>
                 <ext:RowBody runat="server">
-                    <GetAdditionalData 
+                    <GetAdditionalData
                         Handler="return { rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>' };" />
                 </ext:RowBody>
-            </Features>          
+            </Features>
             <BottomBar>
-                <ext:PagingToolbar 
-                    runat="server"                      
-                    DisplayInfo="true" 
-                    DisplayMsg="Displaying employees {0} - {1} of {2}" 
-                    EmptyMsg="No employees to display" 
+                <ext:PagingToolbar
+                    runat="server"
+                    DisplayInfo="true"
+                    DisplayMsg="Displaying employees {0} - {1} of {2}"
+                    EmptyMsg="No employees to display"
                     />
             </BottomBar>
         </ext:GridPanel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

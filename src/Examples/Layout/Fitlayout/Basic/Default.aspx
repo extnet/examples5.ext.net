@@ -10,12 +10,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <ext:Viewport runat="server" Layout="Fit">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    BodyPadding="15" 
+                <ext:Panel
+                    runat="server"
+                    BodyPadding="15"
                     Title="Inner panel"
                     Html="This panel is fit 100% Height and 100% Width within its container."
                     />

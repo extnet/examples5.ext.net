@@ -17,7 +17,7 @@
             Thread.Sleep(1000);
             this.Session["LongActionProgress"] = i+1;
         }
-        
+
         this.Session.Remove("LongActionProgress");
     }
 
@@ -41,33 +41,33 @@
 
 <html>
 <head runat="server">
-    <title>ProgressBar - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />  
+    <title>ProgressBar - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
         <h1>Progress Bar</h1>
-        
+
         <p>The example shows how to update the ProgressBar during long server-side actions.</p>
-        
-        <ext:Button 
-            ID="ShowProgress1" 
-            runat="server" 
-            Text="Start long action" 
-            OnDirectClick="StartLongAction" 
+
+        <ext:Button
+            ID="ShowProgress1"
+            runat="server"
+            Text="Start long action"
+            OnDirectClick="StartLongAction"
             />
-        
+
         <br />
-        
+
         <ext:ProgressBar ID="Progress1" runat="server" Width="300" />
-        
+
         <ext:TaskManager ID="TaskManager1" runat="server">
             <Tasks>
-                <ext:Task 
+                <ext:Task
                     TaskID="longactionprogress"
-                    Interval="1000" 
+                    Interval="1000"
                     AutoRun="false"
                     OnStart="
                         #{ShowProgress1}.setDisabled(true);"
@@ -75,11 +75,11 @@
                         #{ShowProgress1}.setDisabled(false);">
                     <DirectEvents>
                         <Update OnEvent="RefreshProgress" />
-                    </DirectEvents>                    
+                    </DirectEvents>
                 </ext:Task>
             </Tasks>
         </ext:TaskManager>
-  
+
     </form>
 </body>
 </html>

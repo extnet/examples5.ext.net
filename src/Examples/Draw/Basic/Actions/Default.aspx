@@ -19,7 +19,7 @@
                 Y = 150,
                 FillStyle = "green"
             };
-            
+
             Draw1.Add(sprite);
             Draw1.RenderFrame();
             this.EnableButton(sender);
@@ -84,10 +84,10 @@
                 <ext:Panel runat="server" Frame="true" Width="200" Region="West" Layout="VBoxLayout" Margin="5">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" Pack="Center" />
-                    </LayoutConfig>   
+                    </LayoutConfig>
                     <Defaults>
                         <ext:Parameter Name="margin" Value="5" Mode="Raw" />
-                    </Defaults>                 
+                    </Defaults>
                     <Items>
                         <ext:Button runat="server" Text="Create Sprite" OnDirectClick="CreateSprite" />
                         <ext:Button runat="server" Text="Change Color" OnDirectClick="ChangeColor" Disabled="true" />
@@ -100,6 +100,6 @@
                 <ext:DrawContainer ID="Draw1" runat="server" Region="Center" />
             </Items>
         </ext:Window>
-    </form>    
+    </form>
 </body>
 </html>

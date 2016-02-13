@@ -5,9 +5,9 @@
 <html>
 <head runat="server">
     <title>TreeGrid - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var formatHours = function (v) {
             if (v < 1) {
@@ -28,7 +28,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>
             TreeGrid Example
         </h1>
@@ -52,7 +52,7 @@
 
         <br />
 
-        <ext:TreePanel 
+        <ext:TreePanel
             runat="server"
             Title="Core Team Projects"
             Width="500"
@@ -71,19 +71,19 @@
             </Fields>
             <ColumnModel>
                 <Columns>
-                    <ext:TreeColumn 
+                    <ext:TreeColumn
                         runat="server"
-                        Text="Task" 
-                        Flex="2" 
+                        Text="Task"
+                        Flex="2"
                         Sortable="true"
                         DataIndex="task" />
-                    <ext:TemplateColumn 
+                    <ext:TemplateColumn
                         runat="server"
-                        Text="Duration" 
+                        Text="Duration"
                         Flex="1"
-                        Sortable="true" 
-                        DataIndex="duration" 
-                        Align="Center">                        
+                        Sortable="true"
+                        DataIndex="duration"
+                        Align="Center">
                         <Template runat="server">
                             <Html>
                                 {duration:this.formatHours}
@@ -93,19 +93,19 @@
                             </Functions>
                         </Template>
                     </ext:TemplateColumn>
-                    <ext:Column 
+                    <ext:Column
                         runat="server"
-                        Text="Assigned To" 
-                        Flex="1" 
+                        Text="Assigned To"
+                        Flex="1"
                         Sortable="true"
                         DataIndex="user" />
-                    <ext:CheckColumn runat="server" 
+                    <ext:CheckColumn runat="server"
                        Text="Done"
                        DataIndex="done"
                        Width="60"
                        Editable="true"
                        StopSelection="false" />
-                    <ext:ActionColumn runat="server" 
+                    <ext:ActionColumn runat="server"
                         Text="Edit"
                         Width="50"
                         MenuDisabled="true"
@@ -114,12 +114,12 @@
                             <ext:ActionItem Tooltip="Edit task" Icon="PageWhiteEdit" Handler="handler">
                                 <IsDisabled Handler="return !record.data.leaf;" />
                             </ext:ActionItem>
-                        </Items>    
+                        </Items>
                     </ext:ActionColumn>
-                </Columns>    
+                </Columns>
 
             </ColumnModel>
-            
+
             <Root>
                 <ext:Node Text="Tasks">
                     <Children>
@@ -334,7 +334,7 @@
                     </Children>
                 </ext:Node>
             </Root>
-        </ext:TreePanel>        
+        </ext:TreePanel>
     </form>
 </body>
 </html>

@@ -151,11 +151,11 @@
             This example shows how to create a scatter chart with custom icons.
         </p>
 
-        <ext:Panel 
-            runat="server" 
+        <ext:Panel
+            runat="server"
             Width="650"
             Height="550"
-            Layout="FitLayout">            
+            Layout="FitLayout">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -166,9 +166,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
-                    runat="server" 
+                <ext:CartesianChart
+                    ID="Chart1"
+                    runat="server"
                     InsetPadding="40">
                     <Store>
                         <ext:Store
@@ -201,7 +201,7 @@
                             <Label RotationDegrees="-30" />
                         </ext:NumericAxis>
                     </Axes>
-                    
+
                     <Series>
                         <ext:ScatterSeries XField="ID" YField="G1" Highlight="true">
                             <Marker>
@@ -218,6 +218,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

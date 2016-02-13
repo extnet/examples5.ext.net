@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title> - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />  
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="Book.css" rel="stylesheet" />
 
     <script>
@@ -39,7 +39,7 @@
             <ext:ModelField Name="date" />
             <ext:ModelField Name="title" />
             <ext:ModelField Name="comment" />
-        </Fields>        
+        </Fields>
     </ext:Model>
 
     <ext:Model runat="server" Name="Books.Book">
@@ -53,9 +53,9 @@
         </Fields>
         <Associations>
             <ext:HasManyAssociation Model="Books.Review" Name="reviews" ForeignKey="book_id" />
-        </Associations>        
+        </Associations>
     </ext:Model>
-    
+
     <ext:Viewport runat="server" Layout="FitLayout">
         <Items>
             <ext:Panel runat="server" Border="false">
@@ -64,15 +64,15 @@
                 </LayoutConfig>
 
                 <DockedItems>
-                    <ext:Component 
-                        runat="server" 
-                        Dock="Top" 
-                        BaseCls="app-header" 
-                        Html="Loading Nested Data Example" 
+                    <ext:Component
+                        runat="server"
+                        Dock="Top"
+                        BaseCls="app-header"
+                        Html="Loading Nested Data Example"
                         />
-                    
-                    <ext:DataView 
-                        runat="server" 
+
+                    <ext:DataView
+                        runat="server"
                         Dock="Left"
                         Width="180"
                         Border="false"
@@ -84,33 +84,33 @@
                                 <tpl for=".">
                                     <div class="product">{name}</div>
                                 </tpl>
-                            </html>                        
+                            </html>
                         </Tpl>
                         <Store>
-                            <ext:Store ID="BooksStore" runat="server" ModelName="Books.Book">   
+                            <ext:Store ID="BooksStore" runat="server" ModelName="Books.Book">
                                 <Proxy>
-                                    <ext:AjaxProxy runat="server" Url="Products.json" />                          
-                                </Proxy>   
+                                    <ext:AjaxProxy runat="server" Url="Products.json" />
+                                </Proxy>
                                 <Listeners>
                                     <Load BroadcastOnBus="App.BooksLoad" />
-                                </Listeners>                          
+                                </Listeners>
                             </ext:Store>
                         </Store>
                         <Listeners>
                             <SelectionChange BroadcastOnBus="App.SelectionChange" />
                         </Listeners>
                         <MessageBusListeners>
-                            <ext:MessageBusListener 
-                                Name="App.BooksLoad" 
-                                Handler="data.records.length && this.getSelectionModel().select(data.records[0]);" 
-                                Delay="500" 
+                            <ext:MessageBusListener
+                                Name="App.BooksLoad"
+                                Handler="data.records.length && this.getSelectionModel().select(data.records[0]);"
+                                Delay="500"
                                 />
                         </MessageBusListeners>
                     </ext:DataView>
                 </DockedItems>
 
                 <Items>
-                    <ext:Panel 
+                    <ext:Panel
                         runat="server"
                         Cls="item-ct"
                         Flex="2"
@@ -120,17 +120,17 @@
                             <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                         </LayoutConfig>
                         <Items>
-                            <ext:Image 
-                                runat="server" 
-                                MarginSpec="0 20 0 0" 
-                                Width="250" 
-                                Height="308" 
+                            <ext:Image
+                                runat="server"
+                                MarginSpec="0 20 0 0"
+                                Width="250"
+                                Height="308"
                                 ImageUrl="={Ext.BLANK_IMAGE_URL}">
                                 <LoadMask ShowMask="true" />
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener 
-                                        Name="App.SelectionChange" 
-                                        Handler="data.selected && this.setImageUrl(data.selected[0].get('image'))" 
+                                    <ext:MessageBusListener
+                                        Name="App.SelectionChange"
+                                        Handler="data.selected && this.setImageUrl(data.selected[0].get('image'))"
                                         />
                                 </MessageBusListeners>
                             </ext:Image>
@@ -142,35 +142,35 @@
                                         <div class="detail">{detail}</div>
                                     </html>                                </Tpl>
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener 
-                                        Name="App.SelectionChange" 
-                                        Handler="data.selected.length && this.update(data.selected[0].getData())" 
+                                    <ext:MessageBusListener
+                                        Name="App.SelectionChange"
+                                        Handler="data.selected.length && this.update(data.selected[0].getData())"
                                         />
                                 </MessageBusListeners>
                             </ext:Component>
                         </Items>
                     </ext:Panel>
 
-                    <ext:Panel 
+                    <ext:Panel
                         runat="server"
                         Border="false"
                         Flex="1"
                         Layout="CardLayout">
                         <DockedItems>
-                            <ext:Component 
-                                runat="server" 
-                                Dock="Top" 
-                                BaseCls="app-header" 
-                                Html="Reviews" 
+                            <ext:Component
+                                runat="server"
+                                Dock="Top"
+                                BaseCls="app-header"
+                                Html="Reviews"
                                 />
                         </DockedItems>
 
                         <Items>
-                            <ext:DataView 
-                                runat="server" 
+                            <ext:DataView
+                                runat="server"
                                 Border="false"
                                 Cls="review-list"
-                                AutoScroll="true"                                
+                                AutoScroll="true"
                                 ItemSelector=".review">
                                 <Tpl>
                                     <Html>
@@ -189,9 +189,9 @@
                                     <ext:Store ID="ReviewsStore" runat="server" ModelName="Books.Review" />
                                 </Store>
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener 
-                                        Name="App.SelectionChange" 
-                                        Handler="data.selected.length && this.bindStore(data.selected[0].reviews())" 
+                                    <ext:MessageBusListener
+                                        Name="App.SelectionChange"
+                                        Handler="data.selected.length && this.bindStore(data.selected[0].reviews())"
                                         />
                                 </MessageBusListeners>
                             </ext:DataView>

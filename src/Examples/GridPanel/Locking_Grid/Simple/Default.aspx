@@ -48,7 +48,7 @@
 <html>
 <head runat="server">
     <title>GridPanel with Locking Columns - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -64,19 +64,19 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>GridPanel with Locking Columns</h1>
-    
+
     <p>This example shows how to achieve "freeze pane" locking functionality similar to Excel.</p>
     <p>Columns may be locked or unlocked by dragging them across into the opposite side, or by using the column's header menu.</p>
     <p>The "Price" column is not lockable, and may not be dragged into the locked side, or locked using the header menu.</p>
     <p>It is not possible to lock <i>all</i> columns using the user interface. The unlocked side must always contain at least one column.</p>
-    
-    <ext:GridPanel 
+
+    <ext:GridPanel
         ID="GridPanel1"
-        runat="server" 
-        Title="Locking Grid" 
-        Width="600" 
+        runat="server"
+        Title="Locking Grid"
+        Width="600"
         Height="350">
         <Store>
             <ext:Store runat="server">
@@ -109,6 +109,6 @@
                 <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="135"/>
             </Columns>
         </ColumnModel>
-    </ext:GridPanel>          
+    </ext:GridPanel>
 </body>
 </html>

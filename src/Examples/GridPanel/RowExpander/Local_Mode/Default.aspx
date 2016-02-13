@@ -77,17 +77,17 @@
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
-        <h1>GridPanel with RowExpander Plugin</h1>        
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server"             
-            Title="RowExpander" 
-            Collapsible="true" 
+
+        <h1>GridPanel with RowExpander Plugin</h1>
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="RowExpander"
+            Collapsible="true"
             AnimCollapse="true"
-            Icon="Table" 
-            Width="600" 
+            Icon="Table"
+            Width="600"
             Height="600">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -135,9 +135,9 @@
                     </Listeners>
                     <Template ID="Template1" runat="server">
                         <Html>
-							<p><b>Company:</b> {company}</p><br/>
-							<p><b>Summary:</b> {desc}</p>
-						</Html>
+                            <p><b>Company:</b> {company}</p><br/>
+                            <p><b>Summary:</b> {desc}</p>
+                        </Html>
                     </Template>
                 </ext:RowExpander>
             </Plugins>

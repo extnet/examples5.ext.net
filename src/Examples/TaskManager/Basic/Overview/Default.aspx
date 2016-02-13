@@ -11,48 +11,48 @@
 
 <html>
 <head runat="server">
-    <title>TaskManager with Client and Server Side Events - Ext.NET Examples</title>    
+    <title>TaskManager with Client and Server Side Events - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
-<body>    
+<body>
     <form runat="server">
         <ext:ResourceManager runat="server">
             <Listeners>
-                <DocumentReady Handler="window.msg = function (text) { 
+                <DocumentReady Handler="window.msg = function (text) {
                     #{LogArea}.setValue(
-                        Ext.String.format('{0}\n{1} : {2}', 
-                        #{LogArea}.getValue(), 
-                        text, 
-                        Ext.Date.format(new Date(), 'H:i:s'))); 
+                        Ext.String.format('{0}\n{1} : {2}',
+                        #{LogArea}.getValue(),
+                        text,
+                        Ext.Date.format(new Date(), 'H:i:s')));
                     };" />
             </Listeners>
-        </ext:ResourceManager>        
-        
+        </ext:ResourceManager>
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    Region="Center" 
-                    Title="TaskManager example" 
-                    Icon="Time" 
+                <ext:Panel
+                    runat="server"
+                    Region="Center"
+                    Title="TaskManager example"
+                    Icon="Time"
                     Border="false">
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:Button 
-                                    ID="btnStartAll" 
-                                    runat="server" 
-                                    Text="Start All Tasks" 
-                                    Icon="ControlPlayBlue" 
+                                <ext:Button
+                                    ID="btnStartAll"
+                                    runat="server"
+                                    Text="Start All Tasks"
+                                    Icon="ControlPlayBlue"
                                     Disabled="true">
                                     <Listeners>
                                         <Click Handler="this.disable();#{TaskManager1}.startAll();#{btnStopAll}.enable()" />
                                     </Listeners>
                                 </ext:Button>
-                                <ext:Button 
-                                    ID="btnStopAll" 
-                                    runat="server" 
-                                    Text="Stop All Tasks" 
+                                <ext:Button
+                                    ID="btnStopAll"
+                                    runat="server"
+                                    Text="Stop All Tasks"
                                     Icon="ControlStopBlue">
                                     <Listeners>
                                         <Click Handler="this.disable();#{TaskManager1}.stopAll();#{btnStartAll}.enable();" />
@@ -65,9 +65,9 @@
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
-                            Title="Local time" 
+                        <ext:Panel
+                            runat="server"
+                            Title="Local time"
                             BodyStyle="text-align:center;"
                             BodyPadding="20"
                             Flex="1">
@@ -94,10 +94,10 @@
                                 </ext:Toolbar>
                             </BottomBar>
                         </ext:Panel>
-                        <ext:Panel 
-                            ID="ServerTimeContainer" 
-                            runat="server" 
-                            Title="Server Time (update every 5 seconds)" 
+                        <ext:Panel
+                            ID="ServerTimeContainer"
+                            runat="server"
+                            Title="Server Time (update every 5 seconds)"
                             BodyStyle="text-align:center;"
                             BodyPadding="20"
                             Flex="1">
@@ -126,11 +126,11 @@
                         </ext:Panel>
                     </Items>
                 </ext:Panel>
-                <ext:Panel 
-                    runat="server" 
-                    Region="South" 
-                    Height="200" 
-                    Border="false" 
+                <ext:Panel
+                    runat="server"
+                    Region="South"
+                    Height="200"
+                    Border="false"
                     Layout="Fit">
                     <Items>
                         <ext:TextArea ID="LogArea" runat="server" />
@@ -138,10 +138,10 @@
                 </ext:Panel>
             </Items>
         </ext:Viewport>
-        
+
         <ext:TaskManager ID="TaskManager1" runat="server">
             <Tasks>
-                <ext:Task                    
+                <ext:Task
                     OnStart="
                         #{StartLocalTime}.setDisabled(true);
                         #{StopLocalTime}.setDisabled(false);
@@ -152,15 +152,15 @@
                         msg('Stop Client');">
                     <Listeners>
                         <Update Handler="#{LocalTimeLabel}.setText(Ext.Date.format(new Date(), 'H:i:s'));" />
-                    </Listeners>    
+                    </Listeners>
                 </ext:Task>
-                
-                <ext:Task 
+
+                <ext:Task
                     TaskID="servertime"
                     Interval="5000"
                     OnStart="
                         #{StartServerTime}.setDisabled(true);
-                        #{StopServerTime}.setDisabled(false); 
+                        #{StopServerTime}.setDisabled(false);
                         msg('Start Server')"
                     OnStop="
                         #{StartServerTime}.setDisabled(false);
@@ -168,14 +168,14 @@
                         msg('Stop Server')">
                     <DirectEvents>
                         <Update OnEvent="RefreshTime">
-                            <EventMask 
-                                ShowMask="true" 
-                                Target="CustomTarget" 
-                                CustomTarget="={#{ServerTimeContainer}.body}" 
+                            <EventMask
+                                ShowMask="true"
+                                Target="CustomTarget"
+                                CustomTarget="={#{ServerTimeContainer}.body}"
                                 MinDelay="350"
                                 />
                         </Update>
-                    </DirectEvents>                    
+                    </DirectEvents>
                 </ext:Task>
             </Tasks>
         </ext:TaskManager>

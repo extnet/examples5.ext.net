@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-	<description>
-		<![CDATA[This example shows how to create a custom window for a record editing (ajax version)]]>		
-	</description>
-	<include>
-		<file zip="false" url="../../../../Code/Northwind/EntitiesAdditions.cs" />
-	</include>
-	<zip-folders>
-		<folder url="../../../../Code/Northwind/"></folder>		
-	</zip-folders>
+    <description>
+        <![CDATA[This example shows how to create a custom window for a record editing (ajax version)]]>
+    </description>
+    <include>
+        <file zip="false" url="../../../../Code/Northwind/EntitiesAdditions.cs" />
+    </include>
+    <zip-folders>
+        <folder url="../../../../Code/Northwind/"></folder>
+    </zip-folders>
   <tags>img,image</tags>
 </example>

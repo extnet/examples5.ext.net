@@ -8,7 +8,7 @@
         this.Store1.DataSource = this.Jobs;
         this.Store1.DataBind();
     }
-    
+
     private List<Job> Jobs
     {
         get
@@ -18,10 +18,10 @@
             for (int i = 1; i <= 50; i++)
             {
                 jobs.Add(new Job(
-                            i, 
-                            "Task" + i.ToString(), 
-                            DateTime.Today.AddDays(i), 
-                            DateTime.Today.AddDays(i + i), 
+                            i,
+                            "Task" + i.ToString(),
+                            DateTime.Today.AddDays(i),
+                            DateTime.Today.AddDays(i + i),
                             (i%3 == 0)));
             }
 
@@ -53,18 +53,18 @@
 <html>
 <head runat="server">
     <title>GridPanel with FitLayout - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Window 
-            ID="Window1" 
+
+        <ext:Window
+            ID="Window1"
             runat="server"
             Collapsible="true"
             Maximizable="true"
-            Icon="Lorry" 
+            Icon="Lorry"
             Title="Job List"
             Width="600"
             Height="300"
@@ -73,9 +73,9 @@
             Layout="Fit">
             <Items>
                 <ext:GridPanel
-                    runat="server" 
+                    runat="server"
                     Header="false"
-                    Border="false">                         
+                    Border="false">
                     <Store>
                         <ext:Store ID="Store1" runat="server" PageSize="10">
                             <Model>
@@ -93,28 +93,28 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" 
-                                Text="ID" 
-                                Width="40" 
-                                Sortable="true" 
+                            <ext:Column runat="server"
+                                Text="ID"
+                                Width="40"
+                                Sortable="true"
                                 DataIndex="ID">
                                 <Filter>
                                     <ext:NumberFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:Column runat="server" 
-                                Text="Job Name" 
-                                Sortable="true" 
+                            <ext:Column runat="server"
+                                Text="Job Name"
+                                Sortable="true"
                                 DataIndex="Name"
                                 Flex="1">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:DateColumn runat="server" 
-                                Text="Start" 
-                                Width="120" 
-                                Sortable="true" 
+                            <ext:DateColumn runat="server"
+                                Text="Start"
+                                Width="120"
+                                Sortable="true"
                                 DataIndex="Start"
                                 Format="yyyy-MM-dd">
                                 <Filter>
@@ -123,10 +123,10 @@
                                     </ext:DateFilter>
                                 </Filter>
                             </ext:DateColumn>
-                            <ext:DateColumn runat="server" 
-                                Text="End" 
-                                Width="120" 
-                                Sortable="true" 
+                            <ext:DateColumn runat="server"
+                                Text="End"
+                                Width="120"
+                                Sortable="true"
                                 DataIndex="End"
                                 Format="yyyy-MM-dd">
                                 <Filter>
@@ -135,10 +135,10 @@
                                     </ext:DateFilter>
                                 </Filter>
                             </ext:DateColumn>
-                            <ext:Column runat="server" 
-                                Text="Completed" 
-                                Width="80" 
-                                Sortable="true" 
+                            <ext:Column runat="server"
+                                Text="Completed"
+                                Width="80"
+                                Sortable="true"
                                 DataIndex="Completed">
                                 <Renderer Handler="return (value) ? 'Yes':'No';" />
                                 <Filter>
@@ -154,8 +154,8 @@
                         <ext:GridFilters runat="server" />
                     </Plugins>
                     <BottomBar>
-                        <ext:PagingToolbar 
-                            runat="server" 
+                        <ext:PagingToolbar
+                            runat="server"
                             DisplayInfo="true"
                             DisplayMsg="Displaying Jobs {0} - {1} of {2}"
                             />

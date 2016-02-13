@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     public class MyModel
     {
         public static object Model = new
@@ -15,7 +15,7 @@
             // formulas : Object
             // An object that defines named values whose value is managed by function calls. The names of the properties of this object are assigned as values in the ViewModel.
             // More information at http://docs-origin.sencha.com/extjs/5.0.1/#!/api/Ext.app.bind.Formula
-            formulas = new 
+            formulas = new
             {
                 quad = new JFunction("return get('twice') * 2;", "get"),
                 twice = new JFunction("return get('x') * 2;", "get")
@@ -28,26 +28,26 @@
 
 <html>
 <head runat="server">
-    <title>Formulas - Ext.Net Examples</title>        
+    <title>Formulas - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Formulas</h1>
 
         <p>This example shows data binding using formulas (calculated properties). This example <br />
            also demonstrates automatic dependency resolution between formulas that depend on each <br />
            other's values.
         </p>
-        
-        <ext:Panel 
-            runat="server" 
-            Width="370" 
-            BodyPadding="10" 
+
+        <ext:Panel
+            runat="server"
+            Width="370"
+            BodyPadding="10"
             Title="View Model Formulas"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
                 <ext:NumberField runat="server" FieldLabel="Number" BindString="{x}" />

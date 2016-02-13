@@ -48,7 +48,7 @@
 <html>
 <head runat="server">
     <title>GridPanel Cell with ToolTip - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -60,14 +60,14 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-        
+
         var onShow = function (toolTip, grid) {
             var view = grid.getView(),
                 store = grid.getStore(),
                 record = view.getRecord(view.findItemByChild(toolTip.triggerElement)),
                 column = view.getHeaderByCell(toolTip.triggerElement),
                 data = record.get(column.dataIndex);
-                
+
             toolTip.update(data);
         };
     </script>
@@ -75,12 +75,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
-            Title="Array Grid" 
-            Width="600" 
+            Title="Array Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -118,17 +118,17 @@
             <View>
                 <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
             </View>
-        </ext:GridPanel>     
-        
-        <ext:ToolTip 
-            runat="server" 
+        </ext:GridPanel>
+
+        <ext:ToolTip
+            runat="server"
             Target="={#{GridPanel1}.getView().el}"
             Delegate=".x-grid-cell"
             TrackMouse="true">
             <Listeners>
-                <Show Handler="onShow(this, #{GridPanel1});" /> 
+                <Show Handler="onShow(this, #{GridPanel1});" />
             </Listeners>
-        </ext:ToolTip>     
+        </ext:ToolTip>
     </form>
 </body>
 </html>

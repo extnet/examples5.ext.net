@@ -43,7 +43,7 @@
             };
         }
     }
-    
+
     protected void Store1_RefreshData(object sender, StoreReadDataEventArgs e)
     {
         Store store = this.GridPanel1.GetStore();
@@ -86,21 +86,21 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel with editable rows and server save</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
-            Title="Array Grid" 
-            Width="600" 
+            Title="Array Grid"
+            Width="600"
             Height="330"
             Icon="ControlAddBlue">
             <Store>
-                <ext:Store 
+                <ext:Store
                     ID="Store1"
-                    runat="server" 
-                    OnAfterRecordUpdated="Store1_RecordUpdated" 
+                    runat="server"
+                    OnAfterRecordUpdated="Store1_RecordUpdated"
                     OnReadData="Store1_RefreshData"
                     RemoteSort="true"
                     PageSize="10">
@@ -145,12 +145,12 @@
             </TopBar>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server"                         
-                        Text="Company" 
-                        Width="160" 
-                        Sortable="true" 
+                    <ext:Column runat="server"
+                        Text="Company"
+                        Width="160"
+                        Sortable="true"
                         DataIndex="company"
-                        Flex="1">                        
+                        Flex="1">
                     </ext:Column>
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
                         <Renderer Format="UsMoney" />
@@ -176,12 +176,12 @@
             </SelectionModel>
             <View>
                 <ext:GridView runat="server" StripeRows="true" />
-            </View>            
+            </View>
             <BottomBar>
                 <ext:PagingToolbar ID="PagingToolBar1" runat="server" />
             </BottomBar>
         </ext:GridPanel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

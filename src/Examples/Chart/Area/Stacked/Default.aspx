@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<object> data = new List<object> 
-        { 
+        List<object> data = new List<object>
+        {
             new { Date = new DateTime(2009, 1, 1),  IE = 44.8, Firefox = 45.5, Chrome = 3.9,  Safari = 3,   Opera = 2.3 },
             new { Date = new DateTime(2009, 2, 1),  IE = 43.6, Firefox = 46.4, Chrome = 4,    Safari = 3,   Opera = 2.2 },
             new { Date = new DateTime(2009, 3, 1),  IE = 43.3, Firefox = 46.5, Chrome = 4.2,  Safari = 3.1, Opera = 2.3 },
@@ -16,7 +16,7 @@
             new { Date = new DateTime(2009, 9, 1),  IE = 39.6, Firefox = 46.6, Chrome = 7.1,  Safari = 3.6, Opera = 2.2 },
             new { Date = new DateTime(2009, 10, 1), IE = 37.5, Firefox = 47.5, Chrome = 8,    Safari = 3.8, Opera = 2.3 },
             new { Date = new DateTime(2009, 11, 1), IE = 37.7, Firefox = 47,   Chrome = 8.5,  Safari = 3.8, Opera = 2.3 },
-            new { Date = new DateTime(2009, 12, 1), IE = 37.2, Firefox = 46.4, Chrome = 9.8,  Safari = 3.6, Opera = 2.3 },                
+            new { Date = new DateTime(2009, 12, 1), IE = 37.2, Firefox = 46.4, Chrome = 9.8,  Safari = 3.6, Opera = 2.3 },
             new { Date = new DateTime(2010, 1, 1),  IE = 36.2, Firefox = 46.3, Chrome = 10.8, Safari = 3.7, Opera = 2.2 },
             new { Date = new DateTime(2010, 2, 1),  IE = 35.3, Firefox = 46.5, Chrome = 11.6, Safari = 3.8, Opera = 2.1 },
             new { Date = new DateTime(2010, 3, 1),  IE = 34.9, Firefox = 46.2, Chrome = 12.3, Safari = 3.7, Opera = 2.2 },

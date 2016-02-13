@@ -10,8 +10,8 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" />                
-        
+        <ext:ResourceManager runat="server" />
+
         <ext:Store ID="CitiesStore" runat="server">
             <Proxy>
                 <ext:AjaxProxy runat="server" Url="Cities.asmx/GetCities">
@@ -25,29 +25,29 @@
                 <ext:Model runat="server">
                     <Fields>
                         <ext:ModelField Name="id" Type="String" Mapping="Id" />
-                        <ext:ModelField Name="name" Type="String" Mapping="Name" />                        
+                        <ext:ModelField Name="name" Type="String" Mapping="Name" />
                     </Fields>
                 </ext:Model>
             </Model>
             <Parameters>
-                <ext:StoreParameter Name="countryCode" Value="#{Countries}.getValue()" Mode="Raw" />               
+                <ext:StoreParameter Name="countryCode" Value="#{Countries}.getValue()" Mode="Raw" />
             </Parameters>
             <Listeners>
                 <Load Handler="#{Cities}.setValue(#{Cities}.store.getAt(0).get('id'));" />
-            </Listeners>            
+            </Listeners>
         </ext:Store>
-        
-        <ext:ComboBox 
+
+        <ext:ComboBox
             ID="Countries"
             runat="server"
             Editable="false"
             QueryMode="Local"
             ForceSelection="true"
-            TriggerAction="All"            
+            TriggerAction="All"
             EmptyText="Select a country">
             <SelectedItems>
                 <ext:ListItem Value="GB" />
-            </SelectedItems>        
+            </SelectedItems>
             <Listeners>
                 <Select Handler="#{Cities}.clearValue();
                                  #{CitiesStore}.load();" />
@@ -82,15 +82,15 @@
                 <ext:ListItem Text="United Kingdom" Value="GB" />
             </Items>
         </ext:ComboBox>
-        
-        <ext:ComboBox 
+
+        <ext:ComboBox
             ID="Cities"
-            runat="server" 
+            runat="server"
             StoreID="CitiesStore"
             Editable="false"
             QueryMode="Local"
             ForceSelection="true"
-            TriggerAction="All"            
+            TriggerAction="All"
             DisplayField="name"
             ValueField="id"
             EmptyText="Loading..."

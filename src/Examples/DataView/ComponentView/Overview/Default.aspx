@@ -5,28 +5,28 @@
     {
         if (!X.IsAjaxRequest)
         {
-            Store1.Data = new List<object> 
-            { 
+            Store1.Data = new List<object>
+            {
                 new { FirstName = "John",  LastName = "Last" },
                 new { FirstName = "Betty", LastName = "Rubble" },
                 new { FirstName = "Mike",  LastName = "Vazovsky" }
             };
 
-            Store2.Data = new List<object> 
-            { 
-                new 
-                { 
-                    Directory = "Folder1", 
+            Store2.Data = new List<object>
+            {
+                new
+                {
+                    Directory = "Folder1",
                     Files = new List<object>
                     {
                         new { file = "CV.doc" },
                         new { file = "readme.txt" },
                     }
                 },
-            
-                new 
-                { 
-                    Directory = "Folder2", 
+
+                new
+                {
+                    Directory = "Folder2",
                     Files = new List<object>
                     {
                         new { file = "Salary.xls" },
@@ -34,10 +34,10 @@
                         new { file = "readme.txt" },
                     }
                 },
-            
-                new 
-                { 
-                    Directory = "Folder3", 
+
+                new
+                {
+                    Directory = "Folder3",
                     Files = new List<object>
                     {
                         new { file = "About.pdf" }

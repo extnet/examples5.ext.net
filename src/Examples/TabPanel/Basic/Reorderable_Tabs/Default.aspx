@@ -45,10 +45,10 @@
         <ext:ResourceManager runat="server" />
 
         <h1>Reorderable Tabs</h1>
-        
-        <ext:TabPanel 
-            runat="server" 
-            Width="600" 
+
+        <ext:TabPanel
+            runat="server"
+            Width="600"
             Height="400"
             BodyPadding="5">
             <Items>

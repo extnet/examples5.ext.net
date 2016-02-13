@@ -10,17 +10,17 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
+
+        <ext:GridPanel
             runat="server"
-            Title="Employees" 
+            Title="Employees"
             Frame="true"
             Height="300">
             <Store>
                 <ext:Store runat="server" RemoteSort="true" PageSize="5">
                     <Proxy>
                         <ext:AjaxProxy Json="true" Url="../../Shared/PlantJsonService.asmx/PlantsPaging">
-                            <ActionMethods Read="POST" />                            
+                            <ActionMethods Read="POST" />
                             <Reader>
                                 <ext:JsonReader RootProperty="d.data" TotalProperty="d.total" />
                             </Reader>
@@ -55,13 +55,13 @@
                     <ext:DateColumn runat="server" Text="Available" DataIndex="Availability" Width="95" Format="yyyy-MM-dd" />
                     <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
                 </Columns>
-            </ColumnModel>                   
+            </ColumnModel>
             <BottomBar>
-                <ext:PagingToolbar 
-                    runat="server"                     
-                    DisplayInfo="true" 
-                    DisplayMsg="Displaying plants {0} - {1} of {2}" 
-                    EmptyMsg="No plants to display" 
+                <ext:PagingToolbar
+                    runat="server"
+                    DisplayInfo="true"
+                    DisplayMsg="Displaying plants {0} - {1} of {2}"
+                    EmptyMsg="No plants to display"
                     />
             </BottomBar>
         </ext:GridPanel>

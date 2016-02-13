@@ -7,7 +7,7 @@
         Node root = this.CreateNode(siteNode);
         root.AllowDrag = false;
         root.Expanded = true;
-        
+
         this.TreeStore1.Root.Add(root);
     }
 
@@ -40,12 +40,12 @@
     protected void OnSelectionChange(object sender, DirectEventArgs e)
     {
         var node = SiteMap.Provider.FindSiteMapNodeFromKey(Breadcrumb1.Selection);
-        
+
         this.Panel1.Html = "Selected node: " + node.Title + "<br/>Selected url: " + node.Url;
         this.Panel1.Body.Highlight();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -59,19 +59,19 @@
 
         <h1>Breadcrumb Example</h1>
 
-        <ext:Panel 
-            ID="Panel1" 
+        <ext:Panel
+            ID="Panel1"
             runat="server"
             Title="Breadcrumb Toolbar"
             Height="400"
             Width="600"
-            BodyPadding="20">           
+            BodyPadding="20">
             <TopBar>
-                <ext:Breadcrumb 
-                    ID="Breadcrumb1" 
-                    runat="server" 
-                    ShowIcons="true" 
-                    OverflowHandler="Scroller" 
+                <ext:Breadcrumb
+                    ID="Breadcrumb1"
+                    runat="server"
+                    ShowIcons="true"
+                    OverflowHandler="Scroller"
                     Selection="/examples/messagebox/notification/overview/">
                     <Store>
                         <ext:TreeStore ID="TreeStore1" runat="server" />

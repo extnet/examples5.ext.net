@@ -28,16 +28,16 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Cell Editing Grid Example</h1>
 
     <p>This example shows how to enable users to edit the contents of a grid.</p>
 
-    <ext:GridPanel 
-        runat="server" 
-        Width="600" 
-        Height="300" 
-        Title="Edit Plants?" 
+    <ext:GridPanel
+        runat="server"
+        Width="600"
+        Height="300"
+        Title="Edit Plants?"
         Frame="true">
         <Store>
             <ext:Store runat="server">
@@ -79,21 +79,21 @@
             </ext:Toolbar>
         </TopBar>
         <ColumnModel runat="server">
-		    <Columns>
-                <ext:Column 
-                    runat="server" 
-                    Text="Common Name" 
-                    DataIndex="common" 
+            <Columns>
+                <ext:Column
+                    runat="server"
+                    Text="Common Name"
+                    DataIndex="common"
                     Flex="1">
                     <Editor>
                         <ext:TextField runat="server" AllowBlank="false" />
                     </Editor>
                 </ext:Column>
 
-                <ext:Column 
-                    runat="server" 
-                    Text="Light" 
-                    DataIndex="light" 
+                <ext:Column
+                    runat="server"
+                    Text="Light"
+                    DataIndex="light"
                     Width="130">
                     <Editor>
                         <ext:ComboBox runat="server"
@@ -110,11 +110,11 @@
                     </Editor>
                 </ext:Column>
 
-                <ext:Column 
-                    runat="server" 
-                    Text="Price" 
-                    DataIndex="price" 
-                    Width="70" 
+                <ext:Column
+                    runat="server"
+                    Text="Price"
+                    DataIndex="price"
+                    Width="70"
                     Align="right">
                     <Renderer Format="UsMoney" />
                     <Editor>
@@ -123,25 +123,25 @@
                     </Editor>
                 </ext:Column>
 
-                <ext:DateColumn 
-                    runat="server" 
-                    Text="Available" 
-                    DataIndex="availability" 
-                    Width="95" 
+                <ext:DateColumn
+                    runat="server"
+                    Text="Available"
+                    DataIndex="availability"
+                    Width="95"
                     Format="MMM dd, yyyy">
                     <Editor>
-                        <ext:DateField runat="server" 
-                            Format="yyyy-MM-dd" 
-                            MinDate="01.01.2006" 
+                        <ext:DateField runat="server"
+                            Format="yyyy-MM-dd"
+                            MinDate="01.01.2006"
                             DisabledDays="0,6"
                             DisabledDaysText="Plants are not available on the weekends">
                         </ext:DateField>
                     </Editor>
                 </ext:DateColumn>
 
-                <ext:CheckColumn 
-                    runat="server" 
-                    Text="Indoor?" 
+                <ext:CheckColumn
+                    runat="server"
+                    Text="Indoor?"
                     DataIndex="indoor"
                     StopSelection="false"
                     Editable="true"
@@ -149,14 +149,14 @@
 
                 <ext:ImageCommandColumn runat="server" Width="30" Sortable="false">
                     <Commands>
-                        <ext:ImageCommand Icon="Decline" ToolTip-Text="Delete Plant" CommandName="delete">                            
+                        <ext:ImageCommand Icon="Decline" ToolTip-Text="Delete Plant" CommandName="delete">
                         </ext:ImageCommand>
                     </Commands>
                     <Listeners>
                         <Command Handler="this.up('gridpanel').store.removeAt(recordIndex);" />
                     </Listeners>
                 </ext:ImageCommandColumn>
-		    </Columns>
+            </Columns>
         </ColumnModel>
         <SelectionModel>
             <ext:CellSelectionModel runat="server" />

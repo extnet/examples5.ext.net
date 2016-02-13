@@ -16,13 +16,13 @@
             color       : #385F95;
             white-space : normal;
         }
-        
+
         .x-grid-rowbody div {
             margin : 2px 5px 20px 5px !important;
             width  : 99%;
             color  : gray;
         }
-        
+
         .x-grid-row-expanded td.x-grid-cell{
             border-bottom-width:0px;
         }
@@ -37,18 +37,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:ObjectDataSource 
-            ID="ObjectDataSource1" 
-            runat="server" 
+
+        <asp:ObjectDataSource
+            ID="ObjectDataSource1"
+            runat="server"
             SelectMethod="GetAll"
-            TypeName="Ext.Net.Examples.Northwind.Employee" 
+            TypeName="Ext.Net.Examples.Northwind.Employee"
             />
-        
-        <ext:GridPanel 
-            runat="server" 
-            Title="Employees" 
-            Frame="true" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="Employees"
+            Frame="true"
             Height="600">
             <Store>
                 <ext:Store runat="server" DataSourceID="ObjectDataSource1">
@@ -95,8 +95,8 @@
             <View>
                 <ext:GridView runat="server">
                     <GetRowClass Handler="return 'x-grid-row-expanded';" />
-                </ext:GridView>        
-            </View>  
+                </ext:GridView>
+            </View>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
             </SelectionModel>

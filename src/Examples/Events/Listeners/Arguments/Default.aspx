@@ -8,7 +8,7 @@
             WidgetsCombo.Items.AddRange(this.GetTypes());
         }
     }
-        
+
     private List<Ext.Net.ListItem> GetTypes()
     {
         List<Ext.Net.ListItem> data = new List<Ext.Net.ListItem>();
@@ -19,11 +19,11 @@
             {
                 data.Add(new Ext.Net.ListItem(type.Name, type.FullName));
             }
-        } 
+        }
         data.Sort((a, b) => string.Compare(a.Text, b.Text));
         return data;
     }
-        
+
     protected void GetEvents(object sender, DirectEventArgs e)
     {
         System.Reflection.PropertyInfo listeners = this.GetListenersProperty(WidgetsCombo.SelectedItem.Value);
@@ -44,12 +44,12 @@
             }
             EventsCombo.Items.Sort((a, b) => string.Compare(a.Text, b.Text));
         }
-            
+
         if(EventsCombo.Items.Count == 0)
         {
             EventsCombo.Items.Add(new Ext.Net.ListItem("-- No events --", "-1"));
-        } 
-            
+        }
+
         EventsCombo.Reset();
         EventsCombo.GetStore().DataBind();
         FunctionLabel.Text = "";
@@ -100,7 +100,7 @@
 <head runat="server">
     <title>Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-        
+
     <style>
         body
         {
@@ -116,19 +116,19 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:FormPanel runat="server" 
-            Title="Listener Arguments" 
-            Width="400" 
+        <ext:FormPanel runat="server"
+            Title="Listener Arguments"
+            Width="400"
             BodyPadding="6"
             DefaultAnchor="100%">
             <FieldDefaults LabelWidth="60" />
             <Items>
-                <ext:ComboBox ID="WidgetsCombo" runat="server" 
-                    FieldLabel="Ext.Net" 
+                <ext:ComboBox ID="WidgetsCombo" runat="server"
+                    FieldLabel="Ext.Net"
                     EmptyText="Select a widget"
                     LabelSeparator="."
-                    ForceSelection="true" 
-                    TypeAhead="true" 
+                    ForceSelection="true"
+                    TypeAhead="true"
                     Width="350">
                     <DirectEvents>
                         <Select OnEvent="GetEvents">
@@ -137,11 +137,11 @@
                     </DirectEvents>
                 </ext:ComboBox>
 
-                <ext:ComboBox ID="EventsCombo" runat="server" 
-                    FieldLabel="Events" 
+                <ext:ComboBox ID="EventsCombo" runat="server"
+                    FieldLabel="Events"
                     EmptyText="Select an event"
-                    ForceSelection="true" 
-                    TypeAhead="true" 
+                    ForceSelection="true"
+                    TypeAhead="true"
                     Width="350">
                     <DirectEvents>
                         <Select OnEvent="GetFunctionSignature">
@@ -150,10 +150,10 @@
                     </DirectEvents>
                 </ext:ComboBox>
 
-                <ext:Checkbox ID="InheritedCheck" runat="server" 
+                <ext:Checkbox ID="InheritedCheck" runat="server"
                     BoxLabel="Show inherited events"
-                    Checked="true" 
-                    FieldLabel="&nbsp;" 
+                    Checked="true"
+                    FieldLabel="&nbsp;"
                     LabelSeparator=" ">
                     <DirectEvents>
                         <Change OnEvent="GetEvents">
@@ -162,13 +162,13 @@
                     </DirectEvents>
                 </ext:Checkbox>
 
-                <ext:DisplayField ID="FunctionLabel" runat="server" 
-                    FieldLabel="Signature" 
+                <ext:DisplayField ID="FunctionLabel" runat="server"
+                    FieldLabel="Signature"
                     FieldCls="func-label" />
             </Items>
         </ext:FormPanel>
 
-        
+
     </form>
 </body>
 </html>

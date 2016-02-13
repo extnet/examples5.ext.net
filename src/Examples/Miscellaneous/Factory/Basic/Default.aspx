@@ -19,7 +19,7 @@
                     {
                         Text = "Factory button",
                         Handler = "Ext.Msg.alert('Factory button', 'The button is clicked');",
-                        Plugins = 
+                        Plugins =
                     {
                         new Badge
                         {
@@ -41,7 +41,7 @@
             if (!Ext.Net.ResourceManager.HasFactory("mywindow"))
             {
                 Ext.Net.ResourceManager.AddFactory("~/Examples/Miscellaneous/Factory/Basic/MyWindow.ascx", "mywindow", "My.Window");
-            }         
+            }
          */
     }
 
@@ -50,8 +50,8 @@
         (new Ext.Net.Window()
         {
             FactoryAlias = "mywindow",
-            MessageBusListeners = 
-            { 
+            MessageBusListeners =
+            {
                 new MessageBusListener { Name="MyWindow.SubmitForm", Handler="App.direct.SendEmail({formId : data.formId});" }
             }
         }).Render();
@@ -72,11 +72,11 @@
 </script>
 
 <!DOCTYPE html>
-   
+
 <html>
 <head runat="server">
-    <title>Factory - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Factory - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -85,19 +85,19 @@
         <h1>Factory</h1>
 
         <p>Factory allows to register control (or a user control or a view) as factory and reuse across all pages in your application</p>
-        
+
         <p>Please note that Content cannot be used inside factory widget because the Content region cannot be clonned.</p>
 
-        <ext:Button 
-            runat="server" 
-            Text="Factory widget, click me" 
-            FactoryAlias="mybutton" 
+        <ext:Button
+            runat="server"
+            Text="Factory widget, click me"
+            FactoryAlias="mybutton"
             />
 
-        <ext:Button 
-            runat="server" 
-            Text="Render factory window" 
-            OnDirectClick="RenderWindow" 
+        <ext:Button
+            runat="server"
+            Text="Render factory window"
+            OnDirectClick="RenderWindow"
             />
     </form>
 </body>

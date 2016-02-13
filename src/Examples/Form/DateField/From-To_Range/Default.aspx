@@ -39,9 +39,9 @@
 
                 <%--// Alternative syntax using custom config property attributes. --%>
 
-                <%--<ext:DateField 
-                    ID="DateField1" 
-                    runat="server" 
+                <%--<ext:DateField
+                    ID="DateField1"
+                    runat="server"
                     FieldLabel="From"
                     Vtype="daterange"
                     EndDateField="DateField2" />--%>
@@ -58,9 +58,9 @@
 
                 <%--// Alternative syntax using custom config property attributes. --%>
 
-                <%--<ext:DateField 
-                    ID="DateField2" 
-                    runat="server" 
+                <%--<ext:DateField
+                    ID="DateField2"
+                    runat="server"
                     Vtype="daterange"
                     FieldLabel="To"
                     StartDateField="DateField1" />--%>

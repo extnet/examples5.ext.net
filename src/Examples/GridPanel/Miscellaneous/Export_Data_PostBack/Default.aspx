@@ -70,9 +70,9 @@
         this.Response.Clear();
         this.Response.ContentType = "application/vnd.ms-excel";
         this.Response.AddHeader("Content-Disposition", "attachment; filename=submittedData.xls");
-        
+
         XslCompiledTransform xtExcel = new XslCompiledTransform();
-        
+
         xtExcel.Load(Server.MapPath("Excel.xsl"));
         xtExcel.Transform(xml, null, this.Response.OutputStream);
         this.Response.End();
@@ -87,9 +87,9 @@
         this.Response.Clear();
         this.Response.ContentType = "application/octet-stream";
         this.Response.AddHeader("Content-Disposition", "attachment; filename=submittedData.csv");
-        
+
         XslCompiledTransform xtCsv = new XslCompiledTransform();
-        
+
         xtCsv.Load(Server.MapPath("Csv.xsl"));
         xtCsv.Transform(xml, null, this.Response.OutputStream);
         this.Response.End();
@@ -101,8 +101,8 @@
 <html>
 <head runat="server">
     <title>Export Data from GridPanel into XML, Excel or CSV using a full PostBack - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
         var saveData = function () {
             App.Hidden1.setValue(Ext.encode(App.GridPanel1.getRowsValues({selectedOnly : false})));
@@ -112,11 +112,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Export Data from GridPanel into XML, Excel or CSV using a full PostBack</h1>
-        
+
         <ext:Hidden ID="Hidden1" runat="server" />
-        
+
         <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server">
@@ -130,14 +130,14 @@
                     </Fields>
                 </ext:Model>
             </Model>
-        </ext:Store>        
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+        </ext:Store>
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             StoreID="Store1"
             Title="Export Data"
-            Width="600" 
+            Width="600"
             Height="350">
             <ColumnModel runat="server">
                 <Columns>
@@ -160,19 +160,19 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        
+
                         <ext:Button runat="server" Text="To XML" AutoPostBack="true" OnClick="ToXml" Icon="PageCode">
                             <Listeners>
                                 <Click Fn="saveData" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="To Excel" AutoPostBack="true" OnClick="ToExcel" Icon="PageExcel">
                             <Listeners>
                                 <Click Fn="saveData" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="To CSV" AutoPostBack="true" OnClick="ToCsv" Icon="PageAttach">
                             <Listeners>
                                 <Click Fn="saveData" />
@@ -181,7 +181,7 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <asp:XmlDataSource ID="XmlDataSource1" runat="server" 
+        <asp:XmlDataSource ID="XmlDataSource1" runat="server"
             DataFile="~/Examples/TreePanel/Loaders/Xml_File_Loading/authors.xml">
         </asp:XmlDataSource>
 
@@ -25,7 +25,7 @@
                     </DataBindings>
                 </ext:TreeStore>
             </Store>
-        </ext:TreePanel>        
+        </ext:TreePanel>
     </form>
 </body>
 </html>

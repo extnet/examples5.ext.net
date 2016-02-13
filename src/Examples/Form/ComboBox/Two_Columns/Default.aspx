@@ -55,9 +55,9 @@
             new object[] { "WA", "Washington", "Green Tree State"},
             new object[] { "WV", "West Virginia", "Mountain State"},
             new object[] { "WI", "Wisconsin", "America's Dairyland"},
-            new object[] { "WY", "Wyoming", "Like No Place on Earth"} 
+            new object[] { "WY", "Wyoming", "Like No Place on Earth"}
         };
-        
+
         this.Store1.DataBind();
     }
 </script>
@@ -68,17 +68,17 @@
 <head runat="server">
     <title>Comboboxes - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .cbStates-list {
             width : 298px;
             font  : 11px tahoma,arial,helvetica,sans-serif;
         }
-        
+
         .cbStates-list th {
             font-weight : bold;
         }
-        
+
         .cbStates-list td, .cbStates-list th {
             padding : 3px;
         }
@@ -91,17 +91,17 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:ComboBox 
-            ID="cbStates" 
+
+        <ext:ComboBox
+            ID="cbStates"
             runat="server"
             EmptyText="Select State"
             TypeAhead="true"
             ForceSelection="true"
-            DisplayField="state" 
+            DisplayField="state"
             ValueField="abbr"
             MinChars="1"
-            MatchFieldWidth="false" 
+            MatchFieldWidth="false"
             PageSize="10">
             <Store>
                 <ext:Store ID="Store1" runat="server" IsPagingStore="true" PageSize="10">
@@ -113,42 +113,42 @@
                                 <ext:ModelField Name="nick" />
                             </Fields>
                         </ext:Model>
-                    </Model>            
+                    </Model>
                 </ext:Store>
             </Store>
             <ListConfig Width="320" Height="300" ItemSelector=".x-boundlist-item">
                 <Tpl runat="server">
                     <Html>
-					    <tpl for=".">
-						    <tpl if="[xindex] == 1">
-							    <table class="cbStates-list">
-								    <tr>
-									    <th>State</th>
-									    <th>Nick</th>
-								    </tr>
-						    </tpl>
-						    <tr class="x-boundlist-item">
-							    <td>{state}</td>
-							    <td>{nick}</td>
-						    </tr>
-						    <tpl if="[xcount-xindex]==0">
-							    </table>
-						    </tpl>
-					    </tpl>
-				    </html>                </Tpl>                              
-            </ListConfig>           
+                        <tpl for=".">
+                            <tpl if="[xindex] == 1">
+                                <table class="cbStates-list">
+                                    <tr>
+                                        <th>State</th>
+                                        <th>Nick</th>
+                                    </tr>
+                            </tpl>
+                            <tr class="x-boundlist-item">
+                                <td>{state}</td>
+                                <td>{nick}</td>
+                            </tr>
+                            <tpl if="[xcount-xindex]==0">
+                                </table>
+                            </tpl>
+                        </tpl>
+                    </html>                </Tpl>
+            </ListConfig>
             <Triggers>
                 <ext:FieldTrigger Icon="Clear" Hidden="true" />
             </Triggers>
             <Listeners>
                 <BeforeQuery Handler="this.getTrigger(0)[this.getRawValue().toString().length == 0 ? 'hide' : 'show']();" />
-                <TriggerClick Handler="if (index == 0) { 
-                                           this.focus().clearValue(); 
+                <TriggerClick Handler="if (index == 0) {
+                                           this.focus().clearValue();
                                            trigger.hide();
                                        }" />
                 <Select Handler="this.getTrigger(0).show();" />
             </Listeners>
-        </ext:ComboBox>           
+        </ext:ComboBox>
     </form>
 </body>
 </html>

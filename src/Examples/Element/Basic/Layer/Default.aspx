@@ -14,12 +14,12 @@
                 Children = {
                     new DomObject {
                         Children = {
-                            new DomObject { 
+                            new DomObject {
                                 Tag = HtmlTextWriterTag.H3,
-                                Html = "Hello" 
+                                Html = "Hello"
                             },
-                            new DomObject { 
-                                Tag = HtmlTextWriterTag.Hr 
+                            new DomObject {
+                                Tag = HtmlTextWriterTag.Hr
                             },
                             new DomObject {
                                 Tag = HtmlTextWriterTag.A,
@@ -63,11 +63,11 @@
             Width = 300,
             Height = 100,
             Shadow = false,
-            Tools = { 
-                new Tool { 
-                    Type = ToolType.Close, 
-                    Handler = "CompanyX.Close2();" 
-                } 
+            Tools = {
+                new Tool {
+                    Type = ToolType.Close,
+                    Handler = "CompanyX.Close2();"
+                }
             }
         };
 
@@ -91,7 +91,7 @@
         l2.SlideOut("t", new FxConfig { Callback = new JFunction(l2.Remove().ToScript(), 200) }).Render();
         Button2.Disabled = false;
     }
-   
+
 </script>
 
 <!DOCTYPE html>

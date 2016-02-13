@@ -15,12 +15,12 @@
         seed -= Math.Floor(seed);
         return Convert.ToInt32(seed);
     }
-    
+
     public static object GenerateData(int count = 9)
     {
         var data = new List<Item>();
         int i;
-        Item record = new Item 
+        Item record = new Item
         {
             ID = 0,
             G0 = 200,
@@ -32,9 +32,9 @@
             G6 = 500 * Random() + 100,
             Name = "Item-0"
         };
-        
+
         data.Add(record);
-        for (i = 1; i < count; i++) 
+        for (i = 1; i < count; i++)
         {
             record = new Item
             {
@@ -50,10 +50,10 @@
             };
             data.Add(record);
         }
-        
+
         return data;
     }
-    
+
     public class Item
     {
         public int ID
@@ -61,49 +61,49 @@
             get;
             set;
         }
-        
+
         public int G0
         {
             get;
             set;
         }
-        
+
         public int G1
         {
             get;
             set;
         }
-        
+
         public int G2
         {
             get;
             set;
         }
-        
+
         public int G3
         {
             get;
             set;
         }
-        
+
         public int G4
         {
             get;
             set;
         }
-        
+
         public int G5
         {
             get;
             set;
         }
-        
+
         public int G6
         {
             get;
             set;
         }
-        
+
         public string Name
         {
             get;
@@ -207,7 +207,7 @@
             <Items>
                 <ext:CartesianChart
                     ID="Chart1"
-                    runat="server">                    
+                    runat="server">
                     <Store>
                         <ext:Store
                             runat="server"
@@ -254,10 +254,10 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
-                            XField="Name" 
+                        <ext:LineSeries
+                            XField="Name"
                             YField="G1"
-                            Title="Square" 
+                            Title="Square"
                             Fill="true">
                             <StyleSpec>
                                 <ext:SeriesSprite Smooth="true" MiterLimit="3" LineCap="Miter" StrokeOpacity="1" FillOpacity="0.7" LineWidth="8" />
@@ -266,19 +266,19 @@
                                 <ext:Sprite Scaling="0.9" />
                             </HighlightConfig>
                             <Marker>
-                                <ext:ImageSprite 
+                                <ext:ImageSprite
                                     Src="square.png"
-                                    Width="48" 
-                                    Height="48" 
-                                    X="-24" 
-                                    Y="-24" 
-                                    Scaling="0.7" 
+                                    Width="48"
+                                    Height="48"
+                                    X="-24"
+                                    Y="-24"
+                                    Scaling="0.7"
                                     Duration="200" />
                             </Marker>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
-                            XField="Name" 
+                        <ext:LineSeries
+                            XField="Name"
                             YField="G2"
                             Title="Circle">
                             <StyleSpec>
@@ -288,19 +288,19 @@
                                 <ext:Sprite Scaling="0.9" />
                             </HighlightConfig>
                             <Marker>
-                                <ext:ImageSprite 
+                                <ext:ImageSprite
                                     Src="circle.png"
-                                    Width="48" 
-                                    Height="48" 
-                                    X="-24" 
-                                    Y="-24" 
-                                    Scaling="0.7" 
+                                    Width="48"
+                                    Height="48"
+                                    X="-24"
+                                    Y="-24"
+                                    Scaling="0.7"
                                     Duration="200" />
                             </Marker>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
-                            XField="Name" 
+                        <ext:LineSeries
+                            XField="Name"
                             YField="G3"
                             Title="Pentagon">
                             <StyleSpec>
@@ -310,13 +310,13 @@
                                 <ext:Sprite Scaling="0.9" />
                             </HighlightConfig>
                             <Marker>
-                                <ext:ImageSprite 
+                                <ext:ImageSprite
                                     Src="pentagon.png"
-                                    Width="48" 
-                                    Height="48" 
-                                    X="-24" 
-                                    Y="-24" 
-                                    Scaling="0.7" 
+                                    Width="48"
+                                    Height="48"
+                                    X="-24"
+                                    Y="-24"
+                                    Scaling="0.7"
                                     Duration="200" />
                             </Marker>
                         </ext:LineSeries>

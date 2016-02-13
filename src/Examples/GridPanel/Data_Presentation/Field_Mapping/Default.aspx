@@ -75,10 +75,10 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
+
+        <ext:GridPanel
             runat="server"
-            Title="List" 
+            Title="List"
             Icon="Application">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -94,13 +94,13 @@
                     </Model>
                 </ext:Store>
             </Store>
-            <ColumnModel runat="server">                
+            <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="ID" DataIndex="ID" />
                     <ext:Column runat="server" Text="NAME" DataIndex="Name" />
                     <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" />
                     <ext:Column runat="server" Text="DEPARTMENT" DataIndex="Department"  Width="240">
-                        <Renderer Fn="departmentRenderer" />                        
+                        <Renderer Fn="departmentRenderer" />
                     </ext:Column>
                 </Columns>
             </ColumnModel>

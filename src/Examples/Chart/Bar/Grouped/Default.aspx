@@ -5,7 +5,7 @@
     {
         this.Chart1.GetStore().DataBind();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -31,10 +31,10 @@
         <h1>Grouped Bar Sample</h1>
 
         <p>Display 3 sets of random data in a grouped bar series.</p>
-        
+
         <p>Reload data will randomly generate a new set of data in the store. Click or hover on the legend items to highlight and remove them from the chart.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Grouped Bar Chart"
             Width="800"
@@ -43,16 +43,16 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save Chart"
                             Icon="Disk"
                             Handler="saveChart"
                             />
@@ -60,16 +60,16 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server"
                     FlipXY="true">
                     <LegendConfig Dock="Right" />
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -84,22 +84,22 @@
                     </Store>
                     <Axes>
                         <ext:NumericAxis
-                            Position="Bottom"                             
+                            Position="Bottom"
                             Fields="Data1,Data2,Data3"
                             Title="Number of Hits"
                             Grid="true"
-                            Minimum="0">                            
+                            Minimum="0">
                             <Renderer Fn="Ext.util.Format.numberRenderer('0,0')" />
-                        </ext:NumericAxis>                            
+                        </ext:NumericAxis>
 
-                        <ext:CategoryAxis 
+                        <ext:CategoryAxis
                             Fields="Name"
                             Position="Left"
                             Title="Month of the Year"
                             />
                     </Axes>
                     <Series>
-                        <ext:BarSeries Stacked="false" 
+                        <ext:BarSeries Stacked="false"
                             XField="Name"
                             YField="Data1,Data2,Data3"
                             />
@@ -107,6 +107,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

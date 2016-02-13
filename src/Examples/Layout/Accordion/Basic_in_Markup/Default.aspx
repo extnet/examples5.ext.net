@@ -9,11 +9,11 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Accordion Layout in Markup</h1>
-    
-    <ext:Window 
-        runat="server" 
+
+    <ext:Window
+        runat="server"
         Title="Accordion"
         Width="250"
         Height="400"
@@ -26,9 +26,9 @@
                 <Items>
                     <ext:Button runat="server" Icon="Connect">
                         <ToolTips>
-                            <ext:ToolTip 
-                                runat="server" 
-                                Title="Rich ToolTips" 
+                            <ext:ToolTip
+                                runat="server"
+                                Title="Rich ToolTips"
                                 Html="Let your users know what they can do!" />
                         </ToolTips>
                     </ext:Button>

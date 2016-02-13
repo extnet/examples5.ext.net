@@ -10,9 +10,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>ComboBox with show/hide of custom FieldTrigger</h1>
-        
+
         <ext:ComboBox runat="server" MinChars="1">
             <Items>
                 <ext:ListItem Text="1" />
@@ -27,8 +27,8 @@
             <Listeners>
                 <Select Handler="this.getTrigger(0).show();" />
                 <BeforeQuery Handler="this.getTrigger(0)[this.getRawValue().toString().length == 0 ? 'hide' : 'show']();" />
-                <TriggerClick Handler="if (index == 0) { 
-                                           this.clearValue(); 
+                <TriggerClick Handler="if (index == 0) {
+                                           this.clearValue();
                                            this.getTrigger(0).hide();
                                        }" />
             </Listeners>

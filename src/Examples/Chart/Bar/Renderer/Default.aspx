@@ -5,7 +5,7 @@
     {
         this.Chart1.GetStore().DataBind();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -49,7 +49,7 @@
 
         <p>Displaying a horizontal bar series with a bar renderer that modifies the color of each bar.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Bar Renderer"
             Width="800"
@@ -58,16 +58,16 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save Chart"
                             Icon="Disk"
                             Handler="saveChart"
                             />
@@ -76,15 +76,15 @@
             </TopBar>
 
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server"
                     FlipXY="true">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -97,26 +97,26 @@
                     </Store>
 
                     <Axes>
-                        <ext:NumericAxis                             
+                        <ext:NumericAxis
                             Fields="Data1"
                             Position="Bottom"
                             Grid="true"
                             Title="Number of Hits">
                             <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
-                        </ext:NumericAxis>                            
+                        </ext:NumericAxis>
 
-                        <ext:CategoryAxis Fields="Name" Position="Left" Title="Month of the Year" />                            
+                        <ext:CategoryAxis Fields="Name" Position="Left" Title="Month of the Year" />
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries                             
-                            XField="Name" 
-                            YField="Data1">                            
-                            <Label 
-                                Display="InsideEnd" 
-                                Field="Data1" 
-                                Orientation="Horizontal" 
-                                Color="#333" 
+                        <ext:BarSeries
+                            XField="Name"
+                            YField="Data1">
+                            <Label
+                                Display="InsideEnd"
+                                Field="Data1"
+                                Orientation="Horizontal"
+                                Color="#333"
                                 TextAlign="Center">
                                 <Renderer Handler="return Ext.util.Format.number(text, '0,0');" />
                             </Label>
@@ -126,6 +126,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

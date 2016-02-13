@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>The CRUD Example</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         function insertRecord(grid) {
@@ -20,27 +20,27 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <ext:Viewport runat="server" Layout="BorderLayout">
         <Items>
-            <ext:Panel  
-                ID="Panel1" 
-                runat="server" 
-                Region="North" 
-                Border="false" 
-                Height="120" 
+            <ext:Panel
+                ID="Panel1"
+                runat="server"
+                Region="North"
+                Border="false"
+                Height="120"
                 BodyPadding="6">
                 <Content>
                     <h1>CRUD Grid Example</h1>
-                    <p>Demonstrates how to get data from web-service and save using web-service.</p>                                                       
+                    <p>Demonstrates how to get data from web-service and save using web-service.</p>
                 </Content>
             </ext:Panel>
             <ext:GridPanel
-                ID="GridPanel1" 
-                runat="server" 
-                Region="Center" 
+                ID="GridPanel1"
+                runat="server"
+                Region="Center"
                 Title="Suppliers"
-                Icon="Lorry" 
+                Icon="Lorry"
                 Frame="true">
                 <Store>
                     <ext:Store ID="Store1" runat="server">
@@ -55,10 +55,10 @@
                                     <ext:JsonWriter Encode="true" RootProperty="data" />
                                 </Writer>
                             </ext:AjaxProxy>
-                        </Proxy>         
+                        </Proxy>
                         <SyncParameters>
                             <ext:StoreParameter Name="action" Value="operation.action" Mode="Raw" />
-                        </SyncParameters>               
+                        </SyncParameters>
                         <Model>
                             <ext:Model runat="server" IDProperty="SupplierID">
                                 <Fields>
@@ -79,9 +79,9 @@
                         <Sorters>
                             <ext:DataSorter Property="CompanyName" Direction="ASC" />
                         </Sorters>
-                        <Listeners>                            
+                        <Listeners>
                             <Write Handler="Ext.Msg.alert('Success', 'The suppliers have been saved');" />
-                        </Listeners>                        
+                        </Listeners>
                     </ext:Store>
                 </Store>
                 <ColumnModel runat="server">
@@ -138,7 +138,7 @@
                         </ext:Column>
                     </Columns>
                 </ColumnModel>
-    
+
                 <SelectionModel>
                     <ext:RowSelectionModel runat="server" Mode="Multi">
                         <Listeners>
@@ -153,14 +153,14 @@
                 <Plugins>
                     <ext:CellEditing runat="server" />
                 </Plugins>
-                        
+
                 <Buttons>
                     <ext:Button runat="server" Text="Insert" Icon="Add">
                         <Listeners>
                             <Click Handler="insertRecord(#{GridPanel1});" />
                         </Listeners>
                     </ext:Button>
-                            
+
                     <ext:Button ID="btnDelete" runat="server" Text="Delete" Icon="Delete" Disabled="true">
                         <Listeners>
                             <Click Handler="#{GridPanel1}.deleteSelected();
@@ -169,13 +169,13 @@
                                             }" />
                         </Listeners>
                     </ext:Button>
-                            
+
                     <ext:Button runat="server" Text="Save" Icon="Disk">
                         <Listeners>
                             <Click Handler="#{Store1}.sync();" />
                         </Listeners>
                     </ext:Button>
-                            
+
                     <ext:Button runat="server" Text="Clear" Icon="Cancel">
                         <Listeners>
                             <Click Handler="#{GridPanel1}.getSelectionModel().deselectAll();;
@@ -184,7 +184,7 @@
                                             }" />
                         </Listeners>
                     </ext:Button>
-                            
+
                     <ext:Button runat="server" Text="Refresh" Icon="ArrowRefresh">
                         <Listeners>
                             <Click Handler="#{Store1}.load();" />
@@ -192,7 +192,7 @@
                     </ext:Button>
                 </Buttons>
             </ext:GridPanel>
-        </Items>        
+        </Items>
     </ext:Viewport>
 </body>
 </html>

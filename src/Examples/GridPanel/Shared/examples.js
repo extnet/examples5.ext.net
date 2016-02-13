@@ -2,7 +2,7 @@
  * Ext JS Library 2.2
  * Copyright(c) 2006-2008, Ext JS, LLC.
  * licensing@extjs.com
- * 
+ *
  * http://extjs.com/license
  */
 
@@ -78,20 +78,20 @@ Cookies.set = function (name, value) {
 };
 
 Cookies.get = function (name) {
-	var arg = name + "=";
-	var alen = arg.length;
-	var clen = document.cookie.length;
-	var i = 0;
-	var j = 0;
-	while(i < clen) {
-		j = i + alen;
-		if (document.cookie.substring(i, j) == arg)
-			return Cookies.getCookieVal(j);
-		i = document.cookie.indexOf(" ", i) + 1;
-		if (i == 0)
-			break;
-	}
-	return null;
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    var j = 0;
+    while(i < clen) {
+        j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+            return Cookies.getCookieVal(j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0)
+            break;
+    }
+    return null;
 };
 
 Cookies.clear = function (name) {

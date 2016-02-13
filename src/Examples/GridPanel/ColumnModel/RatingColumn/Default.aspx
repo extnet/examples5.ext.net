@@ -31,28 +31,28 @@
 <html>
 <head runat="server">
     <title>RatingColumn - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <style>
         .number-selected {
-	        background : transparent url(star_n.png) repeat-x left center;
+            background : transparent url(star_n.png) repeat-x left center;
         }
-        
+
         .number-unselected {
-	        background : transparent url(star_fade_n.png) repeat-x left center;
+            background : transparent url(star_fade_n.png) repeat-x left center;
         }
-    </style>       
+    </style>
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Rating Column</h1>
-    
-    <ext:GridPanel 
+
+    <ext:GridPanel
         ID="GridPanel1"
-        runat="server" 
-        Title="Array Grid" 
-        Width="600" 
+        runat="server"
+        Title="Array Grid"
+        Width="600"
         Height="350">
         <Store>
             <ext:Store ID="Store1" runat="server">
@@ -70,12 +70,12 @@
         </Store>
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />                
+                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
                 <ext:RatingColumn runat="server" Text="Rating" DataIndex="rating1" />
                 <ext:RatingColumn runat="server" Text="Editable" DataIndex="rating2" RoundToTick="false" Editable="true" />
                 <ext:RatingColumn runat="server" Text="Custom" DataIndex="rating3" SelectedCls="number-selected" UnselectedCls="number-unselected" />
             </Columns>
-        </ColumnModel>       
-    </ext:GridPanel>          
+        </ColumnModel>
+    </ext:GridPanel>
 </body>
 </html>

@@ -18,7 +18,7 @@ namespace Ext.Net.Examples.Restful
             settings.Converters = JSON.Converters;
             settings.NullValueHandling = NullValueHandling.Ignore;
 
-            PersonModel added = (PersonModel)JsonConvert.DeserializeObject(this.Request.Data, typeof(PersonModel), settings);            
+            PersonModel added = (PersonModel)JsonConvert.DeserializeObject(this.Request.Data, typeof(PersonModel), settings);
             added.Insert<PersonModel>();
 
             Response r = new Response(added != null, added != null ? "Created new Person" : "Failed to create Person");

@@ -10,13 +10,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>TreePanel with ajax proxy using HttpHandler</h1> 
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
-            Title="Tree" 
+
+        <h1>TreePanel with ajax proxy using HttpHandler</h1>
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
+            Title="Tree"
             Height="500"
             Width="200"
             Border="false">

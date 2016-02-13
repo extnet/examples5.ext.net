@@ -23,11 +23,11 @@ namespace Ext.Net.Examples.Northwind
             int count;
             List<Employee> result = Employee.GetEmployeesFilter(this.Start, this.Limit, this.Sort, out count);
             Paging<Employee> pagingEmployees = new Paging<Employee>(result, count);
-            
+
             StoreResponseData sr = new StoreResponseData();
             sr.Total = pagingEmployees.TotalRecords;
 
-            sr.Data = JSON.Serialize(from e in pagingEmployees.Data select new 
+            sr.Data = JSON.Serialize(from e in pagingEmployees.Data select new
             {
                   e.Address,
                   e.BirthDate,

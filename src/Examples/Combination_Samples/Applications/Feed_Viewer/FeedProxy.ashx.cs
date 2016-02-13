@@ -38,7 +38,7 @@ namespace Ext.Net.Examples.FeedViewer
             StringBuilder sb = new StringBuilder(reader.ReadToEnd());
             sb.Replace("<content:encoded>", "<content>")
               .Replace("</content:encoded>", "</content>")
-              .Replace("</dc:creator>", "</author>")              
+              .Replace("</dc:creator>", "</author>")
               .Replace("<dc:creator", "<author");
 
             var xml = sb.ToString();
@@ -52,7 +52,7 @@ namespace Ext.Net.Examples.FeedViewer
             xml = Regex.Replace(xml, "([^\\]][^\\]][^>])<\\/description>", "$1]]></description>");
             xml = Regex.Replace(xml, "<link>(?!<\\!\\[CDATA\\[)", "<link><![CDATA[");
             xml = Regex.Replace(xml, "([^\\]][^\\]][^>])<\\/link>", "$1]]></link>");
-   
+
             context.Response.Write(xml);
         }
 

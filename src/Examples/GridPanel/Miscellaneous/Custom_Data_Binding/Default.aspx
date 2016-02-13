@@ -18,16 +18,16 @@
 
             Address address = new Address
             {
-                Street = ("Street" + i), 
+                Street = ("Street" + i),
                 City = ("City" + i),
                 SomeAdditionalInfo = "SomeAdditionalInfo" // it comes from a database, for example
             };
-            
+
             customer.Address = address;
-            
+
             list.Add(customer);
         }
-        
+
         this.Store1.DataSource = list;
     }
 
@@ -62,10 +62,10 @@
         <h1>Custom Data Binding using a ModelField's Model</h1>
         <p>The example demonstrates a possibility to customize binding the data to the Store using a ModelField's Model.</p>
         <p>More details you can find <a href="http://forums.ext.net/showthread.php?26837">here</a>.</p>
-        
-        <ext:GridPanel 
-            runat="server" 
-            Title="Customers" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="Customers"
             Width="630"
             Height="300">
             <Store>
@@ -98,13 +98,13 @@
                     <ext:Column runat="server" Text="LastName" DataIndex="LastName" />
                     <ext:Column runat="server" Text="City" DataIndex="Address">
                         <Renderer Handler="return value.City;" />
-                    </ext:Column>            
+                    </ext:Column>
                     <ext:Column runat="server" Text="Street" DataIndex="Address">
                         <Renderer Handler="return value.Street;" />
-                    </ext:Column>          
+                    </ext:Column>
                 </Columns>
-            </ColumnModel>           
-        </ext:GridPanel> 
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

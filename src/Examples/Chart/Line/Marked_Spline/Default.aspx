@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
-        { 
+        this.Chart1.GetStore().DataSource = new List<object>
+        {
             new { theta = 0, sin = 0.00, cos = 1.00, tan = 0.00 },
             new { theta = 10, sin = 0.17, cos = 0.98, tan = 0.18 },
             new { theta = 20, sin = 0.34, cos = 0.94, tan = 0.36 },
@@ -104,7 +104,7 @@
                     </Interactions>
 
                     <LegendConfig Dock="Right" />
-                    
+
                     <Items>
                         <ext:TextSprite
                             Text="Line Charts - Marked Spline"
@@ -133,9 +133,9 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
-                            XField="theta" 
-                            YField="sin" 
+                        <ext:LineSeries
+                            XField="theta"
+                            YField="sin"
                             UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
@@ -148,9 +148,9 @@
                             </HighlightConfig>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
-                            XField="theta" 
-                            YField="cos" 
+                        <ext:LineSeries
+                            XField="theta"
+                            YField="cos"
                             UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
@@ -163,9 +163,9 @@
                             </HighlightConfig>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
-                            XField="theta" 
-                            YField="tan" 
+                        <ext:LineSeries
+                            XField="theta"
+                            YField="tan"
                             UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />

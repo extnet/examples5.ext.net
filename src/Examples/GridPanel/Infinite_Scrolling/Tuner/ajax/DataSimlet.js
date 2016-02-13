@@ -141,7 +141,7 @@ Ext.define('Ext.ux.ajax.DataSimlet', function () {
 
             return data;
         },
-        
+
         processFilters: Ext.identityFn,
 
         getPage: function (ctx, data) {

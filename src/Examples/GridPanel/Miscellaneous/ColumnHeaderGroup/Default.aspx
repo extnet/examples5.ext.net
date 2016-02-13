@@ -55,8 +55,8 @@
 <html>
 <head runat="server">
     <title>Grouped Header Example - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <style>
         /* style rows on mouseover */
         .x-grid-row-over .x-grid-cell-inner {
@@ -78,18 +78,18 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Grouped Header Example</h1>
 
     <p>This example shows how to create a grid with column headers which are nested within category headers.</p>
     <p>Category headers do not reference Model fields via a <code>dataIndex</code>, rather they contain
     child header definitions (which may themselves either contain a <code>dataIndex</code> or more levels of headers).</p>
-    
-    <ext:GridPanel 
+
+    <ext:GridPanel
         ID="GridPanel1"
-        runat="server" 
-        Title="Grouped Header Grid" 
-        Width="600" 
+        runat="server"
+        Title="Grouped Header Grid"
+        Width="600"
         ColumnLines="true"
         Height="350">
         <Store>
@@ -113,7 +113,7 @@
 
                 <ext:Column runat="server" Text="Stock Price">
                     <Columns>
-                        <ext:Column runat="server" Text="Price" DataIndex="price" Width="75" Sortable="true">                  
+                        <ext:Column runat="server" Text="Price" DataIndex="price" Width="75" Sortable="true">
                             <Renderer Format="UsMoney" />
                         </ext:Column>
                         <ext:Column runat="server" Text="Change" DataIndex="change" Width="75" Sortable="true">
@@ -123,8 +123,8 @@
                             <Renderer Fn="pctChange" />
                         </ext:Column>
                     </Columns>
-                </ext:Column>                
-                
+                </ext:Column>
+
                 <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="85" Sortable="true" Format="dd/MM/yyyy" />
             </Columns>
         </ColumnModel>

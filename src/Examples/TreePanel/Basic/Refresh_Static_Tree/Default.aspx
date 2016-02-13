@@ -15,14 +15,14 @@
         {
             nodes = new Ext.Net.NodeCollection();
         }
-        
+
         Ext.Net.Node root = new Ext.Net.Node();
         root.Text = "Root";
         root.Expanded = true;
         nodes.Add(root);
 
         string prefix = DateTime.Now.Second + "_";
-        
+
         for (int i = 0; i < 10; i++)
         {
             Ext.Net.Node node = new Ext.Net.Node();
@@ -50,9 +50,9 @@
     <title>Refresh Static Tree - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <script>
-        var refreshTree = function (tree) {            
+        var refreshTree = function (tree) {
             App.direct.RefreshMenu({
-                success : function (result) {   
+                success : function (result) {
                     var nodes = eval(result);
                     if (nodes.length > 0) {
                         tree.setRootNode(nodes[0]);
@@ -68,16 +68,16 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
+
+        <ext:TreePanel
+            ID="TreePanel1"
             runat="server"
             Title="Tree"
-            Icon="Anchor" 
-            Width="250" 
-            RootVisible="false" 
+            Icon="Anchor"
+            Width="250"
+            RootVisible="false"
             BodyPaddingSummary="0 0 0 10">
-            <Tools>            
+            <Tools>
                 <ext:Tool Type="Refresh" Handler="refreshTree(#{TreePanel1});">
                     <ToolTips>
                         <ext:ToolTip runat="server" Html="Refresh" />

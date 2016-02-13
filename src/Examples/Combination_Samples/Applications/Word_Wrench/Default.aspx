@@ -446,7 +446,7 @@
                                                     <div>{Text}</div>
                                                 </tpl>
 
-							                </tpl>
+                                            </tpl>
                                         </Html>
                                     </Tpl>
                                 </ext:DataView>

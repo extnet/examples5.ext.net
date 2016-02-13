@@ -28,18 +28,18 @@
 <html>
 <head runat="server">
     <title>ComponentColumn Editor - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>ComponentColumn as Editor</h1>
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="ComponentColumn Editor" 
-            Width="650" 
+        <ext:GridPanel
+            runat="server"
+            Title="ComponentColumn Editor"
+            Width="650"
             Height="325">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -57,8 +57,8 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         DataIndex="IntField"
                         Flex="1"
@@ -68,8 +68,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         DataIndex="ComboField"
                         Flex="1"
@@ -91,8 +91,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         DataIndex="TextField"
                         Flex="1"
@@ -102,8 +102,8 @@
                         </Component>
                     </ext:ComponentColumn>
 
-                    <ext:ComponentColumn 
-                        runat="server" 
+                    <ext:ComponentColumn
+                        runat="server"
                         Editor="true"
                         DataIndex="DateField"
                         Flex="1"
@@ -113,8 +113,8 @@
                         </Component>
                     </ext:ComponentColumn>
                 </Columns>
-            </ColumnModel>          
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

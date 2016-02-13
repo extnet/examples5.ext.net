@@ -10,9 +10,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-            
+
         <h1>Data Binding Example</h1>
-        <p>This example shows how to implement data binding for a master-detail view.</p>       
+        <p>This example shows how to implement data binding for a master-detail view.</p>
 
         <ext:XTemplate ID="BookTpl" runat="server">
             <Html>
@@ -21,8 +21,8 @@
                 Manufacturer: {Manufacturer}<br/>
                 Product Group: {ProductGroup}<br/>
             </html>        </ext:XTemplate>
-        
-        <ext:Panel 
+
+        <ext:Panel
             runat="server"
             Frame="true"
             Title="Book List"
@@ -30,7 +30,7 @@
             Height="400"
             Layout="BorderLayout">
             <Items>
-                <ext:GridPanel 
+                <ext:GridPanel
                    runat="server"
                    Region="North"
                    Split="true"
@@ -56,27 +56,27 @@
                                 </ext:AjaxProxy>
                             </Proxy>
                        </ext:Store>
-                   </Store>                   
+                   </Store>
                    <ColumnModel>
                        <Columns>
-                            <ext:Column 
-                                runat="server" 
-                                Text="Author" 
-                                Width="120" 
+                            <ext:Column
+                                runat="server"
+                                Text="Author"
+                                Width="120"
                                 DataIndex="Author" />
-                            <ext:Column 
-                                runat="server" 
-                                Text="Title" 
-                                Flex="1" 
+                            <ext:Column
+                                runat="server"
+                                Text="Title"
+                                Flex="1"
                                 DataIndex="Title" />
-                            <ext:Column 
-                                runat="server" 
-                                Text="Manufacturer" 
-                                Width="115" 
+                            <ext:Column
+                                runat="server"
+                                Text="Manufacturer"
+                                Width="115"
                                 DataIndex="Manufacturer" />
-                            <ext:Column 
-                                runat="server" 
-                                Text="Product Group" 
+                            <ext:Column
+                                runat="server"
+                                Text="Product Group"
                                 DataIndex="ProductGroup" />
                        </Columns>
                    </ColumnModel>
@@ -85,13 +85,13 @@
                    </Listeners>
                 </ext:GridPanel>
 
-                <ext:Panel 
-                    ID="DetailPanel" 
+                <ext:Panel
+                    ID="DetailPanel"
                     runat="server"
                     Region="Center"
                     BodyPadding="7"
                     BodyStyle="background: #ffffff;"
-                    Html="Please select a book to see additional details.">                
+                    Html="Please select a book to see additional details.">
                 </ext:Panel>
             </Items>
         </ext:Panel>

@@ -14,7 +14,7 @@
             foreach (string fileName in files)
             {
                 System.IO.FileInfo fi = new System.IO.FileInfo(fileName);
-                data.Add(new { name = fi.Name, 
+                data.Add(new { name = fi.Name,
                                 url = "../../Shared/images/thumbs/" + fi.Name,
                                 size = fi.Length,
                                 lastmod = fi.LastAccessTime });
@@ -28,12 +28,12 @@
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         StringBuilder sb = new StringBuilder();
-        
+
         foreach (SelectedRow row in ImageView.SelectedRows)
         {
             sb.AppendFormat("RecordID: {0}&nbsp;&nbsp;&nbsp;&nbsp;Row index: {1}<br/>", row.RecordID, row.RowIndex);
         }
-        
+
         this.Label1.Html = sb.ToString();
     }
 
@@ -76,7 +76,7 @@
             }
 
             sb.Append("<tr>");
-            
+
             foreach (KeyValuePair<string, string> keyValuePair in row)
             {
                 sb.Append("<td style='white-space:nowrap;'>");
@@ -85,7 +85,7 @@
 
                 sb.Append("</td>");
             }
-            
+
             sb.Append("</tr>");
         }
         sb.Append("</table>");
@@ -97,11 +97,11 @@
 
 <html>
 <head runat="server">
-    <title>DataView Overview - Ext.Net Examples</title>    
-    
+    <title>DataView Overview - Ext.Net Examples</title>
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="data-view.css" rel="stylesheet" />
-    
+
     <ext:XScript runat="server">
         <script>
             var prepareData = function (data) {
@@ -111,43 +111,43 @@
 
                 return data;
             };
-            
+
             var selectionChanged = function (selModel, selected) {
-			    var l = selected.length, s = l != 1 ? 's' : '';
-			    #{Panel1}.setTitle('Simple DataView (' + l + ' item' + s + ' selected)');
-		    };
+                var l = selected.length, s = l != 1 ? 's' : '';
+                #{Panel1}.setTitle('Simple DataView (' + l + ' item' + s + ' selected)');
+            };
         </script>
     </ext:XScript>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DataView Example</h1>
 
         <p>This example shows how to use an Ext.view.View.  It demonstrates editable labels (click<br />
         any of the photo labels), basic multi-select (using ctrl or shift) and drag selection.</p>
-        
+
         <ext:Store ID="Store1" runat="server" >
             <Model>
                 <ext:Model runat="server" IDProperty="name">
                     <Fields>
                         <ext:ModelField Name="name" />
-                        <ext:ModelField Name="url" />      
+                        <ext:ModelField Name="url" />
                         <ext:ModelField Name="size" Type="Int" />
                         <ext:ModelField Name="lastmod" Type="Date" />
                     </Fields>
                 </ext:Model>
             </Model>
-        </ext:Store>   
-                       
+        </ext:Store>
+
         <ext:Panel
             ID="Panel1"
-            runat="server" 
-            Cls="images-view" 
-            Frame="true" 
-            Width="800" 
-            Collapsible="true" 
+            runat="server"
+            Cls="images-view"
+            Frame="true"
+            Width="800"
+            Collapsible="true"
             Layout="FitLayout"
             Title="Simple DataView (0 items selected)">
             <Items>
@@ -162,54 +162,54 @@
                     TrackOver="true">
                     <Tpl runat="server">
                         <Html>
-							<tpl for=".">
-								<div class="thumb-wrap" id="{name}">
-									<div class="thumb"><img src="{url}" title="{name}"></div>
-									<span class="x-editable">{shortName}</span>
-								</div>
-							</tpl>
-							<div class="x-clear"></div>    
-						</html>                    </Tpl>                         
-                    <PrepareData Fn="prepareData" />                
+                            <tpl for=".">
+                                <div class="thumb-wrap" id="{name}">
+                                    <div class="thumb"><img src="{url}" title="{name}"></div>
+                                    <span class="x-editable">{shortName}</span>
+                                </div>
+                            </tpl>
+                            <div class="x-clear"></div>
+                        </html>                    </Tpl>
+                    <PrepareData Fn="prepareData" />
                     <Listeners>
-                        <SelectionChange Fn="selectionChanged" /> 
-                    </Listeners>   
-                    
+                        <SelectionChange Fn="selectionChanged" />
+                    </Listeners>
+
                     <Plugins>
                         <ext:DataViewDragSelector runat="server" />
                         <ext:DataViewLabelEditor runat="server" DataIndex="name" />
                     </Plugins>
                 </ext:DataView>
-            </Items>        
-            
+            </Items>
+
             <Buttons>
                 <ext:Button runat="server" Text="Submit selected">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" />
                     </DirectEvents>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Submit selected with values">
                     <DirectEvents>
-                        <Click 
+                        <Click
                             OnEvent="SubmitSelection">
                             <ExtraParams>
-                                <ext:Parameter 
-                                    Name="Values" 
-                                    Value="#{ImageView}.getRowsValues({ selectedOnly : true })" 
-                                    Mode="Raw" 
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{ImageView}.getRowsValues({ selectedOnly : true })"
+                                    Mode="Raw"
                                     Encode="true" />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Clear Selection">
                     <DirectEvents>
                         <Click OnEvent="Clear_Click" />
                     </DirectEvents>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Add 'Zack' to selection ">
                     <DirectEvents>
                         <Click OnEvent="Add_Click" />
@@ -217,7 +217,7 @@
                 </ext:Button>
             </Buttons>
         </ext:Panel>
-        
+
         <div style="width:788px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>

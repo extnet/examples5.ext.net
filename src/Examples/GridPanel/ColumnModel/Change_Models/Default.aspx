@@ -11,7 +11,7 @@
             this.Store1.DataBind();
         }
     }
-    
+
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         ((Button)sender).Disabled = true;
@@ -28,7 +28,7 @@
         // Reconfigure Store
         store.Model.Add(new Model
         {
-            Fields = 
+            Fields =
             {
                 new ModelField("name"),
                 new ModelField("quote", ModelFieldType.Float),
@@ -42,8 +42,8 @@
         // Reconfigure GridPanel
         grid.SelectionModel.Add(new RowSelectionModel { Mode = SelectionMode.Single });
 
-        grid.ColumnModel.Columns.Add(new ColumnBase[] { 
-            new Column 
+        grid.ColumnModel.Columns.Add(new ColumnBase[] {
+            new Column
             {
                 Text = "Name",
                 DataIndex = "name",
@@ -65,7 +65,7 @@
         // **Make sure to call .Render() on the GridPanel
         grid.Render();
     }
-    
+
     private object[] GetData()
     {
         return new object[]
@@ -115,7 +115,7 @@
 <html>
 <head runat="server">
     <title>Simple Array Grid - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -132,15 +132,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <h1>Change GridPanel Column and Selection Models during a DirectEvent</h1>
-    
+
         <p>Demonstrates removing a GridPanels ColumnModel and SelectionModel during a DirectEvent, then reconfiguring with new Models and Store Data.</p>
-    
+
         <p>Ensure to call .Render() on the GridPanel when finished reconfiguring the Components.</p>
-    
-        <ext:Window 
-            ID="Window1" 
+
+        <ext:Window
+            ID="Window1"
             runat="server"
             Title="Example"
             Closable="false"
@@ -151,26 +151,26 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:Button
-                            runat="server" 
-                            Text="Reconfigure" 
+                            runat="server"
+                            Text="Reconfigure"
                             Icon="Accept">
                             <DirectEvents>
                                 <Click OnEvent="Button1_Click">
-                                    <EventMask 
-                                        ShowMask="true" 
-                                        Target="CustomTarget" 
-                                        CustomTarget="Window1" 
+                                    <EventMask
+                                        ShowMask="true"
+                                        Target="CustomTarget"
+                                        CustomTarget="Window1"
                                         />
                                 </Click>
-                            </DirectEvents>    
+                            </DirectEvents>
                         </ext:Button>
                     </Items>
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:GridPanel 
+                <ext:GridPanel
                     ID="GridPanel1"
-                    runat="server" 
+                    runat="server"
                     Border="false">
                     <Store>
                         <ext:Store ID="Store1" runat="server">
@@ -205,7 +205,7 @@
                     <View>
                         <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
                     </View>
-                </ext:GridPanel> 
+                </ext:GridPanel>
             </Items>
         </ext:Window>
     </form>

@@ -13,47 +13,47 @@
 <head runat="server">
     <title>DropDownField ValueText Mode - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var getValues = function (tree) {
-            var msg = [], 
+            var msg = [],
                 selNodes = tree.getChecked();
-                 
+
             Ext.each(selNodes, function (node) {
                 msg.push(node.data.id);
             });
-                
+
             return msg.join(",");
         };
-            
+
         var getText = function (tree) {
-            var msg = [], 
+            var msg = [],
                 selNodes = tree.getChecked();
-            msg.push("[");   
-                 
+            msg.push("[");
+
             Ext.each(selNodes, function (node) {
                 if (msg.length > 1) {
                     msg.push(",");
                 }
-                    
+
                 msg.push(node.data.text);
             });
-                
+
             msg.push("]");
-                
+
             return msg.join("");
         };
-            
+
         var syncValue = function (value) {
             var tree = this.component;
-                
+
             var ids = value.split(",");
             tree.setChecked({ids: ids, silent: true});
-                   
+
             tree.getSelectionModel().deselectAll();
             Ext.each(ids, function (id) {
-                var node = tree.store.getNodeById(id);      
-                       
+                var node = tree.store.getNodeById(id);
+
                 if (node) {
                     tree.getSelectionModel().select(node, true);
                 }
@@ -64,21 +64,21 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DropDownField ValueText Mode</h1>
-        
-        <ext:DropDownField 
-            ID="Field1" 
-            runat="server" 
-		    UnderlyingValue="Item22,Item23"
-		    Text="[Milk,Cereal]"
-		    Editable="false" 
-		    Width="300" 
-		    TriggerIcon="SimpleArrowDown" 
-		    Mode="ValueText">
+
+        <ext:DropDownField
+            ID="Field1"
+            runat="server"
+            UnderlyingValue="Item22,Item23"
+            Text="[Milk,Cereal]"
+            Editable="false"
+            Width="300"
+            TriggerIcon="SimpleArrowDown"
+            Mode="ValueText">
             <Component>
-                <ext:TreePanel 
-                    runat="server" 
+                <ext:TreePanel
+                    runat="server"
                     Title="My Task List"
                     Icon="Accept"
                     Height="300"
@@ -105,7 +105,7 @@
                                         <ext:Node NodeID="Item21" Text="Bananas" Leaf="true" Checked="False" />
                                         <ext:Node NodeID="Item22" Text="Milk" Leaf="true" Checked="False" />
                                         <ext:Node NodeID="Item23" Text="Cereal" Leaf="true" Checked="False" />
-                                        
+
                                         <ext:Node Text="Energy foods" Icon="Folder">
                                             <Children>
                                                 <ext:Node NodeID="Item241" Text="Coffee" Leaf="true" Checked="False" />
@@ -136,7 +136,7 @@
                     </Listeners>
                     <SelectionModel>
                         <ext:TreeSelectionModel runat="server" Mode="Multi" />
-                    </SelectionModel>      
+                    </SelectionModel>
                  </ext:TreePanel>
             </Component>
             <Listeners>
@@ -144,7 +144,7 @@
             </Listeners>
             <SyncValue Fn="syncValue" />
         </ext:DropDownField>
-    
+
         <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:Button runat="server" Text="Show Value">
@@ -152,13 +152,13 @@
                         <Click Handler="alert(#{Field1}.getValue());" />
                     </Listeners>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Show Text">
                     <Listeners>
                         <Click Handler="alert(#{Field1}.getText());" />
                     </Listeners>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Set Value">
                     <DirectEvents>
                         <Click OnEvent="SetValueClick" />

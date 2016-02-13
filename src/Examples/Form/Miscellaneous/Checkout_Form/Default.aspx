@@ -57,7 +57,7 @@
                 new object[] { "WA" },
                 new object[] { "WV" },
                 new object[] { "WI" },
-                new object[] { "WY" } 
+                new object[] { "WY" }
             };
         }
     }
@@ -68,7 +68,7 @@
 <html>
 <head runat="server">
     <title>Checkout Form - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />       
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var onMailingAddrFieldChange = function (field) {
@@ -103,7 +103,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Checkout Form</h1>
 
         <p>
@@ -112,37 +112,37 @@
             and listening to change events to automatically copy values from Mailing Address to Billing Address fields.
         </p>
 
-        <ext:FormPanel 
+        <ext:FormPanel
             runat="server"
             Title="Complete Check Out"
             Frame="true"
             Width="550"
             BodyPadding="5">
-            
+
             <FieldDefaults LabelAlign="Right" LabelWidth="90" MsgTarget="Qtip" />
 
             <Items>
-                <ext:FieldSet 
+                <ext:FieldSet
                     runat="server"
                     Title="Your Contact Information"
                     Layout="AnchorLayout"
                     DefaultAnchor="100%">
                     <Items>
-                        <ext:FieldContainer 
+                        <ext:FieldContainer
                             runat="server"
                             FieldLabel="Name"
                             Layout="HBoxLayout"
                             CombineErrors="true">
                             <FieldDefaults HideLabel="true" />
                             <Items>
-                                <ext:TextField runat="server" 
+                                <ext:TextField runat="server"
                                     Name="firstName"
                                     FieldLabel="First Name"
                                     Flex="2"
                                     EmptyText="First"
                                     AllowBlank="false" />
 
-                                <ext:TextField runat="server" 
+                                <ext:TextField runat="server"
                                     Name="lastName"
                                     FieldLabel="Last Name"
                                     Flex="3"
@@ -155,7 +155,7 @@
                             Layout="HBoxLayout"
                             MarginSpec="0 0 5 0">
                             <Items>
-                                <ext:TextField 
+                                <ext:TextField
                                     runat="server"
                                     FieldLabel="Email Address"
                                     Name="email"
@@ -164,7 +164,7 @@
                                     AllowBlank="false">
                                 </ext:TextField>
 
-                                <ext:TextField 
+                                <ext:TextField
                                     runat="server"
                                     FieldLabel="Phone Number"
                                     LabelWidth="100"
@@ -180,29 +180,29 @@
                     </Items>
                 </ext:FieldSet>
 
-                <ext:FieldSet 
+                <ext:FieldSet
                     runat="server"
                     Title="Mailing Address"
                     Layout="AnchorLayout"
                     DefaultAnchor="100%">
                     <Items>
-                        <ext:TextField 
+                        <ext:TextField
                             runat="server"
                             FieldLabel="Street Address"
                             Name="mailingStreet"
-                            AllowBlank="false"                            
+                            AllowBlank="false"
                             BillingFieldName="billingStreet"><%--it is custom config property--%>
                             <Listeners>
                                 <Change Fn="onMailingAddrFieldChange" />
                             </Listeners>
                         </ext:TextField>
 
-                        <ext:Container 
+                        <ext:Container
                             runat="server"
                             Layout="HBoxLayout"
                             MarginSpec="0 0 5 0">
                             <Items>
-                                <ext:TextField 
+                                <ext:TextField
                                     runat="server"
                                     FieldLabel="City"
                                     Name="mailingCity"
@@ -214,7 +214,7 @@
                                     </Listeners>
                                 </ext:TextField>
 
-                                <ext:ComboBox 
+                                <ext:ComboBox
                                     runat="server"
                                     Name="mailingState"
                                     BillingFieldName="billingState"
@@ -233,7 +233,7 @@
                                                 <ext:Model runat="server">
                                                     <Fields>
                                                         <ext:ModelField Name="abbr" />
-                                                    </Fields>                                                    
+                                                    </Fields>
                                                 </ext:Model>
                                             </Model>
                                             <Reader>
@@ -246,7 +246,7 @@
                                     </Listeners>
                                 </ext:ComboBox>
 
-                                <ext:TextField 
+                                <ext:TextField
                                     runat="server"
                                     FieldLabel="Postal Code"
                                     LabelWidth="80"
@@ -268,13 +268,13 @@
                     </Items>
                 </ext:FieldSet>
 
-                <ext:FieldSet 
+                <ext:FieldSet
                     runat="server"
                     Title="Billing Address"
                     Layout="AnchorLayout"
                     DefaultAnchor="100%">
                     <Items>
-                        <ext:Checkbox 
+                        <ext:Checkbox
                             runat="server"
                             Name="billingSameAsMailing"
                             BoxLabel="Same as Mailing Address?"
@@ -284,20 +284,20 @@
                             Handler="toggleBillingAddressFields">
                         </ext:Checkbox>
 
-                        <ext:TextField 
+                        <ext:TextField
                             runat="server"
                             FieldLabel="Street Address"
                             Name="billingStreet"
                             Disabled="true"
                             AllowBlank="false" />
 
-                        <ext:Container 
+                        <ext:Container
                             runat="server"
                             Layout="HBoxLayout"
                             MarginSpec="0 0 5 0">
                             <Items>
-                                <ext:TextField 
-                                    runat="server" 
+                                <ext:TextField
+                                    runat="server"
                                     FieldLabel="City"
                                     Name="billingCity"
                                     StyleSpec='<%# !RequestManager.IsIE6 ? "opacity:.3" : "" %>'
@@ -306,7 +306,7 @@
                                     Disabled="true"
                                     AllowBlank="false" />
 
-                                <ext:ComboBox 
+                                <ext:ComboBox
                                     runat="server"
                                     Name="billingState"
                                     StyleSpec='<%# !RequestManager.IsIE6 ? "opacity:.3" : "" %>'
@@ -323,8 +323,8 @@
                                     AllowBlank="false"
                                     ForceSelection="true" />
 
-                                <ext:TextField 
-                                    runat="server" 
+                                <ext:TextField
+                                    runat="server"
                                     FieldLabel="Postal Code"
                                     LabelWidth="80"
                                     Name="billingPostalCode"
@@ -343,13 +343,13 @@
                     </Items>
                 </ext:FieldSet>
 
-                <ext:FieldSet 
+                <ext:FieldSet
                     runat="server"
                     Title="Payment"
                     Layout="AnchorLayout"
                     DefaultAnchor="100%">
                     <Items>
-                        <ext:RadioGroup 
+                        <ext:RadioGroup
                             runat="server"
                             Anchor="none"
                             >
@@ -361,42 +361,42 @@
                                 <ext:Parameter Name="style" Value="margin-right:15px;" />
                             </Defaults>
                             <Items>
-                                <ext:Radio 
-                                    runat="server" 
-                                    InputValue="visa" 
-                                    BoxLabel="VISA" 
+                                <ext:Radio
+                                    runat="server"
+                                    InputValue="visa"
+                                    BoxLabel="VISA"
                                     Checked="true" />
 
-                                <ext:Radio 
-                                    runat="server" 
-                                    InputValue="mastercard" 
+                                <ext:Radio
+                                    runat="server"
+                                    InputValue="mastercard"
                                     BoxLabel="MasterCard" />
 
-                                <ext:Radio 
-                                    runat="server" 
-                                    InputValue="amex" 
+                                <ext:Radio
+                                    runat="server"
+                                    InputValue="amex"
                                     BoxLabel="American Express" />
 
-                                <ext:Radio 
-                                    runat="server" 
-                                    InputValue="discover" 
+                                <ext:Radio
+                                    runat="server"
+                                    InputValue="discover"
                                     BoxLabel="Discover" />
                             </Items>
                         </ext:RadioGroup>
-                        
-                        <ext:TextField 
-                            runat="server" 
-                            Name="ccName" 
+
+                        <ext:TextField
+                            runat="server"
+                            Name="ccName"
                             FieldLabel="Name On Card"
                             AllowBlank="false" />
 
-                        <ext:Container 
+                        <ext:Container
                             runat="server"
                             Layout="HBoxLayout"
                             MarginSpec="0 0 5 0">
                             <Items>
-                                <ext:TextField 
-                                    runat="server" 
+                                <ext:TextField
+                                    runat="server"
                                     Name="ccNumber"
                                     FieldLabel="Card Number"
                                     Flex="1"
@@ -406,14 +406,14 @@
                                     EnforceMaxLength="true"
                                     MaskRe="\d"/>
 
-                                <ext:FieldContainer 
+                                <ext:FieldContainer
                                     runat="server"
                                     FieldLabel="Expiration"
                                     LabelWidth="75"
                                     Layout="HBoxLayout"
                                     Width="250">
                                     <Items>
-                                        <ext:ComboBox 
+                                        <ext:ComboBox
                                             runat="server"
                                             Name="ccExpireMonth"
                                             EmptyText="Month"
@@ -438,8 +438,8 @@
                                             </Items>
                                         </ext:ComboBox>
 
-                                        <ext:NumberField 
-                                            runat="server" 
+                                        <ext:NumberField
+                                            runat="server"
                                             Name="ccExpireYear"
                                             HideLabel="true"
                                             Width="65"

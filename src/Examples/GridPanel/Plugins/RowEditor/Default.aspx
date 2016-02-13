@@ -9,42 +9,42 @@
         if (!X.IsAjaxRequest)
         {
             Store store = this.GridPanel1.GetStore();
-            
+
             store.DataSource = new List<object>
             {
-                new { 
-                    Name = "Bill Foot", 
-                    Email = "bill.foot@ext.net", 
-                    Start = new DateTime(2007, 2, 5), 
-                    Salary = 37000, 
+                new {
+                    Name = "Bill Foot",
+                    Email = "bill.foot@ext.net",
+                    Start = new DateTime(2007, 2, 5),
+                    Salary = 37000,
                     Active = true
                 },
-                new { 
-                    Name = "Bill Little", 
-                    Email = "bill.little@ext.net", 
-                    Start = new DateTime(2009, 6, 13), 
-                    Salary = 53000, 
+                new {
+                    Name = "Bill Little",
+                    Email = "bill.little@ext.net",
+                    Start = new DateTime(2009, 6, 13),
+                    Salary = 53000,
                     Active = true
                 },
-                new { 
-                    Name = "Bob Jones", 
-                    Email = "bob.jones@ext.net", 
-                    Start = new DateTime(2008, 10, 6), 
-                    Salary = 70000, 
+                new {
+                    Name = "Bob Jones",
+                    Email = "bob.jones@ext.net",
+                    Start = new DateTime(2008, 10, 6),
+                    Salary = 70000,
                     Active = true
                 },
-                new { 
-                    Name = "Bob Train", 
-                    Email = "bob.train@ext.net", 
-                    Start = new DateTime(2009, 5, 5), 
-                    Salary = 68000, 
+                new {
+                    Name = "Bob Train",
+                    Email = "bob.train@ext.net",
+                    Start = new DateTime(2009, 5, 5),
+                    Salary = 68000,
                     Active = true
                 },
-                new { 
-                    Name = "Chris Johnson", 
-                    Email = "chris.johnson@ext.net", 
-                    Start = new DateTime(2009, 1, 25), 
-                    Salary = 47000, 
+                new {
+                    Name = "Chris Johnson",
+                    Email = "chris.johnson@ext.net",
+                    Start = new DateTime(2009, 1, 25),
+                    Salary = 47000,
                     Active = true
                 }
             };
@@ -53,12 +53,12 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>GridPanel with RowEditor Plugin - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var addEmployee = function () {
             var grid = App.GridPanel1,
@@ -79,7 +79,7 @@
 
             grid.editingPlugin.startEdit(0, 0);
         };
-            
+
         var removeEmployee = function () {
             var grid = App.GridPanel1,
                 sm = grid.getSelectionModel(),
@@ -97,11 +97,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel with RowEditor Plugin</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
             Width="600"
             Height="400"
@@ -127,7 +127,7 @@
             </Store>
             <Plugins>
                 <ext:RowEditing runat="server" ClicksToMoveEditor="1" AutoCancel="false" />
-            </Plugins>            
+            </Plugins>
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -136,11 +136,11 @@
                                 <Click Fn="addEmployee" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button 
-                            ID="btnRemoveEmployee" 
-                            runat="server" 
-                            Text="Remove Employee" 
-                            Icon="UserDelete" 
+                        <ext:Button
+                            ID="btnRemoveEmployee"
+                            runat="server"
+                            Text="Remove Employee"
+                            Icon="UserDelete"
                             Disabled="true">
                             <Listeners>
                                 <Click Fn="removeEmployee" />
@@ -148,13 +148,13 @@
                         </ext:Button>
                     </Items>
                 </ext:Toolbar>
-            </TopBar>            
+            </TopBar>
             <ColumnModel>
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="25" />
-                    <ext:Column runat="server"                         
-                        Text="Name" 
-                        DataIndex="name" 
+                    <ext:Column runat="server"
+                        Text="Name"
+                        DataIndex="name"
                         Flex="1">
                         <Editor>
                             <ext:TextField runat="server" AllowBlank="false" />
@@ -165,18 +165,18 @@
                             <ext:TextField runat="server" AllowBlank="false" Vtype="email" />
                         </Editor>
                     </ext:Column>
-                    <ext:DateColumn runat="server" 
-                        Text="Start Date" 
-                        DataIndex="start" 
-                        Format="MM/dd/yyyy" 
+                    <ext:DateColumn runat="server"
+                        Text="Start Date"
+                        DataIndex="start"
+                        Format="MM/dd/yyyy"
                         Width="100">
                         <Editor>
-                            <ext:DateField 
-                                runat="server" 
-                                AllowBlank="false" 
+                            <ext:DateField
+                                runat="server"
+                                AllowBlank="false"
                                 Format="MM/dd/yyyy"
-                                MinDate="01.01.2006" 
-                                MinText="Can not have a start date before the Company existed." 
+                                MinDate="01.01.2006"
+                                MinText="Can not have a start date before the Company existed."
                                 MaxDate="<%# DateTime.Now %>"
                                 AutoDataBind="true"
                                 />
@@ -184,23 +184,23 @@
                     </ext:DateColumn>
                     <ext:NumberColumn
                         runat="server"
-                        Text="Salary" 
-                        DataIndex="salary" 
+                        Text="Salary"
+                        DataIndex="salary"
                         Format="$0,0"
                         Align="Center">
                         <Editor>
-                            <ext:NumberField 
-                                runat="server" 
-                                AllowBlank="false" 
-                                MinValue="1" 
-                                MaxValue="150000" 
+                            <ext:NumberField
+                                runat="server"
+                                AllowBlank="false"
+                                MinValue="1"
+                                MaxValue="150000"
                                 />
                         </Editor>
                     </ext:NumberColumn>
                     <ext:CheckColumn
                         runat="server"
-                        Text="Active?" 
-                        DataIndex="active"                         
+                        Text="Active?"
+                        DataIndex="active"
                         Width="75">
                         <Editor>
                             <ext:Checkbox runat="server" Cls="x-grid-checkheader-editor" />
@@ -212,6 +212,6 @@
                 <SelectionChange Handler="App.btnRemoveEmployee.setDisabled(!selected.length);" />
             </Listeners>
         </ext:GridPanel>
-    </form>  
+    </form>
 </body>
 </html>

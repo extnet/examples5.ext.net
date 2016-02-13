@@ -21,7 +21,7 @@
 <html>
 <head runat="server">
     <title>Ext.NET Examples</title>
-    
+
     <script>
         var CountrySelector = {
             swapRecords : function (source, destination, records) {
@@ -33,18 +33,18 @@
             add : function (source, destination) {
                 source = source || GridPanel1;
                 destination = destination || GridPanel2;
-                
+
                 if (source.selModel.hasSelection()) {
                     var records = source.selModel.getSelection();
                     source.store.remove(records);
-					this.swapRecords(source, destination, records);                    
+                    this.swapRecords(source, destination, records);
                 }
             },
             addAll : function (source, destination) {
                 source = source || GridPanel1;
                 destination = destination || GridPanel2;
                 source.store.removeAll();
-				this.swapRecords(source, destination, source.store.getRange());                
+                this.swapRecords(source, destination, source.store.getRange());
             },
 
             remove : function (source, destination) {
@@ -61,42 +61,42 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Label ID="Label1" runat="server" />
-        
-        <asp:XmlDataSource 
-            ID="XmlDataSource1" 
-            runat="server" 
-            DataFile="Countries.xml" 
+
+        <asp:XmlDataSource
+            ID="XmlDataSource1"
+            runat="server"
+            DataFile="Countries.xml"
             TransformFile="Countries.xsl"
             />
-         
+
         <ext:Store runat="server" ID="Store1" DataSourceID="XmlDataSource1">
             <Sorters>
                 <ext:DataSorter Property="Name" Direction="ASC" />
-            </Sorters>      
+            </Sorters>
             <Model>
                 <ext:Model runat="server">
                     <Fields>
-                        <ext:ModelField Name="Name" />                        
+                        <ext:ModelField Name="Name" />
                     </Fields>
                 </ext:Model>
             </Model>
         </ext:Store>
-        
+
         <ext:Store runat="server" ID="Store2" OnBeforeStoreChanged="SaveSelection">
             <Model>
                 <ext:Model runat="server">
                     <Fields>
-                        <ext:ModelField Name="Name" />                        
+                        <ext:ModelField Name="Name" />
                     </Fields>
                 </ext:Model>
-            </Model>         
+            </Model>
         </ext:Store>
-        
-        <ext:Window 
-            ID="Window1" 
-            runat="server"             
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
             Closable="false"
             Height="553"
             Width="700"
@@ -104,29 +104,29 @@
             Title="Country Selector"
             BodyPadding="5"
             BodyBorder="false"
-            Layout="HBoxLayout"> 
+            Layout="HBoxLayout">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
-            </LayoutConfig>           
+            </LayoutConfig>
             <Items>
-                <ext:GridPanel 
-                    runat="server" 
-                    ID="GridPanel1" 
+                <ext:GridPanel
+                    runat="server"
+                    ID="GridPanel1"
                     EnableDragDrop="true"
                     StoreID="Store1"
                     Flex="1">
                     <ColumnModel runat="server">
-	                    <Columns>
+                        <Columns>
                             <ext:Column runat="server" Text="Available Countries" DataIndex="Name" Flex="1">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
-                            </ext:Column>                
-	                    </Columns>
+                            </ext:Column>
+                        </Columns>
                     </ColumnModel>
                     <SelectionModel>
                         <ext:RowSelectionModel runat="server" Mode="Multi" />
-                    </SelectionModel> 
+                    </SelectionModel>
                     <Plugins>
                         <ext:GridFilters ID="GridFilters1" runat="server" />
                     </Plugins>
@@ -172,24 +172,24 @@
                         </ext:Panel>
                     </Items>
                 </ext:Panel>
-                <ext:GridPanel 
-                    runat="server" 
-                    ID="GridPanel2" 
-                    EnableDragDrop="false" 
+                <ext:GridPanel
+                    runat="server"
+                    ID="GridPanel2"
+                    EnableDragDrop="false"
                     StoreID="Store2"
                     Flex="1">
                     <Listeners>
                     </Listeners>
                     <ColumnModel runat="server">
-	                    <Columns>
-                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />                   
-	                    </Columns>
+                        <Columns>
+                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />
+                        </Columns>
                     </ColumnModel>
                     <SelectionModel>
                         <ext:RowSelectionModel ID="RowSelectionModel2" runat="server" Mode="Multi" />
-                    </SelectionModel>  
+                    </SelectionModel>
                 </ext:GridPanel>
-            </Items>  
+            </Items>
             <Buttons>
                 <ext:Button ID="Button1" runat="server" Text="Save Selected Countries" Icon="Disk">
                     <Listeners>
@@ -201,7 +201,7 @@
                         <Click Handler="CountrySelector.removeAll(GridPanel1, GridPanel2);" />
                     </Listeners>
                 </ext:Button>
-            </Buttons>      
+            </Buttons>
         </ext:Window>
     </form>
 </body>
