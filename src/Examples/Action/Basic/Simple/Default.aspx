@@ -1,5 +1,5 @@
 <%@ Page Language="C#" %>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -11,8 +11,8 @@
     <script>
         var changeText = function (panel) {
             var btn = panel.getComponent('myAction'),
-                ref = btn.baseAction; 
-            
+                ref = btn.baseAction;
+
             Ext.Msg.prompt('Enter Text', 'Enter new text for the Action:', function (btn, text) {
                 if (btn == 'ok' && text) {
                     ref.setText(text);
@@ -30,21 +30,21 @@
     <h1>Using Action</h1>
 
     <p>Actions let you share client-side handlers, configuration and updates across Toolbar, Button and Menu components.</p>
-   
-    <ext:Panel 
+
+    <ext:Panel
         ID="Panel1"
         runat="server"
         Title="Actions"
         Width="500"
         Height="300">
         <Bin>
-            <ext:Action 
+            <ext:Action
                 ID="Action1"
-                runat="server" 
+                runat="server"
                 Text="Do something"
                 Handler="Ext.Msg.alert('Click', 'You did something.');"
                 Icon="Add"
-                ItemID="myAction" 
+                ItemID="myAction"
                 />
         </Bin>
         <TopBar>
@@ -61,13 +61,13 @@
                         </Menu>
                     </ext:Button>
                 </Items>
-            </ext:Toolbar>             
+            </ext:Toolbar>
         </TopBar>
-        <Items>            
-            <ext:ActionRef 
-                runat="server" 
-                Action="#{Action1}" 
-                InstanceType="Ext.Net.SplitButton" 
+        <Items>
+            <ext:ActionRef
+                runat="server"
+                Action="#{Action1}"
+                InstanceType="Ext.Net.SplitButton"
                 />
         </Items>
         <BottomBar>
@@ -84,17 +84,17 @@
                             <Click Handler="var action = #{Action1}; action.setIconCls(action.getIconCls() == '#Add' ? '#Delete' : '#Add');" />
                         </Listeners>
                     </ext:Button>
-                    
-                    <ext:Button 
-                        runat="server" 
-                        Text="Change Text" 
-                        Handler="#{Action1}.setText('Something else');" 
+
+                    <ext:Button
+                        runat="server"
+                        Text="Change Text"
+                        Handler="#{Action1}.setText('Something else');"
                         />
-                    
-                    <ext:Button 
-                        runat="server" 
-                        Text="Another Text Change" 
-                        Handler="changeText(#{Panel1});" 
+
+                    <ext:Button
+                        runat="server"
+                        Text="Another Text Change"
+                        Handler="changeText(#{Panel1});"
                         />
                 </Items>
             </ext:Toolbar>

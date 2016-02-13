@@ -109,8 +109,8 @@
                 logPanel = App.LogPanel,
                 el = view.el,
                 br = view.bufferedRenderer,
-				oldSynchronousRender = br.oldSynchronousRender,
-	            scrollQuantum = 30,
+                oldSynchronousRender = br.oldSynchronousRender,
+                scrollQuantum = 30,
                 start = new Date().getTime(),
                 nextScroll = function () {
                     el.dom.scrollTop += scrollQuantum;

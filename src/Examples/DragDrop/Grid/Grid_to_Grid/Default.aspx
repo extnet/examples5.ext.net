@@ -6,7 +6,7 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         List<object> data = new List<object>();
-        
+
         for (int i = 0; i < 10; i++)
         {
             data.Add(new
@@ -32,15 +32,15 @@
     <script>
         var getDragDropText = function () {
             var buf = [];
-            
+
             buf.push("<ul>");
-            
+
             Ext.each(this.view.panel.getSelectionModel().getSelection(), function (record) {
                 buf.push("<li>"+record.data.Name+"</li>");
             });
-            
+
             buf.push("</ul>");
-            
+
             return buf.join("");
         };
     </script>
@@ -48,19 +48,19 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Drag and Drop from GridPanel to GridPanel</h1>
-        
-        <p>This example shows how to setup two way drag and drop from one GridPanel to another.</p>    
-        
+
+        <p>This example shows how to setup two way drag and drop from one GridPanel to another.</p>
+
         <ext:Panel runat="server" Width="650" Height="300">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" Padding="5" />
             </LayoutConfig>
             <Items>
                 <ext:GridPanel
-                    ID="GridPanel1" 
-                    runat="server" 
+                    ID="GridPanel1"
+                    runat="server"
                     MultiSelect="true"
                     Flex="1"
                     Title="Left"
@@ -84,7 +84,7 @@
                             <ext:Column runat="server" Text="Column 1" Width="60" DataIndex="Column1" />
                             <ext:Column runat="server" Text="Column 2" Width="60" DataIndex="Column2" />
                         </Columns>
-                    </ColumnModel>                    
+                    </ColumnModel>
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
@@ -92,14 +92,14 @@
                             </Plugins>
                             <Listeners>
                                 <AfterRender Handler="this.plugins[0].dragZone.getDragText = getDragDropText;" Delay="1" />
-                                <Drop Handler="var dropOn = overModel ? ' ' + dropPosition + ' ' + overModel.get('Name') : ' on empty view'; 
+                                <Drop Handler="var dropOn = overModel ? ' ' + dropPosition + ' ' + overModel.get('Name') : ' on empty view';
                                                Ext.net.Notification.show({title:'Drag from right to left', html:'Dropped ' + data.records[0].get('Name') + dropOn});" />
                             </Listeners>
                         </ext:GridView>
-                    </View>   
+                    </View>
                 </ext:GridPanel>
-                <ext:GridPanel 
-                    ID="GridPanel2" 
+                <ext:GridPanel
+                    ID="GridPanel2"
                     runat="server"
                     MultiSelect="true"
                     Title="Right"
@@ -124,7 +124,7 @@
                             <ext:Column runat="server" Text="Column 1" Width="60" DataIndex="Column1" />
                             <ext:Column runat="server" Text="Column 2" Width="60" DataIndex="Column2" />
                         </Columns>
-                    </ColumnModel>                   
+                    </ColumnModel>
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
@@ -132,11 +132,11 @@
                             </Plugins>
                             <Listeners>
                                 <AfterRender Handler="this.plugins[0].dragZone.getDragText = getDragDropText;" Delay="1" />
-                                <Drop Handler="var dropOn = overModel ? ' ' + dropPosition + ' ' + overModel.get('Name') : ' on empty view'; 
+                                <Drop Handler="var dropOn = overModel ? ' ' + dropPosition + ' ' + overModel.get('Name') : ' on empty view';
                                                Ext.net.Notification.show({title:'Drag from left to right', html:'Dropped ' + data.records[0].get('Name') + dropOn});" />
                             </Listeners>
                         </ext:GridView>
-                    </View>   
+                    </View>
                 </ext:GridPanel>
             </Items>
             <BottomBar>
@@ -149,9 +149,9 @@
                             </Listeners>
                         </ext:Button>
                     </Items>
-                </ext:Toolbar>                
+                </ext:Toolbar>
             </BottomBar>
-        </ext:Panel> 
-    </form>    
+        </ext:Panel>
+    </form>
 </body>
 </html>

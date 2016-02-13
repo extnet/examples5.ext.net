@@ -9,16 +9,16 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>XML file loading</h1>
-    
+
     <p>This example shows how to load a data from an XML file directly.</p>
 
-    <ext:GridPanel 
-        runat="server" 
-        Width="600" 
-        Height="300" 
-        Title="Plants" 
+    <ext:GridPanel
+        runat="server"
+        Width="600"
+        Height="300"
+        Title="Plants"
         Frame="true">
         <Store>
             <ext:Store runat="server">
@@ -43,45 +43,45 @@
                 </Model>
                 <Sorters>
                     <ext:DataSorter Property="common" Direction="ASC" />
-                </Sorters>        
+                </Sorters>
             </ext:Store>
         </Store>
         <ColumnModel runat="server">
-		    <Columns>
-                <ext:Column 
-                    runat="server" 
-                    Text="Common Name" 
-                    DataIndex="common" 
-                    Flex="1" 
+            <Columns>
+                <ext:Column
+                    runat="server"
+                    Text="Common Name"
+                    DataIndex="common"
+                    Flex="1"
                     />
-                <ext:Column 
-                    runat="server" 
-                    Text="Light" 
-                    DataIndex="light" 
-                    Width="130" 
+                <ext:Column
+                    runat="server"
+                    Text="Light"
+                    DataIndex="light"
+                    Width="130"
                     />
-                <ext:Column 
-                    runat="server" 
-                    Text="Price" 
-                    DataIndex="price" 
-                    Width="70" 
+                <ext:Column
+                    runat="server"
+                    Text="Price"
+                    DataIndex="price"
+                    Width="70"
                     Align="right">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
-                <ext:DateColumn 
-                    runat="server" 
-                    Text="Available" 
-                    DataIndex="availability" 
-                    Width="95" 
-                    Format="yyyy-MM-dd" 
+                <ext:DateColumn
+                    runat="server"
+                    Text="Available"
+                    DataIndex="availability"
+                    Width="95"
+                    Format="yyyy-MM-dd"
                     />
-                <ext:Column 
-                    runat="server" 
-                    Text="Indoor?" 
-                    DataIndex="indoor" 
-                    Width="55" 
+                <ext:Column
+                    runat="server"
+                    Text="Indoor?"
+                    DataIndex="indoor"
+                    Width="55"
                     />
-		    </Columns>
+            </Columns>
         </ColumnModel>
     </ext:GridPanel>
 </body>

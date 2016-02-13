@@ -27,7 +27,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>Icons - Ext.NET Examples</title>
@@ -36,14 +36,14 @@
             padding : 20px;
             font    : normal 11px arial,helvetica,sans-serif;
         }
-        
+
         .thumb-wrap {
             float  : left;
             width  : 150px;
             height : 22px;
             color  : #333;
         }
-        
+
         .thumb-wrap img {
             width : 16px;
             vertical-align : middle;
@@ -52,9 +52,9 @@
 </head>
 <body>
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    
-    <ext:DataView 
-        ID="DataView1" 
+
+    <ext:DataView
+        ID="DataView1"
         runat="server"
         ItemSelector="div.thumb-wrap">
         <Store>
@@ -63,22 +63,22 @@
                     <ext:Model runat="server">
                         <Fields>
                             <ext:ModelField Name="name" />
-                            <ext:ModelField Name="url" />      
+                            <ext:ModelField Name="url" />
                         </Fields>
                     </ext:Model>
                 </Model>
-            </ext:Store>    
+            </ext:Store>
         </Store>
         <Template runat="server">
             <Html>
-				<tpl for=".">
-					<div class="thumb-wrap" id="{name}">
-						<div class="thumb"><img src="{url}" title="{name}">&nbsp;{name}</div>
-					</div>
-				</tpl>
-				<div class="x-clear"></div>            
-			</Html>
-        </Template>                         
+                <tpl for=".">
+                    <div class="thumb-wrap" id="{name}">
+                        <div class="thumb"><img src="{url}" title="{name}">&nbsp;{name}</div>
+                    </div>
+                </tpl>
+                <div class="x-clear"></div>
+            </Html>
+        </Template>
     </ext:DataView>
 </body>
 </html>

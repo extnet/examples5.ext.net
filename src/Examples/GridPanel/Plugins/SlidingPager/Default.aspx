@@ -41,7 +41,7 @@
             };
         }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -70,13 +70,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
+
         <h1>SlidingPager with Resizer</h1>
-        
-        <ext:Store 
-            ID="Store1" 
-            runat="server" 
-            OnReadData="Store1_Refresh" 
+
+        <ext:Store
+            ID="Store1"
+            runat="server"
+            OnReadData="Store1_Refresh"
             PageSize="10">
             <Model>
                 <ext:Model runat="server">
@@ -90,14 +90,14 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Array Grid" 
-            Width="600" 
-            Frame="true" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            StoreID="Store1"
+            Title="Array Grid"
+            Width="600"
+            Frame="true"
             Height="350">
             <ColumnModel runat="server">
                 <Columns>
@@ -121,8 +121,8 @@
                         </Select>
                     </DirectEvents>
                 </ext:RowSelectionModel>
-            </SelectionModel>           
-            <ResizableConfig runat="server" Handles="South" Pinned="true">                
+            </SelectionModel>
+            <ResizableConfig runat="server" Handles="South" Pinned="true">
             </ResizableConfig>
             <BottomBar>
                 <ext:PagingToolbar runat="server" StoreID="Store1" DisplayInfo="true">
@@ -134,7 +134,7 @@
                 </ext:PagingToolbar>
             </BottomBar>
         </ext:GridPanel>
-        
+
         <br />
         <ext:Label ID="Label1" runat="server" />
     </form>

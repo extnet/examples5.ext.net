@@ -8,7 +8,7 @@
             SparkHolder.Items.Add(this.CreateSpark(SparkType.Text, Values.Text));
         }
     }
-    
+
     protected void OnTypeChange(object sender, DirectEventArgs e)
     {
         SparkHolder.RemoveAll();
@@ -30,7 +30,7 @@
 
 <html>
 <head runat="server">
-    <title>SparkLine - Ext.NET Examples</title>    
+    <title>SparkLine - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -54,10 +54,10 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>SparkLine Example</h1>
-        
-        <ext:Panel 
+
+        <ext:Panel
             runat="server"
             Height="300"
             Width="600"
@@ -65,19 +65,19 @@
             Title="Sparklines"
             BodyPadding="10">
             <Items>
-                <ext:TextField 
-                    ID="Values" 
-                    runat="server"                    
+                <ext:TextField
+                    ID="Values"
+                    runat="server"
                     FieldLabel="Values"
-                    Text="6,10,4,-3,7,2">                    
+                    Text="6,10,4,-3,7,2">
                     <Validator Fn="validator" />
                     <DirectEvents>
                         <Change OnEvent="OnTypeChange" Buffer="500" />
                     </DirectEvents>
                 </ext:TextField>
 
-                <ext:ComboBox 
-                    ID="SparkType" 
+                <ext:ComboBox
+                    ID="SparkType"
                     runat="server"
                     FieldLabel="Type"
                     Editable="false"

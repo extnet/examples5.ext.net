@@ -9,18 +9,18 @@
 </head>
 <body>
     <h1>Welcome to the Ext.NET Examples Explorer</h1>
-        
+
     <h2>Overview</h2>
-        
+
     <p>Ext.NET is an advanced ASP.NET (WebForms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</p>
 
     <p>Ext.NET is built for developers, by developers. We provide hundreds of demos with full code samples in the <a href="http://examples.ext.net/">Examples Explorer</a>. Need a little help? Check out our Premium Technical <a href="http://ext.net/store#premium">Support Subscription</a>.</p>
 
-    <p>Direct access to the latest Ext.NET source code, via read-only SVN access, is available to all Ext.NET Pro 
+    <p>Direct access to the latest Ext.NET source code, via read-only SVN access, is available to all Ext.NET Pro
         license holders with a valid <a href="http://ext.net/store#premium">Premium Support</a> Subscription.</p>
-            
+
     <h2>System Requirements</h2>
-        
+
     <ol>
         <li><a href="http://microsoft.com/visualstudio/eng/products/visual-studio-overview">Visual Studio</a> 2010, 2012 and 2013, or</li>
         <li><a href="http://microsoft.com/visualstudio/eng/products/visual-studio-express-products">Visual Studio Express</a> 2010, 2012 and 2013</li>
@@ -28,10 +28,10 @@
     </ol>
 
     <p>*minimum required for Ext.NET MVC</products>
-        
+
     <h2>Getting Started (NuGet)</h2>
-        
-    <p>The easiest and quickest way to install Ext.NET is using <a href="http://nuget.org/packages/Ext.NET">NuGet</a>. Run the following command in Visual Studio Package Manager Console, 
+
+    <p>The easiest and quickest way to install Ext.NET is using <a href="http://nuget.org/packages/Ext.NET">NuGet</a>. Run the following command in Visual Studio Package Manager Console,
     or seach for "Ext.NET" in NuGet Package Manager.</p>
 
     <p><code>Install-Package Ext.NET</code></p>
@@ -40,17 +40,17 @@
 
     <ol>
         <li>First ensure you have Visual Studio or Visual Web Developer Express installed on your computer.
-            <div class="information"><p>If you do not have a copy of Visual Studio already installed, the <a href="http://microsoft.com/visualstudio/eng/products/visual-studio-express-products/">Visual Studio Express</a> is free to use and 
+            <div class="information"><p>If you do not have a copy of Visual Studio already installed, the <a href="http://microsoft.com/visualstudio/eng/products/visual-studio-express-products/">Visual Studio Express</a> is free to use and
             is a great way to get started with ASP.NET and Ext.NET. The Ext.NET Components work exactly the same in both environments.</p></div></li>
-            
+
         <li>A Manual installation package (.zip) is available for download at <a href="http://ext.net/download/">http://ext.net/download/</a>.</li>
-            
+
         <li>Create your first "Web Site" Project.
             <ol style="list-style-type: lower-roman;">
                 <li>Open Visual Studio (or Visual Web Developer) and create a new "Web Site" project. From the File Menu, select New > Web Site.</li>
                 <li>The "New Web Site" dialog will open, ensure "ASP.NET Web Site" is selected from the list of Templates.</li>
                 <li>For your first project, the "Location" option of "File System" and default file path should be fine, or modify to fit your preference.</li>
-                <li>Please select your "Language" preference. Whether you choose "Visual C#" or "Visual Basic" is ultimately just dependent on personal coding preferences. 
+                <li>Please select your "Language" preference. Whether you choose "Visual C#" or "Visual Basic" is ultimately just dependent on personal coding preferences.
                     Ext.NET is written in C#, but can be used in any .NET language, including Visual Basic, C# and even ASP.NET MVC Razor.</li>
                 <li>Click "OK".</li>
             </ol>
@@ -69,7 +69,7 @@
   &lt;/configSections>
 
   &lt;extnet theme="Crisp" licenseKey="** Ext.NET LICENSE KEY HERE **" initScriptMode="Linked" />
-  
+
   &lt;system.web>
     &lt;httpHandlers>
       &lt;add path="*/ext.axd" verb="*" type="Ext.Net.ResourceHandler" validate="false" />
@@ -88,11 +88,11 @@
 
   &lt;system.webServer>
     &lt;validation validateIntegratedModeConfiguration="false" />
-    
+
     &lt;modules>
       &lt;add name="DirectRequestModule" preCondition="managedHandler" type="Ext.Net.DirectRequestModule, Ext.Net" />
     &lt;/modules>
-    
+
     &lt;handlers>
       &lt;add name="DirectRequestHandler" verb="*" path="*/ext.axd" preCondition="integratedMode" type="Ext.Net.ResourceHandler" />
     &lt;/handlers>
@@ -157,7 +157,7 @@
         Default is 30000.
 
     ajaxViewStateMode : ViewStateMode
-        Specifies whether the ViewState should be returned and updated on the client during an DirectEvent. 
+        Specifies whether the ViewState should be returned and updated on the client during an DirectEvent.
         The Default value is to Exclude the ViewState from the Response.
         Default is 'Default'. Options include [Default|Exclude|Include]
 
@@ -166,7 +166,7 @@
         Default is 'true'. Options include [true|false]
 
     dateTimeZoneHandling : DateTimeZoneHandling
-        Specifies how to treat the time value when converting between string and DateTime. 
+        Specifies how to treat the time value when converting between string and DateTime.
         It is a Json.NET setting. More details: http://james.newtonking.com/json/help/index.html?topic=html/SerializeDateTimeZoneHandling.htm
 
     disableViewState : bool
@@ -177,12 +177,12 @@
         Default is "".
 
     directMethodProxy : ClientProxy
-        Specifies whether server-side Methods marked with the [DirectMethod] attribute will output configuration script to the client. 
-        If not, the DirectMethods can still be called, but the DirectMethod proxies are not automatically generated. 
+        Specifies whether server-side Methods marked with the [DirectMethod] attribute will output configuration script to the client.
+        If not, the DirectMethods can still be called, but the DirectMethod proxies are not automatically generated.
         Default is 'Default' (it creates the proxy for each DirectMethod). Options include [Default|Include|Ignore]
 
     directMethodNamespace : string
-        Specifies a custom namespace prefix to use for the DirectMethods. 
+        Specifies a custom namespace prefix to use for the DirectMethods.
         Defaults to App.direct.
 
     glyphFontFamily : string
@@ -206,17 +206,17 @@
         The Ext.NET Pro License key.
 
     locale : string
-        Specifies the language of the Ext.NET localization resources to use. For example, "en-GB", "fr-CA", "ru". 
+        Specifies the language of the Ext.NET localization resources to use. For example, "en-GB", "fr-CA", "ru".
         Default is English.
 
     namespace : string
-        The application's JavaScript namespace. 
+        The application's JavaScript namespace.
         Default is "App".
 
     renderScripts : ResourceLocationType
         Whether to have the Ext.NET controls output the required JavaScript includes or not.
         Gives a developer the option of manually including the required <script> files.
-        Default is Embedded. Options include [Embedded|File|CDN|None] 
+        Default is Embedded. Options include [Embedded|File|CDN|None]
 
     renderStyles : ResourceLocationType
         Whether to have the Ext.NET controls output the required StyleSheet includes or not.
@@ -224,11 +224,11 @@
         Default is Embedded. Options include [Embedded|File|CDN|None]
 
     resourcePath : string
-        Specifies the prefix of the URL path to the base ~/Ext.Net/ folder containing the resources files for this project. 
+        Specifies the prefix of the URL path to the base ~/Ext.Net/ folder containing the resources files for this project.
         The path can be Absolute or Relative.
 
     resourcesStrategyType : string
-        The class name with the logic to map Ext.NET resources to arbitrary URLs, i.e. to provide custom functionality for registering of resources (JavaScript, CSS). 
+        The class name with the logic to map Ext.NET resources to arbitrary URLs, i.e. to provide custom functionality for registering of resources (JavaScript, CSS).
         Returning "null" for a specific resource means the default URL. Returning an empty string means to prevent registering of a specific resource at all.
         The default strategy is in this file: Ext.Net\Core\ResourcesStrategy.cs.
 
@@ -237,7 +237,7 @@
         Default is false. Options include [true|false]
 
     rethrowAjaxExceptions : bool
-        Rethrow AJAX exceptions from catch sections. 
+        Rethrow AJAX exceptions from catch sections.
         Default is false. Options include [true|false]
 
     rtl : bool
@@ -274,14 +274,14 @@
         Default is "Default" (blue theme). Options include [Default|Access|Gray|Neptune]
 
     themePath : string
-        Configure the path to the custom theme .css and .js (if required) file globally across the entire application. This will override any .Theme setting. 
+        Configure the path to the custom theme .css and .js (if required) file globally across the entire application. This will override any .Theme setting.
         You can specify several files by delimiting them with "|". For example, "some.css|another.css|some.js|another.js".
         Regularly, you will need to specify the only .css file, for example, "some.css" or two files - one .css and one .js - "some.js|some.css".
-        Default is "". 
+        Default is "".
 
     quickTips : bool
         Specifies whether to render the QuickTips. Provides attractive and customizable tooltips for any element.
         Default is 'true'. Options include [true|false]
 </pre>
   </body>
-</html>    
+</html>

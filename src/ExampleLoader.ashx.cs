@@ -38,7 +38,7 @@ namespace Ext.Net.Examples
             {
                 url = url + "/";
             }
-            
+
             string examplesFolder = new Uri(HttpContext.Current.Request.Url, "Examples/").AbsolutePath.ToLower();
 
             if (!url.StartsWith(examplesFolder,true, CultureInfo.InvariantCulture))
@@ -81,7 +81,7 @@ namespace Ext.Net.Examples
                         {
                             context.Response.Write(JSON.Serialize(cfg.Comments));
                         }
-                        
+
                         context.Response.End();
                         return;
                     case "comments.add" :
@@ -205,7 +205,7 @@ namespace Ext.Net.Examples
 
             if (resources.Length > 0)
             {
-                GetSubFiles(fileList, resources[0]); 
+                GetSubFiles(fileList, resources[0]);
             }
 
             TabPanel tabs = new TabPanel

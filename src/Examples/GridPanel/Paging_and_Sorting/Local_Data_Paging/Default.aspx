@@ -8,7 +8,7 @@
         get
         {
             DateTime now = DateTime.Now;
-            
+
             return new object[]
             {
                 new object[] { "3m Co", 71.72, 0.02, 0.03, now },
@@ -43,7 +43,7 @@
             };
         }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -55,7 +55,7 @@
     protected void MyData_Refresh(object sender, StoreReadDataEventArgs e)
     {
         this.Store1.DataSource = this.TestData;
-        this.Store1.DataBind(); 
+        this.Store1.DataBind();
     }
 
     protected void Store1_Submit(object sender, StoreSubmitDataEventArgs e)
@@ -65,7 +65,7 @@
         this.Response.Clear();
 
         string strXml = xml.OuterXml;
-        
+
         this.Response.AddHeader("Content-Disposition", "attachment; filename=submittedData.xml");
         this.Response.AddHeader("Content-Length", strXml.Length.ToString());
         this.Response.ContentType = "application/xml";
@@ -76,7 +76,7 @@
 
     protected void SaveHandler(object sender, BeforeStoreChangedEventArgs e)
     {
-        XmlNode xml = e.DataHandler.XmlData;        
+        XmlNode xml = e.DataHandler.XmlData;
         StringBuilder sb = new StringBuilder();
 
         sb.Append("<p>" + e.Action + ":</p>");
@@ -91,13 +91,13 @@
         sb.Append("<br/>");
 
         /*XmlNode updated = xml.SelectSingleNode("records/Updated");
-        
+
         if (updated != null)
         {
             sb.Append("<p>Updated:</p>");
 
             XmlNodeList uRecords = updated.SelectNodes("record");
-            
+
             foreach (XmlNode record in uRecords)
             {
                 sb.Append("<p>").Append(Server.HtmlEncode(record.InnerXml)).Append("</p>");
@@ -107,13 +107,13 @@
         }
 
         XmlNode inserted = xml.SelectSingleNode("records/Created");
-        
+
         if (inserted != null)
         {
             sb.Append("<p>Created:</p>");
 
             XmlNodeList iRecords = inserted.SelectNodes("record");
-            
+
             foreach (XmlNode record in iRecords)
             {
                 sb.Append("<p>").Append(Server.HtmlEncode(record.InnerXml)).Append("</p>");
@@ -123,13 +123,13 @@
         }
 
         XmlNode deleted = xml.SelectSingleNode("records/Deleted");
-        
+
         if (deleted != null)
         {
             sb.Append("<p>Deleted:</p>");
 
             XmlNodeList dRecords = deleted.SelectNodes("record");
-            
+
             foreach (XmlNode record in dRecords)
             {
                 sb.Append("<p>").Append(Server.HtmlEncode(record.InnerXml)).Append("</p>");
@@ -147,19 +147,19 @@
 <html>
 <head runat="server">
     <title>Local Data Paging - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var count = 0; // a counter for new records
 
-        var exportData = function (selectedOnly) {                        
+        var exportData = function (selectedOnly) {
             App.GridPanel1.submitData({selectedOnly : selectedOnly}, {isUpload:true});
         };
-        
+
         var selectRecord = function (id) {
             var grid = App.GridPanel1,
                 record = grid.store.getById(id);
-            
+
             if (!record) {
                 Ext.Msg.alert("Error", "Record '" + id + "' not found.");
             } else {
@@ -175,28 +175,28 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>The sample demonstrates local paging in the GridPanel</h1>
-        
+
         <p>1. Local Paging</p>
         <p>2. You can submit data from all grid's pages in one request</p>
         <p>3. If you edit data on various grid's pages then you can save in one request and changes will not be lost when you navigate beetwen pages</p>
         <p>4. Get selected data from all pages</p>
         <p>5. Navigate on page by record</p>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Array Grid" 
-            Width="850" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Array Grid"
+            Width="850"
             Height="520">
             <Store>
-                <ext:Store 
+                <ext:Store
                     ID="Store1"
-                    runat="server"             
-                    RemoteSort="false"            
-                    OnReadData="MyData_Refresh" 
-                    OnSubmitData="Store1_Submit" 
+                    runat="server"
+                    RemoteSort="false"
+                    OnReadData="MyData_Refresh"
+                    OnSubmitData="Store1_Submit"
                     OnBeforeStoreChanged="SaveHandler"
                     PageSize="10">
                     <Model>
@@ -209,7 +209,7 @@
                                 <ext:ModelField Name="lastChange" Type="Date" />
                             </Fields>
                         </ext:Model>
-                    </Model>   
+                    </Model>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
@@ -226,26 +226,26 @@
                     </ext:Column>
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="120" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="120"
+                        DataIndex="lastChange"
                         Format="HH:mm:ss" />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
-            </SelectionModel>           
+            </SelectionModel>
             <Plugins>
                 <ext:CellEditing runat="server" />
-            </Plugins>            
+            </Plugins>
             <BottomBar>
                 <ext:PagingToolbar runat="server" />
             </BottomBar>
             <TopBar>
                 <ext:Toolbar runat="server">
-                    <Items>                        
+                    <Items>
                         <ext:Button runat="server" Text="Add record" Icon="Add">
                             <Listeners>
                                 <Click Handler="var grid = #{GridPanel1},
@@ -261,11 +261,11 @@
                                 <Click Handler="var grid = #{GridPanel1},
                                                     store = grid.store,
                                                     records = grid.selModel.getSelection();
-                                                store.remove(records); 
+                                                store.remove(records);
                                                 store.load(true);" />
                             </Listeners>
-                        </ext:Button>            
-                        <ext:ToolbarFill runat="server" />            
+                        </ext:Button>
+                        <ext:ToolbarFill runat="server" />
                         <ext:Button runat="server" Text="Find 'Government Motors'" Icon="Find">
                             <Listeners>
                                 <Click Handler="selectRecord('Government Motors Corporation');" />
@@ -289,8 +289,8 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-        </ext:GridPanel>  
-        
+        </ext:GridPanel>
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

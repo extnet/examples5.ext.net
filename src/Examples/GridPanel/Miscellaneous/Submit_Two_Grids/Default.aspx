@@ -56,9 +56,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Submit Two GridPanels In One Request</h1>
-        
+
         <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server">
@@ -70,7 +70,7 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
+
         <ext:Store ID="Store2" runat="server">
             <Model>
                 <ext:Model runat="server">
@@ -82,13 +82,13 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            StoreID="Store1"
+            Title="Grid"
+            Width="600"
             Height="250">
             <ColumnModel runat="server">
                 <Columns>
@@ -97,14 +97,14 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
                 </Columns>
             </ColumnModel>
-        </ext:GridPanel>  
-        
-         <ext:GridPanel 
-            ID="GridPanel2" 
-            runat="server" 
-            StoreID="Store2" 
-            Title="Grid" 
-            Width="600" 
+        </ext:GridPanel>
+
+         <ext:GridPanel
+            ID="GridPanel2"
+            runat="server"
+            StoreID="Store2"
+            Title="Grid"
+            Width="600"
             Height="250">
             <ColumnModel runat="server">
                 <Columns>
@@ -113,8 +113,8 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
                 </Columns>
             </ColumnModel>
-        </ext:GridPanel>  
-        
+        </ext:GridPanel>
+
         <ext:Button ID="Button1" runat="server" Text="Submit Two GridPanels">
             <DirectEvents>
                 <Click OnEvent="SubmitGrids">

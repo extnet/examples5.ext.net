@@ -10,46 +10,46 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>IFrame Communication</h1>
-        
-        <ext:Window 
-            runat="server" 
-            Title="Parent" 
-            Width="400" 
+
+        <ext:Window
+            runat="server"
+            Title="Parent"
+            Width="400"
             Height="200">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
             <Items>
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
-                    Title="A" 
-                    BodyPadding="10" 
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Title="A"
+                    BodyPadding="10"
                     Flex="1">
-                    <Loader 
-                        runat="server" 
-                        Url="A.aspx" 
+                    <Loader
+                        runat="server"
+                        Url="A.aspx"
                         Mode="Frame">
-                        <LoadMask ShowMask="true" />    
+                        <LoadMask ShowMask="true" />
                     </Loader>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="Panel2" 
-                    runat="server" 
-                    Title="B" 
-                    BodyPadding="10" 
+                <ext:Panel
+                    ID="Panel2"
+                    runat="server"
+                    Title="B"
+                    BodyPadding="10"
                     Flex="1">
-                    <Loader 
-                        runat="server" 
-                        Url="B.aspx" 
+                    <Loader
+                        runat="server"
+                        Url="B.aspx"
                         Mode="Frame">
-                        <LoadMask ShowMask="true" />    
+                        <LoadMask ShowMask="true" />
                     </Loader>
                 </ext:Panel>
             </Items>
-        </ext:Window>    
+        </ext:Window>
     </form>
 </body>
 </html>

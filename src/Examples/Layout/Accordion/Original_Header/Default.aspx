@@ -9,15 +9,15 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <ext:Viewport runat="server" Layout="Border">
-        <Items> 
-            <ext:Panel 
-                runat="server" 
-                Width="300" 
-                Border="false" 
-                Region="West" 
-                Layout="Fit" 
+        <Items>
+            <ext:Panel
+                runat="server"
+                Width="300"
+                Border="false"
+                Region="West"
+                Layout="Fit"
                 BodyPadding="5">
                 <Items>
                     <ext:Panel runat="server" Layout="Accordion" MarginSpec="0 0 15 0">
@@ -34,7 +34,7 @@
                     </ext:Panel>
                 </Items>
             </ext:Panel>
-            
+
             <ext:Panel runat="server" MarginSpec="5" Region="Center" BodyPadding="10">
                 <Content>
                     <h1>Original header of the Accordion's item</h1>

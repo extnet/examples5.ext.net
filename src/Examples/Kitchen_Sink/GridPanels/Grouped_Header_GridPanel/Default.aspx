@@ -77,10 +77,10 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:GridPanel 
-                runat="server" 
-                Title="Grouped Header GridPanel" 
-                Width="640" 
+            <ext:GridPanel
+                runat="server"
+                Title="Grouped Header GridPanel"
+                Width="640"
                 Height="400"
                 ColumnLines="true">
                 <Store>
@@ -100,49 +100,49 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column 
-                            runat="server" 
-                            Text="Company" 
-                            DataIndex="company" 
-                            Flex="1" 
+                        <ext:Column
+                            runat="server"
+                            Text="Company"
+                            DataIndex="company"
+                            Flex="1"
                             Sortable="false" />
 
                         <ext:Column runat="server" Text="Stock Price">
                             <Columns>
-                                <ext:Column 
-                                    runat="server" 
-                                    Text="Price" 
-                                    DataIndex="price" 
-                                    Width="75" 
-                                    Sortable="true">                  
+                                <ext:Column
+                                    runat="server"
+                                    Text="Price"
+                                    DataIndex="price"
+                                    Width="75"
+                                    Sortable="true">
                                     <Renderer Format="UsMoney" />
                                 </ext:Column>
 
-                                <ext:Column 
-                                    runat="server" 
-                                    Text="Change" 
-                                    DataIndex="change" 
-                                    Width="75" 
+                                <ext:Column
+                                    runat="server"
+                                    Text="Change"
+                                    DataIndex="change"
+                                    Width="75"
                                     Sortable="true">
                                     <Renderer Fn="change" />
                                 </ext:Column>
-                                <ext:Column 
-                                    runat="server" 
-                                    Text="Change %" 
-                                    DataIndex="pctChange" 
-                                    Width="75" 
+                                <ext:Column
+                                    runat="server"
+                                    Text="Change %"
+                                    DataIndex="pctChange"
+                                    Width="75"
                                     Sortable="true">
                                     <Renderer Fn="pctChange" />
                                 </ext:Column>
                             </Columns>
-                        </ext:Column>                
-                
-                        <ext:DateColumn 
-                            runat="server" 
-                            Text="Last Updated" 
-                            DataIndex="lastChange" 
-                            Width="95" 
-                            Sortable="true" 
+                        </ext:Column>
+
+                        <ext:DateColumn
+                            runat="server"
+                            Text="Last Updated"
+                            DataIndex="lastChange"
+                            Width="95"
+                            Sortable="true"
                             Format="dd/MM/yyyy" />
                     </Columns>
                 </ColumnModel>

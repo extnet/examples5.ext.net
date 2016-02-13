@@ -14,7 +14,7 @@
     {
         data = data.Substring(data.IndexOf("base64,") + 7);
         byte[] bitmapData = Convert.FromBase64String(data);
-        
+
         Response.Clear();
         Response.AddHeader("Content-Disposition", "attachment; filename=chart.png");
         Response.ContentType = "image/png";

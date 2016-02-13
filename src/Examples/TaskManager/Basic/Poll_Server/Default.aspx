@@ -9,7 +9,7 @@
         ThreadPool.QueueUserWorkItem(LongAction);
         this.ResourceManager1.AddScript("{0}.startTask('longaction');", this.TaskManager1.ClientID);
     }
- 
+
     private void LongAction(object state)
     {
         for (int i = 0; i < 10; i++)
@@ -17,14 +17,14 @@
             Thread.Sleep(1000);
             this.Session["LongAction"] = i + 1;
         }
- 
+
         this.Session.Remove("LongAction");
     }
- 
+
     protected void Refresh(object sender, DirectEventArgs e)
     {
         object progress = this.Session["LongAction"];
- 
+
         if (progress != null)
         {
             X.Js.Call("updateMask", string.Format("Step {0} of {1}...", progress.ToString(), 10));
@@ -40,7 +40,7 @@
 
 <html>
 <head runat="server">
-    <title>TaskManager Poll Server - Ext.NET Examples</title>    
+    <title>TaskManager Poll Server - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <script>
         var updateMask = function (text) {
@@ -48,12 +48,12 @@
         };
     </script>
 </head>
-<body>    
+<body>
     <form runat="server">
         <p>The example demonstrates how to poll a server during some long action executed in a separate thread.</p>
 
-        <ext:ResourceManager ID="ResourceManager1" runat="server" />  
-        
+        <ext:ResourceManager ID="ResourceManager1" runat="server" />
+
         <ext:Button
             ID="Button1"
             runat="server"
@@ -61,7 +61,7 @@
             Handler="window.myMask = Ext.net.Mask.show({ msg: 'Initial...' });"
             OnDirectClick="StartLongAction"
             />
-         
+
         <ext:TaskManager ID="TaskManager1" runat="server">
             <Tasks>
                 <ext:Task
@@ -73,7 +73,7 @@
                             Ext.defer(Ext.net.Mask.hide, 1000);">
                     <DirectEvents>
                         <Update OnEvent="Refresh" />
-                    </DirectEvents>                   
+                    </DirectEvents>
                 </ext:Task>
             </Tasks>
         </ext:TaskManager>

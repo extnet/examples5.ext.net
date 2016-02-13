@@ -32,25 +32,25 @@
 <html>
 <head runat="server">
     <title>TreePanel using PageProxy - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>TreePanel using PageProxy</h1> 
-        
+
+        <h1>TreePanel using PageProxy</h1>
+
         <p>Set custom node prefix:</p>
 
         <ext:TextField ID="TextField1" runat="server" Text="Node" Width="200" />
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
             Title="Tree"
             Width="200"
-            Height="500" 
+            Height="500"
             Border="false">
             <Store>
                 <ext:TreeStore runat="server" OnReadData="NodeLoad">
@@ -66,7 +66,7 @@
                 <ext:Node NodeID="0" Text="Root" />
             </Root>
             <ViewConfig LoadMask="false" />
-        </ext:TreePanel>       
+        </ext:TreePanel>
     </form>
 </body>
 </html>

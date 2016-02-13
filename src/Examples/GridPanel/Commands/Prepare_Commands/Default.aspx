@@ -33,7 +33,7 @@
 <html>
 <head runat="server">
     <title>Prepare Commands - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var prepareToolbar = function (grid, toolbar, rowIndex, record) {
@@ -53,45 +53,45 @@
                 toolbar.updateLayout();
             }
         };
-        
+
         //in PrepareCommands we can modify commands collection
         var prepareCommands = function (grid, commands, record, row) {
             if (record.get("price") >= 50) {
                 commands.push({
-                        command : "accept",                        
-                        iconCls : "icon-accept"                                         
-                });               
-            }            
+                        command : "accept",
+                        iconCls : "icon-accept"
+                });
+            }
         };
-        
+
         //in PrepareCommand we can modify command
         var prepareCommand = function (grid, command, record, row) {
             if (command.command == 'Edit' && record.get("price") < 50) {
                 command.hidden = true;
-                command.hideMode = 'display'; //you can try 'visibility' also                 
-            }            
+                command.hideMode = 'display'; //you can try 'visibility' also
+            }
         };
-        
+
         var prepareCellCommand = function (grid, command, record, row, col, value) {
             if (command.command == 'Dollar' && record.get("price") < 50) {
-                command.iconCls = "icon-moneyeuro";               
-            }   
+                command.iconCls = "icon-moneyeuro";
+            }
         };
-        
+
         var prepareCellCommands = function (grid, commands, record, row, col, value) {
             if (record.get("price") >= 50) {
                commands.push({
                    iconCls : "icon-moneyadd",
                    command : "moneyadd"
-               });                
-            }   
+               });
+            }
         };
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
-        
+
         <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server">
@@ -105,23 +105,23 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Row commands" 
-            Width="800" 
+
+        <ext:GridPanel
+            runat="server"
+            StoreID="Store1"
+            Title="Row commands"
+            Width="800"
             Height="300">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
                     <ext:Column runat="server" Text="Price" Width="100" DataIndex="price">
                         <Renderer Format="UsMoney" />
-                        
+
                         <Commands>
                             <ext:ImageCommand Icon="MoneyDollar" CommandName="Dollar" />
                         </Commands>
-                        
+
                         <PrepareCommand Fn="prepareCellCommand" />
                         <PrepareCommands Fn="prepareCellCommands" />
 
@@ -132,7 +132,7 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
                     <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
-                    
+
                     <ext:ImageCommandColumn runat="server" Width="100" Text="Image Cmds">
                         <Commands>
                             <ext:ImageCommand Icon="Delete" CommandName="Delete">
@@ -148,7 +148,7 @@
                             <Command Handler="Ext.Msg.alert(command, record.data.company);" />
                         </Listeners>
                     </ext:ImageCommandColumn>
-                    
+
                     <ext:CommandColumn runat="server" Width="100" Text="Toolbar Cmds">
                         <Commands>
                             <ext:GridCommand Icon="Delete" CommandName="Delete">
@@ -168,8 +168,8 @@
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
-            </SelectionModel>            
-        </ext:GridPanel>  
+            </SelectionModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

@@ -8,12 +8,12 @@
         string[] sentences = new string[i];
         string[] words = text.Split(' ');
         string paragraph;
-        
+
         while (i-- > 0) {
             sentences[i] = text;
         }
         paragraph = string.Join(" ", sentences);
-        
+
         object data = new object[] {
             new object[] { words[6], words[8], words[9], words[10], words[11], words[12] },
             new object[] { words[5], words[4], words[3], words[2], words[1], words[0] },
@@ -41,8 +41,8 @@
         {
             Layout = "Border",
             RTL = true,
-            Items = { 
-                new Ext.Net.Panel 
+            Items = {
+                new Ext.Net.Panel
                 {
                     Region = Region.North,
                     Title = "\u0634\u0645\u0627\u0644",
@@ -52,8 +52,8 @@
                     Collapsible = true,
                     Split = true
                 },
-                
-                new Ext.Net.Panel 
+
+                new Ext.Net.Panel
                 {
                     Region= Region.West,
                     Title = "\u0627\u0644\u0645\u0646\u0637\u0642\u0629 \u0627\u0644\u063a\u0631\u0628\u064a\u0629",
@@ -61,7 +61,7 @@
                     Collapsible = true,
                     Split = true
                 },
-                
+
                 new Ext.Net.GridPanel
                 {
                     Region = Region.Center,
@@ -78,15 +78,15 @@
                             new Column { DataIndex = "bork", Text = words[5], Flex = 1 }
                         }
                     },
-                    Store = 
+                    Store =
                     {
                         new Store
                         {
                             Model =
                             {
-                                new Model 
+                                new Model
                                 {
-                                    Fields = 
+                                    Fields =
                                     {
                                         new ModelField("foo"),
                                         new ModelField("bar"),
@@ -97,17 +97,17 @@
                                     }
                                 }
                             },
-                            
-                            Reader = 
+
+                            Reader =
                             {
                                 new ArrayReader()
                             },
-                            
+
                             Data = data
-                        }    
+                        }
                     }
                 },
-                
+
                 new Ext.Net.Panel
                 {
                     Region = Region.East,
@@ -116,7 +116,7 @@
                     Collapsible = true,
                     Split = true
                 },
-                
+
                 new Ext.Net.Panel
                 {
                     Region = Region.South,
@@ -129,19 +129,19 @@
         };
 
         this.Form.Controls.Add(viewport);
-    }    
+    }
 </script>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>RTL - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>RTL - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" />       
+        <ext:ResourceManager runat="server" />
     </form>
 </body>
 </html>

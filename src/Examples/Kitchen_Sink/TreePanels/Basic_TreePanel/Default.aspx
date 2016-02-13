@@ -101,7 +101,7 @@
                 </LayoutConfig>
                 <Items>
                     <ext:TreePanel
-                        runat="server" 
+                        runat="server"
                         Title="TreePanel"
                         Width="300"
                         Height="200"
@@ -112,7 +112,7 @@
                         StoreID="TreeStore1" />
 
                     <ext:TreePanel
-                        runat="server" 
+                        runat="server"
                         Title="TreePanel with lines"
                         Width="300"
                         Height="200"
@@ -123,7 +123,7 @@
                         StoreID="TreeStore1" />
 
                     <ext:TreePanel
-                        runat="server" 
+                        runat="server"
                         Title="TreePanel with arrows"
                         Width="300"
                         Height="200"

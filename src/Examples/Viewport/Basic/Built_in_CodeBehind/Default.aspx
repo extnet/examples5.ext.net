@@ -1,7 +1,7 @@
 <%@ Page Language="C#" %>
 
 <%@ Import Namespace="Panel=Ext.Net.Panel" %>
-  
+
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -10,7 +10,7 @@
         {
             Region = Region.Center,
             ActiveTabIndex = 0,
-            Items = 
+            Items =
             {
                 new Panel
                 {
@@ -29,7 +29,7 @@
                 }
             }
         };
-        
+
         // South Region
         Panel north = new Panel
         {
@@ -52,15 +52,15 @@
             MinWidth = 225,
             Split = true,
             Collapsible = true,
-            Items = 
-            { 
+            Items =
+            {
                 new TabPanel
                 {
                     ActiveTabIndex = 1,
                     TabPosition = TabPosition.Bottom,
                     BodyBorder = 0,
-                    Items = 
-                    { 
+                    Items =
+                    {
                         new Panel
                         {
                             Title = "Tab 1",
@@ -79,8 +79,8 @@
                 }
             }
         };
-        
-        
+
+
         // West Region
         Panel west = new Panel
         {
@@ -92,8 +92,8 @@
             MaxWidth = 400,
             Split = true,
             Collapsible = true,
-            Items = 
-            { 
+            Items =
+            {
                 new Panel
                 {
                     Title = "Navigation",
@@ -102,7 +102,7 @@
                     Icon = Icon.FolderGo,
                     Html = "West"
                 },
-                new Panel 
+                new Panel
                 {
                     Title = "Settings",
                     BodyBorder = 0,
@@ -112,19 +112,19 @@
                 }
             }
         };
-        
-        
+
+
         // Viewport
         Viewport viewport = new Viewport
         {
             Layout = "BorderLayout",
-            Items = 
-            { 
+            Items =
+            {
                 center,
-                north, 
+                north,
                 east,
                 west,
-                new Panel 
+                new Panel
                 {
                     Region = Region.South,
                     Title = "South",

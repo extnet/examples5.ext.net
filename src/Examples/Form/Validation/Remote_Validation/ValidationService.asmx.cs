@@ -17,7 +17,7 @@ namespace Ext.Net.Examples.Examples.Form.Miscellaneous.Remote_Validation
         public object CheckField(string id, string value)
         {
             bool success = value == "Valid";
-            System.Threading.Thread.Sleep(1000);          
+            System.Threading.Thread.Sleep(1000);
             return new { valid=success, message = success ? "" : "'Valid' is valid value only" };
         }
     }

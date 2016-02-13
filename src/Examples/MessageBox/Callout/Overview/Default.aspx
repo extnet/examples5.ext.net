@@ -5,9 +5,9 @@
 
     protected void CreateCallout(object sender, DirectEventArgs e)
     {
-        X.Msg.Callout(this.Panel1, new Callout { 
+        X.Msg.Callout(this.Panel1, new Callout {
             Html = "The callout will be hidden and destroyed in 5 seconds",
-            Alignment = AnchorPoint.RightTop,                
+            Alignment = AnchorPoint.RightTop,
             DismissDelay=5000,
             CloseAction = CloseAction.Destroy,
             Height = 120,
@@ -20,8 +20,8 @@
 
 <html>
 <head runat="server">
-    <title>Callout - Ext.NET Examples</title>       
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <title>Callout - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
         h3.x-callout-header {
@@ -32,17 +32,17 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Callout</h1>
-    
+
     <h2>Anchor</h2>
 
-    <ext:Panel 
-        runat="server" 
-        Frame="true" 
-        Header="false" 
-        Width="610" 
-        BodyPadding="10" 
+    <ext:Panel
+        runat="server"
+        Frame="true"
+        Header="false"
+        Width="610"
+        BodyPadding="10"
         Layout="ColumnLayout">
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
@@ -79,21 +79,21 @@
                 <HeaderToolbar>
                     <ext:Toolbar runat="server" Flat="true">
                         <Items>
-                            <ext:Button 
-                                runat="server" 
-                                Icon="Decline" 
-                                ToolTip="Close" 
-                                Handler="this.up('toolbar').callout.hide();" 
+                            <ext:Button
+                                runat="server"
+                                Icon="Decline"
+                                ToolTip="Close"
+                                Handler="this.up('toolbar').callout.hide();"
                                 />
                         </Items>
-                    </ext:Toolbar>                    
+                    </ext:Toolbar>
                 </HeaderToolbar>
 
                 <BodyWidget>
-                    <ext:Container 
-                        runat="server" 
-                        Layout="AccordionLayout" 
-                        Width="300" 
+                    <ext:Container
+                        runat="server"
+                        Layout="AccordionLayout"
+                        Width="300"
                         Height="150">
                         <Items>
                             <ext:Panel runat="server" Title="Section1" Html="Content" />
@@ -111,12 +111,12 @@
 
     <h2>Trigger</h2>
 
-    <ext:Panel 
-        runat="server" 
-        Frame="true" 
-        Header="false" 
-        Width="610" 
-        AutoDataBind="true" 
+    <ext:Panel
+        runat="server"
+        Frame="true"
+        Header="false"
+        Width="610"
+        AutoDataBind="true"
         Layout="HBoxLayout">
         <Defaults>
             <ext:Parameter Name="Margin" Value="10" />
@@ -150,20 +150,20 @@
                 </Callouts>
             </ext:TextField>
         </Items>
-    </ext:Panel>    
+    </ext:Panel>
 
     <br />
     <br />
 
     <h2>UI</h2>
-    
-    <ext:Panel 
-        runat="server" 
-        Frame="true" 
-        Header="false" 
-        Width="610" 
-        BodyPadding="10" 
-        AutoDataBind="true" 
+
+    <ext:Panel
+        runat="server"
+        Frame="true"
+        Header="false"
+        Width="610"
+        BodyPadding="10"
+        AutoDataBind="true"
         Layout="ColumnLayout">
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
@@ -186,28 +186,28 @@
 
     <h2>Dynamic</h2>
 
-    <div style="margin-left:200px;"> 
-		<ext:Panel 
-			ID="Panel1" 
-			runat="server" 
-			Title="Dynamic Creation" 
-			Frame="true" 
-			Width="250" 
-			Height="100">
-			<TopBar>
-				<ext:Toolbar runat="server">
-					<Items>
-						<ext:Button 
-							runat="server" 
-							Text="Client side" 
-							Handler="if (this.callout) {this.callout.toggle(); return;} this.callout = Ext.Msg.callout(this.up('panel'), {alignment:'lefttop', html: 'LeftTop callout', height: 100, width:100});" 
-							/>
-						<ext:ToolbarFill runat="server" />
-						<ext:Button runat="server" Text="Server side" OnDirectClick="CreateCallout" />
-					</Items>
-				</ext:Toolbar>
-			</TopBar>
-		</ext:Panel>
+    <div style="margin-left:200px;">
+        <ext:Panel
+            ID="Panel1"
+            runat="server"
+            Title="Dynamic Creation"
+            Frame="true"
+            Width="250"
+            Height="100">
+            <TopBar>
+                <ext:Toolbar runat="server">
+                    <Items>
+                        <ext:Button
+                            runat="server"
+                            Text="Client side"
+                            Handler="if (this.callout) {this.callout.toggle(); return;} this.callout = Ext.Msg.callout(this.up('panel'), {alignment:'lefttop', html: 'LeftTop callout', height: 100, width:100});"
+                            />
+                        <ext:ToolbarFill runat="server" />
+                        <ext:Button runat="server" Text="Server side" OnDirectClick="CreateCallout" />
+                    </Items>
+                </ext:Toolbar>
+            </TopBar>
+        </ext:Panel>
     </div>
 </body>
 </html>

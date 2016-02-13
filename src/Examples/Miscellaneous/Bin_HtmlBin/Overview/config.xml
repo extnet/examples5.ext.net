@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-	<description>
+    <description>
     Bin and HtmlBin Overview
 
     The Bin and HtmlBin features helps a developer to organize the things modularly.
@@ -13,5 +13,5 @@
         - The Bin controls don't participate in the layout logic.
 
     The HtmlBin is for raw HTML.
-  </description>  
+  </description>
 </example>

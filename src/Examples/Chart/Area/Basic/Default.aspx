@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
+        this.Chart1.GetStore().DataSource = new List<object>
         {
             new { month = "Jan", data1 = 20 },
             new { month = "Feb", data1 = 20 },
@@ -16,7 +16,7 @@
             new { month = "Sep", data1 = 16 },
             new { month = "Oct", data1 = 16 },
             new { month = "Nov", data1 = 15 },
-            new { month = "Dec", data1 = 15 }   
+            new { month = "Dec", data1 = 15 }
         };
     }
 </script>
@@ -106,7 +106,7 @@
                                 <ext:CartesianChart
                                     ID="Chart1"
                                     runat="server"
-                                    Height="500" 
+                                    Height="500"
                                     Width="650"
                                     StyleSpec="background:#fff;"
                                     InsetPadding="40">

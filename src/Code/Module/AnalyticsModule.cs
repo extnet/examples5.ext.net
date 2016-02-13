@@ -28,7 +28,7 @@ namespace Ext.Net.Examples
             if (!RequestManager.IsAjaxRequest && (localLog || HttpContext.Current.Request.Url.Host != "localhost"))
             {
                 object marker = HttpContext.Current.Items[ResourceManager.FilterMarker];
-                string url = HttpContext.Current.Request.FilePath;                
+                string url = HttpContext.Current.Request.FilePath;
                 bool isExample = url.StartsWith("/Examples/", true, CultureInfo.InvariantCulture) && url.EndsWith(".aspx");
 
                 if (marker != null && (bool)marker && isExample)

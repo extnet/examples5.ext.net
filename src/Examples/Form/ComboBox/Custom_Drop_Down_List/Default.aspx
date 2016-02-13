@@ -55,7 +55,7 @@
             new object[] { "WA", "Washington", "Green Tree State", 5.99},
             new object[] { "WV", "West Virginia", "Mountain State", 5.99},
             new object[] { "WI", "Wisconsin", "America's Dairyland", 5.99},
-            new object[] { "WY", "Wyoming", "Like No Place on Earth", 5.99} 
+            new object[] { "WY", "Wyoming", "Like No Place on Earth", 5.99}
         };
     }
 </script>
@@ -75,7 +75,7 @@
             white-space:normal;
             color:#555;
         }
-        
+
         .list-item h3 {
             display:block;
             font:inherit;
@@ -88,8 +88,8 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:ComboBox 
+
+        <ext:ComboBox
             runat="server"
             Width="250"
             Editable="false"
@@ -98,7 +98,7 @@
             QueryMode="Local"
             ForceSelection="true"
             TriggerAction="All"
-            EmptyText="Select a state...">                        
+            EmptyText="Select a state...">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -110,20 +110,20 @@
                                 <ext:ModelField Name="price" Type="Float" />
                             </Fields>
                         </ext:Model>
-                    </Model>            
+                    </Model>
                 </ext:Store>
             </Store>
             <ListConfig>
                 <ItemTpl runat="server">
                     <Html>
-						<div class="list-item">
-							    <h3>{state}</h3>
-							    {nick:ellipsis(15)}, {price:usMoney}
-						</div>
-				    </Html>    
+                        <div class="list-item">
+                                <h3>{state}</h3>
+                                {nick:ellipsis(15)}, {price:usMoney}
+                        </div>
+                    </Html>
                 </ItemTpl>
             </ListConfig>
-        </ext:ComboBox>    
+        </ext:ComboBox>
     </form>
 </body>
 </html>

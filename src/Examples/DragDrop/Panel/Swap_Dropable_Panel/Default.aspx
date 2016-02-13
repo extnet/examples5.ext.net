@@ -10,11 +10,11 @@
             p.DraggablePanelConfig = new DragSource
             {
                 Group = "panelDD",
-                StartDrag = 
+                StartDrag =
                 {
                     Fn = "startDrag"
                 },
-                
+
                 EndDrag =
                 {
                     Fn = "endDrag"
@@ -32,7 +32,7 @@
         .invite {
             background-color : #99bbe8 !important;
         }
-        
+
         .x-drop-marker {
             background-color : silver;
         }
@@ -49,19 +49,19 @@
             Ext.defer(function () {
                 targetPanel.updateLayout();
                 data.panel.updateLayout();
-            }, 1);            
+            }, 1);
         };
 
-        var startDrag = function () {            
+        var startDrag = function () {
             Ext.select(".dropable").addCls("x-drop-marker");
             Ext.select(".draggable").hide();
             this.panelProxy.moveOnDrag = false;
         };
 
-        var endDrag = function () {            
+        var endDrag = function () {
             Ext.select(".dropable").removeCls("x-drop-marker");
             Ext.select(".draggable").show();
-            Ext.panel.DD.prototype.endDrag.apply(this, arguments);            
+            Ext.panel.DD.prototype.endDrag.apply(this, arguments);
         };
     </script>
 </head>
@@ -71,72 +71,72 @@
 
         <ext:Viewport ID="Viewport1" runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Container 
-                    runat="server" 
-                    Region="North" 
-                    Cls="dropable" 
+                <ext:Container
+                    runat="server"
+                    Region="North"
+                    Cls="dropable"
                     Layout="Fit"
-                    Height="100" 
+                    Height="100"
                     MarginSpec="10 10 5 10">
                     <Items>
                         <ext:Panel runat="server" Cls="draggable" Title="North" />
                     </Items>
                 </ext:Container>
-                <ext:Container 
-                    runat="server" 
-                    Region="East" 
-                    Cls="dropable" 
+                <ext:Container
+                    runat="server"
+                    Region="East"
+                    Cls="dropable"
                     Layout="Fit"
-                    Width="200" 
+                    Width="200"
                     MarginSpec="5 10 5 10">
                     <Items>
                         <ext:Panel runat="server" Cls="draggable" Title="East" />
                     </Items>
                 </ext:Container>
-                <ext:Container 
-                    runat="server" 
-                    Region="West" 
-                    Cls="dropable" 
+                <ext:Container
+                    runat="server"
+                    Region="West"
+                    Cls="dropable"
                     Layout="Fit"
-                    Width="200" 
+                    Width="200"
                     MarginSpec="5 10 5 10">
                     <Items>
                         <ext:Panel runat="server" Cls="draggable" Title="West" />
                     </Items>
                 </ext:Container>
                 <ext:Container
-                    runat="server" 
-                    Region="South" 
-                    Cls="dropable" 
+                    runat="server"
+                    Region="South"
+                    Cls="dropable"
                     Layout="Fit"
-                    Height="100" 
+                    Height="100"
                     MarginSpec="5 10 10 10">
                     <Items>
                         <ext:Panel runat="server" Cls="draggable" Title="South" />
                     </Items>
                 </ext:Container>
-                <ext:Container 
-                    runat="server" 
-                    Region="Center" 
-                    Cls="dropable" 
+                <ext:Container
+                    runat="server"
+                    Region="Center"
+                    Cls="dropable"
                     Layout="Fit"
                     MarginSpec="5 0 5 0">
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
-                            Cls="draggable" 
-                            Title="Center" 
-                            BodyPadding="5" 
+                        <ext:Panel
+                            runat="server"
+                            Cls="draggable"
+                            Title="Center"
+                            BodyPadding="5"
                             Html="Drag/Drop Panel Headers to a different Viewport Region" />
                     </Items>
                 </ext:Container>
             </Items>
         </ext:Viewport>
 
-        <ext:DropTarget 
-            runat="server" 
-            Target="${.dropable}" 
-            Group="panelDD" 
+        <ext:DropTarget
+            runat="server"
+            Target="${.dropable}"
+            Group="panelDD"
             OverClass="invite">
             <NotifyDrop Fn="notifyDrop" />
             <NotifyOut Handler="this.el.removeCls('invite');" />

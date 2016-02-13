@@ -6,7 +6,7 @@
         double v;
         double r, g, b;
 
-        r = l; 
+        r = l;
         g = l;
         b = l;
         v = (l <= 0.5) ? (l * (1.0 + sl)) : (l + sl - l * sl);
@@ -61,11 +61,11 @@
         }
         return System.Drawing.Color.FromArgb(Convert.ToByte(r * 255.0f), Convert.ToByte(g * 255.0f), Convert.ToByte(b * 255.0f));
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<string> axisx = new List<string> 
-        { 
+        List<string> axisx = new List<string>
+        {
             "12am",
             "1",
             "2",
@@ -92,8 +92,8 @@
             "11"
         };
 
-        List<Pair> data = new List<Pair> 
-        {                 
+        List<Pair> data = new List<Pair>
+        {
             new Pair("Mon", new List<int?>{
                 null, null, null, null, 23, null, null, null, null, 40, null, 15, 10, null, 17, null, 14, 12, 20, 16, null, null, 5, 28
             }),
@@ -114,7 +114,7 @@
             }),
             new Pair("Sun", new List<int?>{
                 null, 11, 30, null, null, 20, 3, null, null, null, 26, 3, 28, 23, null, null, null, 21, null, null, null, 20, null, null
-            })                
+            })
         };
 
         this.Draw(axisx, data);
@@ -123,7 +123,7 @@
     private void Draw(List<string> axisx, List<Pair> data)
     {
         DrawContainer draw = this.Draw1;
-            
+
         int width = 800;
         int height = 300;
         int leftgutter = 30;
@@ -134,14 +134,14 @@
 
         for (int i = 0; i < axisx.Count; i++)
         {
-            draw.Items.Add(new TextSprite { 
+            draw.Items.Add(new TextSprite {
                 X = Convert.ToInt32(leftgutter + x * (i + 0.5)),
                 Y = 294,
                 Text = axisx[i],
                 Font = "10px Fontin-Sans, Arial",
-                StrokeStyle = "none",                    
+                StrokeStyle = "none",
                 FillStyle = "#000"
-            });                
+            });
         }
 
         for (int i = 0; i < data.Count; i++)
@@ -154,7 +154,7 @@
                 Font = "10px Fontin-Sans, Arial",
                 StrokeStyle = "none",
                 FillStyle = "#000"
-            });  
+            });
         }
 
         for (int i = 0; i < data.Count; i++)
@@ -170,13 +170,13 @@
                     int dx = Convert.ToInt32(leftgutter + x * (j + 0.5) - 60 - r);
                     int dy = Convert.ToInt32(y * (i + 0.5) - 10);
                     string color = System.Drawing.ColorTranslator.ToHtml(this.ColorFromAhsb((1 - r*1.0f / max) * 0.5, 1, 0.5));
-                        
+
                     draw.Items.Add(new CircleSprite
                     {
                         SpriteID = "dt_" + i + "_" + j,
                         CX = dx + 60 + r,
                         CY = dy + 10,
-                        Radius = r,                            
+                        Radius = r,
                         StrokeStyle = "none",
                         FillStyle = color
                     });
@@ -206,7 +206,7 @@
                         Font = "10px Fontin-Sans, Arial",
                         StrokeStyle = "none",
                         FillStyle = "#fff",
-                        Hidden = true                            
+                        Hidden = true
                     });
 
                     draw.Items.Add(new CircleSprite
@@ -219,11 +219,11 @@
                         GlobalAlpha = 0/*,
                         Listeners =
                         {
-                            MouseOver = { 
+                            MouseOver = {
                                 Handler = string.Format("onMouseOver(this.surface, {0});", JSON.Serialize("_"+i+"_"+j))
                             },
-                                
-                            MouseOut = { 
+
+                            MouseOut = {
                                 Handler = string.Format("onMouseOut(this.surface, {0});", JSON.Serialize("_"+i+"_"+j))
                             }
                         }*/
@@ -231,7 +231,7 @@
                 }
             }
         }
-            
+
         draw.Width = width;
         draw.Height = height;
     }
@@ -292,7 +292,7 @@
             <Items>
                 <ext:DrawContainer ID="Draw1" runat="server" />
             </Items>
-        </ext:Viewport>   
-    </form>    
+        </ext:Viewport>
+    </form>
 </body>
 </html>

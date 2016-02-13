@@ -49,7 +49,7 @@
 <head runat="server">
     <title>FormPanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var template = '<span style="color:{0};">{1}</span>';
 
@@ -65,20 +65,20 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:FormPanel 
-            runat="server" 
+
+        <ext:FormPanel
+            runat="server"
             Title="Company data"
-            Width="1000" 
+            Width="1000"
             BodyPadding="5"
             Layout="ColumnLayout">
-            
+
             <FieldDefaults LabelAlign="Left" MsgTarget="Side" />
-            
+
             <Items>
-                <ext:GridPanel                     
+                <ext:GridPanel
                     runat="server"
-                    Title="Company Data" 
+                    Title="Company Data"
                     ColumnWidth="0.6"
                     Height="400">
                     <Store>
@@ -120,12 +120,12 @@
                     <Listeners>
                         <SelectionChange Handler="if (selected[0]) { this.up('form').getForm().loadRecord(selected[0]); }" />
                     </Listeners>
-                </ext:GridPanel>     
-                    
+                </ext:GridPanel>
+
                 <ext:FieldSet
-                    runat="server" 
+                    runat="server"
                     ColumnWidth="0.4"
-                    Title="Company details" 
+                    Title="Company details"
                     MarginSpec="0 0 0 10"
                     ButtonAlign="Right">
                     <Defaults>
@@ -133,25 +133,25 @@
                     </Defaults>
                     <Items>
                         <ext:TextField Name="company" runat="server" FieldLabel="Name" />
-                        <ext:TextField Name="price" runat="server" FieldLabel="Price" />                        
+                        <ext:TextField Name="price" runat="server" FieldLabel="Price" />
                         <ext:TextField Name="pctChange" runat="server" FieldLabel="Change (%)" />
                         <ext:DateField Name="lastChange" runat="server" FieldLabel="Last Updated" />
-                        <ext:RadioGroup runat="server" FieldLabel="Rating (read-only)" ColumnsNumber="3" AutomaticGrouping="false">                            
+                        <ext:RadioGroup runat="server" FieldLabel="Rating (read-only)" ColumnsNumber="3" AutomaticGrouping="false">
                             <Items>
-                                <ext:Radio runat="server" Name="rating" InputValue="0" BoxLabel="A" ReadOnly="true" /> 
+                                <ext:Radio runat="server" Name="rating" InputValue="0" BoxLabel="A" ReadOnly="true" />
                                 <ext:Radio runat="server" Name="rating" InputValue="1" BoxLabel="B" ReadOnly="true" />
                                 <ext:Radio runat="server" Name="rating" InputValue="2" BoxLabel="C" ReadOnly="true" />
                             </Items>
                         </ext:RadioGroup>
-                    </Items>                    
+                    </Items>
                 </ext:FieldSet>
             </Items>
             <Buttons>
                 <ext:Button runat="server" Text="Save To Grid">
                     <Listeners>
-                        <Click Handler="var form = this.up('form'), 
-                                            r = form.getForm().getRecord(); 
-    
+                        <Click Handler="var form = this.up('form'),
+                                            r = form.getForm().getRecord();
+
                                         if (r) {
                                             form.getForm().updateRecord(form.down('grid').getSelectionModel().getLastSelected());
                                         }" />
@@ -170,7 +170,7 @@
                                     <Listeners>
                                         <Click Handler="alert(Ext.encode(this.up('form').getForm().getValues()));" />
                                     </Listeners>
-                                </ext:MenuItem> 
+                                </ext:MenuItem>
                                 <ext:MenuItem runat="server" Text="String">
                                     <Listeners>
                                         <Click Handler="alert(this.up('form').getForm().getValues(true));" />
@@ -178,7 +178,7 @@
                                 </ext:MenuItem>
                             </Items>
                         </ext:Menu>
-                    </Menu>                                    
+                    </Menu>
                 </ext:Button>
             </Buttons>
         </ext:FormPanel>

@@ -13,11 +13,11 @@ namespace Ext.Net.Examples.Examples.TreePanel.Advanced.Remote_Mode_with_Service
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
     [System.Web.Script.Services.ScriptService]
     public class RemoteTree : System.Web.Services.WebService
     {
-        [WebMethod]        
+        [WebMethod]
         public string GetNodes(string node)
         {
             NodeCollection nodes = new NodeCollection(false);
@@ -35,7 +35,7 @@ namespace Ext.Net.Examples.Examples.TreePanel.Advanced.Remote_Mode_with_Service
             return nodes.ToJson();
         }
 
-        [WebMethod]        
+        [WebMethod]
         public object RemoteEdit(string id, string field, string newValue, string oldValue)
         {
             //return new { actionSuccess = true };
@@ -51,7 +51,7 @@ namespace Ext.Net.Examples.Examples.TreePanel.Advanced.Remote_Mode_with_Service
             return new { actionSuccess = true, response = new { value = new { text = newValues["text"]+"_echo" } } };
         }
 
-        [WebMethod]        
+        [WebMethod]
         public object RemoteRemove(string id)
         {
             return new { actionSuccess = true };

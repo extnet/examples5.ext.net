@@ -39,7 +39,7 @@
             AnimEl = this.Button4.ClientID
         });
     }
-    
+
     protected void Button5_Click(object sender, DirectEventArgs e)
     {
        X.Msg.Show(new MessageBoxConfig
@@ -52,7 +52,7 @@
             Closable = false,
             AnimEl = this.Button5.ClientID
         });
-        
+
         this.StartLongAction();
     }
 
@@ -89,12 +89,12 @@
             Fn = new JFunction { Fn = "showResult" }
         });
     }
-    
+
     private void StartLongAction()
     {
         this.Session["Task1"] = 0;
         ThreadPool.QueueUserWorkItem(LongAction);
-        
+
         this.TaskManager1.StartTask("Task1");
     }
 
@@ -128,11 +128,11 @@
 
 <html>
 <head runat="server">
-    <title>MessageBox - Ext.NET Examples</title>   
-    
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <title>MessageBox - Ext.NET Examples</title>
+
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <script src="/resources/js/examples.js"></script>
-    
+
     <script>
         var showResult = function (btn) {
             Ext.Msg.notify("Button Click", "You clicked the " + btn + " button");
@@ -141,89 +141,89 @@
         var showResultText = function (btn, text) {
             Ext.Msg.notify("Button Click", "You clicked the " + btn + 'button and entered the text "' + text + '".');
         };
-    </script> 
-    
+    </script>
+
     <style>
         .x-window-dlg .ext-mb-download {
             background : transparent url(resources/images/download.gif) no-repeat top left;
             height : 46px;
         }
-    </style>  
+    </style>
 </head>
 <body>
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    
+
     <h1>MessageBox Dialogs</h1>
-    
+
     <p>The following samples demonstrate how to display various MessageBox options.</p>
-    
+
     <h2>1. Confirm</h2>
-    
+
     <span>Standard Yes/No dialog.</span>
-    
+
     <ext:Button ID="Button1" runat="server" Text="Show">
         <DirectEvents>
             <Click OnEvent="Button1_Click" />
         </DirectEvents>
     </ext:Button>
-    
+
     <h2>2. Prompt</h2>
-    
+
     <span>Standard prompt dialog.</span>
-    
+
     <ext:Button ID="Button2" runat="server" Text="Show">
         <DirectEvents>
             <Click OnEvent="Button2_Click" />
         </DirectEvents>
     </ext:Button>
-    
+
     <h2>3. Multi-line Prompt</h2>
-    
+
     <span>A multi-line prompt dialog.</span>
-    
+
     <ext:Button ID="Button3" runat="server" Text="Show" OnDirectClick="Button3_Click" />
-    
+
     <h2>4. Yes/No/Cancel</h2>
-    
+
     <span>Standard Yes/No/Cancel dialog.</span>
-    
+
     <ext:Button ID="Button4" runat="server" Text="Show" OnDirectClick="Button4_Click" />
-    
+
     <h2>5. Progress Dialog</h2>
-    
+
     <span>Dialog with measured progress bar.</span>
-    
+
     <ext:Button ID="Button5" runat="server" Text="Show" OnDirectClick="Button5_Click" />
 
     <ext:TaskManager ID="TaskManager1" runat="server">
         <Tasks>
-            <ext:Task 
+            <ext:Task
                 TaskID="Task1"
-                Interval="1000" 
+                Interval="1000"
                 AutoRun="false">
                 <DirectEvents>
                     <Update OnEvent="RefreshProgress" />
-                </DirectEvents>                    
+                </DirectEvents>
             </ext:Task>
         </Tasks>
     </ext:TaskManager>
 
     <h2>6. Wait Dialog</h2>
-    
+
     <span>Dialog with indefinite ProgressBar and custom Icon (will close after 8 sec).</span>
-    
+
     <ext:Button ID="Button6" runat="server" Text="Show" OnDirectClick="Button6_Click" />
 
     <h2>7. Alert</h2>
-    
+
     <span>Standard Alert dialog.</span>
-    
+
     <ext:Button ID="Button7" runat="server" Text="Show" OnDirectClick="Button7_Click" />
 
     <h2>8. Icons</h2>
-    
+
     <span>Standard Alert with optional Icon.</span>
-    
+
     <ext:ComboBox ID="ComboBox1" runat="server" Editable="false">
         <Items>
             <ext:ListItem Text="Error" Value="ERROR" />
@@ -235,7 +235,7 @@
             <ext:ListItem Value="ERROR" />
         </SelectedItems>
     </ext:ComboBox>
-    
+
     <ext:Button ID="Button8" runat="server" Text="Show">
         <DirectEvents>
             <Click OnEvent="Button8_Click">

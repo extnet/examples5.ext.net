@@ -34,7 +34,7 @@ namespace Ext.Net.Examples.Northwind
             if (sort != null)
             {
                 ParameterExpression param = Expression.Parameter(typeof(Employee), "e");
-                
+
                 if (sort.Property == "BirthDate" || sort.Property == "HireDate")
                 {
                     Expression<Func<Employee, DateTime?>> sortExpression = Expression.Lambda<Func<Employee, DateTime?>>(Expression.Property(param, sort.Property), param);

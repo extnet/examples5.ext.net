@@ -8,7 +8,7 @@
 <head runat="server">
     <title>Drag with state - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script runat="server">
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,7 +29,7 @@
             });
         }
     </script>
-    
+
     <style>
         div.draggable-item {
             border : 1px solid silver;
@@ -43,12 +43,12 @@
             position    : absolute;
             cursor      : default;
         }
-        
+
         .drag-area {
             background-color : #f0f0f0 ! important;
             position : relative;
         }
-        
+
         .dd-proxy {
             opacity : 0.4;
             -moz-opacity : 0.4;
@@ -56,25 +56,25 @@
             cursor : default ! important;
         }
     </style>
-    
+
     <script>
         var getState = function () {
             var state = {};
             state.divs = App.divsData.divs;
             return state;
         };
-        
+
         var startDrag = function (x, y) {
             var dragEl = Ext.get(this.getDragEl());
             var el = Ext.get(this.getEl());
-            
+
             el.hide();
 
             dragEl.applyStyles({border:"solid gray 1px"});
             dragEl.update(el.dom.innerHTML);
             dragEl.addCls(el.dom.className + " dd-proxy");
         };
-        
+
         var afterDrag = function () {
             var el = Ext.get(this.getEl());
             var div = App.divsData.divs[parseInt(el.getAttribute("index"))-1];
@@ -89,23 +89,23 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" StateProvider="Cookie" />
-        
+
         <ext:ObjectHolder ID="divsData" runat="server" />
-        
+
         <ext:XTemplate ID="Tpl1" runat="server">
             <Html>
-				<tpl for=".">
-					 <div id="item-{#}" index="{#}" class="draggable-item" style="top:{Y}px;left:{X}px;">Item {#}</div>
-				</tpl>
-			</html>        </ext:XTemplate>
-        
+                <tpl for=".">
+                     <div id="item-{#}" index="{#}" class="draggable-item" style="top:{Y}px;left:{X}px;">Item {#}</div>
+                </tpl>
+            </html>        </ext:XTemplate>
+
         <ext:Viewport runat="server" Layout="FitLayout">
             <Items>
-                <ext:Panel 
-                    ID="DragArea" 
-                    runat="server" 
-                    Stateful="true" 
-                    BodyCssClass="drag-area" 
+                <ext:Panel
+                    ID="DragArea"
+                    runat="server"
+                    Stateful="true"
+                    BodyCssClass="drag-area"
                     StateEvents="resize,itemdrag">
                     <GetState Fn="getState" />
                     <Listeners>
@@ -115,14 +115,14 @@
                 </ext:Panel>
             </Items>
         </ext:Viewport>
-        
-        <ext:DDProxy 
-            runat="server" 
-            Target="${div.draggable-item}" 
+
+        <ext:DDProxy
+            runat="server"
+            Target="${div.draggable-item}"
             Group="group">
             <StartDrag Fn="startDrag" />
             <AfterDrag Fn="afterDrag" />
         </ext:DDProxy>
-    </form>    
+    </form>
 </body>
 </html>

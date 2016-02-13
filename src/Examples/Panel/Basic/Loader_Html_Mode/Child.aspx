@@ -24,12 +24,12 @@
 <body>
     <%--ResourceManager ID must be the same as in parent page--%>
     <ext:ResourceManager ID="ResourceManager1" runat="server" RenderScripts="None" />
-    
-    <ext:Panel 
-        ID="Panel2" 
-        runat="server" 
-        Title="Child" 
-        Width="300" 
+
+    <ext:Panel
+        ID="Panel2"
+        runat="server"
+        Title="Child"
+        Width="300"
         Height="185"
         Frame="true">
         <Items>

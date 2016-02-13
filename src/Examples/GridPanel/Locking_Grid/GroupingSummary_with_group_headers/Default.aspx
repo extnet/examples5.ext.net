@@ -7,8 +7,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
      {
-         this.Store1.DataSource = new List<Project> 
-         { 
+         this.Store1.DataSource = new List<Project>
+         {
             new Project(100, "Ext Forms: Field Anchoring", 112, "Integrate 2.0 Forms with 2.0 Layouts", 6, 150, 0, new DateTime(2007, 06, 24)),
             new Project(100, "Ext Forms: Field Anchoring", 113, "Implement AnchorLayout", 4, 150, 0, new DateTime(2007, 06, 25)),
             new Project(100, "Ext Forms: Field Anchoring", 114, "Add support for multiple<br> types of anchors", 4, 150, 0, new DateTime(2007, 06, 27)),
@@ -57,17 +57,17 @@
 <html>
 <head runat="server">
     <title>Locking, Cell Editing Summary Grid - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-   
+
     <style>
         .x-grid-body .x-grid-cell-Cost {
             background-color : #f1f2f4;
         }
-         
+
         .x-grid-row-summary .x-grid-cell-Cost .x-grid-cell-inner{
             background-color : #e1e2e4;
-        }    
+        }
 
         .task .x-grid-cell-inner {
             padding-left: 15px;
@@ -77,7 +77,7 @@
             font-weight: bold;
             font-size: 11px;
             background-color : #f1f2f4;
-        } 
+        }
     </style>
 
     <script>
@@ -118,16 +118,16 @@
 <body>
     <form runat="server">
         <h1>Locking, Group Summary Grid Example with grouped headers and docked summary</h1>
-        
+
         <p>It is not possible to lock or unlock <i>all</i> columns using the user interface. Each side, locked or unlocked must always contain at least one column.</p>
 
-        <ext:ResourceManager runat="server"/>        
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Frame="true"            
-            Title="Sponsored Projects"                         
+        <ext:ResourceManager runat="server"/>
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Frame="true"
+            Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
             Width="800"
             Height="450">
@@ -159,28 +159,28 @@
                         <Html>
                             Click to edit {colName}
                         </Html>
-                    </Tpl>          
+                    </Tpl>
                     <BeforeShowTip Fn="beforeShowTip" />
                 </ext:DataTip>
             </Plugins>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column                        
+                    <ext:Column
                         runat="server"
                         Locked="true"
                         TdCls="task"
-                        Text="Task"                       
+                        Text="Task"
                         Sortable="true"
                         DataIndex="Description"
                         Hideable="false"
                         SummaryType="Count"
                         Width="300">
-                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />     
+                        <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                         <Editor>
                             <ext:TextField runat="server" />
-                        </Editor>                       
+                        </Editor>
                     </ext:Column>
-                     
+
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Width="180" />
 
                     <ext:Column runat="server" Text="Schedule">
@@ -199,9 +199,9 @@
                                 <%-- Remove after fixing #563 --%>
                                 <SummaryRenderer Format="Date" FormatArgs="'m/d/Y'" />
                             </ext:DateColumn>
- 
+
                             <ext:Column
-                                runat="server"  
+                                runat="server"
                                 Width="125"
                                 Text="Estimate"
                                 Sortable="true"
@@ -214,7 +214,7 @@
                                     <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
                                 </Editor>
                             </ext:Column>
-                     
+
                             <ext:Column
                                 runat="server"
                                 Width="125"
@@ -229,7 +229,7 @@
                                     <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
                                 </Editor>
                             </ext:Column>
-                     
+
                             <ext:Column
                                 runat="server"
                                 Width="114"
@@ -244,15 +244,15 @@
                                 <SummaryRenderer Format="UsMoney" />
                             </ext:Column>
                         </Columns>
-                    </ext:Column>                    
-                </Columns>                
-            </ColumnModel>           
-            <Features>               
-                <ext:GroupingSummary 
-                    ID="group" 
-                    runat="server" 
-                    GroupHeaderTplString="{name}" 
-                    HideGroupedHeader="true" 
+                    </ext:Column>
+                </Columns>
+            </ColumnModel>
+            <Features>
+                <ext:GroupingSummary
+                    ID="group"
+                    runat="server"
+                    GroupHeaderTplString="{name}"
+                    HideGroupedHeader="true"
                     EnableGroupingMenu="false" />
 
                 <ext:Summary runat="server" Dock="Bottom" />
@@ -260,11 +260,11 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Toggle" 
-                            ToolTip="Toggle the visibility of summary row" 
-                            EnableToggle="true" 
+                        <ext:Button
+                            runat="server"
+                            Text="Toggle"
+                            ToolTip="Toggle the visibility of summary row"
+                            EnableToggle="true"
                             Pressed="true">
                             <Listeners>
                                 <Click Fn="toggleSummary" />

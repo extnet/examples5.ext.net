@@ -99,7 +99,7 @@ Ext.define('Ext.ux.ajax.SimManager', {
         if (index > 0) {
             url = url.substring(0, index);
         }
-        
+
         for (i = 0; i < len; ++i) {
             simlet = simlets[i];
             simUrl = simlet.url;

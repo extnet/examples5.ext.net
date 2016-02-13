@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
-        { 
+        this.Chart1.GetStore().DataSource = new List<object>
+        {
             new { complaint = "Overpriced", count = 543, cumnumber = 543, cumpercent = 31 },
             new { complaint = "Small Portions", count = 412, cumnumber = 955, cumpercent = 55 },
             new { complaint = "High Wait Time", count = 245, cumnumber = 1200, cumpercent = 69 },
@@ -94,7 +94,7 @@
                                     ID="Chart1"
                                     runat="server"
                                     StandardTheme="Category2"
-                                    Height="500" 
+                                    Height="500"
                                     Width="650"
                                     InsetPaddingSpec="40 40 20 40">
                                     <Store>
@@ -161,7 +161,7 @@
                                             YField="count">
                                             <StyleSpec>
                                                 <ext:Sprite GlobalAlpha="0.8" />
-                                            </StyleSpec>                                            
+                                            </StyleSpec>
                                             <HighlightConfig>
                                                 <ext:Sprite FillStyle="rgba(204, 230, 73, 1.0)" StrokeStyle="black" />
                                             </HighlightConfig>

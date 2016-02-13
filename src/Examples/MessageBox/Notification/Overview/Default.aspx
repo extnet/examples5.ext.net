@@ -10,7 +10,7 @@
     }
 
     public static string stub = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ...";
-    
+
     protected void Option1_Click(object sender, DirectEventArgs e)
     {
         Notification.Show(new NotificationConfig
@@ -28,7 +28,7 @@
             Title = "Title",
             AlignCfg = new NotificationAlignConfig
             {
-                ElementAnchor = AnchorPoint.TopRight, 
+                ElementAnchor = AnchorPoint.TopRight,
                 TargetAnchor = AnchorPoint.TopRight,
                 OffsetX = -20,
                 OffsetY = 20
@@ -50,7 +50,7 @@
                 TargetAnchor = AnchorPoint.TopLeft,
                 OffsetX = 20,
                 OffsetY = 20
-            },            
+            },
             ShowFx = new SlideIn { Anchor = AnchorPoint.TopLeft, Options = new FxConfig { Easing = Easing.BounceOut } },
             HideFx = new SwitchOff(),
             Html = stub
@@ -152,9 +152,9 @@
     protected void Option16_Click(object sender, DirectEventArgs e)
     {
         WindowListeners listeners = new WindowListeners();
-        
+
         listeners.BeforeShow.Handler = string.Concat(BarLabel.ClientID, ".setText(Ext.Date.format(new Date(), 'g:i:s A'));");
-        
+
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
@@ -313,36 +313,36 @@
             HideDelay = 7000,
             Layout = LayoutType.Border.ToString(),
             ShowPin = true,
-            Items = 
-            { 
-                new Ext.Net.Panel 
-                { 
+            Items =
+            {
+                new Ext.Net.Panel
+                {
                     Region = Region.West,
                     Collapsible = true,
                     Title = "West",
                     Width = 100,
                     Icon = Icon.Add
                 },
-                
-                new Ext.Net.Panel 
-                { 
+
+                new Ext.Net.Panel
+                {
                     Title = "Center",
-                    Region = Region.Center,                    
+                    Region = Region.Center,
                     Icon = Icon.PageWhiteEdit
                 }
             },
-            DockedItems = 
-            { 
+            DockedItems =
+            {
                 new Toolbar
                 {
                     Dock = Dock.Bottom,
-                    Items = 
+                    Items =
                     {
-                        new TextField 
+                        new TextField
                         {
                             Flex = 1,
                             EmptyText = "Focus to pin",
-                            Listeners = 
+                            Listeners =
                             {
                                 Focus =
                                 {
@@ -359,26 +359,26 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
-    <title>Summary of Notification options - Ext.NET Examples</title>  
+    <title>Summary of Notification options - Ext.NET Examples</title>
     <style>
         .menu-label {
             border-bottom : dotted 1px;
             margin-left   : 25px;
         }
-    </style> 
+    </style>
 </head>
 <body>
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    
-    <ext:Window 
-        ID="Window1" 
-        runat="server" 
-        Title="Notifications" 
-        Width="300" 
-        Height="400" 
+
+    <ext:Window
+        ID="Window1"
+        runat="server"
+        Title="Notifications"
+        Width="300"
+        Height="400"
         Layout="Accordion">
         <Items>
             <ext:MenuPanel runat="server" Title="Basic Align" SaveSelection="false">
@@ -389,19 +389,19 @@
                                 <Click OnEvent="Option1_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Top Right">
                             <DirectEvents>
                                 <Click OnEvent="Option2_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Top Left">
                             <DirectEvents>
                                 <Click OnEvent="Option3_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Bottom Left">
                             <DirectEvents>
                                 <Click OnEvent="Option4_Click" />
@@ -410,7 +410,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Custom Align" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -419,25 +419,25 @@
                                 <Click OnEvent="Option5_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Bottom Right Inside Window">
                             <DirectEvents>
                                 <Click OnEvent="Option6_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Above Top Edge">
                             <DirectEvents>
                                 <Click OnEvent="Option7_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Below Bottom Edge">
                             <DirectEvents>
                                 <Click OnEvent="Option8_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem ID="MenuItem1" runat="server" Text="Show Right">
                             <DirectEvents>
                                 <Click OnEvent="Option9_Click" />
@@ -446,7 +446,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="ShowMode" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -455,11 +455,11 @@
                             <DirectEvents>
                                 <Click OnEvent="Option10_Click" />
                             </DirectEvents>
-                        </ext:MenuItem>                                
+                        </ext:MenuItem>
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Hide Functionality" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -467,29 +467,29 @@
                             <DirectEvents>
                                 <Click OnEvent="Option11_Click" />
                             </DirectEvents>
-                        </ext:MenuItem>    
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="2 Second Delay">
                             <DirectEvents>
                                 <Click OnEvent="Option12_Click" />
                             </DirectEvents>
-                        </ext:MenuItem>                                                            
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="Mouseover Stop Hiding">
                             <DirectEvents>
                                 <Click OnEvent="Option13_Click" />
                             </DirectEvents>
-                        </ext:MenuItem>   
-                        
+                        </ext:MenuItem>
+
                         <ext:MenuItem runat="server" Text="Close All Other Notifications">
                             <DirectEvents>
                                 <Click OnEvent="Option14_Click" />
                             </DirectEvents>
-                        </ext:MenuItem>   
+                        </ext:MenuItem>
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Content Functionality" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -504,7 +504,7 @@
                                 <Click OnEvent="Option15_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show with Content Element">
                             <DirectEvents>
                                 <Click OnEvent="Option16_Click" />
@@ -513,7 +513,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Tools" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -522,13 +522,13 @@
                                 <Click OnEvent="Option17_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Pinned Pin Tool Button">
                             <DirectEvents>
                                 <Click OnEvent="Option18_Click" />
                             </DirectEvents>
                         </ext:MenuItem>
-                        
+
                         <ext:MenuItem runat="server" Text="Show Custom Tool Button">
                             <DirectEvents>
                                 <Click OnEvent="Option19_Click" />
@@ -537,7 +537,7 @@
                     </Items>
                 </Menu>
             </ext:MenuPanel>
-            
+
             <ext:MenuPanel runat="server" Title="Other" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
@@ -551,15 +551,15 @@
             </ext:MenuPanel>
         </Items>
     </ext:Window>
-    
+
     <div id="customEl" class="x-hidden">
-        <ext:Panel 
-            ID="CustomEl1" 
-            runat="server" 
-            Border="false" 
-            BodyPadding="2" 
-            AutoDataBind="true" 
-            Height="113" 
+        <ext:Panel
+            ID="CustomEl1"
+            runat="server"
+            Border="false"
+            BodyPadding="2"
+            AutoDataBind="true"
+            Height="113"
             Width="180">
             <Content>
                 <%# stub %>

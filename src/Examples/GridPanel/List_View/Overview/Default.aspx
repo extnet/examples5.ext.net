@@ -11,11 +11,11 @@
             string[] files = System.IO.Directory.GetFiles(path);
 
             List<object> data = new List<object>(files.Length);
-            
+
             foreach (string fileName in files)
             {
                 System.IO.FileInfo file = new System.IO.FileInfo(fileName);
-                
+
                 data.Add(new { name = file.Name,
                                url = "../../../DataView/Shared/images/thumbs/" + file.Name,
                                size = file.Length,
@@ -23,7 +23,7 @@
             }
 
             Store store = this.GridPanel1.GetStore();
-            
+
             store.DataSource = data;
             store.DataBind();
         }
@@ -37,7 +37,7 @@
         {
             sb.AppendFormat("RecordID: {0}&nbsp;&nbsp;&nbsp;&nbsp;Row index: {1}<br/>", row.RecordID, row.RowIndex);
         }
-        
+
         this.Label1.Html = sb.ToString();
     }
 
@@ -66,58 +66,58 @@
             if (addText)
             {
                 sb.Append("<tr>");
-            
+
                 foreach (KeyValuePair<string, string> keyValuePair in row)
                 {
                     sb.AppendFormat("<td style=\"white-space:nowrap;font-weight:bold;\">{0}</td>", keyValuePair.Key);
                 }
-                
+
                 sb.Append("</tr>");
 
                 addText = false;
             }
 
             sb.Append("<tr>");
-            
+
             foreach (KeyValuePair<string, string> keyValuePair in row)
             {
                 sb.AppendFormat("<td style=\"white-space:nowrap;\">{0}</td>", keyValuePair.Value);
             }
-            
+
             sb.Append("</tr>");
         }
-        
+
         sb.Append("</table>");
         this.Label1.Html = sb.ToString();
     }
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
-    <title>GridPanel - Ext.NET Examples</title>    
+    <title>GridPanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var selectionChanged = function (selModel, selected) {
-			var count = selected.length, s = count != 1 ? "s" : "";
-			App.Panel1.setTitle("Simple GridPanel (" + count + " item" + s + " selected)");
-		};
-    </script>   
+            var count = selected.length, s = count != 1 ? "s" : "";
+            App.Panel1.setTitle("Simple GridPanel (" + count + " item" + s + " selected)");
+        };
+    </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>ListView Example</h1>
-        
+
         <p>Ext.Net 2 replaces Ext.ListView with the default GridPanel.</p>
-        
-        <ext:Panel 
-            ID="Panel1" 
-            runat="server" 
-            Width="800" 
+
+        <ext:Panel
+            ID="Panel1"
+            runat="server"
+            Width="800"
             Height="300"
             Title="Simple List <i>View (0 items selected)</i>"
             Layout="Fit">
@@ -129,7 +129,7 @@
                                 <ext:Model runat="server" IDProperty="name">
                                     <Fields>
                                         <ext:ModelField Name="name" />
-                                        <ext:ModelField Name="url" />      
+                                        <ext:ModelField Name="url" />
                                         <ext:ModelField Name="size" Type="Int" />
                                         <ext:ModelField Name="lastmod" Type="Date" />
                                     </Fields>
@@ -141,56 +141,56 @@
                         <Columns>
                             <ext:TemplateColumn
                                 runat="server"
-                                Text="File" 
-                                Flex="15" 
-                                DataIndex="url" 
-                                TemplateString='<img style="width:60px;height:45px;" src="{url}" />' 
+                                Text="File"
+                                Flex="15"
+                                DataIndex="url"
+                                TemplateString='<img style="width:60px;height:45px;" src="{url}" />'
                                 />
-                            <ext:Column 
+                            <ext:Column
                                 runat="server"
-                                Text="File" 
-                                Flex="35" 
-                                DataIndex="name" 
-                                />
-                            <ext:TemplateColumn 
-                                runat="server"
-                                Text="Last Modified" 
-                                Flex="30" 
-                                DataIndex="lastmod" 
-                                TemplateString='{lastmod:date("m-d h:i a")}' 
+                                Text="File"
+                                Flex="35"
+                                DataIndex="name"
                                 />
                             <ext:TemplateColumn
-                                runat="server" 
-                                Text="Size" 
-                                Flex="20" 
-                                DataIndex="size" 
-                                Align="Right" 
-                                TemplateString="{size:fileSize}" 
+                                runat="server"
+                                Text="Last Modified"
+                                Flex="30"
+                                DataIndex="lastmod"
+                                TemplateString='{lastmod:date("m-d h:i a")}'
                                 />
-                        </Columns>    
+                            <ext:TemplateColumn
+                                runat="server"
+                                Text="Size"
+                                Flex="20"
+                                DataIndex="size"
+                                Align="Right"
+                                TemplateString="{size:fileSize}"
+                                />
+                        </Columns>
                     </ColumnModel>
                     <View>
-                        <ext:GridView 
-                            runat="server" 
+                        <ext:GridView
+                            runat="server"
                             EmptyText="No Images to Display" />
                     </View>
                     <SelectionModel>
                         <ext:RowSelectionModel ID="RowSelectionModel1" runat="server" Mode="Multi" />
                     </SelectionModel>
                     <Listeners>
-                        <SelectionChange Fn="selectionChanged" /> 
-                    </Listeners> 
+                        <SelectionChange Fn="selectionChanged" />
+                    </Listeners>
                 </ext:GridPanel>
-            </Items>        
+            </Items>
             <Buttons>
                 <ext:Button runat="server" Text="Submit Selected" OnDirectClick="Button1_Click" />
                 <ext:Button runat="server" Text="Submit Selected with Values">
                     <DirectEvents>
                         <Click OnEvent="SubmitSelection">
                             <ExtraParams>
-                                <ext:Parameter 
-                                    Name="Values" 
-                                    Value="#{GridPanel1}.getRowsValues({ selectedOnly : true })" 
+                                <ext:Parameter
+                                    Name="Values"
+                                    Value="#{GridPanel1}.getRowsValues({ selectedOnly : true })"
                                     Mode="Raw"
                                     Encode="true" />
                             </ExtraParams>
@@ -201,7 +201,7 @@
                 <ext:Button runat="server" Text="Add 'Zack' to Selection " OnDirectClick="Add_Click" />
             </Buttons>
         </ext:Panel>
-        
+
         <div style="width:788px; border:1px solid gray; padding:5px;">
             <ext:Label ID="Label1" runat="server" />
         </div>

@@ -12,7 +12,7 @@
         public double PctChange { get; set; }
         public DateTime LastChange { get; set; }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -31,8 +31,8 @@
     private List<Company> GetData()
     {
         DateTime today = DateTime.Today;
-        
-        return new List<Company> 
+
+        return new List<Company>
         {
             new Company { ID = 1, Name = "3m Co", Price = 71.72, Change = 0.02, PctChange = 0.03, LastChange = today },
             new Company { ID = 2, Name = "Alcoa Inc", Price = 29.01, Change = 0.42, PctChange = 1.47, LastChange = today },
@@ -89,21 +89,21 @@
 <html>
 <head runat="server">
     <title>Editor with DirectMethod - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = 'color:{0};';
 
         var change = function (value, meta) {
-            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");            
+            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");
             return value;
         };
 
         var pctChange = function (value, meta) {
-            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");            
+            meta.style = Ext.String.format(template, (value > 0) ? "green" : "red");
             return value + "%";
         };
-        
+
         var edit = function (editor, e) {
             /*
                 "e" is an edit event with the following properties:
@@ -118,7 +118,7 @@
                     rowIdx - The row index that was edited
                     colIdx - The column index that was edited
             */
-            
+
             // Call DirectMethod
             if (!(e.value === e.originalValue || (Ext.isDate(e.value) && Ext.Date.isEqual(e.value, e.originalValue)))) {
                 CompanyX.Edit(e.record.data.ID, e.field, e.originalValue, e.value, e.record.data);
@@ -129,14 +129,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <h1>Editable GridPanel With Save To [DirectMethod]</h1>
-    
-        <ext:GridPanel 
+
+        <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
+            runat="server"
             Title="Editable GridPanel"
-            Width="700" 
+            Width="700"
             Height="350">
             <Store>
                 <ext:Store runat="server">
@@ -180,10 +180,10 @@
                             <ext:NumberField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        DataIndex="LastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        DataIndex="LastChange"
                         Format="yyyy-MM-dd"
                         Width="120">
                         <Editor>
@@ -202,7 +202,7 @@
                     </Listeners>
                 </ext:CellEditing>
             </Plugins>
-        </ext:GridPanel>    
-    </form>      
+        </ext:GridPanel>
+    </form>
 </body>
 </html>

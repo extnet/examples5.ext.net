@@ -232,7 +232,7 @@ namespace Ext.Net.Examples.SimpleTasks
             List<Task> allTasks = new List<Task>(16);
 
             // not so good solution
-            // it is better to write stored procedure which returns all children nodes 
+            // it is better to write stored procedure which returns all children nodes
             // for particular category (children from all down levels)
             Category category = (from tl in ctx.Categories where tl.ID == categoryID select tl).First();
             this.AddTasks(category, allTasks, completed);
@@ -353,7 +353,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 {
                     this.Store.Primary.Remove((object)id);
                 }
-                
+
                 return true;
             }
             catch (Exception e)
@@ -385,7 +385,7 @@ namespace Ext.Net.Examples.SimpleTasks
             {
                 task.Reminder = DateTime.Parse(values["Reminder"].ToString());
             }
-            
+
             ctx.SubmitChanges();
         }
 
@@ -393,7 +393,7 @@ namespace Ext.Net.Examples.SimpleTasks
         public void MarkTask(int taskId, bool complete, int categoryID, string filter)
         {
             this.ToggleStatus(new int[] { taskId }, complete, categoryID, filter);
-            
+
             if (!complete)
             {
                 this.AddScript("TaskWindow_{0}.down('#taskMessage').hide();", taskId);

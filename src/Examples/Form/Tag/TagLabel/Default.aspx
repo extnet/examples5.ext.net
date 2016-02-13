@@ -22,7 +22,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>TagLabel</h1>
 
         <h2>Simple Tags</h2>
@@ -38,7 +38,7 @@
         <br />
 
         <h2>Simple Tags with Icons</h2>
-        
+
         <ext:TagLabel runat="server">
             <Tags>
                 <ext:Tag Text="Tag 1" Icon="UserAdd" />
@@ -46,11 +46,11 @@
                 <ext:Tag Text="Tag 3" Icon="UserDelete" />
             </Tags>
         </ext:TagLabel>
-        
+
         <br />
 
         <h2>Simple Tags with custom Css and ToolTips</h2>
-        
+
         <ext:TagLabel runat="server">
             <Tags>
                 <ext:Tag Text="Tag 1" Cls="red-text" QTip="Red text" />
@@ -58,7 +58,7 @@
                 <ext:Tag Text="Tag 3" Style="color:teal;font-weight:bold;" QTip="Teal text" />
             </Tags>
         </ext:TagLabel>
-        
+
         <br />
 
         <h2>Closable Tags</h2>
@@ -75,9 +75,9 @@
 
                 <ext:Button runat="server" Text="Show tags" Handler="alert(this.prev().getValue());" />
             </Items>
-        </ext:Container>  
-        
-        <br />      
+        </ext:Container>
+
+        <br />
 
         <h2>Stacked Tags</h2>
 
@@ -103,13 +103,13 @@
                     </Tags>
                 </ext:TagLabel>
 
-                <ext:Button 
-                    runat="server" 
-                    Text="Show selected tags" 
-                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));" 
+                <ext:Button
+                    runat="server"
+                    Text="Show selected tags"
+                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));"
                     />
             </Items>
-        </ext:Container>  
+        </ext:Container>
 
         <ext:Container runat="server" Layout="HBoxLayout">
             <Items>
@@ -121,17 +121,17 @@
                     </Tags>
                 </ext:TagLabel>
 
-                <ext:Button 
-                    runat="server" 
-                    Text="Show selected tags" 
-                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));" 
+                <ext:Button
+                    runat="server"
+                    Text="Show selected tags"
+                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));"
                     />
             </Items>
-        </ext:Container>  
+        </ext:Container>
 
         <br />
 
-        
+
         <h2>Tags with Menu (right-click)</h2>
 
         <ext:TagLabel runat="server">
@@ -143,17 +143,17 @@
             <Menu>
                 <ext:Menu runat="server">
                     <Items>
-                        <ext:MenuItem 
-                            runat="server" 
+                        <ext:MenuItem
+                            runat="server"
                             Text="Add"
                             Icon="Add"
-                            Handler="var menu = this.up('menu'); menu.tagLabel.insert(menu.tagLabel.indexOf(menu.activeTag), {text: Ext.id()});" 
+                            Handler="var menu = this.up('menu'); menu.tagLabel.insert(menu.tagLabel.indexOf(menu.activeTag), {text: Ext.id()});"
                             />
-                        <ext:MenuItem 
-                            runat="server" 
-                            Text="Delete" 
-                            Icon="Decline" 
-                            Handler="var menu = this.up('menu'); menu.tagLabel.remove(menu.activeTag);" 
+                        <ext:MenuItem
+                            runat="server"
+                            Text="Delete"
+                            Icon="Decline"
+                            Handler="var menu = this.up('menu'); menu.tagLabel.remove(menu.activeTag);"
                             />
                     </Items>
                 </ext:Menu>

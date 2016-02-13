@@ -12,7 +12,7 @@
             if (dataSource == null || dataSource.Count == 0)
             {
                 dataSource = new List<Data>(5);
-                
+
                 for (int i = 1; i <= 5; i++)
                 {
                     Data data = new Data();
@@ -148,10 +148,10 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Store 
-            ID="Store1" 
-            runat="server" 
+
+        <ext:Store
+            ID="Store1"
+            runat="server"
             OnReadData="FetchRecord"
             PageSize="1">
             <Proxy>
@@ -175,57 +175,57 @@
                 <Exception Handler="#{FormWindow}.body.unmask();" />
             </Listeners>
         </ext:Store>
-        
-        <ext:Window 
-            ID="FormWindow" 
-            runat="server" 
-            Title="Form View" 
-            Width="420" 
-            Height="245"           
-            BodyPadding="10" 
-            Resizable="false" 
+
+        <ext:Window
+            ID="FormWindow"
+            runat="server"
+            Title="Form View"
+            Width="420"
+            Height="245"
+            BodyPadding="10"
+            Resizable="false"
             Closable="false"
             Layout="Fit">
             <Items>
-                <ext:FormPanel 
-                    ID="FormPanel1" 
-                    runat="server" 
-                    Border="false" 
+                <ext:FormPanel
+                    ID="FormPanel1"
+                    runat="server"
+                    Border="false"
                     BodyStyle="background-color:transparent;"
                     DefaultAnchor="-10"
                     Layout="Form">
                     <Items>
-                        <ext:TextField 
+                        <ext:TextField
                             ID="CompanyField"
-                            runat="server" 
-                            Name="Company" 
-                            MsgTarget="Side" 
+                            runat="server"
+                            Name="Company"
+                            MsgTarget="Side"
                             AllowBlank="false"
-                            FieldLabel="Company" 
+                            FieldLabel="Company"
                             />
-                        <ext:NumberField 
-                            ID="PriceField" 
-                            runat="server" 
-                            Name="Price" 
-                            MsgTarget="Side" 
+                        <ext:NumberField
+                            ID="PriceField"
+                            runat="server"
+                            Name="Price"
+                            MsgTarget="Side"
                             AllowBlank="false"
-                            FieldLabel="Price" 
+                            FieldLabel="Price"
                             />
-                        <ext:NumberField 
-                            ID="ChangeField" 
-                            runat="server" 
-                            Name="Change" 
-                            MsgTarget="Side" 
+                        <ext:NumberField
+                            ID="ChangeField"
+                            runat="server"
+                            Name="Change"
+                            MsgTarget="Side"
                             AllowBlank="false"
-                            FieldLabel="Change" 
+                            FieldLabel="Change"
                             />
-                        <ext:DateField 
-                            ID="LastChangeField" 
-                            runat="server" 
-                            Name="LastChange" 
-                            MsgTarget="Side" 
+                        <ext:DateField
+                            ID="LastChangeField"
+                            runat="server"
+                            Name="LastChange"
+                            MsgTarget="Side"
                             AllowBlank="false"
-                            FieldLabel="Last change" 
+                            FieldLabel="Last change"
                             />
                     </Items>
                     <Listeners>
@@ -251,16 +251,16 @@
                             </DirectEvents>
                         </ext:Button>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button 
-                            ID="btnSaveRecord" 
-                            runat="server" 
-                            Icon="Disk" 
-                            Text="Save" 
+                        <ext:Button
+                            ID="btnSaveRecord"
+                            runat="server"
+                            Icon="Disk"
+                            Text="Save"
                             Disabled="true">
                             <DirectEvents>
-                                <Click 
-                                    OnEvent="SaveClick" 
-                                    Before="return #{FormPanel1}.getForm().isValid();" 
+                                <Click
+                                    OnEvent="SaveClick"
+                                    Before="return #{FormPanel1}.getForm().isValid();"
                                     Success="Ext.Msg.alert('', 'Saved');">
                                     <ExtraParams>
                                         <ext:Parameter Name="recordId" Value="#{Store1}.getAt(0).data.ID" Mode="Raw" />
@@ -272,10 +272,10 @@
                 </ext:Toolbar>
             </TopBar>
             <BottomBar>
-                <ext:PagingToolbar 
-                    ID="Pager1" 
-                    runat="server" 
-                    StoreID="Store1" 
+                <ext:PagingToolbar
+                    ID="Pager1"
+                    runat="server"
+                    StoreID="Store1"
                     DisplayInfo="false" />
             </BottomBar>
         </ext:Window>

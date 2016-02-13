@@ -5,14 +5,14 @@
     {
         this.Chart1.GetStore().DataBind();
     }
-</script> 
+</script>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Column Chart - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />   
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var saveChart = function (btn) {
@@ -32,7 +32,7 @@
 
         <p>Display a sets of random data in a column series. Reload data will randomly generate a new set of data in the store.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Column Chart"
             Width="800"
@@ -41,16 +41,16 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save Chart"
                             Icon="Disk"
                             Handler="saveChart"
                             />
@@ -59,15 +59,15 @@
             </TopBar>
 
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server">
                     <AnimationConfig Easing="BounceOut" Duration="750" />
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(5, 0) %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(5, 0) %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -117,9 +117,9 @@
                     </Gradients>
 
                     <Axes>
-                        <ext:NumericAxis      
-                            Position="Left"                       
-                            Fields="Data1"                                                        
+                        <ext:NumericAxis
+                            Position="Left"
+                            Fields="Data1"
                             Title="Number of Hits"
                             Minimum="0"
                             Maximum="100">
@@ -128,22 +128,22 @@
                                 <Odd StrokeStyle="#555" />
                                 <Even StrokeStyle="#555" />
                             </GridConfig>
-                        </ext:NumericAxis>                            
+                        </ext:NumericAxis>
 
-                        <ext:CategoryAxis Position="Bottom" Fields="Name" Title="Month of the Year" />                            
+                        <ext:CategoryAxis Position="Bottom" Fields="Name" Title="Month of the Year" />
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries 
-                            Highlight="true" 
-                            XField="Name" 
-                            YField="Data1">                            
-                            <Label 
-                                Display="InsideEnd" 
-                                Field="Data1" 
-                                Orientation="Horizontal" 
-                                FillStyle="#000" 
-                                Font="17px Arial" 
+                        <ext:BarSeries
+                            Highlight="true"
+                            XField="Name"
+                            YField="Data1">
+                            <Label
+                                Display="InsideEnd"
+                                Field="Data1"
+                                Orientation="Horizontal"
+                                FillStyle="#000"
+                                Font="17px Arial"
                                 TextAlign="Center">
                                 <Renderer Handler="return Ext.util.Format.number(text, '0');" />
                             </Label>
@@ -156,6 +156,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

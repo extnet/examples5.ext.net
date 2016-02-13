@@ -22,7 +22,7 @@ namespace Ext.Net.Examples
                     {
                         Text = "Factory button",
                         Handler = "Ext.Msg.alert('Factory button', 'The button is clicked');",
-                        Plugins = 
+                        Plugins =
                     {
                         new Badge
                         {
@@ -59,12 +59,12 @@ namespace Ext.Net.Examples
 
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Application_AcquireRequestState(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Application_Error(object sender, EventArgs e)

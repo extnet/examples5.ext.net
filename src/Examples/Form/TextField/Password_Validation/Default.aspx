@@ -10,13 +10,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Password Validation</h1>
 
         <p>This example shows a password verification, the second value must be equivalent to the first to validate.</p>
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Width="350"
             Title="Password Verification"
             Icon="Textfield"
@@ -27,9 +27,9 @@
                 <ext:Parameter Name="LabelWidth" Value="125" Mode="Raw" />
             </Defaults>
             <Items>
-                <ext:TextField 
-                    ID="PasswordField" 
-                    runat="server"                    
+                <ext:TextField
+                    ID="PasswordField"
+                    runat="server"
                     FieldLabel="Password"
                     InputType="Password"
                     AllowBlank="false"
@@ -39,19 +39,19 @@
                             <Blur Handler="this.next().validate();" />
                         </Listeners>
                     </ext:TextField>
-                <ext:TextField 
-                    runat="server"                     
+                <ext:TextField
+                    runat="server"
                     Vtype="password"
                     FieldLabel="Confirm Password"
                     InputType="Password"
                     MsgTarget="Side"
-                    AnchorHorizontal="100%">     
+                    AnchorHorizontal="100%">
                     <CustomConfig>
                         <ext:ConfigItem Name="initialPassField" Value="PasswordField" Mode="Value" />
-                    </CustomConfig>                      
-                </ext:TextField>     
-            </Items>            
-        </ext:Window>                
+                    </CustomConfig>
+                </ext:TextField>
+            </Items>
+        </ext:Window>
    </form>
 </body>
 </html>

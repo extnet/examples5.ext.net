@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     public class MyModel
     {
         public static object Model = new
@@ -10,12 +10,12 @@
             {
                 everyone = JRawValue.From(new Store
                 {
-                    Model = 
-                    { 
-                        new Model 
+                    Model =
+                    {
+                        new Model
                         {
                             Name = "Person",
-                            Fields = 
+                            Fields =
                             {
                                 new ModelField("firstName"),
                                 new ModelField("lastName"),
@@ -31,8 +31,8 @@
                 adults = JRawValue.From(new Store
                 {
                     Source = "{everyone}",
-                    Filters = 
-                    { 
+                    Filters =
+                    {
                         new DataFilter
                         {
                             Property = "age",
@@ -40,8 +40,8 @@
                             Op = ">="
                         }
                     },
-                    Sorters = 
-                    { 
+                    Sorters =
+                    {
                         new DataSorter
                         {
                             Property = "age",
@@ -51,51 +51,51 @@
                 }.ToConfig())
             }
         };
-            
-        private static string GetRandom(Random r, string[] array) 
+
+        private static string GetRandom(Random r, string[] array)
         {
             var index = r.Next(0, array.Length);
             return array[index];
         }
-            
+
         private static object GenerateData(int? total, int? adults = null, int? children = null)
         {
             var lasts = new string[]{"Jones", "Smith", "Lee", "Wilson", "Black", "Williams", "Lewis", "Johnson", "Foot", "Little", "Vee", "Train", "Hot", "Mutt"};
             var firsts = new string[]{"Fred", "Julie", "Bill", "Ted", "Jack", "John", "Mark", "Mike", "Chris", "Bob", "Travis", "Kelly", "Sara"};
             var colors = new string[]{"Red", "Green", "Blue"};
 
-                
+
             var result = new List<object>();
             var hasAdult = adults.HasValue;
             var hasChildren = children.HasValue;
             string name;
             var r = new Random();
-                
-            if (hasAdult && hasChildren) 
+
+            if (hasAdult && hasChildren)
             {
                 total = adults + children;
-            } 
+            }
             else {
                 // We rely on total now
                 total = total.HasValue ? total : 15;
-                    
-                if (!hasAdult && !hasChildren) 
+
+                if (!hasAdult && !hasChildren)
                 {
                     adults = r.Next(Convert.ToInt32(Math.Floor(total.Value * 0.25)), Convert.ToInt32(Math.Floor(total.Value * 0.75)));
                     children = total - adults;
-                } 
+                }
                 else if (!hasAdult) {
                     adults = total - children;
-                } 
+                }
                 else {
                     children = total - adults;
                 }
             }
 
-                
-            for (int i = 0; i < total; ++i) 
+
+            for (int i = 0; i < total; ++i)
             {
-                result.Add(new 
+                result.Add(new
                 {
                     firstName = GetRandom(r, firsts),
                     lastName = GetRandom(r, lasts),
@@ -113,7 +113,7 @@
 
 <html>
 <head runat="server">
-    <title>Chaining Stores - Ext.Net Examples</title>        
+    <title>Chaining Stores - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -132,7 +132,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Chaining Stores</h1>
 
         <p>This example demonstrates a chained store, a store that is backed by the data of another <br />
@@ -140,8 +140,8 @@
            store removes it from the chained store. Model instances are shared, so editing the data <br />
            in one store will be reflected in the other.
         </p>
-        
-       <ext:Container 
+
+       <ext:Container
            runat="server"
            Width="680"
            Height="600"
@@ -202,7 +202,7 @@
                    </Plugins>
                </ext:GridPanel>
 
-               <ext:GridPanel 
+               <ext:GridPanel
                    runat="server"
                    BindString="{adults}"
                    Title="The Adults"
@@ -219,7 +219,7 @@
                                <Renderer Handler="return Ext.String.format('<span style=\'color: {0};\'>{1}</span>', value.toLowerCase(), value);" />
                            </ext:Column>
                        </Columns>
-                   </ColumnModel>                 
+                   </ColumnModel>
                </ext:GridPanel>
            </Items>
        </ext:Container>

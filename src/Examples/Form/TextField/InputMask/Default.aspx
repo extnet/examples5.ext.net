@@ -9,18 +9,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Input Mask</h1>
         <p>InputMask is a plugin for TextField, used to add an input mask to the field.</p>
-        
-        <ext:Window 
-            runat="server" 
+
+        <ext:Window
+            runat="server"
             Width="550"
-            Height="370"            
-            Title="Input Mask"            
+            Height="370"
+            Title="Input Mask"
             Closable="false"
             Layout="Form"
-            BodyPadding="5">           
+            BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="LabelWidth" Value="200" />
             </Defaults>
@@ -70,9 +70,9 @@
 
                 <ext:TextField runat="server" FieldLabel="ClearWhenInvalid=false" Note="Always visible mask">
                     <Plugins>
-                        <ext:InputMask runat="server" 
-                            Mask="(999) 999-9999" 
-                            AlwaysShow="true" 
+                        <ext:InputMask runat="server"
+                            Mask="(999) 999-9999"
+                            AlwaysShow="true"
                             ClearWhenInvalid="false"
                             InvalidMaskText="The value doesn't match the mask" />
                     </Plugins>
@@ -83,8 +83,8 @@
                         <ext:InputMask runat="server" Mask="(999) 999-9999" UnmaskOnBlur="true" />
                     </Plugins>
                 </ext:TextField>
-            </Items>            
-        </ext:Window>                
+            </Items>
+        </ext:Window>
    </form>
 </body>
 </html>

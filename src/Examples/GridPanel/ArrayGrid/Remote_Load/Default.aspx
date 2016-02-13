@@ -5,12 +5,12 @@
     {
         // Show the GridPanel because it may be hidden.
         this.GridPanel1.Show();
-        
-        // Load the data into the Store and DataBind. 
+
+        // Load the data into the Store and DataBind.
         this.Store1.DataSource = this.Data;
         this.Store1.DataBind();
     }
-        
+
     private object[] Data
     {
         get
@@ -56,7 +56,7 @@
 <html>
 <head runat="server">
     <title>Simple Array Grid - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -73,15 +73,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
+
         <h1>Load GridPanel with DirectEvent</h1>
-    
+
         <p>Demonstrates how to show and load a GridPanel with data during a DirectEvent.</p>
-    
-        <ext:Panel 
-            runat="server" 
+
+        <ext:Panel
+            runat="server"
             Title="Example"
-            Width="600" 
+            Width="600"
             Height="350"
             Layout="FitLayout">
             <TopBar>
@@ -90,11 +90,11 @@
                         <ext:Button runat="server" Text="Load Data" OnDirectClick="Button1_Click" />
                     </Items>
                 </ext:Toolbar>
-            </TopBar>        
+            </TopBar>
             <Items>
-                <ext:GridPanel 
+                <ext:GridPanel
                     ID="GridPanel1"
-                    runat="server" 
+                    runat="server"
                     Hidden="true"
                     Border="false">
                     <Store>
@@ -137,8 +137,8 @@
                         <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
                     </View>
                 </ext:GridPanel>
-            </Items>    
+            </Items>
         </ext:Panel>
-    </form>      
+    </form>
 </body>
 </html>

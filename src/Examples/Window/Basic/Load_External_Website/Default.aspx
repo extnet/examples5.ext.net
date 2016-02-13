@@ -39,10 +39,10 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Load External Website into an &lt;ext:Window></h1>
 
-        <p>Load an external url into a Window using the AutoLoad property. 
+        <p>Load an external url into a Window using the AutoLoad property.
             All Properties for the &lt;ext:Window> are set during the Page_Load Event.</p>
 
         <ext:Button runat="server" Text="Show Window" Icon="Application">

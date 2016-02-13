@@ -8,7 +8,7 @@
         this.Label1.Html = string.Format(tpl, this.NumberField1.Number, this.NumberField2.Number);
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -19,12 +19,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>NumberField</h1>
 
-        <ext:Panel 
-            ID="Panel1" 
-            runat="server" 
+        <ext:Panel
+            ID="Panel1"
+            runat="server"
             Title="Simple Form"
             Width="250"
             Frame="true"
@@ -35,10 +35,10 @@
             </Defaults>
             <Items>
                 <ext:NumberField ID="NumberField1" runat="server" FieldLabel="Age" />
-                <ext:NumberField 
-                    ID="NumberField2" 
-                    runat="server" 
-                    FieldLabel="Test" 
+                <ext:NumberField
+                    ID="NumberField2"
+                    runat="server"
+                    FieldLabel="Test"
                     MinValue="0"
                     MaxValue="100"
                     AllowDecimals="true"
@@ -54,7 +54,7 @@
                 </ext:Button>
             </Buttons>
         </ext:Panel>
-        
+
         <ext:Label ID="Label1" runat="server" />
     </form>
 </body>

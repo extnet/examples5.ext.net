@@ -13,20 +13,20 @@
             BodyStyle = "padding: 10px 20px;",
             AutoScroll = true,
             CloseAction = Ext.Net.CloseAction.Destroy,
-            Buttons = 
+            Buttons =
             {
                 new Ext.Net.Button
                 {
                     Text = "Decline",
                     Handler = "function () { this.up('window').close(); Ext.ComponentQuery.query('[name=acceptTerms]')[0].setValue(false); }"
                 },
-                
+
                 new Ext.Net.Button
                 {
                     Text = "Accept",
                     Handler = "function () { this.up('window').close(); Ext.ComponentQuery.query('[name=acceptTerms]')[0].setValue(true); }"
                 }
-            }            
+            }
         };
 
         w.ContentControls.Add(new UserControlLoader { Path = "LicenseTerms.ascx" });
@@ -40,7 +40,7 @@
 <html>
 <head runat="server">
     <title>Registration Form - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />       
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
      <style>
         /* Styling of global error indicator */
@@ -54,7 +54,7 @@
         }
         .form-error-state-invalid {
             color: #C30;
-            background-image: url(../../../../icons/exclamation-png/ext.axd);            
+            background-image: url(../../../../icons/exclamation-png/ext.axd);
         }
         .form-error-state-valid {
             color: #090;
@@ -89,9 +89,9 @@
         function boxLabelClick (e) {
             var target = e.getTarget('.terms'),
                 win;
-                        
+
             e.preventDefault();
-                        
+
             if (target) {
                 App.direct.ShowTerms();
             }
@@ -102,7 +102,7 @@
                 baseCls = me.baseCls,
                 tip = me.tooltips[0];
 
-            errors = Ext.Array.from(errors);                       
+            errors = Ext.Array.from(errors);
 
             // Update CSS class and tooltip content
             if (errors.length) {
@@ -120,14 +120,14 @@
                 me.update("Form is valid");
                 tip.setDisabled(true);
                 tip.hide();
-            }            
+            }
         }
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Registration Form</h1>
 
         <p>This example shows a common site registration form. The form appears simple but it shows a few special things: </p>
@@ -143,7 +143,7 @@
 
         <br />
 
-        <ext:FormPanel 
+        <ext:FormPanel
             ID="FormPanel1"
             runat="server"
             Frame="true"
@@ -152,7 +152,7 @@
             BodyBorder="1"
             Title="Account Registration"
             DefaultAnchor="100%">
-            
+
             <FieldDefaults LabelAlign="Left" MsgTarget="None" InvalidCls="" />
 
             <Listeners>
@@ -161,39 +161,39 @@
             </Listeners>
 
             <Items>
-                <ext:TextField 
-                    runat="server" 
-                    Name="username" 
+                <ext:TextField
+                    runat="server"
+                    Name="username"
                     FieldLabel="User Name"
                     AllowBlank="false"
                     MinLength="6" />
 
-                <ext:TextField 
-                    runat="server" 
-                    Name="email" 
+                <ext:TextField
+                    runat="server"
+                    Name="email"
                     FieldLabel="Email Address"
                     AllowBlank="false"
                     Vtype="email" />
 
-                <ext:TextField 
-                    runat="server" 
-                    Name="password1" 
+                <ext:TextField
+                    runat="server"
+                    Name="password1"
                     FieldLabel="Password"
                     InputType="Password"
                     StyleSpec="margin-top:15px;"
                     AllowBlank="false"
                     MinLength="8" />
 
-                <ext:TextField 
-                    runat="server" 
-                    Name="password2" 
+                <ext:TextField
+                    runat="server"
+                    Name="password2"
                     FieldLabel="Repeat Password"
                     InputType="Password"
                     AllowBlank="false">
                     <Validator Handler="return (value === this.previousSibling('[name=password1]').getValue()) ? true : 'Passwords do not match.';" />
                 </ext:TextField>
 
-                <ext:Checkbox 
+                <ext:Checkbox
                     runat="server"
                     Name="acceptTerms"
                     FieldLabel="Terms of Use"
@@ -209,17 +209,17 @@
             </Items>
 
             <DockedItems>
-                <ext:Container 
-                    runat="server"                    
+                <ext:Container
+                    runat="server"
                     Dock="Bottom"
                     PaddingSpec="10 10 5">
-                    
+
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
 
                     <Items>
-                        <ext:Component 
+                        <ext:Component
                             runat="server"
                             ItemID="formErrorState"
                             BaseCls="form-error-state"
@@ -238,8 +238,8 @@
                                 </ext:XTemplate>
                             </Bin>
                             <ToolTips>
-                                <ext:ToolTip        
-                                    runat="server" 
+                                <ext:ToolTip
+                                    runat="server"
                                     Title="Error Details:"
                                     AutoHide="false"
                                     Anchor="top"
@@ -252,7 +252,7 @@
                             </ToolTips>
                         </ext:Component>
 
-                        <ext:Button 
+                        <ext:Button
                             runat="server"
                             FormBind="true"
                             Disabled="true"

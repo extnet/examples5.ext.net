@@ -5,7 +5,7 @@
     {
         string id = e.Parameters["SupplierID"];
         this.LinqDataSource2.WhereParameters["SupplierID"].DefaultValue = id ?? "-1";
-        
+
         this.Store2.DataBind();
     }
 </script>
@@ -20,80 +20,80 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:LinqDataSource 
-            ID="LinqDataSource1" 
-            runat="server" 
+
+        <asp:LinqDataSource
+            ID="LinqDataSource1"
+            runat="server"
             ContextTypeName="Ext.Net.Examples.Northwind.NorthwindDataContext"
             Select="new (SupplierID,
-                     CompanyName, 
-                     ContactName, 
-                     ContactTitle, 
-                     Address, 
-                     City, 
-                     Region, 
-                     PostalCode, 
-                     Country, 
-                     Phone, 
-                     Fax)" 
-            TableName="Suppliers" 
+                     CompanyName,
+                     ContactName,
+                     ContactTitle,
+                     Address,
+                     City,
+                     Region,
+                     PostalCode,
+                     Country,
+                     Phone,
+                     Fax)"
+            TableName="Suppliers"
             />
-        
-        <asp:LinqDataSource 
-            ID="LinqDataSource2" 
-            runat="server" 
+
+        <asp:LinqDataSource
+            ID="LinqDataSource2"
+            runat="server"
             ContextTypeName="Ext.Net.Examples.Northwind.NorthwindDataContext"
             Select="new (ProductName,
                      QuantityPerUnit,
-                     UnitPrice, 
-                     UnitsInStock, 
-                     Discontinued, 
-                     UnitsOnOrder, 
-                     ReorderLevel, 
-                     ProductID, 
-                     SupplierID)" 
-            TableName="Products" 
+                     UnitPrice,
+                     UnitsInStock,
+                     Discontinued,
+                     UnitsOnOrder,
+                     ReorderLevel,
+                     ProductID,
+                     SupplierID)"
+            TableName="Products"
             AutoGenerateWhereClause="True">
             <WhereParameters>
                 <asp:Parameter Name="SupplierID" Type="Int32" DefaultValue="-1" />
             </WhereParameters>
         </asp:LinqDataSource>
-        
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Panel 
-                    ID="Panel1" 
+                <ext:Panel
+                    ID="Panel1"
                     runat="server"
-                    Region="North" 
-                    Title="Description" 
-                    Height="100" 
+                    Region="North"
+                    Title="Description"
+                    Height="100"
                     BodyPadding="5"
-                    Frame="true" 
+                    Frame="true"
                     Icon="Information"
-                    MarginSpec="5 5 5 5"> 
+                    MarginSpec="5 5 5 5">
                     <Content>
                         <p>One to Many Data Relationship with GridPanels. Click on any record within the parent GridPanel to load related data into second GridPanel.
                            If South Region is collapsed then Ajax load is not performed for the second GridPanel.
                            After South Region is expanded the Ajax request will be performed.</p>
                     </Content>
                 </ext:Panel>
-                <ext:Panel 
+                <ext:Panel
                     runat="server"
                     Region="Center"
-                    Frame="true" 
-                    Title="Suppliers" 
-                    Icon="Lorry" 
-                    Layout="Fit" 
+                    Frame="true"
+                    Title="Suppliers"
+                    Icon="Lorry"
+                    Layout="Fit"
                     MarginSpec="0 5 0 5">
                     <Items>
-                        <ext:GridPanel 
-                            ID="GridPanel1" 
+                        <ext:GridPanel
+                            ID="GridPanel1"
                             runat="server">
                             <Store>
-                                <ext:Store 
-                                    ID="Store1" 
-                                    runat="server" 
-                                    DataSourceID="LinqDataSource1" 
+                                <ext:Store
+                                    ID="Store1"
+                                    runat="server"
+                                    DataSourceID="LinqDataSource1"
                                     PageSize="10">
                                     <Model>
                                         <ext:Model runat="server" IDProperty="SupplierID">
@@ -142,28 +142,28 @@
                         </ext:GridPanel>
                     </Items>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="pnlSouth" 
+                <ext:Panel
+                    ID="pnlSouth"
                     runat="server"
                     Region="South"
-                    Title="Products" 
-                    Height="200" 
-                    Icon="Basket" 
-                    Layout="Fit" 
-                    Collapsible="true" 
-                    Split="true" 
+                    Title="Products"
+                    Height="200"
+                    Icon="Basket"
+                    Layout="Fit"
+                    Collapsible="true"
+                    Split="true"
                     MarginSpec="0 5 5 5">
                     <Items>
-                        <ext:GridPanel 
-                            ID="GridPanel2" 
+                        <ext:GridPanel
+                            ID="GridPanel2"
                             runat="server"
                             Border="false">
                             <Store>
-                                <ext:Store 
-                                    ID="Store2" 
-                                    runat="server" 
+                                <ext:Store
+                                    ID="Store2"
+                                    runat="server"
                                     AutoLoad="false"
-                                    DataSourceID="LinqDataSource2" 
+                                    DataSourceID="LinqDataSource2"
                                     OnReadData="Store2_Refresh">
                                     <Model>
                                         <ext:Model runat="server">
@@ -183,13 +183,13 @@
                                         <ext:JsonReader IDProperty="ProductID" />
                                     </Reader>
                                     <Parameters>
-                                        <ext:StoreParameter 
-                                            Name="SupplierID" 
+                                        <ext:StoreParameter
+                                            Name="SupplierID"
                                             Value="#{GridPanel1}.getSelectionModel().hasSelection() ? #{GridPanel1}.getSelectionModel().getSelection()[0].data.SupplierID : -1"
-                                            Mode="Raw" 
+                                            Mode="Raw"
                                             />
                                     </Parameters>
-                                    <Listeners>                                                                          
+                                    <Listeners>
                                         <Exception Handler="Ext.Msg.alert('Products - Load failed', operation.getError());" />
                                     </Listeners>
                                 </ext:Store>
@@ -207,7 +207,7 @@
                             </ColumnModel>
                             <SelectionModel>
                                 <ext:RowSelectionModel runat="server" Mode="Single" />
-                            </SelectionModel>                                   
+                            </SelectionModel>
                         </ext:GridPanel>
                     </Items>
                     <Listeners>

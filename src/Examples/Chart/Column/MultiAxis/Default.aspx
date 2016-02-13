@@ -6,19 +6,19 @@
         public string Month
         {
             get;
-            set;    
+            set;
         }
-        
+
         public double High
         {
             get;
-            set;    
-        }    
-        
+            set;
+        }
+
         public double Low
         {
             get;
-            set;    
+            set;
         }
     }
 
@@ -32,7 +32,7 @@
 
     private void BindData()
     {
-        var data = new List<Temperature> 
+        var data = new List<Temperature>
         {
             new Temperature { Month = "Jan", High = 14.7, Low = 5.6  },
             new Temperature { Month = "Feb", High = 16.5, Low = 6.6  },
@@ -92,7 +92,7 @@
                 <ext:CartesianChart
                     ID="Chart1"
                     runat="server"
-                    InsetPadding="10" 
+                    InsetPadding="10"
                     InnerPadding="0 20 0 20">
                     <Store>
                         <ext:Store runat="server">
@@ -116,12 +116,12 @@
 
                     <Interactions>
                         <ext:CrossZoomInteraction />
-                    </Interactions>                    
+                    </Interactions>
 
                     <Axes>
-                        <ext:NumericAxis 
+                        <ext:NumericAxis
                             AxisID="fahrenheit-axis"
-                            Position="Left"                                                        
+                            Position="Left"
                             AdjustByMajorUnit="true"
                             Minimum="32"
                             TitleMargin="20"
@@ -132,17 +132,17 @@
                             </Listeners>
                         </ext:NumericAxis>
 
-                        <ext:NumericAxis 
+                        <ext:NumericAxis
                             AxisID="celsius-axis"
                             TitleMargin="20"
-                            Position="Right"> 
+                            Position="Right">
                             <TitleConfig FillStyle="red" Text="Temperature in °C" />
                         </ext:NumericAxis>
 
                         <ext:CategoryAxis AxisID="months-axis" Position="Bottom" />
 
-                        <ext:CategoryAxis 
-                            LinkedToID="months-axis" 
+                        <ext:CategoryAxis
+                            LinkedToID="months-axis"
                             Position="Top"
                             TitleMargin="20">
                             <TitleConfig FillStyle="green" Text="Climate data for Redwood City, California" />
@@ -150,9 +150,9 @@
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries                            
+                        <ext:BarSeries
                             XField="Month"
-                            YField="HighF" 
+                            YField="HighF"
                             YAxisID="fahrenheit-axis">
                             <StyleSpec>
                                 <ext:SeriesSprite MinGapWidth="10" />
@@ -163,9 +163,9 @@
                             </SubStyle>
                         </ext:BarSeries>
 
-                        <ext:BarSeries                            
+                        <ext:BarSeries
                             XField="Month"
-                            YField="LowF" 
+                            YField="LowF"
                             YAxisID="fahrenheit-axis">
                             <StyleSpec>
                                 <ext:SeriesSprite MinGapWidth="10" />

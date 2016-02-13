@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Menu Layout - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .white-menu .x-menu-body {
             background : white !important;
@@ -16,13 +16,13 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Menu layout</h1>
-        
+
         <ext:Toolbar runat="server">
             <Items>
                 <ext:Button runat="server" Text="Home" />
-                
+
                 <ext:Button runat="server" Text="Products">
                     <Menu>
                         <ext:Menu runat="server" ShowSeparator="false">
@@ -32,7 +32,7 @@
                                         <ext:Parameter Name="Height" Value="230" Mode="Raw" />
                                         <ext:Parameter Name="Flex" Value="1" Mode="Raw" />
                                         <ext:Parameter Name="Cls" Value="white-menu" Mode="Value" />
-                                        <ext:Parameter Name="Margin" Value="1" Mode="Raw" /> 
+                                        <ext:Parameter Name="Margin" Value="1" Mode="Raw" />
                                     </Defaults>
                                     <Items>
                                         <ext:MenuPanel runat="server" Title="Desktop">
@@ -48,7 +48,7 @@
                                                 </Items>
                                             </Menu>
                                         </ext:MenuPanel>
-                                                
+
                                         <ext:MenuPanel runat="server" Title="Laptop">
                                             <Menu runat="server" ShowSeparator="false">
                                                 <Items>
@@ -62,7 +62,7 @@
                                                 </Items>
                                             </Menu>
                                         </ext:MenuPanel>
-                                                
+
                                         <ext:MenuPanel runat="server" Title="Accessories">
                                             <Menu runat="server" ShowSeparator="false">
                                                 <Items>
@@ -76,7 +76,7 @@
                                                 </Items>
                                             </Menu>
                                         </ext:MenuPanel>
-                                                
+
                                         <ext:MenuPanel runat="server" Title="Accessories">
                                             <Menu runat="server" ShowSeparator="false">
                                                 <Items>
@@ -91,12 +91,12 @@
                                             </Menu>
                                         </ext:MenuPanel>
                                     </Items>
-                                </ext:Container>                                    
+                                </ext:Container>
                             </Items>
                         </ext:Menu>
                     </Menu>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Sales Items">
                     <Menu>
                         <ext:Menu runat="server" ShowSeparator="false">
@@ -111,7 +111,7 @@
                                                 <ext:Parameter Name="Height" Value="230" Mode="Raw" />
                                                 <ext:Parameter Name="Flex" Value="1" Mode="Raw" />
                                                 <ext:Parameter Name="Cls" Value="white-menu" Mode="Value" />
-                                                <ext:Parameter Name="Margin" Value="1" Mode="Raw" /> 
+                                                <ext:Parameter Name="Margin" Value="1" Mode="Raw" />
                                             </Defaults>
                                             <Items>
                                                 <ext:MenuPanel runat="server" Title="Deal of the week">
@@ -127,7 +127,7 @@
                                                         </Items>
                                                     </Menu>
                                                 </ext:MenuPanel>
-                                                        
+
                                                 <ext:MenuPanel runat="server" Title="Clearance items">
                                                     <Menu runat="server" ShowSeparator="false">
                                                         <Items>
@@ -143,13 +143,13 @@
                                                 </ext:MenuPanel>
                                             </Items>
                                         </ext:Container>
-                                                
+
                                         <ext:Container runat="server" Flex="1" Layout="Hbox">
                                             <Defaults>
                                                 <ext:Parameter Name="Height" Value="230" Mode="Raw" />
                                                 <ext:Parameter Name="Flex" Value="1" Mode="Raw" />
                                                 <ext:Parameter Name="Cls" Value="white-menu" Mode="Value" />
-                                                <ext:Parameter Name="Margin" Value="1" Mode="Raw" /> 
+                                                <ext:Parameter Name="Margin" Value="1" Mode="Raw" />
                                             </Defaults>
                                             <Items>
                                                 <ext:MenuPanel runat="server" Title="Deal of the week">
@@ -165,7 +165,7 @@
                                                         </Items>
                                                     </Menu>
                                                 </ext:MenuPanel>
-                                                        
+
                                                 <ext:MenuPanel runat="server" Title="Clearance items">
                                                     <Menu runat="server" ShowSeparator="false">
                                                         <Items>
@@ -179,7 +179,7 @@
                                                         </Items>
                                                     </Menu>
                                                 </ext:MenuPanel>
-                                                        
+
                                                 <ext:MenuPanel runat="server" Title="Open Box Items">
                                                     <Menu runat="server" ShowSeparator="false">
                                                         <Items>

@@ -20,7 +20,7 @@ namespace Ext.Net.Examples.Examples.GridPanel.Data_Presentation.Meta_config_with
             object data;
             if (meta == "1")
             {
-                data = new List<object> { 
+                data = new List<object> {
                     new { ID = 1,  StringField = "string", BooleanField = "boolean"},
                     new { ID = 2,  StringField = "string", BooleanField = "boolean"},
                     new { ID = 3,  StringField = "string", BooleanField = "boolean"},
@@ -30,7 +30,7 @@ namespace Ext.Net.Examples.Examples.GridPanel.Data_Presentation.Meta_config_with
             }
             else
             {
-                data = new List<object> { 
+                data = new List<object> {
                     new { ID = 1,  DateField = DateTime.Now, NumberField = 472.96},
                     new { ID = 2,  DateField = DateTime.Now, NumberField = 472.96},
                     new { ID = 3,  DateField = DateTime.Now, NumberField = 472.96},

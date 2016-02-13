@@ -38,25 +38,25 @@
             <br />
             <a href="http://www.openajax.org/member/wiki/OpenAjax_Hub_2.0_Specification_Topic_Names">OpenAjax Hub 2.0 Specification Topic Names</a>
         </p>
-    
+
         <ext:Container runat="server" Layout="HBoxLayout">
             <Items>
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
-                    Title="Catch ALL App Events" 
-                    Width="300" 
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Title="Catch ALL App Events"
+                    Width="300"
                     Height="300"
                     Layout="FitLayout"
-                    BodyPadding="5" 
+                    BodyPadding="5"
                     MarginSpec="5">
                     <MessageBusListeners>
-                        <ext:MessageBusListener 
-                            Name="App.*"                             
-                            Handler="this.body.createChild({html: name + ' from ' + data.item.id, tag:'p'});" 
+                        <ext:MessageBusListener
+                            Name="App.*"
+                            Handler="this.body.createChild({html: name + ' from ' + data.item.id, tag:'p'});"
                             />
                     </MessageBusListeners>
-            
+
                     <Buttons>
                         <ext:Button ID="Button1" runat="server" Text="Publish 'App.event1'">
                             <Listeners>
@@ -70,16 +70,16 @@
                             </Listeners>
                         </ext:Button>
                     </Buttons>
-                </ext:Panel>    
+                </ext:Panel>
 
-                <ext:Panel 
-                    ID="Panel2" 
-                    runat="server" 
-                    Title="Category Events" 
+                <ext:Panel
+                    ID="Panel2"
+                    runat="server"
+                    Title="Category Events"
                     Layout="FitLayout"
-                    Width="350" 
-                    Height="300" 
-                    BodyPadding="5" 
+                    Width="350"
+                    Height="300"
+                    BodyPadding="5"
                     MarginSpec="5">
                     <MessageBusListeners>
                         <ext:MessageBusListener Name="Msg.Log" Handler="this.body.createChild({html: data, tag:'p', style:'color:blue;'});" />
@@ -105,7 +105,7 @@
                                 <Click Handler="Ext.net.Bus.publish('Msg.Error', 'An Error Message');" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Publish 'Server'">
                             <DirectEvents>
                                 <Click OnEvent="PublishEvent" />

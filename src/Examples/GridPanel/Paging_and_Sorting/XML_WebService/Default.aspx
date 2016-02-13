@@ -10,18 +10,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            runat="server" 
-            ID="GridPanel1" 
-            Title="Employees" 
-            Frame="true" 
+
+        <ext:GridPanel
+            runat="server"
+            ID="GridPanel1"
+            Title="Employees"
+            Frame="true"
             Height="300">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
-                    runat="server" 
-                    RemoteSort="true" 
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    RemoteSort="true"
                     PageSize="5">
                     <Proxy>
                         <ext:AjaxProxy Url="../../Shared/PlantService.asmx/PlantsPaging">
@@ -63,13 +63,13 @@
             </ColumnModel>
             <View>
                 <ext:GridView runat="server" LoadingText="Loading XML..." />
-            </View>          
+            </View>
             <BottomBar>
                 <ext:PagingToolbar
-                    runat="server"                     
-                    DisplayInfo="true" 
-                    DisplayMsg="Displaying plants {0} - {1} of {2}" 
-                    EmptyMsg="No plants to display" 
+                    runat="server"
+                    DisplayInfo="true"
+                    DisplayMsg="Displaying plants {0} - {1} of {2}"
+                    EmptyMsg="No plants to display"
                     />
             </BottomBar>
         </ext:GridPanel>

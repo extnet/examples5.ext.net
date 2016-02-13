@@ -1,15 +1,15 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     public class MyModel
     {
         public static object Model = new
         {
             // links : Object
             // Links provide a way to assign a simple name to a more complex bind. The primary use for this is to assign names to records in the data model.
-            links = new 
+            links = new
             {
-                theCustomer = new 
+                theCustomer = new
                 {
                     type = "Customer",
                     id = 1
@@ -23,13 +23,13 @@
 
 <html>
 <head runat="server">
-    <title>Model Validation - Ext.Net Examples</title>        
+    <title>Model Validation - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Model Validation</h1>
 
         <p>This example shows simple data binding to models (Ext.data.Model). When the value is <br />
@@ -52,16 +52,16 @@
                 <ext:AjaxProxy Url="customers.json" />
             </Proxy>
         </ext:Model>
-        
-        <ext:Panel 
-            runat="server" 
+
+        <ext:Panel
+            runat="server"
             Title="Customer Details"
             Width="350"
             BodyPadding="10"
             Layout="AnchorLayout"
             DefaultAnchor="-30"
-            ModelValidation="true"            
-            ViewModel="<%# MyModel.Model %>" 
+            ModelValidation="true"
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
                 <ext:TextField runat="server" FieldLabel="Name" MsgTarget="Side" BindString="{theCustomer.name}" />

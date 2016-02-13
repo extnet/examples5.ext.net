@@ -23,7 +23,7 @@
         <ext:ResourceManager runat="server" />
 
         <h1>Side Tabs</h1>
-        
+
         <p>
             This example demonstrates side-aligned tabs in Ext.Net.  Tab Panels can be configured
             with a TabPosition of "Right" to rotate the tab bar clockwise, or "Left" to rotate
@@ -32,7 +32,7 @@
 
         <div id="left-tabs" class="tab-cont">
             <h2>Left-Aligned Tabs</h2>
-            <ext:TabPanel runat="server" 
+            <ext:TabPanel runat="server"
                 TabPosition="Left"
                 Height="300"
                 Width="300">
@@ -44,10 +44,10 @@
                 </Items>
             </ext:TabPanel>
         </div>
-    
+
         <div id="right-tabs" class="tab-cont">
             <h2>Right-Aligned Tabs</h2>
-            <ext:TabPanel runat="server" 
+            <ext:TabPanel runat="server"
                 TabPosition="Right"
                 Height="300"
                 Width="300">
@@ -61,10 +61,10 @@
         </div>
 
         <div class="x-clear"></div>
-        
+
         <div id="right-scroll-tabs" class="tab-cont">
-            <h2>Left-Aligned Tabs With Scrolling</h2> 
-            <ext:TabPanel runat="server" 
+            <h2>Left-Aligned Tabs With Scrolling</h2>
+            <ext:TabPanel runat="server"
                 TabPosition="Left"
                 Height="300"
                 Width="300">
@@ -83,7 +83,7 @@
 
         <div id="left-scroll-tabs" class="tab-cont">
             <h2>Right-Aligned Tabs With Scrolling</h2>
-            <ext:TabPanel runat="server" 
+            <ext:TabPanel runat="server"
                 TabPosition="Right"
                 Height="300"
                 Width="300">

@@ -3,7 +3,7 @@
 <script runat="server">
     protected void FormSave(object sender, DirectEventArgs e)
     {
-        FormStatusBar.SetStatus(new StatusBarStatusConfig { Text = "Form saved!", IconCls = " ", Clear2 = true });                  
+        FormStatusBar.SetStatus(new StatusBarStatusConfig { Text = "Form saved!", IconCls = " ", Clear2 = true });
     }
 </script>
 
@@ -12,7 +12,7 @@
 <html>
 <head runat="server">
     <title>StatusBar Advanced - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />   
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .list {
             list-style-image    : none;
@@ -25,38 +25,38 @@
             font-size : 11px;
             padding   : 3px;
         }
-    </style> 
+    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
         <h1>Advanced StatusBar Example</h1>
-        
+
         <p>This is an advanced example of customizing an Ext.StatusBar via a plugin.</p>
-        
+
         <h2>Customizing the StatusBar</h2>
-        
-        <p>The ValidationStatus plugin hooks into the StatusBar and automatically 
+
+        <p>The ValidationStatus plugin hooks into the StatusBar and automatically
             monitors the validation status of any fields in the associated FormPanel.  Items of interest:</p>
-            
+
         <ul class="list">
             <li>The StatusBar syncs in real-time with the valid state of the form as you type</li>
             <li>When the form is invalid, the error status message can be clicked to hide/show a custom error list</li>
-            <li>The error list items can be clicked to focus the associated fields</li>            
+            <li>The error list items can be clicked to focus the associated fields</li>
         </ul>
-        
+
         <br/>
-        
-        <ext:Panel 
-            runat="server" 
+
+        <ext:Panel
+            runat="server"
             Title="StatusBar with Integrated Form Validation"
             Width="350"
             Height="185"
             Layout="Fit">
             <Items>
-                <ext:FormPanel 
-                    ID="StatusForm" 
+                <ext:FormPanel
+                    ID="StatusForm"
                     runat="server"
                     LabelWidth="75"
                     ButtonAlign="Right"
@@ -75,14 +75,14 @@
                     <Buttons>
                         <ext:Button runat="server" Text="Save" Icon="Disk">
                             <DirectEvents>
-                                <Click 
-                                    OnEvent="FormSave" 
+                                <Click
+                                    OnEvent="FormSave"
                                     Before="var valid= #{StatusForm}.getForm().isValid(); if (valid) {#{FormStatusBar}.showBusy('Saving form...');} return valid;">
-                                    <EventMask 
-                                        ShowMask="true" 
-                                        MinDelay="1000" 
-                                        Target="CustomTarget" 
-                                        CustomTarget="={#{StatusForm}.getEl()}" 
+                                    <EventMask
+                                        ShowMask="true"
+                                        MinDelay="1000"
+                                        Target="CustomTarget"
+                                        CustomTarget="={#{StatusForm}.getEl()}"
                                         />
                                 </Click>
                             </DirectEvents>
@@ -93,11 +93,11 @@
             <BottomBar>
                 <ext:StatusBar ID="FormStatusBar" runat="server" DefaultText="Ready">
                     <Plugins>
-                        <ext:ValidationStatus 
-                            runat="server" 
-                            FormPanelID="StatusForm" 
-                            ValidIcon="Accept" 
-                            ErrorIcon="Exclamation" 
+                        <ext:ValidationStatus
+                            runat="server"
+                            FormPanelID="StatusForm"
+                            ValidIcon="Accept"
+                            ErrorIcon="Exclamation"
                             />
                     </Plugins>
                 </ext:StatusBar>

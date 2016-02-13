@@ -23,7 +23,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -39,9 +39,9 @@ namespace Ext.Net.Examples
                 this.State.Set("Text", value);
             }
         }
-        
+
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -59,7 +59,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -77,7 +77,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -95,7 +95,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -131,7 +131,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption]
@@ -151,7 +151,7 @@ namespace Ext.Net.Examples
         private Sprite template;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Meta]
         [ConfigOption(JsonMode.Object)]
@@ -170,7 +170,7 @@ namespace Ext.Net.Examples
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]

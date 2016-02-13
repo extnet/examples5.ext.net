@@ -10,23 +10,23 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
 
         <ext:Viewport runat="server">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
             </LayoutConfig>
             <Items>
-                <ext:Panel runat="server" Border="false" PreventHeader="true" Width="640" Height="480" Layout="FitLayout" BodyStyle="background:transparent;" ButtonAlign="Center">                   
-                    <Items>                        
+                <ext:Panel runat="server" Border="false" PreventHeader="true" Width="640" Height="480" Layout="FitLayout" BodyStyle="background:transparent;" ButtonAlign="Center">
+                    <Items>
                         <ext:DrawContainer ID="Canvas" runat="server">
                             <Items>
-                                <ext:RectSprite 
-                                    X="0" 
-                                    Y="0" 
+                                <ext:RectSprite
+                                    X="0"
+                                    Y="0"
                                     FillStyle="#CECECE"
-                                    Radius="10" 
-                                    Width="640" 
+                                    Radius="10"
+                                    Width="640"
                                     Height="480">
                                 </ext:RectSprite>
                                 <ext:CircleSprite
@@ -37,7 +37,7 @@
                                     Radius="60">
                                 </ext:CircleSprite>
                             </Items>
-                        </ext:DrawContainer>    
+                        </ext:DrawContainer>
                     </Items>
                     <FooterBar>
                         <ext:Toolbar runat="server">
@@ -54,13 +54,13 @@
                                                 alert(e.message || e);
                                             }" />
                                     </Listeners>
-                                </ext:Button>    
+                                </ext:Button>
                             </Items>
-                        </ext:Toolbar>                    
+                        </ext:Toolbar>
                     </FooterBar>
-                </ext:Panel>            
+                </ext:Panel>
             </Items>
-        </ext:Viewport>   
-    </form>    
+        </ext:Viewport>
+    </form>
 </body>
 </html>

@@ -4,17 +4,17 @@
 
 <html>
 <head runat="server">
-    <title>Slider and Form Fields - Ext.Net Examples</title>        
+    <title>Slider and Form Fields - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <script runat="server">    
+    <script runat="server">
         public class MyModel
         {
             public static object Model = new
             {
                 //data : Object
                 //This object holds the arbitrary data that populates the ViewModel and is then available for binding.
-                data = new 
+                data = new
                 {
                     red = 255,
                     green = 100,
@@ -27,18 +27,18 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Slider and Form Fields</h1>
 
         <p>Shows how a Slider widget can be used with a ViewModel.</p>
-        
-        <ext:Panel runat="server" 
-            Width="400" 
-            BodyPadding="10" 
+
+        <ext:Panel runat="server"
+            Width="400"
+            BodyPadding="10"
             Title="Color Components"
             Layout="AnchorLayout"
             DefaultAnchor="0"
-            ViewModel="<%# MyModel.Model %>" 
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
                 <ext:FieldContainer runat="server"

@@ -47,24 +47,24 @@
 <head runat="server">
     <title>Multi-Header Row in GridPanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
-    <style>        
+
+    <style>
         .test-ct {
-            background-color : Black; 
-            height : 47px !important; 
+            background-color : Black;
+            height : 47px !important;
             color  : White;
         }
     </style>
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager ID="ResourceManager1" runat="server" />        
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Multi-Header Grid" 
-            Width="600" 
+        <ext:ResourceManager ID="ResourceManager1" runat="server" />
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Multi-Header Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -83,7 +83,7 @@
                 <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
                         <Items>
-                             <ext:ComboBox ID="CompanyField" runat="server">                
+                             <ext:ComboBox ID="CompanyField" runat="server">
                                 <Items>
                                     <ext:ListItem Text="1" />
                                     <ext:ListItem Text="2" />
@@ -105,8 +105,8 @@
                         </Items>
                     </ext:Column>
                 </Columns>
-            </ColumnModel>            
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

@@ -15,8 +15,8 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:FormPanel 
-                runat="server" 
+            <ext:FormPanel
+                runat="server"
                 Title="Contact Us"
                 Frame="true"
                 Height="400"
@@ -24,36 +24,36 @@
                 Border="false"
                 BodyPadding="10"
                 DefaultAnchor="100%">
-                <FieldDefaults 
+                <FieldDefaults
                     LabelAlign="Top"
                     LabelWidth="100"
                     LabelStyle="font-weight:bold;" />
                 <Defaults>
                     <ext:Parameter Name="margin" Value="0 0 10 0" Mode="Value" />
-                </Defaults>  
+                </Defaults>
                 <Items>
-                    <ext:FieldContainer 
+                    <ext:FieldContainer
                         runat="server"
                         FieldLabel="Your Name"
                         LabelStyle="font-weight:bold;padding:0;"
                         Layout="HBoxLayout">
                         <FieldDefaults LabelAlign="Top" />
                         <Items>
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 Name="firstName"
                                 Flex="1"
                                 FieldLabel="First"
                                 AllowBlank="false" />
 
-                            <ext:TextField 
+                            <ext:TextField
                                 runat="server"
                                 Width="30"
                                 Name="middleInitial"
                                 FieldLabel="MI"
                                 MarginSpec="0 0 0 5" />
 
-                            <ext:TextField 
+                            <ext:TextField
                                 runat="server"
                                 Flex="2"
                                 Name="lastName"
@@ -63,7 +63,7 @@
                         </Items>
                     </ext:FieldContainer>
 
-                    <ext:TextField 
+                    <ext:TextField
                         runat="server"
                         FieldLabel="Your Email Address"
                         Vtype="email"
@@ -71,7 +71,7 @@
 
                     <ext:TextField runat="server" FieldLabel="Subject" AllowBlank="false" />
 
-                    <ext:TextArea 
+                    <ext:TextArea
                         runat="server"
                         FieldLabel="Message"
                         Flex="1"

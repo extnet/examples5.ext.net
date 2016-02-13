@@ -16,13 +16,13 @@
             color       : #385F95;
             white-space : normal;
         }
-        
+
         .x-grid-rowbody div {
             margin : 2px 5px 20px 5px !important;
             width  : 99%;
             color  : gray;
         }
-        
+
         .x-grid-row-expanded td.x-grid-cell{
             border-bottom-width:0px;
         }
@@ -37,35 +37,35 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:SqlDataSource 
-            ID="SqlDataSource1" 
-            runat="server" 
+
+        <asp:SqlDataSource
+            ID="SqlDataSource1"
+            runat="server"
             ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             SelectCommand="
-            SELECT 
-                [EmployeeID], 
-                [LastName], 
-                [FirstName], 
-                [Title], 
-                [TitleOfCourtesy], 
-                [BirthDate], 
-                [HireDate], 
-                [Address], 
-                [City], 
-                [Region], 
-                [PostalCode], 
-                [Country], 
-                [HomePhone], 
-                [Extension], 
-                [Notes] 
+            SELECT
+                [EmployeeID],
+                [LastName],
+                [FirstName],
+                [Title],
+                [TitleOfCourtesy],
+                [BirthDate],
+                [HireDate],
+                [Address],
+                [City],
+                [Region],
+                [PostalCode],
+                [Country],
+                [HomePhone],
+                [Extension],
+                [Notes]
             FROM [Employees]"
             />
-        
-        <ext:GridPanel 
-            runat="server" 
+
+        <ext:GridPanel
+            runat="server"
             Title="Employees"
-            Frame="true" 
+            Frame="true"
             Height="600">
             <Store>
                 <ext:Store runat="server" DataSourceID="SqlDataSource1">
@@ -112,7 +112,7 @@
             <View>
                 <ext:GridView runat="server">
                     <GetRowClass Handler="return 'x-grid-row-expanded';" />
-                </ext:GridView>        
+                </ext:GridView>
             </View>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />

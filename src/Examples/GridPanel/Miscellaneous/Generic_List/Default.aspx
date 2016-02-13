@@ -5,8 +5,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Store1.DataSource = new List<Company> 
-         { 
+        this.Store1.DataSource = new List<Company>
+         {
              new Company("3m Co", 71.72, 0.02, 0.03),
              new Company("Alcoa Inc", 29.01, 0.42, 1.47),
              new Company("Altria Group Inc", 83.81, 0.28, 0.34),
@@ -81,9 +81,9 @@
     <ext:ResourceManager runat="server" />
 
     <h1>Generic List GridPanel Example</h1>
-    
+
     <p>This example shows how to populate a GridPanel with data from a List of objects. Notice this Page does <b>not</b> include a &lt;form runat="server"> as it is optional with Ext.Net.</p>
-    
+
     <ext:Store ID="Store1" runat="server">
         <Model>
             <ext:Model runat="server">
@@ -96,13 +96,13 @@
             </ext:Model>
         </Model>
     </ext:Store>
-    
-    <ext:GridPanel 
-        ID="GridPanel1" 
-        runat="server" 
+
+    <ext:GridPanel
+        ID="GridPanel1"
+        runat="server"
         StoreID="Store1"
-        Title="Company List" 
-        Width="600" 
+        Title="Company List"
+        Width="600"
         Height="350">
         <ColumnModel runat="server">
             <Columns>
@@ -117,7 +117,7 @@
                     <Renderer Fn="pctChange" />
                 </ext:Column>
             </Columns>
-        </ColumnModel>        
+        </ColumnModel>
     </ext:GridPanel>
 </body>
 </html>

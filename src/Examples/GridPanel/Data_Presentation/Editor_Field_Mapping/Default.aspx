@@ -85,7 +85,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Store ID="StoreCombo" runat="server">
             <Model>
                 <ext:Model runat="server" IDProperty="ID">
@@ -96,10 +96,10 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel 
+
+        <ext:GridPanel
             runat="server"
-            Title="List" 
+            Title="List"
             Icon="Application">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -123,15 +123,15 @@
                     <ext:Column runat="server" Text="DEPARTMENT" DataIndex="DepartmentId" Width="240">
                         <Renderer Fn="departmentRenderer" />
                         <Editor>
-                            <ext:ComboBox 
-                                runat="server"     
-                                QueryMode="Local"   
-                                Editable="false"                     
-                                StoreID="StoreCombo" 
-                                DisplayField="Name" 
+                            <ext:ComboBox
+                                runat="server"
+                                QueryMode="Local"
+                                Editable="false"
+                                StoreID="StoreCombo"
+                                DisplayField="Name"
                                 ValueField="ID"
                                 />
-                        </Editor> 
+                        </Editor>
                     </ext:Column>
                 </Columns>
             </ColumnModel>

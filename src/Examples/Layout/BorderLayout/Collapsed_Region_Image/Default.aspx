@@ -5,14 +5,14 @@
 <html>
 <head runat="server">
     <title>Image on Collapsed BorderLayout Region - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         #WestPanel-placeholder-innerCt {
-            background : url(collapsed-west.png) no-repeat center;            
+            background : url(collapsed-west.png) no-repeat center;
         }
-        
+
         #SouthPanel-placeholder-innerCt {
             background : url(collapsed-south.png) no-repeat center;
         }
@@ -22,12 +22,12 @@
     <ext:ResourceManager runat="server" />
 
     <h1>Image on Collapsed BorderLayout Region</h1>
-    
-    <ext:Window 
-        runat="server" 
-        Title="Collapsed Region Image" 
+
+    <ext:Window
+        runat="server"
+        Title="Collapsed Region Image"
         Icon="Application"
-        Width="600" 
+        Width="600"
         Height="350"
         Border="false"
         Closable="false"
@@ -36,15 +36,15 @@
         Plain="true"
         Layout="BorderLayout">
         <Items>
-            <ext:Panel 
+            <ext:Panel
                 ID="WestPanel"
                 runat="server"
                 Region="West"
-                Collapsible="true" 
-                MinWidth="175" 
-                Split="true"                             
-                Width="175" 
-                Title="Navigation" 
+                Collapsible="true"
+                MinWidth="175"
+                Split="true"
+                Width="175"
+                Title="Navigation"
                 TitleCollapse="false"
                 Floatable="false"
                 Collapsed="true"
@@ -54,17 +54,17 @@
                     <AfterRender Handler="this.setTitle('');" />
                     <BeforeCollapse Handler="this.setTitle('');" />
                     <BeforeExpand Handler="this.setTitle(this.initialConfig.title);" />
-                </Listeners>                
+                </Listeners>
             </ext:Panel>
             <ext:Panel runat="server" Region="Center" Title="Center region" />
-            <ext:Panel 
+            <ext:Panel
                 ID="SouthPanel"
                 runat="server"
                 Region="South"
-                Collapsible="true" 
-                MinHeight="100" 
-                Split="true"                            
-                Height="100" 
+                Collapsible="true"
+                MinHeight="100"
+                Split="true"
+                Height="100"
                 Title="Footer"
                 TitleCollapse="false"
                 Floatable="false"
@@ -73,7 +73,7 @@
                     <AfterRender Handler="this.setTitle('');" />
                     <BeforeCollapse Handler="this.setTitle('');" />
                     <BeforeExpand Handler="this.setTitle(this.initialConfig.title);" />
-                </Listeners>   
+                </Listeners>
              </ext:Panel>
         </Items>
     </ext:Window>

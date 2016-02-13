@@ -41,7 +41,7 @@
             };
         }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -55,7 +55,7 @@
 
 <html>
 <head runat="server">
-    <title>Cell to Cell Drag and Drop - Ext.NET Examples</title>    
+    <title>Cell to Cell Drag and Drop - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
@@ -65,14 +65,14 @@
         <h1>Drag and Drop from Cell to Cell within the same GridView</h1>
         <p>This illustrates how a custom plugin can enable a cell to cell drag and drop operation within the same GridView.</p>
         <p>This example only allows a drag and drop operation for cells with the same data type, although that is configurable. The custom plugin allows for other configs, please see the comments in the source.</p>
-        
-        <ext:GridPanel 
-            runat="server"                         
+
+        <ext:GridPanel
+            runat="server"
             Width="800"
             Height="400">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
+                <ext:Store
+                    ID="Store1"
                     runat="server">
                     <Model>
                         <ext:Model runat="server">
@@ -107,7 +107,7 @@
                     </Plugins>
                 </ext:GridView>
             </View>
-        </ext:GridPanel>        
+        </ext:GridPanel>
     </form>
 </body>
 </html>

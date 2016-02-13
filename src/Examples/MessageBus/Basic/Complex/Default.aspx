@@ -9,9 +9,9 @@
         <Items>
             <ext:Panel runat="server" PreventHeader="true" Height="200" Layout="FitLayout">
                 <MessageBusListeners>
-                    <ext:MessageBusListener 
-                        Name="FromUserControl.*" 
-                        Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});" 
+                    <ext:MessageBusListener
+                        Name="FromUserControl.*"
+                        Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});"
                         />
                 </MessageBusListeners>
             </ext:Panel>
@@ -24,7 +24,7 @@
                     <ext:UserControlLoader runat="server" Path="UserControl1.ascx" />
                     <ext:UserControlLoader runat="server" Path="UserControl2.ascx" />
                 </Items>
-            </ext:Container>            
+            </ext:Container>
         </Items>
     </ext:Panel>
 </asp:Content>

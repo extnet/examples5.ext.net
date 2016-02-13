@@ -6,8 +6,8 @@
         if (!X.IsAjaxRequest)
         {
             Store store = this.GridPanel1.GetStore();
-            store.DataSource = new object[] 
-            { 
+            store.DataSource = new object[]
+            {
                 new object[] { "Company X", "1" },
                 new object[] { "Company Y", "2" },
                 new object[] { "Company Z", "3" }
@@ -54,27 +54,27 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company Name" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company Name"
                         DataIndex="name"
                         Flex="1"
                         />
 
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company ID" 
-                        DataIndex="id" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company ID"
+                        DataIndex="id"
                         Flex="1"
                         />
 
-                    <ext:HyperlinkColumn 
+                    <ext:HyperlinkColumn
                         ID="HyperlinkColumn1"
-                        runat="server" 
+                        runat="server"
                         Text="Hyperlink"
                         Flex="1"
-                        DataIndex="name" 
-                        DataIndexHref="id" 
+                        DataIndex="name"
+                        DataIndexHref="id"
                         Pattern="{text:uppercase}"
                         HrefPattern="http://ext.net?companyId={href}"
                         />
@@ -83,7 +83,7 @@
             <Buttons>
                 <ext:Button runat="server" Text="Change Hyperlink Pattern" OnDirectClick="Update" />
             </Buttons>
-        </ext:GridPanel>        
+        </ext:GridPanel>
     </form>
 </body>
 </html>

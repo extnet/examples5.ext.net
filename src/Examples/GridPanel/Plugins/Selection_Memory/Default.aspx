@@ -9,8 +9,8 @@
      {
          if (!X.IsAjaxRequest)
          {
-             this.Store1.DataSource = new List<Company> 
-             { 
+             this.Store1.DataSource = new List<Company>
+             {
                  new Company(0, "3m Co", 71.72, 0.02, 0.03),
                  new Company(1, "Alcoa Inc", 29.01, 0.42, 1.47),
                  new Company(2, "Altria Group Inc", 83.81, 0.28, 0.34),
@@ -49,7 +49,7 @@
                  RowSelectionModel sm = this.GridPanel1.GetSelectionModel() as RowSelectionModel;
 
                  sm.SelectedRow = new SelectedRow(2);
-                 
+
                  sm.SelectedRows.Add(new SelectedRow(2));
                  sm.SelectedRows.Add(new SelectedRow("11"));
              }
@@ -78,12 +78,12 @@
 <html>
 <head runat="server">
     <title></title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var template = '<span style="color:{0};">{1}</span>';
-        
+
         var change = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value);
         }
@@ -91,15 +91,15 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         }
-    </script>    
+    </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Selection Memory</h1>
         <p>This example shows how to keep selected rows when navigating through different grid pages.</p>
-        
+
         <ext:Store ID="Store1" runat="server" PageSize="10">
             <Model>
                 <ext:Model runat="server" IDProperty="ID">
@@ -113,17 +113,17 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
+
         <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
+            runat="server"
             StoreID="Store1"
             Title="Company List"
             Collapsible="true"
             Width="600"
             Height="350">
             <ColumnModel runat="server">
-		        <Columns>
+                <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="Name" Flex="1" />
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                         <Renderer Format="UsMoney" />
@@ -134,20 +134,20 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-		        </Columns>
+                </Columns>
             </ColumnModel>
             <SelectionModel>
-                <ext:CheckboxSelectionModel runat="server" Mode="Multi" />                   
+                <ext:CheckboxSelectionModel runat="server" Mode="Multi" />
             </SelectionModel>
             <View>
                 <ext:GridView runat="server" StripeRows="true" />
             </View>
-            
+
             <BottomBar>
                 <ext:PagingToolbar runat="server" />
             </BottomBar>
         </ext:GridPanel>
-        
+
         <ext:Button runat="server" Text="PostBack" AutoPostBack="true" />
     </form>
   </body>

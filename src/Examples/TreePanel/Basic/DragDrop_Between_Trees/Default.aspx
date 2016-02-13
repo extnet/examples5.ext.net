@@ -21,7 +21,7 @@
         if (!string.IsNullOrEmpty(e.NodeID))
         {
             SiteMapNode siteMapNode = SiteMap.Provider.FindSiteMapNodeFromKey(e.NodeID);
-            
+
             if (siteMapNode == null)
             {
                 return;
@@ -70,44 +70,44 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .tree {
-    	    float  : left;
-    	    margin : 20px;
-    	    border : 1px solid #c3daf9;
+            float  : left;
+            margin : 20px;
+            border : 1px solid #c3daf9;
         }
     </style>
 
     <script>
-        
+
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Drag and Drop between two TreePanels</h1>
-        
+
         <p>The TreePanels have a TreeSorter applied in "folderSort" mode.</p>
-        
+
         <p>Both TreePanels are in "appendOnly" drop mode since they are sorted.</p>
-        
+
         <p>Drag along the edge of the tree to trigger auto scrolling while performing a drag and drop.</p>
 
         <p>The data for this tree is asynchronously loaded with a TreeStore.</p>
-        
+
         <div class="tree">
-            <ext:TreePanel 
+            <ext:TreePanel
                 ID="TreePanel1"
-                runat="server" 
+                runat="server"
                 Border="false"
                 Height="300"
                 Width="250"
                 UseArrows="true"
                 Animate="true">
                 <Store>
-                    <ext:TreeStore 
-                        runat="server" 
+                    <ext:TreeStore
+                        runat="server"
                         OnReadData="LoadPages"
-                        FolderSort="true">                       
+                        FolderSort="true">
                         <Proxy>
                             <ext:PageProxy />
                         </Proxy>
@@ -115,7 +115,7 @@
                             <ext:DataSorter Property="text" />
                         </Sorters>
                     </ext:TreeStore>
-                </Store>                
+                </Store>
                 <View>
                     <ext:TreeView runat="server">
                        <Plugins>
@@ -125,9 +125,9 @@
                 </View>
             </ext:TreePanel>
         </div>
-        
+
         <div class="tree">
-            <ext:TreePanel 
+            <ext:TreePanel
                 ID="TreePanel2"
                 runat="server"
                 Height="300"
@@ -136,9 +136,9 @@
                 UseArrows="true"
                 AutoScroll="true">
                 <Store>
-                    <ext:TreeStore 
-                        runat="server" 
-                        OnReadData="LoadPages" 
+                    <ext:TreeStore
+                        runat="server"
+                        OnReadData="LoadPages"
                         FolderSort="true">
                         <Proxy>
                             <ext:PageProxy />
@@ -148,7 +148,7 @@
                         </Sorters>
                         <Root>
                             <ext:Node Text="My Files" Icon="Folder" Expanded="true" EmptyChildren="true" />
-                        </Root> 
+                        </Root>
                     </ext:TreeStore>
                 </Store>
                 <View>
@@ -157,7 +157,7 @@
                             <ext:TreeViewDragDrop runat="server" AppendOnly="true" ContainerScroll="true" />
                         </Plugins>
                     </ext:TreeView>
-                </View>                
+                </View>
             </ext:TreePanel>
         </div>
     </form>

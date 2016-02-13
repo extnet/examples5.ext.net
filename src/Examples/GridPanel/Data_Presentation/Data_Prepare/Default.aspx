@@ -19,15 +19,15 @@
 
             Address address = new Address
             {
-                StreetAddress = ("Street" + i), 
+                StreetAddress = ("Street" + i),
                 City = ("City" + i)
             };
-            
+
             customer.Address = address;
 
             list.Add(customer);
         }
-        
+
         this.Store1.DataSource = list;
         this.Store1.DataBind();
     }
@@ -68,11 +68,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Customers" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Customers"
             Width="630"
             Height="300">
             <Store>
@@ -88,7 +88,7 @@
                                 <ext:ModelField Name="City">
                                     <Convert Fn="prepareCity" />
                                 </ext:ModelField>
-                                <ext:ModelField Name="Street"> 
+                                <ext:ModelField Name="Street">
                                     <Convert Fn="prepareStreet" />
                                 </ext:ModelField>
                             </Fields>
@@ -101,12 +101,12 @@
                     <ext:Column runat="server" Text="ID" DataIndex="ID" />
                     <ext:Column runat="server" Text="FirstName" DataIndex="FirstName" />
                     <ext:Column runat="server" Text="LastName" DataIndex="LastName" />
-                    <ext:Column runat="server" Text="Company" DataIndex="Company" />            
-                    <ext:Column runat="server" Text="City" DataIndex="City" />            
-                    <ext:Column runat="server" Text="Street" DataIndex="Street" />            
+                    <ext:Column runat="server" Text="Company" DataIndex="Company" />
+                    <ext:Column runat="server" Text="City" DataIndex="City" />
+                    <ext:Column runat="server" Text="Street" DataIndex="Street" />
                 </Columns>
-            </ColumnModel>           
-        </ext:GridPanel> 
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

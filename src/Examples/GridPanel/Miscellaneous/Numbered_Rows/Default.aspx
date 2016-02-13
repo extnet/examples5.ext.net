@@ -45,9 +45,9 @@
 <html>
 <head runat="server">
     <title>GridPanel with Numbered Rows using a RowNumbererColumn - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var template = '<span style="color:{0};">{1}</span>';
 
@@ -63,11 +63,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>GridPanel with Numbered Rows using a RowNumbererColumn</h1>
-        
-        <ext:GridPanel 
-            runat="server" 
+
+        <ext:GridPanel
+            runat="server"
             Title="Grid with Numbered Rows and Force Fit"
             Icon="Table"
             Width="600"
@@ -103,7 +103,7 @@
                     </ext:Column>
                     <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Flex="1" />
                 </Columns>
-            </ColumnModel>                 
+            </ColumnModel>
         </ext:GridPanel>
     </form>
 </body>

@@ -15,23 +15,23 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:FormPanel 
-                runat="server" 
+            <ext:FormPanel
+                runat="server"
                 Title="Login"
-                Width="400" 
+                Width="400"
                 Frame="true"
                 BodyPadding="13"
                 DefaultAnchor="100%">
                 <Items>
-                    <ext:TextField 
-                        runat="server" 
+                    <ext:TextField
+                        runat="server"
                         AllowBlank="false"
                         FieldLabel="User ID"
                         Name="user"
                         EmptyText="user id" />
 
-                    <ext:TextField 
-                        runat="server" 
+                    <ext:TextField
+                        runat="server"
                         AllowBlank="false"
                         FieldLabel="Password"
                         Name="pass"

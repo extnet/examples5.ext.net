@@ -45,9 +45,9 @@
 <html>
 <head runat="server">
     <title>Custom rendered Column content - Ext.NET Examples</title>
-    
+
     <ext:ResourcePlaceHolder runat="server" Mode="Script" />
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -61,20 +61,20 @@
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
     </script>
-    
+
     <style>
         #label, .x-grid-cell-label {
-        	background: gray !important;
-        	color: #fff;
-        }  
+            background: gray !important;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Grid with Custom Column and Flex</h1>
-        
+
         <ext:Store ID="Store1" runat="server" IgnoreExtraFields="false">
             <Model>
                 <ext:Model runat="server">
@@ -89,32 +89,32 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-        
-        <ext:GridPanel  
-            runat="server" 
+
+        <ext:GridPanel
+            runat="server"
             StoreID="Store1"
             Title="Grid with Custom Column and Force Fit"
             Icon="Table"
             Width="600"
             Height="300">
             <ColumnModel ID="ColumnModel3" runat="server">
-			    <Columns>
-	                <ext:Column ID="label" runat="server" Text="¹" Fixed="true" Sortable="false" MenuDisabled="true" Flex="1">
-	                    <Renderer Fn="function (v, p, record, rowIndex) {return 'Row ¹'+rowIndex}" />
-	                </ext:Column>
-	                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1"/>
-	                <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
-	                    <Renderer Format="UsMoney" />
-	                </ext:Column>
-	                <ext:Column runat="server" Text="Change" DataIndex="change" Flex="1">
-	                    <Renderer Fn="change" />
-	                </ext:Column>
-	                <ext:Column runat="server" Text="Change" DataIndex="pctChange" Flex="1">
-	                    <Renderer Fn="pctChange" />
-	                </ext:Column>
-	                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Flex="1"/>
-			    </Columns>
-            </ColumnModel>                 
+                <Columns>
+                    <ext:Column ID="label" runat="server" Text="¹" Fixed="true" Sortable="false" MenuDisabled="true" Flex="1">
+                        <Renderer Fn="function (v, p, record, rowIndex) {return 'Row ¹'+rowIndex}" />
+                    </ext:Column>
+                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1"/>
+                    <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
+                        <Renderer Format="UsMoney" />
+                    </ext:Column>
+                    <ext:Column runat="server" Text="Change" DataIndex="change" Flex="1">
+                        <Renderer Fn="change" />
+                    </ext:Column>
+                    <ext:Column runat="server" Text="Change" DataIndex="pctChange" Flex="1">
+                        <Renderer Fn="pctChange" />
+                    </ext:Column>
+                    <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Flex="1"/>
+                </Columns>
+            </ColumnModel>
         </ext:GridPanel>
     </form>
 </body>

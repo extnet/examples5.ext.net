@@ -1,5 +1,5 @@
 <%@ Page Language="C#" %>
-  
+
 <script runat="server">
     protected void SubmitColor(object sender, DirectEventArgs e)
     {
@@ -17,37 +17,37 @@
         <script>
             var toHex = function (value) {
                 var str = value.toString(16);
-            
+
                 if (str.length == 1) {
                     str = "0" + str;
                 }
-            
+
                 return str;
             };
-        
+
             var updateColor = function () {
                 var color = "#" +
                     toHex(#{RedSlider}.getValue().toString(16)) +
                     toHex(#{GreenSlider}.getValue().toString(16)) +
                     toHex(#{BlueSlider}.getValue().toString(16));
-            
+
                 color = color.toUpperCase();
-            
+
                 #{ColorPreview}.setTitle("Color: " + color);
-                #{ColorPreview}.body.setStyle("background-color", color);   
+                #{ColorPreview}.body.setStyle("background-color", color);
             };
         </script>
-    </ext:XScript>    
+    </ext:XScript>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Slider</h1>
-        
-        <ext:FormPanel 
-            ID="FormPanel1" 
-            runat="server" 
+
+        <ext:FormPanel
+            ID="FormPanel1"
+            runat="server"
             Title="Color Chooser"
             Width="400"
             Height="250"
@@ -56,10 +56,10 @@
             DefaultAnchor="100%">
             <Items>
                 <ext:Slider
-                    ID="RedSlider" 
-                    runat="server" 
+                    ID="RedSlider"
+                    runat="server"
                     Single="true"
-                    FieldLabel="Red" 
+                    FieldLabel="Red"
                     LabelStyle="color:red"
                     Number="255"
                     MaxValue="255">
@@ -67,12 +67,12 @@
                         <Change Fn="updateColor" />
                     </Listeners>
                 </ext:Slider>
-                
+
                 <ext:Slider
-                    ID="GreenSlider" 
-                    runat="server" 
+                    ID="GreenSlider"
+                    runat="server"
                     Single="true"
-                    FieldLabel="Green" 
+                    FieldLabel="Green"
                     LabelStyle="color:green"
                     Number="255"
                     MaxValue="255">
@@ -80,12 +80,12 @@
                         <Change Fn="updateColor" />
                     </Listeners>
                 </ext:Slider>
-                
-                <ext:Slider 
-                    ID="BlueSlider" 
-                    runat="server" 
+
+                <ext:Slider
+                    ID="BlueSlider"
+                    runat="server"
                     Single="true"
-                    FieldLabel="Blue" 
+                    FieldLabel="Blue"
                     LabelStyle="color:blue"
                     Number="255"
                     MaxValue="255">
@@ -93,16 +93,16 @@
                         <Change Fn="updateColor" />
                     </Listeners>
                 </ext:Slider>
-                
-                <ext:Panel 
-                    ID="ColorPreview" 
-                    runat="server" 
-                    Title="Color: #FFFFFF" 
+
+                <ext:Panel
+                    ID="ColorPreview"
+                    runat="server"
+                    Title="Color: #FFFFFF"
                     Border="false"
-                    StyleSpec="margin:10px;" 
+                    StyleSpec="margin:10px;"
                     Height="75"
                     />
-                
+
             </Items>
             <Listeners>
                 <AfterLayout Fn="updateColor" Single="true" />
@@ -112,7 +112,7 @@
                     <Items>
                         <ext:Button runat="server" Text="Max All">
                             <Listeners>
-                                <Click Handler="#{FormPanel1}.items.each(function (c) { 
+                                <Click Handler="#{FormPanel1}.items.each(function (c) {
                                                     if (c instanceof Ext.slider.Single) {
                                                         c.setValue(255);
                                                     }
@@ -121,7 +121,7 @@
                         </ext:Button>
                         <ext:Button runat="server" Text="Min All">
                             <Listeners>
-                                <Click Handler="#{FormPanel1}.items.each(function (c) { 
+                                <Click Handler="#{FormPanel1}.items.each(function (c) {
                                                     if (c instanceof Ext.slider.Single) {
                                                         c.setValue(0);
                                                     }

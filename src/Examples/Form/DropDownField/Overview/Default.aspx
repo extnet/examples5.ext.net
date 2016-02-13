@@ -32,20 +32,20 @@
     </style>
     <script>
         var getTasks = function (tree) {
-            var msg = [], 
+            var msg = [],
                 selNodes = tree.getChecked();
-            msg.push("[");   
-             
+            msg.push("[");
+
             Ext.each(selNodes, function (node) {
                 if (msg.length > 1) {
                     msg.push(",");
                 }
-                
+
                 msg.push(node.data.text);
             });
-            
+
             msg.push("]");
-            
+
             return msg.join("");
         };
     </script>
@@ -53,11 +53,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" ID="ResourceManager1" />
-        
+
         <h1>DropDownField Overview</h1>
-        
+
         <h2>Panel with AccordionLayout</h2>
-        
+
         <ext:DropDownField ID="Field1" runat="server" TriggerIcon="Search">
             <Component>
                 <ext:Panel runat="server" Height="250" Layout="Accordion">
@@ -74,7 +74,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        
+
                         <ext:MenuPanel runat="server" Title="Group 2" Icon="Group">
                             <Menu runat="server">
                                 <Items>
@@ -87,7 +87,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        
+
                         <ext:MenuPanel runat="server" Title="Group 3" Icon="Group">
                             <Menu runat="server">
                                 <Items>
@@ -104,29 +104,29 @@
                 </ext:Panel>
             </Component>
         </ext:DropDownField>
-        
+
         <h2>Panel with Multiple Columns and Custom Align</h2>
-        
-        <ext:DropDownField 
-            ID="Field2" 
-            runat="server" 
+
+        <ext:DropDownField
+            ID="Field2"
+            runat="server"
             PickerAlign="tl-tr?"
             Editable="false"
             MatchFieldWidth="false">
             <Component>
-                <ext:Panel 
-                    runat="server" 
-                    Width="400" 
-                    Height="90" 
+                <ext:Panel
+                    runat="server"
+                    Width="400"
+                    Height="90"
                     Layout="HBoxLayout">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                         <ext:MenuPanel 
-                            runat="server" 
-                            Border="false" 
-                            Flex="1" 
+                         <ext:MenuPanel
+                            runat="server"
+                            Border="false"
+                            Flex="1"
                             SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
@@ -139,7 +139,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        
+
                         <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
@@ -152,7 +152,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        
+
                         <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
@@ -169,17 +169,17 @@
                 </ext:Panel>
             </Component>
         </ext:DropDownField>
-        
+
         <h2>TreePanel</h2>
-        
-        <ext:DropDownField 
-            ID="Field3" 
-            runat="server" 
-            Editable="false" 
+
+        <ext:DropDownField
+            ID="Field3"
+            runat="server"
+            Editable="false"
             Width="300">
             <Component>
-                <ext:TreePanel 
-                    runat="server" 
+                <ext:TreePanel
+                    runat="server"
                     Title="My Task List"
                     Icon="Accept"
                     Height="300"
@@ -201,13 +201,13 @@
                                         <ext:Node Text="Clean house" Leaf="true" Checked="False" />
                                     </Children>
                                 </ext:Node>
-                                
+
                                 <ext:Node Text="Grocery List" Icon="Folder">
                                     <Children>
                                         <ext:Node Text="Bananas" Leaf="true" Checked="False" />
                                         <ext:Node Text="Milk" Leaf="true" Checked="False" />
                                         <ext:Node Text="Cereal" Leaf="true" Checked="False" />
-                                        
+
                                         <ext:Node Text="Energy foods" Icon="Folder">
                                             <Children>
                                                 <ext:Node Text="Coffee" Leaf="true" Checked="False" />
@@ -216,7 +216,7 @@
                                         </ext:Node>
                                     </Children>
                                 </ext:Node>
-                                
+
                                 <ext:Node Text="Kitchen Remodel" Icon="Folder">
                                     <Children>
                                         <ext:Node Text="Finish the budget" Leaf="true" Checked="False" />
@@ -227,7 +227,7 @@
                             </Children>
                         </ext:Node>
                     </Root>
-                    
+
                     <Buttons>
                         <ext:Button runat="server" Text="Close">
                             <Listeners>
@@ -235,34 +235,34 @@
                             </Listeners>
                         </ext:Button>
                     </Buttons>
-                    
+
                     <Listeners>
                         <CheckChange Handler="this.dropDownField.setValue(getTasks(this), false);" />
                     </Listeners>
-                          
+
                  </ext:TreePanel>
             </Component>
             <Listeners>
                 <Expand Handler="this.component.getRootNode().expand(true);" Single="true" Delay="10" />
             </Listeners>
         </ext:DropDownField>
-        
+
         <h2>GridPanel with Grouping</h2>
-        
+
         <ext:DropDownField
             ID="DropDownFieldGrid"
-            runat="server" 
-            Editable="false" 
+            runat="server"
+            Editable="false"
             Width="300">
             <Listeners>
                 <Expand Handler="this.picker.setWidth(500);" />
             </Listeners>
             <Component>
                 <ext:GridPanel
-                    runat="server" 
+                    runat="server"
                     Height="350"
-                    Title="Plants" 
-                    Frame="true" 
+                    Title="Plants"
+                    Frame="true"
                     ForceFit="true">
                     <Store>
                         <ext:Store ID="Store1" runat="server" GroupField="Light">
@@ -292,11 +292,11 @@
                         <Columns>
                             <ext:Column runat="server" Text="Common Name" DataIndex="Common" />
                             <ext:Column runat="server" Text="Light" DataIndex="Light" />
-                            <ext:Column 
-                                runat="server" 
-                                Text="Price" 
-                                DataIndex="Price" 
-                                Align="right" 
+                            <ext:Column
+                                runat="server"
+                                Text="Price"
+                                DataIndex="Price"
+                                Align="right"
                                 Groupable="false">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
@@ -322,10 +322,10 @@
                     </SelectionModel>
 
                     <Features>
-                        <ext:Grouping 
-                            runat="server" 
-                            HideGroupedHeader="true" 
-                            StartCollapsed="true" 
+                        <ext:Grouping
+                            runat="server"
+                            HideGroupedHeader="true"
+                            StartCollapsed="true"
                             />
                     </Features>
                     <Buttons>

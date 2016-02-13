@@ -4,17 +4,17 @@
 
 <html>
 <head runat="server">
-    <title>Badge - Ext.NET Examples</title>       
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <title>Badge - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
         .x-badge-badge110 {
             min-width: 110px;
             height: 110px;
-            border: none;            
+            border: none;
             box-shadow: none;
             -moz-box-shadow: none;
-            -webkit-box-shadow: none;            
+            -webkit-box-shadow: none;
         }
 
         .x-badge-badge110 .x-badge-wrap {
@@ -67,7 +67,7 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <ext:Container runat="server" Layout="ColumnLayout" Width="700">
         <Defaults>
             <ext:Parameter Name="width" Value="150" />
@@ -78,101 +78,101 @@
         <Items>
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge1" 
-                        HideEmpty="false" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge1"
+                        HideEmpty="false"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge2" 
-                        Text="2" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge2"
+                        Text="2"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge3" 
-                        Text="3" 
-                        TextStyle="color:yellow;" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge3"
+                        Text="3"
+                        TextStyle="color:yellow;"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge4" 
-                        HideEmpty="false" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge4"
+                        HideEmpty="false"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge5" 
-                        Text="5" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge5"
+                        Text="5"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge6" 
-                        HideEmpty="false" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge6"
+                        HideEmpty="false"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge7" 
-                        Text="7" 
-                        TextStyle="text-decoration:underline;color:black;" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge7"
+                        Text="7"
+                        TextStyle="text-decoration:underline;color:black;"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge8" 
-                        HideEmpty="false" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge8"
+                        HideEmpty="false"
                         />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server">
                 <Plugins>
-                    <ext:Badge 
-                        runat="server" 
-                        ScaleCustom="badge110" 
-                        Cls="badge9" 
-                        HideEmpty="false" 
+                    <ext:Badge
+                        runat="server"
+                        ScaleCustom="badge110"
+                        Cls="badge9"
+                        HideEmpty="false"
                         />
                 </Plugins>
             </ext:Panel>

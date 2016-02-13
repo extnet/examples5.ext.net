@@ -28,14 +28,14 @@
         <h1>HtmlEditor</h1>
 
         <p>Provides a lightweight HTML Editor component.</p>
-            
+
         <p>For more details, we would strongly recommend to read <a href="http://docs.sencha.com/extjs/4.2.1/#!/api/Ext.form.field.HtmlEditor">the HtmlEditor ExtJS docs article</a> and <a href="http://forums.ext.net/showthread.php?20425&p=88270&viewfull=1#post88270">this Ext.NET forums thread</a> about possible problems with HtmlEditor.</p>
 
         <br/>
 
-        <ext:HtmlEditor 
-            ID="HtmlEditor1" 
-            runat="server" 
+        <ext:HtmlEditor
+            ID="HtmlEditor1"
+            runat="server"
             Width="600"
             Height="200"
             EnableAlignments="false"

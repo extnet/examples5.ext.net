@@ -73,7 +73,7 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
 
             return ret;
         },
-        
+
         doPost: function (ctx) {
             var me = this,
                 ret = {};

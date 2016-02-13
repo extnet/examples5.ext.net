@@ -4,12 +4,12 @@
     protected void SubmitHandler(object sender, DirectEventArgs e)
     {
         string tags = "";
-        
+
         foreach (Tag tag in Tags1.Tags)
         {
             tags += " " + tag.Text;
         }
-        
+
         X.Msg.Alert("Tags", tags).Show();
     }
 </script>
@@ -19,16 +19,16 @@
 <html>
 <head runat="server">
     <title>TagField - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />  
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>TagField</h1>
 
         <h2>Basic</h2>
-        
+
         <p>Custom values  allowed, input can be moved with left/right arrows</p>
 
         <ext:TagField runat="server" Width="500" TypeAhead="true">
@@ -47,14 +47,14 @@
         <br />
 
         <h2>Forcing values</h2>
-        
+
         <p>Forcing values from the store</p>
-        
-        <ext:TagField 
-            runat="server" 
-            Width="500" 
-            ForceSelection="true" 
-            Editable="false" 
+
+        <ext:TagField
+            runat="server"
+            Width="500"
+            ForceSelection="true"
+            Editable="false"
             InputMoving="false">
             <Tags>
                 <ext:Tag Value="1" />
@@ -67,19 +67,19 @@
                 <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
             </Items>
         </ext:TagField>
-        
+
         <br />
 
         <h2>Hide selected</h2>
-        
+
         <p>Hide selected Tags in the picker</p>
-        
-        <ext:TagField 
-            runat="server" 
-            Width="500" 
-            ForceSelection="true" 
-            Editable="false" 
-            InputMoving="false" 
+
+        <ext:TagField
+            runat="server"
+            Width="500"
+            ForceSelection="true"
+            Editable="false"
+            InputMoving="false"
             HideSelected="true">
             <Tags>
                 <ext:Tag Value="1" />
@@ -98,13 +98,13 @@
         <br />
 
         <h2>Floating</h2>
-       
+
         <p>Tags can float to new line</p>
-        
-        <ext:TagField 
-            runat="server" 
-            Width="200" 
-            HideTrigger="true" 
+
+        <ext:TagField
+            runat="server"
+            Width="200"
+            HideTrigger="true"
             Editable="false">
             <Tags>
                 <ext:Tag Value="1" />
@@ -125,14 +125,14 @@
         <br />
 
         <h2>Actions</h2>
-        
+
         <p>Add/remove Tags manually</p>
-        
-        <ext:TagField 
-            ID="Tags1" 
-            runat="server" 
-            Width="500" 
-            TypeAhead="true" 
+
+        <ext:TagField
+            ID="Tags1"
+            runat="server"
+            Width="500"
+            TypeAhead="true"
             EmptyText="[Add tags]" >
             <Items>
                 <ext:Tag Value="1" Text="George" Icon="User" />

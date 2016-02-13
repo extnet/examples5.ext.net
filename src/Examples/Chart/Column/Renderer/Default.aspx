@@ -15,12 +15,12 @@
         seed -= Math.Floor(seed);
         return Convert.ToInt32(seed);
     }
-    
+
     public static object GenerateData(int count = 7)
     {
         var data = new List<Item>();
         int i;
-        Item record = new Item 
+        Item record = new Item
         {
             ID = 0,
             G0 = 200,
@@ -32,9 +32,9 @@
             G6 = 500 * Random() + 100,
             Name = "Item-0"
         };
-        
+
         data.Add(record);
-        for (i = 1; i < count; i++) 
+        for (i = 1; i < count; i++)
         {
             record = new Item
             {
@@ -50,10 +50,10 @@
             };
             data.Add(record);
         }
-        
+
         return data;
     }
-    
+
     public class Item
     {
         public int ID
@@ -61,49 +61,49 @@
             get;
             set;
         }
-        
+
         public int G0
         {
             get;
             set;
         }
-        
+
         public int G1
         {
             get;
             set;
         }
-        
+
         public int G2
         {
             get;
             set;
         }
-        
+
         public int G3
         {
             get;
             set;
         }
-        
+
         public int G4
         {
             get;
             set;
         }
-        
+
         public int G5
         {
             get;
             set;
         }
-        
+
         public int G6
         {
             get;
             set;
         }
-        
+
         public string Name
         {
             get;

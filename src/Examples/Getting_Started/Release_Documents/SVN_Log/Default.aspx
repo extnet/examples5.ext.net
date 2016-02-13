@@ -12,8 +12,8 @@
     <ext:Viewport runat="server" Layout="FitLayout">
         <Items>
             <ext:GridPanel
-                runat="server" 
-                Title="Recent SVN Commits" 
+                runat="server"
+                Title="Recent SVN Commits"
                 TrackMouseOver="true"
                 Flex="2">
                 <Store>
@@ -82,15 +82,15 @@
                         <Template runat="server">
                             <Html>
                                 <div style="padding:5px;">
-						        <b>Description :</b><br /> 
+                                <b>Description :</b><br />
                                     <div style="margin-left: 25px;">{message}</div>
                                 <br />
-						        <b>Actions :</b> [{actionCount} file<tpl if="actionCount &gt; 1">s</tpl> updated]
+                                <b>Actions :</b> [{actionCount} file<tpl if="actionCount &gt; 1">s</tpl> updated]
                                     <ol style="margin-left:25px !important; list-style-type: decimal !important;">
                                         <tpl for="actions"><li>{description}</li></tpl>
                                     </ol>
                                 </div>
-					        </Html>
+                            </Html>
                         </Template>
                     </ext:RowExpander>
                 </Plugins>
@@ -99,4 +99,3 @@
     </ext:Viewport>
 </body>
 </html>
-    

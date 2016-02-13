@@ -12,7 +12,7 @@
 
         this.FormPanel1.SetValues(new {
             empl.EmployeeID,
-            empl.FirstName,                          
+            empl.FirstName,
             empl.LastName,
             empl.Title,
             ReportsTo = empl.ReportsTo.HasValue ? (Employee.GetEmployee(empl.ReportsTo.Value).LastName) : "",
@@ -46,43 +46,43 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <asp:LinqDataSource 
-            ID="LinqDataSource1" 
-            runat="server" 
+
+        <asp:LinqDataSource
+            ID="LinqDataSource1"
+            runat="server"
             ContextTypeName="Ext.Net.Examples.Northwind.NorthwindDataContext"
-            Select="new (EmployeeID, LastName, FirstName)" 
-            TableName="Employees" 
+            Select="new (EmployeeID, LastName, FirstName)"
+            TableName="Employees"
             />
-            
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Panel 
-                    runat="server" 
+                <ext:Panel
+                    runat="server"
                     Region="North"
                     MarginSpec="5 5 5 5"
-                    Title="Description" 
-                    Height="100" 
+                    Title="Description"
+                    Height="100"
                     BodyPadding="5"
-                    Frame="true" 
+                    Frame="true"
                     Icon="Information">
                     <Content>
                         <b>GridPanel with Form Details</b>
                         <p>Click on any record with the GridPanel and the record details will be loaded into the Details Form.</p>
                     </Content>
                 </ext:Panel>
-                <ext:GridPanel 
-                    runat="server" 
+                <ext:GridPanel
+                    runat="server"
                     Title="Employees"
                     MarginSpec="0 0 5 5"
                     Icon="UserSuit"
-                    Region="Center" 
+                    Region="Center"
                     Frame="true">
                     <Store>
-                        <ext:Store 
-                            ID="Store1" 
-                            runat="server" 
-                            DataSourceID="LinqDataSource1" 
+                        <ext:Store
+                            ID="Store1"
+                            runat="server"
+                            DataSourceID="LinqDataSource1"
                             OnReadData="Store1_Refresh">
                             <Model>
                                 <ext:Model runat="server" IDProperty="EmployeeID">
@@ -118,18 +118,18 @@
                         <ext:PagingToolbar runat="server" />
                     </BottomBar>
                 </ext:GridPanel>
-                <ext:FormPanel 
-                    ID="FormPanel1" 
-                    runat="server" 
+                <ext:FormPanel
+                    ID="FormPanel1"
+                    runat="server"
                     Region="East"
                     Split="true"
                     MarginSpec="0 5 5 5"
                     BodyPadding="2"
-                    Frame="true" 
-                    Title="Employee Details" 
+                    Frame="true"
+                    Title="Employee Details"
                     Width="280"
                     Icon="User"
-                    DefaultAnchor="100%" 
+                    DefaultAnchor="100%"
                     AutoScroll="True">
                     <FieldDefaults ReadOnly="true" />
                     <Items>

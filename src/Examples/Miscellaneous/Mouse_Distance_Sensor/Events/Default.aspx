@@ -10,7 +10,7 @@
         var near = function (el, sensorEl) {
             var bar = App.Toolbar1,
                 win = App.Window1;
-            
+
             bar.el.setZIndex(win.el.getZIndex() + 1);
             bar.show();
             bar.setWidth(win.body.getWidth() - 2);
@@ -28,12 +28,12 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
-    <ext:Window 
+
+    <ext:Window
         ID="Window1"
         runat="server"
-        Title="Move Mouse to top of Window" 
-        Width="350" 
+        Title="Move Mouse to top of Window"
+        Width="350"
         Height="215"
         Closable="false"
         Layout="FitLayout"
@@ -43,9 +43,9 @@
             <ext:TextArea runat="server" />
         </Items>
         <Plugins>
-            <ext:MouseDistanceSensor 
-                runat="server" 
-                SensorElement="={App.Window1.header}" 
+            <ext:MouseDistanceSensor
+                runat="server"
+                SensorElement="={App.Window1.header}"
                 ConstrainElement="Window1"
                 Opacity="false"
                 Threshold="25">
@@ -60,11 +60,11 @@
             <AfterRender Fn="onAfterRender" />
         </Listeners>
     </ext:Window>
-    
-    <ext:Toolbar 
-        ID="Toolbar1" 
-        runat="server" 
-        Hidden="true" 
+
+    <ext:Toolbar
+        ID="Toolbar1"
+        runat="server"
+        Hidden="true"
         Floating="true">
         <Items>
             <ext:Button runat="server" Text="Paste" Icon="PastePlain" />

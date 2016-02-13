@@ -10,12 +10,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Employees" 
-            Frame="true" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Employees"
+            Frame="true"
             Height="300">
             <Store>
                 <ext:Store runat="server" RemoteSort="true" PageSize="5">
@@ -26,7 +26,7 @@
                                 <ext:JsonReader RootProperty="data" TotalProperty="total" />
                             </Reader>
                         </ext:AjaxProxy>
-                    </Proxy>                   
+                    </Proxy>
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
@@ -41,7 +41,7 @@
                     </Model>
                     <Sorters>
                         <ext:DataSorter Property="Common" Direction="ASC" />
-                    </Sorters>                   
+                    </Sorters>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
@@ -56,13 +56,13 @@
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
-            </SelectionModel>            
+            </SelectionModel>
             <BottomBar>
-                <ext:PagingToolbar 
-                    runat="server"                     
-                    DisplayInfo="true" 
-                    DisplayMsg="Displaying plants {0} - {1} of {2}" 
-                    EmptyMsg="No plants to display" 
+                <ext:PagingToolbar
+                    runat="server"
+                    DisplayInfo="true"
+                    DisplayMsg="Displaying plants {0} - {1} of {2}"
+                    EmptyMsg="No plants to display"
                     />
             </BottomBar>
         </ext:GridPanel>

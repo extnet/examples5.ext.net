@@ -8,7 +8,7 @@
             //We do not need to DataBind on an DirectEvent
             return;
         }
-        
+
         this.Store1.DataSource = new object[]
             {
                 new object[] { "3m Co", 71.72, 0.02, 0.03, "9/1 12:00am", "Manufacturing"},
@@ -52,7 +52,7 @@
 <head runat="server">
     <title>RowExpander with FormPanel Detail - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <ext:ResourcePlaceHolder runat="server" Mode="Script" />
 
     <style>
@@ -77,21 +77,21 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>RowExpander Plugin with FormPanel Detail</h1>
 
-        <ext:GridPanel 
-            runat="server" 
-            Title="Expander Rows with control" 
+        <ext:GridPanel
+            runat="server"
+            Title="Expander Rows with control"
             Collapsible="true"
-            AnimCollapse="true" 
-            Icon="Table" 
+            AnimCollapse="true"
+            Icon="Table"
             Width="800">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
-                    runat="server" 
-                    IgnoreExtraFields="false" 
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    IgnoreExtraFields="false"
                     PageSize="10">
                     <Model>
                         <ext:Model runat="server">
@@ -109,10 +109,10 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
                         Flex="1" />
                     <ext:Column runat="server" Text="Price" DataIndex="price">
                         <Renderer Format="UsMoney" />
@@ -123,10 +123,10 @@
                     <ext:Column runat="server" Text="Change" DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        DataIndex="lastChange"
                         Format="yyyy/MM/dd"
                         Width="105" />
                 </Columns>
@@ -134,41 +134,41 @@
             <Plugins>
                 <ext:RowExpander runat="server" SingleExpand="false">
                     <Component>
-                        <ext:FormPanel                             
-                            runat="server" 
-                            BodyPadding="6" 
-                            Border="false"     
-                            DefaultAnchor="-5"                            
-                            Cls="white-footer">                            
+                        <ext:FormPanel
+                            runat="server"
+                            BodyPadding="6"
+                            Border="false"
+                            DefaultAnchor="-5"
+                            Cls="white-footer">
                             <Items>
-                                <ext:TextField 
-                                    runat="server" 
-                                    Name="company" 
-                                    FieldLabel="Company" 
+                                <ext:TextField
+                                    runat="server"
+                                    Name="company"
+                                    FieldLabel="Company"
                                     />
-                                <ext:NumberField 
-                                    runat="server" 
-                                    Name="price" 
-                                    FieldLabel="Price" 
+                                <ext:NumberField
+                                    runat="server"
+                                    Name="price"
+                                    FieldLabel="Price"
                                     />
-                                <ext:NumberField 
-                                    runat="server" 
-                                    Name="change" 
-                                    FieldLabel="Change" 
+                                <ext:NumberField
+                                    runat="server"
+                                    Name="change"
+                                    FieldLabel="Change"
                                     />
-                                <ext:NumberField 
-                                    runat="server" 
-                                    Name="pctChange" 
-                                    FieldLabel="% Change" 
+                                <ext:NumberField
+                                    runat="server"
+                                    Name="pctChange"
+                                    FieldLabel="% Change"
                                     />
-                                <ext:DateField 
-                                    runat="server" 
-                                    Name="lastChange" 
-                                    FieldLabel="Last Updated" 
+                                <ext:DateField
+                                    runat="server"
+                                    Name="lastChange"
+                                    FieldLabel="Last Updated"
                                     Format="yyyy/MM/dd"
                                     />
                             </Items>
-                            
+
                             <Buttons>
                                 <ext:Button runat="server" Text="Save" Icon="Disk">
                                     <Listeners>
@@ -186,7 +186,7 @@
                             </Buttons>
 
                             <Listeners>
-                                <AfterRender Handler="this.getForm().loadRecord(this.record);" />    
+                                <AfterRender Handler="this.getForm().loadRecord(this.record);" />
                             </Listeners>
                         </ext:FormPanel>
                     </Component>

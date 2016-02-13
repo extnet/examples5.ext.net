@@ -1,13 +1,13 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     public class MyModel
     {
         public static object Model = new
         {
             //data : Object
             //This object holds the arbitrary data that populates the ViewModel and is then available for binding.
-            data = new 
+            data = new
             {
                 title = "Some title",
                 content = "Some content"
@@ -20,24 +20,24 @@
 
 <html>
 <head runat="server">
-    <title>Dynamic - Ext.Net Examples</title>        
+    <title>Dynamic - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Dynamic Data Binding</h1>
 
         <p>This example shows simple dynamic data binding. When the data in the underlying view <br />
            model is modified, the change is relayed back to the panel and the markup is updated.
         </p>
-        
-        <ext:Panel 
-            runat="server" 
-            Width="300" 
-            BodyPadding="10" 
-            ViewModel="<%# MyModel.Model %>" 
+
+        <ext:Panel
+            runat="server"
+            Width="300"
+            BodyPadding="10"
+            ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Bind>
                 <ext:Parameter Name="title" Value="Info - {title}" />

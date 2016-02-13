@@ -48,12 +48,12 @@
 <html>
 <head runat="server">
     <title>FormView - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />       
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Store ID="Store1" runat="server" PageSize="1">
             <Model>
                 <ext:Model runat="server">
@@ -67,77 +67,77 @@
                 </ext:Model>
             </Model>
             <Listeners>
-                <DataChanged 
-                    Handler="var record = this.getAt(0) || {};#{FormPanel1}.getForm().loadRecord(record);" 
-                    Delay="10" 
+                <DataChanged
+                    Handler="var record = this.getAt(0) || {};#{FormPanel1}.getForm().loadRecord(record);"
+                    Delay="10"
                     />
             </Listeners>
         </ext:Store>
-        
-        <ext:Window 
-            runat="server" 
-            Title="Form View" 
-            Width="400" 
+
+        <ext:Window
+            runat="server"
+            Title="Form View"
+            Width="400"
             Height="240"
             BodyPadding="10"
             Resizable="false"
             Closable="false"
             Layout="Fit">
             <Items>
-                <ext:FormPanel 
-                    ID="FormPanel1" 
-                    runat="server" 
-                    Border="false" 
+                <ext:FormPanel
+                    ID="FormPanel1"
+                    runat="server"
+                    Border="false"
                     BodyStyle="background-color:transparent"
                     Layout="Form">
                     <Items>
-                        <ext:TextField 
-                            ID="CompanyField" 
-                            runat="server" 
-                            Name="company" 
-                            ReadOnly="true" 
-                            FieldLabel="Company" 
-                            Width="260" 
+                        <ext:TextField
+                            ID="CompanyField"
+                            runat="server"
+                            Name="company"
+                            ReadOnly="true"
+                            FieldLabel="Company"
+                            Width="260"
                             />
-                        <ext:NumberField 
-                            ID="PriceField" 
-                            runat="server" 
-                            Name="price" 
-                            ReadOnly="true" 
-                            FieldLabel="Price" 
-                            Width="260" 
+                        <ext:NumberField
+                            ID="PriceField"
+                            runat="server"
+                            Name="price"
+                            ReadOnly="true"
+                            FieldLabel="Price"
+                            Width="260"
                             />
-                        <ext:NumberField 
-                            ID="ChangeField" 
-                            runat="server" 
-                            Name="change" 
-                            ReadOnly="true" 
-                            FieldLabel="Change" 
-                            Width="260" 
+                        <ext:NumberField
+                            ID="ChangeField"
+                            runat="server"
+                            Name="change"
+                            ReadOnly="true"
+                            FieldLabel="Change"
+                            Width="260"
                             />
-                        <ext:NumberField 
-                            ID="PctChangeField" 
-                            runat="server" 
-                            Name="pctChange" 
-                            ReadOnly="true" 
-                            FieldLabel="PctChange" 
-                            Width="260" 
+                        <ext:NumberField
+                            ID="PctChangeField"
+                            runat="server"
+                            Name="pctChange"
+                            ReadOnly="true"
+                            FieldLabel="PctChange"
+                            Width="260"
                             />
-                        <ext:DateField 
-                            ID="LastChangeField" 
-                            runat="server" 
-                            Name="lastChange" 
-                            ReadOnly="true" 
-                            FieldLabel="Last change" 
-                            Width="260" 
+                        <ext:DateField
+                            ID="LastChangeField"
+                            runat="server"
+                            Name="lastChange"
+                            ReadOnly="true"
+                            FieldLabel="Last change"
+                            Width="260"
                             />
                     </Items>
                 </ext:FormPanel>
             </Items>
             <BottomBar>
-                <ext:PagingToolbar 
+                <ext:PagingToolbar
                     runat="server"
-                    StoreID="Store1" 
+                    StoreID="Store1"
                     DisplayInfo="false"
                     HideRefresh="true"
                     />

@@ -60,7 +60,7 @@
                         {
                             case Comparison.Eq:
                             case Comparison.Like:
-                            case Comparison.In:    
+                            case Comparison.In:
                                 switch (type)
                                 {
                                     case FilterType.List:

@@ -1,13 +1,13 @@
 ﻿<%@ Page Language="C#" %>
 
-<script runat="server">        
+<script runat="server">
     public object TimeData
     {
         get
         {
             DateTime date = DateTime.MinValue;
-            int visits = 0;            
-            
+            int visits = 0;
+
             List<object> data = new List<object>(100);
             Random random = new Random();
 
@@ -15,7 +15,7 @@
             {
                 date = i > 0 ? date.AddDays(1) : new DateTime(2011, 1, 1);
                 visits = Math.Max(Convert.ToInt32(Math.Min(100, Math.Max(i > 0 ? (visits + (random.NextDouble() - 0.5) * 20) : random.NextDouble() * 100, 0))), 20);
-                
+
                 data.Add(new
                 {
                     Date = date,
@@ -28,11 +28,11 @@
     }
 
     protected void Page_Load(object sender, EventArgs e)
-    {            
+    {
         this.Chart1.GetStore().DataSource = this.TimeData;
         this.Chart2.GetStore().DataSource = Ext.Net.Examples.ChartData.GenerateData();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -49,25 +49,25 @@
 
         <p>This plugin supports line series only</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Chart with VerticalMarker"
             Width="800"
             Height="600"
-            Layout="FitLayout">            
+            Layout="FitLayout">
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
+                <ext:CartesianChart
+                    ID="Chart1"
                     runat="server"
-                    StyleSpec="background:#fff;"                                       
-                    Animate="true">                    
+                    StyleSpec="background:#fff;"
+                    Animate="true">
                     <Plugins>
                         <ext:VerticalMarker runat="server" Buffer="200">
                             <XLabelRenderer Handler="return Ext.util.Format.date(value, 'd M Y');" />
                         </ext:VerticalMarker>
                     </Plugins>
                     <Store>
-                        <ext:Store runat="server">                           
+                        <ext:Store runat="server">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -75,17 +75,17 @@
                                         <ext:ModelField Name="Visits" />
                                     </Fields>
                                 </ext:Model>
-                            </Model>                            
+                            </Model>
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis                             
+                        <ext:NumericAxis
                             Position="Left"
                             Fields="Visits"
-                            Title="Number of Hits"                            
+                            Title="Number of Hits"
                             Minimum="0"
-                            Maximum="100">                           
-                        </ext:NumericAxis>          
+                            Maximum="100">
+                        </ext:NumericAxis>
                     </Axes>
                     <Series>
                         <ext:LineSeries XField="Date" YField="Visits" Smooth="3" ShowMarkers="false">
@@ -96,27 +96,27 @@
         </ext:Panel>
 
         <br />
-      
-        <ext:Panel 
+
+        <ext:Panel
             runat="server"
             Title="VerticalMarker with Snap and multiple series"
             Width="800"
             Height="600"
-            Layout="FitLayout">           
+            Layout="FitLayout">
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart2" 
+                <ext:CartesianChart
+                    ID="Chart2"
                     runat="server"
-                    StyleSpec="background:#fff;"                   
+                    StyleSpec="background:#fff;"
                     Shadow="true"
                     StandardTheme="Category1"
-                    Animate="true">            
+                    Animate="true">
                     <Plugins>
                         <ext:VerticalMarker runat="server" ShowXLabel="false" Snap="true" />
                     </Plugins>
                     <Store>
-                        <ext:Store 
-                            runat="server">                           
+                        <ext:Store
+                            runat="server">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -130,8 +130,8 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis              
-                            Position="Left"               
+                        <ext:NumericAxis
+                            Position="Left"
                             Fields="Data1,Data2,Data3"
                             Title="Number of Hits"
                             MinorTickSteps="1"
@@ -139,16 +139,16 @@
                             <GridConfig>
                                 <Odd Opacity="1" FillStyle="#ddd" StrokeStyle="#bbb" LineWidth="0.5" />
                             </GridConfig>
-                        </ext:NumericAxis>                            
+                        </ext:NumericAxis>
 
-                        <ext:CategoryAxis 
+                        <ext:CategoryAxis
                             Position="Bottom"
                             Fields="Name"
                             Title="Month of the Year">
-                            </ext:CategoryAxis>                        
+                            </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries XField="Name" YField="Data1">                            
+                        <ext:LineSeries XField="Name" YField="Data1">
                             <HighlightConfig>
                                 <ext:CircleSprite Radius="7" />
                             </HighlightConfig>
@@ -175,9 +175,9 @@
                             </Marker>
                         </ext:LineSeries>
                     </Series>
-                </ext:CartesianChart>                
+                </ext:CartesianChart>
             </Items>
-        </ext:Panel>        
-    </form>    
+        </ext:Panel>
+    </form>
 </body>
 </html>

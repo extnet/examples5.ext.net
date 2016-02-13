@@ -4,16 +4,16 @@
 
 <html>
 <head runat="server">
-    <title>Pan Image - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Pan Image - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server"/>
-        
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
             Title="The Universe Map"
             Icon="Map"
             Width="800"
@@ -43,14 +43,14 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-            
+
             <BottomBar>
-                <ext:StatusBar ID="DeltaStatus" runat="server" />                    
+                <ext:StatusBar ID="DeltaStatus" runat="server" />
             </BottomBar>
-            
+
             <Items>
-                <ext:Image 
-                    ID="Image1" 
+                <ext:Image
+                    ID="Image1"
                     runat="server"
                     AllowPan="true"
                     XDelta="-4555"

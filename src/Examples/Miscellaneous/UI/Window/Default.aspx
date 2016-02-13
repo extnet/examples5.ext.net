@@ -5,7 +5,7 @@
 
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
-    {        
+    {
         if (this.IsPostBack && ThemeSelector.SelectedItems.Count > 0)
         {
             this.ResourceManager1.Theme = ThemeListHandler.GetThemeFromId(ThemeSelector.SelectedItem.Value);
@@ -32,20 +32,20 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:ComboBox 
-            ID="ThemeSelector" 
-            runat="server" 
-            FieldLabel="Theme" 
+        <ext:ComboBox
+            ID="ThemeSelector"
+            runat="server"
+            FieldLabel="Theme"
             AutoPostBack="true" />
 
         <h3>Window UI</h3>
 
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
-            Title="Window" 
-            Width="500" 
-            Height="300" 
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            Title="Window"
+            Width="500"
+            Height="300"
             BodyPadding="10">
             <Tools>
                 <ext:Tool Type="Toggle" />
@@ -76,7 +76,7 @@
                         <ext:ListItem Text="info" />
                         <ext:ListItem Text="danger" />
                         <ext:ListItem Text="warning" />
-                    </Items>                    
+                    </Items>
                     <Listeners>
                         <Change Handler="this.up('window').setUI(this.getValue());" />
                     </Listeners>

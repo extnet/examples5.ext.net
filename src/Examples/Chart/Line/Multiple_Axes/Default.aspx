@@ -36,7 +36,7 @@
         store.DataSource = GenerateData();
         store.DataBind();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -61,9 +61,9 @@
 
         <h1>Line Chart With Multiple Axes</h1>
 
-	    <p>Display 2 sets of random data in the two line series which are referring different axes (Y). Reload data will randomly generate a new set of data in the store. Click on the legend items to remove them from the chart.</p>
+        <p>Display 2 sets of random data in the two line series which are referring different axes (Y). Reload data will randomly generate a new set of data in the store. Click on the legend items to remove them from the chart.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Title="Line Chart"
             Width="800"
@@ -72,16 +72,16 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save Chart"
                             Icon="Disk"
                             Handler="saveChart"
                             />
@@ -89,9 +89,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
-                    runat="server" 
+                <ext:CartesianChart
+                    ID="Chart1"
+                    runat="server"
                     Animate="true">
                     <Store>
                         <ext:Store runat="server">
@@ -107,38 +107,38 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:TimeAxis 
-                            Title="Date" 
-                            Fields="Date" 
-                            Position="Bottom" 
-                            DateFormat="MMM dd"                            
+                        <ext:TimeAxis
+                            Title="Date"
+                            Fields="Date"
+                            Position="Bottom"
+                            DateFormat="MMM dd"
                             FromDate="<%# DateTime.Today %>"
                             ToDate="<%# DateTime.Today.AddDays(14) %>"
                             AutoDataBind="true" />
 
-                        <ext:NumericAxis 
-                            Title="Data (blue)" 
-                            Fields="Data1" 
-                            Position="Left" 
+                        <ext:NumericAxis
+                            Title="Data (blue)"
+                            Fields="Data1"
+                            Position="Left"
                             Maximum="10">
                             <TitleConfig FillStyle="#115fa6" />
                             <Label FillStyle="#115fa6" />
                         </ext:NumericAxis>
 
-                        <ext:NumericAxis 
+                        <ext:NumericAxis
                             Title="Data (green)"
-                            Fields="Data2" 
-                            Position="Right" 
+                            Fields="Data2"
+                            Position="Right"
                             Maximum="100">
                             <TitleConfig FillStyle="#94ae0a" />
                             <Label FillStyle="#94ae0a" />
                         </ext:NumericAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
-                            Titles="Blue Line" 
-                            XField="Date" 
-                            YField="Data1" 
+                        <ext:LineSeries
+                            Titles="Blue Line"
+                            XField="Date"
+                            YField="Data1"
                             Smooth="3">
                             <HighlightConfig>
                                 <ext:CircleSprite Radius="7" />
@@ -148,10 +148,10 @@
                             </Marker>
                         </ext:LineSeries>
 
-                        <ext:LineSeries 
-                            Titles="Green Line" 
-                            XField="Date" 
-                            YField="Data2" 
+                        <ext:LineSeries
+                            Titles="Green Line"
+                            XField="Date"
+                            YField="Data2"
                             Smooth="3">
                             <HighlightConfig>
                                 <ext:CircleSprite Radius="7" />
@@ -170,6 +170,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

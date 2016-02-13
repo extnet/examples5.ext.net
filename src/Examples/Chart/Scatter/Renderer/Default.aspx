@@ -203,9 +203,9 @@
                 renderer = function (sprite, config, rendererData, index) {
                     return radius(sprite, grayscale(sprite, color(sprite, config, rendererData, index), rendererData, index), rendererData, index);
                 };
-                
+
                 chart.getItems().get("Chart1-series").getItems()[0].attr.renderer = renderer;
-                
+
                 s.setRenderer(renderer);
             }
 

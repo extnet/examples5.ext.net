@@ -8,8 +8,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-         this.Store1.DataSource = new List<Company> 
-         { 
+         this.Store1.DataSource = new List<Company>
+         {
              new Company("3m Co", 71.72, 0.02, 0.03),
              new Company("Alcoa Inc", 29.01, 0.42, 1.47),
              new Company("Altria Group Inc", 83.81, 0.28, 0.34),
@@ -43,23 +43,23 @@
 
         if (!X.IsAjaxRequest)
         {
-            this.Store1.DataBind();    
+            this.Store1.DataBind();
         }
     }
 
     protected void SubmitSelection(object sender, DirectEventArgs e)
     {
         string json = e.ExtraParams["Values"];
-        
+
         if (string.IsNullOrEmpty(json))
         {
             return;
         }
-        
+
         //XML will be represent as
         //<records>
         //   <record><Name>Alcoa Inc</Name><Price>29.01</Price><Change>0.42</Change><PctChange>1.47</PctChange></record>
-        //        ...  
+        //        ...
         //   <record>...</record>
         //</records>
         XmlNode xml = JSON.DeserializeXmlNode("{records:{record:" + json + "}}");
@@ -70,10 +70,10 @@
             string price = row.SelectSingleNode("Price").InnerXml;
             string change = row.SelectSingleNode("Change").InnerXml;
             string pctChange = row.SelectSingleNode("PctChange").InnerXml;
-            
+
             //handle values
         }
-        
+
         List<Company> companies = JSON.Deserialize<List<Company>>(json);
 
         foreach (Company company in companies)
@@ -85,7 +85,7 @@
 
             //handle values
         }
-        
+
         Dictionary<string, string>[] companies1 = JSON.Deserialize<Dictionary<string, string>[]>(json);
 
         foreach (Dictionary<string, string> row in companies1)
@@ -97,7 +97,7 @@
 
             //handle values
         }
-        
+
         this.ResourceManager1.AddScript("Ext.Msg.alert('Submitted', 'Please see source code how to handle submitted data');");
     }
 
@@ -124,15 +124,15 @@
 <html>
 <head runat="server">
     <title>Row Selection Model</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
-    
-    <h1>Submitting values of rows to server</h1>    
-    
+
+    <h1>Submitting values of rows to server</h1>
+
     <ext:Store ID="Store1" runat="server">
         <Model>
             <ext:Model runat="server" IDProperty="Name">
@@ -145,29 +145,29 @@
             </ext:Model>
         </Model>
     </ext:Store>
-    
-    <ext:GridPanel 
-        ID="GridPanel1" 
-        runat="server" 
+
+    <ext:GridPanel
+        ID="GridPanel1"
+        runat="server"
         StoreID="Store1"
-        Title="Company List" 
+        Title="Company List"
         Collapsible="true"
         Width="600"
         Height="350">
         <ColumnModel runat="server">
-		    <Columns>
+            <Columns>
                 <ext:Column runat="server" Text="Company" Width="160" DataIndex="Name" Flex="1" />
                 <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
                 <ext:Column runat="server" Text="Change" Width="75" DataIndex="Change" />
                 <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange" />
-		    </Columns>
+            </Columns>
         </ColumnModel>
         <SelectionModel>
             <ext:RowSelectionModel runat="server" Mode="Multi" />
         </SelectionModel>
-       
+
         <Buttons>
             <ext:Button runat="server" Text="Submit selection">
                 <DirectEvents>
@@ -179,8 +179,8 @@
                 </DirectEvents>
             </ext:Button>
         </Buttons>
-     </ext:GridPanel>    
-    
+     </ext:GridPanel>
+
     </form>
   </body>
 </html>

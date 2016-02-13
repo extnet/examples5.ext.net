@@ -21,7 +21,7 @@ namespace Ext.Net.Examples.SimpleTasks
             this.EnableColumnHide = false;
             this.EnableColumnMove = false;
 
-            this.SelectionModel.Add(new RowSelectionModel {                
+            this.SelectionModel.Add(new RowSelectionModel {
             });
 
             this.View.Add(new GridView
@@ -96,7 +96,7 @@ namespace Ext.Net.Examples.SimpleTasks
 
                   Store = {
                     new TreeStore
-                    {                
+                    {
                         ModelName = "CategoryTree"
                     }
                   },
@@ -179,7 +179,7 @@ namespace Ext.Net.Examples.SimpleTasks
                     ID = "icnIndicator",
 
                     AutoEl =
-                    {                        
+                    {
                         Cls = "new-task-icon"
                     }
                 });
@@ -204,7 +204,7 @@ namespace Ext.Net.Examples.SimpleTasks
                 {
                     ID = "ntCategory",
                     IDMode = IDMode.Static,
-                    Disabled = true,                    
+                    Disabled = true,
                     Editable = false,
                     Mode = DropDownMode.ValueText,
                     Component =
@@ -256,7 +256,7 @@ namespace Ext.Net.Examples.SimpleTasks
                         }
                     }
                 }
-            );    
+            );
         }
 
         private void BuildColumnModel()
@@ -271,7 +271,7 @@ namespace Ext.Net.Examples.SimpleTasks
                            IconCls = "icon-active",
                            CommandName = "togglestatus"
                        }
-                   },                   
+                   },
                    Cls="task-col-hd",
                    Width = 25,
                    Resizable = false,
@@ -345,7 +345,7 @@ namespace Ext.Net.Examples.SimpleTasks
                          }
                      }
                  },
-                 Sorters = 
+                 Sorters =
                  {
                     new DataSorter()
                     {

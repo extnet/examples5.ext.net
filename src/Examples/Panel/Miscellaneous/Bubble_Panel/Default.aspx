@@ -8,18 +8,18 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="resources/css/bubble.css" rel="stylesheet" />
     <style>
-	    body {
-	        background-color : #4E79B2 !important;
-	    }
-	    
-	    #bubble-markup em {
-		    font-style : italic
-	    }
+        body {
+            background-color : #4E79B2 !important;
+        }
+
+        #bubble-markup em {
+            font-style : italic
+        }
     </style>
 </head>
 <body>
     <ext:ResourceManager runat="server" SourceFormatting="True" />
-    
+
     <h1>Demonstrates how to apply custom CSS</h1>
 
     <p>To change CSS of the panel click on the button</p>
@@ -29,32 +29,32 @@
 
         <p>It uses the new theming system included in Ext4, to create new Ext.panel.Panel UI's using included mixins.</p>
     </div>
-    
+
     <script>
         var changeUI = function () {
             var panel = App.Panel1,
                 uis = ['default-framed', 'bubble'],
                 index = Ext.Array.indexOf(uis, panel.ui);
-            
+
             if ((index + 1) >= uis.length) {
                 panel.setUI(uis[0]);
             } else {
                 panel.setUI(uis[index + 1]);
             }
-            
+
             panel.updateLayout();
-            
+
             App.ToggleButton.setText('Toggle UI: ' + panel.ui);
         };
     </script>
-    
+
     <ext:Button runat="server" ID="ToggleButton" Text="Toggle UI: default-framed">
         <Listeners>
             <Click Handler="changeUI();"></Click>
         </Listeners>
     </ext:Button>
 
-    <ext:Panel 
+    <ext:Panel
         runat="server"
         ID="Panel1"
         Title="Plain Old Panel"

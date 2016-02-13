@@ -11,37 +11,37 @@
 
 <html>
 <head runat="server">
-    <title>Template Widget Cache - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Template Widget Cache - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Template Widget Cache</h1>          
-        <p>See window title with timestamp to understand new or cached instance of window is opened</p>    
+        <h1>Template Widget Cache</h1>
+        <p>See window title with timestamp to understand new or cached instance of window is opened</p>
 
-        <ext:Button 
+        <ext:Button
             runat="server"
             Text="Open window with caching"
             Width="200"
-            Handler="App.getMessageWindow({title : new Date().toString()}, true).show();" 
+            Handler="App.getMessageWindow({title : new Date().toString()}, true).show();"
             />
 
-        <ext:Button 
+        <ext:Button
             runat="server"
             Text="Clear cache and open new window"
             Width="200"
-            Handler="App.getMessageWindow({title : new Date().toString()}).show();" 
+            Handler="App.getMessageWindow({title : new Date().toString()}).show();"
             />
-        
-        <ext:Window 
+
+        <ext:Window
             ID="MessageWindow"
-            runat="server"            
-            Title="Compose message"            
+            runat="server"
+            Title="Compose message"
             Width="350"
             Height="200"
-            Modal="true"            
+            Modal="true"
             TemplateWidget="true">
             <Buttons>
                 <ext:Button runat="server" Text="Server response">

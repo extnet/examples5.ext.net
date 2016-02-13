@@ -10,19 +10,19 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>TreePanel with ComponentColumn</h1>        
 
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
+        <h1>TreePanel with ComponentColumn</h1>
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
             Title="My Task List"
             Icon="Accept"
             Height="400"
             Width="350"
             UseArrows="true"
             AutoScroll="true"
-            Animate="true"            
+            Animate="true"
             HideHeaders="true"
             RootVisible="false">
             <Root>
@@ -35,13 +35,13 @@
                                 <ext:Node Text="Clean house" Leaf="true" />
                             </Children>
                         </ext:Node>
-                        
+
                         <ext:Node Text="Grocery List" Icon="Folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Bananas" Leaf="true" />
                                 <ext:Node Text="Milk" Leaf="true" />
                                 <ext:Node Text="Cereal" Leaf="true" />
-                                
+
                                 <ext:Node Text="Energy foods" Icon="Folder" Expanded="true">
                                     <Children>
                                         <ext:Node Text="Coffee" Leaf="true" />
@@ -50,7 +50,7 @@
                                 </ext:Node>
                             </Children>
                         </ext:Node>
-                        
+
                         <ext:Node Text="Kitchen Remodel" Icon="Folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Finish the budget" Leaf="true" />
@@ -61,7 +61,7 @@
                     </Children>
                 </ext:Node>
             </Root>
-            
+
             <ColumnModel>
                 <Columns>
                     <ext:TreeColumn runat="server" Flex="1" DataIndex="text" />
@@ -72,11 +72,11 @@
                         <Listeners>
                             <BeforeBind Handler="return e.record.data.leaf;" />
                             <Bind Handler="cmp.setValue(Math.random());" />
-                        </Listeners>                        
+                        </Listeners>
                     </ext:ComponentColumn>
                 </Columns>
             </ColumnModel>
-                  
+
          </ext:TreePanel>
     </form>
 </body>

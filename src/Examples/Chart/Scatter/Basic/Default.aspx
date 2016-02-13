@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
+        this.Chart1.GetStore().DataSource = new List<object>
         {
             new { x = 5,   y = 20 },
             new { x = 480, y = 90 },
@@ -52,9 +52,9 @@
 
         </p>
 
-        <ext:Panel 
-            runat="server" 
-            BodyStyle="background: transparent !important;" 
+        <ext:Panel
+            runat="server"
+            BodyStyle="background: transparent !important;"
             Width="650">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
@@ -69,10 +69,10 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart 
-                    ID="Chart1" 
-                    runat="server" 
-                    Height="500" 
+                <ext:CartesianChart
+                    ID="Chart1"
+                    runat="server"
+                    Height="500"
                     InsetPadding="40">
                     <Store>
                         <ext:Store runat="server">
@@ -95,8 +95,8 @@
                         <ext:NumericAxis Position="Left" Fields="y" Grid="true" />
                     </Axes>
                     <Items>
-                        <ext:TextSprite 
-                            Text="Scatter Charts - Basic" 
+                        <ext:TextSprite
+                            Text="Scatter Charts - Basic"
                             FontSize="22"
                             Width="100"
                             Height="10"
@@ -126,6 +126,6 @@
                                        this.down('toolbar').add(panzoom.getModeToggleButton());" />
             </Listeners>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

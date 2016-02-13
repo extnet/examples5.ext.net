@@ -6,8 +6,8 @@
 <head runat="server">
     <title>Ext.NET Example</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
-    <style>      
+
+    <style>
           div.botright {
             display    : block;
             position   : absolute;
@@ -18,23 +18,23 @@
             border     : 1px solid #ddd;
             background : #eee;
           }
-    </style> 
+    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Demonstrates how to show custom load mask while frame loading.</h1>
 
         <p>The animation will be shown at the right bottom corner of page</p>
-                
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
-            Width="500" 
-            Height="470" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            Width="500"
+            Height="470"
             Icon="Link"
-            Title="Frame Loader" 
+            Title="Frame Loader"
             Closable="false">
             <Loader runat="server" Url="http://ext.net" Mode="Frame">
                 <Listeners>
@@ -51,7 +51,7 @@
                                 <Click Handler="#{Window1}.load('http://forums.ext.net');" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Refresh" Icon="ArrowRotateClockwise">
                             <Listeners>
                                 <Click Handler="#{Window1}.reload();" />
@@ -61,8 +61,8 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Window>
-        
-        <div id="maskDiv" class="botright x-hidden-display">     
+
+        <div id="maskDiv" class="botright x-hidden-display">
             <img src="loading.gif" />
         </div>
     </form>

@@ -131,10 +131,10 @@
                             </div>
                             <div class="navigation-bar">
                                 <div class="platform-selector-container">
-                                    <ext:Button 
-                                        Cls="platform-selector" 
-                                        runat="server" 
-                                        Width="450px" 
+                                    <ext:Button
+                                        Cls="platform-selector"
+                                        runat="server"
+                                        Width="450px"
                                         Text="Web Forms Examples Explorer (4.0 Preview)"
                                         Height="70px"
                                         ArrowVisible="false">

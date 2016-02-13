@@ -7,30 +7,30 @@
         X.Msg.Notify("Message", msg).Show();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Remote Data Calendar - Ext.NET Examples</title>
-    
+
     <link rel="stylesheet" href="../Shared/resources/css/main.css" />
-    
+
     <script src="../Shared/resources/js/common.js"></script>
     <script src="override.js"></script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" Namespace="CompanyX" />
-        
+
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    Height="35" 
-                    Border="false" 
-                    Region="North" 
-                    Cls="app-header" 
+                <ext:Panel
+                    runat="server"
+                    Height="35"
+                    Border="false"
+                    Region="North"
+                    Cls="app-header"
                     BodyCls="app-header-content">
                     <Content>
                         <div id="app-logo">
@@ -42,20 +42,20 @@
                         <span id="app-msg" class="x-hidden"></span>
                     </Content>
                 </ext:Panel>
-                
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
-                    Title="..." 
-                    Layout="Border" 
-                    Region="Center" 
+
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Title="..."
+                    Layout="Border"
+                    Region="Center"
                     Cls="app-center">
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
-                            Width="213" 
-                            Region="West" 
-                            Border="false" 
+                        <ext:Panel
+                            runat="server"
+                            Width="213"
+                            Region="West"
+                            Border="false"
                             Cls="app-west">
                             <Items>
                                 <ext:DatePicker ID="DatePicker1" runat="server" Cls="ext-cal-nav-picker">
@@ -67,19 +67,19 @@
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Save All Events" 
-                                            Icon="Disk" 
-                                            Handler="CompanyX.record.saveAll();" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Save All Events"
+                                            Icon="Disk"
+                                            Handler="CompanyX.record.saveAll();"
                                             />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>
                         </ext:Panel>
-                        
+
                         <ext:CalendarPanel
-                            ID="CalendarPanel1" 
+                            ID="CalendarPanel1"
                             runat="server"
                             Region="Center"
                             ActiveIndex="2"
@@ -93,31 +93,31 @@
                             </CalendarStore>
                             <EventStore ID="EventStore1" runat="server" NoMappings="true">
                                 <Proxy>
-                                    <ext:AjaxProxy Url="../Shared/Code/RemoteService.asmx/GetEvents" Json="true">                                        
+                                    <ext:AjaxProxy Url="../Shared/Code/RemoteService.asmx/GetEvents" Json="true">
                                         <ActionMethods Read="POST" />
                                         <Reader>
                                             <ext:JsonReader RootProperty="d" />
                                         </Reader>
                                     </ext:AjaxProxy>
-                                </Proxy>        
+                                </Proxy>
                                 <Mappings>
-                                    <ext:ModelField Name="StartDate" Type="Date" DateFormat="M$" /> 
+                                    <ext:ModelField Name="StartDate" Type="Date" DateFormat="M$" />
                                     <ext:ModelField Name="EndDate" Type="Date" DateFormat="M$" />
                                 </Mappings>
                                 <Listeners>
-                                    <BeforeSync Handler="Ext.Msg.alert('Sync', 'The EventStore initiates a sync request after that action. The EventStore synchronization is not implemented in that example.'); 
+                                    <BeforeSync Handler="Ext.Msg.alert('Sync', 'The EventStore initiates a sync request after that action. The EventStore synchronization is not implemented in that example.');
                                                          this.commitChanges();
                                                          return false;" />
                                 </Listeners>
                             </EventStore>
                             <%-- Setting enableFx to false is a workaround for #833 --%>
-                            <MonthView 
-                                runat="server" 
-                                ShowHeader="true" 
-                                ShowWeekLinks="true" 
-                                ShowWeekNumbers="true" 
+                            <MonthView
+                                runat="server"
+                                ShowHeader="true"
+                                ShowWeekLinks="true"
+                                ShowWeekNumbers="true"
                                 EnableFx="false"
-                                />  
+                                />
                             <WeekView runat="server">
                                 <CustomConfig>
                                     <ext:ConfigItem Name="enableFx" Value="false" Mode="Raw" />
@@ -140,17 +140,17 @@
                                 <EventAdd    Fn="CompanyX.record.addFromEventDetailsForm" Scope="CompanyX" />
                                 <EventUpdate Fn="CompanyX.record.updateFromEventDetailsForm" Scope="CompanyX" />
                                 <EventDelete Fn="CompanyX.record.removeFromEventDetailsForm" Scope="CompanyX" />
-                            </Listeners>                          
+                            </Listeners>
                         </ext:CalendarPanel>
                     </Items>
                 </ext:Panel>
             </Items>
         </ext:Viewport>
-        
-        <ext:EventWindow 
-            ID="EventWindow1" 
+
+        <ext:EventWindow
+            ID="EventWindow1"
             runat="server"
-            Hidden="true" 
+            Hidden="true"
             CalendarStoreID="CalendarStore1">
             <Listeners>
                 <EventAdd    Fn="CompanyX.record.add" Scope="CompanyX" />

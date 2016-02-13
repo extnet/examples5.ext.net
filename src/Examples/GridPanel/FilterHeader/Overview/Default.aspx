@@ -16,13 +16,13 @@
         {
             ((TextField)defaultField).Icon = Icon.Magnifier;
         }
-        
+
         return defaultField;
     }
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>FilterHeader plugin overview - Ext.NET Examples</title>
@@ -42,9 +42,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-    
-        <h1>FilterHeader plugin overview</h1> 
-        
+
+        <h1>FilterHeader plugin overview</h1>
+
         <p>FilterHeader plugin allows use the following operators:</p>
 
         <ul>
@@ -53,14 +53,14 @@
             <li>Number: >, <, >=, <= or a specific number for equals</li>
             <li>Boolean: 1, 0, true, false</li>
         </ul>
-    
-        <ext:Window 
-            ID="Window1" 
-            runat="server"         
-            Width="800" 
-            Height="400" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
+            Width="800"
+            Height="400"
             Closable="false"
-            Title="Example" 
+            Title="Example"
             Maximizable="true"
             Layout="Fit">
             <Items>
@@ -81,7 +81,7 @@
                             </Model>
                             <Sorters>
                                 <ext:DataSorter Property="Company" Direction="ASC" />
-                            </Sorters>        
+                            </Sorters>
                         </ext:Store>
                     </Store>
                     <ColumnModel runat="server">
@@ -108,38 +108,38 @@
                     <DockedItems>
                         <ext:Toolbar runat="server" Dock="Bottom">
                             <Items>
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Case Sensitive" 
-                                    EnableToggle="true" 
-                                    AllowDepress="true" 
-                                    ToggleHandler="var plugin = this.up('grid').filterHeader; plugin.caseSensitive = this.pressed; plugin.applyFilter();" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Case Sensitive"
+                                    EnableToggle="true"
+                                    AllowDepress="true"
+                                    ToggleHandler="var plugin = this.up('grid').filterHeader; plugin.caseSensitive = this.pressed; plugin.applyFilter();"
                                     />
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Load Filters" 
-                                    Handler="loadFilter(this.up('grid').filterHeader);" 
-                                    />                                
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Get Fields Values" 
-                                    ToolTip="Get Values of Fields" 
-                                    Handler="var values = Ext.encode(this.up('grid').filterHeader.getValue()); Ext.Msg.alert('Fields Values', values);" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Load Filters"
+                                    Handler="loadFilter(this.up('grid').filterHeader);"
                                     />
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Get Filter Values" 
-                                    ToolTip="Get Filter Values of Grid" 
-                                    Handler="var filters = Ext.encode(this.up('grid').filterHeader.getFilterValues()); Ext.Msg.alert('Filter Values', filters);" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Get Fields Values"
+                                    ToolTip="Get Values of Fields"
+                                    Handler="var values = Ext.encode(this.up('grid').filterHeader.getValue()); Ext.Msg.alert('Fields Values', values);"
                                     />
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Clear Filters" 
-                                    Handler="this.up('grid').filterHeader.clearFilter();" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Get Filter Values"
+                                    ToolTip="Get Filter Values of Grid"
+                                    Handler="var filters = Ext.encode(this.up('grid').filterHeader.getFilterValues()); Ext.Msg.alert('Filter Values', filters);"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Clear Filters"
+                                    Handler="this.up('grid').filterHeader.clearFilter();"
                                     />
                             </Items>
                         </ext:Toolbar>
-                    </DockedItems>                   
+                    </DockedItems>
                 </ext:GridPanel>
             </Items>
         </ext:Window>

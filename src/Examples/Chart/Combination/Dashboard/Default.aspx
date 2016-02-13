@@ -5,8 +5,8 @@
     {
         get
         {
-            string[] companies = new string[] 
-            { 
+            string[] companies = new string[]
+            {
                 "3m Co",
                 "Alcoa Inc",
                 "Altria Group Inc",
@@ -23,10 +23,10 @@
 
             Random rand = new Random();
             List<object> data = new List<object>(companies.Length);
-            
+
             for (int i = 0; i < companies.Length; i++)
             {
-                data.Add(new { 
+                data.Add(new {
                     Company = companies[i],
                     Price = rand.Next(10000) / 100d,
                     Revenue = rand.Next(10000) / 100d,
@@ -44,8 +44,8 @@
     {
         get
         {
-            return new List<object> 
-            { 
+            return new List<object>
+            {
                 new { Name = "Price", Data = 100 },
                 new { Name = "Revenue %", Data = 100 },
                 new { Name = "Growth %", Data = 100 },
@@ -54,7 +54,7 @@
             };
         }
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -175,17 +175,17 @@
             information in the form to see it change live in the grid, bar chart and radar charts.
         </p>
 
-        <ext:FormPanel 
+        <ext:FormPanel
             runat="server"
             Frame="true"
             BodyPadding="5"
             Width="870"
-            Height="510">            
+            Height="510">
             <Bin>
-                <ext:Store 
-                    ID="CompanyStore" 
-                    runat="server" 
-                    Data="<%# Data %>" 
+                <ext:Store
+                    ID="CompanyStore"
+                    runat="server"
+                    Data="<%# Data %>"
                     AutoDataBind="true">
                     <Model>
                         <ext:Model runat="server">
@@ -203,9 +203,9 @@
             </Bin>
 
             <FieldDefaults LabelAlign="Left" MsgTarget="Side" />
-            
+
             <LayoutConfig>
-                <ext:VBoxLayoutConfig Align="Stretch" />    
+                <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
 
             <Items>
@@ -214,11 +214,11 @@
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:CartesianChart 
-                            ID="BarChart1" 
+                        <ext:CartesianChart
+                            ID="BarChart1"
                             runat="server"
                             Border="false"
-                            Flex="1" 
+                            Flex="1"
                             StoreID="CompanyStore">
                             <Interactions>
                                 <ext:ItemHighlightInteraction />
@@ -230,12 +230,12 @@
                                     <Label Font="9px Arial" RotationDegrees="-45" />
                                     <Renderer Handler="return Ext.String.ellipsis(label, 15, false);" />
                                 </ext:CategoryAxis>
-                            </Axes> 
+                            </Axes>
 
                             <Series>
-                                <ext:BarSeries 
-                                    Highlight="true" 
-                                    XField="company" 
+                                <ext:BarSeries
+                                    Highlight="true"
+                                    XField="company"
                                     YField="price">
                                     <StyleSpec>
                                         <ext:Sprite FillStyle="#456d9f" />
@@ -243,11 +243,11 @@
                                     <HighlightConfig>
                                         <ext:Sprite FillStyle="#619fff" StrokeStyle="black" />
                                     </HighlightConfig>
-                                    <Label 
-                                        Display="InsideEnd" 
-                                        Field="price" 
-                                        Color="#000" 
-                                        Orientation="Vertical" 
+                                    <Label
+                                        Display="InsideEnd"
+                                        Field="price"
+                                        Color="#000"
+                                        Orientation="Vertical"
                                         TextAlign="Center"
                                         />
                                     <Listeners>
@@ -260,17 +260,17 @@
                             </Plugins>
                         </ext:CartesianChart>
 
-                        <ext:PolarChart 
-                            runat="server" 
-                            Margin="0" 
-                            InsetPaddingSpec="15 30 15 30" 
+                        <ext:PolarChart
+                            runat="server"
+                            Margin="0"
+                            InsetPaddingSpec="15 30 15 30"
                             Width="200"
                             StandardTheme="Blue">
                             <Store>
-                                <ext:Store 
-                                    ID="RadarStore" 
-                                    runat="server" 
-                                    Data="<%# RadarData %>" 
+                                <ext:Store
+                                    ID="RadarStore"
+                                    runat="server"
+                                    Data="<%# RadarData %>"
                                     AutoDataBind="true">
                                     <Model>
                                         <ext:Model runat="server">
@@ -292,9 +292,9 @@
                                 <ext:NumericAxis MajorTickSteps="5" Minimum="0" Maximum="100" Position="Radial" Grid="true" />
                             </Axes>
                             <Series>
-                                <ext:RadarSeries 
-                                    AngleField="Name" 
-                                    RadiusField="Data" 
+                                <ext:RadarSeries
+                                    AngleField="Name"
+                                    RadiusField="Data"
                                     ShowMarkers="true">
                                     <Marker>
                                         <ext:CircleSprite Radius="4" FillStyle="rgb(69,109,159)" />
@@ -308,67 +308,67 @@
                     </Items>
                 </ext:Panel>
 
-                <ext:Panel 
-                    runat="server" 
-                    Flex="1" 
-                    Border="false" 
+                <ext:Panel
+                    runat="server"
+                    Flex="1"
+                    Border="false"
                     BodyStyle="background-color: transparent;">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
 
                     <Items>
-                        <ext:GridPanel 
-                            ID="CompanyGrid" 
-                            runat="server" 
-                            Flex="6" 
+                        <ext:GridPanel
+                            ID="CompanyGrid"
+                            runat="server"
+                            Flex="6"
                             StoreID="CompanyStore">
                             <ColumnModel>
                                 <Columns>
-                                    <ext:Column 
-                                        ID="Company" 
-                                        runat="server" 
-                                        Text="Company" 
-                                        Flex="1" 
-                                        DataIndex="company" 
+                                    <ext:Column
+                                        ID="Company"
+                                        runat="server"
+                                        Text="Company"
+                                        Flex="1"
+                                        DataIndex="company"
                                         />
-                                    <ext:Column 
-                                        runat="server" 
-                                        Text="Price" 
-                                        Width="75" 
-                                        DataIndex="price" 
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Price"
+                                        Width="75"
+                                        DataIndex="price"
                                         Align="Right">
                                         <Renderer Format="UsMoney" />
                                     </ext:Column>
-                                    <ext:Column 
-                                        runat="server" 
-                                        Text="Revenue" 
-                                        Width="75" 
-                                        DataIndex="revenue" 
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Revenue"
+                                        Width="75"
+                                        DataIndex="revenue"
                                         Align="Right">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
-                                    <ext:Column 
-                                        runat="server" 
-                                        Text="Growth" 
-                                        Width="75" 
-                                        DataIndex="growth" 
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Growth"
+                                        Width="75"
+                                        DataIndex="growth"
                                         Align="Right">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
-                                    <ext:Column 
-                                        runat="server" 
-                                        Text="Product" 
-                                        Width="75" 
-                                        DataIndex="product" 
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Product"
+                                        Width="75"
+                                        DataIndex="product"
                                         Align="Right">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
-                                    <ext:Column 
-                                        runat="server" 
-                                        Text="Market" 
-                                        Width="75" 
-                                        DataIndex="market" 
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Market"
+                                        Width="75"
+                                        DataIndex="market"
                                         Align="Right">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
@@ -380,10 +380,10 @@
                             </Listeners>
                         </ext:GridPanel>
 
-                        <ext:FieldSet 
-                            runat="server" 
-                            Margin="5" 
-                            Flex="4"  
+                        <ext:FieldSet
+                            runat="server"
+                            Margin="5"
+                            Flex="4"
                             MarginSpec="0 0 0 5"
                             Title="Company Details">
                             <Defaults>
@@ -393,76 +393,76 @@
                             </Defaults>
 
                             <Items>
-                                <ext:NumberField 
-                                    runat="server" 
-                                    FieldLabel="Price" 
-                                    Name="price" 
-                                    MinValue="0" 
-                                    MaxValue="100" 
-                                    EnforceMaxLength="true" 
+                                <ext:NumberField
+                                    runat="server"
+                                    FieldLabel="Price"
+                                    Name="price"
+                                    MinValue="0"
+                                    MaxValue="100"
+                                    EnforceMaxLength="true"
                                     MaxLength="5">
                                     <Listeners>
                                         <Change Buffer="200" Fn="afterEdit" />
                                     </Listeners>
                                 </ext:NumberField>
 
-                                <ext:NumberField 
-                                    runat="server" 
-                                    FieldLabel="Revenue %" 
-                                    Name="revenue" 
-                                    MinValue="0" 
-                                    MaxValue="100" 
-                                    EnforceMaxLength="true" 
+                                <ext:NumberField
+                                    runat="server"
+                                    FieldLabel="Revenue %"
+                                    Name="revenue"
+                                    MinValue="0"
+                                    MaxValue="100"
+                                    EnforceMaxLength="true"
                                     MaxLength="5">
                                     <Listeners>
                                         <Change Buffer="200" Fn="afterEdit" />
                                     </Listeners>
                                 </ext:NumberField>
 
-                                <ext:NumberField 
-                                    runat="server" 
-                                    FieldLabel="Growth %" 
-                                    Name="growth" 
-                                    MinValue="0" 
-                                    MaxValue="100" 
-                                    EnforceMaxLength="true" 
+                                <ext:NumberField
+                                    runat="server"
+                                    FieldLabel="Growth %"
+                                    Name="growth"
+                                    MinValue="0"
+                                    MaxValue="100"
+                                    EnforceMaxLength="true"
                                     MaxLength="5">
                                     <Listeners>
                                         <Change Buffer="200" Fn="afterEdit" />
                                     </Listeners>
                                 </ext:NumberField>
 
-                                <ext:NumberField 
-                                    runat="server" 
-                                    FieldLabel="Product %" 
-                                    Name="product" 
-                                    MinValue="0" 
-                                    MaxValue="100" 
-                                    EnforceMaxLength="true" 
+                                <ext:NumberField
+                                    runat="server"
+                                    FieldLabel="Product %"
+                                    Name="product"
+                                    MinValue="0"
+                                    MaxValue="100"
+                                    EnforceMaxLength="true"
                                     MaxLength="5">
                                     <Listeners>
                                         <Change Buffer="200" Fn="afterEdit" />
                                     </Listeners>
                                 </ext:NumberField>
 
-                                <ext:NumberField 
-                                    runat="server" 
-                                    FieldLabel="Market %" 
-                                    Name="market" 
-                                    MinValue="0" 
-                                    MaxValue="100" 
-                                    EnforceMaxLength="true" 
+                                <ext:NumberField
+                                    runat="server"
+                                    FieldLabel="Market %"
+                                    Name="market"
+                                    MinValue="0"
+                                    MaxValue="100"
+                                    EnforceMaxLength="true"
                                     MaxLength="5">
                                     <Listeners>
                                         <Change Buffer="200" Fn="afterEdit" />
                                     </Listeners>
                                 </ext:NumberField>
                             </Items>
-                        </ext:FieldSet>                                
+                        </ext:FieldSet>
                     </Items>
                 </ext:Panel>
             </Items>
         </ext:FormPanel>
-    </form>    
+    </form>
 </body>
 </html>

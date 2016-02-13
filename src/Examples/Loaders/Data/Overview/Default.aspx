@@ -32,13 +32,13 @@
 </head>
 <body>
     <h1>Data Loader</h1>
-    
-    <ext:ResourceManager runat="server" />    
-    
+
+    <ext:ResourceManager runat="server" />
+
     <ext:Panel
-        runat="server"         
-        Height="200" 
-        Width="200"        
+        runat="server"
+        Height="200"
+        Width="200"
         Data="<%# Data %>"
         AutoDataBind="true"
         BodyPadding="10"
@@ -48,17 +48,17 @@
                 <tpl for=".">
                     <p>{FirstName} - {LastName}</p>
                 </tpl>
-            </Html>            
-        </Tpl>        
+            </Html>
+        </Tpl>
     </ext:Panel>
 
     <br />
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
-        Width="200"        
+        runat="server"
+        Height="200"
+        Width="200"
         BodyPadding="10"
         Title="Data from direct method">
         <Tpl runat="server">
@@ -66,10 +66,10 @@
                 <tpl for=".">
                     <p>{FirstName} - {LastName}</p>
                 </tpl>
-            </Html>            
-        </Tpl>        
-        <Loader DirectMethod="#{DirectMethods}.GetData" Mode="Data">      
-            <LoadMask ShowMask="true" />      
+            </Html>
+        </Tpl>
+        <Loader DirectMethod="#{DirectMethods}.GetData" Mode="Data">
+            <LoadMask ShowMask="true" />
         </Loader>
     </ext:Panel>
 
@@ -77,9 +77,9 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
-        Width="200"        
+        runat="server"
+        Height="200"
+        Width="200"
         BodyPadding="10"
         Title="Data from http handler">
         <Tpl runat="server">
@@ -87,10 +87,10 @@
                 <tpl for=".">
                     <p>{FirstName} - {LastName}</p>
                 </tpl>
-            </Html>            
-        </Tpl>        
-        <Loader Url="DataHandler.ashx" Mode="Data">      
-            <LoadMask ShowMask="true" />      
+            </Html>
+        </Tpl>
+        <Loader Url="DataHandler.ashx" Mode="Data">
+            <LoadMask ShowMask="true" />
         </Loader>
     </ext:Panel>
 
@@ -98,9 +98,9 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
-        Width="200"        
+        runat="server"
+        Height="200"
+        Width="200"
         BodyPadding="10"
         Title="Data from JSON web service">
         <Tpl runat="server">
@@ -108,11 +108,11 @@
                 <tpl for=".">
                     <p>{FirstName} - {LastName}</p>
                 </tpl>
-            </Html>            
-        </Tpl>        
-        <Loader runat="server" Url="DataService.asmx/GetData" Mode="Data">      
+            </Html>
+        </Tpl>
+        <Loader runat="server" Url="DataService.asmx/GetData" Mode="Data">
             <AjaxOptions Json="true" />
-            <LoadMask ShowMask="true" />      
+            <LoadMask ShowMask="true" />
         </Loader>
     </ext:Panel>
 

@@ -10,16 +10,16 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>Multi Node TreePanel built using markup</h1>       
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
-            Width="300" 
-            Height="450" 
-            Icon="BookOpen" 
-            Title="Catalog" 
+
+        <h1>Multi Node TreePanel built using markup</h1>
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
+            Width="300"
+            Height="450"
+            Icon="BookOpen"
+            Title="Catalog"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -133,15 +133,15 @@
                 <ext:StatusBar ID="StatusBar1" runat="server" AutoClear="1500" />
             </BottomBar>
             <Listeners>
-                <ItemClick 
-                    Handler="#{StatusBar1}.setStatus({text: 'Node Selected: <b>' + record.data.text + '<br />', clear: false});"                     
+                <ItemClick
+                    Handler="#{StatusBar1}.setStatus({text: 'Node Selected: <b>' + record.data.text + '<br />', clear: false});"
                     />
-                <ItemExpand 
-                    Handler="#{StatusBar1}.setStatus({text: 'Node Expanded: <b>' + item.data.text + '<br />', clear: false});" 
+                <ItemExpand
+                    Handler="#{StatusBar1}.setStatus({text: 'Node Expanded: <b>' + item.data.text + '<br />', clear: false});"
                     Buffer="30"
                     />
-                <ItemCollapse 
-                    Handler="#{StatusBar1}.setStatus({text: 'Node Collapsed: <b>' + item.data.text + '<br />', clear: false});" 
+                <ItemCollapse
+                    Handler="#{StatusBar1}.setStatus({text: 'Node Collapsed: <b>' + item.data.text + '<br />', clear: false});"
                     Buffer="30"
                     />
             </Listeners>

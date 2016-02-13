@@ -29,7 +29,7 @@
         return nodes.ToJson();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -47,7 +47,7 @@
                     node.set('loaded', true);
                     var data = Ext.decode(result);
                     node.appendChild(data, undefined, true);
-                    node.expand();                    
+                    node.expand();
                 },
 
                 failure : function (errorMsg) {
@@ -62,15 +62,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <h1>TreePanel using DirectMethod</h1>         
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
-            Title="Tree" 
+
+        <h1>TreePanel using DirectMethod</h1>
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
+            Title="Tree"
             Width="300"
-            Height="450" 
+            Height="450"
             Border="false">
             <Root>
                 <ext:Node NodeID="0" Text="Root" />
@@ -78,7 +78,7 @@
             <Listeners>
                 <BeforeLoad Fn="nodeLoad" />
             </Listeners>
-        </ext:TreePanel>       
+        </ext:TreePanel>
     </form>
 </body>
 </html>

@@ -9,11 +9,11 @@
 
     <script>
         var mapId = function (data) {
-            return data.id;   
+            return data.id;
         };
 
         var mapCategory = function (data) {
-            return data.attributes["name"].value;   
+            return data.attributes["name"].value;
         };
 
         var mapLinks = function (data) {
@@ -45,14 +45,14 @@
     <ext:ResourceManager runat="server" />
 
     <h1>Custom XML File Loading</h1>
-        
+
     <p>This example shows how to load a data from a custom XML file directly.</p>
-        
-    <ext:GridPanel 
+
+    <ext:GridPanel
         runat="server"
         Title="Categories"
-        Frame="true" 
-        Height="400" 
+        Frame="true"
+        Height="400"
         Width="400">
         <Store>
             <ext:Store runat="server">
@@ -82,15 +82,15 @@
         </Store>
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column 
-                    runat="server" 
-                    ID="Category" 
-                    Text="Category" 
-                    DataIndex="category" 
+                <ext:Column
+                    runat="server"
+                    ID="Category"
+                    Text="Category"
+                    DataIndex="category"
                     Flex="1" />
-                <ext:Column 
-                    runat="server" 
-                    Text="ID" 
+                <ext:Column
+                    runat="server"
+                    Text="ID"
                     DataIndex="id" />
             </Columns>
         </ColumnModel>

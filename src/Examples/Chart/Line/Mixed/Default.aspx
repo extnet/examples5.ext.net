@@ -7,7 +7,7 @@
     <title>Charts - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
-    <style>    
+    <style>
         .x-panel {
             margin-bottom : 20px;
         }
@@ -17,7 +17,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Charts Example</h1> 
+        <h1>Charts Example</h1>
 
         <p>Displaying multiple charts and mixed charts with mouse over and click interaction.</p>
 
@@ -30,10 +30,10 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -80,7 +80,7 @@
             </Items>
         </ext:Panel>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Width="600"
             Height="300"
@@ -89,10 +89,10 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -122,7 +122,7 @@
                                 <ItemMouseUp Handler="Ext.net.Notification.show({title:'Item Selected', html:item.value[1] + ' visits on ' + Ext.Date.monthNames[item.value[0]]});" />
                             </Listeners>
 
-                            <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">                            
+                            <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">
                                 <Renderer Handler="toolTip.setTitle(record.get('Data1') + ' visits in ' + record.get('Name').substr(0, 3));"></Renderer>
                             </Tooltip>
 
@@ -139,7 +139,7 @@
             </Items>
         </ext:Panel>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Width="600"
             Height="300"
@@ -148,10 +148,10 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -197,7 +197,7 @@
                                 <ItemMouseUp Handler="Ext.net.Notification.show({title:'Item Selected', html:item.value[1] + ' visits on ' + Ext.Date.monthNames[item.value[0]]});" />
                             </Listeners>
 
-                            <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">                            
+                            <Tooltip runat="server" TrackMouse="true" Width="110" Height="25">
                                 <Renderer Handler="toolTip.setTitle(record.get('Data1') + ' visits in ' + record.get('Name').substr(0, 3));"></Renderer>
                             </Tooltip>
 
@@ -206,10 +206,10 @@
                             </StyleSpec>
 
                             <Marker>
-                                <ext:Sprite SpriteType="Circle"                                     
-                                    Radius="4" 
-                                    LineWidth="0" 
-                                    FillStyle="#18428E" 
+                                <ext:Sprite SpriteType="Circle"
+                                    Radius="4"
+                                    LineWidth="0"
+                                    FillStyle="#18428E"
                                     StrokeStyle="#18428E" />
                             </Marker>
                         </ext:LineSeries>
@@ -217,6 +217,6 @@
                 </ext:CartesianChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

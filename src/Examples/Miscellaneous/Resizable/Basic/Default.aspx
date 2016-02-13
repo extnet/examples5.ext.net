@@ -4,18 +4,18 @@
 
 <html>
 <head runat="server">
-    <title>Resizable - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Resizable - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="resources/css/basic.css" rel="stylesheet" />
 
     <script>
         var hideImage = function () {
-            var customEl = App.CustomResizer.getEl();            
+            var customEl = App.CustomResizer.getEl();
             document.body.insertBefore(customEl.dom, document.body.firstChild);
 
             customEl.on('dblclick', function () {
                 customEl.hide(true);
-            });            
+            });
 
             customEl.hide();
         };
@@ -28,30 +28,30 @@
                 <DocumentReady Handler="hideImage();" />
             </Listeners>
         </ext:ResourceManager>
-        
+
         <h1>Resizable Examples</h1>
 
         <p>These examples show how to apply a floating (default) and pinned Resizable component to a standard element.</p>
-        
+
         <p>
             <b>Basic Example</b><br />
             This is a basic as you get. To resize the box, position your mouse anywhere near the bottom,
             right or border right edge of the box. This example uses the default "floating" handles.
         </p>
-        
+
         <div id="basic">Resize Me!</div>
-        
+
         <ext:Resizer
-            runat="server" 
-            Target="basic" 
+            runat="server"
+            Target="basic"
             Width="200"
             Height="100"
             MinWidth="100"
             MinHeight="50"
             />
-        
+
         <hr/>
-        
+
         <p>
             <b>Wrapped Elements</b>
             <br />
@@ -60,12 +60,12 @@
             easier for you and all you had to do was set "wrap:true". Now with Ext JS 4.x we go a step further
             and automatically detect if the element needs a wrap and wrap it for you.
         </p>
-        
+
         <p>
             <b>Pinned Handles</b><br />
             Notice this example has the resize handles "pinned". This is done by setting "pinned:true".
         </p>
-        
+
         <p>
             <b>Dynamic Sizing</b>
             <br />
@@ -82,10 +82,10 @@
         </textarea>
         <br />
         <br />
-        
-        <ext:Resizer 
-            runat="server" 
-            Target="dwrapped" 
+
+        <ext:Resizer
+            runat="server"
+            Target="dwrapped"
             Pinned="true"
             Width="450"
             Height="150"
@@ -94,17 +94,17 @@
             Dynamic="true"
             />
         <hr/>
-        
+
         <p>
             <b>Preserve Ratio</b><br />
             For some things like images, you will probably want to preserve the ratio of width to height. Just set PreserveRatio=true.
         </p>
-        
+
         <img id="wrapped" src="resources/images/flower.jpg" width="200" height="133" />
-        
-        <ext:Resizer 
-            runat="server" 
-            Target="wrapped" 
+
+        <ext:Resizer
+            runat="server"
+            Target="wrapped"
             Pinned="true"
             MinWidth="50"
             MinHeight="50"
@@ -118,12 +118,12 @@
             To resize in fixed increments, specify the <code>WidthIncrement</code> or <code>HeightIncrement</code> options. The image below
             resizes (maintaining its aspect ratio) in increments of 20 pixels in both directions.
         </p>
-        
+
         <img id="croix-de-fer" src="resources/images/CroixDeFer.jpg" width="160" height="120"/>
-        
+
         <ext:Resizer
-            runat="server" 
-            Target="croix-de-fer"             
+            runat="server"
+            Target="croix-de-fer"
             Width="160"
             Height="120"
             MinWidth="160"
@@ -131,7 +131,7 @@
             PreserveRatio="true"
             HeightIncrement="20"
             WidthIncrement="20"
-            />        
+            />
         <hr/>
 
         <p>
@@ -139,17 +139,17 @@
             If you just want the element to be resizable without any fancy handles, set transparent to true.
         </p>
         <img id="transparent" src="resources/images/grass.jpg" width="200" height="133" />
-        
+
         <ext:Resizer
-            runat="server" 
-            Target="transparent" 
+            runat="server"
+            Target="transparent"
             MinWidth="50"
             MinHeight="50"
             PreserveRatio="true"
             Transparent="true"
             />
         <hr />
-        
+
         <p>
             <b>Customizable Handles</b><br />
             Resizable elements are resizable 8 ways. 8 way resizing for a static positioned element will cause the element to be positioned relative and taken out of the document flow. For resizing which adjusts the
@@ -161,11 +161,11 @@
             <b>Double click anywhere on the image to hide it when you are done.</b>
         </p>
         <img id="custom" src="resources/images/stones.jpg" width="200" height="150" style="position:absolute;left:0;top:0;" />
-        
-        <ext:Resizer 
-            ID="CustomResizer" 
-            runat="server" 
-            Target="custom" 
+
+        <ext:Resizer
+            ID="CustomResizer"
+            runat="server"
+            Target="custom"
             Pinned="true"
             MinWidth="50"
             MinHeight="50"
@@ -173,7 +173,7 @@
             Handles="All"
             Dynamic="true"
             />
-        
+
         <div style="padding:8px;border:1px solid #c3daf9;background:#d9e8fb;width:150px;text-align:center;">
             <ext:Button runat="server" Text="Show Me">
                 <Listeners>
@@ -182,23 +182,23 @@
             </ext:Button>
         </div>
         <hr />
-        
-        <ext:Panel 
+
+        <ext:Panel
             ID="ExtNetSite"
-            runat="server"  
-            Title="Resizable panel" 
-            Width="400" 
+            runat="server"
+            Title="Resizable panel"
+            Width="400"
             Height="200">
-            <Loader 
-                runat="server" 
-                Url="http://ext.net" 
+            <Loader
+                runat="server"
+                Url="http://ext.net"
                 Mode="Frame" />
-            <ResizableConfig 
-                runat="server" 
-                MinHeight="200" 
-                MinWidth="200" 
+            <ResizableConfig
+                runat="server"
+                MinHeight="200"
+                MinWidth="200"
                 Transparent="true" />
-        </ext:Panel>        
+        </ext:Panel>
 
 
         <br />

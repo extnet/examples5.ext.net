@@ -55,7 +55,7 @@
 <html>
 <head runat="server">
     <title>ForceFit Array Grid - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
         .x-grid-row-over .x-grid-cell-inner {
@@ -77,12 +77,12 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>ForceFit Array Grid Example</h1>
 
     <p>This example shows how to use the <code>forceFit</code> config to make columns always fit within the available width.</p>
-    
-    <ext:Window 
+
+    <ext:Window
         runat="server"
         Title="Force fit grid - columns will always fit"
         Width="600"
@@ -91,9 +91,9 @@
         MinHeight="200"
         Layout="FitLayout">
         <Items>
-            <ext:GridPanel 
+            <ext:GridPanel
                 ID="GridPanel1"
-                runat="server" 
+                runat="server"
                 MultiSelect="true"
                 ForceFit="true"
                 Border="false"
@@ -130,8 +130,8 @@
                             <Renderer Fn="pctChange" />
                         </ext:Column>
                         <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="85" />
-                    </Columns>            
-                </ColumnModel>       
+                    </Columns>
+                </ColumnModel>
                 <SelectionModel>
                     <ext:RowSelectionModel runat="server" />
                 </SelectionModel>
@@ -140,6 +140,6 @@
                 </View>
             </ext:GridPanel>
         </Items>
-    </ext:Window>    
+    </ext:Window>
 </body>
 </html>

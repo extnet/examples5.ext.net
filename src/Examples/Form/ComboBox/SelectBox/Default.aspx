@@ -55,7 +55,7 @@
             new object[] { "WA", "Washington", "Green Tree State" },
             new object[] { "WV", "West Virginia", "Mountain State" },
             new object[] { "WI", "Wisconsin", "America's Dairyland" },
-            new object[] { "WY", "Wyoming", "Like No Place on Earth"} 
+            new object[] { "WY", "Wyoming", "Like No Place on Earth"}
         };
     }
 </script>
@@ -70,14 +70,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h3>SelectBox</h3>
-        
+
         <p>A Component similar to an HTML SELECT input. If you click and drag on the items list, no selection is made.</p>
-        
+
         <ext:SelectBox
             ID="SelectBox1"
-            runat="server" 
+            runat="server"
             DisplayField="state"
             ValueField="abbr"
             EmptyText="Select a state...">
@@ -91,9 +91,9 @@
                                 <ext:ModelField Name="nick" />
                             </Fields>
                         </ext:Model>
-                    </Model>            
-                </ext:Store>    
-            </Store>    
+                    </Model>
+                </ext:Store>
+            </Store>
         </ext:SelectBox>
     </form>
 </body>

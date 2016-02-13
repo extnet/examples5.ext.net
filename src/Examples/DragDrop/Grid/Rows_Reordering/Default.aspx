@@ -6,7 +6,7 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         List<object> data = new List<object>();
-        
+
         for (int i = 0; i < 10; i++)
         {
             data.Add(new
@@ -30,12 +30,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Drag and Drop rows to reorganize</h1>
-        
+
         <ext:GridPanel
-            runat="server" 
-            MultiSelect="true"            
+            runat="server"
+            MultiSelect="true"
             Title="Grid"
             Width="400"
             Height="300">
@@ -54,15 +54,15 @@
                 <Columns>
                     <ext:Column runat="server" Text="Record Name" Width="160" DataIndex="Name" Flex="1" />
                 </Columns>
-            </ColumnModel>                    
+            </ColumnModel>
             <View>
                 <ext:GridView runat="server">
                     <Plugins>
                         <ext:GridDragDrop runat="server" DragText="Drag and drop to reorganize"/>
                     </Plugins>
                 </ext:GridView>
-            </View>   
+            </View>
         </ext:GridPanel>
-    </form>    
+    </form>
 </body>
 </html>

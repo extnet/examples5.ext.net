@@ -63,9 +63,9 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         Store store = this.GridPanel1.GetStore();
-        
+
         store.DataSource = Employee.GetAll();
-    }              
+    }
 </script>
 
 <!DOCTYPE html>
@@ -78,11 +78,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Title="List" 
+            Title="List"
             Icon="Application">
             <Store>
                 <ext:Store runat="server">
@@ -102,7 +102,7 @@
                     </Model>
                 </ext:Store>
             </Store>
-            <ColumnModel runat="server">                
+            <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="ID" DataIndex="ID" />
                     <ext:Column runat="server" Text="NAME" DataIndex="Name" />
@@ -113,7 +113,7 @@
                     <ext:Column runat="server" Text="PHONE HOME" DataIndex="PhoneHome" />
                     <ext:Column runat="server" Text="PHONE WORK" DataIndex="PhoneWork" />
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
         </ext:GridPanel>
     </form>
 </body>

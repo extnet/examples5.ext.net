@@ -6,7 +6,7 @@
         X.Msg.Alert("Server Time", DateTime.Now.ToLongTimeString()).Show();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
@@ -17,31 +17,31 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-   
+
         <h1>HyperlinkButton Control Variations</h1>
-    
+
         <h2>Simple HyperlinkButton</h2>
-    
+
         <ext:HyperlinkButton runat="server" Text="Click">
             <Listeners>
                 <Click Handler="Ext.Msg.alert('Clicked', 'HyperlinkButton');" />
             </Listeners>
         </ext:HyperlinkButton>
-    
+
         <h2>HyperlinkButton with Icon and Click DirectEvent</h2>
-    
+
         <ext:HyperlinkButton runat="server" Icon="Accept" Text="Click">
             <DirectEvents>
                 <Click OnEvent="Button_Click" />
             </DirectEvents>
         </ext:HyperlinkButton>
-    
+
         <h2>HyperlinkButton with Right Aligned Icon</h2>
-    
+
         <ext:HyperlinkButton runat="server" Icon="Accept" IconAlign="Right" Text="Click" />
-    
+
         <h2>HyperlinkButton with Menu</h2>
-    
+
         <ext:HyperlinkButton runat="server" Icon="Accept" Text="Click">
             <Menu>
                 <ext:Menu runat="server">
@@ -52,9 +52,9 @@
                 </ext:Menu>
             </Menu>
         </ext:HyperlinkButton>
-    
+
         <h2>HyperlinkButton in a ToggleGroup</h2>
-      
+
         <ext:HyperlinkButton runat="server" Icon="GroupAdd" Text="Add group" ToggleGroup="Group1" />&nbsp;&nbsp;
         <ext:HyperlinkButton runat="server" Icon="GroupDelete" Text="Delete group" ToggleGroup="Group1" />&nbsp;&nbsp;
         <ext:HyperlinkButton runat="server" Icon="GroupEdit" Text="Edit group" ToggleGroup="Group1" />

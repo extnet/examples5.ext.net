@@ -10,14 +10,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>FormLayouts built in markup</h1>
-        
+
         <h2>Form1 - Very Simple</h2>
 
-        <ext:FormPanel 
-            ID="Panel1" 
-            runat="server" 
+        <ext:FormPanel
+            ID="Panel1"
+            runat="server"
             Title="Simple Form"
             BodyPaddingSummary="5 5 0"
             Width="350"
@@ -98,9 +98,9 @@
         </ext:FormPanel>
 
         <h2>Form 2 - Adding fieldsets</h2>
-        
-        <ext:Panel 
-            ID="Panel2" 
+
+        <ext:Panel
+            ID="Panel2"
             runat="server"
             Title="Simple Form with FieldSets"
             PaddingSummary="5px 5px 0"
@@ -108,10 +108,10 @@
             Frame="true"
             ButtonAlign="Center">
             <Items>
-                <ext:FieldSet 
+                <ext:FieldSet
                     runat="server"
                     CheckboxToggle="true"
-                    Title="User Information"                    
+                    Title="User Information"
                     Collapsed="true"
                     Layout="FormLayout">
                     <Defaults>
@@ -126,7 +126,7 @@
                 </ext:FieldSet>
                 <ext:FieldSet
                     runat="server"
-                    Collapsible="true"                    
+                    Collapsible="true"
                     Title="Phone Number"
                     Layout="FormLayout">
                     <Defaults>
@@ -145,13 +145,13 @@
                 <ext:Button runat="server" Text="Cancel" />
             </Buttons>
         </ext:Panel>
-        
+
         <h2>Form 3 - A little more complex</h2>
-        
-        <ext:Panel 
+
+        <ext:Panel
             ID="Panel3"
-            runat="server" 
-            Title="Multi Column, Nested Layouts and Anchoring" 
+            runat="server"
+            Title="Multi Column, Nested Layouts and Anchoring"
             Frame="true"
             PaddingSummary="5px 5px 0"
             Width="600"
@@ -184,9 +184,9 @@
                 <ext:Button runat="server" Text="Cancel" />
             </Buttons>
         </ext:Panel>
-        
+
         <h2>Form 4 - Forms can be a TabPanel...</h2>
-        
+
         <ext:Panel
             ID="Panel4"
             runat="server"
@@ -197,9 +197,9 @@
             <Items>
                 <ext:TabPanel runat="server" ActiveTabIndex="0">
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
-                            Title="Personal Details" 
+                        <ext:Panel
+                            runat="server"
+                            Title="Personal Details"
                             BodyPadding="10"
                             Layout="FormLayout">
                             <Defaults>
@@ -212,7 +212,7 @@
                                 <ext:TextField runat="server" FieldLabel="Email" />
                             </Items>
                         </ext:Panel>
-                        <ext:Panel 
+                        <ext:Panel
                             runat="server"
                             Title="Phone Numbers"
                             BodyPadding="10"
@@ -235,9 +235,9 @@
                 <ext:Button runat="server" Text="Cancel" />
             </Buttons>
         </ext:Panel>
-        
+
         <h2>Form 5 - Form with TabPanel</h2>
-        
+
         <ext:Panel
             ID="Panel5"
             runat="server"
@@ -262,16 +262,16 @@
                         </ext:Container>
                     </Items>
                 </ext:Container>
-                <ext:TabPanel 
-                    runat="server" 
+                <ext:TabPanel
+                    runat="server"
                     MarginSpec="5px 0px 0px 0px"
-                    ActiveTabIndex="0" 
+                    ActiveTabIndex="0"
                     Plain="true"
                     Height="235">
                     <Items>
                         <ext:Panel
-                            runat="server" 
-                            Title="Personal Details" 
+                            runat="server"
+                            Title="Personal Details"
                             BodyPadding="10"
                             Layout="FormLayout">
                             <Defaults>
@@ -310,7 +310,7 @@
                                 <ext:HtmlEditor runat="server" />
                             </Items>
                         </ext:Panel>
-                        <ext:Panel 
+                        <ext:Panel
                             ID="Tab4"
                             runat="server"
                             Title="Tab 4"

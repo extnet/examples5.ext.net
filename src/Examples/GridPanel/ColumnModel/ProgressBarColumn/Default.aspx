@@ -21,18 +21,18 @@
 <html>
 <head runat="server">
     <title>ProgressBar Column - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
         <h1>ProgressBar Column</h1>
-       
-        <ext:GridPanel 
-            runat="server" 
-            Title="ProgressBar column" 
-            Width="320" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="ProgressBar column"
+            Width="320"
             Height="200">
             <Store>
                 <ext:Store ID="Store1" runat="server">

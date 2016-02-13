@@ -63,23 +63,23 @@
 <html>
 <head runat="server">
     <title>GridPanel with Save and Submit Filter - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
         <h1>GridPanel with Save and Submit Filter</h1>
-        
+
         <p>Demonstrates how to filter unwanted records and fields.</p>
-        
+
         <p>Filter functions can be applied for the following functions: save, submit, getRowsValues</p>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Array Grid" 
-            Width="600" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Array Grid"
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server" OnBeforeStoreChanged="BeforeStoreChanged" OnSubmitData="SubmitData">
@@ -93,12 +93,12 @@
                                 <ext:ModelField Name="lastChange" Type="Date" DateFormat="M/d hh:mmtt" DateWriteFormat="c" />
                             </Fields>
                         </ext:Model>
-                    </Model>        
+                    </Model>
                     <Writer>
                         <ext:JsonWriter>
                             <FilterField Handler="return name != 'lastChange';" />
                         </ext:JsonWriter>
-                    </Writer>            
+                    </Writer>
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
@@ -124,14 +124,14 @@
                         <Click Handler="if (!#{Store1}.isDirty()) {alert('Please change cell\'s value first');} #{Store1}.sync();" />
                     </Listeners>
                 </ext:Button>
-                
+
                 <ext:Button runat="server" Text="Submit: filter records (exclude odd records)">
                     <Listeners>
                         <Click Handler="#{Store1}.submitData({ filterRecord : function (r) { return (r.store.indexOf(r) % 2) == true; }});" />
                     </Listeners>
                 </ext:Button>
             </Buttons>
-        </ext:GridPanel>          
+        </ext:GridPanel>
     </form>
 </body>
 </html>

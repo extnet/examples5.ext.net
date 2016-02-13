@@ -29,7 +29,7 @@
 <html>
 <head runat="server">
     <title>Basic Row Command - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -46,11 +46,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Basic Row Command</h1>
-        
+
         <br />
-        
+
         <h3>Icons with tips</h3>
 
         <ext:Store ID="Store1" runat="server">
@@ -66,47 +66,47 @@
                 </ext:Model>
             </Model>
         </ext:Store>
-                        
-        <ext:GridPanel 
-            runat="server" 
-            Title="Icons with tips" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="Icons with tips"
             StoreID="Store1"
-            Width="750" 
+            Width="750"
             Height="420">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="120" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="120"
+                        DataIndex="lastChange"
                         />
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
@@ -126,53 +126,53 @@
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
-            </SelectionModel>            
-        </ext:GridPanel>  
-        
+            </SelectionModel>
+        </ext:GridPanel>
+
         <br />
-        
+
         <h3>Icons with text</h3>
-        
-        <ext:GridPanel 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Icons with text" 
-            Width="750" 
+
+        <ext:GridPanel
+            runat="server"
+            StoreID="Store1"
+            Title="Icons with text"
+            Width="750"
             Height="420">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="120" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="120"
+                        DataIndex="lastChange"
                         />
                     <ext:CommandColumn runat="server" Width="160">
                         <Commands>
@@ -188,52 +188,52 @@
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
             </SelectionModel>
-        </ext:GridPanel>  
-        
+        </ext:GridPanel>
+
         <br />
-        
+
         <h3>Stand Out buttons</h3>
-        
-        <ext:GridPanel 
-            runat="server" 
-            StoreID="Store1" 
-            Title="Stand Out buttons" 
-            Width="750" 
+
+        <ext:GridPanel
+            runat="server"
+            StoreID="Store1"
+            Title="Stand Out buttons"
+            Width="750"
             Height="420">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="120" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="120"
+                        DataIndex="lastChange"
                         />
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
@@ -254,7 +254,7 @@
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
             </SelectionModel>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

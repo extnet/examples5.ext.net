@@ -6,7 +6,7 @@
     protected void Page_Load(object sender, EventArgs e)
     {
         List<object> data = new List<object>();
-        
+
         for (int i = 0; i < 10; i++)
         {
             data.Add(new
@@ -27,44 +27,44 @@
 <head runat="server">
     <title>Drag and Drop from GridPanel to FormPanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var notifyEnter = function (ddSource, e, data) {
-			App.FormPanel1.body.stopAnimation();
-			App.FormPanel1.body.highlight();
-		};
-		
-		var notifyDrop = function (ddSource, e, data) {
-			var selectedRecord = ddSource.dragData.records[0];
-			App.FormPanel1.getForm().loadRecord(selectedRecord);
-			
-			// Delete record from the grid.  not really required.
-    		ddSource.view.store.remove(selectedRecord);
-			return true;
-		};
+            App.FormPanel1.body.stopAnimation();
+            App.FormPanel1.body.highlight();
+        };
+
+        var notifyDrop = function (ddSource, e, data) {
+            var selectedRecord = ddSource.dragData.records[0];
+            App.FormPanel1.getForm().loadRecord(selectedRecord);
+
+            // Delete record from the grid.  not really required.
+            ddSource.view.store.remove(selectedRecord);
+            return true;
+        };
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Drag and Drop from a Data Grid to a Form Panel</h1>
-        
-        <p>This example shows how to setup a one way drag and drop from a grid to an instance of a FormPanel.</p>    
-        
-        <ext:Panel 
-            runat="server" 
-            Width="650" 
-            Height="300" 
+
+        <p>This example shows how to setup a one way drag and drop from a grid to an instance of a FormPanel.</p>
+
+        <ext:Panel
+            runat="server"
+            Width="650"
+            Height="300"
             Layout="BorderLayout">
             <Items>
-                <ext:GridPanel 
-                    ID="GridPanel1" 
+                <ext:GridPanel
+                    ID="GridPanel1"
                     runat="server"
-                    Region="West" 
+                    Region="West"
                     Width="325"
                     Title="Left"
-                    MarginSpec="5 5 5 5">                
+                    MarginSpec="5 5 5 5">
                     <Store>
                         <ext:Store ID="Store1" runat="server">
                             <Model>
@@ -87,17 +87,17 @@
                     </ColumnModel>
                     <SelectionModel>
                         <ext:RowSelectionModel runat="server" Mode="Single" />
-                    </SelectionModel>  
+                    </SelectionModel>
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
                                 <ext:GridDragDrop runat="server" EnableDrop="false" DDGroup="gridDDGroup" />
                             </Plugins>
                         </ext:GridView>
-                    </View>                 
+                    </View>
                 </ext:GridPanel>
-                <ext:FormPanel 
-                    ID="FormPanel1" 
+                <ext:FormPanel
+                    ID="FormPanel1"
                     runat="server"
                     Region="Center"
                     Title="Generic Form Panel"
@@ -111,7 +111,7 @@
                     </Items>
                 </ext:FormPanel>
             </Items>
-            
+
             <BottomBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -124,10 +124,10 @@
                     </Items>
                 </ext:Toolbar>
             </BottomBar>
-        </ext:Panel> 
-        
+        </ext:Panel>
+
         <ext:DropTarget runat="server" Target="={#{FormPanel1}.body}" Group="gridDDGroup">
-            <NotifyEnter Fn="notifyEnter" /> 
+            <NotifyEnter Fn="notifyEnter" />
             <NotifyDrop Fn="notifyDrop" />
         </ext:DropTarget>
     </form>

@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     private object TestData
     {
         get
@@ -57,7 +57,7 @@
                 new object[] { "WA", "Washington", "Green Tree State" },
                 new object[] { "WV", "West Virginia", "Mountain State" },
                 new object[] { "WI", "Wisconsin", "America's Dairyland" },
-                new object[] { "WY", "Wyoming", "Like No Place on Earth" } 
+                new object[] { "WY", "Wyoming", "Like No Place on Earth" }
             };
         }
     }
@@ -90,23 +90,23 @@
                 <Items>
                     <ext:FieldSet runat="server" Title="User Info" DefaultWidth="300">
                         <Items>
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 AllowBlank="false"
                                 FieldLabel="User ID"
                                 Name="user"
                                 EmptyText="user id" />
 
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 AllowBlank="false"
                                 FieldLabel="Password"
                                 Name="pass"
                                 EmptyText="password"
                                 InputType="password" />
 
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 AllowBlank="false"
                                 FieldLabel="Verify"
                                 Name="pass"
@@ -117,36 +117,36 @@
 
                     <ext:FieldSet runat="server" Title="Contact Information" DefaultWidth="300">
                         <Items>
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 FieldLabel="First Name"
                                 Name="first"
                                 EmptyText="First Name" />
 
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 FieldLabel="Last Name"
                                 Name="last"
                                 EmptyText="Last Name" />
 
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 FieldLabel="Company"
                                 Name="company" />
 
-                            <ext:TextField 
-                                runat="server" 
+                            <ext:TextField
+                                runat="server"
                                 FieldLabel="Email"
                                 Name="email"
                                 Vtype="email" />
 
-                            <ext:ComboBox 
+                            <ext:ComboBox
                                 runat="server"
                                 FieldLabel="State"
                                 Name="state"
                                 DisplayField="name"
                                 ValueField="abbr"
-                                QueryMode="Local"               
+                                QueryMode="Local"
                                 TypeAhead="true"
                                 EmptyText="Select a state...">
                                 <Store>
@@ -162,13 +162,13 @@
                                         </Model>
 
                                         <Reader>
-                                            <ext:ArrayReader />    
+                                            <ext:ArrayReader />
                                         </Reader>
                                     </ext:Store>
                                 </Store>
                             </ext:ComboBox>
 
-                            <ext:DateField 
+                            <ext:DateField
                                 runat="server"
                                 FieldLabel="Date of birth"
                                 Name="dob"
@@ -179,10 +179,10 @@
                     </ext:FieldSet>
                 </Items>
                 <Buttons>
-                    <ext:Button 
-                        runat="server" 
-                        Text="Register" 
-                        Disabled="true" 
+                    <ext:Button
+                        runat="server"
+                        Text="Register"
+                        Disabled="true"
                         FormBind="true" />
                 </Buttons>
             </ext:FormPanel>

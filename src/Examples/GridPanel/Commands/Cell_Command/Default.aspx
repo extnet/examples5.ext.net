@@ -29,7 +29,7 @@
 <html>
 <head runat="server">
     <title>Basic Row Command - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -57,12 +57,12 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
- 
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
-            Title="Cell commands" 
-            Width="700" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Cell commands"
+            Width="700"
             Height="300">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -119,13 +119,13 @@
                         <Listeners>
                             <Command Fn="onCommand" />
                         </Listeners>
-                    </ext:Column>  
+                    </ext:Column>
                 </Columns>
             </ColumnModel>
             <SelectionModel>
                <ext:RowSelectionModel runat="server" Mode="Multi" />
-            </SelectionModel>          
-        </ext:GridPanel>  
+            </SelectionModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

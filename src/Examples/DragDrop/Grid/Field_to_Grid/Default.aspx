@@ -41,7 +41,7 @@
             };
         }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -53,7 +53,7 @@
     protected void MyData_Refresh(object sender, StoreReadDataEventArgs e)
     {
         this.Store1.DataSource = this.TestData;
-        this.Store1.DataBind(); 
+        this.Store1.DataBind();
     }
 </script>
 
@@ -61,12 +61,12 @@
 
 <html>
 <head runat="server">
-    <title>Field to Grid - Ext.NET Examples</title>    
+    <title>Field to Grid - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .x-drop-target-active {
-	        background-color : #D88;
+            background-color : #D88;
         }
     </style>
 
@@ -80,9 +80,9 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-        
+
         //---DD-------------------
-        
+
         var getTargetFromEvent = function (e) {
             var grid = App.GridPanel1,
                 t = e.getTarget(grid.view.getCellSelector());
@@ -154,7 +154,7 @@
                 App.Store1.sort();
             }
         };
-        
+
         var getDragData = function (e) {
             var targetLabel = e.getTarget('label', null, true),
                 field,
@@ -201,18 +201,18 @@
         <p>This illustrates how a DragZone can manage an arbitrary number of drag sources, and
         how a DropZone can manage an arbitrary number of targets.</p>
         <p>Fields are editable. Drag the fields into the grid using the <b>label</b> as the handle.</p>
-        
-        <ext:GridPanel 
+
+        <ext:GridPanel
             ID="GridPanel1"
-            runat="server"                         
+            runat="server"
             Title="Grid"
             Width="600"
             Height="350">
             <Store>
-                <ext:Store 
-                    ID="Store1" 
-                    runat="server" 
-                    OnRefreshData="MyData_Refresh" 
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    OnRefreshData="MyData_Refresh"
                     PageSize="10">
                     <Model>
                         <ext:Model runat="server">
@@ -243,8 +243,8 @@
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>
-        
-        <ext:Panel 
+
+        <ext:Panel
              ID="Panel1"
              runat="server"
              Frame="true"
@@ -252,14 +252,14 @@
             <Items>
                 <ext:TextField runat="server" FieldLabel="Drag this text" Text="test" />
                 <ext:NumberField runat="server" FieldLabel="Drag this number" Number="1.2" />
-                <ext:DateField 
-                    runat="server" 
-                    FieldLabel="Drag this date" 
-                    SelectedDate="<%# DateTime.Now %>" 
+                <ext:DateField
+                    runat="server"
+                    FieldLabel="Drag this date"
+                    SelectedDate="<%# DateTime.Now %>"
                     AutoDataBind="true" />
-            </Items>           
+            </Items>
         </ext:Panel>
-        
+
         <ext:DropZone runat="server" ContainerScroll="true" Target="={#{GridPanel1}.view.el}">
             <GetTargetFromEvent Fn="getTargetFromEvent" />
             <OnNodeEnter Fn="onNodeEnter" />
@@ -270,7 +270,7 @@
                 <ext:ConfigItem Name="onCellDrop" Value="onCellDrop" Mode="Raw" />
             </CustomConfig>
         </ext:DropZone>
-        
+
         <ext:DragZone runat="server" Target="={#{Panel1}.getEl()}">
             <GetDragData Fn="getDragData" />
             <GetRepairXY Fn="getRepairXY" />

@@ -9,8 +9,8 @@
         }
     }
 
-    private static List<Func<double, double>> fn = new List<Func<double, double>> 
-    { 
+    private static List<Func<double, double>> fn = new List<Func<double, double>>
+    {
         delegate (double x) { return Math.Sin(5 * x); },
         delegate (double x) { return x * x * 2 - 1; },
         delegate (double x) { return x * x * x; },
@@ -29,7 +29,7 @@
         var cap = 1000;
         var index = Convert.ToInt32(PlotFn.Text);
         PlotFn.Text = (index + 1).ToString();
-        
+
         var f = fn[index % fn.Count];
 
         for (double x = -2; x <= 2; x += delta)
@@ -141,7 +141,7 @@
                             </Model>
                         </ext:Store>
                     </Store>
-                    
+
                     <Background Fill="white" />
 
                     <Interactions>
@@ -174,12 +174,12 @@
                         </ext:NumericAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries 
-                            XField="x" 
+                        <ext:LineSeries
+                            XField="x"
                             YField="y">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" StrokeStyle="rgb(0, 119, 204)" />
-                            </StyleSpec>                            
+                            </StyleSpec>
                         </ext:LineSeries>
                     </Series>
                 </ext:CartesianChart>

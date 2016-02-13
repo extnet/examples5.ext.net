@@ -6,21 +6,21 @@
     [DirectMethod]
     public static void RenderOrders(int id, string containerId)
     {
-        UserControlRendererConfig cfg = new UserControlRendererConfig 
-        { 
+        UserControlRendererConfig cfg = new UserControlRendererConfig
+        {
             UserControlPath = "OrderGrid.ascx",
             Element = containerId,
             SingleControl=true,
             Mode = RenderMode.AddTo
         };
 
-        cfg.BeforeRender += delegate(ComponentAddedEventArgs e) 
+        cfg.BeforeRender += delegate(ComponentAddedEventArgs e)
         {
             GridPanel grid = ((GridPanel)e.Control);
             grid.Title = "Orders - " + id;
             grid.CustomConfig.Add(new ConfigItem("customerId", id.ToString()));
         };
-        
+
         UserControlRenderer.Render(cfg);
     }
 
@@ -43,7 +43,7 @@
 
         UserControlRenderer.Render(cfg);
     }
-    
+
     [DirectMethod]
     public static void RenderItemLoader(int id)
     {
@@ -60,7 +60,7 @@
         };
 
         UserControlRenderer.Render(cfg);
-    }        
+    }
 </script>
 
 <!DOCTYPE html>
@@ -68,24 +68,24 @@
 <html>
 <head runat="server">
     <title>Lazy Loading Data Associations - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />        
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
-<body>    
+<body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Lazy Loading Data Associations</h1>
 
     <p>This example demonstrates the ability to lazy load associative data. For loading nested data in a single request, see the <a href="../Simple/">Simple</a> example.</p>
-    
+
     <p>We look at a fictional company that sells furniture to their retail customers.</p>
-    
+
     <p>Note that each time you navigate down to a new level a separate request is sent to retrieve the appropriate data.</p>
-    
+
     <p>Once you reach the last level, we also demonstrate the ability to load back up the hierarchy. Note that this creates a new Model instance so no previous association data is present when we begin.</p>
 
     <uc:Models runat="server" />
 
-    <ext:Panel 
+    <ext:Panel
         runat="server"
         Width="700"
         Height="400"
@@ -94,7 +94,7 @@
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
         <Items>
-            <ext:Container 
+            <ext:Container
                 runat="server"
                 Height="200"
                 Layout="CardLayout"

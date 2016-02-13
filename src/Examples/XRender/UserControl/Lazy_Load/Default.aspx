@@ -21,7 +21,7 @@
             Ext.Net.Label label = Ext.Net.Utilities.ControlUtils.FindControl<Ext.Net.Label>(eCmp.Control);
             label.Text = panel.Region.ToString();
         };
-        
+
         UserControlRenderer.Render(cfg);
     }
 </script>
@@ -35,17 +35,17 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" />        
-        
+        <ext:ResourceManager runat="server" />
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:Panel runat="server" 
-                    Region="North" 
-                    Height="200" 
+                <ext:Panel runat="server"
+                    Region="North"
+                    Height="200"
                     Title="North"
-                    Layout="FitLayout" 
+                    Layout="FitLayout"
                     Floatable="false"
-                    Collapsed="true"                    
+                    Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
                         <Expand OnEvent="LoadRegion" Single="true">
@@ -54,13 +54,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server" 
-                    Region="South" 
-                    Height="200" 
+                <ext:Panel runat="server"
+                    Region="South"
+                    Height="200"
                     Title="South"
                     Floatable="false"
                     Layout="FitLayout"
-                    Collapsed="true"                    
+                    Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
                         <Expand OnEvent="LoadRegion" Single="true">
@@ -69,13 +69,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server" 
-                    Region="West" 
-                    Width="200" 
+                <ext:Panel runat="server"
+                    Region="West"
+                    Width="200"
                     Title="West"
                     Floatable="false"
                     Layout="FitLayout"
-                    Collapsed="true"                    
+                    Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
                         <Expand OnEvent="LoadRegion" Single="true">
@@ -84,13 +84,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server" 
-                    Region="East" 
-                    Width="200" 
+                <ext:Panel runat="server"
+                    Region="East"
+                    Width="200"
                     Title="East"
                     Floatable="false"
                     Layout="FitLayout"
-                    Collapsed="true"                    
+                    Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
                         <Expand OnEvent="LoadRegion" Single="true">
@@ -101,7 +101,7 @@
 
                 <ext:Container runat="server" Region="Center" StyleSpec="padding:20px">
                     <Content>
-                        <h1>Lazy Load of UserControl</h1>        
+                        <h1>Lazy Load of UserControl</h1>
                         <p>Load regions children controls after first expand</p>
                     </Content>
                 </ext:Container>

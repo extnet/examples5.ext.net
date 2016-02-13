@@ -29,7 +29,7 @@
 <html>
 <head runat="server">
     <title>Prepare Toolbar - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -41,7 +41,7 @@
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
-        
+
         var prepare = function (grid, toolbar, rowIndex, record) {
             var firstButton = toolbar.items.get(0);
 
@@ -49,22 +49,22 @@
                 firstButton.setDisabled(true);
                 firstButton.setTooltip("Disabled");
             }
-            
+
             //you can return false to cancel toolbar for this record
-        };       
+        };
     </script>
 
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Prepare Toolbar</h1>
-        
-        <ext:GridPanel 
-            runat="server" 
-            Title="Prepare toolbar" 
-            Width="750" 
+
+        <ext:GridPanel
+            runat="server"
+            Title="Prepare toolbar"
+            Width="750"
             Height="420">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -83,39 +83,39 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        Width="160" 
-                        DataIndex="company" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="company"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
                         DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Change" 
-                        Width="75" 
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
                         DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Last Updated" 
-                        Width="110" 
-                        DataIndex="lastChange" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="110"
+                        DataIndex="lastChange"
                         />
                     <ext:CommandColumn runat="server" Width="160">
                         <Commands>
@@ -125,14 +125,14 @@
                         <PrepareToolbar Fn="prepare" />
                         <Listeners>
                             <Command Handler="Ext.Msg.alert(command, record.data.company);" />
-                        </Listeners>                        
+                        </Listeners>
                     </ext:CommandColumn>
                 </Columns>
             </ColumnModel>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Single" />
-            </SelectionModel>            
-        </ext:GridPanel>  
+            </SelectionModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

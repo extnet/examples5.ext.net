@@ -16,7 +16,7 @@
         {
             Children = new Ext.Net.NodeCollection();
         }
-        
+
         Ext.Net.Node root = new Ext.Net.Node();
         root.Text = "Root";
         Children.Add(root);
@@ -56,20 +56,20 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>TreePanel with Editor</h1>
-        
+
         <h3>Tree Editor Filter</h3>
-        
-        <ext:TreePanel 
-            ID="TreePanel1" 
-            runat="server" 
-            Icon="Anchor" 
+
+        <ext:TreePanel
+            ID="TreePanel1"
+            runat="server"
+            Icon="Anchor"
             Title="Tree Editors Filter"
-            AutoScroll="true" 
-            Width="250" 
-            CollapseFirst="True" 
-            RootVisible="False">    
+            AutoScroll="true"
+            Width="250"
+            CollapseFirst="True"
+            RootVisible="False">
             <Fields>
                 <ext:ModelField Name="editor" Type="Int" />
             </Fields>
@@ -90,19 +90,19 @@
                 <ext:CellEditing runat="server" />
             </Plugins>
          </ext:TreePanel>
-         
+
         <h3>TreePanel with Active Editor</h3>
-        
-        <ext:TreePanel 
-            ID="TreePanel2" 
-            runat="server" 
-            Icon="Anchor" 
+
+        <ext:TreePanel
+            ID="TreePanel2"
+            runat="server"
+            Icon="Anchor"
             Title="Tree Active Editor"
-            AutoScroll="true" 
-            Width="250" 
-            CollapseFirst="True"             
+            AutoScroll="true"
+            Width="250"
+            CollapseFirst="True"
             ActiveEditor="Editor1"
-            RootVisible="False">    
+            RootVisible="False">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -111,13 +111,13 @@
                                 <Click Handler="#{TreePanel2}.activeEditorIndex = 0;" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Editor2" ToggleGroup="editor">
                             <Listeners>
                                 <Click Handler="#{TreePanel2}.activeEditorIndex = 1;" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Editor3" ToggleGroup="editor">
                             <Listeners>
                                 <Click Handler="#{TreePanel2}.activeEditorIndex = 2;" />

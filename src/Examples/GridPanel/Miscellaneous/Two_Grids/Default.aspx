@@ -18,10 +18,10 @@
         StringBuilder sb = new StringBuilder(255);
 
         sb.Append("<h3>Selected Countries</h3>");
-        
+
         foreach (Country country in countries)
         {
-            sb.AppendFormat("{0}<br />", country.Name);    
+            sb.AppendFormat("{0}<br />", country.Name);
         }
 
         this.Label1.Html = sb.ToString();
@@ -34,7 +34,7 @@
 <head runat="server">
     <title>Two GridPanels - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var CountrySelector = {
             add : function (source, destination) {
@@ -60,7 +60,7 @@
                     });
                     if (!Ext.isEmpty(result.items)) {
                         GridPanel1.store.remove(result.items[0]);
-                        GridPanel2.store.add(result.items[0]);                        
+                        GridPanel2.store.add(result.items[0]);
                     }
                 }
             },
@@ -81,44 +81,44 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server"  Namespace="" />
-        
+
         <ext:Label ID="Label1" runat="server" />
-        
-        <asp:XmlDataSource 
-            ID="XmlDataSource1" 
-            runat="server" 
-            DataFile="Countries.xml" 
+
+        <asp:XmlDataSource
+            ID="XmlDataSource1"
+            runat="server"
+            DataFile="Countries.xml"
             TransformFile="Countries.xsl"
             />
-         
+
         <ext:Store runat="server" ID="Store1" DataSourceID="XmlDataSource1">
             <Sorters>
                 <ext:DataSorter Property="Name" Direction="ASC" />
-            </Sorters>            
+            </Sorters>
             <Model>
                 <ext:Model runat="server">
                     <Fields>
-                        <ext:ModelField Name="Name" />                        
+                        <ext:ModelField Name="Name" />
                     </Fields>
                 </ext:Model>
             </Model>
         </ext:Store>
-        
+
         <ext:Store runat="server" ID="Store2" OnSubmitData="SubmitData">
             <Sorters>
                 <ext:DataSorter Property="Name" Direction="ASC" />
-            </Sorters> 
+            </Sorters>
             <Model>
                 <ext:Model runat="server">
                     <Fields>
-                        <ext:ModelField Name="Name" />                        
+                        <ext:ModelField Name="Name" />
                     </Fields>
                 </ext:Model>
-            </Model>         
+            </Model>
         </ext:Store>
-        
-        <ext:Window 
-            ID="Window1" 
+
+        <ext:Window
+            ID="Window1"
             runat="server"
             Closable="false"
             Height="553"
@@ -182,34 +182,34 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:GridPanel 
-                    runat="server" 
-                    ID="GridPanel1" 
+                <ext:GridPanel
+                    runat="server"
+                    ID="GridPanel1"
                     EnableDragDrop="true"
                     StoreID="Store1"
                     Flex="1">
                     <ColumnModel runat="server">
-	                    <Columns>
+                        <Columns>
                             <ext:Column runat="server" Text="Available Countries" DataIndex="Name" Flex="1">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
-                            </ext:Column>               
-	                    </Columns>
+                            </ext:Column>
+                        </Columns>
                     </ColumnModel>
                     <SelectionModel>
                         <ext:RowSelectionModel runat="server" Mode="Multi" />
-                    </SelectionModel> 
+                    </SelectionModel>
                     <Plugins>
                         <ext:GridFilters ID="GridFilters1" runat="server" />
                     </Plugins>
                 </ext:GridPanel>
-                <ext:Panel 
-                    ID="Panel2" 
-                    runat="server" 
-                    Width="35" 
-                    BodyStyle="background-color: transparent;" 
-                    Border="false" 
+                <ext:Panel
+                    ID="Panel2"
+                    runat="server"
+                    Width="35"
+                    BodyStyle="background-color: transparent;"
+                    Border="false"
                     Layout="Anchor">
                     <Items>
                         <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" AnchorVertical="40%" />
@@ -251,22 +251,22 @@
                         </ext:Panel>
                     </Items>
                 </ext:Panel>
-                <ext:GridPanel 
-                    runat="server" 
-                    ID="GridPanel2" 
+                <ext:GridPanel
+                    runat="server"
+                    ID="GridPanel2"
                     EnableDragDrop="false"
                     StoreID="Store2"
                     Flex="1">
                     <ColumnModel runat="server">
-	                    <Columns>
-                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />                   
-	                    </Columns>
+                        <Columns>
+                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />
+                        </Columns>
                     </ColumnModel>
                     <SelectionModel>
                         <ext:RowSelectionModel runat="server" Mode="Multi" />
-                    </SelectionModel>  
+                    </SelectionModel>
                 </ext:GridPanel>
-            </Items>  
+            </Items>
             <Buttons>
                 <ext:Button ID="Button1" runat="server" Text="Save Selected Countries" Icon="Disk">
                     <Listeners>
@@ -278,7 +278,7 @@
                         <Click Handler="CountrySelector.removeAll(GridPanel1, GridPanel2);" />
                     </Listeners>
                 </ext:Button>
-            </Buttons>      
+            </Buttons>
         </ext:Window>
     </form>
 </body>

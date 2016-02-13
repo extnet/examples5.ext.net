@@ -10,7 +10,7 @@
             this.Store1.DataSource = FiltersTestData.Data;
         }
     }
-    
+
     protected void SetFilter(object sender, DirectEventArgs e)
     {
         StringFilter sf = (StringFilter)CompanyColumn.Filter[0];
@@ -19,7 +19,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>GridPanel with Local Filtering, Sorting and Paging - Ext.NET Examples</title>
@@ -42,18 +42,18 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>GridPanel with Local Filtering, Sorting and Paging</h1>
-    
+
     <p>Please see column header menu for apllying filters</p>
-    
-    <ext:Window 
-        runat="server"         
-        Width="950" 
-        Height="400" 
+
+    <ext:Window
+        runat="server"
+        Width="950"
+        Height="400"
         Closable="false"
         Collapsible="true"
-        Title="Example" 
+        Title="Example"
         Maximizable="true"
         Layout="Fit">
         <Items>
@@ -74,7 +74,7 @@
                         </Model>
                         <Sorters>
                             <ext:DataSorter Property="Company" Direction="ASC" />
-                        </Sorters>        
+                        </Sorters>
                     </ext:Store>
                 </Store>
                 <ColumnModel runat="server">
@@ -122,17 +122,17 @@
                     <ext:PagingToolbar runat="server" HideRefresh="True">
                         <Items>
                             <ext:Button runat="server" Text="Find '3m Co'" OnDirectClick="SetFilter" />
-                            
-                            <ext:Button 
-                                runat="server" 
-                                Text="All Filters" 
-                                ToolTip="Get Filters of Grid" 
+
+                            <ext:Button
+                                runat="server"
+                                Text="All Filters"
+                                ToolTip="Get Filters of Grid"
                                 Handler="getFilters" />
 
                             <ext:Button runat="server" Text="Clear Filters" Handler="this.up('grid').filters.clearFilters();" />
                         </Items>
                     </ext:PagingToolbar>
-                </BottomBar>                   
+                </BottomBar>
             </ext:GridPanel>
         </Items>
     </ext:Window>

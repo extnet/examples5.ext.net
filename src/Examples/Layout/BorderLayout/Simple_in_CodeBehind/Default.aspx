@@ -15,7 +15,7 @@
         tab1.Title = "First Tab";
         tab1.BodyStyle = "padding: 6px;";
         tab1.Html = "First Tab";
-        
+
 
         Ext.Net.Panel tab2 = new Ext.Net.Panel();
         tab2.Title = "Another Tab";
@@ -31,10 +31,10 @@
         TabPanel tp = new TabPanel();
         tp.ID = "TabPanel1";
         tp.Region = Region.Center;
-        
+
         // Set first Tab to be the .ActiveTabIndex
         tp.ActiveTabIndex = 0;
-        
+
         // Add Tabs to TabPanel
         tp.Items.Add(tab1);
         tp.Items.Add(tab2);
@@ -74,19 +74,19 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Simple BorderLayout in CodeBehind</h1>
-    
-    <ext:Button 
-        ID="Button1" 
-        runat="server" 
-        Text="Show Window" 
+
+    <ext:Button
+        ID="Button1"
+        runat="server"
+        Text="Show Window"
         Icon="Application">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
-        </Listeners>    
+        </Listeners>
     </ext:Button>
-    
+
     <asp:PlaceHolder ID="PlaceHolder1" runat="server" />
 </body>
 </html>

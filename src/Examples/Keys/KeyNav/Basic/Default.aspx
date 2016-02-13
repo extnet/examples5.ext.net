@@ -5,11 +5,11 @@
 <html>
 <head runat="server">
     <title>KeyNav - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
         var isCenter = true;
-        
+
         var move = function (win, dir) {
             var el = win.getEl();
 
@@ -42,26 +42,26 @@
 
                 case "home":
                     el.center();
-                    isCenter = true;               
+                    isCenter = true;
                     break;
             }
         };
 
-        var COLOUMN2 = function (value) { 
+        var COLOUMN2 = function (value) {
             return Ext.String.format('<img src="article_image.aspx?id={0}" id="myID" />', value);
         };
     </script>
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
-    <ext:Window 
-        ID="Window1" 
-        runat="server" 
-        Width="400" 
-        Height="300" 
-        Closable="false" 
-        Title="Move Window" 
+
+    <ext:Window
+        ID="Window1"
+        runat="server"
+        Width="400"
+        Height="300"
+        Closable="false"
+        Title="Move Window"
         BodyPadding="6">
         <Content>
             <ul>
@@ -72,9 +72,9 @@
                 <li>&nbsp;&nbsp;RIGHT</li>
                 <li>&nbsp;&nbsp;HOME</li>
             </ul>
-        </Content>            
+        </Content>
     </ext:Window>
-    
+
     <ext:KeyNav runat="server" Target="={document.body}">
         <Left Handler="move(#{Window1}, 'left');" />
         <Right Handler="move(#{Window1}, 'right');" />

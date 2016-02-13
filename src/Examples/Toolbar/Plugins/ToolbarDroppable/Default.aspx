@@ -8,7 +8,7 @@
             this.ResourceManager1.RegisterIcon(Icon.MoneyAdd);
             this.ResourceManager1.RegisterIcon(Icon.MoneyDelete);
 
-            this.Store1.DataSource = new object[] { 
+            this.Store1.DataSource = new object[] {
                 new object[] {1,  "3m Co",71.72,0.02,0.03,"9/1 12:00am"},
                 new object[] {2,  "Alcoa",29.01,0.42,1.47,"9/1 12:00am"},
                 new object[] {3,  "Altria Group",83.81,-0.28,0.34,"9/1 12:00am"},
@@ -19,7 +19,7 @@
                 new object[] {8,  "Home Depot.",34.64,0.35,1.02,"9/1 12:00am"},
                 new object[] {9,  "Procter & Gamble",61.91,0.01,0.02,"9/1 12:00am"},
                 new object[] {10, "United Technologies",63.26,-0.55,0.88,"9/1 12:00am"},
-                new object[] {11, "Verizon Communications",35.57,0.39,1.11,"9/1 12:00am"},            
+                new object[] {11, "Verizon Communications",35.57,0.39,1.11,"9/1 12:00am"},
                 new object[] {12, "Wal-Mart Stores",45.45,-0.73,1.63,"9/1 12:00am"}
             };
 
@@ -36,27 +36,27 @@
         {
             Text = company,
             Icon = change > 0 ? Icon.MoneyAdd : Icon.MoneyDelete,
-            CustomConfig = { 
+            CustomConfig = {
                 new ConfigItem("reorderable", "true", ParameterMode.Raw)
             },
             Handler = string.Format("function () {{alert({0});}}", JSON.Serialize(company))
         };
-        
+
         System.Threading.Thread.Sleep(2000);
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>Droppable Toolbars - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var createItem = function (data) {
             var record = data.draggedRecord;
-                    
+
             return new Ext.Button({
                 text   : record.get('company'),
                 iconCls : record.get('change') > 0 ? 'icon-moneyadd' : 'icon-moneydelete',
@@ -64,7 +64,7 @@
                 handler : function () {alert(record.get('company'));}
             });
         };
-        
+
         var getDragData = function (e) {
             var view = App.DataView1,
                 sourceEl = e.getTarget(view.itemSelector, 10);
@@ -83,7 +83,7 @@
             }
         };
     </script>
-    
+
     <style>
         .company {
           float   : left;
@@ -117,11 +117,11 @@
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
         <h1>Droppable Toolbars</h1>
-        
+
         <p>This example sets up a dataview with some draggable items which can be dropped onto the toolbar.</p>
         <p>The toolbar is configured with the Ext.ux.ToolbarDroppable plugin and a Ext.ux.ToolbarReorderer plugin.</p>
-        
-        
+
+
         <ext:Panel runat="server" Width="600" Height="400" Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server" EnableOverflow="true">
@@ -132,20 +132,20 @@
                         <ext:ToolbarDroppable runat="server">
                             <CreateItem Fn="createItem" />
                         </ext:ToolbarDroppable>
-                        
+
                         <ext:BoxReorderer runat="server" />
                     </Plugins>
                 </ext:Toolbar>
             </TopBar>
-            
+
             <Items>
-                <ext:DataView 
-                    ID="DataView1" 
+                <ext:DataView
+                    ID="DataView1"
                     runat="server"
                     EmptyText="No items to display"
                     SingleSelect="true"
                     AutoScroll="true"
-                    OverClass="x-view-over"                   
+                    OverClass="x-view-over"
                     ItemSelector="div.company">
                     <Store>
                         <ext:Store ID="Store1" runat="server">
@@ -163,7 +163,7 @@
                             </Model>
                         </ext:Store>
                     </Store>
-                    
+
                     <Tpl>
                         <Html>
                             <tpl for=".">
@@ -176,7 +176,7 @@
                     </Tpl>
                 </ext:DataView>
             </Items>
-            
+
             <BottomBar>
                  <ext:Toolbar runat="server" EnableOverflow="true">
                     <Items>
@@ -189,13 +189,13 @@
                                 <RemoteCreate Handler="if (message) { alert(message); }" />
                             </Listeners>
                         </ext:ToolbarDroppable>
-                        
+
                         <ext:BoxReorderer runat="server" />
                     </Plugins>
                 </ext:Toolbar>
             </BottomBar>
         </ext:Panel>
-        
+
         <ext:DragZone runat="server" Target="App.DataView1.getEl()">
             <GetDragData Fn="getDragData" />
             <GetRepairXY Handler="return this.dragData.repairXY;" />

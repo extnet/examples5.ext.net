@@ -5,13 +5,13 @@
     {
         if (!X.IsAjaxRequest)
         {
-            this.Store1.DataSource = new List<object> { 
+            this.Store1.DataSource = new List<object> {
                 new {Id = 1, Company = "C1"},
                 new {Id = 2, Company = "C2"},
                 new {Id = 3, Company = "C3"},
                 new {Id = 4, Company = "C4"},
                 new {Id = 5, Company = "C5"},
-                new {Id = 6, Company = "C6"}                
+                new {Id = 6, Company = "C6"}
             };
             this.Store1.DataBind();
         }

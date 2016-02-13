@@ -10,7 +10,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Loading/Saving a Dynamic Form using XML</h1>
         <p>
             This is a very simple example of using XML for load and submit of data with an Ext dynamic form.
@@ -42,7 +42,7 @@
             </Fields>
         </ext:Model>
 
-        <ext:FormPanel 
+        <ext:FormPanel
             runat="server"
             Frame="true"
             Title="XML Form"
@@ -60,8 +60,8 @@
             </ErrorReader>
 
             <Items>
-                <ext:FieldSet 
-                    runat="server" 
+                <ext:FieldSet
+                    runat="server"
                     Title="Contact Information">
                     <Defaults>
                         <ext:Parameter Name="width" Value="280" />
@@ -72,7 +72,7 @@
                         <ext:TextField runat="server" FieldLabel="Last Name" EmptyText="Last Name" Name="last" />
                         <ext:TextField runat="server" FieldLabel="Company" Name="company" />
                         <ext:TextField runat="server" FieldLabel="Email" Name="email" Vtype="email" />
-                        <ext:ComboBox 
+                        <ext:ComboBox
                             runat="server"
                             FieldLabel="State"
                             Name="state"

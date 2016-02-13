@@ -4,21 +4,21 @@
 
 <html>
 <head runat="server">
-    <title>Component State - Ext.Net Examples</title>        
+    <title>Component State - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Component State</h1>
 
         <p>This example shows how to use basic data binding to bind the state of one component to the state of another.</p>
-        
-        <ext:Panel 
-            runat="server" 
-            Width="350" 
-            BodyPadding="10" 
+
+        <ext:Panel
+            runat="server"
+            Width="350"
+            BodyPadding="10"
             Layout="AnchorLayout"
             Title="Sign Up Form"
             ViewModel="<%# true %>"

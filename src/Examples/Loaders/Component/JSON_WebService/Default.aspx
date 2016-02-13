@@ -9,18 +9,18 @@
 </head>
 <body>
     <h1>Component Loader (JSON WebService)</h1>
-    
-    <ext:ResourceManager runat="server" />    
-    
+
+    <ext:ResourceManager runat="server" />
+
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="350"
         Layout="AccordionLayout"
         Title="Load items from JSON WebService (automatic loading)">
-        <Loader 
-            runat="server"             
-            Url="ComponentService.asmx/Items" 
+        <Loader
+            runat="server"
+            Url="ComponentService.asmx/Items"
             Mode="Component">
             <AjaxOptions Json="true" />
             <LoadMask ShowMask="true" />
@@ -31,15 +31,15 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="500"
         Layout="FitLayout"
         Title="Load user control from JSON WebService (manual loading)">
-        <Loader 
-            runat="server" 
+        <Loader
+            runat="server"
             AutoLoad="false"
-            Url="ComponentService.asmx/UserControl" 
+            Url="ComponentService.asmx/UserControl"
             Mode="Component">
             <AjaxOptions Json="true" />
             <LoadMask ShowMask="true" />

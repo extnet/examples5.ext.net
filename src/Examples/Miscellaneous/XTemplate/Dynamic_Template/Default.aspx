@@ -6,7 +6,7 @@
     protected void ApplyClick(object sender, DirectEventArgs e)
     {
         XTemplate tpl = new XTemplate { ID = "Template1" };
-        
+
         tpl.Html = @"<p>Name: {Name}</p>
                    <p>Company: {Company}</p>
                    <p>Location: {City}, {State}</p>
@@ -28,10 +28,10 @@
             Kids = new object[] {
                 new { Name = "Sara Grace", Age = 3 },
                 new { Name = "Zachary", Age = 2 },
-                new { Name = "John James", Age = 0 }              
+                new { Name = "John James", Age = 0 }
             }
         });
-        
+
         tpl.Render();
 
         this.Panel1.UpdateLayout();
@@ -39,17 +39,17 @@
 </script>
 
 <!DOCTYPE html>
-   
+
 <html>
 <head runat="server">
-    <title>Dynamic Template - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
-    
+    <title>Dynamic Template - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <style>
         .x-panel {
             margin : 15px;
         }
-        
+
         .x-panel-body p {
             margin    : 5px;
             font-size : 11px;
@@ -61,8 +61,8 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Panel 
-            ID="Panel1" 
+        <ext:Panel
+            ID="Panel1"
             runat="server"
             Title="Panel"
             Width="300"

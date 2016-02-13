@@ -10,15 +10,15 @@
             this.BindData();
         }
     }
-    
+
     protected void AddColumn(object sender, DirectEventArgs e)
     {
         ((Button)sender).Disabled = true;
 
         ModelField field = new ModelField("pctChange", ModelFieldType.Float);
-        
+
         //we need specify index because we use ArrayReader which parse data source by index
-        
+
         this.Store1.AddField(field, 3);
         this.Store1.Model[0].Fields.Insert(3, field);
 
@@ -39,14 +39,14 @@
 
         col.Editor.Add(cb);
 
-        this.GridPanel1.AddColumn(col); 
+        this.GridPanel1.AddColumn(col);
     }
 
     protected void InsertColumn(object sender, DirectEventArgs e)
     {
         ((Button)sender).Disabled = true;
 
-        DateColumn col = new DateColumn 
+        DateColumn col = new DateColumn
         {
             Text = "Last Updated",
             Width = 85,
@@ -61,7 +61,7 @@
     protected void Reconfigure(object sender, DirectEventArgs e)
     {
         ((Button)sender).Disabled = true;
-        
+
         this.GridPanel1.ColumnModel.Columns.RemoveAt(1);
         this.GridPanel1.ColumnModel.Columns.RemoveAt(1);
         this.GridPanel1.Reconfigure();
@@ -72,7 +72,7 @@
         this.Store1.DataSource = this.Data;
         this.Store1.DataBind();
     }
-    
+
     private object Data
     {
         get
@@ -118,7 +118,7 @@
 <html>
 <head runat="server">
     <title>Simple Array Grid - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -135,14 +135,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Modify ColumnModel during DirectEvent</h1>
-        
-        <ext:GridPanel 
-            ID="GridPanel1" 
-            runat="server" 
+
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
             Title="Array Grid"
-            Width="600" 
+            Width="600"
             Height="350">
             <Store>
                 <ext:Store ID="Store1" runat="server">
@@ -195,7 +195,7 @@
                     </Items>
                 </ext:Toolbar>
             </BottomBar>
-        </ext:GridPanel>  
+        </ext:GridPanel>
     </form>
 </body>
 </html>

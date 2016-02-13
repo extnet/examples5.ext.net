@@ -8,20 +8,20 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
-    <ext:ResourceManager runat="server" />   
-    
-    <ext:Window 
-        runat="server" 
-        Collapsible="true" 
-        Title="Plant Summary" 
-        Height="500" 
+    <ext:ResourceManager runat="server" />
+
+    <ext:Window
+        runat="server"
+        Collapsible="true"
+        Title="Plant Summary"
+        Height="500"
         Width="1000"
         Layout="Fit">
         <Items>
-            <ext:GridPanel 
-                ID="GridPanel1" 
-                runat="server" 
-                Title="Plants" 
+            <ext:GridPanel
+                ID="GridPanel1"
+                runat="server"
+                Title="Plants"
                 Frame="false">
                 <Store>
                     <ext:Store runat="server" ID="Store1">
@@ -59,8 +59,8 @@
                         <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
                     </Columns>
                 </ColumnModel>
-            </ext:GridPanel>  
-        </Items>                          
-    </ext:Window>    
+            </ext:GridPanel>
+        </Items>
+    </ext:Window>
 </body>
 </html>

@@ -1,13 +1,13 @@
 <%@ Page Language="C#" %>
 
 <!DOCTYPE html>
- 
+
 <html>
 <head runat="server">
     <title>Horizontal Menu - Ext.NET Examples</title>
 
     <link href="/resources/css/examples.css" rel="stylesheet" />
- 
+
     <style>
         .horizontal-menu .x-menu-item-link {
             line-height: 20px;
@@ -23,9 +23,9 @@
     <ext:ResourceManager runat="server" />
 
     <h2>Horizontal Menu</h2>
-    
-    <p>Demonstrates how to organize the horizontal menu</p>  
- 
+
+    <p>Demonstrates how to organize the horizontal menu</p>
+
     <ext:Menu
         runat="server"
         Floating="false"

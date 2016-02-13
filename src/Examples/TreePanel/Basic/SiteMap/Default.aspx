@@ -8,11 +8,11 @@
         SiteMapNode siteNode = SiteMap.RootNode;
         Node root = this.CreateNode(siteNode);
         TreePanel1.Root.Add(root);
-            
+
         //dynamic tree root
         TreePanel2.Root.Add(this.CreateNodeWithOutChildren(siteNode));
     }
-        
+
     //page tree node loader handler
     protected void LoadPages(object sender, NodeLoadEventArgs e)
     {
@@ -31,7 +31,7 @@
             }
         }
     }
-        
+
     //dynamic node creation
     private Node CreateNodeWithOutChildren(SiteMapNode siteMapNode)
     {
@@ -46,7 +46,7 @@
             treeNode = new Node();
             treeNode.Leaf = true;
         }
-            
+
         if (!string.IsNullOrEmpty(siteMapNode.Url))
         {
             treeNode.Href = this.Page.ResolveUrl(siteMapNode.Url);
@@ -63,14 +63,14 @@
     private Node CreateNode(SiteMapNode siteMapNode)
     {
         Node treeNode = new Node();
-        
+
 
         if (!string.IsNullOrEmpty(siteMapNode.Url))
         {
             treeNode.CustomAttributes.Add(new ConfigItem("url", this.Page.ResolveUrl(siteMapNode.Url)));
-            treeNode.Href = "#";    
+            treeNode.Href = "#";
         }
-            
+
         treeNode.NodeID = siteMapNode.Key;
         treeNode.CustomAttributes.Add(new ConfigItem("hash", siteMapNode.Key.GetHashCode().ToString()));
         treeNode.Text = siteMapNode.Title;
@@ -89,7 +89,7 @@
         {
             treeNode.Leaf = true;
         }
-            
+
         return treeNode;
     }
 </script>
@@ -100,7 +100,7 @@
 <head runat="server">
     <title>Load SiteMap into TreePanel - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <script>
         var loadPage = function (tabPanel, record) {
             var tab = tabPanel.getComponent("node" + record.data.hash);
@@ -119,9 +119,9 @@
                         }
                     },
                     autoScroll : true
-                });                
+                });
             }
-            
+
             tabPanel.setActiveTab(tab);
         };
     </script>
@@ -129,30 +129,30 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Viewport runat="server" Layout="BorderLayout">
             <Items>
-                <ext:TreePanel 
+                <ext:TreePanel
                     ID="TreePanel1"
                     runat="server"
                     Region="West"
-                    Width="300" 
-                    Title="Site Map - Preload" 
-                    Icon="ChartOrganisation">            
+                    Width="300"
+                    Title="Site Map - Preload"
+                    Icon="ChartOrganisation">
                     <Listeners>
                         <ItemClick Handler="if (record.data.url) { loadPage(#{Pages}, record); return false;}" />
                     </Listeners>
                 </ext:TreePanel>
-                <ext:TabPanel 
-                    ID="Pages" 
-                    runat="server" 
+                <ext:TabPanel
+                    ID="Pages"
+                    runat="server"
                     Region="Center"/>
-                <ext:TreePanel 
-                    ID="TreePanel2" 
-                    runat="server" 
+                <ext:TreePanel
+                    ID="TreePanel2"
+                    runat="server"
                     Region="East"
-                    Width="300" 
-                    Title="Site Map - Dynamic" 
+                    Width="300"
+                    Title="Site Map - Dynamic"
                     Icon="ChartOrganisation">
                     <Listeners>
                         <ItemClick Handler="if (record.data.url) { loadPage(#{Pages}, record); }" />

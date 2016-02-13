@@ -1,6 +1,6 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">    
+<script runat="server">
     protected void UpdateSource_Click(object sender, DirectEventArgs e)
     {
         this.PropertyGrid1.SetSource(new PropertyGridParameterCollection()
@@ -13,38 +13,38 @@
             new PropertyGridParameter()
             {
                 Name = "grouping",
-                Value = "false"   
+                Value = "false"
             },
             new PropertyGridParameter()
             {
                 Name = "autoFitColumns",
-                Value = "true"   
+                Value = "true"
             },
             new PropertyGridParameter()
             {
                 Name = "productionQuality",
-                Value = "true"   
+                Value = "true"
             },
             new PropertyGridParameter()
             {
                 Name = "created",
                 Value = "new Date()",
-                Mode = ParameterMode.Raw 
+                Mode = ParameterMode.Raw
             },
             new PropertyGridParameter()
             {
                 Name = "tested",
-                Value = "false"   
+                Value = "false"
             },
             new PropertyGridParameter()
             {
                 Name = "version",
-                Value = "0.8"   
+                Value = "0.8"
             },
             new PropertyGridParameter()
             {
                 Name = "borderWidth",
-                Value = "2"   
+                Value = "2"
             }
         }, true);
     }
@@ -87,8 +87,8 @@
                             new Ext.Net.ListItem("Green"),
                             new Ext.Net.ListItem("Blue")
                         },
-                        ForceSelection = true 
-                    }   
+                        ForceSelection = true
+                    }
                 },
                 Renderer =
                 {
@@ -128,14 +128,14 @@
                     <Items>
                         <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 10 0">
                             <Items>
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Update source" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Update source"
                                     OnDirectClick="UpdateSource_Click" />
-                            
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="New data source" 
+
+                                <ext:Button
+                                    runat="server"
+                                    Text="New data source"
                                     OnDirectClick="NewDataSource_Click"
                                     MarginSpec="0 0 0 10" />
                             </Items>

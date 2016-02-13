@@ -7,7 +7,7 @@
     {
         this.CalendarPanel1.EventStore = new EventStore { ID = "EventStore1" };
         this.CalendarPanel1.EventStore.SubmitData += EventStore_SubmitData;
-        this.CalendarPanel1.EventStore.Listeners.BeforeSync.Handler = 
+        this.CalendarPanel1.EventStore.Listeners.BeforeSync.Handler =
             @"Ext.Msg.alert('Sync', 'The EventStore initiates a sync request after that action. The EventStore synchronization is not implemented in that example.');
               this.commitChanges();
               return false;";
@@ -18,12 +18,12 @@
         List<EventModel> events = e.Object<EventModel>();
         ((EventsViewer)this.Page.LoadControl("../Shared/Common/EventsViewer.ascx")).Render(events);
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
-    {            
+    {
         if (!X.IsAjaxRequest)
         {
-            this.CalendarPanel1.EventStore.Events.AddRange(Data.Events);            
+            this.CalendarPanel1.EventStore.Events.AddRange(Data.Events);
         }
     }
 
@@ -33,20 +33,20 @@
         X.Msg.Notify("Message", msg).Show();
     }
 </script>
-    
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>Calendar - Ext.NET Examples</title>    
-    <link rel="stylesheet" href="../Shared/resources/css/main.css" />        
+    <title>Calendar - Ext.NET Examples</title>
+    <link rel="stylesheet" href="../Shared/resources/css/main.css" />
     <script src="../Shared/resources/js/common.js"></script>
-    
+
     <style>
         .ext-color-4,
         .ext-ie .ext-color-4-ad,
         .ext-opera .ext-color-4-ad {
-	        color: #7F0000;
+            color: #7F0000;
         }
         .ext-cal-day-col .ext-color-4,
         .ext-dd-drag-proxy .ext-color-4,
@@ -55,7 +55,7 @@
         .ext-color-4 .ext-cal-picker-icon,
         .ext-color-4-x dl,
         .ext-color-4-x .ext-cal-evb {
-	        background: #7F0000;
+            background: #7F0000;
         }
         .ext-color-4-x .ext-cal-evb,
         .ext-color-4-x dl {
@@ -66,15 +66,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" Namespace="CompanyX" />
-        
+
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Panel 
-                    runat="server" 
-                    Height="35" 
-                    Border="false" 
-                    Region="North" 
-                    Cls="app-header" 
+                <ext:Panel
+                    runat="server"
+                    Height="35"
+                    Border="false"
+                    Region="North"
+                    Cls="app-header"
                     BodyCls="app-header-content">
                     <Content>
                         <div id="app-logo">
@@ -86,25 +86,25 @@
                         <span id="app-msg" class="x-hidden"></span>
                     </Content>
                 </ext:Panel>
-                
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
-                    Title="..." 
-                    Layout="Border" 
-                    Region="Center" 
+
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Title="..."
+                    Layout="Border"
+                    Region="Center"
                     Cls="app-center">
                     <Items>
-                        <ext:Panel 
-                            runat="server" 
+                        <ext:Panel
+                            runat="server"
                             Width="213"
-                            Region="West" 
+                            Region="West"
                             Border="false"
                             Cls="app-west">
                             <Items>
-                                <ext:DatePicker 
-                                    ID="DatePicker1" 
-                                    runat="server" 
+                                <ext:DatePicker
+                                    ID="DatePicker1"
+                                    runat="server"
                                     Cls="ext-cal-nav-picker">
                                     <Listeners>
                                         <Select Fn="CompanyX.setStartDate" Scope="CompanyX" />
@@ -114,19 +114,19 @@
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Save All Events" 
-                                            Icon="Disk" 
-                                            Handler="CompanyX.record.saveAll" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Save All Events"
+                                            Icon="Disk"
+                                            Handler="CompanyX.record.saveAll"
                                             />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>
                         </ext:Panel>
-                        
+
                         <ext:CalendarPanel
-                            ID="CalendarPanel1" 
+                            ID="CalendarPanel1"
                             runat="server"
                             Region="Center"
                             ActiveIndex="2"
@@ -140,13 +140,13 @@
                                 </Calendars>
                             </CalendarStore>
                             <%-- Setting enableFx to false is a workaround for #833 --%>
-                            <MonthView 
-                                runat="server" 
-                                ShowHeader="true" 
-                                ShowWeekLinks="true" 
-                                ShowWeekNumbers="true" 
+                            <MonthView
+                                runat="server"
+                                ShowHeader="true"
+                                ShowWeekLinks="true"
+                                ShowWeekNumbers="true"
                                 EnableFx="false"
-                                />  
+                                />
                             <WeekView runat="server">
                                 <CustomConfig>
                                     <ext:ConfigItem Name="enableFx" Value="false" Mode="Raw" />
@@ -174,9 +174,9 @@
                 </ext:Panel>
             </Items>
         </ext:Viewport>
-        
-        <ext:EventWindow 
-            ID="EventWindow1" 
+
+        <ext:EventWindow
+            ID="EventWindow1"
             runat="server"
             Hidden="true"
             CalendarStoreID="CalendarStore1">

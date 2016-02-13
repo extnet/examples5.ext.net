@@ -18,9 +18,9 @@
         <p>
             See the Drawing guide&nbsp;<a href="http://docs.sencha.com/extjs/5.0/core_concepts/drawing.html">here</a>.
         </p>
-        
-        <ext:Slider 
-            runat="server" 
+
+        <ext:Slider
+            runat="server"
             Width="400"
             MinValue="0"
             MaxValue="360"
@@ -32,17 +32,17 @@
 
         <ext:DrawContainer ID="Draw1" runat="server" Height="350">
             <Items>
-                <ext:TextSprite 
+                <ext:TextSprite
                     SpriteID="Sprite1"
-                    Text="Rotate me" 
-                    FillStyle="#0F0" 
-                    FontSize="18px" 
+                    Text="Rotate me"
+                    FillStyle="#0F0"
+                    FontSize="18px"
                     FontFamily="Arial"
                     TranslationY="50"
                     TranslationX="150">
                 </ext:TextSprite>
             </Items>
         </ext:DrawContainer>
-    </form>    
+    </form>
 </body>
 </html>

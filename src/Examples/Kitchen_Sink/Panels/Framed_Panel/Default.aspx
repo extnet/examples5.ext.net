@@ -19,7 +19,7 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:Container 
+            <ext:Container
                 runat="server"
                 StyleSpec="background:transparent;"
                 MarginSpec="0 0 10 0">
@@ -46,16 +46,16 @@
                             <ext:Tool Type="Save" />
                         </Tools>
                     </ext:Panel>
-                    <ext:Panel 
+                    <ext:Panel
                         runat="server"
-                        ColSpan="3" 
-                        Title="Collapsed Panel" 
-                        Collapsed="true" 
-                        Collapsible="true" 
-                        Width="640" 
+                        ColSpan="3"
+                        Title="Collapsed Panel"
+                        Collapsed="true"
+                        Collapsible="true"
+                        Width="640"
                         Frame="true" />
                 </Items>
-            </ext:Container>            
+            </ext:Container>
         </Items>
     </ext:Viewport>
 </body>

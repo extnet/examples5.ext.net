@@ -5,10 +5,10 @@
 <html>
 <head runat="server">
     <title>GridPanel GroupingView with EnableRowBody - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />  
-    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
-        // this "setGroupStyle" function is called when the GroupingView is refreshed.     
+        // this "setGroupStyle" function is called when the GroupingView is refreshed.
         var setGroupStyle = function (view) {
             // get an instance of the Groups
             var groups = view.el.query(App.Grouping1.eventSelector);
@@ -52,7 +52,7 @@
 
         var groupcollapse = function (view, node, groupName) {
             var grid = view.panel;
-            
+
             if (!node) { // StartCollapsed="true" causes the groupcollapse event firing on initial load that should be ignored.
                 return;
             }
@@ -83,7 +83,7 @@
 
             App.btnToggleGroups.disable();
         };
-    </script>   
+    </script>
 </head>
 <body>
     <form runat="server">
@@ -95,11 +95,11 @@
 
         <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
-            Collapsible="true" 
-            Width="600" 
+            runat="server"
+            Collapsible="true"
+            Width="600"
             Height="350"
-            Title="Plants" 
+            Title="Plants"
             Frame="true">
             <Store>
                 <ext:Store runat="server" GroupField="Light" PageSize="5">
@@ -131,11 +131,11 @@
                     <Listeners>
                         <Load Handler="fillMenu(#{Menu1}, this);" />
                         <GroupChange Handler="var isGrouped = this.isGrouped();
-                            
+
                                               #{btnClearGrouping}.setDisabled(!isGrouped);
                                               #{btnToggleGroups}.setDisabled(!isGrouped);
-                            
-                                              #{btnMenuGroups}.setDisabled(this.getGroupField() !== 'Light');" 
+
+                                              #{btnMenuGroups}.setDisabled(this.getGroupField() !== 'Light');"
                                      Delay="100" />
                     </Listeners>
                 </ext:Store>
@@ -146,27 +146,27 @@
 
                     <ext:Column runat="server" Text="Light" DataIndex="Light" Width="130" />
 
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        DataIndex="Price" 
-                        Width="70" 
-                        Align="right" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="Price"
+                        Width="70"
+                        Align="right"
                         Groupable="false">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
 
-                    <ext:DateColumn runat="server" 
-                        Text="Available" 
-                        DataIndex="Availability" 
-                        Width="95" 
-                        Groupable="false" 
-                        Format="yyyy-MM-dd" 
+                    <ext:DateColumn runat="server"
+                        Text="Available"
+                        DataIndex="Availability"
+                        Width="95"
+                        Groupable="false"
+                        Format="yyyy-MM-dd"
                         />
 
                     <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
             <View>
                 <ext:GridView runat="server">
                     <Listeners>
@@ -175,7 +175,7 @@
                         <GroupCollapse Fn="groupcollapse" />
                     </Listeners>
                 </ext:GridView>
-            </View>      
+            </View>
             <Features>
                 <ext:Grouping
                     ID="Grouping1"
@@ -185,19 +185,19 @@
                     GroupHeaderTplString='{columnName}: {name} ({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})' />
 
                 <ext:RowBody runat="server">
-                    <GetAdditionalData 
+                    <GetAdditionalData
                         Handler="var d = data;
                                  orig.rowBodyColspan = record.getFields().length;
                                  orig.rowBody = Ext.String.format('<div style=\'padding:0 5px 5px 5px;\'>The {0} [{1}] requires light conditions of <i>{2}</i>.<br /><b>Price: {3}</b></div>', d.Common, d.Botanical, d.Light, Ext.util.Format.usMoney(d.Price));"
                         />
                 </ext:RowBody>
-            </Features>          
+            </Features>
             <Buttons>
                 <ext:Button runat="server" Text="Print" Icon="Printer" Handler="this.up('grid').print();" />
 
-                <ext:Button 
-                    ID="btnToggleGroups" 
-                    runat="server" 
+                <ext:Button
+                    ID="btnToggleGroups"
+                    runat="server"
                     Text="Expand/Collapse Groups"
                     Icon="TableSort"
                     Style="margin-left: 6px;">
@@ -207,9 +207,9 @@
                 </ext:Button>
 
                 <ext:Button
-                    ID="btnClearGrouping" 
-                    runat="server" 
-                    Text="Clear Grouping" 
+                    ID="btnClearGrouping"
+                    runat="server"
+                    Text="Clear Grouping"
                     Handler="clearGrouping" />
             </Buttons>
 

@@ -24,7 +24,7 @@
 
             if(index == 0) {
                 me.setValue('');
-                store.clearFilter();                
+                store.clearFilter();
                 trigger.hide();
             }
             else{
@@ -35,16 +35,16 @@
                         id: store.proxy.filterParam,
                         property: store.proxy.filterParam,
                         value: value
-                    });                    
+                    });
                     me.getTrigger(0).show();
                 }
             }
         };
 
         var onSpecialKey = function (field, e) {
-             if (e.getKey() === e.ENTER) { 
-                searchFieldTriggerClick(field, null, 1); 
-                e.stopEvent(); 
+             if (e.getKey() === e.ENTER) {
+                searchFieldTriggerClick(field, null, 1);
+                e.stopEvent();
             }
         };
     </script>
@@ -52,39 +52,39 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Infinite Scrolling with remote filtering</h1>
 
         <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
         <p>This grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
         <p>A filtering UI is included which applies a remote filter and reloads the grid beginning at page one.</p>
-        
-        <ext:GridPanel 
+
+        <ext:GridPanel
             ID="GridPanel1"
-            runat="server" 
-            Width="700" 
-            Height="500"        
-            Collapsible="true"    
+            runat="server"
+            Width="700"
+            Height="500"
+            Collapsible="true"
             Title="Sencha.com - Browse Forums">
             <Store>
-                <ext:Store 
-                    runat="server" 
+                <ext:Store
+                    runat="server"
                     Buffered="true"
                     RemoteFilter="true"
-                    LeadingBufferZone="1000" 
+                    LeadingBufferZone="1000"
                     PageSize="50">
                     <Proxy>
-                        <ext:JsonPProxy 
-                            Url="http://www.sencha.com/forum/topics-remote.php" 
-                            SimpleSortMode="true"                             
+                        <ext:JsonPProxy
+                            Url="http://www.sencha.com/forum/topics-remote.php"
+                            SimpleSortMode="true"
                             FilterParam="query">
                             <Reader>
                                 <ext:JsonReader RootProperty="topics" TotalProperty="totalCount" />
-                            </Reader>             
+                            </Reader>
                             <CustomConfig>
-                                <ext:ConfigItem 
-                                    Name="encodeFilters" 
-                                    Value="function (filters) { return filters[0].getValue(); }" 
+                                <ext:ConfigItem
+                                    Name="encodeFilters"
+                                    Value="function (filters) { return filters[0].getValue(); }"
                                     Mode="Raw" />
                             </CustomConfig>
                         </ext:JsonPProxy>
@@ -97,61 +97,61 @@
                                 <ext:ModelField Name="forumid" Type="Int" />
                                 <ext:ModelField Name="username" Mapping="author" />
                                 <ext:ModelField Name="replycount" Mapping="reply_count" Type="Int" />
-                                <ext:ModelField Name="lastpost" Mapping="post_time" Type="Date" DateFormat="timestamp" /> 
+                                <ext:ModelField Name="lastpost" Mapping="post_time" Type="Date" DateFormat="timestamp" />
                                 <ext:ModelField Name="lastposter" />
                                 <ext:ModelField Name="excerpt" />
                                 <ext:ModelField Name="topic_id" />
                             </Fields>
                         </ext:Model>
-                    </Model>                    
+                    </Model>
                     <Listeners>
                         <TotalCountChange Handler="#{GridPanel1}.down('#status').update({ count: this.getTotalCount() });" />
                     </Listeners>
                 </ext:Store>
-            </Store>           
+            </Store>
             <ColumnModel runat="server">
-		        <Columns>
+                <Columns>
                     <ext:RowNumbererColumn runat="server" Width="50" />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Topic" 
-                        DataIndex="title" 
+                    <ext:Column
+                        runat="server"
+                        Text="Topic"
+                        DataIndex="title"
                         Flex="1">
                         <Renderer Fn="renderTopic" />
                     </ext:Column>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Author" 
-                        DataIndex="username" 
-                        Hidden="true" 
+                    <ext:Column
+                        runat="server"
+                        Text="Author"
+                        DataIndex="username"
+                        Hidden="true"
                         Sortable="false" />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Replies" 
-                        DataIndex="replycount" 
-                        Width="70" 
-                        Align="Center" 
+                    <ext:Column
+                        runat="server"
+                        Text="Replies"
+                        DataIndex="replycount"
+                        Width="70"
+                        Align="Center"
                         Sortable="false" />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Last Post" 
-                        DataIndex="lastpost" 
-                        Width="130" 
+                    <ext:Column
+                        runat="server"
+                        Text="Last Post"
+                        DataIndex="lastpost"
+                        Width="130"
                         Sortable="false">
                         <Renderer Format="Date" FormatArgs="'n/j/Y g:i A'" />
                     </ext:Column>
-		        </Columns>
-            </ColumnModel>           
+                </Columns>
+            </ColumnModel>
             <View>
-                <ext:GridView runat="server" TrackOver="false" EmptyText="<h1 style='margin:20px;'>No matching results</h1>" />                    
-            </View> 
+                <ext:GridView runat="server" TrackOver="false" EmptyText="<h1 style='margin:20px;'>No matching results</h1>" />
+            </View>
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" PruneRemoved="false" Mode="Multi" />
-            </SelectionModel>                                        
+            </SelectionModel>
             <DockedItems>
                 <ext:Toolbar runat="server" Dock="Top">
                     <Items>
-                        <ext:TextField 
+                        <ext:TextField
                             runat="server"
                             Width="400"
                             FieldLabel="Search"
@@ -165,10 +165,10 @@
                                 <SpecialKey Fn="onSpecialKey" />
                             </Listeners>
                         </ext:TextField>
-                        
+
                         <ext:ToolbarFill />
 
-                        <ext:Component 
+                        <ext:Component
                             runat="server"
                             ItemID="status"
                             StyleSpec="margin-right:5px;">

@@ -14,11 +14,11 @@
         };
 
         var onGroupCommand = function (column, command, group) {
-            if (command === 'SelectGroup') { 
-                column.gridRef.getSelectionModel().select(group.items, true); 
+            if (command === 'SelectGroup') {
+                column.gridRef.getSelectionModel().select(group.items, true);
                 return;
-            } 
-            
+            }
+
             Ext.Msg.alert(command, 'Group name: ' + group.getGroupKey() + '<br/>Count - ' + group.items.length);
         };
 
@@ -26,7 +26,7 @@
            return {
                 rowBodyColspan : record.self.fields.length,
                 rowBody: Ext.String.format('<div style=\'padding:0 5px 5px 5px;\'>The {0} [{1}] requires light conditions of <i>{2}</i>.<br /><b>Price: {3}</b></div>', data.Common, data.Botanical, data.Light, Ext.util.Format.usMoney(data.Price))
-            };            
+            };
         };
     </script>
 </head>
@@ -35,12 +35,12 @@
         <ext:ResourceManager runat="server" />
 
         <ext:GridPanel
-            runat="server" 
-            Collapsible="true" 
-            Width="600" 
-            Height="350" 
+            runat="server"
+            Collapsible="true"
+            Width="600"
+            Height="350"
             RowLines="false"
-            Title="Plants" 
+            Title="Plants"
             Frame="true"
             ForceFit="true">
             <Store>
@@ -74,40 +74,40 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Common Name" 
-                        DataIndex="Common" 
-                        Width="220" 
+                    <ext:Column
+                        runat="server"
+                        Text="Common Name"
+                        DataIndex="Common"
+                        Width="220"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Light" 
-                        DataIndex="Light" 
-                        Width="130" 
+                    <ext:Column
+                        runat="server"
+                        Text="Light"
+                        DataIndex="Light"
+                        Width="130"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        DataIndex="Price" 
-                        Width="70" 
-                        Align="right" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="Price"
+                        Width="70"
+                        Align="right"
                         Groupable="false">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Available" 
-                        DataIndex="Availability" 
-                        Width="95" 
-                        Groupable="false" 
-                        Format="yyyy-MM-dd" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Available"
+                        DataIndex="Availability"
+                        Width="95"
+                        Groupable="false"
+                        Format="yyyy-MM-dd"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Indoor?" 
-                        DataIndex="Indoor" 
-                        Width="55" 
+                    <ext:Column
+                        runat="server"
+                        Text="Indoor?"
+                        DataIndex="Indoor"
+                        Width="55"
                         />
                     <ext:CommandColumn runat="server" Hidden="true">
                         <GroupCommands>
@@ -135,21 +135,21 @@
             <View>
                 <ext:GridView runat="server" TrackOver="false" StripeRows="false" />
             </View>
-            
+
             <SelectionModel>
                 <ext:CheckboxSelectionModel runat="server" RowSpan="2" />
             </SelectionModel>
 
             <Features>
-                <ext:Grouping 
-                    runat="server" 
-                    HideGroupedHeader="true" 
+                <ext:Grouping
+                    runat="server"
+                    HideGroupedHeader="true"
                     GroupHeaderTplString='{columnName}: {name} ({[values.rows.length]} {[values.rows.length > 1 ? "Items" : "Item"]})' />
 
                 <ext:RowBody runat="server">
                     <GetAdditionalData Fn="getAdditionalData" />
                 </ext:RowBody>
-            </Features>      
+            </Features>
         </ext:GridPanel>
     </form>
 </body>

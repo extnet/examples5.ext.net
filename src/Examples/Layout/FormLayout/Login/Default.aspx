@@ -22,28 +22,28 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-            
+
         <h1>Simple Login Form with Ajax Submit</h1>
-        
-        <ext:Button 
-            ID="Button1" 
-            runat="server" 
-            Text="Logout" 
+
+        <ext:Button
+            ID="Button1"
+            runat="server"
+            Text="Logout"
             Icon="LockOpen">
             <Listeners>
                 <Click Handler="#{Window1}.show();" />
-            </Listeners>    
+            </Listeners>
         </ext:Button>
-        
+
         <ext:Label ID="lblMessage" runat="server" />
-        
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
             Closable="false"
             Resizable="false"
-            Height="200" 
-            Icon="Lock" 
+            Height="200"
+            Icon="Lock"
             Title="Login"
             Draggable="false"
             Width="350"
@@ -51,19 +51,19 @@
             BodyPadding="5"
             Layout="FormLayout">
             <Items>
-                <ext:TextField 
-                    ID="txtUsername" 
-                    runat="server"                     
-                    FieldLabel="Username" 
+                <ext:TextField
+                    ID="txtUsername"
+                    runat="server"
+                    FieldLabel="Username"
                     AllowBlank="false"
                     BlankText="Your username is required."
                     Text="Demo" />
-                <ext:TextField 
-                    ID="txtPassword" 
-                    runat="server" 
-                    InputType="Password" 
-                    FieldLabel="Password" 
-                    AllowBlank="false" 
+                <ext:TextField
+                    ID="txtPassword"
+                    runat="server"
+                    InputType="Password"
+                    FieldLabel="Password"
+                    AllowBlank="false"
                     BlankText="Your password is required."
                     Text="Demo" />
             </Items>
@@ -74,7 +74,7 @@
                             if (!#{txtUsername}.validate() || !#{txtPassword}.validate()) {
                                 Ext.Msg.alert('Error','The Username and Password fields are both required');
                                 // return false to prevent the btnLogin_Click Ajax Click event from firing.
-                                return false; 
+                                return false;
                             }" />
                     </Listeners>
                     <DirectEvents>

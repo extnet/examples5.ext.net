@@ -3,8 +3,8 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Chart1.GetStore().DataSource = new List<object> 
-        { 
+        this.Chart1.GetStore().DataSource = new List<object>
+        {
             new { Month = "Jan", Data1 = 20 },
             new { Month = "Feb", Data1 = 20 },
             new { Month = "Mar", Data1 = 19 },
@@ -73,7 +73,7 @@
                             </Model>
                         </ext:Store>
                     </Store>
-                    
+
                     <Interactions>
                         <ext:PanZoomInteraction ZoomOnPanGesture="true" />
                     </Interactions>
@@ -122,15 +122,15 @@
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
                             </StyleSpec>
-                            
+
                             <HighlightConfig>
                                 <ext:Sprite FillStyle="#000" Radius="5" LineWidth="2" StrokeStyle="#fff" />
                             </HighlightConfig>
-                            
+
                             <Marker>
                                 <ext:Sprite Radius="4" />
                             </Marker>
-                            
+
                             <Label Field="Data1" Display="Over" />
 
                             <Tooltip TrackMouse="true" StyleSpec="background: #fff;" ShowDelay="0" DismissDelay="0" HideDelay="0">

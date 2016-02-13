@@ -176,7 +176,7 @@
 
 
         //      While over a target node, return the default drop allowed class which
-        //      places a "tick" icon into the drag proxy.        
+        //      places a "tick" icon into the drag proxy.
         var onNodeOver = function (target, dd, e, data) {
             return Ext.dd.DropZone.prototype.dropAllowed;
         };
@@ -186,7 +186,7 @@
         //      application object that is the real target of the dragged data.
         //      In this case, it is a Record in the GridPanel's Store.
         //      We can use the data set up by the DragZone's getDragData method to read
-        //      any data we decided to attach.        
+        //      any data we decided to attach.
         var onNodeDrop = function (target, dd, e, data) {
             var rowBody = Ext.fly(target).findParent('.x-grid-rowbody-tr', null, false),
                 mainRow = rowBody.previousSibling,
@@ -221,11 +221,11 @@
                     Html="<h1>Patient Hospital Assignment</h1>"
                     MarginSpec="5" />
 
-                <ext:Panel 
-                    runat="server" 
-                    Title="Patients" 
-                    Width="300" 
-                    Region="West" 
+                <ext:Panel
+                    runat="server"
+                    Title="Patients"
+                    Width="300"
+                    Region="West"
                     MarginSpec="0 5 5 5">
                     <Items>
                         <ext:DataView
@@ -252,25 +252,25 @@
                             <Tpl runat="server">
                                 <Html>
                                     <tpl for=".">
-										<div class="patient-source">
-											<table>
-												<tbody>
-													<tr>
-														<td class="patient-label">Name</td>
-														<td class="patient-name">{Name}</td>
-													</tr>
-													<tr>
-														<td class="patient-label">Address</td>
-														<td class="patient-name">{Address}</td>
-													</tr>
-													<tr>
-														<td class="patient-label">Telephone</td>
-														<td class="patient-name">{Telephone}</td>
-													</tr>
-												</tbody>
-											 </table>
-										 </div>
-									 </tpl>
+                                        <div class="patient-source">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="patient-label">Name</td>
+                                                        <td class="patient-name">{Name}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="patient-label">Address</td>
+                                                        <td class="patient-name">{Address}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="patient-label">Telephone</td>
+                                                        <td class="patient-name">{Telephone}</td>
+                                                    </tr>
+                                                </tbody>
+                                             </table>
+                                         </div>
+                                     </tpl>
                                 </html>                            </Tpl>
                         </ext:DataView>
                     </Items>
@@ -304,7 +304,7 @@
                     </ColumnModel>
                     <Features>
                         <ext:RowBody runat="server" RowBodyDivCls="hospital-target">
-                            <GetAdditionalData 
+                            <GetAdditionalData
                                 Handler="return {rowBody: 'Drop Patient Here', rowBodyDivCls:'hospital-target'};" />
                         </ext:RowBody>
                     </Features>

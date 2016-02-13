@@ -6,7 +6,7 @@
 <head runat="server">
     <title>VBoxLayout - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         html, body {
             font    : normal 12px verdana;
@@ -16,7 +16,7 @@
             background-color : #dfe8f6 !important;
         }
     </style>
-    
+
     <script>
         var replace = function (panel) {
             var btns = Ext.getCmp("btns"),
@@ -35,19 +35,19 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <ext:Viewport runat="server" Layout="BorderLayout">
         <Items>
-            <ext:Panel 
-                ID="btns" 
+            <ext:Panel
+                ID="btns"
                 runat="server"
-                Region="West" 
-                BaseCls="x-plain" 
-                Width="150" 
+                Region="West"
+                BaseCls="x-plain"
+                Width="150"
                 Layout="Fit"
-                Split="true" 
-                MinWidth="100" 
-                MaxWidth="250" 
+                Split="true"
+                MinWidth="100"
+                MaxWidth="250"
                 MarginSpec="5 0 5 5">
                 <Items>
                     <ext:Panel ID="Panel1" runat="server" BaseCls="x-plain">
@@ -57,18 +57,18 @@
                     </ext:Panel>
                 </Items>
             </ext:Panel>
-            <ext:Panel 
-                runat="server" 
-                Region="Center" 
+            <ext:Panel
+                runat="server"
+                Region="Center"
                 MarginSpec="5 5 5 0"
                 Layout="VBoxLayout">
                 <LayoutConfig>
                     <ext:VBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
-                    <ext:Panel 
-                        runat="server" 
-                        BaseCls="x-plain" 
+                    <ext:Panel
+                        runat="server"
+                        BaseCls="x-plain"
                         Height="40"
                         Layout="HBoxLayout"
                         BodyPadding="10">
@@ -87,9 +87,9 @@
                             <ext:Button runat="server" Text="Align: StretchMax" OnClientClick="replace(#{pnlAlignStretchMax});" />
                         </Items>
                     </ext:Panel>
-                    <ext:Panel 
-                        runat="server" 
-                        BaseCls="x-plain" 
+                    <ext:Panel
+                        runat="server"
+                        BaseCls="x-plain"
                         Height="40"
                         Layout="HBoxLayout"
                         BodyPaddingSummary="0 10 10">
@@ -112,10 +112,10 @@
             </ext:Panel>
         </Items>
     </ext:Viewport>
-    
+
     <div id="hiddenArea" class="x-hidden">
-        <ext:Panel 
-            ID="pnlSpaced" 
+        <ext:Panel
+            ID="pnlSpaced"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -133,9 +133,9 @@
                 <ext:Button runat="server" Text="Button 4" MarginSpec="0" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlMultiSpaced" 
+
+        <ext:Panel
+            ID="pnlMultiSpaced"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -155,9 +155,9 @@
                 <ext:Button runat="server" Text="Button 4" MarginSpec="0" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlAlignTop" 
+
+        <ext:Panel
+            ID="pnlAlignTop"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5">
@@ -174,9 +174,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlAlignMiddle" 
+
+        <ext:Panel
+            ID="pnlAlignMiddle"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -193,9 +193,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlAlignStretch" 
+
+        <ext:Panel
+            ID="pnlAlignStretch"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -212,9 +212,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlAlignStretchMax" 
+
+        <ext:Panel
+            ID="pnlAlignStretchMax"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -231,9 +231,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlFlexEven" 
+
+        <ext:Panel
+            ID="pnlFlexEven"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -250,9 +250,9 @@
                 <ext:Button runat="server" Text="Button 4" Flex="1" MarginSpec="0" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlFlexRatio" 
+
+        <ext:Panel
+            ID="pnlFlexRatio"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -269,9 +269,9 @@
                 <ext:Button runat="server" Text="Button 4" Flex="3" MarginSpec="0" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlFlexStretch" 
+
+        <ext:Panel
+            ID="pnlFlexStretch"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5" >
@@ -288,9 +288,9 @@
                 <ext:Button runat="server" Text="Button 4" Flex="3" MarginSpec="0" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlPackStart" 
+
+        <ext:Panel
+            ID="pnlPackStart"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5">
@@ -307,9 +307,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlPackCenter" 
+
+        <ext:Panel
+            ID="pnlPackCenter"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5">
@@ -326,9 +326,9 @@
                 <ext:Button runat="server" Text="Button 4" />
             </Items>
         </ext:Panel>
-        
-        <ext:Panel 
-            ID="pnlPackEnd" 
+
+        <ext:Panel
+            ID="pnlPackEnd"
             runat="server"
             Layout="VBoxLayout"
             BodyPadding="5">

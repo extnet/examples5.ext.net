@@ -14,7 +14,7 @@
 </script>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>DirectMethod Overview - Ext.NET Examples</title>
@@ -23,11 +23,11 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DirectMethod Overview</h1>
-        
+
         <p>A DirectMethod provides the ability to call server-side .NET Methods from client-side JavaScript code.</p>
-        
+
         <p>Decorating a server-side <code>public</code> or <code>public static</code> Method with the [DirectMethod] Attribute will expose the server-side Method
         to your client-side JavaScript.</p>
 
@@ -40,15 +40,15 @@ public void SetTimeStamp(string text)
 }
 </pre>
 
-        
+
         <!--  1  ----------------------------------------------------------------------------------------------->
 
         <h2>1. Basic DirectMethod</h2>
-        
+
         <p>The following demonstrates a simple [DirectMethod] which updates an &lt;ext:Label> control.</p>
 
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod]
             public void SetTimeStamp()
@@ -63,13 +63,13 @@ public void SetTimeStamp(string text)
                 <Click Handler="App.direct.SetTimeStamp();" />
             </Listeners>
         </ext:Button>
-        
+
         <br />
-        
+
         <ext:Label ID="Label1" runat="server" Format="Server Time: {0}" Text='<%# DateTime.Now.ToLongTimeString() %>' />
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod]
     public void SetTimeStamp()
@@ -87,14 +87,14 @@ public void SetTimeStamp(string text)
 
 
         <!--  2 ----------------------------------------------------------------------------------------------->
-        
+
         <h2>2. Return a string from an DirectMethod</h2>
-        
+
         <p>Any type object can be returned from an DirectMethod. The object is serialized into JSON. The serialized object is
             sent as the 'result' parameter to the 'success' function as configured in the DirectMethod configuration.</p>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod]
             public string GetTimeStamp()
@@ -102,7 +102,7 @@ public void SetTimeStamp(string text)
                 return DateTime.Now.ToLongTimeString();
             }
         </script>
-        
+
         <ext:Button ID="Button2" runat="server" Text="Click Me" Icon="Lightning">
             <Listeners>
                 <Click Handler="
@@ -113,9 +113,9 @@ public void SetTimeStamp(string text)
                     });" />
             </Listeners>
         </ext:Button>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod]
     public string GetTimeStamp()
@@ -135,45 +135,45 @@ public void SetTimeStamp(string text)
     &lt;/Listeners>
 &lt;/ext:Button>
 </pre>
-        
-        
+
+
         <!--  3  ----------------------------------------------------------------------------------------------->
-        
+
         <h2>3. Pass multiple arguments to an DirectMethod</h2>
 
         <p>If the server-side DirectMethod requires parameters, the client-side DirectMethod will also be created and expect to be passed values for the two arguments.</p>
         <p>For example, if the server-side Method requires a <code>string</code> and <code>int</code> argument, both a valid <code>string</code> and <code>number</code> must be passed to the client-side function.</p>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod]
             public void LogCompanyInfo(string name, int count)
             {
                 string template = string.Concat("<b>{0}</b> has approximately <b>{1}</b> employees.");
                 string[] employees = new string[4] { "1-5", "6-25", "26-100", "100+" };
-                
+
                 this.Label3.Html = string.Format(template, name, employees[count]);
             }
         </script>
 
-        <ext:FormPanel 
-            runat="server" 
+        <ext:FormPanel
+            runat="server"
             Title="Company Information"
-            Width="350" 
+            Width="350"
             BodyPadding="5"
             Frame="true">
             <Items>
-                <ext:TextField 
-                    ID="TextField3" 
-                    runat="server" 
-                    FieldLabel="Company Name" 
+                <ext:TextField
+                    ID="TextField3"
+                    runat="server"
+                    FieldLabel="Company Name"
                     AllowBlank="false"
                     AnchorHorizontal="100%"
                     />
-                <ext:ComboBox 
-                    ID="ComboBox3" 
-                    runat="server" 
+                <ext:ComboBox
+                    ID="ComboBox3"
+                    runat="server"
                     FieldLabel="# of Employees"
                     AnchorHorizontal="100%"
                     AllowBlank="false"
@@ -196,18 +196,18 @@ public void SetTimeStamp(string text)
         </ext:FormPanel>
 
         <br />
-        
+
         <ext:Label ID="Label3" runat="server" Text="Write Company Information Here" />
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod]
     public void LogCompanyInfo(string name, int count)
     {
         string template = string.Concat("{0} has approximately {1} employees.");
         string[] employees = new string[4] { "1-5", "6-25", "26-100", "100+" };
-        
+
         this.Label3.Text = string.Format(template, name, employees[count]);
     }
 &lt;/script>
@@ -217,19 +217,19 @@ public void SetTimeStamp(string text)
         &lt;Click Handler="App.direct.LogCompanyInfo('Ext.NET, Inc.', 0);" />
     &lt;/Listeners>
 &lt;/ext:Button></pre>
-        
-        
+
+
         <!--  4  ----------------------------------------------------------------------------------------------->
-        
+
         <h2>4. Calling static Method DirectMethod and return a string (Super Fast + Best Performance)</h2>
-        
-        <p>When calling a public server-side Method, but default the complete Page lifecycle is executed 
+
+        <p>When calling a public server-side Method, but default the complete Page lifecycle is executed
             and the Method has access to all web controls on the Page.</p>
         <p>With a 'static' [DirectMethod] the Page lifecycle is not executed and access to the Page WebControls
             are not possible. This reduces the processing overhead and optimizes performance.</p>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod]
             public static string GetTimeStamp4()
@@ -237,7 +237,7 @@ public void SetTimeStamp(string text)
                 return DateTime.Now.ToLongTimeString();
             }
         </script>
-        
+
         <ext:Button runat="server" Text="Click Me" Icon="Lightning">
             <Listeners>
                 <Click Handler="
@@ -248,9 +248,9 @@ public void SetTimeStamp(string text)
                     });" />
             </Listeners>
         </ext:Button>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod]
     public static string GetTimeStamp4()
@@ -270,19 +270,19 @@ public void SetTimeStamp(string text)
     &lt;/Listeners>
 &lt;/ext:Button>
 </pre>
-        
-        
+
+
         <!--  5  ----------------------------------------------------------------------------------------------->
-        
+
         <h2>5. Return a Customer object from a static DirectMethod</h2>
-        
+
         <p>Any type of object can be returned from a DirectMethod. The following example creates and returns a 'Customer' object.</p>
-        
+
         <p>The Customer object is serialized into JSON and returned to the client (browser). Within the DirectMethod configuration object,
         the 'result' parameter is the return object.</p>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             // Define Customer Class
             public class Customer
@@ -294,7 +294,7 @@ public void SetTimeStamp(string text)
                 public Country Country { get; set; }
                 public bool Premium { get; set; }
             }
-            
+
             // Define Country Class
             public class Country
             {
@@ -317,30 +317,30 @@ public void SetTimeStamp(string text)
                 };
             }
         </script>
-        
+
         <ext:Button runat="server" Text="Click Me" Icon="Lightning">
             <Listeners>
                 <Click Handler="
                     App.direct.GetCustomer({
                         success : function (customer) {
                             var template = 'ID : {0}{6} Name : {1} {2}{6} Company : {3}{6} Country : {4}{6} Premium Member : {5}',
-                                msg = Ext.String.format(template, 
-                                        customer.ID, 
-                                        customer.FirstName, 
-                                        customer.LastName, 
-                                        customer.Company, 
-                                        customer.Country.Name, 
-                                        customer.Premium, 
+                                msg = Ext.String.format(template,
+                                        customer.ID,
+                                        customer.FirstName,
+                                        customer.LastName,
+                                        customer.Company,
+                                        customer.Country.Name,
+                                        customer.Premium,
                                         '&lt;br /&gt;&lt;br /&gt;');
-                            
+
                             Ext.Msg.alert('Customer', msg);
                         }
                     });" />
             </Listeners>
         </ext:Button>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     // Define Customer Class
     public class Customer
@@ -364,7 +364,7 @@ public void SetTimeStamp(string text)
     {
         // Get your Customer data from somewhere...
 
-        return new Customer() { 
+        return new Customer() {
             ID = 99,
             FirstName = "Peter",
             LastName = "Smith",
@@ -381,15 +381,15 @@ public void SetTimeStamp(string text)
             App.direct.GetCustomer({
                 success : function (customer) {
                     var template = 'ID : {0}{6} Name : {1} {2}{6} Company : {3}{6} Country : {4}{6} Premium Member : {5}',
-                        msg = Ext.String.format(template, 
-                                customer.ID, 
-                                customer.FirstName, 
-                                customer.LastName, 
-                                customer.Company, 
-                                customer.Country.Name, 
-                                customer.Premium, 
+                        msg = Ext.String.format(template,
+                                customer.ID,
+                                customer.FirstName,
+                                customer.LastName,
+                                customer.Company,
+                                customer.Country.Name,
+                                customer.Premium,
                                 '&lt;br /&gt;&lt;br /&gt;');
-                    
+
                     Ext.Msg.alert('Customer', msg);
                 }
             });" />
@@ -399,29 +399,29 @@ public void SetTimeStamp(string text)
 
 
         <!--  6  ----------------------------------------------------------------------------------------------->
-        
+
         <h2>6. Disable the DirectMethod ClientProxy Creation</h2>
-        
+
         <p>When the [DirectMethod] Attribute is added to a server-side Method, by default, a JavaScript function of the same name, and accepting the same
             parameters will be created in the client-side App.direct arry.</p>
-        
+
         <p>For example, if we create a server-side Method called "GetTimeStamp", on the client, the App.direct.GetTimeStamp JavaScript function will also be created.</p>
-        
-        <p>There may be scenarios where developers may decide to create an DirectMethod, but not expose the corresponding JavaScript function on the client. 
+
+        <p>There may be scenarios where developers may decide to create an DirectMethod, but not expose the corresponding JavaScript function on the client.
             You can configure the DirectMethod to ignore creating the corresponding client-side JavaScript function by setting the <code>ClientProxy.Ignore</code> property on that particular DirectMethod.</p>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">[DirectMethod(ClientProxy = ClientProxy.Ignore)]
 public string GetTimeStamp()
 {
     return DateTime.Now.ToLongTimeString();
 }</pre>
-        
+
         <p>If the DirectMethod is set with ClientProxy.Ignore, the corresponding client-side proxy function will not be created, but the DirectMethod can still be called.
             The DirectMethod proxy functions are conveinience wrappers around the underlying Ext.net.DirectMethod.request() function.</p>
         <p>Any server-side DirectMethod can be called directly (without a client-side proxy function), by configuring the Ext.net.DirectMethod.request() function.</p>
-            
+
         <div class="doc-item">
             <span class="doc-member">request</span> ( <code>string methodName</code> , <span class="doc-optional" title="Optional">[Object options]</span> ) : void
             <div class="doc-desc">Calls the server-side [DirectMethod] as specified in the methodName parameter.</div>
@@ -437,7 +437,7 @@ public string GetTimeStamp()
                     <li>
                         <span class="doc-member">options</span> : Object
                         <div class="doc-subdesc">
-                            (optional) An object containing configuration properties. This options object may contain any of the following properties 
+                            (optional) An object containing configuration properties. This options object may contain any of the following properties
                             as well as options of <a href="http://docs.sencha.com/extjs/5.1/5.1.0-apidocs/#!/api/Ext.data.Connection-method-request" target="_blank">Ext.data.Connection.request</a>.
                             <ul>
                                 <li>
@@ -453,16 +453,16 @@ public string GetTimeStamp()
                                         The JavaScript function to invoke if a failure response is returned from the DirectMethod.<br />
                                         The "<code>errorMessage</code>" parameter is passed to the success function.
                                     </div>
-                                </li> 
+                                </li>
                                 <li>
                                     <span class="doc-prop">complete</span> : Function
                                     <div class="doc-subdesc">
-                                        The JavaScript function to invoke when a DirectMethod completes (successfully or not),<br/> 
+                                        The JavaScript function to invoke when a DirectMethod completes (successfully or not),<br/>
                                         and the response is parsed on the client side.
                                         <br />
                                         The "<code>success</code>", "<code>result</code>", "<code>response</code>", "<code>extraParams</code>", "<code>directMethodConfig</code>" parameters are passed to the complete function.
                                     </div>
-                                </li> 
+                                </li>
                                 <li>
                                     <span class="doc-member">specifier</span> : String
                                     <div class="doc-subdesc">
@@ -477,12 +477,12 @@ public string GetTimeStamp()
                                         The type of http request to make, options include (<code>"POST"</code>, <code>"GET"</code>).<br />
                                         The method of "POST" is the default value.
                                     </div>
-                                </li>                                
+                                </li>
                                 <li>
                                     <span class="doc-member">url</span> : String
                                     <div class="doc-subdesc">
                                         A custom url to call the DirectMethod from. The DirectMethod does not need to be configured on the "Parent Page".<br />
-                                        If no url is provided, the request options will use the &lt;form>'s action attribute. If the action attribute is empty, 
+                                        If no url is provided, the request options will use the &lt;form>'s action attribute. If the action attribute is empty,
                                         the request options will use the window.location.href value. If the window.location.href value ends with a forward-slash ("/"),
                                         the IIS web server may not be able to process the "POST" request. Under this scenario, you must set the "method" options property to "GET".
                                     </div>
@@ -491,7 +491,7 @@ public string GetTimeStamp()
                                     <span class="doc-member">control</span> : String
                                     <div class="doc-subdesc">
                                         The ID of the UserControl which contains the DirectMethod.
-                                        An DirectMethod can be configured within a .ascx file and called from a Parent .aspx Page. 
+                                        An DirectMethod can be configured within a .ascx file and called from a Parent .aspx Page.
                                     </div>
                                 </li>
                                 <li>
@@ -516,24 +516,24 @@ public string GetTimeStamp()
                                                 <div class="doc-subdesc">
                                                     The text to display in a centered loading message box (defaults to 'Working...').
                                                 </div>
-                                            </li>                          
+                                            </li>
                                             <li>
                                                 <span class="doc-member">msgCls</span> : String
                                                 <div class="doc-subdesc">
                                                     The CSS class to apply to the loading message element (defaults to "x-mask-loading")
                                                 </div>
-                                            </li> 
+                                            </li>
                                             <li>
                                                 <span class="doc-member">target</span> : String
                                                 <div class="doc-subdesc">
                                                     The target element to apply the mask to, options include (<code>"page"</code>, <code>"customtarget"</code>).<br />
                                                     If <code>"customtarget"</code>, the <code>customTarget</code> configuration option should be set.
                                                 </div>
-                                            </li> 
+                                            </li>
                                             <li>
                                                 <span class="doc-member">customTarget</span> : String
                                                 <div class="doc-subdesc">
-                                                    The id of the target element, or a instance of the target element. 
+                                                    The id of the target element, or a instance of the target element.
                                                 </div>
                                             </li>
                                             <li>
@@ -546,7 +546,7 @@ public string GetTimeStamp()
                                             </li>
                                         </ul>
                                     </div>
-                                </li>    
+                                </li>
                                 <li>
                                     <span class="doc-member">encode</span> : Boolean
                                     <div class="doc-subdesc">
@@ -556,9 +556,9 @@ public string GetTimeStamp()
                                 <li>
                                     <span class="doc-member">recursive</span> : Boolean
                                     <div class="doc-subdesc">
-                                        True to a recursive call of <code>Ext.Object.toQueryString</code> on preparation of request's parameters. Defaults to false. Applicable only if <code>encode</code> is false. 
+                                        True to a recursive call of <code>Ext.Object.toQueryString</code> on preparation of request's parameters. Defaults to false. Applicable only if <code>encode</code> is false.
                                     </div>
-                                </li>                         
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -569,9 +569,9 @@ public string GetTimeStamp()
                 </ul>
             </div>
         </div>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod(ClientProxy = ClientProxy.Ignore)]
             public string GetTimeStamp6()
@@ -579,21 +579,21 @@ public string GetTimeStamp()
                 return DateTime.Now.ToLongTimeString();
             }
         </script>
-        
+
         <ext:Button runat="server" Text="Click Me" Icon="Lightning">
             <Listeners>
                 <Click Handler="Ext.net.DirectMethod.request(
-                    'GetTimeStamp6', 
+                    'GetTimeStamp6',
                     {
-                        success: function (result) { 
-                            Ext.Msg.alert('Message', result); 
-                        } 
+                        success: function (result) {
+                            Ext.Msg.alert('Message', result);
+                        }
                     });" />
             </Listeners>
         </ext:Button>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod(ClientProxy = ClientProxy.Ignore)]
     public string GetTimeStamp6()
@@ -605,25 +605,25 @@ public string GetTimeStamp()
 &lt;ext:Button runat="server" Text="Click Me" Icon="Lightning">
     &lt;Listeners>
         &lt;Click Handler="Ext.net.DirectMethod.request(
-            'GetTimeStamp6', 
+            'GetTimeStamp6',
             {
-                success: function (result) { 
-                    Ext.Msg.alert('Message', result); 
-                } 
+                success: function (result) {
+                    Ext.Msg.alert('Message', result);
+                }
             });" />
     &lt;/Listeners>
 &lt;/ext:Button>
 </pre>
-        
-        
+
+
         <!--  7  ----------------------------------------------------------------------------------------------->
-        
+
         <h2>7. Pass DirectMethod configuration object to proxy function</h2>
-        
+
         <p>An DirectMethod configuration object can always be passed as the last parameter on any DirectMethod proxy function.</p>
-        
+
         <h3>Example</h3>
-        
+
         <script runat="server">
             [DirectMethod]
             public string LogMessage(string msg)
@@ -632,12 +632,12 @@ public string GetTimeStamp()
                 return msg;
             }
         </script>
-        
+
         <ext:Button ID="Button3" runat="server" Text="Click Me" Icon="Lightning">
             <Listeners>
                 <Click Handler="App.direct.LogMessage('Hello World', {
-                            success: function (result) { 
-                                Ext.Msg.alert('Message', result); 
+                            success: function (result) {
+                                Ext.Msg.alert('Message', result);
                             },
                             eventMask: {
                                 showMask: true,
@@ -646,9 +646,9 @@ public string GetTimeStamp()
                         });" />
             </Listeners>
         </ext:Button>
-        
+
         <h3>Code</h3>
-        
+
         <pre class="code">&lt;script runat="server">
     [DirectMethod]
     public string LogMessage(string msg)
@@ -661,8 +661,8 @@ public string GetTimeStamp()
 &lt;ext:Button ID="Button4" runat="server" Text="Click Me" Icon="Lightning">
     &lt;Listeners>
         &lt;Click Handler="App.direct.LogMessage('Hello World', {
-                    success: function (result) { 
-                        Ext.Msg.alert('Message', result); 
+                    success: function (result) {
+                        Ext.Msg.alert('Message', result);
                     },
                     eventMask: {
                         showMask: true,
@@ -671,7 +671,7 @@ public string GetTimeStamp()
                 });" />
     &lt;/Listeners>
 &lt;/ext:Button></pre>
-        
+
     </form>
 </body>
 </html>

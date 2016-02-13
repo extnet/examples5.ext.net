@@ -41,13 +41,13 @@
             };
         }
     }
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
         {
             this.Store1.DataSource = this.TestData;
-            this.Store1.DataBind(); 
+            this.Store1.DataBind();
         }
     }
 </script>
@@ -57,46 +57,46 @@
 <html>
 <head runat="server">
     <title>Drag and Drop from GridPanel to TreePanel - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
-         var beforerecorddrop = function (node, data, overModel, dropPosition, dropFn) { 
-            if (Ext.isArray(data.records)) {                
+         var beforerecorddrop = function (node, data, overModel, dropPosition, dropFn) {
+            if (Ext.isArray(data.records)) {
                 var records = data.records,
                     rec;
 
                 data.records = [];
-                
+
                 for (var i = 0; i < records.length; i++) {
                     rec = records[i];
-                    
+
                     data.records.push({
                         text   : rec.get("company"),
                         leaf   : true,
                         price  : rec.get("price"),
                         change : rec.get("change"),
-                        pctChange : rec.get("pctChange"),                        
+                        pctChange : rec.get("pctChange"),
                         qtip   : rec.get("lastChange")
                     });
 
                     rec.store.remove(rec);
                 }
-                
+
                 return true;
             }
         };
 
-        var beforenodedrop = function (node, data, overModel, dropPosition, dropFn) { 
-            if (Ext.isArray(data.records)) {                
+        var beforenodedrop = function (node, data, overModel, dropPosition, dropFn) {
+            if (Ext.isArray(data.records)) {
                 var records = data.records,
                     rec;
 
                 data.records = [];
-                
+
                 for (var i = 0; i < records.length; i++) {
                     rec = records[i];
-                    
+
                     data.records.push(this.store.createModel({
                         company   : rec.get("text"),
                         price  : rec.get("price"),
@@ -107,7 +107,7 @@
 
                     rec.remove(true);
                 }
-                
+
                 return true;
             }
         };
@@ -116,22 +116,22 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Panel 
+
+        <ext:Panel
             runat="server"
-            Width="700" 
+            Width="700"
             Height="400"
             Layout="BorderLayout">
             <Items>
-                <ext:GridPanel 
+                <ext:GridPanel
                     runat="server"
                     Region="Center"
-                    Title="Grid" 
+                    Title="Grid"
                     MultiSelect="true"
                     MarginSpec="5 0 5 5">
                     <Store>
-                        <ext:Store 
-                            ID="Store1" 
+                        <ext:Store
+                            ID="Store1"
                             runat="server">
                             <Model>
                                 <ext:Model runat="server">
@@ -144,27 +144,27 @@
                                     </Fields>
                                 </ext:Model>
                             </Model>
-                        </ext:Store>                    
+                        </ext:Store>
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column 
-                                runat="server" 
-                                Text="Company" 
-                                Sortable="true" 
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                Sortable="true"
                                 DataIndex="company"
-                                Flex="1" 
+                                Flex="1"
                                 />
-                            <ext:Column 
-                                runat="server" 
-                                Text="Price" 
-                                Width="75" 
-                                Sortable="true" 
+                            <ext:Column
+                                runat="server"
+                                Text="Price"
+                                Width="75"
+                                Sortable="true"
                                 DataIndex="price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
                         </Columns>
-                    </ColumnModel>                    
+                    </ColumnModel>
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
@@ -176,30 +176,30 @@
                         </ext:GridView>
                     </View>
                 </ext:GridPanel>
-                    
-                <ext:TreePanel 
-                    runat="server" 
-                    Region="East"                    
+
+                <ext:TreePanel
+                    runat="server"
+                    Region="East"
                     Width="300"
                     Title="Tree"
-                    AutoScroll="true"                    
+                    AutoScroll="true"
                     MarginSpec="5 5 5 0"
                     Split="true">
                     <Root>
-                        <ext:Node Text="Root" Expanded="true" AllowDrag="false">                        
+                        <ext:Node Text="Root" Expanded="true" AllowDrag="false">
                             <Children>
                                 <ext:Node Text="Folder 1" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
                                         <ext:Node Text="Subleaf 1" Qtip="Subleaf 1 Quick Tip" Leaf="true"  AllowDrag="false"/>
                                     </Children>
                                 </ext:Node>
-                                        
+
                                 <ext:Node Text="Folder 2" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
                                         <ext:Node Text="Subleaf 2" Qtip="Subleaf 2 Quick Tip" Leaf="true"  AllowDrag="false"/>
                                     </Children>
                                 </ext:Node>
-                                        
+
                                 <ext:Node Text="Leaf 1" Qtip="Leaf 1 Quick Tip" Leaf="true" AllowDrag="false" />
                             </Children>
                         </ext:Node>
@@ -213,10 +213,10 @@
                                 <BeforeDrop Fn="beforerecorddrop" />
                             </Listeners>
                         </ext:TreeView>
-                    </View>              
+                    </View>
                 </ext:TreePanel>
             </Items>
-        </ext:Panel> 
+        </ext:Panel>
     </form>
 </body>
 </html>

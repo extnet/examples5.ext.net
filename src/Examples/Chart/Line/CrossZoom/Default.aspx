@@ -70,7 +70,7 @@
                             </Model>
                         </ext:Store>
                     </Store>
-                    
+
                     <Interactions>
                         <ext:CrossZoomInteraction />
                     </Interactions>
@@ -84,12 +84,12 @@
                             <Renderer Handler="return layoutContext.renderer(label) + '%';" />
                         </ext:NumericAxis>
 
-                        <ext:TimeAxis 
-                            Position="Bottom" 
-                            DateFormat="yy-MMM-dd" 
-                            VisibleRange="0,1" 
-                            Fields="time" 
-                            TitleMargin="12" 
+                        <ext:TimeAxis
+                            Position="Bottom"
+                            DateFormat="yy-MMM-dd"
+                            VisibleRange="0,1"
+                            Fields="time"
+                            TitleMargin="12"
                             Title="Date" />
                     </Axes>
                     <Series>

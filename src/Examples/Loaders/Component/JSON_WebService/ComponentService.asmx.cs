@@ -8,7 +8,7 @@ using System.Web.Script.Services;
 namespace Ext.Net.Examples.Examples.Loaders.Component.JSON_WebService
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -20,7 +20,7 @@ namespace Ext.Net.Examples.Examples.Loaders.Component.JSON_WebService
         public string Items()
         {
             return ComponentLoader.ToConfig(new List<AbstractComponent>()
-                { 
+                {
                     new Panel{Title="Item 1", Icon = Icon.UserBrown},
                     new Panel{Title="Item 2", Icon = Icon.UserGray},
                     new Panel{Title="Item 3", Icon = Icon.UserGreen}

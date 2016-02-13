@@ -12,15 +12,15 @@
             // you can prepare group command
             if (command.command == 'Delete' && record.data.Price < 5) {
                 command.hidden = true;
-                command.hideMode = 'visibility'; //you can try 'display' also                 
+                command.hideMode = 'visibility'; //you can try 'display' also
             }
         };
-        
+
         var prepareGroupCommand = function (grid, command, groupId, group) {
             // you can prepare group command
         };
 
-        var getAdditionalData = function (data, idx, record, orig) {            
+        var getAdditionalData = function (data, idx, record, orig) {
             return {
                 rowBodyColspan : record.self.fields.length,
                 rowBody: Ext.String.format('<div style=\'padding:0 5px 5px 5px;\'>The {0} [{1}] requires light conditions of <i>{2}</i>.<br /><b>Price: {3}</b></div>', data.Common, data.Botanical, data.Light, Ext.util.Format.usMoney(data.Price))
@@ -31,15 +31,15 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>ImageCommandColumn is a simpler and faster version of CommandColumn</h1>
 
         <ext:GridPanel
-            runat="server"            
-            Collapsible="true" 
-            Width="600"             
-            Height="350"            
-            Title="Plants" 
+            runat="server"
+            Collapsible="true"
+            Width="600"
+            Height="350"
+            Title="Plants"
             Frame="true">
             <Store>
                 <ext:Store runat="server" GroupField="Light">
@@ -72,40 +72,40 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column 
-                        runat="server" 
-                        Text="Common Name" 
-                        DataIndex="Common" 
-                        Flex="1" 
+                    <ext:Column
+                        runat="server"
+                        Text="Common Name"
+                        DataIndex="Common"
+                        Flex="1"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Light" 
-                        DataIndex="Light" 
-                        Width="130" 
+                    <ext:Column
+                        runat="server"
+                        Text="Light"
+                        DataIndex="Light"
+                        Width="130"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Price" 
-                        DataIndex="Price" 
-                        Width="70" 
-                        Align="right" 
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="Price"
+                        Width="70"
+                        Align="right"
                         Groupable="false">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:DateColumn 
-                        runat="server" 
-                        Text="Available" 
-                        DataIndex="Availability" 
-                        Width="95" 
-                        Groupable="false" 
-                        Format="yyyy-MM-dd" 
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Available"
+                        DataIndex="Availability"
+                        Width="95"
+                        Groupable="false"
+                        Format="yyyy-MM-dd"
                         />
-                    <ext:Column 
-                        runat="server" 
-                        Text="Indoor?" 
-                        DataIndex="Indoor" 
-                        Width="55" 
+                    <ext:Column
+                        runat="server"
+                        Text="Indoor?"
+                        DataIndex="Indoor"
+                        Width="55"
                         />
                     <ext:ImageCommandColumn runat="server" Width="200">
                         <Commands>
@@ -119,7 +119,7 @@
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
                         </Commands>
-                        
+
                         <GroupCommands>
                             <ext:GroupImageCommand CommandName="Delete" Icon="Delete" Text="Delete">
                                 <ToolTip Text="Delete" />
@@ -131,7 +131,7 @@
                                 <ToolTip Text="Chart" />
                             </ext:GroupImageCommand>
                         </GroupCommands>
-                        
+
                         <PrepareCommand Fn="prepareCommand" />
                         <PrepareGroupCommand Fn="prepareGroupCommand" />
 
@@ -142,7 +142,7 @@
                     </ext:ImageCommandColumn>
                 </Columns>
             </ColumnModel>
-            
+
             <SelectionModel>
                 <ext:RowSelectionModel runat="server" Mode="Multi" />
             </SelectionModel>
@@ -150,18 +150,18 @@
             <View>
                 <ext:GridView runat="server" StripeRows="false" TrackOver="false" />
             </View>
-            
+
             <Features>
-                <ext:Grouping 
-                    runat="server" 
-                    HideGroupedHeader="true" 
-                    GroupHeaderTplString='{columnName}: {name} ({[values.rows.length]} {[values.rows.length > 1 ? "Items" : "Item"]})' 
+                <ext:Grouping
+                    runat="server"
+                    HideGroupedHeader="true"
+                    GroupHeaderTplString='{columnName}: {name} ({[values.rows.length]} {[values.rows.length > 1 ? "Items" : "Item"]})'
                     />
 
                 <ext:RowBody runat="server">
                     <GetAdditionalData Fn="getAdditionalData" />
                 </ext:RowBody>
-            </Features>         
+            </Features>
         </ext:GridPanel>
     </form>
 </body>

@@ -6,13 +6,13 @@
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         this.BuildGridPanel().AddTo(this.Window1);
-        
+
         // Reference Button by sender argument
         ((Button)sender).Disabled = true;
-        
+
         // Reference Button by .Items Collection
         //this.Window1.TopBar.Toolbar.Items[0].Disabled = true;
-        
+
         // Reference Button directly by .ID
         // this.Button1.Disabled = true;
     }
@@ -22,21 +22,21 @@
         return new GridPanel
         {
             Border = false,
-            Store =  
+            Store =
             {
                 this.BuildStore()
             },
-            SelectionModel = 
-            { 
+            SelectionModel =
+            {
                 new RowSelectionModel() { Mode = SelectionMode.Single }
             },
             ColumnModel =
             {
                 Columns =
                 {
-                    new Column 
+                    new Column
                     {
-                        Text = "Company", 
+                        Text = "Company",
                         DataIndex = "company",
                         Flex = 1
                     },
@@ -70,7 +70,7 @@
                new Ext.Net.GridView()
                {
                     StripeRows = true,
-                    TrackOver = true 
+                    TrackOver = true
                }
             }
         };
@@ -80,11 +80,11 @@
     {
         Store store = new Store
         {
-            Model = 
-            { 
-                new Model 
+            Model =
+            {
+                new Model
                 {
-                    Fields = 
+                    Fields =
                     {
                         new ModelField("company"),
                         new ModelField("price", ModelFieldType.Float),
@@ -100,7 +100,7 @@
 
         return store;
     }
-    
+
     private object[] Data
     {
         get
@@ -146,7 +146,7 @@
 <html>
 <head runat="server">
     <title>Create GridPanel and Store during DirectEvent - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
         var template = '<span style="color:{0};">{1}</span>';
@@ -163,11 +163,11 @@
 <body>
 <form runat="server">
     <ext:ResourceManager runat="server" />
-    
+
     <h1>Creation of a GridPanel and Store during a DirectEvent</h1>
-    
-    <ext:Window 
-        ID="Window1" 
+
+    <ext:Window
+        ID="Window1"
         runat="server"
         Title="Dynamic GridPanel"
         Layout="FitLayout"
@@ -177,17 +177,17 @@
             <ext:Toolbar runat="server">
                 <Items>
                     <ext:Button
-                        runat="server" 
-                        Text="Add GridPanel" 
+                        runat="server"
+                        Text="Add GridPanel"
                         Icon="Add">
                         <DirectEvents>
                             <Click OnEvent="Button1_Click">
-                                <EventMask ShowMask="true" 
-                                    Target="CustomTarget" 
-                                    CustomTarget="Window1" 
+                                <EventMask ShowMask="true"
+                                    Target="CustomTarget"
+                                    CustomTarget="Window1"
                                     />
                             </Click>
-                        </DirectEvents>    
+                        </DirectEvents>
                     </ext:Button>
                 </Items>
             </ext:Toolbar>

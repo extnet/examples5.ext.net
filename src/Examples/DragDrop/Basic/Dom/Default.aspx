@@ -9,7 +9,7 @@
     <title>Drag and Drop with DOM Elements - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    
+
     <script>
         Ext.ns("App").ddOverrides = {
             // Called the instant the element is dragged.
@@ -39,7 +39,7 @@
                 this.dEl.update(this.el.dom.innerHTML);
 
                 // adding this class is the trick to have drop areas to work
-                // If you just avoid this and then use this.el.dom.outerHTML above, the mouse will 
+                // If you just avoid this and then use this.el.dom.outerHTML above, the mouse will
                 // be always above the div and will never trigger an dropEnter event.
                 this.dEl.addCls(this.el.dom.className);
 

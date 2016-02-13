@@ -10,25 +10,25 @@
             //We do not need to DataBind on an DirectEvent
             return;
         }
-        
+
         List<object> data = new List<object>();
-        
+
         for (int i = 1; i <= 10; i++)
         {
             data.Add(new { ID = "S" + i, Name = "Supplier " + i});
         }
-        
+
         this.Store1.DataSource = data;
         this.Store1.DataBind();
     }
-    
+
     [DirectMethod]
     public static string GetGrid(Dictionary<string, string> parameters)
     {
         // string id = parameters["id"];
-        
+
         List<object> data = new List<object>();
-        
+
         for (int i = 1; i <= 10; i++)
         {
             data.Add(new { ID = "P" + i, Name = "Product " + i });
@@ -38,14 +38,14 @@
         {
             Height = 200,
             EnableColumnHide = false,
-            Store = 
-            { 
-                new Store 
-                { 
+            Store =
+            {
+                new Store
+                {
                     Model = {
                         new Model {
                             IDProperty = "ID",
-                            Fields = 
+                            Fields =
                             {
                                 new ModelField("ID"),
                                 new ModelField("Name")
@@ -57,8 +57,8 @@
             },
             ColumnModel =
             {
-                Columns = 
-                { 
+                Columns =
+                {
                     new Column { Text = "Products's Name", DataIndex = "Name", Width = 150 }
                 }
             }
@@ -78,9 +78,9 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Row Expander Plugin with GridPanel</h1>
-        
+
         <p>The caching is presented, GridPanel renders once only (until view refresh)</p>
 
         <p>The nested GridPanels support is limited.</p>
@@ -99,12 +99,12 @@
 
         <br />
 
-        <ext:GridPanel 
-            runat="server"             
+        <ext:GridPanel
+            runat="server"
             Title="Expander Rows with GridPanel"
             Collapsible="true"
-            AnimCollapse="true" 
-            Icon="Table" 
+            AnimCollapse="true"
+            Icon="Table"
             Width="600"
             Height="450"
             DisableSelection="true">
@@ -120,11 +120,11 @@
                     </Model>
                 </ext:Store>
             </Store>
-            <ColumnModel runat="server">               
-                <Columns>       
+            <ColumnModel runat="server">
+                <Columns>
                     <ext:Column runat="server" Text="Supplier" DataIndex="Name" Flex="1" Hideable="false" />
                 </Columns>
-            </ColumnModel>            
+            </ColumnModel>
             <Plugins>
                 <ext:RowExpander runat="server">
                     <Loader runat="server" DirectMethod="#{DirectMethods}.GetGrid" Mode="Component">
@@ -134,7 +134,7 @@
                         </Params>
                     </Loader>
                 </ext:RowExpander>
-            </Plugins>            
+            </Plugins>
         </ext:GridPanel>
     </form>
 </body>

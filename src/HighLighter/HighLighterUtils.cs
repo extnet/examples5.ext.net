@@ -70,7 +70,7 @@ namespace Ext.Net.Examples
 
             return SourceToHtml(File.ReadAllText(filePath), highlighter);
         }
-        
+
         public static string SourceToHtml(string source, HighlighterBase highlighter)
         {
             HtmlParser parser = new HtmlParser();

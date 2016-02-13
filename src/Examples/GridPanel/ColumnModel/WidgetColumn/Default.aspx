@@ -7,46 +7,46 @@
         {
             var data = new List<object>();
             var random = new Random();
-            
+
             for (int i = 0; i < 8; i++) {
                 data.Add(new object[]
-                {                    
-                    "Record " + (i + 1), 
-                    random.Next(0, 100) / 100d, 
-                    GenerateSequence(random), 
+                {
+                    "Record " + (i + 1),
+                    random.Next(0, 100) / 100d,
                     GenerateSequence(random),
                     GenerateSequence(random),
-                    GenerateSequence(random, 20, 1, 10), 
-                    GenerateSequence(random, 4, 10, 20), 
-                    GenerateSequence(random), 
+                    GenerateSequence(random),
+                    GenerateSequence(random, 20, 1, 10),
+                    GenerateSequence(random, 4, 10, 20),
+                    GenerateSequence(random),
                     GenerateSequence(random, 20, -1, 1)
                 });
             }
-            
+
             this.Store1.DataSource = data;
         }
     }
 
-    private object GenerateSequence(Random random, int? count = null, int? min = null, int? max = null) 
+    private object GenerateSequence(Random random, int? count = null, int? min = null, int? max = null)
     {
         var sequence = new List<int>();
 
-        if (!count.HasValue) 
+        if (!count.HasValue)
         {
             count = 20;
         }
-        
-        if (!min.HasValue) 
+
+        if (!min.HasValue)
         {
             min = -10;
         }
-        
-        if (!max.HasValue) 
+
+        if (!max.HasValue)
         {
             max = 10;
         }
-        
-        for (int j = 0; j < count; j++) 
+
+        for (int j = 0; j < count; j++)
         {
             sequence.Add(random.Next(min.Value, max.Value + 1));
         }
@@ -59,7 +59,7 @@
 <html>
 <head runat="server">
     <title>Widget Column - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" /> 
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -68,12 +68,12 @@
         <h1>Widget Column</h1>
 
         <p>This example shows how to create Widgets in grid columns. Widgets are lightweight components with a simpler lifecycle.</p>
-       
-        <ext:GridPanel 
-            runat="server" 
+
+        <ext:GridPanel
+            runat="server"
             Collapsible="true"
-            Title="Widget Grid" 
-            Width="1050" 
+            Title="Widget Grid"
+            Width="1050"
             Height="350"
             DisableSelection="true">
             <Store>
@@ -90,7 +90,7 @@
                                 <ext:ModelField Name="sequence5" />
                                 <ext:ModelField Name="sequence6" />
                                 <ext:ModelField Name="sequence7" />
-                            </Fields>                            
+                            </Fields>
                         </ext:Model>
                     </Model>
                     <Reader>
@@ -99,11 +99,11 @@
                 </ext:Store>
             </Store>
 
-            <ViewConfig 
-                StripeRows="true" 
-                EnableTextSelection="false" 
-                MarkDirty="false" 
-                TrackOver="false" 
+            <ViewConfig
+                StripeRows="true"
+                EnableTextSelection="false"
+                MarkDirty="false"
+                TrackOver="false"
                 />
 
             <ColumnModel runat="server">

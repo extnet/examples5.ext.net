@@ -29,7 +29,7 @@
         panel4.BodyStyle = "padding:15px;";
         panel4.Html = "<p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p>";
 
-        Ext.Net.Panel panel5 = new Ext.Net.Panel();        
+        Ext.Net.Panel panel5 = new Ext.Net.Panel();
         panel5.BodyStyle = "padding:15px;";
         panel5.Height = 100;
         panel5.Html = "Plain cell spanning two columns";
@@ -61,7 +61,7 @@
 
         TableLayoutConfig tlc = new TableLayoutConfig()
         {
-            Columns = 4    
+            Columns = 4
         };
         pnlTableLayout.LayoutConfig.Add(tlc);
 
@@ -76,7 +76,7 @@
         Viewport viewPort1 = new Viewport();
         viewPort1.Layout = "BorderLayout";
         viewPort1.Items.Add(pnlTableLayout);
-        
+
         this.PlaceHolder1.Controls.Add(viewPort1);
     }
 </script>
@@ -91,7 +91,7 @@
         #pnlTableLayout .x-table-layout {
             padding : 5px;
         }
-        
+
         #pnlTableLayout .x-table-layout td {
             font-size : 11px;
             padding   : 5px;
@@ -101,7 +101,7 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
+
     <asp:PlaceHolder ID="PlaceHolder1" runat="server" />
 </body>
 </html>

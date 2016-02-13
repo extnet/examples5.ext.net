@@ -23,17 +23,17 @@ namespace Ext.Net.Examples.SimpleTasks
             this.Cls = "tasks-tree";
 
             TreeView view = new TreeView();
-            view.Plugins.Add(new TreeViewDragDrop { 
+            view.Plugins.Add(new TreeViewDragDrop {
                 AllowLeafDrop = true,
                 AppendOnly = true,
                 DDGroup = "tasktree"
             });
             this.View.Add(view);
-            
+
             this.DirectEventConfig.Type = DirectEventType.Load;
 
             this.Plugins.Add(new CellEditing());
-            
+
             this.Editor.Add(new TextField
             {
                 AllowBlank = false,
@@ -45,17 +45,17 @@ namespace Ext.Net.Examples.SimpleTasks
             this.EditorOptions.Shadow = Ext.Net.ShadowMode.None;
 
             this.Store.Add(new TreeStore
-            {                
+            {
                 Model = {
                     new Model{
-                        Name = "CategoryTree",                        
+                        Name = "CategoryTree",
                         Fields = {
                             new ModelField("isFolder", ModelFieldType.Boolean)
                         }
                     }
                 },
 
-                Proxy = { 
+                Proxy = {
                     new PageProxy {
                          RequestConfig = {
                             Method = HttpMethod.GET,
@@ -64,7 +64,7 @@ namespace Ext.Net.Examples.SimpleTasks
                     }
                 }
             });
-            this.Root.Add(new Node { 
+            this.Root.Add(new Node {
                 Children = {
                     new Node
                       {

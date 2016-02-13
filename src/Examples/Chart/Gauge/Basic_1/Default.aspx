@@ -7,7 +7,7 @@
         this.Chart2.GetStore().DataBind();
         this.Chart3.GetStore().DataBind();
     }
-</script>    
+</script>
 
 <!DOCTYPE html>
 
@@ -33,10 +33,10 @@
         <h1>Gauge</h1>
 
         <p>Displaying three custom gauge charts bound to different data stores with different configuration options and easings.</p>
-        
+
         <p>Click on <b>Reload Data</b> to update the information.</p>
 
-        <ext:Panel 
+        <ext:Panel
             runat="server"
             Width="800"
             Height="250">
@@ -48,30 +48,30 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Reload Data" 
-                            Icon="ArrowRefresh" 
-                            OnDirectClick="ReloadData" 
+                        <ext:Button
+                            runat="server"
+                            Text="Reload Data"
+                            Icon="ArrowRefresh"
+                            OnDirectClick="ReloadData"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save 1st Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save 1st Chart"
                             Icon="Disk"
                             Handler="saveChart(#{Chart1});"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save 2nd Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save 2nd Chart"
                             Icon="Disk"
                             Handler="saveChart(#{Chart2});"
                             />
 
-                        <ext:Button 
-                            runat="server" 
-                            Text="Save 3rd Chart" 
+                        <ext:Button
+                            runat="server"
+                            Text="Save 3rd Chart"
                             Icon="Disk"
                             Handler="saveChart(#{Chart3});"
                             />
@@ -79,17 +79,17 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:PolarChart 
-                    ID="Chart1" 
+                <ext:PolarChart
+                    ID="Chart1"
                     runat="server"
                     StyleSpec="background:#fff;"
                     InsetPadding="25"
                     Flex="1">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -108,17 +108,17 @@
                     </Series>
                 </ext:PolarChart>
 
-                <ext:PolarChart 
-                    ID="Chart2" 
+                <ext:PolarChart
+                    ID="Chart2"
                     runat="server"
                     StyleSpec="background:#fff;"
                     InsetPadding="25"
                     Flex="1">
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -137,18 +137,18 @@
                     </Series>
                 </ext:PolarChart>
 
-                <ext:PolarChart 
-                    ID="Chart3" 
+                <ext:PolarChart
+                    ID="Chart3"
                     runat="server"
                     StyleSpec="background:#fff;"
                     InsetPadding="25"
                     Flex="1">
                     <AnimationConfig Easing="BounceOut" Duration="500" />
                     <Store>
-                        <ext:Store 
-                            runat="server" 
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" 
-                            AutoDataBind="true">                           
+                        <ext:Store
+                            runat="server"
+                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
+                            AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -168,6 +168,6 @@
                 </ext:PolarChart>
             </Items>
         </ext:Panel>
-    </form>    
+    </form>
 </body>
 </html>

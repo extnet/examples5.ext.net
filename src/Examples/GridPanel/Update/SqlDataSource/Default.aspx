@@ -105,18 +105,18 @@
             runat="server"
             ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             DeleteCommand="DELETE FROM Suppliers WHERE (SupplierID = @SupplierID)"
-            InsertCommand="INSERT INTO Suppliers 
+            InsertCommand="INSERT INTO Suppliers
                                (CompanyName,
                                 ContactName,
-                                ContactTitle, 
-                                Address, 
-                                City, 
-                                Region, 
-                                PostalCode, 
-                                Country, 
-                                Phone, 
-                                Fax) 
-                            VALUES 
+                                ContactTitle,
+                                Address,
+                                City,
+                                Region,
+                                PostalCode,
+                                Country,
+                                Phone,
+                                Fax)
+                            VALUES
                                 (@CompanyName,
                                  @ContactName,
                                  @ContactTitle,
@@ -126,31 +126,31 @@
                                  @PostalCode,
                                  @Country,
                                  @Phone,
-                                 @Fax);                         
+                                 @Fax);
                             SELECT @newId = @@Identity;"
-            SelectCommand="SELECT 
-                                SupplierID, 
-                                CompanyName, 
-                                ContactName, 
-                                ContactTitle, 
-                                Address, 
-                                City, 
-                                Region, 
-                                PostalCode, 
-                                Country, 
-                                Phone, 
-                                Fax                            
+            SelectCommand="SELECT
+                                SupplierID,
+                                CompanyName,
+                                ContactName,
+                                ContactTitle,
+                                Address,
+                                City,
+                                Region,
+                                PostalCode,
+                                Country,
+                                Phone,
+                                Fax
                            FROM Suppliers"
-            UpdateCommand="UPDATE Suppliers SET 
-                                CompanyName = @CompanyName, 
-                                ContactName = @ContactName, 
-                                ContactTitle = @ContactTitle, 
-                                Address = @Address, 
-                                City = @City, 
-                                Region = @Region, 
-                                PostalCode = @PostalCode, 
-                                Country = @Country, 
-                                Phone = @Phone, 
+            UpdateCommand="UPDATE Suppliers SET
+                                CompanyName = @CompanyName,
+                                ContactName = @ContactName,
+                                ContactTitle = @ContactTitle,
+                                Address = @Address,
+                                City = @City,
+                                Region = @Region,
+                                PostalCode = @PostalCode,
+                                Country = @Country,
+                                Phone = @Phone,
                                 Fax = @Fax
                            WHERE (SupplierID = @SupplierID)"
             OnInserted="SqlDataSource1_Inserted">
@@ -249,13 +249,13 @@
                         custom data validation will fail and return error message.
                     </Content>
                 </ext:Panel>
-                <ext:Panel 
-                    ID="Panel1" 
-                    runat="server" 
-                    Region="Center" 
-                    Height="300" 
-                    Header="false" 
-                    Layout="Fit" 
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Region="Center"
+                    Height="300"
+                    Header="false"
+                    Layout="Fit"
                     MarginSpec="0 5 0 5">
                     <Items>
                         <ext:GridPanel

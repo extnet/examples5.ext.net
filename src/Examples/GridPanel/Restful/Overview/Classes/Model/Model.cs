@@ -27,7 +27,7 @@ namespace Ext.Net.Examples.Restful
 
         public T Update<T>() where T : Model
         {
-            
+
             return Session_DB.Update<T>((T)this);
         }
 

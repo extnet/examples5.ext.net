@@ -13,7 +13,7 @@
                 isFirst = targetNode.isFirst(),
                 canDropFirst = rec.get('canDropOnFirst'),
                 canDropSecond = rec.get('canDropOnSecond');
-                            
+
             return isFirst ? canDropFirst : canDropSecond;
         };
     </script>
@@ -21,7 +21,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Custom Tree Drop Logic</h1>
         <p>This example shows how to apply custom logic to valid dropping on nodes</p>
         <p>
@@ -128,7 +128,7 @@
                     </Listeners>
                 </ext:TreePanel>
             </Items>
-        </ext:Panel>    
+        </ext:Panel>
     </form>
 </body>
 </html>

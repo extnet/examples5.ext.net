@@ -5,7 +5,7 @@
     {
         JSON.RequestSettings = new Newtonsoft.Json.JsonSerializerSettings();
         JSON.RequestSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Local;
-            
+
         var date = DateTime.Now.AddSeconds(-5);
         var field = new DisplayTimeField { FieldLabel = date.ToLongTimeString(), Date = date };
         Window1.Items.Add(field);
@@ -70,14 +70,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>DisplayTime</h1>
-        
+
         <p>Custom ranges can be defined via Ext.util.Format.timeSettings</p>
-        
-        <ext:Window 
+
+        <ext:Window
             ID="Window1"
-            runat="server" 
+            runat="server"
             Width="500"
             Height="250"
             Title="DisplayTime"
@@ -85,7 +85,7 @@
             Closable="false"
             BodyPadding="5"
             DefaultLabelSeparator=" "
-            />             
+            />
    </form>
 </body>
 </html>

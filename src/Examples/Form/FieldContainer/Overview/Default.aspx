@@ -17,14 +17,14 @@
             Phone3 = 4567,
             Hours = 7,
             Minutes = 15
-         });           
+         });
     }
 
     protected void SaveData(object sender, DirectEventArgs e)
     {
         Dictionary<string, string> values = JSON.Deserialize<Dictionary<string, string>>(e.ExtraParams["values"]);
         StringBuilder sb = new StringBuilder();
-        
+
         foreach (KeyValuePair<string, string> value in values)
         {
             sb.AppendFormat("{0} = {1}<br />", value.Key, value.Value);
@@ -43,14 +43,14 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
     <style>
         .dot-label {
-            font-weight : bold; 
-            font-size   : 20px;            
+            font-weight : bold;
+            font-size   : 20px;
         }
-        
+
         .note .x-form-item {
             margin-bottom : 0px;
         }
-        
+
         .note .x-form-display-field {
             color : gray;
             padding-top   : 0px;
@@ -61,29 +61,29 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-    
-    <ext:FormPanel 
-        runat="server" 
+
+    <ext:FormPanel
+        runat="server"
         Height="400"
         Width="650"
-        Title="Form Panel" 
-        BodyPadding="5" 
+        Title="Form Panel"
+        BodyPadding="5"
         MonitorResize="true">
         <Items>
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="Text fields" 
-                AnchorHorizontal="100%" 
-                Layout="HBoxLayout">                                       
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="Text fields"
+                AnchorHorizontal="100%"
+                Layout="HBoxLayout">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:TextField runat="server" Width="150" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="50% / 50%" 
+
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="50% / 50%"
                 AnchorHorizontal="100%"
                 Layout="HBoxLayout">
                 <Items>
@@ -91,10 +91,10 @@
                     <ext:TextField runat="server" Flex="1" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="Fill" 
+
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="Fill"
                 AnchorHorizontal="100%"
                 Layout="HBoxLayout">
                 <Items>
@@ -103,10 +103,10 @@
                     <ext:TextField runat="server" Width="150" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="150px / 100%" 
+
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="150px / 100%"
                 AnchorHorizontal="100%"
                 Layout="HBoxLayout">
                 <Items>
@@ -114,27 +114,27 @@
                     <ext:TextField runat="server" Flex="1" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="Mix" 
+
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="Mix"
                 Layout="HBoxLayout">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:ComboBox runat="server" Width="150" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
-                FieldLabel="With toolbar" 
+
+            <ext:FieldContainer
+                runat="server"
+                FieldLabel="With toolbar"
                 Layout="HBoxLayout">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:DateField runat="server" Width="150" MarginSpec="0 3 0 0" />
-                    <ext:Toolbar 
-                        runat="server" 
-                        Flex="1"                         
+                    <ext:Toolbar
+                        runat="server"
+                        Flex="1"
                         Flat="true">
                         <Items>
                             <ext:Button runat="server" Text="Button" Icon="Add" />
@@ -152,9 +152,9 @@
                     </ext:Toolbar>
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
+
+            <ext:FieldContainer
+                runat="server"
                 FieldLabel="With button"
                 Layout="HBoxLayout">
                 <Items>
@@ -163,9 +163,9 @@
                     <ext:Button runat="server" Text="..." />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
+
+            <ext:FieldContainer
+                runat="server"
                 FieldLabel="IP Address"
                 Layout="HBoxLayout">
                 <Items>
@@ -178,12 +178,12 @@
                     <ext:NumberField runat="server" Width="40"  MarginSpec="0 0 0 3" HideTrigger="true" />
                 </Items>
             </ext:FieldContainer>
-            
+
             <ext:FieldContainer runat="server" Layout="AnchorLayout" Cls="note">
                 <Items>
-                    <ext:FieldContainer 
-                        runat="server" 
-                        FieldLabel="Long note" 
+                    <ext:FieldContainer
+                        runat="server"
+                        FieldLabel="Long note"
                         Layout="HBoxLayout">
                         <Items>
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
@@ -191,14 +191,14 @@
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
                         </Items>
                     </ext:FieldContainer>
-                    <ext:DisplayField 
-                        runat="server" 
+                    <ext:DisplayField
+                        runat="server"
                         Text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldContainer 
-                runat="server" 
+
+            <ext:FieldContainer
+                runat="server"
                 FieldLabel="Several notes"
                 Layout="HBoxLayout">
                 <Items>
@@ -209,27 +209,27 @@
             </ext:FieldContainer>
         </Items>
     </ext:FormPanel>
-    
+
     <br />
-    
-    <ext:FormPanel 
-        ID="FormPanel1" 
+
+    <ext:FormPanel
+        ID="FormPanel1"
         runat="server"
         Title="FieldContainers"
         Width="650"
         BodyPadding="10"
         DefaultAnchor="100%">
         <Items>
-            <ext:TextField 
-                runat="server" 
-                Name="Email" 
-                FieldLabel="Email Address" 
+            <ext:TextField
+                runat="server"
+                Name="Email"
+                FieldLabel="Email Address"
                 Vtype="email"
                 MsgTarget="Side"
                 AllowBlank="false" />
-            
-            <ext:FieldContainer 
-                runat="server" 
+
+            <ext:FieldContainer
+                runat="server"
                 MsgTarget="Side"
                 CombineErrors="true"
                 FieldLabel="Date Range"
@@ -243,8 +243,8 @@
                     <ext:DateField runat="server" FieldLabel="End" Name="EndDate" />
                 </Items>
             </ext:FieldContainer>
-            
-            <ext:FieldSet 
+
+            <ext:FieldSet
                 runat="server"
                 Title="Details"
                 Collapsible="true"
@@ -253,42 +253,42 @@
                     <ext:Parameter Name="labelWidth" Value="89" Mode="Raw" />
                 </Defaults>
                 <Items>
-                    <ext:FieldContainer 
+                    <ext:FieldContainer
                         runat="server"
                         FieldLabel="Phone"
                         CombineErrors="true"
                         MsgTarget="Under"
-                        Layout="HBoxLayout">                        
+                        Layout="HBoxLayout">
                         <Defaults>
                             <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
                         </Defaults>
                         <Items>
                             <ext:DisplayField runat="server" Text="(" />
-                            <ext:TextField 
-                                runat="server" 
-                                Name="Phone1" 
-                                Width="29" 
+                            <ext:TextField
+                                runat="server"
+                                Name="Phone1"
+                                Width="29"
                                 AllowBlank="false" />
                             <ext:DisplayField runat="server" Text=")" />
-                            <ext:TextField 
-                                runat="server" 
-                                Name="Phone2" 
-                                Width="29" 
-                                AllowBlank="false" 
+                            <ext:TextField
+                                runat="server"
+                                Name="Phone2"
+                                Width="29"
+                                AllowBlank="false"
                                 MarginSpec="0 5 0 0" />
                             <ext:DisplayField runat="server" Text="-" />
-                            <ext:TextField 
-                                runat="server" 
-                                Name="Phone3" 
-                                Width="48" 
+                            <ext:TextField
+                                runat="server"
+                                Name="Phone3"
+                                Width="48"
                                 AllowBlank="false" />
                         </Items>
                     </ext:FieldContainer>
-                    
-                    <ext:FieldContainer 
-                        runat="server" 
-                        FieldLabel="Time worked" 
+
+                    <ext:FieldContainer
+                        runat="server"
+                        FieldLabel="Time worked"
                         Layout="HBoxLayout"
                         CombineErrors="false">
                         <Defaults>
@@ -296,22 +296,22 @@
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
                         </Defaults>
                         <Items>
-                            <ext:NumberField 
-                                runat="server" 
-                                Name="Hours" 
-                                Width="51" 
+                            <ext:NumberField
+                                runat="server"
+                                Name="Hours"
+                                Width="51"
                                 AllowBlank="false" />
                             <ext:DisplayField runat="server" Text="hours" />
-                            <ext:NumberField 
-                                runat="server" 
-                                Name="Minutes" 
-                                Width="51" 
+                            <ext:NumberField
+                                runat="server"
+                                Name="Minutes"
+                                Width="51"
                                 AllowBlank="false" />
                             <ext:DisplayField runat="server" Text="mins" />
                         </Items>
                     </ext:FieldContainer>
-                    
-                    <ext:FieldContainer 
+
+                    <ext:FieldContainer
                         runat="server"
                         CombineErrors="true"
                         MsgTarget="Side"
@@ -322,7 +322,7 @@
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
                         </Defaults>
                         <Items>
-                            <ext:ComboBox 
+                            <ext:ComboBox
                                 runat="server"
                                 Width="65"
                                 Editable="false"
@@ -336,45 +336,45 @@
                                     <ext:ListItem Value="mr" />
                                 </SelectedItems>
                             </ext:ComboBox>
-                            
-                            <ext:TextField 
-                                runat="server" 
-                                Flex="1" 
-                                Name="FirstName" 
+
+                            <ext:TextField
+                                runat="server"
+                                Flex="1"
+                                Name="FirstName"
                                 AllowBlank="false" />
-                            
-                            <ext:TextField 
-                                runat="server" 
-                                Flex="1" 
-                                Name="LastName" 
+
+                            <ext:TextField
+                                runat="server"
+                                Flex="1"
+                                Name="LastName"
                                 AllowBlank="false" />
                         </Items>
                     </ext:FieldContainer>
                 </Items>
             </ext:FieldSet>
         </Items>
-        
+
         <Buttons>
             <ext:Button runat="server" Text="Load test data">
                 <DirectEvents>
                     <Click OnEvent="LoadData" />
                 </DirectEvents>
             </ext:Button>
-            
+
             <ext:Button runat="server" Text="Save">
                 <DirectEvents>
                     <Click OnEvent="SaveData" Before="return #{FormPanel1}.isValid();">
                         <ExtraParams>
-                            <ext:Parameter 
-                                Name="values" 
-                                Value="#{FormPanel1}.getForm().getValues()" 
-                                Mode="Raw" 
+                            <ext:Parameter
+                                Name="values"
+                                Value="#{FormPanel1}.getForm().getValues()"
+                                Mode="Raw"
                                 Encode="true" />
                         </ExtraParams>
                     </Click>
                 </DirectEvents>
             </ext:Button>
-            
+
             <ext:Button runat="server" Text="Reset">
                 <Listeners>
                     <Click Handler="#{FormPanel1}.getForm().reset();" />

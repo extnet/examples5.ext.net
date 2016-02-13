@@ -13,7 +13,7 @@
             //We do not need to DataBind on an DirectEvent
             return;
         }
-        
+
         //Build first level
         this.BuildLevel(null);
     }
@@ -22,7 +22,7 @@
     public string BuildLevel(Dictionary<string, string> parameters)
     {
         int level = parameters != null && parameters.ContainsKey("level") ? int.Parse(parameters["level"]) : 1;
-        
+
         // bind store
         List<object> data = new List<object>();
 
@@ -30,20 +30,20 @@
         {
             data.Add(new { ID = i, Name = "Level".ConcatWith(level, ": Row " + i) });
         }
-        
+
         //build grid
         GridPanel grid = new GridPanel
             {
                 Height = 215,
                 HideHeaders = level != 1,
                 DisableSelection = true,
-                Store = 
-                { 
-                    new Store 
-                    {                        
-                        Model = 
+                Store =
+                {
+                    new Store
+                    {
+                        Model =
                         {
-                            new Model 
+                            new Model
                             {
                                 IDProperty = "ID",
                                 Fields =
@@ -56,9 +56,9 @@
                                         DefaultValue = level.ToString()
                                     }
                                 }
-                            }   
-                        },                        
-                        DataSource = data   
+                            }
+                        },
+                        DataSource = data
                     }
                 },
                 ColumnModel =
@@ -81,17 +81,17 @@
         if (level < 5)
         {
             RowExpander re = new RowExpander
-            {                
+            {
                 ScrollOffset = 10,
-                Loader = new ComponentLoader 
-                { 
+                Loader = new ComponentLoader
+                {
                     Mode = LoadMode.Component,
                     DirectMethod = "#{DirectMethods}.BuildLevel",
-                    LoadMask = 
+                    LoadMask =
                     {
                         ShowMask = true
                     },
-                    Params = 
+                    Params =
                     {
                         new Ext.Net.Parameter("level", (level + 1).ToString(), ParameterMode.Raw),
                         new Ext.Net.Parameter("id", "this.record.getId()", ParameterMode.Raw)
@@ -108,14 +108,14 @@
             grid.Width = 600;
             grid.Height = 600;
             grid.ResizableConfig = new Resizer { Handles = ResizeHandle.South };
-            this.Form.Controls.Add(grid);            
+            this.Form.Controls.Add(grid);
         }
         else
         {
             grid.EnableColumnHide = false;
             return ComponentLoader.ToConfig(grid);
-        }  
-        
+        }
+
         return null;
     }
 </script>
@@ -128,7 +128,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>MultiLevel GridPanel</h1>
 
         <p>The nested GridPanels support is limited.</p>

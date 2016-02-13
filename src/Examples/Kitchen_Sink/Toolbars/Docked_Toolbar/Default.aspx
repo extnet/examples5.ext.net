@@ -19,22 +19,22 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:Container 
-                runat="server" 
+            <ext:Container
+                runat="server"
                 MarginSpec="0 0 10 0"
                 StyleSpec="background: transparent;">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                 </LayoutConfig>
                 <Items>
-                    <ext:Panel 
-                        runat="server" 
-                        Title="Top" 
+                    <ext:Panel
+                        runat="server"
+                        Title="Top"
                         Width="200"
                         Height="200"
                         BodyPadding="10"
                         Margin="10"
-                        Html="<%# TEST_HTML %>" 
+                        Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Top">
@@ -50,14 +50,14 @@
                         </DockedItems>
                     </ext:Panel>
 
-                    <ext:Panel 
-                        runat="server" 
-                        Title="Right" 
+                    <ext:Panel
+                        runat="server"
+                        Title="Right"
                         Width="200"
                         Height="200"
                         BodyPadding="10"
                         Margin="10"
-                        Html="<%# TEST_HTML %>" 
+                        Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Right">
@@ -75,22 +75,22 @@
                 </Items>
             </ext:Container>
 
-            <ext:Container 
-                runat="server" 
+            <ext:Container
+                runat="server"
                 MarginSpec="0 0 10 0"
                 StyleSpec="background: transparent;">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                 </LayoutConfig>
                 <Items>
-                    <ext:Panel 
-                        runat="server" 
-                        Title="Left" 
+                    <ext:Panel
+                        runat="server"
+                        Title="Left"
                         Width="200"
                         Height="200"
                         BodyPadding="10"
                         Margin="10"
-                        Html="<%# TEST_HTML %>" 
+                        Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Left">
@@ -106,14 +106,14 @@
                         </DockedItems>
                     </ext:Panel>
 
-                    <ext:Panel 
-                        runat="server" 
-                        Title="Bottom" 
+                    <ext:Panel
+                        runat="server"
+                        Title="Bottom"
                         Width="200"
                         Height="200"
                         BodyPadding="10"
                         Margin="10"
-                        Html="<%# TEST_HTML %>" 
+                        Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Bottom">

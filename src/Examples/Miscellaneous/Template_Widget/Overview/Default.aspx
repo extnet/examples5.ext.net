@@ -16,11 +16,11 @@
 </script>
 
 <!DOCTYPE html>
-   
+
 <html>
 <head runat="server">
-    <title>Template Widget - Ext.NET Examples</title>    
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <title>Template Widget - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -30,13 +30,13 @@
 
         <p>Please note that Content cannot be used inside template widget (if you are planning to create several instances) because the Content region cannot be clonned.</p>
 
-        <ext:Button 
+        <ext:Button
             runat="server"
             Text="Send email (you can open several windows at one time)"
-            Handler="App.getMessageWindow().show();" 
+            Handler="App.getMessageWindow().show();"
             />
-        
-        <ext:Window 
+
+        <ext:Window
             runat="server"
             IDMode="Ignore"
             Title="Compose message"
@@ -52,18 +52,18 @@
             TemplateWidget="true"
             TemplateWidgetFnName="getMessageWindow">
             <Items>
-                <ext:FormPanel 
+                <ext:FormPanel
                     runat="server"
-                    BaseCls="x-plain" 
+                    BaseCls="x-plain"
                     Layout="VBoxLayout">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:ComboBox 
-                            runat="server" 
+                        <ext:ComboBox
+                            runat="server"
                             LabelWidth="55"
-                            FieldLabel="Send To"                            
+                            FieldLabel="Send To"
                             Name="sendTo">
                             <Items>
                                 <ext:ListItem Text="test@example.com" />
@@ -71,12 +71,12 @@
                             </Items>
                         </ext:ComboBox>
 
-                        <ext:TextField runat="server" 
-                            LabelWidth="55" 
+                        <ext:TextField runat="server"
+                            LabelWidth="55"
                             FieldLabel="Subject"
                             Name="subject" />
-                        <ext:TextArea runat="server" 
-                            Flex="1" 
+                        <ext:TextArea runat="server"
+                            Flex="1"
                             Name="body" />
                     </Items>
                 </ext:FormPanel>

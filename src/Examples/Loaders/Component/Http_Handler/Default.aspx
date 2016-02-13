@@ -9,18 +9,18 @@
 </head>
 <body>
     <h1>Component Loader (Http Handler)</h1>
-    
-    <ext:ResourceManager runat="server" />    
-    
+
+    <ext:ResourceManager runat="server" />
+
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="350"
         Layout="AccordionLayout"
         Title="Load Items from Http Handler (automatic loading)">
-        <Loader 
-            runat="server" 
-            Url="ComponentHandler.ashx" 
+        <Loader
+            runat="server"
+            Url="ComponentHandler.ashx"
             Mode="Component">
             <LoadMask ShowMask="true" />
         </Loader>
@@ -30,15 +30,15 @@
     <br />
 
     <ext:Panel
-        runat="server"         
-        Height="200" 
+        runat="server"
+        Height="200"
         Width="500"
         Layout="FitLayout"
         Title="Load UserControl from Http Handler (manual loading)">
-        <Loader 
-            runat="server" 
+        <Loader
+            runat="server"
             AutoLoad="false"
-            Url="ComponentHandler.ashx?mode=uc" 
+            Url="ComponentHandler.ashx?mode=uc"
             Mode="Component">
             <LoadMask ShowMask="true" />
         </Loader>

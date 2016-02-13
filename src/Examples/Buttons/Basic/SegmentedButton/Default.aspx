@@ -9,14 +9,14 @@
 </head>
 <body>
     <ext:ResourceManager runat="server" />
-   
+
     <h1>Segmented buttons</h1>
 
     <p>This example shows how to use segmented buttons. Segmented buttons are just containers
        with regular buttons inside, with some special styling and options added. By default,
        all the child buttons will be part of a toggleGroup, but this behavior can be customized
        using the <code>allowToggle</code> and <code>allowMultiple</code> config options. </p>
-    
+
     <ext:Container runat="server" Layout="FormLayout">
         <Items>
             <ext:FieldContainer runat="server" FieldLabel="Toggle Group">
@@ -113,10 +113,10 @@
 
             <ext:FieldContainer runat="server" FieldLabel="Multiple Toggle">
                 <Items>
-                    <ext:SegmentedButton 
-                        runat="server" 
-                        AllowMultiple="true" 
-                        Values="0,2" 
+                    <ext:SegmentedButton
+                        runat="server"
+                        AllowMultiple="true"
+                        Values="0,2"
                         Vertical="true">
                         <Items>
                             <ext:Button runat="server" Text="Option One" />

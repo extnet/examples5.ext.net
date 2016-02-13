@@ -6,13 +6,13 @@
         if (!X.IsAjaxRequest)
         {
             object[] data = this.GetData();
-            
+
             Store store1 = this.GridPanel1.GetStore();
             Store store2 = this.ComboBox1.GetStore();
- 
+
             store1.DataSource = data;
             store1.DataBind();
-            
+
             store2.DataSource = data;
             store2.DataBind();
         }
@@ -53,108 +53,108 @@
         };
     }
 </script>
- 
+
 <!DOCTYPE html>
-     
+
 <html>
 <head runat="server">
     <title>GridPanel with MultiHeader Row Filters - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
- 
+    <link href="/resources/css/examples.css" rel="stylesheet" />
+
     <script>
         var template = '<span style="color:{0};">{1}</span>';
- 
+
         var change = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value);
         };
- 
+
         var pctChange = function (value) {
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
     </script>
-     
+
     <ext:XScript runat="server">
         <script>
-                         
-            var applyFilter = function (field) {                
+
+            var applyFilter = function (field) {
                 var store = #{GridPanel1}.getStore();
-                store.filterBy(getRecordFilter());                                                
+                store.filterBy(getRecordFilter());
             };
-             
+
             var clearFilter = function () {
                 #{ComboBox1}.reset();
                 #{PriceFilter}.reset();
                 #{ChangeFilter}.reset();
                 #{PctChangeFilter}.reset();
                 #{LastChangeFilter}.reset();
-                 
+
                 #{Store1}.clearFilter();
             }
- 
+
             var filterString = function (value, dataIndex, record) {
                 var val = record.get(dataIndex);
-                
+
                 if (typeof val != "string") {
                     return value.length == 0;
                 }
-                
+
                 return val.toLowerCase().indexOf(value.toLowerCase()) > -1;
             };
- 
+
             var filterDate = function (value, dataIndex, record) {
                 var val = Ext.Date.clearTime(record.get(dataIndex), true).getTime();
- 
+
                 if (!Ext.isEmpty(value, false) && val != Ext.Date.clearTime(value, true).getTime()) {
                     return false;
                 }
                 return true;
             };
- 
+
             var filterNumber = function (value, dataIndex, record) {
-                var val = record.get(dataIndex);                
- 
+                var val = record.get(dataIndex);
+
                 if (!Ext.isEmpty(value, false) && val != value) {
                     return false;
                 }
-                
+
                 return true;
             };
- 
+
             var getRecordFilter = function () {
                 var f = [];
- 
+
                 f.push({
-                    filter: function (record) {                         
+                    filter: function (record) {
                         return filterString(#{ComboBox1}.getValue()||"", "company", record);
                     }
                 });
-                 
+
                 f.push({
-                    filter: function (record) {                         
+                    filter: function (record) {
                         return filterNumber(#{PriceFilter}.getValue(), "price", record);
                     }
                 });
-                 
+
                 f.push({
-                    filter: function (record) {                         
+                    filter: function (record) {
                         return filterNumber(#{ChangeFilter}.getValue(), "change", record);
                     }
                 });
-                 
+
                 f.push({
-                    filter: function (record) {                         
+                    filter: function (record) {
                         return filterNumber(#{PctChangeFilter}.getValue(), "pctChange", record);
                     }
                 });
-                 
+
                 f.push({
-                    filter: function (record) {                         
+                    filter: function (record) {
                         return filterDate(#{LastChangeFilter}.getValue(), "lastChange", record);
                     }
                 });
- 
+
                 var len = f.length;
-                 
+
                 return function (record) {
                     for (var i = 0; i < len; i++) {
                         if (!f[i].filter(record)) {
@@ -169,8 +169,8 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" />        
-         
+        <ext:ResourceManager runat="server" />
+
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
@@ -194,15 +194,15 @@
                 </ext:Store>
             </Store>
             <ColumnModel runat="server">
-                <Columns>                   
-                    <ext:Column 
-                        runat="server" 
-                        Text="Company" 
-                        DataIndex="company" 
+                <Columns>
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
                         Flex="1">
                         <Items>
-                            <ext:ComboBox 
-                                ID="ComboBox1" 
+                            <ext:ComboBox
+                                ID="ComboBox1"
                                 runat="server"
                                 Icon="Magnifier"
                                 TriggerAction="All"
@@ -222,7 +222,7 @@
                                 </Store>
                                 <Listeners>
                                     <Change Handler="applyFilter(this);" Buffer="250" />
-                                </Listeners>     
+                                </Listeners>
                                 <Plugins>
                                     <ext:ClearButton runat="server" />
                                 </Plugins>
@@ -234,7 +234,7 @@
                         <Items>
                             <ext:TextField ID="PriceFilter" runat="server">
                                 <Listeners>
-                                    <Change Handler="applyFilter(this);" Buffer="250" />                                                
+                                    <Change Handler="applyFilter(this);" Buffer="250" />
                                 </Listeners>
                                 <Plugins>
                                     <ext:ClearButton runat="server" />
@@ -269,9 +269,9 @@
                                         </Plugins>
                                     </ext:TextField>
                                 </Items>
-                            </ext:Column> 
+                            </ext:Column>
                         </Columns>
-                    </ext:Column>                                  
+                    </ext:Column>
                     <ext:DateColumn runat="server" Text="Last Updated" Width="120" DataIndex="lastChange">
                         <Items>
                             <ext:DateField ID="LastChangeFilter" runat="server" Editable="false">
@@ -293,18 +293,18 @@
                                         <ToolTips>
                                             <ext:ToolTip runat="server" Html="Clear filter" />
                                         </ToolTips>
-                                             
+
                                         <Listeners>
                                             <Click Handler="clearFilter(null);" />
-                                        </Listeners>                                            
+                                        </Listeners>
                                     </ext:Button>
                                 </Items>
-                            </ext:Container>                            
+                            </ext:Container>
                         </Items>
                     </ext:Column>
                 </Columns>
-            </ColumnModel>            
-        </ext:GridPanel>  
+            </ColumnModel>
+        </ext:GridPanel>
     </form>
 </body>
 </html>

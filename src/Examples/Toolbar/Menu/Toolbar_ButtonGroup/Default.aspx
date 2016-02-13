@@ -1,13 +1,13 @@
 <%@ Page Language="C#" %>
 
 <!DOCTYPE html>
-    
+
 <html>
 <head runat="server">
     <title>Toolbar Button Groups - Ext.NET Examples</title>
-    
+
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    
+
     <style>
         .add32 {
             background-image : url(images/add32.gif) !important;
@@ -23,14 +23,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Standard" 
-            Width="900" 
-            Height="250" 
+
+        <ext:Panel
+            runat="server"
+            Title="Standard"
+            Width="900"
+            Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10" 
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -70,13 +70,13 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        <ext:Panel 
-            runat="server" 
-            Title="Multi columns" 
-            Width="900" 
-            Height="250" 
+        <ext:Panel
+            runat="server"
+            Title="Multi columns"
+            Width="900"
+            Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10" 
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -157,13 +157,13 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        <ext:Panel 
-            runat="server" 
-            Title="Multi columns (No titles, double stack)" 
+        <ext:Panel
+            runat="server"
+            Title="Multi columns (No titles, double stack)"
             Width="900"
-            Height="250" 
-            StyleSpec="margin-top:15px" 
-            BodyPadding="10" 
+            Height="250"
+            StyleSpec="margin-top:15px"
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -244,13 +244,13 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        
-        <ext:Panel 
-            runat="server" 
+
+        <ext:Panel
+            runat="server"
             Title="Mix and match icon sizes"
-            Width="900" 
-            Height="250" 
-            StyleSpec="margin-top:15px" 
+            Width="900"
+            Height="250"
+            StyleSpec="margin-top:15px"
             BodyPadding="10"
             AutoScroll="true">
             <TopBar>
@@ -258,21 +258,21 @@
                     <Items>
                         <ext:ButtonGroup runat="server" Title="Clipboard" Columns="3">
                             <Items>
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Paste" 
-                                    IconCls="add32" 
-                                    Scale="Large" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="add32"
+                                    Scale="Large"
                                     IconAlign="Top"
-                                    Cls="x-btn-as-arrow" 
+                                    Cls="x-btn-as-arrow"
                                     RowSpan="3"
                                     />
-                                <ext:SplitButton 
-                                    runat="server" 
-                                    Text="Menu Button" 
-                                    IconCls="add32" 
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Menu Button"
+                                    IconCls="add32"
                                     IconAlign="Top"
-                                    ArrowAlign="Bottom" 
+                                    ArrowAlign="Bottom"
                                     Scale="Large"
                                     RowSpan="3">
                                     <Menu>
@@ -296,24 +296,24 @@
                                 <ext:Button runat="server" Text="Format" IconCls="add16" />
                             </Items>
                         </ext:ButtonGroup>
-                        
+
                         <ext:ButtonGroup runat="server" Title="Other Actions" Columns="3">
                             <Items>
-                                <ext:Button 
-                                    runat="server" 
-                                    Text="Paste" 
-                                    IconCls="add32" 
-                                    Scale="Large" 
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="add32"
+                                    Scale="Large"
                                     IconAlign="Top"
                                     Cls="x-btn-as-arrow"
-                                    RowSpan="3" 
+                                    RowSpan="3"
                                     />
-                                <ext:SplitButton 
-                                    runat="server" 
-                                    Text="Menu Button" 
-                                    IconCls="add32" 
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Menu Button"
+                                    IconCls="add32"
                                     IconAlign="Top"
-                                    ArrowAlign="Bottom" 
+                                    ArrowAlign="Bottom"
                                     Scale="Large"
                                     RowSpan="3">
                                     <Menu>
@@ -341,14 +341,14 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Medium icons, arrows to the bottom" 
+
+        <ext:Panel
+            runat="server"
+            Title="Medium icons, arrows to the bottom"
             Width="900"
-            Height="250" 
-            StyleSpec="margin-top:15px" 
-            BodyPadding="10" 
+            Height="250"
+            StyleSpec="margin-top:15px"
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -359,10 +359,10 @@
                                 <ext:Parameter Name="iconAlign" Value="top" />
                             </Defaults>
                             <Items>
-                                <ext:SplitButton 
-                                    runat="server" 
-                                    Text="Menu Button" 
-                                    IconCls="add24" 
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Menu Button"
+                                    IconCls="add24"
                                     ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
@@ -394,7 +394,7 @@
                                 <ext:Button runat="server" Text="Format<br/>Stuff" IconCls="add24" />
                             </Items>
                         </ext:ButtonGroup>
-                        
+
                         <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
                             <Defaults>
                                 <ext:Parameter Name="scale" Value="medium" />
@@ -436,14 +436,14 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Medium icons, text and arrows to the left" 
+
+        <ext:Panel
+            runat="server"
+            Title="Medium icons, text and arrows to the left"
             Width="900"
-            Height="250" 
-            StyleSpec="margin-top:15px" 
-            BodyPadding="10" 
+            Height="250"
+            StyleSpec="margin-top:15px"
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -463,7 +463,7 @@
                                 </ext:Button>
                             </Items>
                         </ext:ButtonGroup>
-                        
+
                         <ext:ButtonGroup runat="server" Layout="TableLayout">
                             <Items>
                                 <ext:Button runat="server" Text="Format" IconCls="add24" Scale="Medium" />
@@ -473,14 +473,14 @@
                 </ext:Toolbar>
             </TopBar>
         </ext:Panel>
-        
-        <ext:Panel 
-            runat="server" 
-            Title="Small icons, text and arrows to the left" 
+
+        <ext:Panel
+            runat="server"
+            Title="Small icons, text and arrows to the left"
             Width="900"
-            Height="250" 
-            StyleSpec="margin-top:15px" 
-            BodyPadding="10" 
+            Height="250"
+            StyleSpec="margin-top:15px"
+            BodyPadding="10"
             AutoScroll="true">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -500,7 +500,7 @@
                                 </ext:Button>
                             </Items>
                         </ext:ButtonGroup>
-                        
+
                         <ext:ButtonGroup runat="server" Layout="TableLayout">
                             <Items>
                                 <ext:Button runat="server" Text="Format" IconCls="add16" />
@@ -509,7 +509,7 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-        </ext:Panel>    
+        </ext:Panel>
 
 
         <ext:TabPanel runat="server" Height="300" StyleSpec="margin-top:15px">
@@ -523,21 +523,21 @@
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" 
+                                            RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>
@@ -561,27 +561,27 @@
                                         <ext:Button runat="server" Text="Format" IconCls="add16" />
                                     </Items>
                                 </ext:ButtonGroup>
-                                
+
                                 <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
-                                            Cls="x-btn-as-arrow" 
+                                            Cls="x-btn-as-arrow"
                                             RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>
@@ -609,7 +609,7 @@
                         </ext:Toolbar>
                     </TopBar>
                 </ext:Panel>
-                
+
                 <ext:Panel runat="server" Title="Insert">
                     <TopBar>
                         <ext:Toolbar runat="server">
@@ -619,21 +619,21 @@
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" 
+                                            RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>
@@ -657,27 +657,27 @@
                                         <ext:Button runat="server" Text="Format" IconCls="add16" />
                                     </Items>
                                 </ext:ButtonGroup>
-                                
+
                                 <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" 
+                                            RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>
@@ -705,7 +705,7 @@
                         </ext:Toolbar>
                     </TopBar>
                 </ext:Panel>
-                
+
                 <ext:Panel runat="server" Title="Page Layout">
                     <TopBar>
                         <ext:Toolbar runat="server">
@@ -715,21 +715,21 @@
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" 
+                                            RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>
@@ -753,27 +753,27 @@
                                         <ext:Button runat="server" Text="Format" IconCls="add16" />
                                     </Items>
                                 </ext:ButtonGroup>
-                                
+
                                 <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Button 
-                                            runat="server" 
-                                            Text="Paste" 
-                                            IconCls="add32" 
-                                            Scale="Large" 
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Paste"
+                                            IconCls="add32"
+                                            Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" 
+                                            RowSpan="3"
                                             />
-                                        <ext:SplitButton 
-                                            runat="server" 
-                                            Text="Menu Button" 
-                                            IconCls="add32" 
+                                        <ext:SplitButton
+                                            runat="server"
+                                            Text="Menu Button"
+                                            IconCls="add32"
                                             IconAlign="Top"
-                                            ArrowAlign="Bottom" 
+                                            ArrowAlign="Bottom"
                                             Scale="Large"
                                             RowSpan="3">
                                             <Menu>

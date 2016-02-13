@@ -27,7 +27,7 @@
     public void BindCustomer(Customer customer)
     {
         this.txtCustomerID.Value = customer.ID;
-        
+
         this.txtFirstName.Text = customer.FirstName;
         this.txtLastName.Text = customer.LastName;
         this.txtCompany.Text = customer.Company;
@@ -72,10 +72,10 @@
 
         address.Country = country;
         customer.ShippingAddress = address;
-        
+
         return customer;
     }
-    
+
     public class Customer
     {
         public string ID { get; set; }
@@ -111,14 +111,14 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <ext:Label ID="Label1" runat="server" />
-        
+
         <ext:Hidden ID="txtCustomerID" runat="server" />
-        
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
             Icon="User"
             Closable="false"
             Title="Customer Details"

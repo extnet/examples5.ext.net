@@ -106,7 +106,7 @@
                           Shadow = false,
                           UseArrows = true,
                           AutoScroll = true,
-                          Animate = true,                          
+                          Animate = true,
                           Cls = "tasks-tree",
                           RootVisible = false,
                           Root =
@@ -139,7 +139,7 @@
                  ItemID ="taskForm",
                  Cls = "task-window",
 
-                 FieldDefaults = 
+                 FieldDefaults =
                  {
                      LabelWidth = 75
                  },
@@ -188,7 +188,7 @@
                                  {
                                      taskCategory
                                  },
-                                 Defaults = 
+                                 Defaults =
                                  {
                                      new Parameter()
                                      {
@@ -224,7 +224,7 @@
                                  {
                                      cbxReminder
                                  },
-                                 Defaults = 
+                                 Defaults =
                                  {
                                      new Parameter()
                                      {
@@ -243,7 +243,7 @@
                                  {
                                      dfReminder
                                  },
-                                 Defaults = 
+                                 Defaults =
                                  {
                                      new Parameter()
                                      {

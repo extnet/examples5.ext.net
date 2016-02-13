@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Buffer Rendered TreeGrid - Ext.NET Examples</title>    
+    <title>Buffer Rendered TreeGrid - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
@@ -20,7 +20,7 @@
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>
             Buffer Rendered TreeGrid Example
         </h1>
@@ -32,7 +32,7 @@
             Title="Forum Folder Summary"
             Width="600"
             Height="400"
-            Collapsible="true"            
+            Collapsible="true"
             UseArrows="true"
             RootVisible="false">
             <Store>
@@ -51,7 +51,7 @@
                                  <ext:ModelField Name="replycount" Type="Int" />
                                  <ext:ModelField Name="lastpost" Type="Date" DateFormat="timestamp" />
                                  <ext:ModelField Name="excerpt" NullConvert="true" />
-                             </Fields>                             
+                             </Fields>
                          </ext:Model>
                     </Model>
                     <Proxy>
@@ -73,7 +73,7 @@
                 </Columns>
             </ColumnModel>
         </ext:TreePanel>
-       
+
     </form>
 </body>
 </html>

@@ -5,25 +5,25 @@
 <html>
 <head runat="server">
     <title>LoadMask during Page_Load - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />    
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Configure LoadMask for AutoLoad</h1>
-        
+
         <p>Demonstrates how to configure a LoadMask to render while an external page is loading.</p>
-                
-        <ext:Window 
-            ID="Window1" 
-            runat="server" 
+
+        <ext:Window
+            ID="Window1"
+            runat="server"
             Width="500"
-            Height="470" 
+            Height="470"
             Title="Example">
             <Loader
                 runat="server"
-                Url="http://ext.net/" 
+                Url="http://ext.net/"
                 Mode="Frame">
                 <LoadMask ShowMask="true" Msg="Custom Loading Message..." />
             </Loader>
@@ -36,7 +36,7 @@
                                 <Click Handler="#{Window1}.load('http://forums.ext.net/');" />
                             </Listeners>
                         </ext:Button>
-                        
+
                         <ext:Button runat="server" Text="Refresh" Icon="ArrowRotateClockwise">
                             <Listeners>
                                 <Click Handler="#{Window1}.reload();" />

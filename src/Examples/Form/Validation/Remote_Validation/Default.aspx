@@ -4,7 +4,7 @@
     protected void CheckField(object sender, RemoteValidationEventArgs e)
     {
         TextField field = (TextField)sender;
-        
+
         if (field.Text == "Valid")
         {
             e.Success = true;
@@ -60,9 +60,9 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:FormPanel 
-            runat="server" 
-            Title="Remote Validation Form" 
+        <ext:FormPanel
+            runat="server"
+            Title="Remote Validation Form"
             BodyPadding="5"
             Frame="true"
             Width="500"
@@ -77,18 +77,18 @@
                 <ext:TextField runat="server" FieldLabel="DirectFn validation" IsRemoteValidation="true">
                     <RemoteValidation DirectFn="App.direct.DirectCheckField" />
                 </ext:TextField>
-                
+
                 <ext:TextField runat="server" FieldLabel="Client and server validation" IsRemoteValidation="true" AllowBlank="false">
                     <RemoteValidation OnValidation="CheckField" />
                 </ext:TextField>
-                
+
                 <ext:TextField runat="server" FieldLabel="Client and server validation (web service)" IsRemoteValidation="true" AllowBlank="false">
                     <RemoteValidation Url="ValidationService.asmx/CheckField" Json="true" />
                 </ext:TextField>
-                
+
                 <ext:ComboBox runat="server"
                     AllowBlank="false"
-                    Editable="false" 
+                    Editable="false"
                     FieldLabel="ComboBox"
                     IsRemoteValidation="true">
                   <RemoteValidation OnValidation="CheckCombo" />
@@ -105,6 +105,6 @@
                 <ValidityChange Handler="#{Button1}.setDisabled(!valid);" />
             </Listeners>
        </ext:FormPanel>
-    </form>    
+    </form>
 </body>
 </html>

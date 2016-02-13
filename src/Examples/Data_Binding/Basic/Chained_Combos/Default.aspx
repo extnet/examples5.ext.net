@@ -4,29 +4,29 @@
 
 <html>
 <head runat="server">
-    <title>Chained ComboBoxes - Ext.Net Examples</title>        
+    <title>Chained ComboBoxes - Ext.Net Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
-        
+
         <h1>Chained ComboBoxes</h1>
 
         <p>This example shows how to chain two combo boxes together.</p>
-        
-        <ext:Panel 
-            runat="server" 
-            Width="350" 
+
+        <ext:Panel
+            runat="server"
+            Width="350"
             Layout="AnchorLayout"
             BodyPadding="10"
             DefaultAnchor="-30"
             ReferenceHolder="true"
             Title="Location"
-            ViewModel="<%# true %>" 
+            ViewModel="<%# true %>"
             AutoDataBind="true">
             <Items>
-                <ext:ComboBox 
+                <ext:ComboBox
                     runat="server"
                     FieldLabel="Country"
                     Reference="country"
@@ -37,7 +37,7 @@
                     </Items>
                 </ext:ComboBox>
 
-                <ext:ComboBox 
+                <ext:ComboBox
                     runat="server"
                     FieldLabel="State"
                     DisplayField="state"

@@ -53,7 +53,7 @@
                         <div class="welcome-card-title">Getting Started</div>
                         <div class="welcome-card-body">
                             <p>
-                                Learning Ext.NET is very easy. <a href="/#/Getting_Started/Introduction/Installation/">Watch these videos</a> 
+                                Learning Ext.NET is very easy. <a href="/#/Getting_Started/Introduction/Installation/">Watch these videos</a>
                                 to learn how to install Ext.NET or start browsing the <a href="http://docs.ext.net/">Ext.NET API documentation</a>.
                             </p>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="welcome-card-title">Support</div>
                         <div class="welcome-card-body">
                             <p>
-                                We are proud to have a large <a href="http://forums.ext.net/">developer community</a> for exchanging information as well 
+                                We are proud to have a large <a href="http://forums.ext.net/">developer community</a> for exchanging information as well
                                 as <a href="http://ext.net/store/#benefits">Premium Support</a> with a maximum 24h response time.
                             </p>
                         </div>
@@ -79,8 +79,8 @@
                         <div class="welcome-card-title">Download</div>
                         <div class="welcome-card-body">
                             <p>
-                                You can <a href="http://ext.net/download/">download</a> Ext.NET and start testing it locally right away. In order to deploy and use it 
-                                for commercial projects, you will need to <a href="http://ext.net/store/">get a license</a>. 
+                                You can <a href="http://ext.net/download/">download</a> Ext.NET and start testing it locally right away. In order to deploy and use it
+                                for commercial projects, you will need to <a href="http://ext.net/store/">get a license</a>.
                             </p>
                         </div>
                     </div>
