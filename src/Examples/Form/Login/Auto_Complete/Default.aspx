@@ -11,8 +11,8 @@
             return;
         }
 
-        // Then user send to application
-        Response.Redirect("../../Desktop/Introduction/Overview/Desktop.aspx");
+        // Then redirect user to application
+        Response.Redirect("../../../Desktop/Introduction/Overview/Desktop.aspx");
     }
 </script>
 
