@@ -47,7 +47,9 @@
                 Title="Navigation"
                 Collapsed="true"
                 BodyPadding="5"
-                Html="Collapse Panel to see image.">
+                Html="Collapse Panel to see image."
+                TitleCollapse="false"
+                Floatable="false">
                 <Listeners>
                     <AfterRender Handler="this.setTitle('');" />
                     <BeforeCollapse Handler="this.setTitle('');" />
@@ -64,7 +66,9 @@
                 Split="true"
                 Height="100"
                 Title="Footer"
-                Collapsed="true">
+                Collapsed="true"
+                TitleCollapse="false"
+                Floatable="false">
                 <Listeners>
                     <AfterRender Handler="this.setTitle('');" />
                     <BeforeCollapse Handler="this.setTitle('');" />
