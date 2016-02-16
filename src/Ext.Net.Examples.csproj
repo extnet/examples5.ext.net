@@ -74,8 +74,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Ext.Net">
-      <HintPath>..\packages\Ext.NET.3.3.0\lib\net45\Ext.Net.dll</HintPath>
+    <Reference Include="Ext.Net, Version=3.3.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <Private>True</Private>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -608,12 +608,10 @@
     <Content Include="Examples\Form\TextField\Password_Mask\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\config.xml" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\BREAKING_CHANGES\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\README\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\Sample_Web.config\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\SVN_Log\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\_SVN_Log\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\ProgressBarColumn\config.xml" />
