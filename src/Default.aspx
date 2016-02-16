@@ -131,7 +131,7 @@
                             <div class="navigation-bar">
                                 <h1 class="nav-title">
                                     Examples Explorer
-                                    <span>(3.2.1)</span>
+                                    <span>(3.3.0)</span>
                                 </h1>
                                 <ul id="nav-menu" class="nav-menu">
                                     <li>
