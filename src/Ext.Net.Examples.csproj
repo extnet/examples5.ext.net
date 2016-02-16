@@ -384,7 +384,6 @@
     <Content Include="App_Readme\Ext.NET.Utilities\LICENSE.txt" />
     <Content Include="App_Readme\Ext.NET.Utilities\README.txt" />
     <Content Include="App_Readme\Ext.NET\Ext.NET.Default.aspx" />
-    <Content Include="App_Readme\Transformer.NET.README.txt" />
     <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
     <Content Include="App_Readme\Transformer.NET\README.txt" />
     <Content Include="Code\SerializableEntity\ReadMe.txt" />
