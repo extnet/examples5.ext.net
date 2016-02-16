@@ -1202,7 +1202,6 @@
     <Content Include="Examples\TreePanel\Loaders\Xml_File_Loading\authors.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\config.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\Default.aspx" />
-    <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
