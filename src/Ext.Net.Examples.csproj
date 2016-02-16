@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug NuGet</Configuration>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
@@ -22,16 +22,6 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug NuGet|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -42,11 +32,12 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release NuGet|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Development|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
@@ -74,9 +65,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Ext.Net, Version=3.3.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -135,7 +123,10 @@
     </Reference>
     <Reference Include="Wilco.SyntaxHighlighter, Version=0.5.0.0, Culture=neutral, PublicKeyToken=fb87150479c2990b, processorArchitecture=MSIL" />
   </ItemGroup>
-  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release NuGet|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug NuGet|AnyCPU')">
+  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU')">
+    <Reference Include="Ext.Net">
+      <HintPath>..\packages\Ext.NET.3.3.0\lib\net45\Ext.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Ext.NET.Utilities.2.5.0\lib\Ext.Net.Utilities.dll</HintPath>
@@ -164,37 +155,36 @@
       <HintPath>..\packages\Transformer.NET.2.1.1\lib\net35\Transformer.NET.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU')">
+  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Development|AnyCPU')">
     <Reference Include="Ext.Net">
-      <HintPath>..\packages\Ext.NET.3.3.0\lib\net45\Ext.Net.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\Premium\src\bin\Debug\Ext.Net.dll</HintPath>
     </Reference>
     <Reference Include="Ext.Net.Utilities">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\Ext.Net.Utilities.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\Ext.Net.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\Microsoft.Web.Infrastructure.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="Transformer.NET">
-      <HintPath>..\..\Premium\src\bin\$(Configuration)\Transformer.NET.dll</HintPath>
+      <HintPath>..\..\Premium\src\bin\Debug\Transformer.NET.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -608,10 +598,12 @@
     <Content Include="Examples\Form\TextField\Password_Mask\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\config.xml" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\BREAKING_CHANGES\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\README\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\_SVN_Log\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\Sample_Web.config\Default.aspx" />
+    <Content Include="Examples\Getting_Started\Release_Documents\SVN_Log\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\ProgressBarColumn\config.xml" />
@@ -1200,6 +1192,7 @@
     <Content Include="Examples\TreePanel\Loaders\Xml_File_Loading\authors.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\config.xml" />
     <Content Include="Examples\Window\Basic\Window_Variations\Default.aspx" />
+    <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
