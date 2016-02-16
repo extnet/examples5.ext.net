@@ -137,15 +137,16 @@
                                     <li>
                                         <div class="menu-button"><span class="f-icon-reorder"></span></div>
                                         <ul>
-                                            <li><a href="http://examples.ext.net/">Web Forms Examples (4.0 Preview)</a></li>
-                                            <li><a href="http://mvc.ext.net/">MVC Examples (4.0 Preview)</a></li>
+                                            <li><a href="http://examples.ext.net/">Web Forms Examples (v4)</a></li>
+                                            <li><a href="http://mvc.ext.net/">MVC Examples (v4)</a></li>
                                             <li class="separator"></li>
-                                            <li><a href="http://mvc3.ext.net/">MVC Examples (3.2)</a></li>
+                                            <li><a href="http://examples3.ext.net/">Web Forms Examples (v3)</a></li>
+                                            <li><a href="http://mvc3.ext.net/">MVC Examples (v3)</a></li>
                                             <li class="separator"></li>
-                                            <li><a href="http://examples2.ext.net/">Web Forms Examples (2.5)</a></li>
-                                            <li><a href="http://mvc2.ext.net/">MVC Examples (2.5)</a></li>
+                                            <li><a href="http://examples2.ext.net/">Web Forms Examples (v2)</a></li>
+                                            <li><a href="http://mvc2.ext.net/">MVC Examples (v2)</a></li>
                                             <li class="separator"></li>
-                                            <li><a href="http://examples1.ext.net/">Web Forms Examples (1.7)</a></li>
+                                            <li><a href="http://examples1.ext.net/">Web Forms Examples (v1)</a></li>
                                             <li class="separator"></li>
                                             <li><a href="http://docs.sencha.com/extjs/5.1">EXT JS Documentation</a></li>
                                             <li><a href="http://docs.ext.net/">Ext.NET Documentation</a></li>
