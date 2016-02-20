@@ -561,6 +561,11 @@
     <Content Include="Examples\Desktop\Introduction\Overview\resources\statusLarge.png" />
     <Content Include="Examples\DragDrop\Grid\Cell_to_Cell\config.xml" />
     <Content Include="Examples\DragDrop\Grid\Cell_to_Cell\Default.aspx" />
+    <Content Include="Examples\Editor\Basic\FormPanel_Labels\config.xml" />
+    <Content Include="Examples\Editor\Basic\FormPanel_Labels\Default.aspx" />
+    <Content Include="Examples\Editor\Basic\Overview\config.xml" />
+    <Content Include="Examples\Editor\Basic\Overview\Default.aspx" />
+    <Content Include="Examples\Editor\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Duration_Messages\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Duration_Messages\Default.aspx" />
     <Content Include="Examples\Events\Listeners\Arguments\config.xml" />
