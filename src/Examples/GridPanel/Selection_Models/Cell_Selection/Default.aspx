@@ -45,11 +45,11 @@
              if (!X.IsAjaxRequest)
              {
                  CellSelectionModel sm = this.GridPanel1.GetSelectionModel() as CellSelectionModel;
-                 sm.SelectedCell.ColIndex = 1;
+                 sm.SelectedCell.ColumnIndex = 1;
                  sm.SelectedCell.RowIndex = 1;
                  // selection by record id and field name working also
                  //sm.SelectedCell.RecordID = "Alcoa Inc";
-                 //sm.SelectedCell.Name = "Price";
+                 //sm.SelectedCell.ColumnDataIndex = "Price";
              }
          }
     }
@@ -73,7 +73,7 @@
     protected void Cell_Click(object sender, DirectEventArgs e)
     {
         CellSelectionModel sm = this.GridPanel1.GetSelectionModel() as CellSelectionModel;
-        this.Label1.Html = string.Format("RecordID: {0}<br />Name: {1}<br />Value: {2}<br />Row: {3}<br />Column: {4}", sm.SelectedCell.RecordID, sm.SelectedCell.Name, sm.SelectedCell.Value, sm.SelectedCell.RowIndex.ToString(), sm.SelectedCell.ColIndex.ToString());
+        this.Label1.Html = string.Format("RecordID: {0}<br />Name: {1}<br />Value: {2}<br />Row: {3}<br />Column: {4}", sm.SelectedCell.RecordID, sm.SelectedCell.ColumnDataIndex, sm.SelectedCell.Value, sm.SelectedCell.RowIndex.ToString(), sm.SelectedCell.ColumnIndex.ToString());
     }
 
     protected void Clear_Click(object sender, DirectEventArgs e)
@@ -88,7 +88,7 @@
     {
         CellSelectionModel sm = this.GridPanel1.GetSelectionModel() as CellSelectionModel;
         sm.Clear();
-        sm.SelectedCell.ColIndex = 2;
+        sm.SelectedCell.ColumnIndex = 2;
         sm.SelectedCell.RowIndex = 2;
         sm.UpdateSelection();
     }
