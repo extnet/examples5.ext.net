@@ -6,7 +6,6 @@
         if (!X.IsAjaxRequest)
         {
             this.Store1.DataSource = this.Data;
-            this.Store1.DataBind();
         }
     }
 
@@ -84,7 +83,7 @@
         ID="GridPanel1"
         runat="server"
         Title="Array Grid"
-        Width="600"
+        Width="700"
         Height="350">
         <Store>
             <ext:Store ID="Store1" runat="server">
@@ -113,7 +112,7 @@
                 <ext:Column runat="server" Text="Change" DataIndex="pctChange">
                     <Renderer Fn="pctChange" />
                 </ext:Column>
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" />
+                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="120" />
             </Columns>
         </ColumnModel>
         <SelectionModel>
