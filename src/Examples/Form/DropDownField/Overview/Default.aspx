@@ -1,35 +1,12 @@
 <%@ Page Language="C#" %>
 
-<script runat="server">
-    public void Page_Load()
-    {
-        if (ResourceManager1.Theme == Ext.Net.Theme.Triton)
-        {
-            Field2.TriggerCls = "right-arrow";
-            DropDownFieldGrid.TriggerCls = "up-arrow";
-        }
-        else
-        {
-            Field2.TriggerIcon = TriggerIcon.SimpleRight;
-            Field3.TriggerIcon = TriggerIcon.SimpleArrowDown;
-            DropDownFieldGrid.TriggerIcon = TriggerIcon.SimpleArrowUp;
-        }
-    }
-</script>
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title>DropDownField Overview - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    <style>
-        .right-arrow::before {
-            content: "\f0da"
-        }
-        .up-arrow::before {
-            content: "\f0d8"
-        }
-    </style>
+
     <script>
         var getTasks = function (tree) {
             var msg = [],
@@ -52,7 +29,7 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" ID="ResourceManager1" />
+        <ext:ResourceManager runat="server" />
 
         <h1>DropDownField Overview</h1>
 
@@ -110,6 +87,7 @@
         <ext:DropDownField
             ID="Field2"
             runat="server"
+            TriggerIcon="SimpleRight"
             PickerAlign="tl-tr?"
             Editable="false"
             MatchFieldWidth="false">
@@ -123,7 +101,7 @@
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                         <ext:MenuPanel
+                        <ext:MenuPanel
                             runat="server"
                             Border="false"
                             Flex="1"
@@ -240,7 +218,7 @@
                         <CheckChange Handler="this.dropDownField.setValue(getTasks(this), false);" />
                     </Listeners>
 
-                 </ext:TreePanel>
+                </ext:TreePanel>
             </Component>
             <Listeners>
                 <Expand Handler="this.component.getRootNode().expand(true);" Single="true" Delay="10" />
@@ -318,26 +296,18 @@
                     </View>
 
                     <SelectionModel>
-                        <ext:CheckboxSelectionModel runat="server" />
+                        <ext:RowSelectionModel runat="server" Mode="Multi" />
                     </SelectionModel>
 
                     <Features>
                         <ext:Grouping
                             runat="server"
                             HideGroupedHeader="true"
-                            StartCollapsed="true"
-                            />
+                            StartCollapsed="true" />
                     </Features>
-                    <Buttons>
-                        <ext:Button runat="server" Text="Close">
-                            <Listeners>
-                                <Click Handler="this.up('netdropdown').collapse();" />
-                            </Listeners>
-                        </ext:Button>
-                    </Buttons>
                 </ext:GridPanel>
             </Component>
         </ext:DropDownField>
-   </form>
+    </form>
 </body>
 </html>
