@@ -1214,8 +1214,8 @@
     <Content Include="resources\images\ee-ad-content.png" />
     <Content Include="resources\images\ee-ad-store-bg.png" />
     <Content Include="resources\images\ext.net-logo.png" />
-    <Content Include="resources\images\extdotnet4-preview-background.png" />
-    <Content Include="resources\images\extdotnet4-preview.svg" />
+    <Content Include="resources\images\extdotnet4-beta-bg.jpg" />
+    <Content Include="resources\images\extdotnet4-beta.svg" />
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
     <Content Include="resources\images\icon-briefcase.png" />
