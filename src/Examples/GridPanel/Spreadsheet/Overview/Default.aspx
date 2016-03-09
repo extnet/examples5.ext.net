@@ -215,7 +215,7 @@
                 <SelectionChange Fn="onSelectionChange" />
             </Listeners>
             <Plugins>
-                <ext:Clipboard ID="Clipboard1" runat="server" />
+                <ext:Clipboard runat="server" />
                 <ext:SelectionReplicator runat="server" />
             </Plugins>
         </ext:GridPanel>
