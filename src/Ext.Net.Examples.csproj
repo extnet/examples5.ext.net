@@ -1223,6 +1223,7 @@
     <Content Include="resources\icons\asterisk_orange.png" />
     <Content Include="resources\icons\pencil.png" />
     <Content Include="resources\images\404.png" />
+    <Content Include="resources\images\banner-2-small.png" />
     <Content Include="resources\images\bg-main.png" />
     <Content Include="resources\images\bgnoise.png" />
     <Content Include="resources\images\black10.png" />
@@ -1232,7 +1233,10 @@
     <Content Include="resources\images\ee-ad-bg.png" />
     <Content Include="resources\images\ee-ad-content.png" />
     <Content Include="resources\images\ee-ad-store-bg.png" />
-    <Content Include="resources\images\ext.net-logo.png" />
+    <Content Include="resources\images\extdotnet-logo.svg" />
+    <Content Include="resources\images\extdotnet4-beta-bg.jpg" />
+    <Content Include="resources\images\extdotnet4-beta.svg" />
+    <Content Include="resources\images\grey.png" />
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
     <Content Include="resources\images\icon-briefcase.png" />
