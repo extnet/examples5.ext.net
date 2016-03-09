@@ -190,16 +190,16 @@
     {
         string json = e.ExtraParams["Values"];
 
-        Dictionary<string, string>[] images = JSON.Deserialize<Dictionary<string, string>[]>(json);
+        Dictionary<string, string>[] values = JSON.Deserialize<Dictionary<string, string>[]>(json);
 
-        if (images.Length > 0)
+        if (values.Length > 0)
         {
 
             StringBuilder sb = new StringBuilder();
             sb.Append("<table width='100%' cellspacing='15'>");
             bool addHeader = true;
 
-            foreach (Dictionary<string, string> row in images)
+            foreach (Dictionary<string, string> row in values)
             {
                 if (addHeader)
                 {
@@ -238,7 +238,6 @@
         {
             this.Label1.Html = "<h3>No selection</h3>";
         }
-
     }
 </script>
 
@@ -258,7 +257,6 @@
         <p>The example demonstrates how to submit the SpreadsheetSelectionModel selected data</p>
 
         <ext:GridPanel
-            ID="GridPanel1"
             runat="server"
             ColumnLines="true"
             Height="400"
