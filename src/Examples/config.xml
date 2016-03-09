@@ -6,6 +6,12 @@
   </order>
 
   <new version="4.0.0">
+    <folder name="GridPanel\Spreadsheet\Clipboard" />
+    <folder name="GridPanel\Spreadsheet\Initial_Selection" />
+    <folder name="GridPanel\Spreadsheet\Locking" />
+    <folder name="GridPanel\Spreadsheet\Overview" />
+    <folder name="GridPanel\Spreadsheet\Select_Programmatically" />
+    <folder name="GridPanel\Spreadsheet\Submit" />
   </new>
 
   <updated version="4.0.0">
