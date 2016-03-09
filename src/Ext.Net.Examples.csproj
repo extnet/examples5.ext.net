@@ -125,7 +125,7 @@
   </ItemGroup>
   <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU')">
     <Reference Include="Ext.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ext.NET.4.0.0-preview\lib\net45\Ext.Net.dll</HintPath>
+      <HintPath>..\packages\Ext.NET.4.0.0-beta\lib\net45\Ext.Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
@@ -448,8 +448,8 @@
     <Content Include="Examples\Chart\Line\CrossZoom\config.xml" />
     <Content Include="Examples\Chart\Line\CrossZoom\Default.aspx" />
     <Content Include="App_Readme\Ext.NET\README.md" />
-    <Content Include="App_Readme\Ext.NET\LICENSE" />
     <Content Include="App_Readme\Ext.NET\CHANGELOG.md" />
+    <Content Include="App_Readme\Ext.NET\LICENSE" />
     <None Include="Examples\Chart\Line\CrossZoom\usd2eur.json" />
     <Content Include="Examples\Chart\Line\Image_Markers\circle.png" />
     <Content Include="Examples\Chart\Line\Image_Markers\pentagon.png" />
