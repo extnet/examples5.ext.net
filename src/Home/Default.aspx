@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../resources/css/main.css" />
+    <link rel="stylesheet" href="../resources/css/main.css?v=1.0.0" />
 
     <script>
         Ext.onReady(function () {
