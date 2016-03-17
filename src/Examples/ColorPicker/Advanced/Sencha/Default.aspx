@@ -34,7 +34,7 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server" InitScriptMode="Inline" SourceFormatting="true" ScriptMode="Debug" />
+        <ext:ResourceManager runat="server" />
         
         <h1>Advanced Color Picker combination - From Sencha Example</h1>
 
