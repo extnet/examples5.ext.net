@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  <description>
+    <![CDATA[Provides overall usage information about the advanced Color Picker component set.]]>
+  </description>
+  <tags>color, color picker, picker, field, button, directEvent, listeners</tags>
+</example>

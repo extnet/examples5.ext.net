@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+  <description>
+    <![CDATA[Reproduces sencha's Kitchen Sink examples on the advanced color picker component set.]]>
+  </description>
+  <tags>sencha, color, color picker, picker, field, button</tags>
+</example>

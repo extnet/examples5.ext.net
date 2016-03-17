@@ -6,6 +6,9 @@
   </order>
 
   <new version="4.0.0">
+    <folder name="ColorPicker\Advanced\Overview" />
+    <folder name="ColorPicker\Advanced\Sencha" />
+    <folder name="ColorPicker\Advanced\GridPanel" />
     <folder name="GridPanel\Spreadsheet\Clipboard" />
     <folder name="GridPanel\Spreadsheet\Initial_Selection" />
     <folder name="GridPanel\Spreadsheet\Locking" />
