@@ -15,7 +15,7 @@
 
         <h2>1. Button</h2>
         <h3>This is a simple color button. When the color is changed, a client-side event is triggered filling an (initially empty) label just below the button with a descriptive text of the change.</h3>
-        
+
         <script type="text/javascript">
             var handleColorButtonChange = function (item, color, previousColor) {
                 // Only try to fill the label contents when the label is registered.
