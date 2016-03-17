@@ -69,15 +69,6 @@
             following the format #rrggbbaa (lowercase hexadecimal characters).
         </h3>
 
-        <script type="text/javascript">
-            var handleSomethingElse = new function (item, color, previousColor) {
-                // Only try to fill the label contents when the label is registered.
-                if (App.Label1) {
-                    App.Label1.setText('Changed color from ' + previousColor + ' to ' + color);
-                }
-            }
-        </script>
-
         <ext:ColorSelector ID="ColorSelector1" runat="server" ShowOkCancelButtons="true" Format="sharplchex8">
             <Listeners>
                 <Ok Handler="App.Label3.setText('Clicked OK. Color chosen: ' + color);" />
