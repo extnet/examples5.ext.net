@@ -1234,8 +1234,6 @@
     <Content Include="resources\images\ee-ad-content.png" />
     <Content Include="resources\images\ee-ad-store-bg.png" />
     <Content Include="resources\images\extdotnet-logo.svg" />
-    <Content Include="resources\images\extdotnet4-beta-bg.jpg" />
-    <Content Include="resources\images\extdotnet4-beta.svg" />
     <Content Include="resources\images\grey.png" />
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
