@@ -487,8 +487,8 @@
     <Content Include="Examples\Chart\Scatter\Renderer\config.xml" />
     <Content Include="Examples\Chart\Scatter\Renderer\Default.aspx" />
     <Content Include="Examples\ColorPicker\Advanced\config.xml" />
-    <Content Include="Examples\ColorPicker\Advanced\Sencha\config.xml" />
-    <Content Include="Examples\ColorPicker\Advanced\Sencha\Default.aspx" />
+    <Content Include="Examples\ColorPicker\Advanced\Advanced\config.xml" />
+    <Content Include="Examples\ColorPicker\Advanced\Advanced\Default.aspx" />
     <Content Include="Examples\ColorPicker\Advanced\Overview\config.xml" />
     <Content Include="Examples\ColorPicker\Advanced\Overview\Default.aspx" />
     <Content Include="Examples\ColorPicker\Advanced\GridPanel\config.xml" />
