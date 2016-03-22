@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<example>
+    <description>
+        <![CDATA[Demonstrates how to add a component column with the advanced Color Picker component in a grid.]]>
+    </description>
+  <tags>grid, gridPanel, panel, colorpick, color, color picker, picker</tags>
+</example>
