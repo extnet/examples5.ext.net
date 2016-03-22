@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Advanced Color Picker - Ext.NET Examples</title>
+    <title>Advanced Color Picker Components - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script type="text/javascript">
@@ -14,7 +14,7 @@
 
         var onShowMoreLess = function (button) {
             this.up('panel').getViewModel().set('full', button.value == "true" ? true : false);
-        }
+        };
 
         var handleWindowResize = function (window, adjWidth, adjHeight) {
             var viewHeight = Ext.getWin().el.dom.innerHeight;
@@ -29,19 +29,27 @@
             }
 
             window.setPosition(curPos[0], targetY);
-        }
+        };
     </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>Advanced Color Picker</h1>
+        <h1>Advanced Color Picker Components</h1>
 
         This example reproduces the <a href="http://examples.sencha.com/extjs/6.0.1/examples/kitchensink/#form-color-picker" target="_blank">Forms > Color Picker</a> sencha example available on their examples' kitchen sink.
 
-        <ext:Window runat="server" ID="pn1" Width="600" MinWidth="550" Resizable="true" BodyPadding="5" Frame="true"
-            Title="Color Picker Components" Layout="VBoxLayout">
+        <ext:Window 
+            runat="server" 
+            Width="600" 
+            MinWidth="550" 
+            Resizable="true" 
+            BodyPadding="5" 
+            Frame="true"
+            Title="Color Picker Components" 
+            Layout="VBoxLayout"
+            Draggable="false">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

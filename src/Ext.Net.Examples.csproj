@@ -486,14 +486,12 @@
     <Content Include="Examples\Chart\Scatter\Custom_Icons\Default.aspx" />
     <Content Include="Examples\Chart\Scatter\Renderer\config.xml" />
     <Content Include="Examples\Chart\Scatter\Renderer\Default.aspx" />
-    <Content Include="Examples\ColorPicker\Advanced\config.xml" />
-    <Content Include="Examples\ColorPicker\Advanced\Advanced\config.xml" />
-    <Content Include="Examples\ColorPicker\Advanced\Advanced\Default.aspx" />
+    <Content Include="Examples\ColorPicker\Advanced\Components\config.xml" />
+    <Content Include="Examples\ColorPicker\Advanced\Components\Default.aspx" />
     <Content Include="Examples\ColorPicker\Advanced\Overview\config.xml" />
     <Content Include="Examples\ColorPicker\Advanced\Overview\Default.aspx" />
     <Content Include="Examples\ColorPicker\Advanced\GridPanel\config.xml" />
     <Content Include="Examples\ColorPicker\Advanced\GridPanel\Default.aspx" />
-    <Content Include="Examples\ColorPicker\Advanced\GridPanel\thumbnail.png" />
     <Content Include="Examples\Combination_Samples\Applications\Simple_Tasks\config.xml" />
     <Content Include="Examples\Combination_Samples\Applications\Simple_Tasks\Default.aspx" />
     <Content Include="Examples\Combination_Samples\Applications\Simple_Tasks\Reset.aspx" />

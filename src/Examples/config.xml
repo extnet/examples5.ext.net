@@ -6,9 +6,9 @@
   </order>
 
   <new version="4.0.0">
-    <folder name="ColorPicker\Advanced\Overview" />
-    <folder name="ColorPicker\Advanced\Advanced" />
+    <folder name="ColorPicker\Advanced\Components" />
     <folder name="ColorPicker\Advanced\GridPanel" />
+    <folder name="ColorPicker\Advanced\Overview" />
     <folder name="GridPanel\Spreadsheet\Clipboard" />
     <folder name="GridPanel\Spreadsheet\Initial_Selection" />
     <folder name="GridPanel\Spreadsheet\Locking" />

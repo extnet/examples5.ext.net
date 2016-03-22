@@ -1,29 +1,39 @@
 <%@ Page Language="C#" %>
 
+<script runat="server">
+    protected void HandleFieldChange(object sender, DirectEventArgs dea)
+    {
+        var previousColor = dea.ExtraParams["previousColor"];
+        var color = dea.ExtraParams["color"];
+        Label2.Text = "From server-side handler (direct event): Changed color from " + previousColor + " to " + color + ".";
+    }
+</script>
+
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title>Advanced Color Picker components' Overview - Ext.NET Examples</title>
+    <title>Advanced Color Picker Components Overview - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        var handleColorButtonChange = function (item, color, previousColor) {
+            // Only try to fill the label contents when the label is registered.
+            if (App.Label1) {
+                App.Label1.setText('From client-side handler (listener): Changed color from ' + previousColor + ' to ' + color + '.');
+            }
+        };
+    </script>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Advanced Color Picker components' Overview</h1>
+        <h1>Advanced Color Picker Components Overview</h1>
 
         <h2>1. Button</h2>
         <h3>This is a simple color button. When the color is changed, a client-side event is triggered filling an (initially empty) label just below the button with a descriptive text of the change.</h3>
 
-        <script type="text/javascript">
-            var handleColorButtonChange = function (item, color, previousColor) {
-                // Only try to fill the label contents when the label is registered.
-                if (App.Label1) {
-                    App.Label1.setText('From client-side handler (listener): Changed color from ' + previousColor + ' to ' + color + '.');
-                }
-            }
-        </script>
         <ext:ColorButton ID="ColorButton1" runat="server">
             <Listeners>
                 <Change Fn="handleColorButtonChange" />
@@ -35,15 +45,6 @@
         <hr />
         <h2>2. Field</h2>
         <h3>A simple ColorField that will trigger a server-side direct event to fill an (initially empty) label just below the field with a descriptive text of the change.</h3>
-
-        <script runat="server">
-            protected void HandleFieldChange(object sender, DirectEventArgs dea)
-            {
-                var previousColor = dea.ExtraParams["previousColor"];
-                var color = dea.ExtraParams["color"];
-                Label2.Text = "From server-side handler (direct event): Changed color from " + previousColor + " to " + color + ".";
-            }
-        </script>
 
         <ext:ColorField ID="ColorField1" runat="server">
             <DirectEvents>
@@ -60,10 +61,10 @@
 
         <hr />
         <h2>3. Selector</h2>
-        <h3>
-            The color selector itself, with 'ok' and 'cancel' buttons enabled directly, as well as
+        <h3>The color selector itself, with 'ok' and 'cancel' buttons enabled directly, as well as
             custom client-side JavaScript handlers for either buttons, updating a text label below
             on click.
+           
             <br />
             The selector is set up to return colors with the sharp symbol and also alpha byte, i.e.
             following the format #rrggbbaa (lowercase hexadecimal characters).

@@ -58,7 +58,7 @@
 
     <style>
         .x-grid-row-over .x-grid-cell-inner {
-            font-weight : bold;
+            font-weight: bold;
         }
     </style>
 
@@ -80,7 +80,6 @@
     <h1>Grid Panel using Color Field in Component Column</h1>
 
     <ext:GridPanel
-        ID="GridPanel1"
         runat="server"
         Title="Array Grid"
         Width="800"
