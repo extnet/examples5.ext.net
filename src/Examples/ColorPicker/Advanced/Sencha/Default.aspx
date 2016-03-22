@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Advanced Color Picker combination - Ext.NET Examples</title>
+    <title>Advanced Color Picker - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script type="text/javascript">
@@ -36,7 +36,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
         
-        <h1>Advanced Color Picker combination - From Sencha Example</h1>
+        <h1>Advanced Color Picker</h1>
 
         This example reproduces the <a href="http://examples.sencha.com/extjs/6.0.1/examples/kitchensink/#form-color-picker" target="_blank">Forms > Color Picker</a> sencha example available on their examples' kitchen sink.
 
