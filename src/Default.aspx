@@ -89,7 +89,7 @@
 <html>
 <head runat="server">
     <title>Ext.NET Examples - ASP.NET (Web Forms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</title>
-    <link rel="stylesheet" href="resources/css/main.css?v=1.0.0" />
+    <link rel="stylesheet" href="resources/css/main.css?v=1.0.1" />
     <link rel="shortcut icon" href="favicon.ico" />
 
     <script src="resources/js/perfect-scrollbar.min.js"></script>
@@ -135,7 +135,7 @@
                                         Cls="platform-selector"
                                         runat="server"
                                         Width="450px"
-                                        Text="Web Forms Examples Explorer (4.0 Beta)"
+                                        Text="Web Forms Examples Explorer (4.0 RC)"
                                         Height="70px"
                                         ArrowVisible="false">
                                         <Menu >
@@ -143,7 +143,7 @@
                                                 <Items>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Examples Explorer (4.0 Beta)"
+                                                        Text="MVC Examples Explorer (4.0 RC)"
                                                         Href="http://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="448px"
