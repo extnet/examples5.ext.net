@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <h1>BUILD CROSS-BROWSER ENTERPRISE LEVEL APPS FASTER <span>WITH <span class="blue">100+ COMPONENTS AND 600+ EXAMPLES</span></span></h1>
+                <h1>BUILD CROSS-BROWSER ENTERPRISE LEVEL APPS FASTER <span>WITH <span class="blue">100+ COMPONENTS AND 750+ EXAMPLES</span></span></h1>
                 <div class="welcome-cards">
 
                     <div class="welcome-card">
