@@ -135,7 +135,7 @@
                                         Cls="platform-selector"
                                         runat="server"
                                         Width="450px"
-                                        Text="Web Forms Examples Explorer (4.0 RC)"
+                                        Text="Web Forms Examples Explorer (4.0)"
                                         Height="70px"
                                         ArrowVisible="false">
                                         <Menu >
@@ -143,7 +143,7 @@
                                                 <Items>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Examples Explorer (4.0 RC)"
+                                                        Text="MVC Examples Explorer (4.0)"
                                                         Href="http://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="448px"
