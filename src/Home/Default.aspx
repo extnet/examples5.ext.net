@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../resources/css/main.css?v=1.0.1" />
+    <link rel="stylesheet" href="../resources/css/main.css?v=1.0.2" />
 
     <script>
         Ext.onReady(function () {
@@ -28,13 +28,13 @@
                 <div class="ext4-notification">
                     <div class="notification-container">
                         <div class="notification-img">
-                            <img src="../resources/images/extdotnet4-rc.svg">
+                            <img src="../resources/images/extdotnet4-release.svg">
                         </div>
                         <div class="notification-text">
-                            The Ext.NET 4 RC release is now available! Several important defects reported during the Beta release have been fixed, thanks to our great Community. Only one step left to the final release now.
+                            The Ext.NET team is thrilled to announce the official release of Ext.NET 4, including the new Spreadsheet Selection Model, Triton Theme and 3D Pie Charts!
                         </div>
                         <div class="notification-action">
-                            <a href="http://ext.net/ext-net-4-rc-now-available/" class="btn-notification">Read More</a>
+                            <a href="http://ext.net/ext-net-4-0-now-available/" class="btn-notification">Read More</a>
                         </div>
                     </div>
                 </div>
