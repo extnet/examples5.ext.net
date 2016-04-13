@@ -75,7 +75,7 @@
 
         <h1>Toolbar with Menus</h1>
 
-        <ext:Toolbar runat="server" Width="750">
+        <ext:Toolbar runat="server" Width="822">
             <Items>
                 <ext:Button ID="MenuButton" runat="server" Text="Button w/Menu" Icon="ArrowDown">
                     <Menu>
@@ -175,7 +175,7 @@
             </Items>
         </ext:Toolbar>
 
-        <div id="notificationArea" style="width: 750px; padding: 10px; border: 1px solid black; height: 40px;"></div>
+        <div id="notificationArea" style="width: 800px; padding: 10px; border: 1px solid black; height: 40px;"></div>
     </form>
 </body>
 </html>
