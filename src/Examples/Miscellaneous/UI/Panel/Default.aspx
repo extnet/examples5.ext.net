@@ -73,7 +73,7 @@
         <ext:Panel
             runat="server"
             Width="800"
-            Height="250"
+            Height="350"
             Title="Tools"
             UI="Primary"
             Frame="true"

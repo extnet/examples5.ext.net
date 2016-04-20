@@ -45,6 +45,7 @@
 <html>
 <head runat="server">
     <title>Button UI Styles - Ext.NET Examples</title>
+    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body style="padding: 30px;">
     <form runat="server">
@@ -56,177 +57,178 @@
             FieldLabel="Theme"
             AutoPostBack="true" />
 
-        <p>To use color buttons styles just set UI property of Button: </p>
+        <br/>
+        <p>To use color buttons styles just set <code>UI</code> property of Button: </p>
 
-        <pre>
-            &lt;ext:Button runat="server" Text="Small" UI="Primary" /&gt;
-        </pre>
+        <pre class="code">
+&lt;ext:Button runat="server" Text="Small" UI="Primary" /&gt;
+</pre>
 
-        <h1>Default</h1>
+        <h2>Default</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" />
                 <ext:Button runat="server" Text="Large" Scale="Large" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" />
+                <ext:Button runat="server" Text="Menu" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" />
+                <ext:SplitButton runat="server" Text="Split" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" />
             </Items>
         </ext:Container>
 
-        <h1>Primary (UI="Primary")</h1>
+        <h2>Primary (UI="Primary")</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
-                <ext:HBoxLayoutConfig Align="Middle" />
+                <ext:HBoxLayoutConfig />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Primary" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Primary" />
                 <ext:Button runat="server" Text="Large" Scale="Large" UI="Primary" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" UI="Primary" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" UI="Primary" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" UI="Primary" />
+                <ext:Button runat="server" Text="Menu" UI="Primary" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Primary" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Primary" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" UI="Primary" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" UI="Primary" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" UI="Primary" />
+                <ext:SplitButton runat="server" Text="Split" UI="Primary" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Primary" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Primary" />
             </Items>
         </ext:Container>
 
-        <h1>Danger (UI="Danger")</h1>
+        <h2>Danger (UI="Danger")</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Danger" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Danger" />
                 <ext:Button runat="server" Text="Large" Scale="Large" UI="Danger" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" UI="Danger" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" UI="Danger" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" UI="Danger" />
+                <ext:Button runat="server" Text="Menu" UI="Danger" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Danger" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Danger" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" UI="Danger" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" UI="Danger" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" UI="Danger" />
+                <ext:SplitButton runat="server" Text="Split" UI="Danger" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Danger" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Danger" />
             </Items>
         </ext:Container>
 
-        <h1>Info (UI="Info")</h1>
+        <h2>Info (UI="Info")</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Info" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Info" />
                 <ext:Button runat="server" Text="Large" Scale="Large" UI="Info" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" UI="Info" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" UI="Info" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" UI="Info" />
+                <ext:Button runat="server" Text="Menu" UI="Info" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Info" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Info" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" UI="Info" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" UI="Info" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" UI="Info" />
+                <ext:SplitButton runat="server" Text="Split" UI="Info" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Info" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Info" />
             </Items>
         </ext:Container>
 
-        <h1>Success (UI="Success")</h1>
+        <h2>Success (UI="Success")</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Success" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Success" />
                 <ext:Button runat="server" Text="Large" Scale="Large" UI="Success" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" UI="Success" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" UI="Success" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" UI="Success" />
+                <ext:Button runat="server" Text="Menu" UI="Success" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Success" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Success" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" UI="Success" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" UI="Success" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" UI="Success" />
+                <ext:SplitButton runat="server" Text="Split" UI="Success" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Success" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Success" />
             </Items>
         </ext:Container>
 
-        <h1>Warning (UI="Warning")</h1>
+        <h2>Warning (UI="Warning")</h2>
 
         <ext:Container runat="server">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
-                <ext:Parameter Name="margin" Value="5" Mode="Raw" />
+                <ext:Parameter Name="margin" Value="3" Mode="Raw" />
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Warning" />
                 <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Warning" />
                 <ext:Button runat="server" Text="Large" Scale="Large" UI="Warning" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:Button runat="server" Text="Menu Small" UI="Warning" />
-                <ext:Button runat="server" Text="Menu Medium" Scale="Medium" UI="Warning" />
-                <ext:Button runat="server" Text="Menu Large" Scale="Large" UI="Warning" />
+                <ext:Button runat="server" Text="Menu" UI="Warning" />
+                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Warning" />
+                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Warning" />
 
-                <ext:Component runat="server" Width="50" />
+                <ext:Component runat="server" Width="25" />
 
-                <ext:SplitButton runat="server" Text="Split Small" UI="Warning" />
-                <ext:SplitButton runat="server" Text="Split Medium" Scale="Medium" UI="Warning" />
-                <ext:SplitButton runat="server" Text="Split Large" Scale="Large" UI="Warning" />
+                <ext:SplitButton runat="server" Text="Split" UI="Warning" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Warning" />
+                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Warning" />
             </Items>
         </ext:Container>
     </form>

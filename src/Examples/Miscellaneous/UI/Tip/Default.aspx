@@ -39,31 +39,31 @@
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
             </Defaults>
             <Items>
-                <ext:Button runat="server" Text="Tooltip: Primary">
+                <ext:Button runat="server" Text="Tooltip: Primary" UI="Primary">
                     <ToolTips>
                         <ext:ToolTip runat="server" Title="Title" Html="UI = 'Primary'" UI="Primary" />
                     </ToolTips>
                 </ext:Button>
 
-                <ext:Button runat="server" Text="Tooltip: Success">
+                <ext:Button runat="server" Text="Tooltip: Success" UI="Success">
                     <ToolTips>
                         <ext:ToolTip runat="server" Title="Title" Html="UI = 'Success'" UI="Success" />
                     </ToolTips>
                 </ext:Button>
 
-                <ext:Button runat="server" Text="Tooltip: Info">
+                <ext:Button runat="server" Text="Tooltip: Info" UI="Info">
                     <ToolTips>
                         <ext:ToolTip runat="server" Title="Title" Html="UI = 'Info'" UI="Info" />
                     </ToolTips>
                 </ext:Button>
 
-                <ext:Button runat="server" Text="Tooltip: Danger">
+                <ext:Button runat="server" Text="Tooltip: Danger" UI="Danger">
                     <ToolTips>
                         <ext:ToolTip runat="server" Title="Title" Html="UI = 'Danger'" UI="Danger" />
                     </ToolTips>
                 </ext:Button>
 
-                <ext:Button runat="server" Text="Tooltip: Warning">
+                <ext:Button runat="server" Text="Tooltip: Warning" UI="Warning">
                     <ToolTips>
                         <ext:ToolTip
                             runat="server"

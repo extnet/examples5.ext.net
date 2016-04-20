@@ -44,7 +44,7 @@
             ID="Window1"
             runat="server"
             Title="Window"
-            Width="500"
+            Width="600"
             Height="300"
             BodyPadding="10">
             <Tools>
@@ -68,7 +68,7 @@
                 <ext:Tool Type="Print" />
             </Tools>
             <Items>
-                <ext:ComboBox runat="server" FieldLabel="UI" Editable="false">
+                <ext:ComboBox runat="server" FieldLabel="Choose UI" Editable="false">
                     <Items>
                         <ext:ListItem Text="default" />
                         <ext:ListItem Text="primary" />

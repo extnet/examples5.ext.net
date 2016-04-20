@@ -54,7 +54,10 @@ namespace Ext.Net.Examples.Examples.Miscellaneous.UI.Shared
         {
             foreach (var theme in ThemeList)
             {
-                comboBox.AddItem(theme.ToString(), ((int)theme).ToString());
+                if (theme != Theme.Aria) // Aria theme is not supported for UI
+                {
+                    comboBox.AddItem(theme.ToString(), ((int)theme).ToString());
+                }
             }
         }
     }
