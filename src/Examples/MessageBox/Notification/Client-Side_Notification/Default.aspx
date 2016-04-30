@@ -8,7 +8,44 @@
     {
         if (!X.IsAjaxRequest)
         {
+            var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+
             this.ResourceManager1.RegisterIcon(Icon.Information);
+
+            Window1.Width = 250;
+            Window1.Height = 350;
+
+            switch (curTheme.Theme)
+            {
+                case Ext.Net.Theme.Triton:
+                    Window1.Width = 310;
+                    Window1.Height = 556;
+                    break;
+                case Ext.Net.Theme.CrispTouch:
+                    Window1.Width = 330;
+                    Window1.Height = 525;
+                    break;
+                case Ext.Net.Theme.Gray:
+                case Ext.Net.Theme.Default:
+                    //Window1.Height = 503; // left comment as an example/reference
+                    break;
+                case Ext.Net.Theme.Crisp:
+                    Window1.Width = 275;
+                    Window1.Height = 391;
+                    break;
+                case Ext.Net.Theme.Neptune:
+                    Window1.Width = 290;
+                    Window1.Height = 427;
+                    break;
+                case Ext.Net.Theme.Aria:
+                    Window1.Width = 320;
+                    Window1.Height = 427;
+                    break;
+                case Ext.Net.Theme.NeptuneTouch:
+                    Window1.Width = 340;
+                    Window1.Height = 559;
+                    break;
+            }
         }
     }
 </script>
@@ -36,8 +73,6 @@
         ID="Window1"
         runat="server"
         Title="Notifications"
-        Width="300"
-        Height="400"
         Layout="Accordion">
         <Items>
             <ext:MenuPanel runat="server" Title="Basic Align" SaveSelection="false">
