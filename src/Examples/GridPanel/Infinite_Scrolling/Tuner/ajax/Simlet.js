@@ -1,6 +1,4 @@
 /**
- * @author Don Griffin
- *
  * This is a base class for more advanced "simlets" (simulated servers). A simlet is asked
  * to provide a response given a {@link Ext.ux.ajax.SimXhr} instance.
  */
@@ -33,7 +31,7 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
 
         isSimlet: true,
 
-        responseProps: ['responseText', 'responseXML', 'status', 'statusText'],
+        responseProps: ['responseText', 'responseXML', 'status', 'statusText', 'responseHeaders'],
 
         /**
          * @cfg {Number} responseText
@@ -73,7 +71,7 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
 
             return ret;
         },
-
+        
         doPost: function (ctx) {
             var me = this,
                 ret = {};
@@ -91,13 +89,20 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
             return false;
         },
 
+        doDelete: function (ctx) {
+            var me = this,
+                xhr = ctx.xhr,
+                records = xhr.options.records;
+            me.removeFromData(ctx,records);
+        },
+
         /**
          * Performs the action requested by the given XHR and returns an object to be applied
          * on to the XHR (containing `status`, `responseText`, etc.). For the most part,
          * this is delegated to `doMethod` methods on this class, such as `doGet`.
          *
          * @param {Ext.ux.ajax.SimXhr} xhr The simulated XMLHttpRequest instance.
-         * @returns {Object} The response properties to add to the XMLHttpRequest.
+         * @return {Object} The response properties to add to the XMLHttpRequest.
          */
         exec: function (xhr) {
             var me = this,
@@ -127,7 +132,9 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
             var ctx = this.getCtx(method, url),
                 redirect = this.doRedirect(ctx),
                 xhr;
-
+            if (options.action === 'destroy'){
+                method = 'delete';
+            }
             if (redirect) {
                 xhr = redirect;
             } else {
@@ -138,7 +145,7 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
                 });
                 xhr.open(method, url, async);
             }
-
+            
             return xhr;
         },
 
@@ -189,6 +196,23 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
                 url = Ext.urlAppend(url, Ext.Object.toQueryString(params));
             }
             return this.manager.openRequest(method, url);
+        },
+
+        removeFromData: function(ctx, records) {
+            var me = this,
+                data = me.getData(ctx),
+                model = (ctx.xhr.options.proxy && ctx.xhr.options.proxy.getModel()) || {},
+                idProperty = model.idProperty || 'id';
+
+            Ext.each(records, function(record) {
+                var id = record.get(idProperty);
+                for (var i = data.length; i-- > 0;) {
+                    if (data[i][idProperty] === id) {
+                        me.deleteRecord(i);
+                        break;
+                    }
+                }
+            });
         }
     };
 }());

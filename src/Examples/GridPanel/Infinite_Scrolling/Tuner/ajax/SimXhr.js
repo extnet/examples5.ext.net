@@ -1,6 +1,4 @@
 /**
- * @author Don Griffin
- *
  * Simulates an XMLHttpRequest object's methods and properties but is backed by a
  * {@link Ext.ux.ajax.Simlet} instance that provides the data.
  */
@@ -60,7 +58,7 @@ Ext.define('Ext.ux.ajax.SimXhr', {
     schedule: function () {
         var me = this,
             delay = me.mgr.delay;
-
+            
         if (delay) {
             me.timer = setTimeout(function () {
                 me.onTick();

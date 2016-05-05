@@ -1,6 +1,4 @@
 /**
- * @author Don Griffin
- *
  * This singleton manages simulated Ajax responses. This allows application logic to be
  * written unaware that its Ajax calls are being handled by simulations ("simlets"). This
  * is currently done by hooking {@link Ext.data.Connection} methods, so all users of that
@@ -99,7 +97,7 @@ Ext.define('Ext.ux.ajax.SimManager', {
         if (index > 0) {
             url = url.substring(0, index);
         }
-
+        
         for (i = 0; i < len; ++i) {
             simlet = simlets[i];
             simUrl = simlet.url;
@@ -130,7 +128,6 @@ Ext.define('Ext.ux.ajax.SimManager', {
      * Initializes this singleton and applies configuration options.
      * @param {Object} config An optional object with configuration properties to apply.
      * @return {Ext.ux.ajax.SimManager} this
-     * @markdown
      */
     init: function (config) {
         var me = this;
@@ -149,7 +146,7 @@ Ext.define('Ext.ux.ajax.SimManager', {
 
             me._openRequest = Ext.data.Connection.prototype.openRequest;
 
-            Ext.data.Connection.override({
+            Ext.data.request.Ajax.override({
                 openRequest: function (options, requestOptions, async) {
                     var xhr = !options.nosim &&
                               me.getXhr(requestOptions.method, requestOptions.url, options, async);
@@ -206,7 +203,6 @@ Ext.define('Ext.ux.ajax.SimManager', {
      * @param {Array/Object} simlet Either a {@link Ext.ux.ajax.Simlet} instance or config, an Array
      * of such elements or an Object keyed by URL with values that are {@link Ext.ux.ajax.Simlet}
      * instances or configs.
-     * @markdown
      */
     register: function (simlet) {
         var me = this;

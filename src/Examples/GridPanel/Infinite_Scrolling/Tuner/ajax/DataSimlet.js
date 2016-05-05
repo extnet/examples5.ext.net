@@ -56,6 +56,12 @@ Ext.define('Ext.ux.ajax.DataSimlet', function () {
             }
         },
 
+        deleteRecord : function(pos) {
+            if(this.data && typeof this.data !== 'function') {
+                Ext.Array.removeAt(this.data,pos); 
+            }
+        },
+
         fixTree: function (ctx, tree) {
             var me = this,
                 node = ctx.params.node,
@@ -85,7 +91,7 @@ Ext.define('Ext.ux.ajax.DataSimlet', function () {
         getData: function (ctx) {
             var me = this,
                 params = ctx.params,
-                order = (params.filter||'')+(params.group||'')+'-'+(params.sort||'')+'-'+(params.dir||''),
+                order = (params.filter || '') + (params.group || '') + '-' + (params.sort || '') + '-' + (params.dir || ''),
                 tree = me.tree,
                 dynamicData,
                 data, fields, sortFn;
@@ -100,7 +106,8 @@ Ext.define('Ext.ux.ajax.DataSimlet', function () {
                 data = data.call(this, ctx);
             }
 
-            if (!order || !data) {
+            // If order is '--' then it means we had no order passed, due to the string concat above
+            if (!data || order === '--') {
                 return data || [];
             }
 
@@ -141,7 +148,7 @@ Ext.define('Ext.ux.ajax.DataSimlet', function () {
 
             return data;
         },
-
+        
         processFilters: Ext.identityFn,
 
         getPage: function (ctx, data) {
