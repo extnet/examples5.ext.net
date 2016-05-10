@@ -135,7 +135,7 @@
                                         Cls="platform-selector"
                                         runat="server"
                                         Width="450px"
-                                        Text="Web Forms Examples Explorer (4.0)"
+                                        Text="Web Forms Examples Explorer (4.1)"
                                         Height="70px"
                                         ArrowVisible="false">
                                         <Menu >
@@ -143,7 +143,7 @@
                                                 <Items>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Examples Explorer (4.0)"
+                                                        Text="MVC Examples Explorer (4.1)"
                                                         Href="http://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="448px"
@@ -175,8 +175,8 @@
                 <Content>
                     <ul id="nav-menu" class="nav-menu">
                         <li class="section-title">Ext.NET 4</li>
-                        <li><a href="http://examples.ext.net/">Web Forms Examples (4.0)</a></li>
-                        <li><a href="http://mvc.ext.net/">MVC Examples (4.0)</a></li>
+                        <li><a href="http://examples.ext.net/">Web Forms Examples (4.1)</a></li>
+                        <li><a href="http://mvc.ext.net/">MVC Examples (4.1)</a></li>
                         <li class="separator"></li>
                         <li class="section-title">Ext.NET 3</li>
                         <li><a href="http://examples3.ext.net/">Web Forms Examples (3.3)</a></li>

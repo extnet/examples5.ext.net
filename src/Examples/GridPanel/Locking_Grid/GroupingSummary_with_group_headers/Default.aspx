@@ -273,9 +273,6 @@
                     </Items>
                 </ext:Toolbar>
             </TopBar>
-            <SelectionModel>
-                <ext:CellSelectionModel runat="server" />
-            </SelectionModel>
         </ext:GridPanel>
     </form>
   </body>
