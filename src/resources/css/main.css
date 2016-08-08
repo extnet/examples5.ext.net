@@ -50,7 +50,6 @@ body {
 .platform-selector {
     background-color: #1e486d;
     border-color: #1e486d;
-    z-index: 19500; /* Positon on top of the shadow */
     -webkit-transition: all 0.2s ease-in-out;
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;

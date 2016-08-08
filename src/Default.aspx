@@ -89,7 +89,7 @@
 <html>
 <head runat="server">
     <title>Ext.NET Examples - ASP.NET (Web Forms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</title>
-    <link rel="stylesheet" href="resources/css/main.css?v=1.0.2" />
+    <link rel="stylesheet" href="resources/css/main.css?v=1.0.3" />
     <link rel="shortcut icon" href="favicon.ico" />
 
     <script src="resources/js/perfect-scrollbar.min.js"></script>
