@@ -21,6 +21,15 @@ Ext.onReady(function () {
             Ps.update(sidebarRight);
         }
     });
+
+    Ext.select("[data-toggle='collapse'", true).on({
+        click: function (e) {
+            e.preventDefault();
+
+            this.toggleCls("collapsed");
+            Ext.get((this.getAttribute("data-target"))).toggleCls("collapsed");
+        }
+    });
 });
 
 var SEARCH_URL = "/search/",
