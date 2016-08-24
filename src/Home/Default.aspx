@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../resources/css/main.css?v=1.0.2" />
+    <link rel="stylesheet" href="../resources/css/main.css?v=1.0.4" />
 
     <script>
         Ext.onReady(function () {
@@ -25,16 +25,13 @@
     <ext:Container runat="server">
         <Content>
             <div class="container">
-                <div class="ext4-notification">
+                <div class="extnet-notification">
                     <div class="notification-container">
                         <div class="notification-img">
-                            <img src="../resources/images/extdotnet4-release.svg">
+                            <img src="../resources/images/extnet-mobile-release.svg">
                         </div>
                         <div class="notification-text">
-                            The Ext.NET team is thrilled to announce the official release of Ext.NET 4, including the new Spreadsheet Selection Model, Triton Theme and Advanced Color Picker!
-                        </div>
-                        <div class="notification-action">
-                            <a href="http://ext.net/ext-net-4-0-now-available/" class="btn-notification">Read More</a>
+                            We have been working hard on Ext.NET Mobile and are happy to announce a Beta release is now available. Ext.NET Mobile is an ASP.NET component framework for building Phone and Tablet specific mobile web applications. <a href="http://ext.net/ext-net-mobile-beta-now-available/">Read more here</a>
                         </div>
                     </div>
                 </div>
