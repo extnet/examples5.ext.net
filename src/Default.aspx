@@ -134,8 +134,8 @@
                                     <ext:Button
                                         Cls="platform-selector"
                                         runat="server"
-                                        Width="450px"
-                                        Text="Web Forms Examples Explorer (4.1)"
+                                        Width="360px"
+                                        Text="Web Forms Examples (4.1)"
                                         Height="70px"
                                         ArrowVisible="false">
                                         <Menu >
@@ -143,10 +143,24 @@
                                                 <Items>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Examples Explorer (4.1)"
+                                                        Text="MVC Examples (4.1)"
                                                         Href="http://mvc.ext.net/"
                                                         Height="70px"
-                                                        Width="448px"
+                                                        Width="358px"
+                                                        Padding="12"/>
+                                                    <ext:MenuItem
+                                                        runat="server"
+                                                        Text="Mobile Examples (4.1)"
+                                                        Href="http://mobile.ext.net/"
+                                                        Height="70px"
+                                                        Width="358px"
+                                                        Padding="12"/>
+                                                    <ext:MenuItem
+                                                        runat="server"
+                                                        Text="MVC Mobile Examples (4.1)"
+                                                        Href="http://mvc.mobile.ext.net/"
+                                                        Height="70px"
+                                                        Width="358px"
                                                         Padding="12"/>
                                                 </Items>
                                             </ext:Menu>
