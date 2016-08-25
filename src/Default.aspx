@@ -203,7 +203,7 @@
                         <li class="separator"></li>
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#archives"><i class="fa collapse-icon"></i> Archives</a>
-                            <ul class="collapse" id="#archives">
+                            <ul class="collapse" id="archives">
                                 <li class="section-title">Ext.NET 3</li>
                                 <li><a href="http://examples3.ext.net/">Web Forms Examples (3.3)</a></li>
                                 <li><a href="http://mvc3.ext.net/">MVC Examples (3.3)</a></li>

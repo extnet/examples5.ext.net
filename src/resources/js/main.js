@@ -27,7 +27,7 @@ Ext.onReady(function () {
             e.preventDefault();
 
             this.toggleCls("expanded");
-            Ext.get((this.getAttribute("data-target"))).toggleCls("expanded");
+            Ext.get((this.getAttribute("data-target")).substring(1)).toggleCls("expanded");
         }
     });
 });
