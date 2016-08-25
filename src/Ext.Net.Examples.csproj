@@ -1270,6 +1270,7 @@
     <Content Include="Examples\Data_Binding\Basic\Model_Validation\customers.json" />
     <Content Include="Examples\Data_Binding\Basic\Isolated_Child_Sessions\customers.json" />
     <Content Include="Examples\Data_Binding\Basic\Isolated_Child_Sessions\orders.json" />
+    <Content Include="resources\js\perfect-scrollbar.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

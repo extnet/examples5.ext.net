@@ -89,11 +89,11 @@
 <html>
 <head runat="server">
     <title>Ext.NET Examples - ASP.NET (Web Forms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</title>
-    <link rel="stylesheet" href="resources/css/main.css?v=1.0.4" />
+    <link rel="stylesheet" href="resources/css/main.css?4.1.0.0" />
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <script src="resources/js/perfect-scrollbar.min.js"></script>
-    <script src="resources/js/main.js"></script>
+    <script src="resources/js/perfect-scrollbar.min.js?0.6.8"></script>
+    <script src="resources/js/main.js?4.1.0.0"></script>
 
     <script>
         // A workaround for the GitHub issue #915
