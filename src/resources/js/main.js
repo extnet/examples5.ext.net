@@ -26,8 +26,8 @@ Ext.onReady(function () {
         click: function (e) {
             e.preventDefault();
 
-            this.toggleCls("collapsed");
-            Ext.get((this.getAttribute("data-target"))).toggleCls("collapsed");
+            this.toggleCls("expanded");
+            Ext.get((this.getAttribute("data-target"))).toggleCls("expanded");
         }
     });
 });

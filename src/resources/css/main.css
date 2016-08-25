@@ -447,23 +447,23 @@ body {
 /* Collapse */
 
 .collapse {
-    max-height: 265px;
+    max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: all 0.35s ease-in-out;
-         -o-transition: all 0.35s ease-in-out;
-            transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 }
 
-.collapse.collapsed {
-    max-height: 0;
+.collapse.expanded {
+    max-height: 265px;
 }
 
 .collapse-icon:before {
-    content: "\f068";
+    content: "\f067";
 }
 
-.collapsed .collapse-icon:before {
-    content: "\f067";
+.expanded .collapse-icon:before {
+    content: "\f068";
 }
 
 /*  Misc
