@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../resources/css/main.css?4.1.0.0" />
+    <link rel="stylesheet" href="../resources/css/main.css?4.1.0.1" />
 
     <script>
         Ext.onReady(function () {
@@ -28,10 +28,10 @@
                 <div class="extnet-notification">
                     <div class="notification-container">
                         <div class="notification-img">
-                            <img src="../resources/images/extnet-mobile-release.svg">
+                            <img src="../resources/images/extnet-mobile-final.svg">
                         </div>
                         <div class="notification-text">
-                            We have been working hard on Ext.NET Mobile and are happy to announce a Beta release is now available. Ext.NET Mobile is an ASP.NET component framework for building Phone and Tablet specific mobile web applications. <a href="http://ext.net/ext-net-mobile-beta-now-available/">Read more here</a>
+                            The official release of <strong>Ext.NET Mobile</strong> is now available. Ext.NET Mobile is an ASP.NET component framework for building Phone and Tablet specific mobile web applications. <a href="http://ext.net/ext-net-mobile-final-now-available/">Read More</a>
                         </div>
                     </div>
                 </div>

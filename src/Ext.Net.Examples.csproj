@@ -1241,7 +1241,7 @@
     <Content Include="resources\images\ee-ad-content.png" />
     <Content Include="resources\images\ee-ad-store-bg.png" />
     <Content Include="resources\images\extdotnet-logo.svg" />
-    <Content Include="resources\images\extnet-mobile-release.svg" />
+    <Content Include="resources\images\extnet-mobile-final.svg" />
     <Content Include="resources\images\grey.png" />
     <Content Include="resources\images\grid-badge-bg.png" />
     <Content Include="resources\images\grid.png" />
