@@ -88,7 +88,11 @@
 
 <html>
 <head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ext.NET Examples - ASP.NET (Web Forms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="resources/css/main.css?4.1.0.1" />
     <link rel="shortcut icon" href="favicon.ico" />
 
@@ -117,6 +121,42 @@
 
     <ext:Viewport runat="server" Layout="BorderLayout">
         <Items>
+            <ext:Container
+                ID="RedirectOverlay"
+                runat="server"
+                Cls="redirect-overlay"
+                WidthSpec="80%"
+                Modal="true"
+                Floating="true">
+                <LayoutConfig>
+                    <ext:VBoxLayoutConfig Align="Stretch" />
+                </LayoutConfig>
+                <Items>
+                    <ext:Component
+                        Cls="redirect-overlay-body"
+                        runat="server"
+                        Html="<p>Looks like you are browsing from a phone or a tablet device. Would you like to redirect to Ext.NET Mobile examples?</p>"/>
+
+                    <ext:Button
+                        runat="server"
+                        Text="Redirect"
+                        Flex="1"
+                        Handler="onRedirect" />
+
+                    <ext:Button
+                        runat="server"
+                        Text="Stay here"
+                        Flex="1"
+                        Handler="onStay" />
+
+                    <ext:Checkbox
+                        ID="RememberCheckbox"
+                        Cls="remember-me"
+                        runat="server"
+                        BoxLabel="Remember my choice" />
+                </Items>
+            </ext:Container>
+
             <ext:Panel
                 runat="server"
                 Header="false"
