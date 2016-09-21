@@ -97,7 +97,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
 
     <script src="resources/js/perfect-scrollbar.min.js?0.6.8"></script>
-    <script src="resources/js/main.js?4.1.0.0"></script>
+    <script src="resources/js/main.js?4.1.0.1"></script>
 
     <script>
         // A workaround for the GitHub issue #915
