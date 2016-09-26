@@ -2,6 +2,34 @@
 
 <!DOCTYPE html>
 
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!X.IsAjaxRequest && !IsPostBack)
+        {
+            var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+
+            switch (curTheme.Theme)
+            {
+                case Ext.Net.Theme.Triton:
+                    Container1.Width = 640;
+                    break;
+                case Ext.Net.Theme.CrispTouch:
+                case Ext.Net.Theme.NeptuneTouch:
+                    Container1.Width = 584;
+                    break;
+                case Ext.Net.Theme.Aria:
+                case Ext.Net.Theme.Crisp:
+                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Gray:
+                case Ext.Net.Theme.Neptune:
+                    Container1.Width = 580;
+                    break;
+            }
+        }
+    }
+</script>
+
 <html>
 <head runat="server">
     <title>Overview of Date and Month Fields - Ext.NET Examples</title>
@@ -13,7 +41,7 @@
 
         <h1>Overview of Date and Month Fields</h1>
 
-        <ext:Container runat="server" Width="500">
+        <ext:Container ID="Container1" runat="server">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Center" />
             </LayoutConfig>
