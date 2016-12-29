@@ -1327,8 +1327,6 @@
     <Content Include="Examples\DragDrop\Advanced\Checkbox_Selector\Default.aspx" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\config.xml" />
     <Content Include="Examples\DragDrop\Advanced\DragTracker\Default.aspx" />
-    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\config.xml" />
-    <Content Include="Examples\Draw\Editor\Basic\FormPanel_Labels\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\Overview\config.xml" />
     <Content Include="Examples\Form\DropDownField\Overview\Default.aspx" />
     <Content Include="Examples\Form\DropDownField\ValueText_Mode\config.xml" />
@@ -1547,9 +1545,6 @@
     <Content Include="Examples\Desktop\Introduction\Overview\thumbnail.gif" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\user48x48.png" />
     <Content Include="Examples\Desktop\Introduction\Overview\resources\window48x48.png" />
-    <Content Include="Examples\Draw\Editor\Basic\Overview\config.xml" />
-    <Content Include="Examples\Draw\Editor\Basic\Overview\Default.aspx" />
-    <Content Include="Examples\Draw\Editor\config.xml" />
     <Content Include="Examples\Events\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\config.xml" />
     <Content Include="Examples\Events\DirectEvents\Overview\Default.aspx" />
@@ -1919,7 +1914,9 @@
     <Content Include="Examples\GridPanel\Miscellaneous\Numbered_Rows\config.xml" />
     <Content Include="Examples\GridPanel\Miscellaneous\Numbered_Rows\Default.aspx" />
     <Content Include="Examples\GridPanel\Shared\examples.js" />
-    <Content Include="Examples\GridPanel\Shared\Plants.xml" />
+    <Content Include="Examples\GridPanel\Shared\Plants.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Examples\GridPanel\Shared\Plants.xsl" />
     <Content Include="Examples\GridPanel\DataSource_Controls\XmlDataSource\thumbnail.png" />
     <Content Include="Examples\GridPanel\Layout\FitLayout\config.xml" />

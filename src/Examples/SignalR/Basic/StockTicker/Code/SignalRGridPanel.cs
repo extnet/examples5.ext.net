@@ -93,18 +93,18 @@ namespace Ext.Net.Examples
             ColumnModel.Columns.AddRange(new []
             {
                 new Column { Flex=1, DataIndex="Symbol", Text="Symbol" },
-                new Column { Width=70, DataIndex="Price", Text="Price", Align=Alignment.Right },
-                new Column { Width=70, DataIndex="DayOpen", Text="Open", Align=Alignment.Right },
-                new Column { Width=70, DataIndex="DayHigh", Text="High", Align=Alignment.Right },
-                new Column { Width=70, DataIndex="DayLow", Text="Low", Align=Alignment.Right },
+                new Column { Width=70, DataIndex="Price", Text="Price", Align=ColumnAlign.End },
+                new Column { Width=70, DataIndex="DayOpen", Text="Open", Align=ColumnAlign.End },
+                new Column { Width=70, DataIndex="DayHigh", Text="High", Align=ColumnAlign.End },
+                new Column { Width=70, DataIndex="DayLow", Text="Low", Align=ColumnAlign.End },
                 new Column
                 {
-                    Width=90, DataIndex="Symbol", Text="Direction", Align=Alignment.Center,
+                    Width=90, DataIndex="Symbol", Text="Direction", Align=ColumnAlign.Center,
                     Renderer = { Handler = "return #{" + ID + "}.renderDirection.apply(#{" + ID + "}, arguments);" }
                 },
-                new Column { Width=80, DataIndex="LastChange", Text="Change", Align=Alignment.Right },
-                new Column { Width=80, DataIndex="Change", Text="Change", Align=Alignment.Right },
-                new Column { Width=70, DataIndex="PercentChange", Text="%", Align=Alignment.Right }
+                new Column { Width=80, DataIndex="LastChange", Text="Change", Align=ColumnAlign.End },
+                new Column { Width=80, DataIndex="Change", Text="Change", Align=ColumnAlign.End },
+                new Column { Width=70, DataIndex="PercentChange", Text="%", Align=ColumnAlign.End }
             });
         }
 
