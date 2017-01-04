@@ -3,9 +3,22 @@
 <%@ Register Assembly="Ext.Net.Examples" Namespace="Ext.Net.Examples" TagPrefix="ext" %>
 
 <%@ Import Namespace="Microsoft.AspNet.SignalR" %>
+<%@ Import Namespace="Microsoft.AspNet.SignalR.Transports" %>
+<%@ Import Namespace="Owin" %>
 <%@ Import Namespace="System.Web.Routing" %>
 
 <!DOCTYPE html>
+
+<script runat="server">
+    public void Page_Load(object sender, EventArgs e)
+    {
+        if (!X.IsAjaxRequest)
+        {
+            var transportManager = GlobalHost.DependencyResolver.Resolve<ITransportManager>() as TransportManager;
+            transportManager.Remove("webSockets");
+        }
+    }
+</script>
 
 <html>
 <head runat="server">
@@ -22,7 +35,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <h1>SignalR Stock Ticker example using Ext.NET by <a href="http://forums.ext.net/member.php?562-anup" target="_blank">Anup<a></h1>
+    <h1>SignalR Stock Ticker example using Ext.NET by <a href="http://forums.ext.net/member.php?562-anup" target="_blank">Anup</a></h1>
 
     <p><a href="http://www.asp.net/signalr" target="_blank">SignalR</a> is an ASP.NET library making it easier to create real time web applications.</p>
 
