@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="../resources/css/main.css?4.1.0.1" />
+    <link rel="stylesheet" href="<%= "../resources/css/main.css?" + Ext.Net.Examples.ExtNetVersion.Full %>" />
 
     <script>
         Ext.onReady(function () {

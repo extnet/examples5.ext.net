@@ -5,6 +5,8 @@
 <%@ Import Namespace="Ext.Net.Examples" %>
 
 <script runat="server">
+    protected string mobileVersion = "4.1";
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -29,6 +31,9 @@
             {
                 this.Page.Cache.Remove("ExamplesTreeNodes");
             }
+
+            // Makes dynamic data to server controls be bound to the page (like version on title).
+            DataBind();
         }
     }
 
@@ -93,11 +98,11 @@
     <title>Ext.NET Examples - ASP.NET (Web Forms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="resources/css/main.css?4.1.0.2" />
+    <link rel="stylesheet" href="<%= "resources/css/main.css?" + ExtNetVersion.Full %>" />
     <link rel="shortcut icon" href="favicon.ico" />
 
     <script src="resources/js/perfect-scrollbar.min.js?0.6.8"></script>
-    <script src="resources/js/main.js?4.1.0.1"></script>
+    <script src="<%= "resources/js/main.js?" + ExtNetVersion.Full %>"></script>
 
     <script>
         // A workaround for the GitHub issue #915
@@ -175,29 +180,29 @@
                                         Cls="platform-selector"
                                         runat="server"
                                         Width="360px"
-                                        Text="Web Forms Examples (4.1)"
+                                        Text='<%# "Web Forms Examples (" + ExtNetVersion.Major + ")" %>'
                                         Height="70px"
                                         ArrowVisible="false">
                                         <Menu >
-                                            <ext:Menu Cls ="platform-selector-dropdown" Plain="true" runat="server">
+                                            <ext:Menu Cls="platform-selector-dropdown" Plain="true" runat="server">
                                                 <Items>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Examples (4.1)"
+                                                        Text='<%# "MVC Examples (" + ExtNetVersion.Major + ")" %>'
                                                         Href="http://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="358px"
                                                         Padding="12"/>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="Mobile Examples (4.1)"
+                                                        Text='<%# "Mobile Examples (" + mobileVersion + ")" %>'
                                                         Href="http://mobile.ext.net/"
                                                         Height="70px"
                                                         Width="358px"
                                                         Padding="12"/>
                                                     <ext:MenuItem
                                                         runat="server"
-                                                        Text="MVC Mobile Examples (4.1)"
+                                                        Text='<%# "MVC Mobile Examples (" + mobileVersion + ")" %>'
                                                         Href="http://mvc.mobile.ext.net/"
                                                         Height="70px"
                                                         Width="358px"
