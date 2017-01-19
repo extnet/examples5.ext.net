@@ -821,6 +821,10 @@
     <Content Include="Examples\TreePanel\Advanced\Locking_Buffer_Rendered_TreeGrid\Default.aspx" />
     <Content Include="Examples\TreePanel\Basic\Custom_Drop_Logic\config.xml" />
     <Content Include="Examples\TreePanel\Basic\Custom_Drop_Logic\Default.aspx" />
+    <Content Include="Examples\Window\Toast\Overview\config.xml" />
+    <Content Include="Examples\Window\Toast\Overview\Default.aspx" />
+    <Content Include="Examples\Window\Toast\Playground\config.xml" />
+    <Content Include="Examples\Window\Toast\Playground\Default.aspx" />
     <Content Include="Examples\XRender\UserControl\Lazy_Load\config.xml" />
     <Content Include="Examples\XRender\UserControl\Lazy_Load\Default.aspx" />
     <Content Include="Examples\XRender\UserControl\Lazy_Load\RegionUserControl.ascx" />
