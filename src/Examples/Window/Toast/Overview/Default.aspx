@@ -20,6 +20,7 @@
             html = "This toast was defined from code behind from an anonymous object!",
             title = "Object toast",
             align = JSON.EnumToString(ToastAlign.Right), // Map the enum to the client-side supported string.
+            anchor = "Button3",
             stickWhileHover = true,
             closable = true,
             closeOnMouseDown = true,
@@ -27,6 +28,8 @@
             autoCloseDelay = 2500
         };
 
+        X.Toast(toastObj);
+        return;
     }
 </script>
 
@@ -60,7 +63,7 @@
 
         <hr />
         <h2>4: Server-side toast defined with an object.</h2>
-        <ext:Button runat="server" OnDirectClick="Button1_Click" Text="Trigger Toast" />
+        <ext:Button runat="server" ID="Button3" OnDirectClick="Button3_Click" Text="Trigger Toast" />
 
         <hr />
         <h2>5: Markup toast</h2>
