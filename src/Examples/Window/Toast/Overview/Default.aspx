@@ -22,13 +22,30 @@
             align = JSON.EnumToString(ToastAlign.Right), // Map the enum to the client-side supported string.
             anchor = "Button3",
             stickWhileHover = true,
-            closable = true,
             closeOnMouseDown = true,
             autoClose = true,
             autoCloseDelay = 2500
         };
 
         X.Toast(toastObj);
+        return;
+    }
+
+    protected void Button4_Click(object sender, DirectEventArgs e)
+    {
+        var toastComp = new Toast()
+        {
+            Html = "This toast was defined from code behind from an Ext.Net.Toast component definition!",
+            Title = "Object toast",
+            Align = ToastAlign.Right,
+            Anchor = "Button3",
+            StickWhileHover = true,
+            CloseOnMouseDown = true,
+            AutoClose = true,
+            AutoCloseDelay = 2500
+        };
+
+        X.Toast(toastComp);
         return;
     }
 </script>
@@ -62,11 +79,15 @@
         <ext:Button runat="server" OnDirectClick="Button2_Click" Text="Trigger Toast" />
 
         <hr />
-        <h2>4: Server-side toast defined with an object.</h2>
+        <h2>4: Server-side toast defined with an anonymous object.</h2>
         <ext:Button runat="server" ID="Button3" OnDirectClick="Button3_Click" Text="Trigger Toast" />
 
         <hr />
-        <h2>5: Markup toast</h2>
+        <h2>5: Server-side toast defined with an Ext.Net.Toast component definition.</h2>
+        <ext:Button runat="server" ID="Button1" OnDirectClick="Button4_Click" Text="Trigger Toast" />
+
+        <hr />
+        <h2>6: Markup toast</h2>
         <p>
             See source code, the toast is displayed first, once the page loads.
         </p>

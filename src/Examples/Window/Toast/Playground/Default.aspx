@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
-        object toastObj;
+        Toast toastObj;
         
         // Simplest approach: only drop the message.
         if (!(enableTitle.Checked || enableToastAlign.Checked || enableExtra.Checked))
@@ -32,56 +32,49 @@
         // No title nor alignment, just extra settings (object override required)
         if (!(enableTitle.Checked || enableToastAlign.Checked))
         {
-            toastObj = new
+            toastObj = new Toast()
             {
-                html = toastText.Text,
-                stickWhileHover = stickWhileHover.Checked
+                Html = toastText.Text
             };
-            
-            X.Toast(toastObj);
-            return;
         }
 
         // Title but not alignment (from now on, only object overrides used)
-        if (enableTitle.Checked && !enableToastAlign.Checked)
+        else if (enableTitle.Checked && !enableToastAlign.Checked)
         {
-            toastObj = new
+            toastObj = new Toast()
             {
-                html = toastText.Text,
-                title = toastTitle.Text,
-                stickWhileHover = stickWhileHover.Checked
+                Html = toastText.Text,
+                Title = toastTitle.Text
             };
-
-            X.Toast(toastObj);
-            return;
         }
         
         // No title but alignment 
-        if (!enableTitle.Checked && enableToastAlign.Checked)
+        else if (!enableTitle.Checked && enableToastAlign.Checked)
         {
-            toastObj = new
+            toastObj = new Toast()
             {
-                html = toastText.Text,
-                align = (string)toastAlign.Value, // now we don't need to map it back to ToastAlign
-                stickWhileHover = stickWhileHover.Checked
+                Html = toastText.Text,
+                Align = fetchToastAlign()
             };
-
-            X.Toast(toastObj);
-            return;
         }
         
         // Everything enabled
-        toastObj = new
+        else
         {
-            html = toastText.Text,
-            title = toastTitle.Text,
-            align = (string)toastAlign.Value, // now we don't need to map it back to ToastAlign
-            stickWhileHover = stickWhileHover.Checked,
-            closable = closable.Checked,
-            closeOnMouseDown = closemd.Checked,
-            autoClose = autoClose.Checked,
-            autoCloseDelay = getAutoCloseDelay()
-        };
+            toastObj = new Toast()
+            {
+                Html = toastText.Text,
+                Title = toastTitle.Text,
+                Align = fetchToastAlign(),
+            };
+        }
+        
+        // Common settings bound to the toast
+        toastObj.StickWhileHover = stickWhileHover.Checked;
+        toastObj.Disabled = disabled.Checked;
+        toastObj.CloseOnMouseDown = closemd.Checked;
+        toastObj.AutoClose = autoClose.Checked;
+        toastObj.AutoCloseDelay = getAutoCloseDelay();
 
         X.Toast(toastObj);
         return;
@@ -194,7 +187,7 @@
                             </Defaults>
                             <Items>
                                 <ext:Checkbox runat="server" ID="stickWhileHover" FieldLabel="Stick the toast while mouse is over it" />
-                                <ext:Checkbox runat="server" ID="closable" FieldLabel="Show a button to close the toast" />
+                                <ext:Checkbox runat="server" ID="disabled" FieldLabel="Grayed out / disabled" />
                             </Items>
                         </ext:Container>
                         <ext:Container runat="server" Layout="HBoxLayout">
@@ -204,7 +197,7 @@
                             </Defaults>
                             <Items>
                                 <ext:Checkbox runat="server" ID="closemd" FieldLabel="Close when clicking the mouse anywhere" />
-                                <ext:Checkbox runat="server" ID="autoClose" FieldLabel="Close automatically after a delay" />
+                                <ext:Checkbox runat="server" ID="autoClose" FieldLabel="Close automatically after a delay" Checked="true" />
                             </Items>
                         </ext:Container>
                         <ext:TextField runat="server" ID="acDelay" FieldLabel="Delay (in milisseconds) to automatically close" Text="2500" />
