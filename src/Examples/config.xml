@@ -5,8 +5,9 @@
     <folder name="Kitchen_Sink" />
   </order>
 
-  <new version="4.0.0">
+  <new version="4.2.0">
     <folder name="Window\Toast\Overview" />
+    <folder name="Window\Toast\Playground" />
   </new>
 
   <!--
