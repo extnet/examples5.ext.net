@@ -1,5 +1,64 @@
 | Product | Ext.NET Enterprise |
 | :---- | :---- |
+| Release Date | 2017-01-23 |
+| Current Version | 4.2.0 |
+| Issue Tracker | [Ext.NET](https://github.com/extnet/Ext.NET/issues) on GitHub |
+
+#### FEATURES
+
+1. [[#1416](https://github.com/extnet/Ext.NET/issues/1416)] Implement X.Toast(Ext.Net.Toast) overload
+1. [[#1415](https://github.com/extnet/Ext.NET/issues/1415)] Implement MVC Partial View's RenderMode.Config alternative
+1. [[#1414](https://github.com/extnet/Ext.NET/issues/1414)] Implement Ext.window.Toast support
+1. [[#1413](https://github.com/extnet/Ext.NET/issues/1413)] Implement MVC Razor syntax's text block support from Mobile
+1. [[#1411](https://github.com/extnet/Ext.NET/issues/1411)] Normalize enums' default values
+1. [[#1400](https://github.com/extnet/Ext.NET/issues/1400)] Ext.NET 4.2.0: Update ExtJS changes to C# objects
+1. [[#1399](https://github.com/extnet/Ext.NET/issues/1399)] Merge ExtJS 6.2.0 and 6.2.1 into Ext.NET (Ext.NET 4.2.0)
+1. [[#1359](https://github.com/extnet/Ext.NET/issues/1359)] Add Numeric3D, Category3D, Time3D axes for charts
+1. [[#1354](https://github.com/extnet/Ext.NET/issues/1354)] Mark Component's AutoScroll as obsolete and add Scrollable setting instead
+1. [[#1299](https://github.com/extnet/Ext.NET/issues/1299)] Add browser support to README.md files
+
+#### DEFECTS
+
+1. [[#1398](https://github.com/extnet/Ext.NET/issues/1398)] CSS class x-cmd-slicer.x-progress-bar-default:before broken in embedded CSS file 
+1. [[#1397](https://github.com/extnet/Ext.NET/issues/1397)] Buttons text does not fit only when under Safari 
+1. [[#1396](https://github.com/extnet/Ext.NET/issues/1396)] DatePickerField's DateFormat property is ignored
+1. [[#1393](https://github.com/extnet/Ext.NET/issues/1393)] ColumnBase.Resizable unnecessarily overrides ComponentBase.Resizable
+1. [[#1390](https://github.com/extnet/Ext.NET/issues/1390)] Horizontal scrolling issue on refresh -- header columns lose sync to columns
+1. [[#1385](https://github.com/extnet/Ext.NET/issues/1385)] FileField does not contain file upload handling ASP.NET bindings
+1. [[#1382](https://github.com/extnet/Ext.NET/issues/1382)] InfoPanel's Title is not visible with Triton theme
+1. [[#1380](https://github.com/extnet/Ext.NET/issues/1380)] Chart Label: Default display value of 'None' prevents hiding labels
+1. [[#1379](https://github.com/extnet/Ext.NET/issues/1379)] Charts' Pie3D series labels can't be hidden with Display="None"
+1. [[#1378](https://github.com/extnet/Ext.NET/issues/1378)] TagField constantly polls its input element - it is an overhead and affects performance
+1. [[#1377](https://github.com/extnet/Ext.NET/issues/1377)] CheckboxSelectionModel has InjectCheckbox ignored if using RowExpander plugin
+1. [[#1357](https://github.com/extnet/Ext.NET/issues/1357)] TabPanel's TabBarConfig renders xtype: "container" which is wrong
+1. [[#1356](https://github.com/extnet/Ext.NET/issues/1356)] Ext.net.loadResources passes different arguments to a callback in different scenarios
+1. [[#1352](https://github.com/extnet/Ext.NET/issues/1352)] Locking Grid + Cell Editing: error when tabbing between cells while editing
+1. [[#1347](https://github.com/extnet/Ext.NET/issues/1347)] RTL: Columns configuration glitches in some situations
+1. [[#1346](https://github.com/extnet/Ext.NET/issues/1346)] DataView's .SelectAll() docs comment wrongly claims "Clears all selections"
+1. [[#1345](https://github.com/extnet/Ext.NET/issues/1345)] RowExpander's header width is not adjusted to the themes
+1. [[#1343](https://github.com/extnet/Ext.NET/issues/1343)] Direct Method call translates null value into a string containing "null"
+1. [[#1341](https://github.com/extnet/Ext.NET/issues/1341)] Ext.Net.RowExpander: rowExpand body is aligned and limited by the second column of the outer grid
+1. [[#1336](https://github.com/extnet/Ext.NET/issues/1336)] ResourceManager's InitScriptMode is not available in MVC Razor
+1. [[#1331](https://github.com/extnet/Ext.NET/issues/1331)] Native mobile device's Pinch Zoom does not work
+1. [[#1330](https://github.com/extnet/Ext.NET/issues/1330)] GridPanel with Grouping, CommandColumn with GroupCommands, CellEditing causes a JavaScript error after editing
+1. [[#1329](https://github.com/extnet/Ext.NET/issues/1329)] Notification with "shadow: true" causes "this.syncShadow is not a function" JavaScript error
+1. [[#1307](https://github.com/extnet/Ext.NET/issues/1307)] Ext.grid.column.ComponentColumn not removing old components' cache
+1. [[#1298](https://github.com/extnet/Ext.NET/issues/1298)] Ext.net.FilterHeader is broken if GridPanel.reconfigure() with new columns
+1. [[#1291](https://github.com/extnet/Ext.NET/issues/1291)] Ext.net.Notification and InfoPanel can be shown behind stuff
+1. [[#1281](https://github.com/extnet/Ext.NET/issues/1281)] Horizontal scrolling issue with RTL GridPanel with RowEditor and Chrome
+1. [[#1273](https://github.com/extnet/Ext.NET/issues/1273)] Synching Store via its OnBeforeChange handler triggers a JavaScript error if there are a few different operations (update, insert or delete)
+
+#### BREAKING CHANGES
+
+1. [[#1404](https://github.com/extnet/Ext.NET/issues/1404)] Ext.Net.ColumnBase.Align enum change
+1. [[#1403](https://github.com/extnet/Ext.NET/issues/1403)] Ext.Net.TabPanel event parameters didn't match ExtJS
+1. [[#1380](https://github.com/extnet/Ext.NET/issues/1380)] Chart Label: Default display value of 'None' prevents hiding labels
+
+If you experience a Breaking Change, please report in the [forums](http://forums.ext.net/).
+
+
+| Product | Ext.NET Enterprise |
+| :---- | :---- |
 | Release Date | 2016-05-10 |
 | Current Version | 4.1.0 |
 | Issue Tracker | [Ext.NET](https://github.com/extnet/Ext.NET/issues) on GitHub |

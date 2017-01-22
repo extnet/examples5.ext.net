@@ -6,6 +6,11 @@
   </order>
 
   <new version="4.0.0">
+    <folder name="Window\Toast\Overview" />
+  </new>
+
+  <!--
+  <new version="4.0.0">
     <folder name="ColorPicker\Advanced\Components" />
     <folder name="ColorPicker\Advanced\GridPanel" />
     <folder name="ColorPicker\Advanced\Overview" />
@@ -20,7 +25,6 @@
   <updated version="4.0.0">
   </updated>
 
-  <!--
   <new version="3.3.0">
     <folder name="Chart\Bar\3D" />
     <folder name="Form\Login\Auto_Complete" />

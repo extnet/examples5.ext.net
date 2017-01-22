@@ -611,7 +611,6 @@
     <Content Include="Examples\Getting_Started\Release_Documents\CHANGELOG\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\LICENSE\Default.aspx" />
     <Content Include="Examples\Getting_Started\Release_Documents\README\Default.aspx" />
-    <Content Include="Examples\Getting_Started\Release_Documents\SVN_Log\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\HyperlinkColumn\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\ProgressBarColumn\config.xml" />
