@@ -9,6 +9,13 @@ using System.Globalization;
 
 namespace Ext.Net.Examples
 {
+    public class ExtNetVersion
+    {
+        public static Version Version = typeof(Ext.Net.Examples.Global).Assembly.GetName().Version;
+        public static string Major = Version.Major + "." + Version.Minor;
+        public static string Full = Version.ToString();
+    }
+
     public class Global : System.Web.HttpApplication
     {
 
