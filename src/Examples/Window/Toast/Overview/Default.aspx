@@ -4,13 +4,11 @@
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         X.Toast("Toast shown!");
-        return;
     }
     
     protected void Button2_Click(object sender, DirectEventArgs e)
     {
         X.Toast("Toast with title at bottom shown!", "MyTitle", ToastAlign.Bottom);
-        return;
     }
 
     protected void Button3_Click(object sender, DirectEventArgs e)
@@ -28,7 +26,6 @@
         };
 
         X.Toast(toastObj);
-        return;
     }
 
     protected void Button4_Click(object sender, DirectEventArgs e)
@@ -46,7 +43,6 @@
         };
 
         X.Toast(toastComp);
-        return;
     }
 </script>
 
@@ -67,34 +63,41 @@
         </p>
 
         <hr />
+
         <h2>1: Simple client-side toast</h2>
         <ext:Button runat="server" Handler="Ext.toast('This is a client-side simple toast!');" Text="Trigger Toast" />
 
         <hr />
+
         <h2>2: Simple server-side toast</h2>
         <ext:Button runat="server" OnDirectClick="Button1_Click" Text="Trigger Toast" />
 
         <hr />
+
         <h2>3: Server-side toast with title and position</h2>
         <ext:Button runat="server" OnDirectClick="Button2_Click" Text="Trigger Toast" />
 
         <hr />
+
         <h2>4: Server-side toast defined with an anonymous object.</h2>
-        <ext:Button runat="server" ID="Button3" OnDirectClick="Button3_Click" Text="Trigger Toast" />
+        <ext:Button ID="Button3" runat="server" OnDirectClick="Button3_Click" Text="Trigger Toast" />
 
         <hr />
+
         <h2>5: Server-side toast defined with an Ext.Net.Toast component definition.</h2>
-        <ext:Button runat="server" ID="Button1" OnDirectClick="Button4_Click" Text="Trigger Toast" />
+        <ext:Button ID="Button1" runat="server" OnDirectClick="Button4_Click" Text="Trigger Toast" />
 
         <hr />
+
         <h2>6: Markup toast</h2>
+
         <p>
             See source code, the toast is displayed first, once the page loads.
         </p>
 
         <ext:Toast
-            runat="server"
             ID="Toast1" 
+            runat="server"
             StickWhileHover="true">
             <Content>
                 This toast is defined in markup and shows once -- once the page is loaded.

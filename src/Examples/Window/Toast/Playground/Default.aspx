@@ -9,6 +9,7 @@
         if (!(enableTitle.Checked || enableToastAlign.Checked || enableExtra.Checked))
         {
             X.Toast(toastText.Text);
+
             return;
         }
         
@@ -16,15 +17,17 @@
         if (enableTitle.Checked && !(enableToastAlign.Checked || enableExtra.Checked))
         {
             X.Toast(toastText.Text, toastTitle.Text);
+
             return;
         }
         
         // Now both title and alignment
         if (enableTitle.Checked && enableToastAlign.Checked && !enableExtra.Checked)
         {
-            var align = fetchToastAlign();
+            var align = FetchToastAlign();
             
             X.Toast(toastText.Text, toastTitle.Text, align);
+
             return;
         }
         
@@ -54,7 +57,7 @@
             toastObj = new Toast()
             {
                 Html = toastText.Text,
-                Align = fetchToastAlign()
+                Align = FetchToastAlign()
             };
         }
         
@@ -65,7 +68,7 @@
             {
                 Html = toastText.Text,
                 Title = toastTitle.Text,
-                Align = fetchToastAlign(),
+                Align = FetchToastAlign(),
             };
         }
         
@@ -74,13 +77,14 @@
         toastObj.Disabled = disabled.Checked;
         toastObj.CloseOnMouseDown = closemd.Checked;
         toastObj.AutoClose = autoClose.Checked;
-        toastObj.AutoCloseDelay = getAutoCloseDelay();
+        toastObj.AutoCloseDelay = GetAutoCloseDelay();
 
         X.Toast(toastObj);
+
         return;
     }
 
-    private ToastAlign fetchToastAlign()
+    private ToastAlign FetchToastAlign()
     {
         if (toastAlign != null && toastAlign.Value != null)
         {
@@ -90,7 +94,7 @@
         return ToastAlign.Default;
     }
     
-    private int getAutoCloseDelay()
+    private int GetAutoCloseDelay()
     {
         int acd;
 
@@ -106,6 +110,7 @@
         else
         {
             acDelay.SetText("1000");
+
             return 1000; // just return 1 second if the value was not parseable.
         }
     }
@@ -138,14 +143,14 @@
                 <ext:Parameter Name="margin" Value="5px" />
             </Defaults>
             <Items>
-                <ext:TextArea runat="server" ID="toastText" FieldLabel="Toast Contents" Text="My toast!" />
+                <ext:TextArea ID="toastText" runat="server" FieldLabel="Toast Contents" Text="My toast!" />
                 <ext:FieldSet runat="server" Title="Toast title">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Checkbox runat="server" ID="enableTitle" FieldLabel="Show title" />
-                        <ext:TextField runat="server" ID="toastTitle" FieldLabel="Toast" />
+                        <ext:Checkbox ID="enableTitle" runat="server" FieldLabel="Show title" />
+                        <ext:TextField ID="toastTitle" runat="server" FieldLabel="Toast" />
                     </Items>
                 </ext:FieldSet>
                 <ext:FieldSet runat="server" Title="Toast position">
@@ -153,20 +158,20 @@
                         <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Checkbox runat="server" ID="enableToastAlign" FieldLabel="Specify Toast alignment on screen" />
-                        <ext:ComboBox runat="server" ID="toastAlign" ForceSelection="true" FieldLabel="Position to show on screen">
+                        <ext:Checkbox ID="enableToastAlign" runat="server" FieldLabel="Specify Toast alignment on screen" />
+                        <ext:ComboBox ID="toastAlign" runat="server" ForceSelection="true" FieldLabel="Position to show on screen">
                             <Items>
-                                <ext:ListItem Text="At the Bottom Right Corner" Value="br" />
-                                <ext:ListItem Text="At the Bottom Left Corner" Value="bl" />
-                                <ext:ListItem Text="At the Top Right Corner" Value="tr" />
-                                <ext:ListItem Text="At the Top Left Corner" Value="tl" />
-                                <ext:ListItem Text="At Top" Value="t" />
-                                <ext:ListItem Text="At Left" Value="l" />
-                                <ext:ListItem Text="At Bottom" Value="b" />
-                                <ext:ListItem Text="At Right" Value="r" />
+                                <ext:ListItem Text="Bottom Right" Value="br" />
+                                <ext:ListItem Text="Bottom Left" Value="bl" />
+                                <ext:ListItem Text="Top Right" Value="tr" />
+                                <ext:ListItem Text="Top Left" Value="tl" />
+                                <ext:ListItem Text="Top" Value="t" />
+                                <ext:ListItem Text="Left" Value="l" />
+                                <ext:ListItem Text="Bottom" Value="b" />
+                                <ext:ListItem Text="Right" Value="r" />
                             </Items>
                             <SelectedItems>
-                                <ext:ListItem Text="At the Bottom Right Corner" Value="br" />
+                                <ext:ListItem Text="Bottom Right" Value="br" />
                             </SelectedItems>
                         </ext:ComboBox>
                     </Items>
@@ -196,25 +201,25 @@
                                 <ext:Parameter Name="labelWidth" Value="250" />
                             </Defaults>
                             <Items>
-                                <ext:Checkbox runat="server" ID="closemd" FieldLabel="Close when clicking the mouse anywhere" />
-                                <ext:Checkbox runat="server" ID="autoClose" FieldLabel="Close automatically after a delay" Checked="true" />
+                                <ext:Checkbox ID="closemd" runat="server" FieldLabel="Close when clicking the mouse anywhere" />
+                                <ext:Checkbox ID="autoClose" runat="server" FieldLabel="Close automatically after a delay" Checked="true" />
                             </Items>
                         </ext:Container>
-                        <ext:TextField runat="server" ID="acDelay" FieldLabel="Delay (in milisseconds) to automatically close" Text="2500" />
+                        <ext:TextField ID="acDelay" runat="server" FieldLabel="Delay (in milisseconds) to automatically close" Text="2500" />
                     </Items>
                 </ext:FieldSet>
                 <ext:Button
-                    runat="server"
                     ID="Button1"
+                    runat="server"
                     Text="Toast!"
-                    Icon="Exclamation"
+                    Icon="Accept"
                     OnDirectClick="Button1_Click"
                     />
             </Items>
         </ext:FormPanel>
         <ext:Toast
-            runat="server"
             ID="Toast1" 
+            runat="server"
             StickWhileHover="true">
             <Content>
                 This toast is defined in markup and shows once -- once the page is loaded.
