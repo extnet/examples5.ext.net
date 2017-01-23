@@ -131,16 +131,6 @@
 <head runat="server">
     <title>GridPanel with Remote Filtering, Sorting and Paging - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-
-    <script type="text/javascript">
-        // This is here to overcome issue extnet/Ext.NET#1338 until a new
-        // version of Ext.NET is released with public Examples Explorer
-        // Affected version: 4.1.0 and older.
-        Ext.define('Ext.grid.filters.filter.Boolean', {
-            override: 'Ext.grid.filters.filter.Boolean',
-            operator: '='
-        });
-    </script>
 </head>
 <body>
     <form runat="server">
