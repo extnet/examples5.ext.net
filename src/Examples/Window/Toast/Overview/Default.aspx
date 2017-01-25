@@ -1,24 +1,24 @@
 <%@ Page Language="C#" %>
 
 <script runat="server">
-    protected void Button1_Click(object sender, DirectEventArgs e)
-    {
-        X.Toast("Toast shown!");
-    }
-    
     protected void Button2_Click(object sender, DirectEventArgs e)
     {
-        X.Toast("Toast with title at bottom shown!", "MyTitle", ToastAlign.Bottom);
+        X.Toast("Toast 2");
+    }
+    
+    protected void Button3_Click(object sender, DirectEventArgs e)
+    {
+        X.Toast("Toast 3", "Toast", ToastAlign.Bottom);
     }
 
-    protected void Button3_Click(object sender, DirectEventArgs e)
+    protected void Button4_Click(object sender, DirectEventArgs e)
     {
         object toastObj = new
         {
-            html = "This toast was defined from code behind from an anonymous object!",
-            title = "Object toast",
+            html = "Toast 4",
+            title = "Toast",
             align = JSON.EnumToString(ToastAlign.Right), // Map the enum to the client-side supported string.
-            anchor = "Button3",
+            anchor = "Button4",
             stickWhileHover = true,
             closeOnMouseDown = true,
             autoClose = true,
@@ -28,21 +28,21 @@
         X.Toast(toastObj);
     }
 
-    protected void Button4_Click(object sender, DirectEventArgs e)
+    protected void Button5_Click(object sender, DirectEventArgs e)
     {
-        var toastComp = new Toast()
+        var config = new Toast()
         {
-            Html = "This toast was defined from code behind from an Ext.Net.Toast component definition!",
-            Title = "Object toast",
+            Html = "Toast 5",
+            Title = "Toast",
             Align = ToastAlign.Right,
-            Anchor = "Button3",
+            Anchor = "Button5",
             StickWhileHover = true,
             CloseOnMouseDown = true,
             AutoClose = true,
             AutoCloseDelay = 2500
         };
 
-        X.Toast(toastComp);
+        X.Toast(config);
     }
 </script>
 
@@ -58,49 +58,35 @@
         <ext:ResourceManager runat="server" />
 
         <h1>Window Toast Overview</h1>
-        <p>
-            Click the buttons below to see the toast drop. Check sources for how this is done.
-        </p>
+        
+        <h2>Simple Client-Side Toast</h2>
+        
+        <ext:Button runat="server" Handler="Ext.toast('Toast 1');" Text="Toast 1" />
 
-        <hr />
 
-        <h2>1: Simple client-side toast</h2>
-        <ext:Button runat="server" Handler="Ext.toast('This is a client-side simple toast!');" Text="Trigger Toast" />
+        <h2>Simple Server-Side Toast</h2>
+        
+        <ext:Button runat="server" OnDirectClick="Button2_Click" Text="Toast 2" />
 
-        <hr />
+        <h2>Server-Side Toast With Title And Position</h2>
+        
+        <ext:Button runat="server" OnDirectClick="Button3_Click" Text="Toast 3" />
 
-        <h2>2: Simple server-side toast</h2>
-        <ext:Button runat="server" OnDirectClick="Button1_Click" Text="Trigger Toast" />
+        <h2>Server-Side Toast Defined With An Anonymous Object</h2>
 
-        <hr />
+        <ext:Button ID="Button4" runat="server" OnDirectClick="Button4_Click" Text="Toast 4" />
 
-        <h2>3: Server-side toast with title and position</h2>
-        <ext:Button runat="server" OnDirectClick="Button2_Click" Text="Trigger Toast" />
+        <h2>Server-Side Toast Defined By Config Object</h2>
 
-        <hr />
+        <ext:Button ID="Button5" runat="server" OnDirectClick="Button5_Click" Text="Toast 5" />
 
-        <h2>4: Server-side toast defined with an anonymous object.</h2>
-        <ext:Button ID="Button3" runat="server" OnDirectClick="Button3_Click" Text="Trigger Toast" />
+        <h2>Markup toast</h2>
 
-        <hr />
+        <p>See source code for the Toast that is displayed on page load.</p>
 
-        <h2>5: Server-side toast defined with an Ext.Net.Toast component definition.</h2>
-        <ext:Button ID="Button1" runat="server" OnDirectClick="Button4_Click" Text="Trigger Toast" />
-
-        <hr />
-
-        <h2>6: Markup toast</h2>
-
-        <p>
-            See source code, the toast is displayed first, once the page loads.
-        </p>
-
-        <ext:Toast
-            ID="Toast1" 
-            runat="server"
-            StickWhileHover="true">
+        <ext:Toast runat="server">
             <Content>
-                This toast is defined in markup and shows once -- once the page is loaded.
+                Toast rendered on page load
             </Content>
         </ext:Toast>
     </form>
