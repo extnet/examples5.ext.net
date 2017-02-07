@@ -16,6 +16,20 @@
 
             return isFirst ? canDropFirst : canDropSecond;
         };
+
+        // This is a temporary fix until next Ext.NET public update
+        // This override should be removed as of Ext.NET 4.2.1 release or newer
+        // Related github issues: https://github.com/extnet/Ext.NET/issues/1330
+        // and https://github.com/extnet/Ext.NET.Examples/issues/11
+        Ext.view.AbstractView.override({
+            fireEvent: function () {
+                if (arguments.length >= 2 && arguments[0] === "beforeitemupdate" && !(arguments[1] instanceof Ext.view.AbstractView)) {
+                    arguments = Ext.Array.insert(Array.prototype.slice.call(arguments), 1, [this]);
+                }
+
+                return this.callSuper(arguments);
+            }
+        });
     </script>
 </head>
 <body>
