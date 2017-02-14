@@ -56,6 +56,9 @@
 
             logic.clearFilter();
 
+            // This will ensure after clearing the filter the auto-expanded nodes will be collapsed again
+            tree.collapseAll();
+
             if (Ext.isEmpty(text, false)) {
                 return;
             }
@@ -63,11 +66,17 @@
             if (e.getKey() === e.ESC) {
                 clearFilter();
             } else {
-                var re = new RegExp(".*" + text + ".*", "i");
+                // this will allow invalid regexp while composing, for example "(examples|grid|color)"
+                try {
+                    var re = new RegExp(".*" + text + ".*", "i");
+                } catch (err) {
+                    return;
+                }
 
                 logic.filterBy(function (node) {
                     return re.test(node.data.text);
                 });
+
             }
         };
 
