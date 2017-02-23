@@ -39,6 +39,11 @@
 <head runat="server">
     <title>Input Mask - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
+    <style type="text/css">
+        .x-form-item-body {
+            height: initial
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
