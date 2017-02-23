@@ -1,6 +1,40 @@
 ﻿<%@ Page Language="C#" %>
 <!DOCTYPE html>
 
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // This page has no postback/ajax interactions so we don't test for it
+
+        // the code below just binds a good height/width to the panel depending on the active theme
+        var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+
+        switch (curTheme.Theme)
+        {
+            case Ext.Net.Theme.Triton:
+            case Ext.Net.Theme.CrispTouch:
+            case Ext.Net.Theme.NeptuneTouch:
+                Window1.Height = 475;
+                break;
+            case Ext.Net.Theme.Gray:
+            case Ext.Net.Theme.Default:
+                Window1.Height = 335;
+                break;
+            case Ext.Net.Theme.Crisp:
+                Window1.Height = 370;
+                break;
+            case Ext.Net.Theme.Neptune:
+            case Ext.Net.Theme.Aria:
+                Window1.Height = 375;
+                break;
+            default:
+                // If ever any other theme take place, then use the biggest of the values above
+                Window1.Height = 475;
+                break;
+        }
+    }
+</script>
+
 <html>
 <head runat="server">
     <title>Input Mask - Ext.NET Examples</title>
@@ -14,9 +48,9 @@
         <p>InputMask is a plugin for TextField, used to add an input mask to the field.</p>
 
         <ext:Window
+            ID="Window1"
             runat="server"
             Width="550"
-            Height="370"
             Title="Input Mask"
             Closable="false"
             Layout="Form"
