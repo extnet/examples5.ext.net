@@ -48,10 +48,9 @@ namespace Ext.Net.Examples
 
             string wId = context.Request["wId"];
 
-            HttpRequest r = HttpContext.Current.Request;
             Uri uri = new Uri(url, UriKind.Relative);
 
-            string path = context.Server.MapPath(uri.AbsolutePath);
+            string path = AppDomain.CurrentDomain.BaseDirectory + url;
             DirectoryInfo dir = new DirectoryInfo(path);
 
             ExampleConfig cfg = null;
