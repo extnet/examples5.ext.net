@@ -9,7 +9,7 @@
     {
         if (!X.IsAjaxRequest)
         {
-            this.ResourceManager1.DirectEventUrl = this.Request.Url.AbsoluteUri;
+            this.ResourceManager1.DirectEventUrl = "/";
 
             Theme theme = Ext.Net.Theme.Crisp;
 
