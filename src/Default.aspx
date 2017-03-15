@@ -11,6 +11,8 @@
     {
         if (!X.IsAjaxRequest)
         {
+            this.ResourceManager1.DirectEventUrl = "/";
+
             Theme theme = Ext.Net.Theme.Triton;
 
             if (this.Session["Ext.Net.Theme"] != null)
