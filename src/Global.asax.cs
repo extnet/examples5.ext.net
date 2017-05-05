@@ -56,7 +56,18 @@ namespace Ext.Net.Examples
 
         protected void Session_Start(object sender, EventArgs e)
         {
+#if DEBUG
+            // Enables debugging code output by default if the project is built in debug configuration.
+            if (Session["Ext.Net.ScriptMode"] == null)
+            {
+                Session["Ext.Net.ScriptMode"] = ScriptMode.Debug;
+            }
 
+            if (Session["Ext.Net.SourceFormatting"] == null)
+            {
+                Session["Ext.Net.SourceFormatting"] = true;
+            }
+#endif // DEBUG
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)
