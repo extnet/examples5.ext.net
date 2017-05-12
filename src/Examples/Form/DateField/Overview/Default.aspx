@@ -34,6 +34,17 @@
 <head runat="server">
     <title>Overview of Date and Month Fields - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
+
+    <!-- The following fixes an issue with zooming out and years views in the pickers (github issue #14). -->
+    <style type="text/css">
+        .x-monthpicker-months,
+        .x-monthpicker-months .x-monthpicker-item,
+        .x-monthpicker-years,
+        .x-monthpicker-years .x-monthpicker-item,
+        .x-monthpicker-yearnav-button-ct {
+            width: 50% !important;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
