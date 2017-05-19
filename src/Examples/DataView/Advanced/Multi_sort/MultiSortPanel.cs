@@ -12,7 +12,7 @@ namespace Ext.Net.Examples
             this.Width = 730;
             this.Height = 535;
             this.Title = "Multisort DataView";
-            this.AutoScroll = true;
+            this.Scrollable = ScrollableOption.Both;
             this.TopBar.Add(this.GetTopBar());
             this.Items.Add(this.GetDataView());
             this.Frame = true;

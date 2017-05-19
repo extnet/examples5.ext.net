@@ -105,7 +105,7 @@
                           Height = 150,
                           Shadow = false,
                           UseArrows = true,
-                          AutoScroll = true,
+                          Scrollable = ScrollableOption.Both,
                           Animate = true,
                           Cls = "tasks-tree",
                           RootVisible = false,

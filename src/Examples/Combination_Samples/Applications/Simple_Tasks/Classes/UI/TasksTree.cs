@@ -17,7 +17,7 @@ namespace Ext.Net.Examples.SimpleTasks
             this.Title = "My Lists";
             this.Collapsible = true;
             this.Width = 200;
-            this.AutoScroll = true;
+            this.Scrollable = ScrollableOption.Both;
             this.UseArrows = true;
             this.Mode = TreePanelMode.Remote;
             this.Cls = "tasks-tree";
