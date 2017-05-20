@@ -5,10 +5,23 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <updated version="4.2.1">
+    <folder name="TreePanel\Basic\Custom_Drop_Logic" />
+    <folder name="ColorPicker\Advanced\Overview" />
+    <folder name="Form\DateField\Overview" />
+    <folder name="Form\TextField\InputMask" />
+    <folder name="Form\TextField\InputMask" />
+    <folder name="TreePanel\Advanced\Filter" />
+    <folder name="Form\Field_Note\Overview" />
+    <folder name="TreePanel\Basic\Custom_Drop_Logic" />
+  </updated>
+
+  <!--
   <new version="4.2.0">
     <folder name="Window\Toast\Overview" />
     <folder name="Window\Toast\Playground" />
   </new>
+  -->
 
   <!--
   <new version="4.0.0">
