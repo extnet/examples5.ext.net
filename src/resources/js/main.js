@@ -390,7 +390,7 @@ var treeRenderer = function (value, metadata, record) {
         if (record.data.flags == "n") {
             value += "<span>New</span>";
         } else if (record.data.flags == "u") {
-            value += "<span>Updated</span>";
+            value += "<span>Update</span>";
         }
     }
 
