@@ -12,7 +12,11 @@ namespace Ext.Net.Examples
     public class ExtNetVersion
     {
         public static Version Version = typeof(Ext.Net.Examples.Global).Assembly.GetName().Version;
-        public static string Major = Version.Major + "." + Version.Minor;
+
+        private static string rev = (Version.Revision == 0) ? "" : ("." + Version.Revision);
+        private static string bld = (Version.Build == 0) ? "" : ("." + Version.Build + rev);
+
+        public static string Major = Version.Major + "." + Version.Minor + bld;
         public static string Full = Version.ToString();
     }
 
