@@ -8,12 +8,9 @@
         <siteMapNode title="Overview" description="Getting started with Ext.Net. Download, Project Setup and Hello World." url="~/Examples/Getting_Started/Introduction/Overview/" />
       </siteMapNode>
       <siteMapNode title="Release Documents">
-        <siteMapNode title="BREAKING CHANGES" description="No description" url="~/Examples/Getting_Started/Release_Documents/BREAKING_CHANGES/" />
         <siteMapNode title="CHANGELOG" description="No description" url="~/Examples/Getting_Started/Release_Documents/CHANGELOG/" />
         <siteMapNode title="LICENSE" description="No description" url="~/Examples/Getting_Started/Release_Documents/LICENSE/" />
         <siteMapNode title="README" description="No description" url="~/Examples/Getting_Started/Release_Documents/README/" />
-        <siteMapNode title="Sample Web.config" description="No description" url="~/Examples/Getting_Started/Release_Documents/Sample_Web.config/" />
-        <siteMapNode title="SVN Log" description="No description" url="~/Examples/Getting_Started/Release_Documents/SVN_Log/" />
       </siteMapNode>
     </siteMapNode>
     <siteMapNode title="Kitchen Sink">
@@ -179,7 +176,9 @@
         <siteMapNode title="Overview" description="No description" url="~/Examples/ColorPicker/Basic/Overview/" />
       </siteMapNode>
       <siteMapNode title="Advanced">
-        <siteMapNode title="Overview" description="Advanced color picker overview." url="~/Examples/ColorPicker/Advanced/Overview/" />
+        <siteMapNode title="Components" description="Reproduces sencha's Kitchen Sink examples on the advanced color picker component set." url="~/Examples/ColorPicker/Advanced/Components/" />
+        <siteMapNode title="GridPanel" description="Demonstrates how to add a component column with the advanced Color Picker component in a grid." url="~/Examples/ColorPicker/Advanced/GridPanel/" />
+        <siteMapNode title="Overview" description="Provides overall usage information about the advanced Color Picker component set." url="~/Examples/ColorPicker/Advanced/Overview/" />
       </siteMapNode>
     </siteMapNode>
     <siteMapNode title="Combination Samples">
@@ -393,7 +392,6 @@
         <siteMapNode title="Custom" description="No description" url="~/Examples/Form/SpinnerField/Custom/" />
       </siteMapNode>
       <siteMapNode title="Tag">
-        <siteMapNode title="TagColumn" description="No description" url="~/Examples/Form/Tag/TagColumn/" />
         <siteMapNode title="TagField" description="No description" url="~/Examples/Form/Tag/TagField/" />
         <siteMapNode title="TagLabel" description="No description" url="~/Examples/Form/Tag/TagLabel/" />
       </siteMapNode>
@@ -435,6 +433,7 @@
         <siteMapNode title="ProgressBarColumn" description="No description" url="~/Examples/GridPanel/ColumnModel/ProgressBarColumn/" />
         <siteMapNode title="RatingColumn" description="No description" url="~/Examples/GridPanel/ColumnModel/RatingColumn/" />
         <siteMapNode title="Reconfigure" description="No description" url="~/Examples/GridPanel/ColumnModel/Reconfigure/" />
+        <siteMapNode title="TagColumn" description="No description" url="~/Examples/GridPanel/ColumnModel/TagColumn/" />
         <siteMapNode title="WidgetColumn" description="No description" url="~/Examples/GridPanel/ColumnModel/WidgetColumn/" />
       </siteMapNode>
       <siteMapNode title="Commands">
@@ -580,6 +579,14 @@
         <siteMapNode title="Row Selection" description="This example shows a row selection model" url="~/Examples/GridPanel/Selection_Models/Row_Selection/" />
         <siteMapNode title="Submitting Values" description="This example shows how to submit values of selected rows to server" url="~/Examples/GridPanel/Selection_Models/Submitting_Values/" />
       </siteMapNode>
+      <siteMapNode title="Spreadsheet">
+        <siteMapNode title="Clipboard" description="The example demonstrates the Clipboard functionality with SpreadsheetSelectionModel" url="~/Examples/GridPanel/Spreadsheet/Clipboard/" />
+        <siteMapNode title="Initial Selection" description="The example demonstrates how to set up initial selection" url="~/Examples/GridPanel/Spreadsheet/Initial_Selection/" />
+        <siteMapNode title="Locking" description="The example demonstrates the SpreadsheetSelectionModel functionality with a locking GridPanel" url="~/Examples/GridPanel/Spreadsheet/Locking/" />
+        <siteMapNode title="Overview" description="The example demonstrates the SpreadsheetSelectionModel functionality" url="~/Examples/GridPanel/Spreadsheet/Overview/" />
+        <siteMapNode title="Select Programmatically" description="The example is a showcase of API to select/deselect programmatically" url="~/Examples/GridPanel/Spreadsheet/Select_Programmatically/" />
+        <siteMapNode title="Submit" description="The example demonstrates how to submit the SpreadsheetSelectionModel selected data" url="~/Examples/GridPanel/Spreadsheet/Submit/" />
+      </siteMapNode>
       <siteMapNode title="System.Data">
         <siteMapNode title="DataReader" description="Demonstrates how to create a grid from a DataTable and implement Paging and Remote reloading." url="~/Examples/GridPanel/System.Data/DataReader/" />
         <siteMapNode title="DataTable" description="Demonstrates how to create a grid from a DataTable and implement Paging and Remote reloading." url="~/Examples/GridPanel/System.Data/DataTable/" />
@@ -624,6 +631,7 @@
         <siteMapNode title="Simple in CodeBehind" description="No description" url="~/Examples/Layout/BorderLayout/Simple_in_CodeBehind/" />
         <siteMapNode title="Simple in Markup" description="No description" url="~/Examples/Layout/BorderLayout/Simple_in_Markup/" />
       </siteMapNode>
+      <siteMapNode title="BorderLayout1Simple in Markup" />
       <siteMapNode title="CardLayout">
         <siteMapNode title="Basic" description="No description" url="~/Examples/Layout/CardLayout/Basic/" />
       </siteMapNode>
@@ -840,9 +848,6 @@
         <siteMapNode title="TabBar Config" description="No description" url="~/Examples/TabPanel/Basic/TabBar_Config/" />
         <siteMapNode title="TabMenu" description="No description" url="~/Examples/TabPanel/Basic/TabMenu/" />
       </siteMapNode>
-      <siteMapNode title="GroupTabPanel">
-        <siteMapNode title="Overview" description="No description" url="~/Examples/TabPanel/GroupTabPanel/Overview/" />
-      </siteMapNode>
       <siteMapNode title="TabStrip">
         <siteMapNode title="Overview" description="This example shows basic properties of comboboxes" url="~/Examples/TabPanel/TabStrip/Overview/" />
         <siteMapNode title="Side Tabs" description="No description" url="~/Examples/TabPanel/TabStrip/Side_Tabs/" />
@@ -926,6 +931,10 @@
         <siteMapNode title="Load External Website" description="Load an external url into a Window using the AutoLoad property." url="~/Examples/Window/Basic/Load_External_Website/" />
         <siteMapNode title="Show" description="Several client-side and server-side techniques for triggering the &amp;lt;ext:Window&gt; to &quot;show&quot; if hidden." url="~/Examples/Window/Basic/Show/" />
         <siteMapNode title="Window Variations" description="No description" url="~/Examples/Window/Basic/Window_Variations/" />
+      </siteMapNode>
+      <siteMapNode title="Toast">
+        <siteMapNode title="Overview" description="This example demonstrates how to use the Toast component with Ext.NET." url="~/Examples/Window/Toast/Overview/" />
+        <siteMapNode title="Playground" description="This example demonstrates how to use the Toast component with Ext.NET." url="~/Examples/Window/Toast/Playground/" />
       </siteMapNode>
     </siteMapNode>
     <siteMapNode title="XRender">
