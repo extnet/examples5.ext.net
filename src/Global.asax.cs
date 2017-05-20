@@ -17,6 +17,7 @@ namespace Ext.Net.Examples
         private static string bld = (Version.Build == 0) ? "" : ("." + Version.Build + rev);
 
         public static string Major = Version.Major + "." + Version.Minor + bld;
+        public static string WithBuild = Version.Major + "." + Version.Minor + "." + Version.Build;
         public static string Full = Version.ToString();
     }
 

@@ -386,8 +386,12 @@ var onTreeItemClick = function (record, e) {
 };
 
 var treeRenderer = function (value, metadata, record) {
-    if (record.data.isNew) {
-        value += "<span>New</span>";
+    if (record.data.flags) {
+        if (record.data.flags == "n") {
+            value += "<span>New</span>";
+        } else if (record.data.flags == "u") {
+            value += "<span>Updated</span>";
+        }
     }
 
     return value;
@@ -661,7 +665,7 @@ var filterNewExamples = function (checkItem, checked) {
     if (checked) {
         tree.clearFilter(true);
         tree.filterBy(function (node) {
-            return node.data.isNew;
+            return node.data.flags == "n";
         });
     } else {
         tree.clearFilter(true);

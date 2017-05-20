@@ -30,6 +30,7 @@
             if (this.Request.QueryString["clearExamplesCache"] != null)
             {
                 this.Page.Cache.Remove("ExamplesTreeNodes");
+                X.Msg.Alert("Cache clear", "Tree nodes cache cleared.").Show();
             }
 
             // Makes dynamic data to server controls be bound to the page (like version on title).
@@ -407,7 +408,7 @@
                                 </Root>
                                 <Fields>
                                     <ext:ModelField Name="tags" />
-                                    <ext:ModelField Name="isNew" />
+                                    <ext:ModelField Name="flags" />
                                 </Fields>
                             </ext:TreeStore>
                         </Store>

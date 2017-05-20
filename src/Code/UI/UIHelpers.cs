@@ -32,6 +32,12 @@ namespace Ext.Net.Examples
                 root.AppendChild(examplesNode);
             }
 
+            // Reset the static rootCfg so that the main xml file is re-read.
+            if (rootCfg != null)
+            {
+                rootCfg = null;
+            }
+
             string path = HttpContext.Current.Server.MapPath("~/Examples/");
 
             NodeCollection result = UIHelpers.BuildTreeLevel(new DirectoryInfo(path), 1, 3, examplesNode);
@@ -79,10 +85,7 @@ namespace Ext.Net.Examples
 
                 node.Text = folder.Name.Replace("_", " ");
 
-                if (UIHelpers.IsNew(folder.FullName))
-                {
-                    node.CustomAttributes.Add(new ConfigItem("isNew", "true", ParameterMode.Raw));
-                }
+                flagNode(ref node, folder.FullName);
 
                 node.IconCls = iconCls;
 
@@ -130,10 +133,7 @@ namespace Ext.Net.Examples
                 {
                     node.Text = folderName;
 
-                    if (UIHelpers.IsNew(folder.FullName))
-                    {
-                        node.CustomAttributes.Add(new ConfigItem("isNew", "true", ParameterMode.Raw));
-                    }
+                    flagNode(ref node, folder.FullName);
 
                     node.IconCls = iconCls;
                     node.NodeID = BaseControl.GenerateID();
@@ -152,10 +152,7 @@ namespace Ext.Net.Examples
                 {
                     node.Text = folderName;
 
-                    if (UIHelpers.IsNew(folder.FullName))
-                    {
-                        node.CustomAttributes.Add(new ConfigItem("isNew", "true", ParameterMode.Raw));
-                    }
+                    flagNode(ref node, folder.FullName);
 
                     node.IconCls = iconCls;
                     string url = PhysicalToVirtual(folder.FullName + "/");
@@ -208,6 +205,50 @@ namespace Ext.Net.Examples
             }
 
             return false;
+        }
+
+        private static bool IsUpdated(string folder)
+        {
+            if (rootCfg == null)
+            {
+                rootCfg = new ExampleConfig(new DirectoryInfo(HttpContext.Current.Server.MapPath("~/Examples/")) + "\\config.xml", false);
+            }
+
+            foreach (string updFolder in rootCfg.UpdFolders)
+            {
+                string updPath = string.Concat(HttpContext.Current.Server.MapPath("~/Examples/"), updFolder);
+
+                if (updPath.StartsWith(folder, StringComparison.CurrentCultureIgnoreCase))
+                {
+                    string end = updPath.Substring(folder.Length);
+
+                    if ((end.StartsWith("\\") || end.Equals("")))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        private static void flagNode(ref Node node, string folder)
+        {
+            string flag = string.Empty;
+
+            if (IsNew(folder))
+            {
+                flag = "n";
+            }
+            else if (IsUpdated(folder))
+            {
+                flag = "u";
+            }
+
+            if (flag != string.Empty)
+            {
+                node.CustomAttributes.Add(new ConfigItem("flags", flag));
+            }
         }
 
         private static DirectoryInfo[] SortFolders(DirectoryInfo root, DirectoryInfo[] folders)
@@ -278,7 +319,7 @@ namespace Ext.Net.Examples
                     string descr = "No description";
                     string name = folder.Name.Replace("_", " ");
 
-                    if (UIHelpers.IsNew(folder.FullName))
+                    if (IsNew(folder.FullName) || IsUpdated(folder.FullName))
                     {
                         name += "<span>&nbsp;</span>";
                     }
@@ -448,7 +489,8 @@ namespace Ext.Net.Examples
                 }
             }
 
-            folders = root.SelectNodes("new/folder");
+            // This will match only new items for the current version a.b.c.
+            folders = root.SelectNodes("new[@version = \"" + ExtNetVersion.WithBuild + "\"]/folder");
 
             if (folders != null)
             {
@@ -464,6 +506,22 @@ namespace Ext.Net.Examples
                 }
             }
 
+            // This will match only new items for the current version a.b.c.
+            folders = root.SelectNodes("updated[@version = \"" + ExtNetVersion.WithBuild + "\"]/folder");
+
+            if (folders != null)
+            {
+                foreach (XmlNode folder in folders)
+                {
+                    XmlAttribute urlAttr = folder.Attributes["name"];
+
+                    if (urlAttr != null && !string.IsNullOrEmpty(urlAttr.InnerText))
+                    {
+                        string folderName = urlAttr.InnerText;
+                        this.UpdFolders.Add(folderName.ToLower());
+                    }
+                }
+            }
             XmlNodeList xmlComments = root.SelectNodes("comments/comment");
 
             if (xmlComments != null)
@@ -569,6 +627,19 @@ namespace Ext.Net.Examples
                     this.newFolders = new List<string>();
                 }
                 return this.newFolders;
+            }
+        }
+
+        private List<string> updFolders;
+        public List<string> UpdFolders
+        {
+            get
+            {
+                if (this.updFolders == null)
+                {
+                    this.updFolders = new List<string>();
+                }
+                return this.updFolders;
             }
         }
 
