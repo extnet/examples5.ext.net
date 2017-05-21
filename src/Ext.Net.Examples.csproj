@@ -1660,8 +1660,8 @@
     <Content Include="Examples\Keys\KeyNav\Basic\Default.aspx" />
     <Content Include="Examples\Keys\Panel_Keys\Grid_Rows_Delete\config.xml" />
     <Content Include="Examples\Keys\Panel_Keys\Grid_Rows_Delete\Default.aspx" />
-    <Content Include="Examples\Keys\Panel_Keys\Window_Size\config.xml" />
-    <Content Include="Examples\Keys\Panel_Keys\Window_Size\Default.aspx" />
+    <Content Include="Examples\Keys\Panel_Keys\_Window_Size\config.xml" />
+    <Content Include="Examples\Keys\Panel_Keys\_Window_Size\Default.aspx" />
     <Content Include="Examples\Layout\AbsoluteLayout\Absolute_Layout_Form\config.xml" />
     <Content Include="Examples\Layout\AbsoluteLayout\Absolute_Layout_Form\Default.aspx" />
     <Content Include="Examples\Layout\AbsoluteLayout\Basic\config.xml" />
