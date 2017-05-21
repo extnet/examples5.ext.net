@@ -1,5 +1,5 @@
-﻿/// <reference path="/Scripts/jquery-3.1.1.js" />
-/// <reference path="/Scripts/jquery.signalR-2.2.1.js" />
+﻿/// <reference path="~/Scripts/jquery-3.1.1.js" />
+/// <reference path="~/Scripts/jquery.signalR-2.2.2.js" />
 
 Ext.define('ExtNetSignalRDemo.SignalRGridPanel', {
     extend : 'Ext.grid.Panel',
