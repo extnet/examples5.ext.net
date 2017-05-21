@@ -6,14 +6,15 @@
   </order>
 
   <updated version="4.2.1">
+    <folder name="Keys\Panel_Keys\Grid_Rows_Delete" />
+    <folder name="Data_Binding\Basic\Chaining_Stores" />
+    <folder name="Chart\Bar\3D" />
     <folder name="TreePanel\Basic\Custom_Drop_Logic" />
     <folder name="ColorPicker\Advanced\Overview" />
     <folder name="Form\DateField\Overview" />
     <folder name="Form\TextField\InputMask" />
-    <folder name="Form\TextField\InputMask" />
     <folder name="TreePanel\Advanced\Filter" />
     <folder name="Form\Field_Note\Overview" />
-    <folder name="TreePanel\Basic\Custom_Drop_Logic" />
   </updated>
 
   <!--
