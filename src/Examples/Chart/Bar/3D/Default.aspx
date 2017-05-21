@@ -124,7 +124,7 @@
                             <Renderer Handler="return label.toFixed(0) + '%';" />
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
+                        <ext:Category3DAxis
                             Fields="Name"
                             Position="Left"
                             Grid="true" />
