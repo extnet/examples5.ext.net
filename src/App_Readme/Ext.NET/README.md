@@ -1,7 +1,7 @@
 | Product | Ext.NET Enterprise |
 | :---- | :---- |
-| Release Date | 2017-01-23 |
-| Current Version | 4.2.0 |
+| Release Date | 2017-05-22 |
+| Current Version | 4.2.1 |
 | Issue Tracker | [Ext.NET](https://github.com/extnet/Ext.NET/issues) on GitHub |
 
 ## Contents
@@ -94,7 +94,7 @@ See [CHANGELOG.md](https://github.com/extnet/Premium/blob/master/CHANGELOG.md), 
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
       <dependentAssembly>
         <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" />
-        <bindingRedirect oldVersion="0.0.0.0-9.0.0.0" newVersion="9.0.0.0" />
+        <bindingRedirect oldVersion="0.0.0.0-10.0.0.0" newVersion="10.0.0.0" />
       </dependentAssembly>
       <dependentAssembly>
         <assemblyIdentity name="Ext.Net.Utilities" publicKeyToken="2c34ac34702a3c23" />
@@ -143,6 +143,8 @@ See [CHANGELOG.md](https://github.com/extnet/Premium/blob/master/CHANGELOG.md), 
 
 ## 5. Browser Support
 
+Official Ext JS [browser support](http://docs.sencha.com/extjs/6.2.1/guides/supported_browsers.html).
+
 | Platform | Browser | Version |
 | ---- | ---- | ---- |
 | Desktop | | |
@@ -176,7 +178,7 @@ See [CHANGELOG.md](https://github.com/extnet/Premium/blob/master/CHANGELOG.md), 
 | glyphFontFamily | string | Sets the default font-family to use for components that support a glyph config. Default is `""`. |
 | gzip | bool | Whether to automatically render scripts with gzip compression. Only works when `renderScripts="Embedded"` and/or `renderStyles="Embedded"`. Default is `True`. Options include [`True` \| `False`] |
 | idMode | IDMode | Manages how a control's id is rendered to the client. Default is `Explicit`. Options include [`Client` \| `Explicit` \| `Ignore` \| `Inherit` \| `Legacy` \| `Parent` \| `Predictable` \| `Static`] |
-| initScriptMode | InitScriptMode | Specifies how to render the Ext.NET initialization script. The options are self-explanatory. Default is 'Inline'. Options include [`Inline` \| `Linked`] |
+| initScriptMode | InitScriptMode | Specifies how to render the Ext.NET initialization script. The options are self-explanatory. Default is 'Linked'. Options include [`Inline` \| `Linked` \| `LinkedJS`] |
 | licenseKey | string | Your Ext.NET License key |
 | locale | string | Specifies the language of the Ext.NET localization resources to use. For example, `en-GB`, `fr-CA`, `ru`. Default is English. |
 | namespace | string | The application's JavaScript namespace. Default is `App`. |
