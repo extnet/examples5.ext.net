@@ -1,0 +1,1 @@
+﻿The files here are tracked by git because they are only deployed on NuGet package reinstall/upgrades, not during NuGet package restore.
