@@ -3,12 +3,21 @@
 <script runat="server">
     public class MyModel
     {
+        /// <summary>
+        /// Ensures the ToConfig() string does not have line breaks, which would break the code.
+        /// </summary>
+        /// <returns>The single-line store representation object.</returns>
+        private static string makeInline(Store val)
+        {
+            return val.ToConfig().Replace("\r\n", "");
+        }
+
         public static object Model = new
         {
             //A declaration of Ext.data.Store configurations that are first processed as binds to produce an effective store configuration.
             stores = new
             {
-                everyone = JRawValue.From(new Store
+                everyone = JRawValue.From(makeInline(new Store
                 {
                     Model =
                     {
@@ -26,9 +35,9 @@
                     },
 
                     Data = GenerateData(15, 10)
-                }.ToConfig()),
+                })),
 
-                adults = JRawValue.From(new Store
+                adults = JRawValue.From(makeInline(new Store
                 {
                     Source = "{everyone}",
                     Filters =
@@ -48,7 +57,7 @@
                             Direction = Ext.Net.SortDirection.ASC
                         }
                     }
-                }.ToConfig())
+                }))
             }
         };
 
