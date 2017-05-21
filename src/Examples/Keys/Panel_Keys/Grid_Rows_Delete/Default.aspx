@@ -53,7 +53,7 @@
     <script>
         var processEvent = function (view, record, node, index, event) {
             // Load the event with the extra information needed by the mappings
-            event.view = view;
+            event.gridView = view;
             event.store = view.getStore();
             event.record = record;
             event.index = index;
@@ -70,8 +70,8 @@
                     }
 
                     // Attempt to select the record that's now in its place
-                    e.view.getSelectionModel().select(e.index);
-                    e.view.el.focus();
+                    e.gridView.getSelectionModel().select(e.index);
+                    e.gridView.el.focus();
                 });
         };
     </script>
@@ -121,18 +121,23 @@
         <SelectionModel>
             <ext:RowSelectionModel runat="server" />
         </SelectionModel>
+
         <View>
             <ext:GridView runat="server">
-               <KeyMap EventName="itemkeydown" ComponentEvent="true">
-                   <ProcessEvent Fn="processEvent" />
-                   <Binding>
+                <%-- Component-level key mapping is currently broken (#1466). --%>
+                <%--<KeyMap runat="server" EventName="itemkeydown" ComponentEvent="true">
+                    <ProcessEvent Fn="processEvent" />
+                    <Binding>
                         <ext:KeyBinding Handler="deleteRows">
                             <Keys>
                                 <ext:Key Code="DELETE" />
                             </Keys>
                         </ext:KeyBinding>
-                   </Binding>
-                </KeyMap>
+                    </Binding>
+                </KeyMap>--%>
+                <Listeners>
+                    <ItemKeyDown Handler="if (e.getKeyName() == 'DELETE') deleteRows(e.keyCode, processEvent(item, record, node, index, e))" />
+                </Listeners>
             </ext:GridView>
         </View>
     </ext:GridPanel>
