@@ -110,7 +110,7 @@
                             <HighlightConfig>
                                 <ext:Sprite FillStyle="#000" LineWidth="2" StrokeStyle="#fff" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>

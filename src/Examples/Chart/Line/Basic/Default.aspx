@@ -133,7 +133,7 @@
 
                             <Label Field="Data1" Display="Over" />
 
-                            <Tooltip TrackMouse="true" StyleSpec="background: #fff;" ShowDelay="0" DismissDelay="0" HideDelay="0">
+                            <Tooltip TrackMouse="true" ShowDelay="0" DismissDelay="0" HideDelay="0">
                                 <Renderer Handler="toolTip.setHtml(record.get('Month') + ': ' + record.get('Data1') + '%');" />
                             </Tooltip>
                         </ext:LineSeries>

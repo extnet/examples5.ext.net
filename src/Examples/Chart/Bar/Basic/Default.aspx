@@ -131,7 +131,7 @@
                             <HighlightConfig>
                                 <ext:Sprite FillStyle="rgba(249, 204, 157, 1.0)" StrokeStyle="black" LineWidth="2" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('Name') + ': ' + record.get('Data1') + '%');" />
                             </Tooltip>
                             <Label

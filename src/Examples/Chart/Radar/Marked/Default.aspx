@@ -114,7 +114,7 @@
                             <HighlightConfig>
                                 <ext:Sprite Radius="8" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
@@ -129,7 +129,7 @@
                             <HighlightConfig>
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data2') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
@@ -144,7 +144,7 @@
                             <HighlightConfig>
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data3') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>
@@ -156,7 +156,7 @@
                             <HighlightConfig>
                                 <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
                             </HighlightConfig>
-                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data4') + '%');" />
                             </Tooltip>
                         </ext:RadarSeries>

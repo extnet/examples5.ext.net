@@ -165,7 +165,7 @@
                                             <HighlightConfig>
                                                 <ext:Sprite FillStyle="rgba(204, 230, 73, 1.0)" StrokeStyle="black" />
                                             </HighlightConfig>
-                                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
+                                            <Tooltip runat="server" TrackMouse="true">
                                                 <Renderer Handler="toolTip.setHtml(record.get('complaint') + ': ' + record.get('count') + ' responses.');" />
                                             </Tooltip>
                                         </ext:BarSeries>
@@ -183,7 +183,7 @@
                                             <HighlightDefaults>
                                                 <ext:Sprite Scaling="2" RotationRads="<%# Math.PI / 4 %>" AutoDataBind="true" />
                                             </HighlightDefaults>
-                                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
+                                            <Tooltip runat="server" TrackMouse="true">
                                                 <Renderer Fn="renderer" />
                                             </Tooltip>
                                         </ext:LineSeries>

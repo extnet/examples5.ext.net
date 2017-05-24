@@ -143,7 +143,7 @@
                                 <ext:Sprite FillStyle="yellow" />
                             </HighlightConfig>
 
-                            <Tooltip runat="server" StyleSpec="background: #fff;">
+                            <Tooltip runat="server">
                                 <Renderer Handler="var browser = context.series.getTitle()[Ext.Array.indexOf(context.series.getYField(), context.field)]; toolTip.setHtml(browser + ' for ' + record.get('Month') + ': ' + record.get(context.field) + '%');" />
                             </Tooltip>
                         </ext:BarSeries>

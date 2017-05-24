@@ -128,7 +128,7 @@
                     <HighlightDefaults>
                         <ext:Sprite Opacity="1" StrokeStyle="black" />
                     </HighlightDefaults>
-                    <Tooltip TrackMouse="true" StyleSpec="background: #fff">
+                    <Tooltip TrackMouse="true">
                         <Renderer Handler="var browser = context.series.getTitle()[Ext.Array.indexOf(context.series.getYField(), context.field)]; toolTip.setHtml(browser + ' for ' + record.get('month') + ': ' + record.get(context.field) + '%');" />
                     </Tooltip>
                 </ext:BarSeries>

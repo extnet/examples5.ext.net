@@ -128,7 +128,7 @@
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
 
-                            <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip TrackMouse="true">
                                 <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
@@ -145,7 +145,7 @@
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
 
-                            <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip TrackMouse="true">
                                 <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
@@ -162,7 +162,7 @@
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
 
-                            <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip TrackMouse="true">
                                 <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>
@@ -179,7 +179,7 @@
                                 <ext:Sprite Scaling="2"  />
                             </HighlightConfig>
 
-                            <Tooltip TrackMouse="true" StyleSpec="background: #fff;">
+                            <Tooltip TrackMouse="true">
                                 <Renderer Handler="var title = context.series.getTitle(); toolTip.setHtml(title + ' for ' + record.get('Month') + ': ' + record.get(context.series.getYField()) + '%');" />
                             </Tooltip>
                         </ext:LineSeries>

@@ -175,7 +175,7 @@
                                             <HighlightDefaults>
                                                 <ext:CircleSprite GlobalAlpha="1" ScalingX="1.5" ScalingY="1.5" />
                                             </HighlightDefaults>
-                                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
+                                            <Tooltip runat="server" TrackMouse="true">
                                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + ' %');" />
                                             </Tooltip>
                                         </ext:AreaSeries>

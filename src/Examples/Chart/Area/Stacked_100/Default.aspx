@@ -134,7 +134,7 @@
                                 <HighlightDefaults>
                                     <ext:CircleSprite Opacity="1" Scaling="1.5" />
                                 </HighlightDefaults>
-                                <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
+                                <Tooltip runat="server" TrackMouse="true">
                                     <Renderer Handler="var browser = context.series.getTitle()[Ext.Array.indexOf(context.series.getYField(), context.field)]; toolTip.setHtml(browser + ' for ' +  Ext.Date.format(record.get('Date'), 'M d') + ': ' + record.get(context.field) + '%');" />
                                 </Tooltip>
                             </ext:AreaSeries>
