@@ -11,6 +11,35 @@
         {
             // dynamic module loading via DesktopModuleProxy
             this.LoadControl("modules/WhatsNew.ascx");
+
+            // Fixes some theme-specific settings
+            var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+
+            switch (curTheme.Theme)
+            {
+                case Ext.Net.Theme.Triton:
+                    // For this one the value specified in markup is good.
+                    break;
+                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Gray:
+                    Desktop1.TaskBar.QuickStartWidth = 50;
+                    Desktop1.TaskBar.TrayWidth = 90;
+                    break;
+                case Ext.Net.Theme.CrispTouch:
+                case Ext.Net.Theme.NeptuneTouch:
+                    Desktop1.TaskBar.QuickStartWidth = 84;
+                    Desktop1.TaskBar.TrayWidth = 127;
+                    break;
+                case Ext.Net.Theme.Crisp:
+                case Ext.Net.Theme.Neptune:
+                    Desktop1.TaskBar.QuickStartWidth = 64;
+                    Desktop1.TaskBar.TrayWidth = 114;
+                    break;
+                case Ext.Net.Theme.Aria:
+                    Desktop1.TaskBar.QuickStartWidth = 64;
+                    Desktop1.TaskBar.TrayWidth = 119;
+                    break;
+            }
         }
     }
 
@@ -135,7 +164,7 @@
                 </ext:DesktopModule>
 
                 <ext:DesktopModule ModuleID="notepad">
-                    <Shortcut Name="Notepad" IconCls="x-notepad-shortcut"  SortIndex="2" />
+                    <Shortcut Name="Notepad" IconCls="x-notepad-shortcut" SortIndex="2" />
                     <Launcher Text="Notepad" Icon="ApplicationForm" />
                     <Window>
                         <ext:Window runat="server"
@@ -231,9 +260,9 @@
                 </ToolConfig>
             </StartMenu>
 
-            <TaskBar TrayWidth="120">
+            <TaskBar QuickStartWidth="80" TrayWidth="125">
                 <QuickStart>
-                    <ext:Toolbar runat="server" Width="80">
+                    <ext:Toolbar runat="server">
                         <Items>
                             <ext:Button runat="server" Handler="tile" Icon="ApplicationTileVertical" OverflowText="Tile windows">
                                 <QTipCfg Text="Tile windows" />
