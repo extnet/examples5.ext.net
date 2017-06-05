@@ -10,4 +10,5 @@
     <file zip="false" url="modules/TabWindow.ascx" />
     <file zip="false" url="modules/WhatsNew.ascx" />
   </include>
+  <tags>desktop,ux,modules,charts,login</tags>
 </example>
