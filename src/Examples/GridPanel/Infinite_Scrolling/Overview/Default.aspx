@@ -39,7 +39,6 @@
 <html>
 <head runat="server">
     <title>Infinite Scrolling - Ext.NET Examples</title>
-    <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
@@ -48,7 +47,8 @@
         <h1>Infinite Scrolling</h1>
 
         <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
-        <p>This grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
+        <p>The grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
+        <p>At least since Ext.NET 4 (ExtJS 6), the feature is enabled by default in all grid panels and can be disabled with the <b>BufferedRenderer="false"</b> setting in the store.</p>
 
         <ext:GridPanel
             runat="server"

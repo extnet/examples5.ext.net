@@ -65,8 +65,9 @@
         <h1>Buffered Scrolling</h1>
 
         <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
-        <p>This grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
+        <p>The grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
         <p>This example illustrates loading of all the records up front thus acting as a data buffer used as rows are rendered.</p>
+        <p>At least since Ext.NET 4 (ExtJS 6), the feature is enabled by default in all grid panels and can be disabled with the <b>BufferedRenderer="false"</b> setting in the store.</p>
 
         <ext:GridPanel
             runat="server"
@@ -89,9 +90,6 @@
                     </Model>
                 </ext:Store>
             </Store>
-            <Plugins>
-                <ext:BufferedRenderer runat="server" />
-            </Plugins>
             <View>
                 <ext:GridView runat="server" TrackOver="false" />
             </View>
