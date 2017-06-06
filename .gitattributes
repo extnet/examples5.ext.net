@@ -9,7 +9,7 @@
 *.config text eol=lf
 *.cs text eol=lf
 *.cshtml text eol=lf
-*.csproj text eol=lf
+*.csproj text eol=crlf
 *.htm text eol=lf
 *.html text eol=lf
 *.js text eol=lf

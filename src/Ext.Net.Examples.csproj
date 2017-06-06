@@ -2201,9 +2201,13 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>echo Deploying $(Configuration) files to bin\ (required by ASP.NET)
+
 del /q ..\*
+
 echo $(Configuration) &gt; ..\BuildMode.txt
+
 copy . ..\.
+
 echo Done deploying $(Configuration) DLLs.</PostBuildEvent>
   </PropertyGroup>
-</Project>
+</Project>
