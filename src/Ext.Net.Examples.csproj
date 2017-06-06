@@ -1151,8 +1151,6 @@
     <Content Include="Examples\TabPanel\Basic\TabBar_Config\config.xml" />
     <Content Include="Examples\TabPanel\Basic\TabBar_Config\Default.aspx" />
     <Content Include="Examples\TabPanel\Basic\TabBar_Config\ElementChooser.ascx" />
-    <Content Include="Examples\TabPanel\_GroupTabPanel\Overview\StockPortlet.ascx" />
-    <Content Include="Examples\TabPanel\_GroupTabPanel\Overview\Tickets.ascx" />
     <Content Include="Examples\Toolbar\config.xml" />
     <Content Include="Examples\Toolbar\Menu\Context_Menu\config.xml" />
     <Content Include="Examples\Toolbar\Menu\Context_Menu\Default.aspx" />
@@ -2130,8 +2128,6 @@
     <Content Include="Examples\TabPanel\Basic\TabMenu\config.xml" />
     <Content Include="Examples\TabPanel\Basic\TabMenu\Default.aspx" />
     <Content Include="Examples\TabPanel\config.xml" />
-    <Content Include="Examples\TabPanel\_GroupTabPanel\Overview\config.xml" />
-    <Content Include="Examples\TabPanel\_GroupTabPanel\Overview\Default.aspx" />
     <Content Include="Examples\TabPanel\TabStrip\Overview\config.xml" />
     <Content Include="Examples\TabPanel\TabStrip\Overview\Default.aspx" />
     <Content Include="Examples\TreePanel\Advanced\Remote_Mode_with_Service\config.xml" />
