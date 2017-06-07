@@ -205,7 +205,11 @@
         <ext:ModelField Name="Date" Type="Date" />
     </Fields>
     <Associations>
-        <ext:BelongsToAssociation Model="Customer" ForeignKey="CustomerId" PrimaryKey="Id" />
+        <%--
+            Alternatively to HasMany from Customer model to Order model,
+            a BelongsTo from Order to Customer would also work.
+        --%>
+        <%--<ext:BelongsToAssociation Model="Customer" ForeignKey="CustomerId" PrimaryKey="Id" />--%>
         <ext:HasManyAssociation Model="OrderItem" AutoLoad="true" PrimaryKey="Id" ForeignKey="OrderId" />
     </Associations>
     <Proxy>
@@ -221,9 +225,14 @@
         <ext:ModelField Name="Quantity" Type="Int" />
         <ext:ModelField Name="Price" Type="Float" />
     </Fields>
-    <Associations>
+
+    <%--
+        Alternatively to HasMany from Order model to OrderItem model,
+        a BelongsTo from OrderItem to Order would also work.
+    --%>
+    <%--<Associations>
         <ext:BelongsToAssociation Model="Order" ForeignKey="OrderId" PrimaryKey="Id" />
-    </Associations>
+    </Associations>--%>
     <Proxy>
         <ext:PageProxy DirectFn="App.direct.GetOrderItems" />
     </Proxy>
