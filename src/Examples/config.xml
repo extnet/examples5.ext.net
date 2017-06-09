@@ -5,6 +5,10 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="4.2.1">
+    <folder name="TabPanel\Plugin\TabCloseMenu" />    
+  </new>
+  
   <updated version="4.2.1">
     <folder name="Keys\Panel_Keys\Grid_Rows_Delete" />
     <folder name="Data_Binding\Basic\Chaining_Stores" />

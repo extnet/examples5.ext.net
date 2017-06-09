@@ -786,6 +786,8 @@
     <Content Include="Examples\TabPanel\Basic\Side_Tabs\Default.aspx" />
     <Content Include="Examples\TabPanel\Basic\Reorderable_Tabs\config.xml" />
     <Content Include="Examples\TabPanel\Basic\Reorderable_Tabs\Default.aspx" />
+    <Content Include="Examples\TabPanel\Plugin\TabCloseMenu\config.xml" />
+    <Content Include="Examples\TabPanel\Plugin\TabCloseMenu\Default.aspx" />
     <Content Include="Examples\TabPanel\TabStrip\Side_Tabs\config.xml" />
     <Content Include="Examples\TabPanel\TabStrip\Side_Tabs\Default.aspx" />
     <Content Include="Examples\TaskManager\Basic\Poll_Server\config.xml" />
@@ -2210,4 +2212,4 @@ copy . ..\.
 
 echo Done deploying $(Configuration) DLLs.</PostBuildEvent>
   </PropertyGroup>
-</Project>
+</Project>
