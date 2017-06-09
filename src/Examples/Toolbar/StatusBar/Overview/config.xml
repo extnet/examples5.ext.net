@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-    <description></description>
+  <description></description>
+  <tags>statusbar,status,panel,direct event,extra params,align,task manager,tasks</tags>
 </example>

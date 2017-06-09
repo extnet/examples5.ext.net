@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <example>
-    <description>
-    </description>
+  <description>
+  </description>
+  <tags>image,window,toolbar,statusbar,pan,progressbar</tags>
 </example>
