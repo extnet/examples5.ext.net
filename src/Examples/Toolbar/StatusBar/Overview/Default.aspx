@@ -212,7 +212,7 @@
 
         <ext:Panel
             runat="server"
-            Width="550"
+            Width="650"
             Title="Word Processor"
             BodyPadding="5"
             Layout="Fit">
