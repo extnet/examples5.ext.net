@@ -3,5 +3,5 @@
   <description>
     <![CDATA[Demonstrates how to create a grid from Array data]]>
   </description>
-  <tags>livesearch,livesearchgridpanel,grid,gridpanel,renderer,regexp,statusbar</tags>
+  <tags>livesearch,livesearchgridpanel,livesearchtoolbar,toolbar,plugin,grid,gridpanel,renderer,regexp,statusbar,ux</tags>
 </example>
