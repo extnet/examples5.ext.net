@@ -142,7 +142,7 @@
                 <Listeners>
                     <RegExpError Handler="#{StatusBar1}.setStatus({text: message, iconCls: 'x-status-error'});" />
                     <BeforeSearch Handler="#{StatusBar1}.setStatus({text: 'Nothing Found', iconCls: ''});" />
-                    <Search Handler="if(count>0) {#{StatusBar1}.setStatus({text: count + ' matche(s) found.', iconCls: 'x-status-valid'});}" />
+                    <Search Handler="if(count>0) {#{StatusBar1}.setStatus({text: count + ' match(es) found.', iconCls: 'x-status-valid'});}" />
                 </Listeners>
             </ext:LiveSearchGridPanel>
         </Plugins>
