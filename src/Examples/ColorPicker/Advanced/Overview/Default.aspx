@@ -67,8 +67,8 @@
             <DirectEvents>
                 <Change OnEvent="HandleFieldChange">
                     <ExtraParams>
-                        <ext:Parameter Name="previousColor" Value="previousColor" Mode="Raw" />
-                        <ext:Parameter Name="color" Value="color" Mode="Raw" />
+                        <ext:Parameter Name="previousColor" Value="oldValue" Mode="Raw" />
+                        <ext:Parameter Name="color" Value="newValue" Mode="Raw" />
                     </ExtraParams>
                 </Change>
             </DirectEvents>
