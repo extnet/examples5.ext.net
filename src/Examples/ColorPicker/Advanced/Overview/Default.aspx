@@ -17,11 +17,6 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style type="text/css">
-        /* This solves a glitch on the ColorField (2) which the color square is not displayed in the field. - #1473 */
-        .x-colorpicker-field-swatch-inner {
-            z-index: 1
-        }
-
         /* This was extracted from Ext.JS Examples for Ext.NET 6.2.1 (from KitchenSink-all_2.css)
             url: http://examples.sencha.com/extjs/6.2.1/examples/kitchensink/?classic#form-color-picker
         */
