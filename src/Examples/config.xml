@@ -5,10 +5,39 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="4.2.2">
+    <folder name="TabPanel\Plugin\TabCloseMenu" />
+  </new>
+
+  <updated version="4.2.2">
+    <folder name="ColorPicker\Advanced\Overview" />
+    <folder name="GridPanel\Plugins\LiveSearch" />
+    <folder name="Toolbar\StatusBar\Overview" />
+    <folder name="GridPanel\Infinite_Scrolling\Buffered_Scrolling" />
+    <folder name="GridPanel\Infinite_Scrolling\Overview" />
+    <folder name="Chart\Column\Stacked" />
+    <folder name="Chart\Area\Basic" />
+    <folder name="Chart\Area\Stacked" />
+    <folder name="Chart\Area\Stacked_100" />
+    <folder name="Chart\Bar\Basic" />
+    <folder name="Chart\Bar\Stacked" />
+    <folder name="Chart\Bar\Stacked_100" />
+    <folder name="Chart\Column\Stacked_100" />
+    <folder name="Chart\Combination\Custom_Theme" />
+    <folder name="Chart\Combination\Pareto" />
+    <folder name="Chart\Line\Basic" />
+    <folder name="Chart\Line\Markers" />
+    <folder name="Chart\Radar\Basic" />
+    <folder name="Chart\Radar\Marked" />
+  </updated>
+
+  <!--
   <new version="4.2.1">
     <folder name="TabPanel\Plugin\TabCloseMenu" />    
   </new>
+  -->
   
+  <!--
   <updated version="4.2.1">
     <folder name="Keys\Panel_Keys\Grid_Rows_Delete" />
     <folder name="Data_Binding\Basic\Chaining_Stores" />
@@ -20,6 +49,7 @@
     <folder name="TreePanel\Advanced\Filter" />
     <folder name="Form\Field_Note\Overview" />
   </updated>
+  -->
 
   <!--
   <new version="4.2.0">
