@@ -45,7 +45,7 @@
 
     <h1>GridPanel with Local Filtering, Sorting and Paging</h1>
 
-    <p>Please see column header menu for apllying filters</p>
+    <p>Please see column header menu for applying filters</p>
 
     <ext:Window
         runat="server"
