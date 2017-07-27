@@ -6,6 +6,16 @@
 <head runat="server">
     <title>Rotate Text - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
+    <ext:XScript runat="server">
+        <script>
+            var handleSliderChange = function (slider, newValue, thumb, type) {
+                if (#{Draw1}) {
+                    #{Draw1}.getSurface().get('Sprite1').setAttributes({ rotationRads: newValue * Math.PI / 180 });
+                    #{Draw1}.getSurface().renderFrame();
+                }
+            }
+        </script>
+    </ext:XScript>
 </head>
 <body>
     <form runat="server">
@@ -26,7 +36,7 @@
             MaxValue="360"
             Number="0">
             <Listeners>
-                <Change Handler="#{Draw1}.getSurface().get('Sprite1').setAttributes({rotationRads: newValue * Math.PI / 180}); #{Draw1}.getSurface().renderFrame();" />
+                <Change Fn="handleSliderChange" />
             </Listeners>
         </ext:Slider>
 
