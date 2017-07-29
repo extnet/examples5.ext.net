@@ -48,9 +48,10 @@
 
         <p>Introduced with Ext.Net 2, the Infinite Scrolling support for GridPanels enables you to load any number of records into a grid without paging.</p>
         <p>The grid uses a virtualized scrolling system to handle potentially infinite data sets without any impact on client side performance.</p>
-        <p>At least since Ext.NET 4 (ExtJS 6), the feature is enabled by default in all grid panels and can be disabled with the <b>BufferedRenderer="false"</b> setting in the store.</p>
+        <p>Also, a paging-aware Ext.data.BufferedStore makes the grid load only the required number of records to be shown in the grid view, respecting the leading and trailing records buffer for smoother scrolling..</p>
 
         <ext:GridPanel
+            ID="GridPanel1"
             runat="server"
             Width="500"
             Height="500"
@@ -58,6 +59,7 @@
             Title="Stock Price">
             <Store>
                 <ext:Store
+                    ID="Store1"
                     runat="server"
                     Buffered="true"
                     PageSize="200"
@@ -102,14 +104,12 @@
                         runat="server"
                         Text="Last Update"
                         DataIndex="LastUpdate"
-                        Width="140">
+                        Width="160">
                         <Renderer Format="Date" FormatArgs="'n/j/Y g:i:s A'" />
                     </ext:Column>
                 </Columns>
             </ColumnModel>
-            <View>
-                <ext:GridView runat="server" TrackOver="false" />
-            </View>
+            <ViewConfig TrackOver="false" />
         </ext:GridPanel>
     </form>
 </body>
