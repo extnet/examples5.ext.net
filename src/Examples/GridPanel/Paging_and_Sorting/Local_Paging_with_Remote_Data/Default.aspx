@@ -106,7 +106,7 @@
                                 <ext:SliderTip runat="server" />
                             </Plugins>
                             <Listeners>
-                                <Change Handler="#{RangeText}.setText((newValue+1) + '-' + (newValue + 1000));" />
+                                <Change Handler="if (#{RangeText}) #{RangeText}.setText((newValue+1) + '-' + (newValue + 1000));" />
                                 <ChangeComplete Handler="#{GridPanel1}.store.load();" />
                             </Listeners>
                         </ext:Slider>
