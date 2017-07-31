@@ -26,15 +26,19 @@
             };
 
             var updateColor = function () {
-                var color = "#" +
-                    toHex(#{RedSlider}.getValue().toString(16)) +
-                    toHex(#{GreenSlider}.getValue().toString(16)) +
-                    toHex(#{BlueSlider}.getValue().toString(16));
+                // It is enough to check whether the last defined component has
+                // been completed before proceeding
+                if (#{ColorPreview}) {
+                    var color = "#" +
+                        toHex(#{RedSlider}.getValue().toString(16)) +
+                        toHex(#{GreenSlider}.getValue().toString(16)) +
+                        toHex(#{BlueSlider}.getValue().toString(16));
 
-                color = color.toUpperCase();
+                    color = color.toUpperCase();
 
-                #{ColorPreview}.setTitle("Color: " + color);
-                #{ColorPreview}.body.setStyle("background-color", color);
+                    #{ColorPreview}.setTitle("Color: " + color);
+                    #{ColorPreview}.body.setStyle("background-color", color);
+                };
             };
         </script>
     </ext:XScript>
@@ -50,7 +54,7 @@
             runat="server"
             Title="Color Chooser"
             Width="400"
-            Height="250"
+            Height="300"
             ButtonAlign="Left"
             BodyPadding="10"
             DefaultAnchor="100%">
