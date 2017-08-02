@@ -14,6 +14,17 @@
             }
         };
     </script>
+
+    <style type="text/css">
+        /*
+         *  This CSS class just illustrates the new selected entry highlight
+         *  feature introduced on Ext.NET 4.3.0. It is used below by the first
+         *  menu panel.
+         */
+        .bold-highlight {
+            font-weight: bold
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -41,8 +52,9 @@
                         <ext:MenuPanel
                             runat="server"
                             Title="MenuPanel with Selection Saving"
+                            SelectedTextCls="bold-highlight"
                             Icon="ArrowSwitch">
-                            <Menu runat="server">
+                            <Menu ID="mnu1" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" Icon="ArrowRight" />
                                     <ext:MenuItem runat="server" Text="Item 2" Icon="ArrowRight" />
@@ -58,7 +70,7 @@
                             Title="MenuPanel without Selection Saving"
                             SaveSelection="false"
                             Icon="ArrowSwitch">
-                            <Menu runat="server">
+                            <Menu ID="mnu2" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" Icon="ArrowRight" />
                                     <ext:MenuItem runat="server" Text="Item 2" Icon="ArrowRight" />
@@ -74,7 +86,7 @@
                             Title="Menu with Predefined Selection"
                             SelectedIndex="1"
                             Icon="ArrowSwitch">
-                            <Menu runat="server">
+                            <Menu ID="mnu3" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" Icon="ArrowRight" />
                                     <ext:MenuItem runat="server" Text="Item 2" Icon="ArrowRight" />
