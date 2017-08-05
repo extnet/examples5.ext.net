@@ -1,6 +1,33 @@
 ﻿<%@ Page Language="C#" %>
 
 <script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!X.IsAjaxRequest)
+        {
+            switch (Ext.Net.ResourceManager.GetInstance(HttpContext.Current).Theme)
+            {
+                case Ext.Net.Theme.Aria:
+                    DatePickPanel.Width = 213;
+                    break;
+                case Ext.Net.Theme.Crisp:
+                case Ext.Net.Theme.Neptune:
+                    DatePickPanel.Width = 212;
+                    break;
+                case Ext.Net.Theme.CrispTouch:
+                case Ext.Net.Theme.NeptuneTouch:
+                    DatePickPanel.Width = 282;
+                    break;
+                case Ext.Net.Theme.Triton:
+                    DatePickPanel.Width = 310;
+                    break;
+                case Ext.Net.Theme.Gray:
+                case Ext.Net.Theme.Default:
+                    break;
+            }
+        }
+    }
+
     [DirectMethod(Namespace = "CompanyX")]
     public void ShowMsg(string msg)
     {
@@ -52,8 +79,9 @@
                     Cls="app-center">
                     <Items>
                         <ext:Panel
+                            ID="DatePickPanel"
                             runat="server"
-                            Width="213"
+                            Width="179"
                             Region="West"
                             Border="false"
                             Cls="app-west">
