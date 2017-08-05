@@ -653,6 +653,8 @@
     <Content Include="Examples\GridPanel\Spreadsheet\Initial_Selection\Default.aspx" />
     <Content Include="Examples\GridPanel\Spreadsheet\Overview\config.xml" />
     <Content Include="Examples\GridPanel\Spreadsheet\Overview\Default.aspx" />
+    <Content Include="Examples\Keys\KeyMap\Map_Inside_Component\config.xml" />
+    <Content Include="Examples\Keys\KeyMap\Map_Inside_Component\Default.aspx" />
     <Content Include="Examples\Kitchen_Sink\config.xml" />
     <Content Include="Examples\Kitchen_Sink\Forms\config.xml" />
     <Content Include="Examples\Kitchen_Sink\GridPanels\config.xml" />
