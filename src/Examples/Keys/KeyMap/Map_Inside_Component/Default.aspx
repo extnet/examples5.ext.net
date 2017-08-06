@@ -2,6 +2,20 @@
 
 <!DOCTYPE html>
 
+<script runat="server">
+    public void Page_Load(object sender, EventArgs e)
+    {
+        if (!X.IsAjaxRequest)
+        {
+            var keys = new List<KeyBindItem>()
+            {
+                new KeyBindItem() { Key = "o", Handler = "Ext.Msg.alert('hotkey', 'server-side added key binding for \\'o\\'.');"},
+                new KeyBindItem() { Key = "shift+o", Handler = "Ext.Msg.alert('hotkey', 'server-side added key binding for \\'shift+o\\'.');"}
+            };
+            vp1.SetKeyMap(keys);
+        }
+    }
+</script>
 <html>
 <head runat="server">
     <title>KeyMap Toggling BorderLayout Regions - Ext.NET Examples</title>
@@ -10,7 +24,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport ID="vp1" runat="server" Layout="BorderLayout">
         <KeyMap>
             <ext:KeyBindItem Key="n" Handler="#{North}.toggleCollapse();" />
             <ext:KeyBindItem Key="s" Handler="#{South}.toggleCollapse();" />
@@ -35,6 +49,7 @@
                 <Content>
                     <h2>Here, the key bindings are set to the viewport component directly, instead of a standalone keymap with an arbitrary target.</h2>
                     <p>The key binding specification is different and this example illustrates some uses of it.</p>
+                    <p>There's also 'o' and 'shift+o' keys bound from a server-side call during page load.</p>
                 </Content>
             </ext:Panel>
             <ext:Panel
