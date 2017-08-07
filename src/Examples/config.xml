@@ -5,10 +5,30 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <updated version="4.3.0">
+    <folder name="Keys\KeyMap\Map_Inside_Component" />
+    <folder name="Calendar\Overview\Basic" />
+    <folder name="Calendar\Overview\Remote_Data" />
+    <folder name="Draw\Basic\Rotate_Text" />
+    <folder name="Draw\Basic\Tiger" />
+    <folder name="Events\DirectMethods\Overview" />
+    <folder name="Form\HtmlEditor\Basic" />
+    <folder name="Toolbar\Menu\MenuPanel" />
+    <folder name="GridPanel\Paging_and_Sorting\Local_Paging_with_Remote_Data" />
+    <folder name="Form\Slider\Overview" />
+    <folder name="GridPanel\Infinite_Scrolling\Overview" />
+    <folder name="Form\DropDownField\ValueText_Mode" />
+    <folder name="GridPanel\Plugins\GridFilters_Local" />
+    <folder name="GridPanel\Plugins\GridFilters_Remote" />
+  </updated>
+
+  <!--
   <new version="4.2.2">
     <folder name="TabPanel\Plugin\TabCloseMenu" />
   </new>
+  -->
 
+  <!--
   <updated version="4.2.2">
     <folder name="ColorPicker\Advanced\Overview" />
     <folder name="GridPanel\Plugins\LiveSearch" />
@@ -30,6 +50,7 @@
     <folder name="Chart\Radar\Basic" />
     <folder name="Chart\Radar\Marked" />
   </updated>
+  -->
 
   <!--
   <new version="4.2.1">
