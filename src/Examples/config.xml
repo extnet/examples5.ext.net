@@ -14,6 +14,7 @@
     <folder name="Events\DirectMethods\Overview" />
     <folder name="Form\HtmlEditor\Basic" />
     <folder name="Toolbar\Menu\MenuPanel" />
+    <folder name="GridPanel\ColumnModel\WidgetColumn" />
     <folder name="GridPanel\Paging_and_Sorting\Local_Paging_with_Remote_Data" />
     <folder name="Form\Slider\Overview" />
     <folder name="GridPanel\Infinite_Scrolling\Overview" />

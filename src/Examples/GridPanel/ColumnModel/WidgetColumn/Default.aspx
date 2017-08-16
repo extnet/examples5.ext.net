@@ -69,6 +69,8 @@
 
         <p>This example shows how to create Widgets in grid columns. Widgets are lightweight components with a simpler lifecycle.</p>
 
+        <p>The <b>Progress</b> and <b>Slider</b> widget columns uses the widget's <a href="http://docs.sencha.com/extjs/6.5.0/classic/Ext.Widget.html#cfg-ripple">Ripple</a> feature to highlight clicks on them.</p>
+
         <ext:GridPanel
             runat="server"
             Collapsible="true"
@@ -116,7 +118,7 @@
 
                     <ext:WidgetColumn runat="server" Width="120" DataIndex="progress" Text="Progress">
                         <Widget>
-                            <ext:ProgressBarWidget runat="server" TextTplString="{percent:number('0')}% done" />
+                            <ext:ProgressBarWidget runat="server" TextTplString="{percent:number('0')}% done" RippleString="blue" />
                         </Widget>
                     </ext:WidgetColumn>
 
@@ -136,7 +138,7 @@
 
                     <ext:WidgetColumn runat="server" Width="120" DataIndex="progress" Text="Slider">
                         <Widget>
-                            <ext:SliderWidget runat="server" MinValue="0" MaxValue="1" DecimalPrecision="2">
+                            <ext:SliderWidget runat="server" MinValue="0" MaxValue="1" DecimalPrecision="2" Ripple="true">
                                 <Listeners>
                                     <Change Handler="if (this.getWidgetRecord) {var rec = this.getWidgetRecord(); if (rec) { rec.set('progress', newValue);}}" />
                                 </Listeners>
