@@ -91,7 +91,7 @@
 
                 if (wantedPageSize != curPageSize) {
                     #{GridPanel1}.store.pageSize = wantedPageSize;
-                    ${GridPanel1}.store.reload();
+                    #{GridPanel1}.store.reload();
                 }
             }
         </script>
