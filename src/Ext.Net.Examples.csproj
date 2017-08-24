@@ -579,6 +579,8 @@
     <Content Include="Examples\Form\Miscellaneous\MultiSelector\Default.aspx" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\config.xml" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\Default.aspx" />
+    <Content Include="Examples\GridPanel\ArrayGrid\Keep_Page_on_Refresh\config.xml" />
+    <Content Include="Examples\GridPanel\ArrayGrid\Keep_Page_on_Refresh\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\TagColumn\config.xml" />
     <Content Include="Examples\GridPanel\ColumnModel\TagColumn\Default.aspx" />
     <Content Include="Examples\Form\Tag\TagField\config.xml" />
