@@ -82,6 +82,20 @@
             return Ext.String.format(template, (value > 0) ? "green" : "red", value + "%");
         };
     </script>
+
+    <ext:XScript runat="server">
+        <script type="text/javascript">
+            var handlePageSizeSelect = function (item, records) {
+                var curPageSize = #{GridPanel1}.store.pageSize,
+                    wantedPageSize = parseInt(item.getValue(), 10);
+
+                if (wantedPageSize != curPageSize) {
+                    #{GridPanel1}.store.pageSize = wantedPageSize;
+                    ${GridPanel1}.store.reload();
+                }
+            }
+        </script>
+    </ext:XScript>
 </head>
 <body>
     <form runat="server">
@@ -152,7 +166,7 @@
                                 <ext:ListItem Value="10" />
                             </SelectedItems>
                             <Listeners>
-                                <Select Handler="#{GridPanel1}.store.pageSize = parseInt(this.getValue(), 10); #{GridPanel1}.store.reload();" />
+                                <Select Fn="handlePageSizeSelect" />
                             </Listeners>
                         </ext:ComboBox>
                     </Items>
