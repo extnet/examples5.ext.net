@@ -1,13 +1,26 @@
 <%@ Page Language="C#" %>
+<%@ Import Namespace="Ext.Net.Examples.Northwind" %>
 
 <script runat="server">
     [DirectMethod]
     public object BindData(string action, Dictionary<string, object> extraParams)
     {
+        int total;
+        DataSorter sorter;
+
         StoreRequestParameters prms = new StoreRequestParameters(extraParams);
 
-        int total;
-        List<Ext.Net.Examples.Northwind.Employee> data = Ext.Net.Examples.Northwind.Employee.GetEmployeesFilter(prms.Start, prms.Limit, prms.Sort[0], out total);
+        if (prms.Sort.Length < 1)
+        {
+            X.Msg.Alert("Default Server Sorting", "When no sorting column is provided, server will sort the entries by the <b>HireDate</b> column.").Show();
+            sorter = new DataSorter(new DataSorter.Config() { Property = "HireDate" });
+        }
+        else
+        {
+            sorter = prms.Sort[0];
+        }
+
+        List<Employee> data = Employee.GetEmployeesFilter(prms.Start, prms.Limit, sorter, out total);
 
         return new { data, total };
     }
@@ -49,6 +62,16 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
+        <h1>Remote Sorting and Paging with PageProxy</h1>
+
+        <p>
+            The <b>Clear Sort</b> button in the paging toolbar below will trigger
+            a store reload as a side effect of clearing the sort information, so
+            that data is acquired without sorting information, using the store's
+            <a href="http://docs.sencha.com/extjs/6.5.1/classic/Ext.data.AbstractStore.html#cfg-reloadOnClearSorters">ReloadOnClearSorters</a>
+            property.
+        </p>
+
         <ext:GridPanel
             runat="server"
             ID="GridPanel1"
@@ -60,6 +83,7 @@
                     ID="Store1"
                     runat="server"
                     RemoteSort="true"
+                    ReloadOnClearSorters="true"
                     PageSize="3">
                     <Proxy>
                         <ext:PageProxy DirectFn="App.direct.BindData" />
@@ -127,7 +151,11 @@
                     DisplayInfo="true"
                     DisplayMsg="Displaying employees {0} - {1} of {2}"
                     EmptyMsg="No employees to display"
-                    />
+                    >
+                    <Items>
+                        <ext:Button runat="server" Text="Clear Sort" Handler="#{Store1}.sorters.clear();" />
+                    </Items>
+                </ext:PagingToolbar>
             </BottomBar>
         </ext:GridPanel>
 
