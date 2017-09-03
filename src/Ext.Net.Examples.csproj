@@ -451,6 +451,8 @@
     <Content Include="Examples\Chart\Line\Markers\Default.aspx" />
     <Content Include="Examples\Chart\Line\Multiple_Axes\config.xml" />
     <Content Include="Examples\Chart\Line\Multiple_Axes\Default.aspx" />
+    <Content Include="Examples\Chart\Misc\Captions\config.xml" />
+    <Content Include="Examples\Chart\Misc\Captions\Default.aspx" />
     <Content Include="Examples\Chart\Misc\Merge_Two_Charts\config.xml" />
     <Content Include="Examples\Chart\Misc\Merge_Two_Charts\Default.aspx" />
     <Content Include="Examples\Chart\Misc\VerticalMarker\config.xml" />
