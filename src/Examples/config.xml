@@ -5,6 +5,19 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="4.4.0">
+    <folder name="Chart\Misc\Captions" />
+    <folder name="GridPanel\ArrayGrid\Keep_Page_on_Refresh" />
+  </new>
+
+  <updated version="4.4.0">
+    <folder name="Chart\Line\Image_Markers" />
+    <folder name="GridPanel\Paging_and_Sorting\DirectMethod" />
+    <folder name="GridPanel\ArrayGrid\ArrayWithPaging" />
+    <folder name="GridPanel\ColumnModel\WidgetColumn" />
+  </updated>
+
+  <!--
   <updated version="4.3.0">
     <folder name="Keys\KeyMap\Map_Inside_Component" />
     <folder name="Calendar\Overview\Basic" />
@@ -22,6 +35,7 @@
     <folder name="GridPanel\Plugins\GridFilters_Local" />
     <folder name="GridPanel\Plugins\GridFilters_Remote" />
   </updated>
+  -->
 
   <!--
   <new version="4.2.2">

@@ -438,7 +438,7 @@ public string GetTimeStamp()
                         <span class="doc-member">options</span> : Object
                         <div class="doc-subdesc">
                             (optional) An object containing configuration properties. This options object may contain any of the following properties
-                            as well as options of <a href="http://docs.sencha.com/extjs/6.5.0/classic/Ext.data.Connection.html#method-request" target="_blank">Ext.data.Connection.request</a>.
+                            as well as options of <a href="http://docs.sencha.com/extjs/6.5.1/classic/Ext.data.Connection.html#method-request" target="_blank">Ext.data.Connection.request</a>.
                             <ul>
                                 <li>
                                     <span class="doc-prop">success</span> : Function
