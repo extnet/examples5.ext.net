@@ -163,6 +163,18 @@
                 range[1] = max - max % 50 + 50;
             }
         }
+
+        // just to avoid a 404 error on load
+        Ext.define('Ext.draw.sprite.Image', {
+            override: 'Ext.draw.sprite.Image',
+            updateSurface: function (surface) {
+                if (surface) {
+                    if (Ext.isString(this.attr.src) && this.attr.src.length > 1 ) {
+                        this.updateSource(this.attr);
+                    }
+                }
+            }
+        });
     </script>
 </head>
 <body>
