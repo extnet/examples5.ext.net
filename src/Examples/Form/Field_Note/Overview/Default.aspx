@@ -52,11 +52,6 @@
         .red-note {
             color: red !important;
         }
-
-        /* this fixes height issues on fields with notes with Chrome 56 -- github issue #1428 */
-        .x-form-item-body {
-            height: initial
-        }
     </style>
 </head>
 <body>
