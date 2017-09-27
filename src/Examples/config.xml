@@ -5,17 +5,26 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <updated version="4.4.1">
+    <folder name="Form\Field_Note\Overview" />
+    <folder name="Form\TextField\InputMask" />
+  </updated>
+
+  <!--
   <new version="4.4.0">
     <folder name="Chart\Misc\Captions" />
     <folder name="GridPanel\ArrayGrid\Keep_Page_on_Refresh" />
   </new>
+  -->
 
+  <!--
   <updated version="4.4.0">
     <folder name="Chart\Line\Image_Markers" />
     <folder name="GridPanel\Paging_and_Sorting\DirectMethod" />
     <folder name="GridPanel\ArrayGrid\ArrayWithPaging" />
     <folder name="GridPanel\ColumnModel\WidgetColumn" />
   </updated>
+  -->
 
   <!--
   <updated version="4.3.0">
