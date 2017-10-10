@@ -37,15 +37,17 @@
 
 <html>
 <head runat="server">
-    <title>Input Mask - Ext.NET Examples</title>
+    <title>Input Mask Plugin - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Input Mask</h1>
-        <p>InputMask is a plugin for TextField, used to add an input mask to the field.</p>
+        <h1>Input Mask Plugin</h1>
+        <p>The InputMask plugin adds a an input mask to the TextField component.</p>
+        <p>It is a more feature-rich version of the native InputMask feature introduced in Ext.NET 4.5 (Ext JS 6.5.2).</p>
+        <p>The InputMask as a plugin is available in Ext.NET since version 2 series.</p>
 
         <ext:Window
             ID="Window1"

@@ -581,6 +581,8 @@
     <Content Include="Examples\Form\Miscellaneous\MultiSelector\Default.aspx" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\config.xml" />
     <Content Include="Examples\Form\MultiSelect\ItemSelector\Default.aspx" />
+    <Content Include="Examples\Form\TextField\InputMask\config.xml" />
+    <Content Include="Examples\Form\TextField\InputMask\Default.aspx" />
     <Content Include="Examples\GridPanel\ArrayGrid\Keep_Page_on_Refresh\config.xml" />
     <Content Include="Examples\GridPanel\ArrayGrid\Keep_Page_on_Refresh\Default.aspx" />
     <Content Include="Examples\GridPanel\ColumnModel\TagColumn\config.xml" />
@@ -593,8 +595,8 @@
     <Content Include="Examples\Form\TextField\Buttons\Default.aspx" />
     <Content Include="Examples\Form\TextField\Advanced_Password_Mask\config.xml" />
     <Content Include="Examples\Form\TextField\Advanced_Password_Mask\Default.aspx" />
-    <Content Include="Examples\Form\TextField\InputMask\config.xml" />
-    <Content Include="Examples\Form\TextField\InputMask\Default.aspx" />
+    <Content Include="Examples\Form\TextField\InputMask_Native\config.xml" />
+    <Content Include="Examples\Form\TextField\InputMask_Native\Default.aspx" />
     <Content Include="Examples\Form\TextField\Password_Mask\config.xml" />
     <Content Include="Examples\Form\TextField\Password_Mask\Default.aspx" />
     <Content Include="Examples\Getting_Started\Introduction\Installation\config.xml" />
