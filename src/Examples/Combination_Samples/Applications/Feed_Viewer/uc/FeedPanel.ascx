@@ -3,7 +3,8 @@
 <script runat="server">
     public List<object> feeds = new List<object> 
     { 
-        new {title = "Ext.NET Forums", url = "http://feeds.feedburner.com/ExtNetForums"},
+        //new {title = "Ext.NET Forums", url = "http://feeds.feedburner.com/ExtNetForums"},
+        //new {title = "Ext.NET Forums", url = "https://forums.ext.net/external.php?type=rss2"},
         new {title = "Ext.NET Blog", url = "http://ext.net/feed"},
         new {title = "Bridge.NET Blog", url = "http://bridge.net/feed"}
     };
