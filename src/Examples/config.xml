@@ -5,10 +5,20 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="4.5.0">
+    <folder name="Form\TextField\InputMask_Native" />
+  </new>
+
+  <updated version="4.5.0">
+    <folder name="Form\TextField\InputMask" />
+  </updated>
+
+  <!--
   <updated version="4.4.1">
     <folder name="Form\Field_Note\Overview" />
     <folder name="Form\TextField\InputMask" />
   </updated>
+  -->
 
   <!--
   <new version="4.4.0">

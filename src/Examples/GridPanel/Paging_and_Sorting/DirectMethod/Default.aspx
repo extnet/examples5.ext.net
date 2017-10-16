@@ -68,7 +68,7 @@
             The <b>Clear Sort</b> button in the paging toolbar below will trigger
             a store reload as a side effect of clearing the sort information, so
             that data is acquired without sorting information, using the store's
-            <a href="http://docs.sencha.com/extjs/6.5.1/classic/Ext.data.AbstractStore.html#cfg-reloadOnClearSorters">ReloadOnClearSorters</a>
+            <a href="http://docs.sencha.com/extjs/6.5.2/classic/Ext.data.AbstractStore.html#cfg-reloadOnClearSorters">ReloadOnClearSorters</a>
             property.
         </p>
 
