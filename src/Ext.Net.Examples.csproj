@@ -22,6 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -621,6 +622,8 @@
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\config.xml" />
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\custom_behaviour.js" />
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\Default.aspx" />
+    <Content Include="Examples\GridPanel\FilterHeader\Mapped_Field_Filtering\config.xml" />
+    <Content Include="Examples\GridPanel\FilterHeader\Mapped_Field_Filtering\Default.aspx" />
     <Content Include="Examples\GridPanel\FilterHeader\Remote\config.xml" />
     <Content Include="Examples\GridPanel\FilterHeader\Remote\Default.aspx" />
     <Content Include="Examples\GridPanel\FilterHeader\Overview\config.xml" />

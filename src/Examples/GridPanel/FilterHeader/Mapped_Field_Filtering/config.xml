@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example>
+    <description>
+        <![CDATA[GridPanel with FilterHeader and CellEdit plugin and mapping filter behavior]]>
+    </description>
+    <tags>grid,gridpanel,plugin,filterheader,filter header,cellediting,cell editing,custom filter,regexp,combobox,combo,combo box,mapping</tags>
+</example>
