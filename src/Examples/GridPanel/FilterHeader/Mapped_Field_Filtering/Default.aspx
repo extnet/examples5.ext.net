@@ -109,7 +109,7 @@
                     if (component.column.text == "DEPARTMENT") {
                         return true;
                     }
-                } catch { } // do nothing
+                } catch(e) { } // do nothing
 
                 // always return false if the column is not the expected one.
                 // (or couldn't get down to the column definition).
@@ -148,7 +148,7 @@
                             }
                         }
                         // do nothing so we return 'false', meaning an invalid regexp returns no value
-                        catch { }
+                        catch(e) { }
                     }
                 }
 
@@ -168,7 +168,7 @@
                     if (component.column.text != "DEPARTMENT") {
                         return true;
                     }
-                } catch { } // do nothing
+                } catch(e) { } // do nothing
 
                 // always return false if the column is not the expected one
                 // (or couldn't get down to the column definition).
@@ -192,7 +192,7 @@
                             return true;
                         }
                     // do nothing so we return 'false', meaning an invalid regexp returns no value
-                    } catch { }
+                    } catch(e) { }
 
                 }
 
