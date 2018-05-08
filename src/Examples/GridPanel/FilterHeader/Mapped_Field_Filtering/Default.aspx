@@ -95,26 +95,33 @@
             return r.data.Name;
         };
 
+        // This behavior allows searching the numeric 'department' field mapped to a combo box's list of values.
         Ext.net.FilterHeader.behaviour.addBehaviour("string", {
             name: "comboMap",
 
             cropStr: "Department ",
 
-            // Always use this approach
+            // Use this approach only and only if the column title is "DEPARTMENT"
             is: function (value) {
-                return true;
+                try {
+                    var component = arguments.callee.caller.arguments.callee.caller.arguments[2];
+
+                    if (component.column.text == "DEPARTMENT") {
+                        return true;
+                    }
+                } catch { } // do nothing
+
+                // always return false if the column is not the expected one.
+                // (or couldn't get down to the column definition).
+                return false;
             },
 
             getValue: function (value) {
-                console.log("filter get value");
-
                 return { value: value, valid: value.length >= 0 };
             },
 
             // Map the record to the corresponding department text before comparing with the filter string
             match: function (recordValue, matchValue) {
-                console.log("match filter Header");
-
                 if (matchValue.length == 0) {
                     return true;
                 }
@@ -133,14 +140,62 @@
                             mappedValue = mappedValue.substring(this.cropStr.length);
                         }
 
-                        regexp = new RegExp(matchValue, 'gi');
+                        try {
+                            regexp = new RegExp(matchValue, 'gi');
 
-                        if (mappedValue.match(regexp)) {
-                            return true;
+                            if (mappedValue.match(regexp)) {
+                                return true;
+                            }
                         }
+                        // do nothing so we return 'false', meaning an invalid regexp returns no value
+                        catch { }
                     }
                 }
-                
+
+                return false;
+            }
+        });
+
+        // This behavior will allow text to be matched anywhere in the string, not just beginning.
+        Ext.net.FilterHeader.behaviour.addBehaviour("string", {
+            name: "matchAnywhere",
+
+            // Use this approach only and only if the column title is not "DEPARTMENT"
+            is: function (value) {
+                try {
+                    var component = arguments.callee.caller.arguments.callee.caller.arguments[2];
+
+                    if (component.column.text != "DEPARTMENT") {
+                        return true;
+                    }
+                } catch { } // do nothing
+
+                // always return false if the column is not the expected one
+                // (or couldn't get down to the column definition).
+                return false;
+            },
+
+            getValue: function (value) {
+                return { value: value, valid: value.length >= 0 };
+            },
+
+            // Map the record to the corresponding department text before comparing with the filter string
+            match: function (recordValue, matchValue) {
+                if (matchValue.length == 0) {
+                    return true;
+                }
+
+                if (recordValue != null) {
+                    try {
+                        regexp = new RegExp(matchValue, 'gi');
+                        if (recordValue.match(regexp)) {
+                            return true;
+                        }
+                    // do nothing so we return 'false', meaning an invalid regexp returns no value
+                    } catch { }
+
+                }
+
                 return false;
             }
         });
@@ -165,9 +220,10 @@
 
         <p>This examples demonstrates how to add custom behaviour for filtering a field that is mapped from numbers to text values.</p>
         <p>Custom behaviour: match only the department names (A, B, C, D)</p>
-        <p>Example: A</p>
+        <p>Example: A, [ab] (javascript regexp syntax supported)</p>
 
-        <p>The filter crops off the 'Department ' string from the name, so anything different from A B C D will not return any value.</p>
+        <p>The special behavior takes place in the 'Department' columm. All other columns also follow a custom behavior that enables regexp matching anywhere in the text (as opposed to the beginning of the text by default).</p>
+        <p>The filter under the 'Department' column crops off the 'Department ' string from the name, so anything not matching A B C D will not return any value.</p>
         <p>The department cells can be edited and switched over other values, from which they will be taken away or included depending on the active filter.</p>
 
         <ext:GridPanel
@@ -190,9 +246,9 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="ID" DataIndex="ID" Filterable="false" />
-                    <ext:Column runat="server" Text="NAME" DataIndex="Name" Filterable="false" />
-                    <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" Filterable="false" />
+                    <ext:Column runat="server" Text="ID" DataIndex="ID" />
+                    <ext:Column runat="server" Text="NAME" DataIndex="Name" />
+                    <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" />
                     <ext:Column runat="server" Text="DEPARTMENT" DataIndex="DepartmentId" Width="240">
                         <Renderer Fn="departmentRenderer" />
                         <Editor>
@@ -210,7 +266,7 @@
             </ColumnModel>
             <Plugins>
                 <ext:CellEditing runat="server" />
-                <ext:FilterHeader runat="server" />
+                <ext:FilterHeader runat="server" CaseSensitive="false" />
             </Plugins>
         </ext:GridPanel>
     </form>
