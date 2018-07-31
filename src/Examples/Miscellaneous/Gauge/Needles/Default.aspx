@@ -25,7 +25,9 @@
 
         <h1>Gauges' needles</h1>
 
-        <p>Pull the slider around to update the gauges' display value.</p>
+        <p>This example shows some of the different gauge needles that are natively available for the component and some basic customization for them.</p>
+        <p>The second gauge (left to right) in the first row uses a custom animation setup.</p>
+        <p>Move the slider around to update the gauges' display value.</p>
 
         <ext:Panel ID="Panel1" runat="server" Title="Gauges with various kinds of needles" Width="800" Height="500">
             <LayoutConfig>

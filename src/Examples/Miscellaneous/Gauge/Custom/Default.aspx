@@ -39,9 +39,11 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Customizing the Gauge component.</h1>
+        <h1>Customizing the Gauge component</h1>
         
-        <p>Pull the slider around to update the gauge's display value.</p>
+        <p>This example highlights some possibilies of customization for the gauge component.</p>
+        <p>The gauge's needle is defined by a SVG path string, and the gauge's track is round in its extremities.</p>
+        <p>Move the slider around to update the gauge's display value.</p>
 
         <ext:Panel ID="Panel1" runat="server" Title="You are in charge" Width="800" Height="500">
             <LayoutConfig>

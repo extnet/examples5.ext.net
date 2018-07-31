@@ -24,9 +24,10 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Basic Gauge component overview.</h1>
+        <h1>Basic Gauge component overview</h1>
         
-        <p>Pull the slider around to update the gauges' display value.</p>
+        <p>This component allows to easily set, interact and update nice gauges on screen.</p>
+        <p>Move the slider around to update the gauges' display value.</p>
 
         <ext:Panel ID="Panel1" runat="server" Title="Basic Gauge" Width="800" Height="500">
             <LayoutConfig>
