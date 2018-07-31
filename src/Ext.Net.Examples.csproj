@@ -747,6 +747,12 @@
     <Content Include="Examples\Miscellaneous\Factory\Basic\MyWindow.ascx" />
     <Content Include="Examples\Miscellaneous\Factory\Basic\config.xml" />
     <Content Include="Examples\Miscellaneous\Factory\Basic\Default.aspx" />
+    <Content Include="Examples\Miscellaneous\Gauge\Custom\config.xml" />
+    <Content Include="Examples\Miscellaneous\Gauge\Custom\Default.aspx" />
+    <Content Include="Examples\Miscellaneous\Gauge\Needles\config.xml" />
+    <Content Include="Examples\Miscellaneous\Gauge\Needles\Default.aspx" />
+    <Content Include="Examples\Miscellaneous\Gauge\Basic\config.xml" />
+    <Content Include="Examples\Miscellaneous\Gauge\Basic\Default.aspx" />
     <Content Include="Examples\Miscellaneous\Pickers\Overview\config.xml" />
     <Content Include="Examples\Miscellaneous\Pickers\Overview\Default.aspx" />
     <Content Include="Examples\Miscellaneous\Responsive\Basic\config.xml" />
