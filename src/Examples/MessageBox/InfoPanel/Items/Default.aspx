@@ -58,6 +58,7 @@
 
     <div id="host" style="border-radius:5px; border: 1px solid navy; width:300px; height:500px;">
         <ext:InfoPanel
+            ID="InfoPanel1"
             runat="server"
             Title="Init Info"
             Html="Message"
