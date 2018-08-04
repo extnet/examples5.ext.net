@@ -6,7 +6,29 @@
 
 <script runat="server">
     protected string mobileVersion = "4.1";
-    
+
+    private string uctos(string value)
+    {
+        if (value == null || value.Length < 2)
+        {
+            return value;
+        }
+        else
+        {
+            var retVal = value.Substring(0, 1);
+            for (var i = 1; i < value.Length; i++)
+            {
+                if (Char.IsUpper(value, i))
+                {
+                    retVal += " ";
+                }
+                retVal += value[i];
+            }
+
+            return retVal;
+        }
+    }
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -20,7 +42,17 @@
                 theme = (Theme)this.Session["Ext.Net.Theme"];
             }
 
-            ((Ext.Net.CheckMenuItem)this.FindControl(theme.ToString() + "ThemeItem")).Checked = true;
+            foreach (var supportedTheme in Enum.GetNames(typeof(Theme)))
+            {
+                if (supportedTheme != "None")
+                {
+                    this.ThemesMenu.Add(new CheckMenuItem() {
+                        ID = supportedTheme + "ThemeItem",
+                        Text = uctos(supportedTheme), Group = "theme",
+                        Checked = supportedTheme == theme.ToString()
+                    });
+                }
+            }
 
             this.TriggerField1.Focus();
             this.CheckMenuItemScriptMode.Checked = Convert.ToBoolean(this.Session["Ext.Net.SourceFormatting"]);
@@ -343,17 +375,7 @@
 
                                                     <ext:MenuItem runat="server" Text="Theme" Icon="Paintcan">
                                                         <Menu>
-                                                            <ext:Menu runat="server" MinWidth="200">
-                                                                <Items>
-                                                                    <ext:CheckMenuItem ID="AriaThemeItem" runat="server" Text="Aria" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="DefaultThemeItem" runat="server" Text="Blue" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="GrayThemeItem" runat="server" Text="Gray" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="CrispThemeItem" runat="server" Text="Crisp" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="CrispTouchThemeItem" runat="server" Text="Crisp Touch" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="NeptuneThemeItem" runat="server" Text="Neptune" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="NeptuneTouchThemeItem" runat="server" Text="Neptune Touch" Group="theme" />
-                                                                    <ext:CheckMenuItem ID="TritonThemeItem" runat="server" Text="Triton" Group="theme" />
-                                                                </Items>
+                                                            <ext:Menu ID="ThemesMenu" runat="server" MinWidth="200">
                                                                 <Listeners>
                                                                     <Click Fn="themeChange" />
                                                                 </Listeners>
