@@ -29,6 +29,10 @@
                 case Ext.Net.Theme.Default:
                     //Window1.Height = 503; // left comment as an example/reference
                     break;
+                case Ext.Net.Theme.Graphite:
+                    Window1.Width = 380;
+                    Window1.Height = 686;
+                    break;
                 case Ext.Net.Theme.Crisp:
                     Window1.Width = 275;
                     Window1.Height = 391;

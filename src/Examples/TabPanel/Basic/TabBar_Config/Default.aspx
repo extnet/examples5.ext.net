@@ -14,6 +14,9 @@
 
             switch (curTheme.Theme)
             {
+                case Ext.Net.Theme.Aria:
+                    Window1.Height = 555;
+                    break;
                 case Ext.Net.Theme.Triton:
                 case Ext.Net.Theme.CrispTouch:
                     Window1.Width = 665;
@@ -24,12 +27,15 @@
                     Window1.Width = 675;
                     Window1.Height = 503;
                     break;
+                case Ext.Net.Theme.Graphite:
+                    Window1.Width = 668;
+                    Window1.Height = 638;
+                    break;
                 case Ext.Net.Theme.Crisp:
                     Window1.Width = 665;
                     Window1.Height = 513;
                     break;
                 case Ext.Net.Theme.Neptune:
-                case Ext.Net.Theme.Aria:
                     Window1.Width = 670;
                     Window1.Height = 518;
                     break;
@@ -42,15 +48,30 @@
 
         protected void AddTab(object sender, DirectEventArgs e)
         {
+            var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current).Theme;
+            var accessible = curTheme == Ext.Net.Theme.Aria || curTheme == Ext.Net.Theme.Graphite;
+
             Ext.Net.Panel panel = new Ext.Net.Panel
             {
                 Title = "New Tab",
-                Closable = true,
+                Closable = !accessible,
                 Layout = "Fit",
                 Items = {
                     new UserControlLoader{Path="ElementChooser.ascx"}
                 }
             };
+
+            if (accessible)
+            {
+                var closeToolbar = new Toolbar();
+                closeToolbar.Add(new Ext.Net.Button()
+                {
+                    Text = "Close",
+                    Handler = "this.up('panel').destroy();"
+                });
+                panel.TopBar.Add(closeToolbar);
+            }
+
             TabPanel1.Add(panel);
             panel.Render();
 

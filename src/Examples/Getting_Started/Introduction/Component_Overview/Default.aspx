@@ -103,6 +103,7 @@
                         <ext:ListItem Text="Crisp" Value="Crisp" />
                         <ext:ListItem Text="Crisp Touch" Value="CrispTouch" />
                         <ext:ListItem Text="Gray" Value="Gray" />
+                        <ext:ListItem Text="Graphite" Value="Graphite" />
                         <ext:ListItem Text="Neptune" Value="Neptune" />
                         <ext:ListItem Text="Neptune Touch" Value="NeptuneTouch" />
                         <ext:ListItem Text="Triton" Value="Triton" />

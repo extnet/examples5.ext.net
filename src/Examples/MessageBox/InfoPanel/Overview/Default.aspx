@@ -24,6 +24,10 @@
                 case Ext.Net.Theme.Default:
                     //Window1.Height = 503; // left comment as an example/reference
                     break;
+                case Ext.Net.Theme.Graphite:
+                    Window1.Width = 375;
+                    Window1.Height = 690;
+                    break;
                 case Ext.Net.Theme.Crisp:
                     Window1.Width = 275;
                     Window1.Height = 391;
@@ -152,6 +156,15 @@
             }
         }
     </script>
+    <%
+    // For tnow, the Graphite theme will need custom CSS for the callout box.
+    if (Ext.Net.ResourceManager.GetInstance(HttpContext.Current).Theme == Ext.Net.Theme.Graphite)
+    { %>
+    <style type="text/css">
+        .x-infopanel { background: black }
+        .x-infopanel .x-infopanel-body { background: #404040 }
+    </style>
+    <% } %>
 </head>
 <body>
     <ext:ResourceManager runat="server" />

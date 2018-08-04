@@ -1,6 +1,31 @@
 <%@ Page Language="C#" %>
 
 <script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!X.IsAjaxRequest)
+        {
+            // Fixes some theme-specific settings
+            var curTheme = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+
+            switch (curTheme.Theme)
+            {
+                case Ext.Net.Theme.Aria:
+                case Ext.Net.Theme.Crisp:
+                case Ext.Net.Theme.CrispTouch:
+                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Gray:
+                case Ext.Net.Theme.Neptune:
+                case Ext.Net.Theme.NeptuneTouch:
+                case Ext.Net.Theme.Triton:
+                    break;
+                case Ext.Net.Theme.Graphite:
+                    Window1.Height = 253;
+                    break;
+            }
+        }
+    }
+
     protected void Button1_Click(object sender, DirectEventArgs e)
     {
         // Do some Authentication...

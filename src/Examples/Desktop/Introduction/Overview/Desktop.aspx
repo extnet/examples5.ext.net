@@ -39,6 +39,16 @@
                     Desktop1.TaskBar.QuickStartWidth = 64;
                     Desktop1.TaskBar.TrayWidth = 119;
                     break;
+                case Ext.Net.Theme.Graphite:
+                    CustomToolbar.Defaults.Add(new Ext.Net.Parameter("width", "145", ParameterMode.Raw));
+                    CustomToolbar.Width = 725;
+                    Desktop1.StartMenu.Width = 350;
+                    Desktop1.TaskBar.QuickStartWidth = 112;
+                    Desktop1.TaskBar.TrayWidth = 174;
+                    GreetingWindow.Width = 260;
+                    GreetingWindow.Height = 110;
+                    StartMenuToolbar.Width = 150;
+                    break;
             }
         }
     }
@@ -148,6 +158,7 @@
                 <ext:DesktopModule ModuleID="Hello" AutoRun="true">
                     <Window>
                         <ext:Window runat="server"
+                            ID="GreetingWindow"
                             Plain="true"
                             Padding="10"
                             Width="150"
@@ -221,7 +232,7 @@
                    <ext:DisplayField runat="server" Text="You can place controls to desktop" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;"/>
                    <ext:DisplayField runat="server" Text="Move mouse to the right edge -->" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;right:50px;top:50px;"/>
 
-                   <ext:Toolbar runat="server" Width="545" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
+                   <ext:Toolbar ID="CustomToolbar" runat="server" Width="545" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
                         <Defaults>
                             <ext:Parameter Name="IconAlign" Value="top" />
                             <ext:Parameter Name="Width" Value="105" />
@@ -245,7 +256,7 @@
 
             <StartMenu Title="Ext.Net Desktop" Icon="Application" Height="300">
                 <ToolConfig>
-                    <ext:Toolbar runat="server" Width="100">
+                    <ext:Toolbar ID="StartMenuToolbar" runat="server" Width="100">
                         <Items>
                             <ext:Button runat="server" Text="Settings" Icon="Cog" />
                             <ext:Button runat="server" Text="Logout" Icon="Key">
