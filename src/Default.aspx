@@ -42,16 +42,25 @@
                 theme = (Theme)this.Session["Ext.Net.Theme"];
             }
 
-            foreach (var supportedTheme in Enum.GetNames(typeof(Theme)))
+            foreach (var supportedTheme in (Theme[])Enum.GetValues(typeof(Theme)))
             {
-                if (supportedTheme != "None")
+                var ts = supportedTheme.ToString();
+
+                switch (supportedTheme)
                 {
-                    this.ThemesMenu.Add(new CheckMenuItem() {
-                        ID = supportedTheme + "ThemeItem",
-                        Text = uctos(supportedTheme), Group = "theme",
-                        Checked = supportedTheme == theme.ToString()
-                    });
+                    case Ext.Net.Theme.Default:
+                        ts = "Blue";
+                        break;
+                    case Ext.Net.Theme.None:
+                        continue;
                 }
+                this.ThemesMenu.Add(new CheckMenuItem()
+                {
+                    ID = ts + "ThemeItem",
+                    Text = uctos(ts),
+                    Group = "theme",
+                    Checked = theme == supportedTheme
+                });
             }
 
             this.TriggerField1.Focus();
