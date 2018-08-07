@@ -250,7 +250,7 @@
                         <ext:ItemHighlightInteraction />
                     </Interactions>
 
-                    <LegendConfig Dock="Bottom" />
+                    <LegendConfig runat="server" Dock="Bottom" />
 
                     <Axes>
                         <ext:NumericAxis
