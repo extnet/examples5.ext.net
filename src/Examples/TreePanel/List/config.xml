@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example iconCls="fa fa-th-list">
+    <order>
+      <folder name="Simple" />
+      <folder name="Overview" />
+      <folder name="Built_in_CodeBehind" />
+      <folder name="Built_in_Markup" />
+    </order>
+</example>

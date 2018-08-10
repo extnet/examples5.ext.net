@@ -828,6 +828,16 @@
     <Content Include="Examples\TreePanel\Advanced\Component_Column\Default.aspx" />
     <Content Include="Examples\TreePanel\Advanced\Locking_Buffer_Rendered_TreeGrid\config.xml" />
     <Content Include="Examples\TreePanel\Advanced\Locking_Buffer_Rendered_TreeGrid\Default.aspx" />
+    <Content Include="Examples\TreePanel\List\Built_in_CodeBehind\config.xml" />
+    <Content Include="Examples\TreePanel\List\Built_in_CodeBehind\Default.aspx" />
+    <Content Include="Examples\TreePanel\Basic\Built_in_CodeBehind\thumbnail.gif" />
+    <Content Include="Examples\TreePanel\List\config.xml" />
+    <Content Include="Examples\TreePanel\List\Simple\config.xml" />
+    <Content Include="Examples\TreePanel\List\Simple\Default.aspx" />
+    <Content Include="Examples\TreePanel\List\Overview\config.xml" />
+    <Content Include="Examples\TreePanel\List\Overview\Default.aspx" />
+    <Content Include="Examples\TreePanel\List\Built_in_Markup\config.xml" />
+    <Content Include="Examples\TreePanel\List\Built_in_Markup\Default.aspx" />
     <Content Include="Examples\TreePanel\Basic\Custom_Drop_Logic\config.xml" />
     <Content Include="Examples\TreePanel\Basic\Custom_Drop_Logic\Default.aspx" />
     <Content Include="Examples\Window\Toast\Overview\config.xml" />
@@ -1757,7 +1767,6 @@
     <Content Include="Examples\TaskManager\Basic\Overview\Default.aspx" />
     <Content Include="Examples\TaskManager\Basic\Overview\thumbnail.gif" />
     <Content Include="Examples\TaskManager\config.xml" />
-    <Content Include="Examples\TreePanel\Basic\Built_in_CodeBehind\thumbnail.gif" />
     <Content Include="Examples\TreePanel\Basic\Built_in_Markup\thumbnail.gif" />
     <Content Include="Examples\TreePanel\Basic\Refresh_static_tree\config.xml" />
     <Content Include="Examples\TreePanel\Basic\Refresh_static_tree\Default.aspx" />
