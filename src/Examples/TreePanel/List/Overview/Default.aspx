@@ -103,7 +103,11 @@
                         <Menu>
                             <ext:Menu runat="server" ID="OptionsMenu">
                                 <Items>
-                                    <ext:CheckMenuItem ID="ExpanderOnlyToggle" runat="server" Text="Expander Only" Handler="App.TreeList1.setExpanderOnly(this.checked)" />
+                                    <ext:CheckMenuItem
+                                        ID="ExpanderOnlyToggle"
+                                        runat="server"
+                                        Text="Expander Only"
+                                        Handler="App.TreeList1.setExpanderOnly(this.checked)" />
                                     <ext:CheckMenuItem ID="SingleExpandToggle" runat="server" Text="Single Expand">
                                         <Listeners>
                                             <CheckChange Fn="handleSEToggle" />
@@ -126,8 +130,7 @@
                         ID="MicroToggleBtn"
                         runat="server"
                         Text="Micro"
-                        EnableToggle="true"
-                        Reference="microBtn">
+                        EnableToggle="true">
                         <Listeners>
                             <Toggle Fn="handleMicroToggle" />
                         </Listeners>
@@ -136,7 +139,7 @@
             </HeaderConfig>
             <Items>
                 <ext:Panel
-                    ID="TreeListContainer"
+                    ID="TreeListPanel"
                     runat="server"
                     Width="250"
                     Border="false"
@@ -147,7 +150,7 @@
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:TreeList runat="server" ID="TreeList1" Reference="tl">
+                        <ext:TreeList runat="server" ID="TreeList1">
                             <Listeners>
                                 <SelectionChange Fn="handleTLSel" />
                             </Listeners>
