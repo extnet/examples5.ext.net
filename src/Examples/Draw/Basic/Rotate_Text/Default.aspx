@@ -26,7 +26,7 @@
         </p>
 
         <p>
-            See the Drawing guide&nbsp;<a href="http://docs.sencha.com/extjs/6.5.3/guides/core_concepts/draw/drawing.html">here</a>.
+            See the Drawing guide&nbsp;<a href="http://docs.sencha.com/extjs/6.6.0/guides/core_concepts/draw/drawing.html">here</a>.
         </p>
 
         <ext:Slider
