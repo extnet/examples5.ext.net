@@ -42,6 +42,7 @@
         // Create ComboBox
         ComboBox combobox = new ComboBox
         {
+            ID="ComboBox2",
             DisplayField = "Common",
             ValueField = "Common",
             TypeAhead = false,
@@ -126,6 +127,7 @@
 
             <ext:ComboBox
                 runat="server"
+                ID="ComboBox1"
                 DisplayField="Common"
                 ValueField="Common"
                 TypeAhead="false"

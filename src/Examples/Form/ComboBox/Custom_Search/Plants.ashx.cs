@@ -49,7 +49,12 @@ namespace Ext.Net.Examples
 
             Paging<Plant> plants = Plant.PlantsPaging(start, limit, sort, dir, query);
 
-            context.Response.Write(string.Format("{{total:{1},'plants':{0}}}", JSON.Serialize(plants.Data), plants.TotalRecords));
+            var responseObject = new
+            {
+                total = plants.TotalRecords,
+                plants = plants.Data
+            };
+            context.Response.Write(JSON.Serialize(responseObject));
         }
 
         public bool IsReusable
