@@ -7,6 +7,41 @@
     <title>Multi Node Tree List built using markup - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
+    <%
+        #region Set up font awesome if the current theme does not natively supports it.
+        var resMan = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+        var curTheme = resMan.Theme;
+        if (curTheme != Ext.Net.Theme.Triton && curTheme != Ext.Net.Theme.Graphite)
+        {
+            if (resMan.ScriptMode == Ext.Net.ScriptMode.Debug)
+            {
+    %>
+    <link href="/resources/css/font-awesome.css" rel="stylesheet" />
+    <%
+            }
+            else
+            {
+    %>
+    <link href="/resources/css/font-awesome.min.css" rel="stylesheet" />
+    <%
+            }
+    %>
+
+    <style type="text/css">
+        /* wraps over the x-fa CSS class to match the reference from the Triton/Graphite themes */
+        .x-fa {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <%
+        }
+        #endregion Set up font awesome if the current theme does not natively supports it.
+    %>
 </head>
 <body>
     <form runat="server">
