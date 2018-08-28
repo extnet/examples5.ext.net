@@ -1234,6 +1234,8 @@
     <Content Include="Ext.NET.Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HighLighter\Wilco.SyntaxHighlighter.dll" />
+    <Content Include="resources\css\font-awesome.css" />
+    <Content Include="resources\css\font-awesome.min.css" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
     <Content Include="resources\fonts\LICENSE_TITILLIUMTEXT.txt" />
     <Content Include="resources\fonts\OpenSans-Italic-webfont.svg" />
@@ -1286,6 +1288,7 @@
     <Content Include="Examples\Data_Binding\Basic\Isolated_Child_Sessions\customers.json" />
     <Content Include="Examples\Data_Binding\Basic\Isolated_Child_Sessions\orders.json" />
     <Content Include="resources\js\perfect-scrollbar.min.js" />
+    <Content Include="resources\fonts\fontawesome-webfont.woff2" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
