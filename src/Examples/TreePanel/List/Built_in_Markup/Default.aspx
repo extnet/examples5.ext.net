@@ -9,24 +9,12 @@
 
     <%
         #region Set up font awesome if the current theme does not natively supports it.
-        var resMan = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
-        var curTheme = resMan.Theme;
-        if (curTheme != Ext.Net.Theme.Triton && curTheme != Ext.Net.Theme.Graphite)
+        var manager = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
+        var theme = manager.Theme;
+        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite)
         {
-            if (resMan.ScriptMode == Ext.Net.ScriptMode.Debug)
-            {
-    %>
-    <link href="/resources/css/font-awesome.css" rel="stylesheet" />
-    <%
-            }
-            else
-            {
     %>
     <link href="/resources/css/font-awesome.min.css" rel="stylesheet" />
-    <%
-            }
-    %>
-
     <style type="text/css">
         /* wraps over the x-fa CSS class to match the reference from the Triton/Graphite themes */
         .x-fa {
