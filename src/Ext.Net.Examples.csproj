@@ -744,6 +744,8 @@
     <Content Include="Examples\Miscellaneous\Bin_HtmlBin\UserControl\config.xml" />
     <Content Include="Examples\Miscellaneous\Bin_HtmlBin\UserControl\UserControl.ascx" />
     <Content Include="Examples\Miscellaneous\Bin_HtmlBin\UserControl\Default.aspx" />
+    <Content Include="Examples\Miscellaneous\Store\ClientStore\config.xml" />
+    <Content Include="Examples\Miscellaneous\Store\ClientStore\Default.aspx" />
     <Content Include="Examples\Miscellaneous\Factory\Basic\MyWindow.ascx" />
     <Content Include="Examples\Miscellaneous\Factory\Basic\config.xml" />
     <Content Include="Examples\Miscellaneous\Factory\Basic\Default.aspx" />
