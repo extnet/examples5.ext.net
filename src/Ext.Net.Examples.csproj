@@ -647,6 +647,9 @@
     <Content Include="Examples\GridPanel\Locking_Grid\Infinite_Scrolling\Default.aspx" />
     <Content Include="Examples\GridPanel\Miscellaneous\Custom_Data_Binding\config.xml" />
     <Content Include="Examples\GridPanel\Miscellaneous\Custom_Data_Binding\Default.aspx" />
+    <Content Include="Examples\GridPanel\Miscellaneous\FilterQuery\config.xml" />
+    <Content Include="Examples\GridPanel\Miscellaneous\FilterQuery\Default.aspx" />
+    <Content Include="Examples\GridPanel\Miscellaneous\FilterQuery\thumbnail.png" />
     <Content Include="Examples\GridPanel\Paging_and_Sorting\DirectMethod\config.xml" />
     <Content Include="Examples\GridPanel\Paging_and_Sorting\DirectMethod\Default.aspx" />
     <Content Include="Examples\GridPanel\Plugins\GroupPaging\config.xml" />
