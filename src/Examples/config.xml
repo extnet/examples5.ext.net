@@ -5,16 +5,31 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="4.8.0">
+    <folder name="Miscellaneous\Store\ClientStore" />
+    <folder name="GridPanel\Miscellaneous\FilterQuery" />
+  </new>
+
+  <updated version="4.8.0">
+    <folder name="TreePanel\List\Simple" />
+    <folder name="TreePanel\List\Overview" />
+    <folder name="TreePanel\List\Built_in_Markup" />
+    <folder name="TreePanel\List\Built_in_CodeBehind" />
+  </updated>
+
+  <!--
   <updated version="4.7.1">
     <folder name="Form\ComboBox\Custom_Search" />
 
-    <!-- Keeping a manual selection from 4.7.0 -->
+    <!- Keeping a manual selection from 4.7.0 ->
     <folder name="MessageBox\InfoPanel\Items" />
     <folder name="MessageBox\InfoPanel\Overview" />
   </updated>
+  -->
 
+  <!--
   <new version="4.7.1">
-    <!-- Keeping the new ones from 4.7.0 just to keep track -->
+    <!- Keeping the new ones from 4.7.0 just to keep track ->
     <folder name="Miscellaneous\Gauge\Needles" />
     <folder name="Miscellaneous\Gauge\Custom" />
     <folder name="Miscellaneous\Gauge\Basic" />
@@ -23,6 +38,7 @@
     <folder name="TreePanel\List\Built_in_Markup" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
   </new>
+  -->
 
   <!--
   <new version="4.7.0">

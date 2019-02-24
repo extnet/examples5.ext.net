@@ -69,7 +69,7 @@
 
         <p>This example shows how to create Widgets in grid columns. Widgets are lightweight components with a simpler lifecycle.</p>
 
-        <p>The <b>Progress</b> and <b>Slider</b> widget columns uses the widget's <a href="http://docs.sencha.com/extjs/6.6.0/classic/Ext.Widget.html#cfg-ripple">Ripple</a> feature to highlight clicks on them.</p>
+        <p>The <b>Progress</b> and <b>Slider</b> widget columns uses the widget's <a href="http://docs.sencha.com/extjs/6.7.0/classic/Ext.Widget.html#cfg-ripple">Ripple</a> feature to highlight clicks on them.</p>
 
         <ext:GridPanel
             runat="server"
