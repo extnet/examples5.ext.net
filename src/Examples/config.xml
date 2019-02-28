@@ -5,7 +5,20 @@
     <folder name="Kitchen_Sink" />
   </order>
 
-  <new version="4.8.0">
+  <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
+  <new version="4.8.1">
+    <folder name="Miscellaneous\Store\ClientStore" />
+    <folder name="GridPanel\Miscellaneous\FilterQuery" />
+  </new>
+
+  <updated version="4.8.1">
+    <folder name="GridPanel\Commands\Group_Command" />
+    <folder name="GridPanel\Miscellaneous\Submit_to_Handler" />
+    <folder name="GridPanel\Plugins\Selection_Memory" />
+    <folder name="GridPanel\Selection_models\Checkbox_Selection" />
+  </updated>
+
+  <!--<new version="4.8.0">
     <folder name="Miscellaneous\Store\ClientStore" />
     <folder name="GridPanel\Miscellaneous\FilterQuery" />
   </new>
@@ -16,6 +29,7 @@
     <folder name="TreePanel\List\Built_in_Markup" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
   </updated>
+  -->
 
   <!--
   <updated version="4.7.1">
