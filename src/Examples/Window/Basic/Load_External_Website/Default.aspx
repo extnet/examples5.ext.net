@@ -16,7 +16,7 @@
             Hidden = true,
             Loader = new ComponentLoader
             {
-                Url = "http://ext.net",
+                Url = "https://ext.net",
                 Mode = LoadMode.Frame,
                 LoadMask =
                 {

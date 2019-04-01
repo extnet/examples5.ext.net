@@ -59,7 +59,7 @@
                         <Items>
                             <ext:MenuItem runat="server" Text="Ext.NET">
                                 <Listeners>
-                                    <Click Handler="addTab(#{TabPanel1}, 'idClt', 'http://ext.net', this);" />
+                                    <Click Handler="addTab(#{TabPanel1}, 'idClt', 'https://ext.net', this);" />
                                 </Listeners>
                             </ext:MenuItem>
 
@@ -67,7 +67,7 @@
 
                             <ext:MenuItem runat="server" Text="Ext.NET forums">
                                 <Listeners>
-                                    <Click Handler="addTab(#{TabPanel1}, 'idGgl', 'http://forums.ext.net', this);" />
+                                    <Click Handler="addTab(#{TabPanel1}, 'idGgl', 'https://forums.ext.net', this);" />
                                 </Listeners>
                             </ext:MenuItem>
 

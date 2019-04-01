@@ -18,7 +18,7 @@
     protected void Update(object sender, DirectEventArgs e)
     {
         this.HyperlinkColumn1.Pattern = "Visit Website";
-        this.HyperlinkColumn1.HrefPattern = "http://ext.net?id={href}&someParamMore=hello";
+        this.HyperlinkColumn1.HrefPattern = "https://ext.net?id={href}&someParamMore=hello";
         this.HyperlinkColumn1.UpdatePatternTpl();
         this.GridPanel1.Refresh();
     }
@@ -76,7 +76,7 @@
                         DataIndex="name"
                         DataIndexHref="id"
                         Pattern="{text:uppercase}"
-                        HrefPattern="http://ext.net?companyId={href}"
+                        HrefPattern="https://ext.net?companyId={href}"
                         />
                 </Columns>
             </ColumnModel>

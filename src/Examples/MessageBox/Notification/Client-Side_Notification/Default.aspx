@@ -390,7 +390,7 @@
                                         autoLoad : {
                                             scripts : true,
                                             mode    : 'iframe',
-                                            url     : 'http://ext.net'
+                                            url     : 'https://ext.net'
                                         },
                                         iconCls  : 'icon-information',
                                         autoHide : false,

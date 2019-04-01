@@ -24,7 +24,7 @@
     <form runat="server">
         <h1>DirectEvent Duration Messages</h1>
 
-        <p>More information about this functionality you can find in <a href="http://forums.ext.net/showthread.php?35661" target="_blank">this Ext.NET forum thread</a>.</p>
+        <p>More information about this functionality you can find in <a href="https://forums.ext.net/showthread.php?35661" target="_blank">this Ext.NET forum thread</a>.</p>
 
         <ext:ResourceManager runat="server">
             <DirectEventDurationMessages>

@@ -75,11 +75,11 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <h1>SignalR Stock Ticker example using Ext.NET by <a href="http://forums.ext.net/member.php?562-anup" target="_blank">Anup</a></h1>
+    <h1>SignalR Stock Ticker example using Ext.NET by <a href="https://forums.ext.net/member.php?562-anup" target="_blank">Anup</a></h1>
 
     <p><a href="http://www.asp.net/signalr" target="_blank">SignalR</a> is an ASP.NET library making it easier to create real time web applications.</p>
 
-    <p>See the <a href="http://ext.net/signalr-with-ext-net" target="_blank">blog post</a> for more details.</p>
+    <p>See the <a href="https://ext.net/signalr-with-ext-net" target="_blank">blog post</a> for more details.</p>
 
     <ext:Window
         runat="server"

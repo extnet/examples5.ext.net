@@ -73,7 +73,7 @@
 
             this.RenderButtons("Text align: right", configs, new Ext.Net.Button.Config { Cls = "floater", TextAlign = Ext.Net.ButtonTextAlign.Right, Width = 200 });
 
-            this.RenderButtons("Href Buttons", configs, new Ext.Net.Button.Config { Cls = "floater", Href = "http://ext.net/" });
+            this.RenderButtons("Href Buttons", configs, new Ext.Net.Button.Config { Cls = "floater", Href = "https://ext.net/" });
         }
     }
 

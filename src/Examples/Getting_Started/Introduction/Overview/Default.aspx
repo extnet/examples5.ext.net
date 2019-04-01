@@ -14,10 +14,10 @@
 
     <p>Ext.NET is an advanced ASP.NET (WebForms + MVC) component framework integrating the cross-browser Sencha Ext JS JavaScript Library.</p>
 
-    <p>Ext.NET is built for developers, by developers. We provide hundreds of demos with full code samples in the <a href="http://examples.ext.net/">Examples Explorer</a>. Need a little help? Check out our Premium Technical <a href="http://ext.net/store#premium">Support Subscription</a>.</p>
+    <p>Ext.NET is built for developers, by developers. We provide hundreds of demos with full code samples in the <a href="https://examples.ext.net/">Examples Explorer</a>. Need a little help? Check out our Premium Technical <a href="https://ext.net/store#premium">Support Subscription</a>.</p>
 
     <p>Direct access to the latest Ext.NET source code, via read-only SVN access, is available to all Ext.NET Pro
-        license holders with a valid <a href="http://ext.net/store#premium">Premium Support</a> Subscription.</p>
+        license holders with a valid <a href="https://ext.net/store#premium">Premium Support</a> Subscription.</p>
 
     <h2>System Requirements</h2>
 
@@ -43,7 +43,7 @@
             <div class="information"><p>If you do not have a copy of Visual Studio already installed, the <a href="http://microsoft.com/visualstudio/eng/products/visual-studio-express-products/">Visual Studio Express</a> is free to use and
             is a great way to get started with ASP.NET and Ext.NET. The Ext.NET Components work exactly the same in both environments.</p></div></li>
 
-        <li>A Manual installation package (.zip) is available for download at <a href="http://ext.net/download/">http://ext.net/download/</a>.</li>
+        <li>A Manual installation package (.zip) is available for download at <a href="https://ext.net/download/">https://ext.net/download/</a>.</li>
 
         <li>Create your first "Web Site" Project.
             <ol style="list-style-type: lower-roman;">
@@ -56,7 +56,7 @@
             </ol>
         </li>
 
-        <li>Detailed manual installation steps are detailed at <a href="http://forums.ext.net/showthread.php?11027-Install-and-Setup-Guide-for-Visual-Studio">Install and Setup Guide for Visual Studio</a></li>
+        <li>Detailed manual installation steps are detailed at <a href="https://forums.ext.net/showthread.php?11027-Install-and-Setup-Guide-for-Visual-Studio">Install and Setup Guide for Visual Studio</a></li>
     </ol>
 
     <h2>Sample Web.config (WebForms and MVC)</h2>

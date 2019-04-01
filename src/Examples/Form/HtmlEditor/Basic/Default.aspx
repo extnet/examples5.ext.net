@@ -33,7 +33,7 @@
             For more details, we would strongly recommend to read
             <a href="http://docs.sencha.com/extjs/6.7.0/classic/Ext.form.field.HtmlEditor.html">the HtmlEditor ExtJS docs article</a>
             and
-            <a href="http://forums.ext.net/showthread.php?20425&p=88270&viewfull=1#post88270">this Ext.NET forums thread</a>
+            <a href="https://forums.ext.net/showthread.php?20425&p=88270&viewfull=1#post88270">this Ext.NET forums thread</a>
             about possible problems with HtmlEditor.
         </p>
 

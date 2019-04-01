@@ -181,7 +181,6 @@
             Width = 500,
             Height = 400,
             AutoHide = false,
-            //AutoLoad = new LoadConfig("http://ext.net.com",LoadMode.IFrame),
             Html = stub
         });
     }

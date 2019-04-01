@@ -5,8 +5,8 @@
     { 
         //new {title = "Ext.NET Forums", url = "http://feeds.feedburner.com/ExtNetForums"},
         //new {title = "Ext.NET Forums", url = "https://forums.ext.net/external.php?type=rss2"},
-        new {title = "Ext.NET Blog", url = "http://ext.net/feed"},
-        new {title = "Bridge.NET Blog", url = "http://bridge.net/feed"}
+        new {title = "Ext.NET Blog", url = "https://ext.net/feed"},
+        new {title = "Bridge.NET Blog", url = "https://bridge.net/feed"}
     };
 
     protected void AddFeedClick(object sender, DirectEventArgs e)

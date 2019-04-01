@@ -200,7 +200,7 @@
                                                     Title="Ext.Net"
                                                     Height="450"
                                                     BodyPadding="0">
-                                                    <Loader runat="server" Url="http://ext.net/" Mode="Frame">
+                                                    <Loader runat="server" Url="https://ext.net/" Mode="Frame">
                                                         <LoadMask ShowMask="true" />
                                                     </Loader>
                                                 </ext:Portlet>

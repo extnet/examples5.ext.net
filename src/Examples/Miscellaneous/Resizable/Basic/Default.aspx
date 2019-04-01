@@ -191,7 +191,7 @@
             Height="200">
             <Loader
                 runat="server"
-                Url="http://ext.net"
+                Url="https://ext.net"
                 Mode="Frame" />
             <ResizableConfig
                 runat="server"

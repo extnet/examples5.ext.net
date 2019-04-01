@@ -39,7 +39,7 @@
         <p>The <code><b>flex</b></code> config of child items of a vbox layout specifies what share of the vertical
         space left when unflexed items are accounted for to allocate for that child item.</p>
 
-        <p>Compare this to <a target="_blank" href="http://examples.ext.net/Examples/Layout/AnchorLayout/Anchor_With_Form/">The anchoring example</a>.
+        <p>Compare this to <a target="_blank" href="https://examples.ext.net/Examples/Layout/AnchorLayout/Anchor_With_Form/">The anchoring example</a>.
         That anchors the fields to a hardcoded offset from the edge of the Container.
         Box Layout managers allow much more flexibility in use of available space.</p>
 

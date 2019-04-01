@@ -16,8 +16,8 @@
 
     <ext:Hyperlink
         runat="server"
-        NavigateUrl="http://ext.net"
-        Text="http://ext.net"
+        NavigateUrl="https://ext.net"
+        Text="https://ext.net"
         Target="_blank"
         />
 
@@ -27,8 +27,8 @@
         runat="server"
         Icon="Application"
         Target="_blank"
-        NavigateUrl="http://ext.net"
-        Text="http://ext.net"
+        NavigateUrl="https://ext.net"
+        Text="https://ext.net"
         />
 
     <h2>Hyperlink with Right Aligned Icon</h2>
@@ -38,8 +38,8 @@
         Icon="Application"
         IconAlign="Right"
         Target="_blank"
-        NavigateUrl="http://ext.net"
-        Text="http://ext.net"
+        NavigateUrl="https://ext.net"
+        Text="https://ext.net"
         />
 
     <h2>Image Hyperlink</h2>
@@ -47,8 +47,8 @@
     <ext:Hyperlink
         runat="server"
         Target="_blank"
-        NavigateUrl="http://ext.net"
-        ImageUrl="http://speed.ext.net/identity/extnet-logo-small.png"
+        NavigateUrl="https://ext.net"
+        ImageUrl="https://speed.ext.net/identity/extnet-logo-small.png"
         />
 </body>
 </html>

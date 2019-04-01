@@ -23,7 +23,7 @@
             Title="Example">
             <Loader
                 runat="server"
-                Url="http://ext.net/"
+                Url="https://ext.net/"
                 Mode="Frame">
                 <LoadMask ShowMask="true" Msg="Custom Loading Message..." />
             </Loader>
@@ -33,7 +33,7 @@
                         <ext:ToolbarFill />
                         <ext:Button runat="server" Text="Load Ext.NET forums" Icon="Application">
                             <Listeners>
-                                <Click Handler="#{Window1}.load('http://forums.ext.net/');" />
+                                <Click Handler="#{Window1}.load('https://forums.ext.net/');" />
                             </Listeners>
                         </ext:Button>
 

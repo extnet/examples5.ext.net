@@ -61,7 +61,7 @@
 
         <h1>Custom Data Binding using a ModelField's Model</h1>
         <p>The example demonstrates a possibility to customize binding the data to the Store using a ModelField's Model.</p>
-        <p>More details you can find <a href="http://forums.ext.net/showthread.php?26837">here</a>.</p>
+        <p>More details you can find <a href="https://forums.ext.net/showthread.php?26837">here</a>.</p>
 
         <ext:GridPanel
             runat="server"

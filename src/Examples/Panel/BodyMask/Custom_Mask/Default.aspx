@@ -36,7 +36,7 @@
             Icon="Link"
             Title="Frame Loader"
             Closable="false">
-            <Loader runat="server" Url="http://ext.net" Mode="Frame">
+            <Loader runat="server" Url="https://ext.net" Mode="Frame">
                 <Listeners>
                     <BeforeLoad Handler="Ext.get('maskDiv').removeCls('x-hidden-display');" />
                     <Load Handler="Ext.get('maskDiv').addCls('x-hidden-display');" />
@@ -48,7 +48,7 @@
                         <ext:ToolbarFill runat="server" />
                         <ext:Button runat="server" Text="Load Ext.NET forums">
                             <Listeners>
-                                <Click Handler="#{Window1}.load('http://forums.ext.net');" />
+                                <Click Handler="#{Window1}.load('https://forums.ext.net');" />
                             </Listeners>
                         </ext:Button>
 

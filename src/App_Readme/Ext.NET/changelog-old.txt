@@ -13,7 +13,7 @@ Current Version  : 3.2.1
 Previous Release : 3.2.0
 
 If you find any new breaking changes, please report in the Ext.NET Community
-forums: http://forums.ext.net.
+forums: https://forums.ext.net.
 
 The [EXTJS] or [EXTNET] tag indicates origin framework of the Breaking Change.
 
@@ -30,7 +30,7 @@ Current Version  : 3.2.0
 Previous Release : 3.1.0
 
 If you find any new breaking changes, please report in the Ext.NET Community
-forums: http://forums.ext.net.
+forums: https://forums.ext.net.
 
 The [EXTJS] or [EXTNET] tag indicates origin framework of the Breaking Change.
 
@@ -47,7 +47,7 @@ Current Version  : 3.1.0
 Previous Release : 3.0.0
 
 If you find any new breaking changes, please report in the Ext.NET Community
-forums: http://forums.ext.net.
+forums: https://forums.ext.net.
 
 The [EXTJS] or [EXTNET] tag indicates origin framework of the Breaking Change.
 
@@ -72,7 +72,7 @@ http://docs.sencha.com/extjs/5.1/5.1.0-apidocs/#!/api
     DataView classes has been removed. Keyboard navigation is a function of the 
     view's navigation model, and is enabled for accessibilty purposes. There is
     a related discussion in the forums with a possible solution.
-    http://forums.ext.net/showthread.php?51901
+    https://forums.ext.net/showthread.php?51901
 
 5.  [EXTJS] The MenuBase's EnableKeyNav property has been removed. Intra-menu 
     key navigation is always enabled.
@@ -92,7 +92,7 @@ http://docs.sencha.com/extjs/5.1/5.1.0-apidocs/#!/api
 9.  [EXTJS] Selecting a GridPanel's row programmatically doesn't focus that
     row and doesn't scroll to that row automatically. Previously, it did. 
     Here is a related discussion in the Ext.NET Community forums.
-    http://forums.ext.net/showthread.php?53111
+    https://forums.ext.net/showthread.php?53111
 
 10. [EXTNET] The GridView's StripeRows property has been moved to the 
     TableView class.
@@ -112,7 +112,7 @@ Previous Release : 3.0.0-beta
 NONE
 
 If you find any new breaking changes, please report in the Ext.NET Community
-forums: http://forums.ext.net.
+forums: https://forums.ext.net.
 
 
 **************************************************************************
@@ -123,7 +123,7 @@ Release Date     : 2014-11-04
 Current Version  : 3.0.0-beta
 
 If you find any new breaking changes, please report in the Ext.NET Community
-forums: http://forums.ext.net.
+forums: https://forums.ext.net.
 
 The [EXTJS] or [EXTNET] tag indicates origin framework of the Breaking Change.
 
@@ -333,7 +333,7 @@ http://docs.sencha.com/extjs/5.0/whats_new/5.0/extjs_upgrade_guide.html
     charts, users should expect to find API differences.
 
     Also we recommend to review the Ext.NET Charts examples:
-    http://examples.ext.net/
+    https://examples.ext.net/
 
     As well, some Charts functionality is missing from ExtJS 5 when compared 
     to ExtJS 4. More information is available within the following Issue:
@@ -350,7 +350,7 @@ http://docs.sencha.com/extjs/5.0/whats_new/5.0/extjs_upgrade_guide.html
     to the new Draw API. We suggest to review the ExtJS Draw guide and review 
     the Ext.NET Draw samples in the Examples Explorer.
     http://docs-origin.sencha.com/extjs/5.0/core_concepts/drawing.html
-    http://examples3.ext.net
+    https://examples3.ext.net
 
     As well, some Draw functionality is missing from ExtJS 5 when compared 
     to ExtJS 4. More information is available within the following Issue:
