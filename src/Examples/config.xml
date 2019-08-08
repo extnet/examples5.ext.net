@@ -6,10 +6,13 @@
   </order>
 
   <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
+  <!--
   <new version="4.8.2">
     <folder name="Miscellaneous\Store\ClientStore" />
     <folder name="GridPanel\Miscellaneous\FilterQuery" />
   </new>
+  -->
+  <!--
 
   <!-- merged 4.8.0 and 4.8.1 updated examples -->
   <updated version="4.8.2">
@@ -22,6 +25,7 @@
     <folder name="TreePanel\List\Built_in_Markup" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
   </updated>
+  -->
 
   <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
   <!--
