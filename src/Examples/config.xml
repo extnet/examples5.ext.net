@@ -5,16 +5,18 @@
     <folder name="Kitchen_Sink" />
   </order>
 
-  <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
+  <new version="5.0.0">
+    <!--<folder name="" />-->
+  </new>
+  
   <!--
   <new version="4.8.2">
     <folder name="Miscellaneous\Store\ClientStore" />
     <folder name="GridPanel\Miscellaneous\FilterQuery" />
   </new>
   -->
-  <!--
 
-  <!-- merged 4.8.0 and 4.8.1 updated examples -->
+  <!--
   <updated version="4.8.2">
     <folder name="GridPanel\Commands\Group_Command" />
     <folder name="GridPanel\Miscellaneous\Submit_to_Handler" />
@@ -27,7 +29,6 @@
   </updated>
   -->
 
-  <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
   <!--
   <new version="4.8.1">
     <folder name="Miscellaneous\Store\ClientStore" />
