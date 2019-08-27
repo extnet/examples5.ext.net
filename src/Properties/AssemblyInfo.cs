@@ -2,9 +2,9 @@
 using System.Runtime.InteropServices;
 using System.Web.UI;
 
-[assembly: AssemblyVersion("4.8.2")]
-[assembly: AssemblyFileVersion("4.8.2.0")]
-[assembly: AssemblyInformationalVersion("4.8.2")]
+[assembly: AssemblyVersion("4.8.3")]
+[assembly: AssemblyFileVersion("4.8.3.0")]
+[assembly: AssemblyInformationalVersion("4.8.3")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
 [assembly: AssemblyCopyright("Copyright (c) 2008-2019 Object.NET, Inc.")]
 [assembly: AssemblyTitle("Ext.NET Examples")]

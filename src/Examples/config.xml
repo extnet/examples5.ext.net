@@ -5,13 +5,34 @@
     <folder name="Kitchen_Sink" />
   </order>
 
-  <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
-  <new version="4.8.2">
+  <!-- just replicated 4.8.2 "new" examples -->
+  <new version="4.8.3">
     <folder name="Miscellaneous\Store\ClientStore" />
     <folder name="GridPanel\Miscellaneous\FilterQuery" />
   </new>
 
+  <!-- just replicated 4.8.2 updated examples -->
+  <updated version="4.8.3">
+    <folder name="GridPanel\Commands\Group_Command" />
+    <folder name="GridPanel\Miscellaneous\Submit_to_Handler" />
+    <folder name="GridPanel\Plugins\Selection_Memory" />
+    <folder name="GridPanel\Selection_models\Checkbox_Selection" />
+    <folder name="TreePanel\List\Simple" />
+    <folder name="TreePanel\List\Overview" />
+    <folder name="TreePanel\List\Built_in_Markup" />
+    <folder name="TreePanel\List\Built_in_CodeBehind" />
+  </updated>
+
+  <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
+  <!--
+  <new version="4.8.2">
+    <folder name="Miscellaneous\Store\ClientStore" />
+    <folder name="GridPanel\Miscellaneous\FilterQuery" />
+  </new>
+  -->
+
   <!-- merged 4.8.0 and 4.8.1 updated examples -->
+  <!--
   <updated version="4.8.2">
     <folder name="GridPanel\Commands\Group_Command" />
     <folder name="GridPanel\Miscellaneous\Submit_to_Handler" />
@@ -22,6 +43,7 @@
     <folder name="TreePanel\List\Built_in_Markup" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
   </updated>
+  -->
 
   <!-- keeping new ones for version 4.8.0 because they're real fresh. -->
   <!--
