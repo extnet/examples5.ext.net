@@ -93,7 +93,7 @@
                         </ext:Store>
                     </Store>
                     <Interactions>
-                        <ext:RotatePie3DInteraction />
+                        <ext:RotatePieInteraction />
                     </Interactions>
                     <Series>
                         <ext:Pie3DSeries
