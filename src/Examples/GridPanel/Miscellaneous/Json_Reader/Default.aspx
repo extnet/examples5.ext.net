@@ -54,7 +54,7 @@
                     <Columns>
                         <ext:Column runat="server" Text="Common Name" DataIndex="Common" Flex="1" />
                         <ext:Column runat="server" Text="Light" DataIndex="Light" Width="130" />
-                        <ext:Column runat="server" Text="Price" DataIndex="Price" Width="70" Align="right" />
+                        <ext:Column runat="server" Text="Price" DataIndex="Price" Width="70" Align="End" />
                         <ext:DateColumn runat="server" Text="Available" DataIndex="Availability" Width="95" />
                         <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
                     </Columns>

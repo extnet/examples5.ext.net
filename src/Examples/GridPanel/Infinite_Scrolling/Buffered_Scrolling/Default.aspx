@@ -117,7 +117,7 @@
                         Text="Salary"
                         Width="125"
                         DataIndex="salary"
-                        Align="Right">
+                        Align="End">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                 </Columns>

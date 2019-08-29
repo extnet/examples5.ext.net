@@ -283,7 +283,7 @@
                         dataIndex: 'field' + i,
                         renderer: columnRenderer,
                         summaryType: summaryTypes[i % 5],
-                        align: 'right',
+                        align: 'end',
                         summaryRenderer: function (value, cellValues, record, recordIndex, colIdx, store, view) {
                             cellValues.style = 'text-align:right';
                             return summaryTypeNames[(colIdx - 1) % 5] + ': ' + Ext.util.Format.number(value, '0.00');

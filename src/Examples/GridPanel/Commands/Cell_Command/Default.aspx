@@ -90,7 +90,7 @@
                             <Command Fn="onCommand" />
                         </Listeners>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="100" DataIndex="price" Align="Right" RightCommandAlign="false">
+                    <ext:Column runat="server" Text="Price" Width="100" DataIndex="price" Align="End" RightCommandAlign="false">
                         <Renderer Format="UsMoney" />
                         <Commands>
                             <ext:ImageCommand CommandName="Dollar" Icon="MoneyDollar" />
@@ -100,7 +100,7 @@
                             <Command Fn="onCommand" />
                         </Listeners>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="100" DataIndex="change" Align="Right" RightCommandAlign="false">
+                    <ext:Column runat="server" Text="Change" Width="100" DataIndex="change" Align="End" RightCommandAlign="false">
                         <Renderer Fn="change" />
                         <Commands>
                             <ext:ImageCommand CommandName="Dollar" Icon="MoneyDollar" />
@@ -111,7 +111,7 @@
                             <Command Fn="onCommand" />
                         </Listeners>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" DataIndex="pctChange" Align="Right">
+                    <ext:Column runat="server" Text="Change" DataIndex="pctChange" Align="End">
                         <Renderer Fn="pctChange" />
                         <Commands>
                             <ext:ImageCommand CommandName="Chart" Icon="ChartBar" Style="margin-left:5px !important;" />

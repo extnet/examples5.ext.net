@@ -164,7 +164,7 @@
                                 Text="Size"
                                 Flex="20"
                                 DataIndex="size"
-                                Align="Right"
+                                Align="End"
                                 TemplateString="{size:fileSize}"
                                 />
                         </Columns>

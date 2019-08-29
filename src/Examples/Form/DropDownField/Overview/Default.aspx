@@ -274,7 +274,7 @@
                                 runat="server"
                                 Text="Price"
                                 DataIndex="Price"
-                                Align="right"
+                                Align="End"
                                 Groupable="false">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>

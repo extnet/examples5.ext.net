@@ -91,7 +91,7 @@
                         Text="Price"
                         DataIndex="Price"
                         Width="70"
-                        Align="right"
+                        Align="End"
                         Groupable="false">
                         <Renderer Format="UsMoney" />
                     </ext:Column>

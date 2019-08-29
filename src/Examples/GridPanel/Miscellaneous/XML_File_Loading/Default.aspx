@@ -65,7 +65,7 @@
                     Text="Price"
                     DataIndex="price"
                     Width="70"
-                    Align="right">
+                    Align="End">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
                 <ext:DateColumn

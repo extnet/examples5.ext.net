@@ -193,7 +193,7 @@
                 <Columns>
                     <ext:Column runat="server" Text="Name" Flex="1" DataIndex="name" Sortable="false" />
                     <ext:Column runat="server" Text="Rating" Width="125" DataIndex="rating" Sortable="false"/>
-                    <ext:Column runat="server" Text="Salary" Width="125" DataIndex="salary" Sortable="false" Align="Right">
+                    <ext:Column runat="server" Text="Salary" Width="125" DataIndex="salary" Sortable="false" Align="End">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                 </Columns>

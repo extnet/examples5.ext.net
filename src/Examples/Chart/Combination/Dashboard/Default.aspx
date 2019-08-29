@@ -337,7 +337,7 @@
                                         Text="Price"
                                         Width="75"
                                         DataIndex="price"
-                                        Align="Right">
+                                        Align="End">
                                         <Renderer Format="UsMoney" />
                                     </ext:Column>
                                     <ext:Column
@@ -345,7 +345,7 @@
                                         Text="Revenue"
                                         Width="75"
                                         DataIndex="revenue"
-                                        Align="Right">
+                                        Align="End">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
                                     <ext:Column
@@ -353,7 +353,7 @@
                                         Text="Growth"
                                         Width="75"
                                         DataIndex="growth"
-                                        Align="Right">
+                                        Align="End">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
                                     <ext:Column
@@ -361,7 +361,7 @@
                                         Text="Product"
                                         Width="75"
                                         DataIndex="product"
-                                        Align="Right">
+                                        Align="End">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
                                     <ext:Column
@@ -369,7 +369,7 @@
                                         Text="Market"
                                         Width="75"
                                         DataIndex="market"
-                                        Align="Right">
+                                        Align="End">
                                         <Renderer Handler="return value + '%';" />
                                     </ext:Column>
                                 </Columns>

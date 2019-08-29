@@ -98,7 +98,7 @@
                     <Renderer Fn="template" />
                 </ext:Column>
                 <ext:Column runat="server" Text="Author" DataIndex="author" Width="100" Hidden="true" Sortable="true" />
-                <ext:Column runat="server" Text="Replies" DataIndex="replycount" Width="70" Align="right" Sortable="true" />
+                <ext:Column runat="server" Text="Replies" DataIndex="replycount" Width="70" Align="End" Sortable="true" />
                 <ext:Column runat="server" Text="Last Post" DataIndex="lastpost" Width="150" Sortable="true">
                     <Renderer Fn="renderLast" />
                 </ext:Column>

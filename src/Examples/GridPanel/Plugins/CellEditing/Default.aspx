@@ -115,7 +115,7 @@
                     Text="Price"
                     DataIndex="price"
                     Width="70"
-                    Align="right">
+                    Align="End">
                     <Renderer Format="UsMoney" />
                     <Editor>
                         <ext:NumberField runat="server" AllowBlank="false" MinValue="0" MaxValue="100000">
