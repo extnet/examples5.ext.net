@@ -144,7 +144,7 @@
                     runat="server"
                     EmptyText="No items to display"
                     SingleSelect="true"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     OverClass="x-view-over"
                     ItemSelector="div.company">
                     <Store>

@@ -182,7 +182,7 @@
                     Region="East"
                     Width="300"
                     Title="Tree"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     MarginSpec="5 5 5 0"
                     Split="true">
                     <Root>

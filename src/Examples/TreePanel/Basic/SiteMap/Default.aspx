@@ -118,7 +118,7 @@
                             msg  : "Loading " + record.data.url + "..."
                         }
                     },
-                    autoScroll : true
+                    scrollable : 'both'
                 });
             }
 

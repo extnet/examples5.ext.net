@@ -33,7 +33,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -80,7 +80,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -170,7 +170,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -252,7 +252,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -350,7 +350,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -445,7 +445,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -482,7 +482,7 @@
             Height="250"
             StyleSpec="margin-top:15px"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

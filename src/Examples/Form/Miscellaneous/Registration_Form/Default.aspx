@@ -11,7 +11,7 @@
             Width = 700,
             Height = 400,
             BodyStyle = "padding: 10px 20px;",
-            AutoScroll = true,
+            Scrollable = ScrollableOption.Both,
             CloseAction = Ext.Net.CloseAction.Destroy,
             Buttons =
             {

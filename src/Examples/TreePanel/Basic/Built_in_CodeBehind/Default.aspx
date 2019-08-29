@@ -14,7 +14,7 @@
         tree.Height = Unit.Pixel(450);
         tree.Icon = Icon.BookOpen;
         tree.Title = "Catalog";
-        tree.AutoScroll = true;
+        tree.Scrollable = ScrollableOption.Both;
 
         Ext.Net.Button btnExpand = new Ext.Net.Button();
         btnExpand.Text = "Expand All";

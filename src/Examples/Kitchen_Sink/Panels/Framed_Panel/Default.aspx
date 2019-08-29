@@ -30,7 +30,7 @@
                     <ext:Parameter Name="Width" Value="200" Mode="Raw" />
                     <ext:Parameter Name="Height" Value="200" Mode="Raw" />
                     <ext:Parameter Name="BodyPadding" Value="10" Mode="Raw" />
-                    <ext:Parameter Name="AutoScroll" Value="true" Mode="Raw" />
+                    <ext:Parameter Name="Scrollable" Value="both" />
                     <ext:Parameter Name="Margin" Value="10" Mode="Raw" />
                     <ext:Parameter Name="Frame" Value="true" Mode="Raw" />
                     <ext:Parameter Name="Html" Value="<%# TEST_HTML %>" Mode="Value" AutoDataBind="true" />

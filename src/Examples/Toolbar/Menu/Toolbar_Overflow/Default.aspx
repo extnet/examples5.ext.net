@@ -31,7 +31,7 @@
             Height="250"
             Width="500"
             BodyPadding="10"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server" EnableOverflow="true">
                     <Items>

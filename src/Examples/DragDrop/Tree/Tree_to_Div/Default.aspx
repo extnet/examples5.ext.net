@@ -43,7 +43,7 @@
                     MarginSpec="5 0 5 5"
                     Width="200"
                     Title="Tree"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     Collapsible="true">
                     <Store>
                         <ext:TreeStore runat="server">

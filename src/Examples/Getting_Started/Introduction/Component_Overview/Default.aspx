@@ -510,7 +510,7 @@
                     Layout="AccordionLayout"
                     DefaultBorder="false">
                     <Items>
-                        <ext:TreePanel runat="server" Title="TreePanel" AutoScroll="true" EnableDD="true">
+                        <ext:TreePanel runat="server" Title="TreePanel" Scrollable="Both" EnableDD="true">
                             <Root>
                                 <ext:Node Text="Root Node" Expanded="true">
                                     <Children>

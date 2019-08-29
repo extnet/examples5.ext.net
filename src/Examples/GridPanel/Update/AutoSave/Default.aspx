@@ -278,7 +278,7 @@
                         iconCls    : 'icon-exclamation',
                         html       : message,
                         title      : 'EXCEPTION',
-                        autoScroll : true,
+                        scrollable : 'both',
                         hideDelay  : 5000,
                         width      : 300,
                         height     : 200

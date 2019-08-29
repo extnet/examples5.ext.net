@@ -89,7 +89,7 @@
             Height="300"
             Width="250"
             UseArrows="true"
-            AutoScroll="true"
+            Scrollable="Both"
             Mode="Remote"
             RootVisible="false"
             RemoteJson="true"

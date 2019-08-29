@@ -8,7 +8,7 @@
     Layout="BorderLayout"
     BodyBorder="0">
     <Items>
-        <ext:Panel runat="server" Region="Center" AutoScroll="true">
+        <ext:Panel runat="server" Region="Center" Scrollable="Both">
             <Items>
                 <ext:UserControlLoader runat="server" Path="IconBrowser.ascx" />
             </Items>

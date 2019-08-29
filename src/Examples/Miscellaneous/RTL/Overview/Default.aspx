@@ -48,7 +48,7 @@
                     Title = "\u0634\u0645\u0627\u0644",
                     Height = 100,
                     Html = paragraph,
-                    AutoScroll = true,
+                    Scrollable = ScrollableOption.Both,
                     Collapsible = true,
                     Split = true
                 },

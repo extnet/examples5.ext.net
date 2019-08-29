@@ -47,7 +47,7 @@
             Height="400"
             Width="250"
             UseArrows="true"
-            AutoScroll="true"
+            Scrollable="Both"
             Animate="true"
             HideHeaders="true"
             RootVisible="false">

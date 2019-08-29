@@ -432,7 +432,7 @@
                                     ID="DataView1"
                                     runat="server"
                                     StoreID="Store1"
-                                    AutoScroll="true"
+                                    Scrollable="Both"
                                     Flex="1"
                                     ItemSelector="div"
                                     MarginSpec="5">

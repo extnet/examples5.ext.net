@@ -134,7 +134,7 @@
                 Width="250"
                 Border="false"
                 UseArrows="true"
-                AutoScroll="true">
+                Scrollable="Both">
                 <Store>
                     <ext:TreeStore
                         runat="server"

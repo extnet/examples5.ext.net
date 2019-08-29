@@ -164,7 +164,7 @@
                     Width="300"
                     Shadow="false"
                     UseArrows="true"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     Animate="true"
                     EnableDD="true"
                     ContainerScroll="true"

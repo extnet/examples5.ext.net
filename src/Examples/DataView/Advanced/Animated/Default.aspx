@@ -100,7 +100,7 @@
                     ItemSelector="div.phone"
                     OverItemCls="phone-hover"
                     MultiSelect="true"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     Cls="phones-view"
                     TrackOver="true">
                     <Store>

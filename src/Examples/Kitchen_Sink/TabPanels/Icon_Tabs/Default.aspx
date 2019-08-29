@@ -46,7 +46,7 @@
                 MarginSpec="0 0 20 0">
                 <Defaults>
                     <ext:Parameter Name="bodyPadding" Value="10" Mode="Raw" />
-                    <ext:Parameter Name="autoScroll" Value="true" Mode="Raw" />
+                    <ext:Parameter Name="scrollable" Value="both" />
                 </Defaults>
                 <Items>
                     <ext:Panel
@@ -76,7 +76,7 @@
                 Plain="true">
                 <Defaults>
                     <ext:Parameter Name="bodyPadding" Value="10" Mode="Raw" />
-                    <ext:Parameter Name="autoScroll" Value="true" Mode="Raw" />
+                    <ext:Parameter Name="scrollable" Value="both" />
                 </Defaults>
                 <Items>
                     <ext:Panel

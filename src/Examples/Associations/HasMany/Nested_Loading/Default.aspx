@@ -115,7 +115,7 @@
                         Cls="item-ct"
                         Flex="2"
                         Border="false"
-                        AutoScroll="true">
+                        Scrollable="Both">
                         <LayoutConfig>
                             <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                         </LayoutConfig>
@@ -170,7 +170,7 @@
                                 runat="server"
                                 Border="false"
                                 Cls="review-list"
-                                AutoScroll="true"
+                                Scrollable="Both"
                                 ItemSelector=".review">
                                 <Tpl>
                                     <Html>

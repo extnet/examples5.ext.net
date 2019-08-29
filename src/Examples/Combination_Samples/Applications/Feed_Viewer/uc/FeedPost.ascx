@@ -2,7 +2,7 @@
 
 <ext:Panel runat="server"
     Cls="preview"
-    AutoScroll="true"
+    Scrollable="Both"
     Border="true">    
     <DockedItems>
         <ext:Toolbar runat="server" Dock="Top">

@@ -66,7 +66,7 @@
                             Border="false"
                             Collapsed="true"
                             Icon="Note"
-                            AutoScroll="true"
+                            Scrollable="Both"
                             Title="Content"
                             Html="={text}"
                             BodyPadding="5" />
@@ -75,7 +75,7 @@
                             Border="false"
                             Collapsed="true"
                             Icon="FolderWrench"
-                            AutoScroll="true"
+                            Scrollable="Both"
                             Title="Settings"
                             Html="={text}"
                             BodyPadding="5" />

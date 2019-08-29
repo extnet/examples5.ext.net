@@ -130,7 +130,7 @@
         <ext:Panel
             runat="server"
             Width="450"
-            AutoScroll="true"
+            Scrollable="Both"
             BodyPadding="10"
             Frame="true"
             Resizable="true"

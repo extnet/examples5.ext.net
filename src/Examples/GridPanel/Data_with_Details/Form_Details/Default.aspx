@@ -130,7 +130,7 @@
                     Width="280"
                     Icon="User"
                     DefaultAnchor="100%"
-                    AutoScroll="True">
+                    Scrollable="Both">
                     <FieldDefaults ReadOnly="true" />
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Employee ID" Name="EmployeeID" />

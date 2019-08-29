@@ -98,7 +98,7 @@
                 <ext:Panel
                     runat="server"
                     Border="false"
-                    AutoScroll="true"
+                    Scrollable="Both"
                     Region="Center"
                     BodyPadding="20">
                     <Items>

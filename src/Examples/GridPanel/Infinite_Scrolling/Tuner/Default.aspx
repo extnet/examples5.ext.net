@@ -222,7 +222,7 @@
                             runat="server"
                             Title="Log"
                             Region="Center"
-                            AutoScroll="true">
+                            Scrollable="Both">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>

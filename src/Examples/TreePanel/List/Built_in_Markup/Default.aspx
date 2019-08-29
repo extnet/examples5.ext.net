@@ -48,7 +48,7 @@
             Height="450"
             IconCls="x-fa fa-list"
             Title="Catalog"
-            AutoScroll="true">
+            Scrollable="Both">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

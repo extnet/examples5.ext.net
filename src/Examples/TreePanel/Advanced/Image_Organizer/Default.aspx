@@ -165,7 +165,7 @@
                             runat="server"
                             TrackOver="true"
                             Cls="x-image-view"
-                            AutoScroll="true"
+                            Scrollable="Both"
                             ItemSelector="div.thumb-wrap"
                             MultiSelect="true"
                             SingleSelect="false">

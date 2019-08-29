@@ -20,7 +20,7 @@
             Height="450"
             Icon="BookOpen"
             Title="Catalog"
-            AutoScroll="true">
+            Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

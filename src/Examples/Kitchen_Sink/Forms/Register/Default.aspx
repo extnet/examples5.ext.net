@@ -85,7 +85,7 @@
                 Frame="true"
                 Title="Register"
                 BodyPadding="13"
-                AutoScroll="true">
+                Scrollable="Both">
                 <FieldDefaults LabelAlign="Right" LabelWidth="115" MsgTarget="Side" />
                 <Items>
                     <ext:FieldSet runat="server" Title="User Info" DefaultWidth="300">

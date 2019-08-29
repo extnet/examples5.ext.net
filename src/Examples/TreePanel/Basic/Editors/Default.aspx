@@ -66,7 +66,7 @@
             runat="server"
             Icon="Anchor"
             Title="Tree Editors Filter"
-            AutoScroll="true"
+            Scrollable="Both"
             Width="250"
             CollapseFirst="True"
             RootVisible="False">
@@ -98,7 +98,7 @@
             runat="server"
             Icon="Anchor"
             Title="Tree Active Editor"
-            AutoScroll="true"
+            Scrollable="Both"
             Width="250"
             CollapseFirst="True"
             ActiveEditor="Editor1"

@@ -4,7 +4,7 @@
     Title="Loader log"
     TplWriteMode="Append"
     BodyPadding="5"
-    AutoScroll="true"
+    Scrollable="Both"
     Flex="1">
     <Tpl runat="server">
         <Html>

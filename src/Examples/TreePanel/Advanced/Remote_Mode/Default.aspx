@@ -170,7 +170,7 @@
             runat="server"
             Height="300"
             Width="450"
-            AutoScroll="true"
+            Scrollable="Both"
             Animate="true"
             Mode="Remote"
             RootVisible="false"

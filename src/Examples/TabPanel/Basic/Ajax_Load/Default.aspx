@@ -31,7 +31,7 @@
                         Title="Normal Tab"
                         Html="My content was added with the Html Property."
                         BodyPadding="6"
-                        AutoScroll="true"
+                        Scrollable="Both"
                         />
                     <ext:Panel
                         ID="Tab2"
@@ -46,7 +46,7 @@
                         runat="server"
                         Title="Ajax Tab"
                         BodyPadding="6"
-                        AutoScroll="true">
+                        Scrollable="Both">
                         <Loader runat="server" Url="ajax.aspx">
                             <LoadMask ShowMask="true" />
                         </Loader>
@@ -57,7 +57,7 @@
                         Title="Event Tab"
                         Html="I am tab 3's content. I also have an event listener attached."
                         BodyPadding="6"
-                        AutoScroll="true">
+                        Scrollable="Both">
                         <Listeners>
                             <Activate Handler="Ext.Msg.alert('Event', this.title + ' was activated.');" Delay="1" />
                         </Listeners>
@@ -68,7 +68,7 @@
                         Title="Disabled Tab"
                         Disabled="true"
                         Html="Can't see me cause I'm disabled"
-                        AutoScroll="true"
+                        Scrollable="Both"
                         />
                 </Items>
             </ext:TabPanel>

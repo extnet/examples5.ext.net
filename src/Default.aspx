@@ -320,7 +320,7 @@
                         ID="exampleTree"
                         runat="server"
                         Header="false"
-                        AutoScroll="true"
+                        Scrollable="Both"
                         Lines="false"
                         UseArrows="true"
                         CollapseFirst="false"

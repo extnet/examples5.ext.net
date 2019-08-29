@@ -15,7 +15,7 @@
             ID="DataView1" 
             runat="server" 
             ItemSelector="div.event" 
-            AutoScroll="true">
+            Scrollable="Both">
             <Store>
                 <ext:Store ID="SubmittedEventsStore1" runat="server">
                     <Model>

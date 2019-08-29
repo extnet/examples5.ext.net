@@ -33,7 +33,7 @@
         Width="400"
         Height="295"
         BodyPadding="10"
-        AutoScroll="true"
+        Scrollable="Both"
         Html="<%# TEST_HTML %>"
         AutoDataBind="true"
         />
