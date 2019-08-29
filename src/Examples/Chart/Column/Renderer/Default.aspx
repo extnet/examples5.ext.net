@@ -321,7 +321,7 @@
 
                     <Interactions>
                         <ext:ItemHighlightInteraction />
-                        <ext:PanZoomInteraction ZoomOnPanGesture="false" />
+                        <ext:PanZoomInteraction ZoomOnPan="false" />
                     </Interactions>
 
                     <Axes>

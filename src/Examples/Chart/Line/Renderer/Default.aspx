@@ -200,7 +200,7 @@
                     <Background Fill="white" />
 
                     <Interactions>
-                        <ext:PanZoomInteraction ZoomOnPanGesture="false" />
+                        <ext:PanZoomInteraction ZoomOnPan="false" />
                     </Interactions>
 
                     <Axes>

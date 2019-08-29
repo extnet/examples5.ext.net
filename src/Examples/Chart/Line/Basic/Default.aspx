@@ -75,7 +75,7 @@
                     </Store>
 
                     <Interactions>
-                        <ext:PanZoomInteraction ZoomOnPanGesture="true" />
+                        <ext:PanZoomInteraction ZoomOnPan="true" />
                     </Interactions>
 
                     <Items>

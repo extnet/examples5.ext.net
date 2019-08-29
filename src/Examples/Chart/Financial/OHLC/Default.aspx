@@ -174,7 +174,7 @@
                         </ext:Store>
                     </Store>
                     <Interactions>
-                        <ext:PanZoomInteraction Enabled="false" ZoomOnPanGesture="false">
+                        <ext:PanZoomInteraction Enabled="false" ZoomOnPan="false">
                             <Axes>
                                 <LeftAxis AllowPan="false" AllowZoom="false" />
                                 <BottomAxis AllowPan="true" AllowZoom="true" />

@@ -87,7 +87,7 @@
                         </ext:Store>
                     </Store>
                     <Interactions>
-                        <ext:PanZoomInteraction ZoomOnPanGesture="true" />
+                        <ext:PanZoomInteraction ZoomOnPan="true" />
                         <ext:ItemHighlightInteraction />
                     </Interactions>
                     <Axes>

@@ -246,7 +246,7 @@
                     <Background Fill="white" />
 
                     <Interactions>
-                        <ext:PanZoomInteraction ZoomOnPanGesture="false" />
+                        <ext:PanZoomInteraction ZoomOnPan="false" />
                         <ext:ItemHighlightInteraction />
                     </Interactions>
 

@@ -56,7 +56,7 @@
                             InnerPadding="0 40">
                             <Interactions>
                                 <ext:ItemHighlightInteraction />
-                                <ext:PanZoomInteraction ZoomOnPanGesture="true" />
+                                <ext:PanZoomInteraction ZoomOnPan="true" />
                             </Interactions>
                             <Axes>
                                 <ext:NumericAxis
@@ -106,7 +106,7 @@
                             BindString="{priceData}"
                             InsetPadding="40">
                             <Interactions>
-                                <ext:PanZoomInteraction ZoomOnPanGesture="true" />
+                                <ext:PanZoomInteraction ZoomOnPan="true" />
                             </Interactions>
                             <Axes>
                                 <ext:NumericAxis
