@@ -212,7 +212,7 @@
             </Plugins>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:SummaryColumn
+                    <ext:Column
                         runat="server"
                         TdCls="task"
                         Text="Task"
@@ -222,11 +222,11 @@
                         SummaryType="Count"
                         Flex="1">
                         <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
-                    </ext:SummaryColumn>
+                    </ext:Column>
 
                     <ext:Column runat="server" Text="Project" DataIndex="Name" Width="20" />
 
-                    <ext:SummaryColumn
+                    <ext:Column
                         runat="server"
                         Width="100"
                         Text="Due Date"
@@ -238,9 +238,9 @@
                         <Editor>
                             <ext:DateField runat="server" Format="MM/dd/yyyy" />
                         </Editor>
-                    </ext:SummaryColumn>
+                    </ext:Column>
 
-                    <ext:SummaryColumn
+                    <ext:Column
                         runat="server"
                         Width="75"
                         Text="Estimate"
@@ -256,9 +256,9 @@
                                 AllowNegative="false"
                                 StyleSpec="text-align:left" />
                         </Editor>
-                    </ext:SummaryColumn>
+                    </ext:Column>
 
-                    <ext:SummaryColumn
+                    <ext:Column
                         runat="server"
                         Width="75"
                         Text="Rate"
@@ -274,9 +274,9 @@
                                 AllowNegative="false"
                                 StyleSpec="text-align:left" />
                         </Editor>
-                    </ext:SummaryColumn>
+                    </ext:Column>
 
-                    <ext:SummaryColumn
+                    <ext:Column
                         runat="server"
                         Width="75"
                         ID="Cost"
@@ -287,7 +287,7 @@
                         CustomSummaryType="totalCost">
                         <Renderer Handler="return Ext.util.Format.usMoney(record.data.Estimate * record.data.Rate);" />
                         <SummaryRenderer Fn="Ext.util.Format.usMoney" />
-                    </ext:SummaryColumn>
+                    </ext:Column>
                 </Columns>
             </ColumnModel>
             <Listeners>
