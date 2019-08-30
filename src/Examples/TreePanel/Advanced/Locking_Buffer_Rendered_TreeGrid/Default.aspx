@@ -27,6 +27,9 @@
         <p>
              Tree with buffered rendering of nodes so that extremely large trees can be rendered.
         </p>
+        <p>
+            At least since Ext.NET 4 (ExtJS 6), the <b>BufferedRenderer</b> feature is enabled by default in all Tree Panels (like any grid panel) and can be disabled with the <b>BufferedRenderer="false"</b> setting in the panel.
+        </p>
 
         <ext:TreePanel
             runat="server"
@@ -36,6 +39,7 @@
             Collapsible="true"
             UseArrows="true"
             RootVisible="false"
+            BufferedRenderer="true"
             Animate="false">
             <Store>
                 <ext:TreeStore runat="server" LazyFill="true">
@@ -65,9 +69,6 @@
                     </Proxy>
                 </ext:TreeStore>
             </Store>
-            <Plugins>
-                <ext:BufferedRenderer runat="server" />
-            </Plugins>
             <ColumnModel>
                 <Columns>
                     <ext:TreeColumn runat="server" Text="Forum" Width="275" DataIndex="forumtitle" Locked="true" />
