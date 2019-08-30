@@ -51,7 +51,7 @@
                 <Model>
                     <ext:Model runat="server">
                         <Fields>
-                            <ext:ModelField Name="tags" IsComplex="true" />
+                            <ext:ModelField Name="tags" Type="object" />
                         </Fields>
                     </ext:Model>
                 </Model>
