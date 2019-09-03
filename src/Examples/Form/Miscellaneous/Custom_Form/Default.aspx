@@ -86,7 +86,7 @@
             runat="server"
             Title="Forum Search"
             Cls="search-results"
-            Height="300"
+            Height="500"
             Width="600"
             Layout="FitLayout">
             <Items>
@@ -100,7 +100,7 @@
                             <tpl for=".">
                                 <div class="search-item">
                                     <h3><span>{lastPost:this.formatDate}<br>by {author}</span>
-                                    <a href="http://www.sencha.com/forum/showthread.php?t={topicId}&p={postId}" target="_blank">{title}</a></h3>
+                                    <a href="https://www.sencha.com/forum/showthread.php?t={topicId}&p={postId}" target="_blank">{title}</a></h3>
                                     <p>{excerpt}</p>
                                 </div>
                             </tpl>
@@ -126,7 +126,7 @@
                             </Model>
 
                             <Proxy>
-                                <ext:JsonPProxy Url="http://sencha.com/forum/topics-remote.php">
+                                <ext:JsonPProxy Url="https://www.sencha.com/forum/topics-remote.php">
                                     <Reader>
                                         <ext:JsonReader RootProperty="topics" TotalProperty="totalCount" />
                                     </Reader>
