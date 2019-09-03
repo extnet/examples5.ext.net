@@ -3,4 +3,5 @@
     <description>
         <![CDATA[This example shows using multiple sorters on a Store attached to a DataView. We're also using the reorderable toolbar plugin to make it easy to reorder the sorters with drag and drop.]]>
     </description>
+    <tags>boxreorderer,code behind,custom control,extend,plugin,server control,sort,xtemplate</tags>
 </example>
