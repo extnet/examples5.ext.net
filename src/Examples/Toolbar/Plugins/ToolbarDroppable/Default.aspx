@@ -145,7 +145,7 @@
                     EmptyText="No items to display"
                     SingleSelect="true"
                     Scrollable="Both"
-                    OverClass="x-view-over"
+                    OverItemCls="x-view-over"
                     ItemSelector="div.company">
                     <Store>
                         <ext:Store ID="Store1" runat="server">
@@ -164,7 +164,7 @@
                         </ext:Store>
                     </Store>
 
-                    <Tpl>
+                    <Tpl runat="server">
                         <Html>
                             <tpl for=".">
                                 <div class="company">
