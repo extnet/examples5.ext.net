@@ -20,7 +20,7 @@
                 case Ext.Net.Theme.Triton:
                     // For this one the value specified in markup is good.
                     break;
-                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Classic:
                 case Ext.Net.Theme.Gray:
                     Desktop1.TaskBar.QuickStartWidth = 50;
                     Desktop1.TaskBar.TrayWidth = 90;

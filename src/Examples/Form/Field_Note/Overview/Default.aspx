@@ -18,7 +18,7 @@
                 FormPanel1.Height = 234;
                 break;
             case Ext.Net.Theme.Gray:
-            case Ext.Net.Theme.Default:
+            case Ext.Net.Theme.Classic:
                 FormPanel1.Width = 223;
                 FormPanel1.Height = 177;
                 break;

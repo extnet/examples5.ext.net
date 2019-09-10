@@ -46,14 +46,11 @@
             {
                 var ts = supportedTheme.ToString();
 
-                switch (supportedTheme)
+                if (supportedTheme == Ext.Net.Theme.None)
                 {
-                    case Ext.Net.Theme.Default:
-                        ts = "Blue";
-                        break;
-                    case Ext.Net.Theme.None:
-                        continue;
+                    continue;
                 }
+
                 this.ThemesMenu.Add(new CheckMenuItem()
                 {
                     ID = ts + "ThemeItem",

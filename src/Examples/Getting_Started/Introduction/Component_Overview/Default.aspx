@@ -99,7 +99,7 @@
                     Width="300">
                     <Items>
                         <ext:ListItem Text="Aria" Value="Aria" />
-                        <ext:ListItem Text="Blue" Value="Default" />
+                        <ext:ListItem Text="Classic" Value="Classic" />
                         <ext:ListItem Text="Crisp" Value="Crisp" />
                         <ext:ListItem Text="Crisp Touch" Value="CrispTouch" />
                         <ext:ListItem Text="Gray" Value="Gray" />

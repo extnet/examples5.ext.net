@@ -20,7 +20,7 @@
                     break;
                 case Ext.Net.Theme.Aria:
                 case Ext.Net.Theme.Crisp:
-                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Classic:
                 case Ext.Net.Theme.Gray:
                 case Ext.Net.Theme.Neptune:
                     Container1.Width = 580;

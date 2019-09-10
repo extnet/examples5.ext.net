@@ -17,7 +17,7 @@
                 Window1.Height = 475;
                 break;
             case Ext.Net.Theme.Gray:
-            case Ext.Net.Theme.Default:
+            case Ext.Net.Theme.Classic:
                 Window1.Height = 335;
                 break;
             case Ext.Net.Theme.Crisp:

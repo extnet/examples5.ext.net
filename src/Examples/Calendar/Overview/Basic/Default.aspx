@@ -42,7 +42,7 @@
                     DatePickPanel.Width = 310;
                     break;
                 case Ext.Net.Theme.Gray:
-                case Ext.Net.Theme.Default:
+                case Ext.Net.Theme.Classic:
                     break;
             }
         }
