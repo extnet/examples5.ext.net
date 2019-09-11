@@ -1731,8 +1731,6 @@
     <Content Include="Examples\MessageBox\Basic\Overview\Default.aspx" />
     <Content Include="Examples\MessageBox\Basic\Overview\resources\images\download.gif" />
     <Content Include="Examples\MessageBox\config.xml" />
-    <Content Include="Examples\Miscellaneous\FlashComponent\Basic\config.xml" />
-    <Content Include="Examples\Miscellaneous\FlashComponent\Basic\Default.aspx" />
     <Content Include="Examples\Miscellaneous\History\Basic\config.xml" />
     <Content Include="Examples\Miscellaneous\Locale\Basic\config.xml" />
     <Content Include="Examples\Miscellaneous\Locale\Basic\Default.aspx" />
