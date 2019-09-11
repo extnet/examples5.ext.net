@@ -796,13 +796,6 @@
     <Content Include="Examples\Panel\Miscellaneous\Bubble_Panel\resources\css\bubble.css" />
     <Content Include="Examples\Panel\Miscellaneous\Bubble_Panel\resources\images\panel-bubble-corners.gif" />
     <Content Include="Examples\Panel\Miscellaneous\Bubble_Panel\resources\images\panel-bubble-sides.gif" />
-    <Content Include="Examples\MultiUpload\Basic\Overview\config.xml" />
-    <Content Include="Examples\MultiUpload\Basic\Overview\Default.aspx" />
-    <Content Include="Examples\MultiUpload\Basic\Simple\config.xml" />
-    <Content Include="Examples\MultiUpload\Basic\Simple\Default.aspx" />
-    <Content Include="Examples\MultiUpload\Basic\Grid\config.xml" />
-    <Content Include="Examples\MultiUpload\Basic\Grid\Default.aspx" />
-    <Content Include="Examples\MultiUpload\config.xml" />
     <Content Include="Examples\Kitchen_Sink\TabPanels\Header_Tabs\config.xml" />
     <Content Include="Examples\Kitchen_Sink\TabPanels\Header_Tabs\Default.aspx" />
     <Content Include="Examples\SignalR\Basic\StockTicker\config.xml" />
