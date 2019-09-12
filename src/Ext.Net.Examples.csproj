@@ -1127,8 +1127,8 @@
     <Content Include="Examples\GridPanel\Shared\SuppliersService.asmx" />
     <Content Include="Examples\GridPanel\Update\Batch\config.xml" />
     <Content Include="Examples\GridPanel\Update\Batch\Default.aspx" />
-    <Content Include="Examples\Layout\BorderLayout\Regions_Weights\config.xml" />
-    <Content Include="Examples\Layout\BorderLayout\Regions_Weights\Default.aspx" />
+    <Content Include="Examples\Layout\BorderLayout\Region_Weights\config.xml" />
+    <Content Include="Examples\Layout\BorderLayout\Region_Weights\Default.aspx" />
     <Content Include="Examples\Layout\HBoxLayout\Reordering\config.xml" />
     <Content Include="Examples\Layout\HBoxLayout\Reordering\Default.aspx" />
     <Content Include="Examples\Layout\HBoxLayout\Split\config.xml" />

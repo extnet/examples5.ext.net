@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Regions Weights - Ext.NET Examples</title>
+    <title>Region Weights - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script runat="server">
@@ -26,12 +26,12 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <h1>Regions Weights</h1>
+    <h1>Region Weights</h1>
 
     <ext:Window
         ID="Window1"
         runat="server"
-        Title="Regions Weights"
+        Title="Region Weights"
         Width="800"
         Height="550"
         Border="false"
