@@ -27,9 +27,9 @@
                     </ext:ResponsiveRule>
 
                     <ext:ResponsiveRule Rule="tall">
-                        <Config>
+                        <ResponsiveConfig>
                             <ext:Button runat="server" IconAlign="Top" TextAlign="Center" Width="120" />
-                        </Config>
+                        </ResponsiveConfig>
                     </ext:ResponsiveRule>
                 </ResponsiveConfig>
             </TabConfig>
@@ -40,15 +40,15 @@
                 <ext:TabPanel runat="server" TabRotation="0">
                     <ResponsiveConfig>
                         <ext:ResponsiveRule Rule="tall">
-                            <Config>
+                            <ResponsiveConfig>
                                 <ext:TabPanel runat="server" TabPosition="Top" />
-                            </Config>
+                            </ResponsiveConfig>
                         </ext:ResponsiveRule>
 
                         <ext:ResponsiveRule Rule="wide">
-                            <Config>
+                            <ResponsiveConfig>
                                 <ext:TabPanel runat="server" TabPosition="Left" />
-                            </Config>
+                            </ResponsiveConfig>
                         </ext:ResponsiveRule>
                     </ResponsiveConfig>
 
@@ -67,7 +67,7 @@
                                 <p>This example demonstrates how to make your app responsive to changes in
                                 screen size or orientation.  Applications that run on tablets often need to
                                 change the position and/or layout of navigational elements when the orientation
-                                changes (when the device is rotated). This application uses a build-in feature
+                                changes (when the device is rotated). This application uses a built-in feature
                                 in Ext JS called <code>responsiveConfig</code> to make real-time changes to the
                                 navigation tab bar as the screen size changes.  We use "wide" to describe a
                                 situation where the screen width is larger than its height, and "tall" when the
