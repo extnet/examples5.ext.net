@@ -157,12 +157,12 @@
     </style>
 </head>
 <body>
-    <ext:ResourceManager runat="server" Theme="Default" />
+    <ext:ResourceManager runat="server" Theme="Classic" />
 
     <h1>Custom GridPanel UI</h1>
 
     <p>Demonstrates how to customize a GridPanel look and feel via CSS.</p>
-    <p>Done for the classic themes - Gray and Blue. To use with other themes, the CSS rules should be adjusted.</p>
+    <p>Compatible with the classic themes - Gray and Blue ('blue' is now called "Classic"). To use with other themes, the CSS rules should be adjusted.</p>
 
     <ext:Window
         runat="server"
