@@ -96,7 +96,7 @@
 
         <ext:Container runat="server">
             <LayoutConfig>
-                <ext:HBoxLayoutConfig />
+                <ext:HBoxLayoutConfig Align="Middle" />
             </LayoutConfig>
             <Defaults>
                 <ext:Parameter Name="margin" Value="3" Mode="Raw" />
