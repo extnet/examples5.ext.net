@@ -27,6 +27,9 @@
             case Ext.Net.Theme.Aria:
                 Window1.Height = 375;
                 break;
+            case Ext.Net.Theme.Material:
+                Window1.Height = 580;
+                break;
             default:
                 // If ever any other theme take place, then use the biggest of the values above
                 Window1.Height = 475;

@@ -35,6 +35,7 @@
                     DatePickPanel.Width = 212;
                     break;
                 case Ext.Net.Theme.CrispTouch:
+                case Ext.Net.Theme.Material:
                 case Ext.Net.Theme.NeptuneTouch:
                     DatePickPanel.Width = 282;
                     break;

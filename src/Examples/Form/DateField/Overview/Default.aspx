@@ -11,6 +11,11 @@
 
             switch (curTheme.Theme)
             {
+                case Ext.Net.Theme.Material:
+                    Df1Panel.Width = Mf1Panel.Width = 130;
+                    DateField1.WidthSpec = MonthField1.WidthSpec = "100%";
+                    Container1.Width = 580;
+                    break;
                 case Ext.Net.Theme.Triton:
                     Container1.Width = 640;
                     break;
@@ -59,14 +64,14 @@
             <Items>
                 <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 20 0">
                     <Items>
-                        <ext:Panel runat="server" Title="Date Field" MarginSpec="0 20 0 0">
+                        <ext:Panel runat="server" ID="Df1Panel" Title="Date Field" MarginSpec="0 20 0 0">
                             <Items>
-                                <ext:DateField runat="server" />
+                                <ext:DateField runat="server" ID="DateField1" />
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Title="Month Field">
+                        <ext:Panel runat="server" ID="Mf1Panel" Title="Month Field">
                             <Items>
-                                <ext:DateField runat="server" Type="Month" />
+                                <ext:DateField runat="server" ID="MonthField1" Type="Month" />
                             </Items>
                         </ext:Panel>
                     </Items>

@@ -26,6 +26,11 @@
                 FormPanel1.Width = 240;
                 FormPanel1.Height = 188;
                 break;
+            case Ext.Net.Theme.Material:
+                FormPanel1.Width = 275;
+                FormPanel1.Height = 242;
+                FormPanel1.Defaults.Add(new Ext.Net.Parameter("width", "260", ParameterMode.Raw));
+                break;
             case Ext.Net.Theme.Neptune:
             case Ext.Net.Theme.Aria:
                 FormPanel1.Width = 245;

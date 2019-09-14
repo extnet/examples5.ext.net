@@ -35,6 +35,10 @@
                     Window1.Width = 665;
                     Window1.Height = 513;
                     break;
+                case Ext.Net.Theme.Material:
+                    Window1.Width = 670;
+                    Window1.Height = 557;
+                    break;
                 case Ext.Net.Theme.Neptune:
                     Window1.Width = 670;
                     Window1.Height = 518;

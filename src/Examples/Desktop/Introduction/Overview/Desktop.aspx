@@ -49,6 +49,16 @@
                     GreetingWindow.Height = 110;
                     StartMenuToolbar.Width = 150;
                     break;
+                case Ext.Net.Theme.Material:
+                    CustomToolbar.Defaults.Add(new Ext.Net.Parameter("width", "135", ParameterMode.Raw));
+                    CustomToolbar.Width = 725;
+                    Desktop1.StartMenu.Width = 310;
+                    Desktop1.TaskBar.QuickStartWidth = 112;
+                    Desktop1.TaskBar.TrayWidth = 183;
+                    GreetingWindow.Width = 200;
+                    GreetingWindow.Height = 110;
+                    StartMenuToolbar.Width = 130;
+                    break;
             }
         }
     }

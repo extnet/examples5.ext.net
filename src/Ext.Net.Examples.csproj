@@ -180,6 +180,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\Util.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Code\Module\AnalyticsFilter.cs" />
     <Compile Include="Code\Module\AnalyticsModule.cs" />

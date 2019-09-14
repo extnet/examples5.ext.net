@@ -19,6 +19,18 @@
                 theme = (Theme)Enum.Parse(typeof(Theme), this.Request["theme"]);
             }
 
+            foreach (var supportedTheme in (Theme[])Enum.GetValues(typeof(Theme)))
+            {
+                if (supportedTheme == Ext.Net.Theme.None)
+                {
+                    continue;
+                }
+
+                var ts = supportedTheme.ToString();
+
+                this.ComboBoxTheme.Items.Add(new Ext.Net.ListItem(Ext.Net.Examples.Util.UpperCaseToSpace(ts), ts));
+            }
+
             this.ResourceManager1.Theme = theme;
             this.ComboBoxTheme.SelectedItems.Add(new Ext.Net.ListItem { Value = theme.ToString() });
         }
@@ -97,17 +109,6 @@
                     runat="server"
                     FieldLabel="Choose Theme"
                     Width="300">
-                    <Items>
-                        <ext:ListItem Text="Aria" Value="Aria" />
-                        <ext:ListItem Text="Classic" Value="Classic" />
-                        <ext:ListItem Text="Crisp" Value="Crisp" />
-                        <ext:ListItem Text="Crisp Touch" Value="CrispTouch" />
-                        <ext:ListItem Text="Gray" Value="Gray" />
-                        <ext:ListItem Text="Graphite" Value="Graphite" />
-                        <ext:ListItem Text="Neptune" Value="Neptune" />
-                        <ext:ListItem Text="Neptune Touch" Value="NeptuneTouch" />
-                        <ext:ListItem Text="Triton" Value="Triton" />
-                    </Items>
                     <Listeners>
                         <Select Handler="window.location.search = '?theme=' + records[0].data[this.valueField];" />
                     </Listeners>

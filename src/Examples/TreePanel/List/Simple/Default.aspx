@@ -11,7 +11,7 @@
         #region Set up font awesome if the current theme does not natively supports it.
         var manager = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
         var theme = manager.Theme;
-        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite)
+        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite && theme != Ext.Net.Theme.Material)
         {
     %>
     <link href="/resources/css/font-awesome.min.css" rel="stylesheet" />
@@ -58,7 +58,7 @@
                                         <ext:Node Text="Messages" IconCls="x-fa fa-inbox" Leaf="true" />
                                         <ext:Node Text="Archive" IconCls="x-fa fa-database">
                                             <Children>
-                                                <ext:Node Text="First" IconCls="x-fa fa-sliders" Leaf="true" />
+                                                <ext:Node Text="First" IconCls="x-fa fa-file" Leaf="true" />
                                                 <ext:Node Text="No Icon" IconCls="" Leaf="true" />
                                             </Children>
                                         </ext:Node>

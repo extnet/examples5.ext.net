@@ -11,7 +11,7 @@
         #region Set up font awesome if the current theme does not natively supports it.
         var manager = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
         var theme = manager.Theme;
-        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite)
+        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite && theme != Ext.Net.Theme.Material)
         {
     %>
     <link href="/resources/css/font-awesome.min.css" rel="stylesheet" />

@@ -20,6 +20,7 @@
                 case Ext.Net.Theme.Triton:
                     break;
                 case Ext.Net.Theme.Graphite:
+                case Ext.Net.Theme.Material:
                     Window1.Height = 253;
                     break;
             }

@@ -7,28 +7,6 @@
 <script runat="server">
     protected string mobileVersion = "4.1";
 
-    private string uctos(string value)
-    {
-        if (value == null || value.Length < 2)
-        {
-            return value;
-        }
-        else
-        {
-            var retVal = value.Substring(0, 1);
-            for (var i = 1; i < value.Length; i++)
-            {
-                if (Char.IsUpper(value, i))
-                {
-                    retVal += " ";
-                }
-                retVal += value[i];
-            }
-
-            return retVal;
-        }
-    }
-
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!X.IsAjaxRequest)
@@ -54,7 +32,7 @@
                 this.ThemesMenu.Add(new CheckMenuItem()
                 {
                     ID = ts + "ThemeItem",
-                    Text = uctos(ts),
+                    Text = Util.UpperCaseToSpace(ts),
                     Group = "theme",
                     Checked = theme == supportedTheme
                 });
