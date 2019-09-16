@@ -4,7 +4,7 @@ using System.Web.UI;
 
 [assembly: AssemblyVersion("5.0.0")]
 [assembly: AssemblyFileVersion("5.0.0.0")]
-[assembly: AssemblyInformationalVersion("5.0.0-preview")]
+[assembly: AssemblyInformationalVersion("5.0.0")]
 [assembly: AssemblyCompany("Object.NET, Inc.")]
 [assembly: AssemblyCopyright("Copyright (c) 2008-2019 Object.NET, Inc.")]
 [assembly: AssemblyTitle("Ext.NET Examples")]
