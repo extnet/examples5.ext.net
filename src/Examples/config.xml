@@ -6,6 +6,8 @@
   </order>
 
   <updated version="5.0.0">
+    <!-- Too many examples tagged with 'updated'. It was decided to leave them
+         without the tag.
     <folder name="GridPanel\Paging_and_Sorting\DirectMethod" />
     <folder name="GridPanel\ColumnModel\WidgetColumn" />
     <folder name="Form\HtmlEditor\Basic" />
@@ -101,6 +103,7 @@
     <folder name="TreePanel\List\Simple" />
     <folder name="TreePanel\List\Overview" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
+    -->
   </updated>
 
   <new version="5.0.0">
