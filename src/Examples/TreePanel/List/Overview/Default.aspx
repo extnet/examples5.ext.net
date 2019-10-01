@@ -77,15 +77,16 @@
         #region Set up font awesome if the current theme does not natively supports it.
         var manager = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
         var theme = manager.Theme;
-        if (theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Graphite && theme != Ext.Net.Theme.Material)
+        if (theme != Ext.Net.Theme.None && theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Material)
         {
     %>
-    <link href="/resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/resources/font-awesome-5-free/css/solid.min.css" rel="stylesheet" />
+    <link href="/resources/font-awesome-5-free/css/fontawesome.min.css" rel="stylesheet" />
     <style type="text/css">
         /* wraps over the x-fa CSS class to match the reference from the Triton/Graphite themes */
         .x-fa {
           display: inline-block;
-          font: normal normal normal 14px/1 FontAwesome;
+          font: 14px/18px "Font Awesome 5 Free";
           font-size: inherit;
           text-rendering: auto;
           -webkit-font-smoothing: antialiased;
