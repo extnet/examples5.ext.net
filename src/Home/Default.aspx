@@ -25,18 +25,7 @@
     <ext:Container runat="server">
         <Content>
             <div class="container">
-                <div class="extnet-notification">
-                    <div class="notification-container">
-                        <div class="notification-img">
-                            <img src="../resources/images/extnet-mobile-final.svg">
-                        </div>
-                        <div class="notification-text">
-                            The official release of <strong>Ext.NET Mobile</strong> is now available. Ext.NET Mobile is an ASP.NET component framework for building Phone and Tablet specific mobile web applications. <a href="https://ext.net/ext-net-mobile-final-now-available/">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <h1>BUILD CROSS-BROWSER ENTERPRISE LEVEL APPS FASTER <span>WITH <span class="blue">100+ COMPONENTS AND 750+ EXAMPLES</span></span></h1>
+                <h1>BUILD CROSS-BROWSER ENTERPRISE WEB APPS FASTER <span>WITH <span class="blue">115+ COMPONENTS AND 925+ EXAMPLES</span></span></h1>
                 <div class="welcome-cards">
 
                     <div class="welcome-card">
@@ -47,7 +36,7 @@
                         <div class="welcome-card-body">
                             <p>
                                 Learning Ext.NET is very easy. <a href="/#/Getting_Started/Introduction/Installation/">Watch these videos</a>
-                                to learn how to install Ext.NET or start browsing the <a href="https://docs.ext.net/">Ext.NET API documentation</a>.
+                                to learn how to install Ext.NET in minutes.</a>.
                             </p>
                         </div>
                     </div>
@@ -73,7 +62,7 @@
                         <div class="welcome-card-body">
                             <p>
                                 You can <a href="https://ext.net/download/">download</a> Ext.NET and start testing it locally right away. In order to deploy and use it
-                                for commercial projects, you will need to <a href="https://ext.net/store/">get a license</a>.
+                                for commercial projects, you will need to <a href="https://ext.net/pricing/">get a license</a>.
                             </p>
                         </div>
                     </div>
