@@ -209,21 +209,8 @@
                                                         Href="https://mvc.ext.net/"
                                                         Height="70px"
                                                         Width="358px"
-                                                        Padding="12"/>
-                                                    <ext:MenuItem
-                                                        runat="server"
-                                                        Text='<%# "Mobile Examples (" + mobileVersion + ")" %>'
-                                                        Href="https://mobile.ext.net/"
-                                                        Height="70px"
-                                                        Width="358px"
-                                                        Padding="12"/>
-                                                    <ext:MenuItem
-                                                        runat="server"
-                                                        Text='<%# "MVC Mobile Examples (" + mobileVersion + ")" %>'
-                                                        Href="https://mvc.mobile.ext.net/"
-                                                        Height="70px"
-                                                        Width="358px"
-                                                        Padding="12"/>
+                                                        Padding="12"
+                                                        />
                                                 </Items>
                                             </ext:Menu>
                                         </Menu>
@@ -252,8 +239,6 @@
                     <ul id="nav-menu" class="nav-menu">
                         <li><a href="https://examples.ext.net/">Web Forms Examples</a></li>
                         <li><a href="https://mvc.ext.net/">MVC Examples</a></li>
-                        <li><a href="https://mobile.ext.net/">Mobile Examples</a></li>
-                        <li><a href="https://mvc.mobile.ext.net/">MVC Mobile Examples</a></li>
                         <li class="separator"></li>
                         <li><a href="https://docs.sencha.com/extjs/7.0.0/classic/Ext.html">EXT JS Documentation</a></li>
                         <li><a href="https://docs.ext.net/">Ext.NET Documentation</a></li>
@@ -261,11 +246,16 @@
                         <li><a href="https://forums.ext.net/">Community Forums</a></li>
                         <li><a href="https://ext.net/faq/">FAQ</a></li>
                         <li><a href="https://ext.net/contact/">Contact</a></li>
+                        <li><a href="https://ext.net/pricing/">Pricing</a></li>
                         <li><a href="https://ext.net/">Ext.NET Home</a></li>
                         <li class="separator"></li>
                         <li>
                             <a href="#" data-toggle="collapse" data-target="#archives"><i class="fa collapse-icon"></i> Archives</a>
                             <ul class="collapse" id="archives">
+                                <li class="section-title">Ext.NET 4</li>
+                                <li><a href="https://examples4.ext.net/">Web Forms Examples (4.8)</a></li>
+                                <li><a href="https://mvc4.ext.net/">MVC Examples (4.8)</a></li>
+                                <li class="separator"></li>
                                 <li class="section-title">Ext.NET 3</li>
                                 <li><a href="https://examples3.ext.net/">Web Forms Examples (3.3)</a></li>
                                 <li><a href="https://mvc3.ext.net/">MVC Examples (3.3)</a></li>
