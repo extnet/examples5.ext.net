@@ -107,7 +107,7 @@
   </updated>
 
   <new version="5.0.0">
-    <!--<folder name="" />-->
+    <folder name="GridPanel\Data_Presentation\MultiCombo_Map" />
   </new>
   
   <!--

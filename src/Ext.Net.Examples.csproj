@@ -619,6 +619,8 @@
     <Content Include="Examples\GridPanel\ColumnModel\WidgetColumn\Default.aspx" />
     <Content Include="Examples\GridPanel\ComponentColumn\Multiple_Editors\config.xml" />
     <Content Include="Examples\GridPanel\ComponentColumn\Multiple_Editors\Default.aspx" />
+    <Content Include="Examples\GridPanel\Data_Presentation\MultiCombo_Map\config.xml" />
+    <Content Include="Examples\GridPanel\Data_Presentation\MultiCombo_Map\Default.aspx" />
     <Content Include="Examples\GridPanel\Data_Presentation\Meta_config_with_handler\config.xml" />
     <Content Include="Examples\GridPanel\Data_Presentation\Meta_config_with_handler\Default.aspx" />
     <Content Include="Examples\GridPanel\Data_Presentation\Meta_config\config.xml" />
