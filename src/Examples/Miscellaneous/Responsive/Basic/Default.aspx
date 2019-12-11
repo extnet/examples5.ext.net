@@ -85,7 +85,7 @@
                                 to see it in action!</p>
 
                                 <p>For more info on how to use responsiveConfig in your application, see the
-                                API Docs for <a href="http://docs-origin.sencha.com/extjs/5.0.1/#!/api/Ext.mixin.Responsive">Ext.mixin.Responsive</a>
+                                API Docs for <a href="https://docs.sencha.com/extjs/7.0.0/classic/Ext.mixin.Responsive.html">Ext.mixin.Responsive</a>
                                 </p>
                             </Content>
                         </ext:Panel>
