@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <example>
+  <tags>FieldLabel,AllowMultiple,AllowToggle,Vertical</tags>
   <description>
   </description>
 </example>
