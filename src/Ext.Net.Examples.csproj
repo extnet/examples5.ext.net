@@ -872,8 +872,6 @@
     <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star.png" />
     <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star_no.gif" />
     <Content Include="Examples\Associations\HasMany\Nested_Loading\images\star_no.png" />
-    <Content Include="Examples\Associations\HasMany\Simple_Lazy_Load\config.xml" />
-    <Content Include="Examples\Associations\HasMany\Simple_Lazy_Load\Default.aspx" />
     <Content Include="Examples\Associations\HasOne\Simple_Lazy_Load\config.xml" />
     <Content Include="Examples\Associations\HasOne\Simple_Lazy_Load\Default.aspx" />
     <Content Include="Examples\Associations\HasOne\Simple\config.xml" />
