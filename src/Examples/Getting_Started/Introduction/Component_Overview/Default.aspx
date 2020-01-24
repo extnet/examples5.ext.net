@@ -31,6 +31,11 @@
                 this.ComboBoxTheme.Items.Add(new Ext.Net.ListItem(Ext.Net.Examples.Util.UpperCaseToSpace(ts), ts));
             }
 
+            if (theme == Ext.Net.Theme.Material)
+            {
+                this.ComboBoxTheme.AddCls("not-empty");
+            }
+
             this.ResourceManager1.Theme = theme;
             this.ComboBoxTheme.SelectedItems.Add(new Ext.Net.ListItem { Value = theme.ToString() });
         }
