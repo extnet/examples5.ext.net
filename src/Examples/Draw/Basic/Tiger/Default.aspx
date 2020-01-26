@@ -47,7 +47,7 @@
             In this example, the component has been made floatable and draggable while constraining it to the document body. Note that because we use vectors to define the image, it is scalable to any size and is fully resolution independent.
     </p>
     <p>
-        See the Drawing guide <a href="http://docs.sencha.com/extjs/7.0.0/guides/core_concepts/draw/drawing.html">here</a>.
+        See the Drawing guide <a href="http://docs.sencha.com/extjs/7.1.0/guides/core_concepts/draw/drawing.html">here</a>.
     </p>
     <br>
 
@@ -61,7 +61,7 @@
         Floating="true" Shadow="false"
         Draggable="true">
         <%-- We created with the override above a setup option similar to window's Ghost = false. Don't set it 'true' likewise.
-            http://docs.sencha.com/extjs/7.0.0/classic/Ext.window.Window.html#cfg-ghost --%>
+            http://docs.sencha.com/extjs/7.1.0/classic/Ext.window.Window.html#cfg-ghost --%>
         <CustomConfig>
             <ext:ConfigItem Name="ghost" Value="false" />
         </CustomConfig>

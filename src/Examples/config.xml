@@ -5,8 +5,22 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <new version="5.1.0">
+    <folder name="GridPanel\Data_Presentation\MultiCombo_Map" />
+  </new>
+
+  <updated version="5.1.0">
+    <folder name="TreePanel\List\Simple" />
+    <folder name="TreePanel\List\Overview" />
+    <folder name="TreePanel\List\Built_in_Markup" />
+    <folder name="TreePanel\List\Built_in_CodeBehind" />
+    <folder name="Miscellaneous\Responsive\Basic" />
+    <folder name="Getting_Started\Introduction\Component_Overview" />
+  </updated>
+
+  <!--
   <updated version="5.0.0">
-    <!-- Too many examples tagged with 'updated'. It was decided to leave them
+    <!- Too many examples tagged with 'updated'. It was decided to leave them
          without the tag.
     <folder name="GridPanel\Paging_and_Sorting\DirectMethod" />
     <folder name="GridPanel\ColumnModel\WidgetColumn" />
@@ -103,12 +117,13 @@
     <folder name="TreePanel\List\Simple" />
     <folder name="TreePanel\List\Overview" />
     <folder name="TreePanel\List\Built_in_CodeBehind" />
-    -->
+    ->
   </updated>
 
   <new version="5.0.0">
     <folder name="GridPanel\Data_Presentation\MultiCombo_Map" />
   </new>
+  -->
   
   <!--
   <new version="4.8.2">
