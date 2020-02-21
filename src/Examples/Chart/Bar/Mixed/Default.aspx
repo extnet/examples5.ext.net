@@ -62,8 +62,7 @@
                     ID="Chart1"
                     runat="server"
                     StyleSpec="background:#fff;"
-                    StandardTheme="Category1"
-                    Animate="true">
+                    StandardTheme="Category1">
                     <Store>
                         <ext:Store
                             runat="server"
