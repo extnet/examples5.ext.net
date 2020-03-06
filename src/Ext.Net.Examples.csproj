@@ -630,8 +630,12 @@
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\config.xml" />
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\custom_behaviour.js" />
     <Content Include="Examples\GridPanel\FilterHeader\Custom_Field\Default.aspx" />
+    <Content Include="Examples\GridPanel\FilterHeader\Infinite_Remote_Sql\config.xml" />
+    <Content Include="Examples\GridPanel\FilterHeader\Infinite_Remote_Sql\Default.aspx" />
     <Content Include="Examples\GridPanel\FilterHeader\Mapped_Field_Filtering\config.xml" />
     <Content Include="Examples\GridPanel\FilterHeader\Mapped_Field_Filtering\Default.aspx" />
+    <Content Include="Examples\GridPanel\FilterHeader\Buffered_Local_Sql\config.xml" />
+    <Content Include="Examples\GridPanel\FilterHeader\Buffered_Local_Sql\Default.aspx" />
     <Content Include="Examples\GridPanel\FilterHeader\Remote\config.xml" />
     <Content Include="Examples\GridPanel\FilterHeader\Remote\Default.aspx" />
     <Content Include="Examples\GridPanel\FilterHeader\Overview\config.xml" />
