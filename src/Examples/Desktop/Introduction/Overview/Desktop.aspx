@@ -196,7 +196,7 @@
                             AnimCollapse="false"
                             Border="false"
                             HideMode="Offsets"
-                            Layout="FitLayout"
+                            Layout="Fit"
                             CloseAction="Destroy">
                             <Items>
                                 <ext:HtmlEditor
@@ -321,7 +321,7 @@
             </Listeners>
         </ext:Desktop>
 
-        <ext:Panel runat="server" Title="Slide panel" Frame="true" Width="250" Layout="AccordionLayout" Floating="true" Shadow="false" Hidden="true">
+        <ext:Panel runat="server" Title="Slide panel" Frame="true" Width="250" Layout="Accordion" Floating="true" Shadow="false" Hidden="true">
             <Items>
                 <ext:Panel runat="server" Title="Section 1" Icon="User" />
                 <ext:Panel runat="server" Title="Section 2" Icon="UserB" />

@@ -74,7 +74,7 @@
                 runat="server"
                 FieldLabel="Text fields"
                 AnchorHorizontal="100%"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:TextField runat="server" Width="150" />
@@ -85,7 +85,7 @@
                 runat="server"
                 FieldLabel="50% / 50%"
                 AnchorHorizontal="100%"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Flex="1" MarginSpec="0 3 0 0" />
                     <ext:TextField runat="server" Flex="1" />
@@ -96,7 +96,7 @@
                 runat="server"
                 FieldLabel="Fill"
                 AnchorHorizontal="100%"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" />
                     <ext:DisplayField runat="server" Flex="1" Html="&nbsp;" />
@@ -108,7 +108,7 @@
                 runat="server"
                 FieldLabel="150px / 100%"
                 AnchorHorizontal="100%"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:TextField runat="server" Flex="1" />
@@ -118,7 +118,7 @@
             <ext:FieldContainer
                 runat="server"
                 FieldLabel="Mix"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:ComboBox runat="server" Width="150" />
@@ -128,7 +128,7 @@
             <ext:FieldContainer
                 runat="server"
                 FieldLabel="With toolbar"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:DateField runat="server" Width="150" MarginSpec="0 3 0 0" />
@@ -156,7 +156,7 @@
             <ext:FieldContainer
                 runat="server"
                 FieldLabel="With button"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:DateField runat="server" Width="150" MarginSpec="0 3 0 0" />
@@ -167,7 +167,7 @@
             <ext:FieldContainer
                 runat="server"
                 FieldLabel="IP Address"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:NumberField runat="server" Width="40" MarginSpec="0 3 0 0" HideTrigger="true" />
                     <ext:DisplayField runat="server" Text="." Cls="dot-label" />
@@ -179,12 +179,12 @@
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer runat="server" Layout="AnchorLayout" Cls="note">
+            <ext:FieldContainer runat="server" Layout="Anchor" Cls="note">
                 <Items>
                     <ext:FieldContainer
                         runat="server"
                         FieldLabel="Long note"
-                        Layout="HBoxLayout">
+                        Layout="HBox">
                         <Items>
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
@@ -200,7 +200,7 @@
             <ext:FieldContainer
                 runat="server"
                 FieldLabel="Several notes"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0"/>
                     <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0"/>
@@ -233,7 +233,7 @@
                 MsgTarget="Side"
                 CombineErrors="true"
                 FieldLabel="Date Range"
-                Layout="HBoxLayout">
+                Layout="HBox">
                 <Defaults>
                     <ext:Parameter Name="Flex" Value="1" Mode="Raw" />
                     <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
@@ -258,7 +258,7 @@
                         FieldLabel="Phone"
                         CombineErrors="true"
                         MsgTarget="Under"
-                        Layout="HBoxLayout">
+                        Layout="HBox">
                         <Defaults>
                             <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -289,7 +289,7 @@
                     <ext:FieldContainer
                         runat="server"
                         FieldLabel="Time worked"
-                        Layout="HBoxLayout"
+                        Layout="HBox"
                         CombineErrors="false">
                         <Defaults>
                             <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
@@ -316,7 +316,7 @@
                         CombineErrors="true"
                         MsgTarget="Side"
                         FieldLabel="Full Name"
-                        Layout="HBoxLayout">
+                        Layout="HBox">
                         <Defaults>
                             <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />

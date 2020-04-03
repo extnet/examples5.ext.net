@@ -13,7 +13,7 @@
 
         <ext:Container
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             Height="650">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 24 0" Mode="Value" />

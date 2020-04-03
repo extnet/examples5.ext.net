@@ -53,7 +53,7 @@
 
         <h1>Submit MultiSelect Values</h1>
 
-        <ext:Panel runat="server" Title="MultiSelects" Width="660" Layout="HBoxLayout">
+        <ext:Panel runat="server" Title="MultiSelects" Width="660" Layout="HBox">
             <Items>
                 <ext:Panel
                     runat="server"

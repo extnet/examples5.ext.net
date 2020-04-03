@@ -32,7 +32,7 @@
         Border="false"
         Collapsible="true"
         Plain="true"
-        Layout="BorderLayout">
+        Layout="Border">
         <Items>
             <ext:Panel
                 runat="server"

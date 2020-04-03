@@ -57,7 +57,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="FitLayout">
+        <ext:Viewport runat="server" Layout="Fit">
             <Items>
                 <ext:Container runat="server" OverflowY="Auto">
                     <LayoutConfig>

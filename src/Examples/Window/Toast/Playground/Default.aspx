@@ -185,7 +185,7 @@
                     </Defaults>
                     <Items>
                         <ext:Checkbox runat="server" ID="enableExtra" FieldLabel="Use extra settings" />
-                        <ext:Container runat="server" Layout="HBoxLayout">
+                        <ext:Container runat="server" Layout="HBox">
                             <Defaults>
                                 <ext:Parameter Name="width" Value="48%" />
                                 <ext:Parameter Name="labelWidth" Value="250" />
@@ -195,7 +195,7 @@
                                 <ext:Checkbox runat="server" ID="disabled" FieldLabel="Grayed out / disabled" />
                             </Items>
                         </ext:Container>
-                        <ext:Container runat="server" Layout="HBoxLayout">
+                        <ext:Container runat="server" Layout="HBox">
                             <Defaults>
                                 <ext:Parameter Name="width" Value="48%" />
                                 <ext:Parameter Name="labelWidth" Value="250" />

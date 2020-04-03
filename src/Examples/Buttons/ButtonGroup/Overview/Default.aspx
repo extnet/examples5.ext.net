@@ -465,7 +465,7 @@
                             </Items>
                         </ext:ButtonGroup>
 
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
                                 <ext:Button runat="server" Text="Format" IconCls="add24" Scale="Medium" />
                             </Items>

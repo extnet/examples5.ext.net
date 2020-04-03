@@ -68,7 +68,7 @@
             Title="Line Chart"
             Width="800"
             Height="400"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

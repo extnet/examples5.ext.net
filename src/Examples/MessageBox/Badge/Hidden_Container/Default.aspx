@@ -13,7 +13,7 @@
     <p>If Badge's component is located inside hidden area (or will be located) then it is required to set
         RenderToBody="false" for Badge because Badge doesn't track visibility of parent elements</p>
 
-    <ext:Window runat="server" Width="300" Height="300" Layout="FitLayout">
+    <ext:Window runat="server" Width="300" Height="300" Layout="Fit">
         <Items>
             <ext:TabPanel runat="server" >
                 <Items>

@@ -99,7 +99,7 @@
                 </tpl>
             </html>        </ext:XTemplate>
 
-        <ext:Viewport runat="server" Layout="FitLayout">
+        <ext:Viewport runat="server" Layout="Fit">
             <Items>
                 <ext:Panel
                     ID="DragArea"

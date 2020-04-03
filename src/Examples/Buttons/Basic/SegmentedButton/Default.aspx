@@ -17,7 +17,7 @@
        all the child buttons will be part of a toggleGroup, but this behavior can be customized
        using the <code>allowToggle</code> and <code>allowMultiple</code> config options. </p>
 
-    <ext:Container runat="server" Layout="FormLayout">
+    <ext:Container runat="server" Layout="Form">
         <Items>
             <ext:FieldContainer runat="server" FieldLabel="Toggle Group">
                 <Items>
@@ -93,7 +93,7 @@
 
     <p>Aligning segmented buttons vertically is a simple as setting the <code>vertical</code> config to <code>true</code>. </p>
 
-    <ext:Container runat="server" Layout="ColumnLayout">
+    <ext:Container runat="server" Layout="Column">
         <Defaults>
             <ext:Parameter Name="labelAlign" Value="top" />
             <ext:Parameter Name="margin" Value="0 20 0 0" />

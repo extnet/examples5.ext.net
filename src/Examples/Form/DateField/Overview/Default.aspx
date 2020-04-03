@@ -62,7 +62,7 @@
                 <ext:VBoxLayoutConfig Align="Center" />
             </LayoutConfig>
             <Items>
-                <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 20 0">
+                <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 20 0">
                     <Items>
                         <ext:Panel runat="server" ID="Df1Panel" Title="Date Field" MarginSpec="0 20 0 0">
                             <Items>
@@ -77,7 +77,7 @@
                     </Items>
                 </ext:Container>
 
-                <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 20 0">
+                <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 20 0">
                     <Items>
                         <ext:Panel runat="server" Title="Date Picker" MarginSpec="0 20 0 0">
                             <Items>
@@ -92,7 +92,7 @@
                     </Items>
                 </ext:Container>
 
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Panel runat="server" Title="Date Picker (no today)" MarginSpec="0 20 0 0">
                             <Items>

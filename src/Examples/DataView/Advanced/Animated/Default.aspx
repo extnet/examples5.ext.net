@@ -72,7 +72,7 @@
             Title="Animated DataView"
             Height="555"
             Width="650"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

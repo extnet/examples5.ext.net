@@ -83,7 +83,7 @@
             Title="Example"
             Width="600"
             Height="350"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

@@ -37,7 +37,7 @@
             Closable="false"
             BodyPadding="5"
             BodyStyle="background-color:white;"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:DataView runat="server">
                     <Store>

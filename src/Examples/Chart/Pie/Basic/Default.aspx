@@ -51,7 +51,7 @@
             Width="800"
             Height="600"
             Title="Semester Trends"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

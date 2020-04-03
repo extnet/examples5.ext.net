@@ -100,7 +100,7 @@
                             <ext:Column runat="server" Text="ID" DataIndex="Id" Filterable="false" Width="40" />
                             <ext:Column runat="server" Text="Company" DataIndex="Company" Width="250">
                                 <Items>
-                                    <ext:Container runat="server" Layout="HBoxLayout" Margin="2">
+                                    <ext:Container runat="server" Layout="HBox" Margin="2">
                                         <Items>
                                             <ext:CycleButton runat="server" ShowText="true" Width="70" ForceIcon="#Magnifier">
                                                 <Menu>

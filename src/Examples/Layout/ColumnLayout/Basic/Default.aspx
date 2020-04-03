@@ -10,7 +10,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="ColumnLayout">
+    <ext:Viewport runat="server" Layout="Column">
         <Items>
             <ext:Panel
                 runat="server"

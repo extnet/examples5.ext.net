@@ -141,7 +141,7 @@
         </Listeners>
     </ext:History>
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport runat="server" Layout="Border">
         <Items>
             <ext:Container
                 ID="RedirectOverlay"

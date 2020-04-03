@@ -72,7 +72,7 @@
             runat="server"
             Width="600"
             Height="270"
-            Layout="VBoxLayout"
+            Layout="VBox"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>

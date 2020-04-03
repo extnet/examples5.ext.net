@@ -63,7 +63,7 @@
 
         <h2>Closable Tags</h2>
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:TagLabel runat="server" DefaultClosable="true" Width="180">
                     <Tags>
@@ -93,7 +93,7 @@
 
         <h2>Selectable Tags (first single selection, second simple selection)</h2>
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:TagLabel runat="server" SelectionMode="Single" TrackOver="true">
                     <Tags>
@@ -111,7 +111,7 @@
             </Items>
         </ext:Container>
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:TagLabel runat="server" SelectionMode="Simple">
                     <Tags>

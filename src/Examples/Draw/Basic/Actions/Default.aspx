@@ -79,9 +79,9 @@
         <ext:ResourceManager runat="server" />
         <h1>Draw Actions</h1>
 
-        <ext:Window runat="server" Title="Draw Actions" Width="640" Height="480" Layout="BorderLayout">
+        <ext:Window runat="server" Title="Draw Actions" Width="640" Height="480" Layout="Border">
             <Items>
-                <ext:Panel runat="server" Frame="true" Width="200" Region="West" Layout="VBoxLayout" Margin="5">
+                <ext:Panel runat="server" Frame="true" Width="200" Region="West" Layout="VBox" Margin="5">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" Pack="Center" />
                     </LayoutConfig>

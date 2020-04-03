@@ -211,7 +211,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Container
                     runat="server"

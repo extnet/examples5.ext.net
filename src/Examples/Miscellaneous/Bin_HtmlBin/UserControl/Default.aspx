@@ -11,7 +11,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Container runat="server" Region="North" PaddingSpec="20 0 0 20" Height="125">
                     <Content>

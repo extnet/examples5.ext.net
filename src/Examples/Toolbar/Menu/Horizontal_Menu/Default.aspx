@@ -29,7 +29,7 @@
     <ext:Menu
         runat="server"
         Floating="false"
-        Layout="HBoxLayout"
+        Layout="HBox"
         ShowSeparator="false"
         Cls="horizontal-menu">
         <Defaults>

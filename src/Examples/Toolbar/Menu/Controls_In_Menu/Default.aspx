@@ -240,7 +240,7 @@
                                 runat="server"
                                 Width="300"
                                 Height="200"
-                                Layout="BorderLayout">
+                                Layout="Border">
                                 <Items>
                                     <ext:Panel
                                         runat="server"

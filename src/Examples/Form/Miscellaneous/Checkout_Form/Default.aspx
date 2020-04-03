@@ -125,13 +125,13 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Your Contact Information"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     DefaultAnchor="100%">
                     <Items>
                         <ext:FieldContainer
                             runat="server"
                             FieldLabel="Name"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             CombineErrors="true">
                             <FieldDefaults HideLabel="true" />
                             <Items>
@@ -152,7 +152,7 @@
                             </Items>
                         </ext:FieldContainer>
                         <ext:Container runat="server"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
@@ -183,7 +183,7 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Mailing Address"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     DefaultAnchor="100%">
                     <Items>
                         <ext:TextField
@@ -199,7 +199,7 @@
 
                         <ext:Container
                             runat="server"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
@@ -271,7 +271,7 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Billing Address"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     DefaultAnchor="100%">
                     <Items>
                         <ext:Checkbox
@@ -293,7 +293,7 @@
 
                         <ext:Container
                             runat="server"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
@@ -346,7 +346,7 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Payment"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     DefaultAnchor="100%">
                     <Items>
                         <ext:RadioGroup
@@ -392,7 +392,7 @@
 
                         <ext:Container
                             runat="server"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
@@ -410,7 +410,7 @@
                                     runat="server"
                                     FieldLabel="Expiration"
                                     LabelWidth="75"
-                                    Layout="HBoxLayout"
+                                    Layout="HBox"
                                     Width="250">
                                     <Items>
                                         <ext:ComboBox

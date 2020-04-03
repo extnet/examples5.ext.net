@@ -194,7 +194,7 @@
 
         <ext:Window runat="server"
             LazyMode="Config"
-            Layout="FitLayout"
+            Layout="Fit"
             Modal="true"
             Width="500"
             Height="430"

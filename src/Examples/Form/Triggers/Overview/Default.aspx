@@ -78,7 +78,7 @@
             Hidden="true"
             Icon="ColorSwatch"
             BodyPadding="3"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:ColorPicker runat="server">
                     <Listeners>

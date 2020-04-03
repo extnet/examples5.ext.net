@@ -190,7 +190,7 @@
             runat="server"
             Width="650"
             Height="550"
-            Layout="FitLayout">
+            Layout="Fit">
             <Listeners>
                 <AfterRender Handler="this.down('toolbar').add(this.down('cartesian').getInteractions()[0].getModeToggleButton());" />
             </Listeners>

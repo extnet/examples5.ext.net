@@ -97,7 +97,7 @@
             <ext:Container
                 runat="server"
                 Height="200"
-                Layout="CardLayout"
+                Layout="Card"
                 MarginSpec="0 0 5 0">
                 <Items>
                     <ext:UserControlLoader runat="server" Path="CustomerGrid.ascx" />

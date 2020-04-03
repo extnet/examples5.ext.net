@@ -156,7 +156,7 @@
             runat="server"
             Width="650"
             Height="500"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

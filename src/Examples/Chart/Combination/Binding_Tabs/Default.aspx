@@ -47,7 +47,7 @@
 
         <ext:TabPanel ID="TabPanel1" runat="server" Width="650" Height="500">
             <Items>
-                <ext:Panel runat="server" Title="Line Chart" Layout="FitLayout">
+                <ext:Panel runat="server" Title="Line Chart" Layout="Fit">
                     <Items>
                         <ext:CartesianChart runat="server"
                             Animation="false"
@@ -99,7 +99,7 @@
                     </Items>
                 </ext:Panel>
 
-                <ext:Panel runat="server" Title="Bar Chart" Layout="FitLayout">
+                <ext:Panel runat="server" Title="Bar Chart" Layout="Fit">
                     <Items>
                         <ext:CartesianChart runat="server"
                             Animation="false"
@@ -144,7 +144,7 @@
                     </Items>
                 </ext:Panel>
 
-                <ext:Panel runat="server" Title="Radial" Layout="FitLayout">
+                <ext:Panel runat="server" Title="Radial" Layout="Fit">
                     <Items>
                         <ext:PolarChart runat="server"
                             Animation="false"

@@ -48,7 +48,7 @@
             BodyPadding="5" 
             Frame="true"
             Title="Color Picker Components" 
-            Layout="VBoxLayout"
+            Layout="VBox"
             Draggable="false">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />

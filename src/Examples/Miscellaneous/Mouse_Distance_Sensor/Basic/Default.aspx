@@ -72,7 +72,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport runat="server" Layout="Border">
         <Items>
             <ext:Panel runat="server" Region="North" Height="75" BodyPadding="20">
                 <Content>

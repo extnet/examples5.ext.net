@@ -209,7 +209,7 @@
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Container runat="server" Layout="HBoxLayout">
+                        <ext:Container runat="server" Layout="HBox">
                             <Items>
                                 <ext:Button
                                     ID="ShowOfficesButton"

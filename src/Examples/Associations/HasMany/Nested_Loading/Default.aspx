@@ -56,7 +56,7 @@
         </Associations>
     </ext:Model>
 
-    <ext:Viewport runat="server" Layout="FitLayout">
+    <ext:Viewport runat="server" Layout="Fit">
         <Items>
             <ext:Panel runat="server" Border="false">
                 <LayoutConfig>
@@ -155,7 +155,7 @@
                         runat="server"
                         Border="false"
                         Flex="1"
-                        Layout="CardLayout">
+                        Layout="Card">
                         <DockedItems>
                             <ext:Component
                                 runat="server"

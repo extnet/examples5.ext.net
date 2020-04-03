@@ -213,7 +213,7 @@
                     Split="true"
                     Width="375"
                     MinWidth="290"
-                    Layout="BorderLayout">
+                    Layout="Border">
                     <Items>
                         <ext:UserControlLoader runat="server" Path="Controls.ascx" />
 
@@ -259,7 +259,7 @@
                 <ext:Panel runat="server"
                     ID="Center"
                     Region="Center"
-                    Layout="FitLayout">
+                    Layout="Fit">
                     <Items>
                         <ext:GridPanel
                             ID="TestGrid"

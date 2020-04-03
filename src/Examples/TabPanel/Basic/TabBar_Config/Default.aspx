@@ -120,7 +120,7 @@
             Closable="false"
             Height="530"
             Icon="Link"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:TabPanel ID="TabPanel1" runat="server">
                     <TabBar>

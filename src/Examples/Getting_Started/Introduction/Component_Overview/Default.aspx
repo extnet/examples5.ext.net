@@ -154,7 +154,7 @@
             runat="server"
             Height="1865"
             Width="1440"
-            Layout="AbsoluteLayout"
+            Layout="Absolute"
             StyleSpec="background-image: url('/resources/images/bg-main.png');">
             <Items>
                 <%--
@@ -329,7 +329,7 @@
                             IndicatorTip="An Indicator ToolTip" />
                         <ext:TextField runat="server" FieldLabel="w/Note" Note="Simple note" />
 
-                        <ext:FieldContainer runat="server" FieldLabel="FieldContainer" Layout="HBoxLayout">
+                        <ext:FieldContainer runat="server" FieldLabel="FieldContainer" Layout="HBox">
                             <Items>
                                 <ext:ComboBox runat="server" Width="50" Editable="false" DataIndex="Title">
                                     <Items>
@@ -419,7 +419,7 @@
                     Height="380"
                     X="730"
                     Y="190"
-                    Layout="BorderLayout"
+                    Layout="Border"
                     DefaultCollapsible="true"
                     DefaultSplit="true">
                     <Items>
@@ -513,7 +513,7 @@
                     Height="320"
                     X="730"
                     Y="860"
-                    Layout="AccordionLayout"
+                    Layout="Accordion"
                     DefaultBorder="false">
                     <Items>
                         <ext:TreePanel runat="server" Title="TreePanel" Scrollable="Both" EnableDD="true">
@@ -638,7 +638,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -681,7 +681,7 @@
                                     </Items>
                                 </ext:ButtonGroup>
 
-                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>

@@ -47,7 +47,7 @@
             Closable="false"
             BodyPadding="5">
             <Items>
-                <ext:Container runat="server" WidthSpec="100%" Layout="FormLayout">
+                <ext:Container runat="server" WidthSpec="100%" Layout="Form">
                     <Defaults>
                         <ext:Parameter Name="LabelWidth" Value="200" />
                     </Defaults>
@@ -86,7 +86,7 @@
                     </Items>
                 </ext:Container>
 
-                <ext:Container runat="server" Layout="HBoxLayout" WidthSpec="100%">
+                <ext:Container runat="server" Layout="HBox" WidthSpec="100%">
                     <Items>
                         <ext:Button runat="server" Text="Change Input Mask (server-side)" OnDirectClick="HandleBtnClick" />
                         <ext:ToolbarSpacer runat="server" Width="25" />

@@ -17,7 +17,7 @@
                 <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
             </LayoutConfig>
             <Items>
-                <ext:Panel runat="server" Border="false" PreventHeader="true" Width="640" Height="480" Layout="FitLayout" BodyStyle="background:transparent;" ButtonAlign="Center">
+                <ext:Panel runat="server" Border="false" PreventHeader="true" Width="640" Height="480" Layout="Fit" BodyStyle="background:transparent;" ButtonAlign="Center">
                     <Items>
                         <ext:DrawContainer ID="Canvas" runat="server">
                             <Items>

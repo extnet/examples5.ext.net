@@ -325,7 +325,7 @@
                 <ext:Container
                     ID="Container1"
                     runat="server"
-                    Layout="HBoxLayout"
+                    Layout="HBox"
                     Dock="Bottom"
                     StyleSpec="margin-top:2px;">
                     <Defaults>

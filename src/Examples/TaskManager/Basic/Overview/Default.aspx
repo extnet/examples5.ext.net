@@ -28,7 +28,7 @@
             </Listeners>
         </ext:ResourceManager>
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Panel
                     runat="server"

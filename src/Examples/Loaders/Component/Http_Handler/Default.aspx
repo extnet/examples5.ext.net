@@ -16,7 +16,7 @@
         runat="server"
         Height="200"
         Width="350"
-        Layout="AccordionLayout"
+        Layout="Accordion"
         Title="Load Items from Http Handler (automatic loading)">
         <Loader
             runat="server"
@@ -33,7 +33,7 @@
         runat="server"
         Height="200"
         Width="500"
-        Layout="FitLayout"
+        Layout="Fit"
         Title="Load UserControl from Http Handler (manual loading)">
         <Loader
             runat="server"

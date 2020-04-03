@@ -28,7 +28,7 @@
             Title="Book List"
             Width="540"
             Height="400"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:GridPanel
                    runat="server"

@@ -39,7 +39,7 @@
             Title="Grouped Bar Chart"
             Width="800"
             Height="600"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

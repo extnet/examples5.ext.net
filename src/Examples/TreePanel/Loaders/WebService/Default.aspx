@@ -27,7 +27,7 @@
         <h1>TreePanel using WebService</h1>
 
         <ext:Container runat="server"
-            Layout="HBoxLayout">
+            Layout="HBox">
             <Items>
                 <ext:TreePanel
                     ID="TreePanel1"

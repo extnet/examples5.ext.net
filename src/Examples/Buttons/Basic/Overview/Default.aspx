@@ -101,7 +101,7 @@
 
     <ext:SplitButton runat="server" Text="Text">
         <Bin>
-            <ext:Panel runat="server" Width="150" Height="300" Layout="AccordionLayout" Floating="true">
+            <ext:Panel runat="server" Width="150" Height="300" Layout="Accordion" Floating="true">
                 <Items>
                     <ext:Panel runat="server" Title="Item 1" />
                     <ext:Panel runat="server" Title="Item 2" />

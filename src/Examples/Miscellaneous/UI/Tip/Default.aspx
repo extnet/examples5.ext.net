@@ -34,7 +34,7 @@
 
         <h3>Tooltip UI</h3>
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Defaults>
                 <ext:Parameter Name="margin" Value="5" Mode="Raw" />
             </Defaults>

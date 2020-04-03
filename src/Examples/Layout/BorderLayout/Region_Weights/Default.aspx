@@ -40,7 +40,7 @@
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
         <Items>
-            <ext:Panel ID="BorderLayoutPanel" runat="server" Flex="1" Layout="BorderLayout">
+            <ext:Panel ID="BorderLayoutPanel" runat="server" Flex="1" Layout="Border">
                 <Items>
                     <ext:Panel runat="server" Title="West" Region="West" Width="200" />
                     <ext:Panel runat="server" Title="North" Region="North" Height="100" />

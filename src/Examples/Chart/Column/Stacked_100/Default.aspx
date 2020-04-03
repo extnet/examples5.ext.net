@@ -51,7 +51,7 @@
         <ext:Panel
             runat="server"
             Width="650"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             DefaultAnchor="100%">
             <TopBar>
                 <ext:Toolbar runat="server">

@@ -54,7 +54,7 @@
             Title="Chart with VerticalMarker"
             Width="800"
             Height="600"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart
                     ID="Chart1"
@@ -102,7 +102,7 @@
             Title="VerticalMarker with Snap and multiple series"
             Width="800"
             Height="600"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart
                     ID="Chart2"

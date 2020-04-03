@@ -170,7 +170,7 @@
         ID="Window1"
         runat="server"
         Title="Dynamic GridPanel"
-        Layout="FitLayout"
+        Layout="Fit"
         Height="350"
         Width="600">
         <TopBar>

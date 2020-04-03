@@ -69,7 +69,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport ID="Viewport1" runat="server" Layout="BorderLayout">
+        <ext:Viewport ID="Viewport1" runat="server" Layout="Border">
             <Items>
                 <ext:Container
                     runat="server"

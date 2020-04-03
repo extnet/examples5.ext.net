@@ -61,7 +61,7 @@
             drag anywhere on the chart.
         </p>
 
-        <ext:Panel runat="server" Width="650" Height="500" Layout="FitLayout">
+        <ext:Panel runat="server" Width="650" Height="500" Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

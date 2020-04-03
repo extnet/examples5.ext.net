@@ -19,7 +19,7 @@
             runat="server"
             Width="350"
             BodyPadding="10"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             Title="Sign Up Form"
             ViewModel="<%# true %>"
             AutoDataBind="true">

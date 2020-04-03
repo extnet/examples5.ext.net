@@ -81,7 +81,7 @@
             runat="server"
             Width="700"
             Height="490"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:TreePanel
                     ID="TreePanel1"
@@ -157,7 +157,7 @@
                     runat="server"
                     Region="Center"
                     Title="My Images"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     PaddingSpec="5 5 5 0">
                     <Items>
                         <ext:DataView

@@ -144,7 +144,7 @@
             runat="server"
             Title="Example"
             Closable="false"
-            Layout="FitLayout"
+            Layout="Fit"
             Height="350"
             Width="620">
             <TopBar>

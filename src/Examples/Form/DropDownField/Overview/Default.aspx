@@ -96,7 +96,7 @@
                     runat="server"
                     Width="400"
                     Height="90"
-                    Layout="HBoxLayout">
+                    Layout="HBox">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

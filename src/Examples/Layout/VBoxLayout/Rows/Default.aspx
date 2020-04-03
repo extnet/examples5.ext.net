@@ -10,7 +10,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="VBoxLayout">
+    <ext:Viewport runat="server" Layout="VBox">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>

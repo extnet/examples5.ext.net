@@ -22,7 +22,7 @@
             Frame="true"
             Title="Label Style and Separator"
             Width="400"
-            Layout="FormLayout">
+            Layout="Form">
             <Defaults>
                 <ext:Parameter Name="LabelStyle" Value="color:red;" Mode="Value" />
             </Defaults>
@@ -44,7 +44,7 @@
             Frame="true"
             Title="Without labels"
             Width="400"
-            Layout="FormLayout">
+            Layout="Form">
             <Defaults>
                 <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
             </Defaults>
@@ -62,7 +62,7 @@
             Frame="true"
             Title="Item style"
             Width="400"
-            Layout="FormLayout">
+            Layout="Form">
             <Defaults>
                 <ext:Parameter Name="Cls" Value="yellowBg" Mode="Value" />
             </Defaults>

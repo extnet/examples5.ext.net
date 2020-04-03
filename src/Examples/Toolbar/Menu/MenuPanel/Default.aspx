@@ -38,7 +38,7 @@
             Closable="false"
             Width="600"
             Height="370"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:Panel
                     runat="server"

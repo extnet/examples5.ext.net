@@ -24,7 +24,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport ID="vp1" runat="server" Layout="BorderLayout">
+    <ext:Viewport ID="vp1" runat="server" Layout="Border">
         <KeyMap>
             <ext:KeyBindItem Key="n" Handler="#{North}.toggleCollapse();" />
             <ext:KeyBindItem Key="s" Handler="#{South}.toggleCollapse();" />

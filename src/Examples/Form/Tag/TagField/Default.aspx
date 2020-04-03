@@ -142,7 +142,7 @@
                 <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
             </Items>
         </ext:TagField>
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:Button runat="server" Text="Add George" Handler="#{Tags1}.addTag('1');" />
                 <ext:Button runat="server" Text="Add Ext.Net" Handler="#{Tags1}.addTag('Ext.Net');" />

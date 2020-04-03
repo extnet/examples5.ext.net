@@ -21,7 +21,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport ID="Viewport1" runat="server" Layout="BorderLayout">
+    <ext:Viewport ID="Viewport1" runat="server" Layout="Border">
         <Items>
             <ext:Panel
                 id="pnlTableLayout"
@@ -30,7 +30,7 @@
                 Title="Table Layout"
                 Border="false"
                 BodyPadding="15"
-                Layout="TableLayout">
+                Layout="Table">
                 <LayoutConfig>
                     <ext:TableLayoutConfig Columns="4" />
                 </LayoutConfig>

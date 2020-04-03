@@ -36,7 +36,7 @@
                         runat="server"
                         FieldLabel="Your Name"
                         LabelStyle="font-weight:bold;padding:0;"
-                        Layout="HBoxLayout">
+                        Layout="HBox">
                         <FieldDefaults LabelAlign="Top" />
                         <Items>
                             <ext:TextField

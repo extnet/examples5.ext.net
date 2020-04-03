@@ -75,7 +75,7 @@
             runat="server"
             Title="Inject by Value (widget as editor)"
             Width="350"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:DataView runat="server" Padding="6" DisableSelection="true">
                     <Store>
@@ -128,7 +128,7 @@
             runat="server"
             Title="Inject by Selector"
             Width="350"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:DataView runat="server" Padding="6">
                     <Store>

@@ -98,7 +98,7 @@
             Width="500"
             Height="300"
             ReferenceHolder="true"
-            Layout="HBoxLayout"
+            Layout="HBox"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
            <Items>

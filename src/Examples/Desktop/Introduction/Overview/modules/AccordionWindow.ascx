@@ -25,7 +25,7 @@
                 runat="server" 
                 Width="250" 
                 Height="400" 
-                Layout="AccordionLayout"
+                Layout="Accordion"
                 Title="Accordion Window">
                 <TopBar>
                     <ext:Toolbar runat="server" UIName="plain">

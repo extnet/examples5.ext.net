@@ -52,7 +52,7 @@
             Height="350"
             Width="350"
             Title="Form"
-            Layout="VBoxLayout">
+            Layout="VBox">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

@@ -9,7 +9,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport runat="server" Layout="Border">
         <Items>
             <ext:Panel
                 runat="server"
@@ -25,7 +25,7 @@
                 runat="server"
                 Title="West"
                 Region="West"
-                Layout="AccordionLayout"
+                Layout="Accordion"
                 Width="250"
                 MinWidth="250"
                 MaxWidth="400"

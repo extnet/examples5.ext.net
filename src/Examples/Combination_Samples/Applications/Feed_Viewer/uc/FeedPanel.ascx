@@ -23,7 +23,7 @@
 <ext:Panel runat="server"
     Cls="feed-panel"
     AnimCollapse="true"
-    Layout="FitLayout"
+    Layout="Fit"
     Title="Feeds">
     <Bin>
         <ext:Menu runat="server">

@@ -89,7 +89,7 @@
                     Cls="cb-cell"
                     Region="Center"
                     BodyPadding="10"
-                    Layout="TableLayout">
+                    Layout="Table">
                     <LayoutConfig>
                         <ext:TableLayoutConfig Columns="10" />
                     </LayoutConfig>

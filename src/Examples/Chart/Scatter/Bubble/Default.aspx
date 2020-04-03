@@ -124,7 +124,7 @@
 
         <ext:Panel
             runat="server"
-            Layout="FitLayout"
+            Layout="Fit"
             Width="650">
             <TopBar>
                 <ext:Toolbar runat="server">

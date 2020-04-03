@@ -34,7 +34,7 @@
         X="100"
         Y="100"
         Plain="true"
-        Layout="BorderLayout">
+        Layout="Border">
         <Items>
             <ext:Panel
                 ID="WestPanel"

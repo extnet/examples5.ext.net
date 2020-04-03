@@ -129,9 +129,9 @@
             </Listeners>
         </ext:ResourceManager>
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:FormPanel runat="server" Region="Center" Layout="HBoxLayout">
+                <ext:FormPanel runat="server" Region="Center" Layout="HBox">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -142,7 +142,7 @@
                             Icon="Wrench"
                             MarginSpec="5 5 5 5"
                             Flex="2"
-                            Layout="FitLayout"
+                            Layout="Fit"
                             BodyBorder="0">
                             <TopBar>
                                 <ext:Toolbar runat="server">
@@ -173,7 +173,7 @@
                             BodyPadding="5"
                             MarginSpec="5 5 5 0"
                             DefaultAnchor="100%"
-                            Layout="VBoxLayout">
+                            Layout="VBox">
                             <LayoutConfig>
                                 <ext:VBoxLayoutConfig Align="Stretch" />
                             </LayoutConfig>
@@ -191,7 +191,7 @@
                                 </ext:Toolbar>
                             </TopBar>
                             <Items>
-                                <ext:Container runat="server" Height="55" Layout="HBoxLayout">
+                                <ext:Container runat="server" Height="55" Layout="HBox">
                                     <LayoutConfig>
                                         <ext:HBoxLayoutConfig Align="Stretch" />
                                     </LayoutConfig>
@@ -199,7 +199,7 @@
                                         <ext:Container
                                             runat="server"
                                             Flex="1"
-                                            Layout="AnchorLayout"
+                                            Layout="Anchor"
                                             DefaultAnchor="100%"
                                             DefaultLabelWidth="85">
                                             <Items>
@@ -224,7 +224,7 @@
                                         <ext:Container
                                             runat="server"
                                             Flex="1"
-                                            Layout="AnchorLayout"
+                                            Layout="Anchor"
                                             DefaultAnchor="100%"
                                             MarginSpec="0 0 0 12"
                                             DefaultLabelAlign="right"
@@ -248,7 +248,7 @@
                                     runat="server"
                                     Height="30"
                                     FieldLabel="Text Length"
-                                    Layout="HBoxLayout"
+                                    Layout="HBox"
                                     LabelWidth="85">
                                     <Defaults>
                                         <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -327,7 +327,7 @@
                     Region="South"
                     Split="true"
                     Height="350"
-                    Layout="HBoxLayout">
+                    Layout="HBox">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -408,7 +408,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Raw Data"
-                            Layout="FitLayout"
+                            Layout="Fit"
                             BodyPadding="5"
                             MarginSpec="0 0 5 0"
                             Flex="1">

@@ -22,7 +22,7 @@
             Title="Form Panel"
             BodyStyle="padding:5px 5px 0;"
             Width="600"
-            Layout="HBoxLayout">
+            Layout="HBox">
 
             <FieldDefaults LabelAlign="Top" MsgTarget="Side" />
 

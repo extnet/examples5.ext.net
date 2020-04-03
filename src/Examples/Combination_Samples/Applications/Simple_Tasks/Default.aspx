@@ -15,7 +15,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" Namespace="" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <task:TasksTopBar runat="server" Region="North" />
                 <task:TasksTree

@@ -35,14 +35,14 @@
             Border="false"
             Title="Draw Components"
             Resizable="false"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:TabPanel runat="server" ActiveIndex="0">
                     <Defaults>
                         <ext:Parameter Name="Padding" Value="0 0 0 0" />
                     </Defaults>
                     <Items>
-                        <ext:Panel runat="server" Title="Safari" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Safari" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>
@@ -60,7 +60,7 @@
                             </Items>
                         </ext:Panel>
 
-                        <ext:Panel runat="server" Title="Sencha" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Sencha" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>
@@ -100,7 +100,7 @@
                             </Items>
                         </ext:Panel>
 
-                        <ext:Panel runat="server" Title="Firefox" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Firefox" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>
@@ -118,7 +118,7 @@
                             </Items>
                         </ext:Panel>
 
-                        <ext:Panel runat="server" Title="Explorer" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Explorer" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>
@@ -136,7 +136,7 @@
                             </Items>
                         </ext:Panel>
 
-                        <ext:Panel runat="server" Title="Chrome" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Chrome" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>
@@ -154,7 +154,7 @@
                             </Items>
                         </ext:Panel>
 
-                        <ext:Panel runat="server" Title="Opera" Layout="FitLayout">
+                        <ext:Panel runat="server" Title="Opera" Layout="Fit">
                             <Items>
                                 <ext:DrawContainer runat="server">
                                     <Gradients>

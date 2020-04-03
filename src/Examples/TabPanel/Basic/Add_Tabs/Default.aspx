@@ -48,7 +48,7 @@
             Width="700"
             Height="500"
             Icon="Link"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:MenuPanel
                     ID="MenuPanel1"

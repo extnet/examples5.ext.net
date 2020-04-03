@@ -126,14 +126,14 @@
 
         <uc:UnemploymentStore runat="server" />
 
-        <ext:Viewport runat="server" Layout="FitLayout">
+        <ext:Viewport runat="server" Layout="Fit">
             <Items>
                 <ext:Container runat="server" OverflowY="Auto">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Pack="Center" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Container runat="server" Width="990" Layout="AbsoluteLayout">
+                        <ext:Container runat="server" Width="990" Layout="Absolute">
                             <Items>
                                 <ext:UserControlLoader runat="server" Path="Polar1.ascx" />
                                 <ext:UserControlLoader runat="server" Path="Polar2.ascx" />

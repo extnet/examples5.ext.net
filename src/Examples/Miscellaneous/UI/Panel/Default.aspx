@@ -77,7 +77,7 @@
             Title="Tools"
             UI="Primary"
             Frame="true"
-            Layout="AccordionLayout">
+            Layout="Accordion">
             <Tools>
                 <ext:Tool Type="Toggle" />
                 <ext:Tool Type="Close" />
@@ -116,7 +116,7 @@
             Title="Border Layout"
             UI="Primary"
             Frame="true"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:Panel
                     runat="server"

@@ -35,7 +35,7 @@
             </TabConfig>
         </ext:Panel>
 
-        <ext:Viewport runat="server" Layout="FitLayout">
+        <ext:Viewport runat="server" Layout="Fit">
             <Items>
                 <ext:TabPanel runat="server" TabRotation="0">
                     <ResponsiveConfig>

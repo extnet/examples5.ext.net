@@ -34,7 +34,7 @@
             Title="Constraining Window, plain: true"
             Closable="false"
             Plain="true"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:Window
                     runat="server"
@@ -44,7 +44,7 @@
                     X="20"
                     Y="20"
                     Constrain="true"
-                    Layout="FitLayout">
+                    Layout="Fit">
                     <Items>
                         <ext:Panel runat="server" Border="false" />
                     </Items>
@@ -58,7 +58,7 @@
                     X="120"
                     Y="120"
                     ConstrainHeader="true"
-                    Layout="FitLayout">
+                    Layout="Fit">
                     <Items>
                         <ext:Panel runat="server" Border="false" />
                     </Items>
@@ -77,7 +77,7 @@
             Y="200"
             Plain="true"
             HeaderPosition="Left"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:Panel runat="server" Border="false" />
             </Items>
@@ -91,7 +91,7 @@
             X="450"
             Y="200"
             HeaderPosition="Right"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:Panel runat="server" Border="false" />
             </Items>
@@ -106,7 +106,7 @@
             Y="450"
             Plain="true"
             HeaderPosition="Bottom"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:Panel runat="server" Border="false" />
             </Items>

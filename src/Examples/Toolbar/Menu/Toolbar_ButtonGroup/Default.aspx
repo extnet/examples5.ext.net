@@ -81,7 +81,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                             <LayoutConfig>
                                 <ext:TableLayoutConfig Columns="2" />
                             </LayoutConfig>
@@ -117,7 +117,7 @@
                                 <ext:Button runat="server" Text="Format" IconCls="add16" />
                             </Items>
                         </ext:ButtonGroup>
-                        <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                             <LayoutConfig>
                                 <ext:TableLayoutConfig Columns="2" />
                             </LayoutConfig>
@@ -168,7 +168,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <LayoutConfig>
                                 <ext:TableLayoutConfig Columns="3" />
                             </LayoutConfig>
@@ -204,7 +204,7 @@
                                 <ext:Button runat="server" Text="Format" IconCls="add16" />
                             </Items>
                         </ext:ButtonGroup>
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <LayoutConfig>
                                 <ext:TableLayoutConfig Columns="3" />
                             </LayoutConfig>
@@ -353,7 +353,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                             <Defaults>
                                 <ext:Parameter Name="scale" Value="medium" />
                                 <ext:Parameter Name="iconAlign" Value="top" />
@@ -395,7 +395,7 @@
                             </Items>
                         </ext:ButtonGroup>
 
-                        <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                             <Defaults>
                                 <ext:Parameter Name="scale" Value="medium" />
                                 <ext:Parameter Name="iconAlign" Value="top" />
@@ -448,7 +448,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
                                 <ext:Button runat="server" Text="Cut" IconCls="add24" Scale="Medium" />
                                 <ext:Button runat="server" Text="Copy" IconCls="add24" Scale="Medium" />
@@ -464,7 +464,7 @@
                             </Items>
                         </ext:ButtonGroup>
 
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
                                 <ext:Button runat="server" Text="Format" IconCls="add24" Scale="Medium" />
                             </Items>
@@ -485,7 +485,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
                                 <ext:Button runat="server" Text="Cut" IconCls="add16" />
                                 <ext:Button runat="server" Text="Copy" IconCls="add16" />
@@ -501,7 +501,7 @@
                             </Items>
                         </ext:ButtonGroup>
 
-                        <ext:ButtonGroup runat="server" Layout="TableLayout">
+                        <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
                                 <ext:Button runat="server" Text="Format" IconCls="add16" />
                             </Items>
@@ -518,7 +518,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -562,7 +562,7 @@
                                     </Items>
                                 </ext:ButtonGroup>
 
-                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -614,7 +614,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -658,7 +658,7 @@
                                     </Items>
                                 </ext:ButtonGroup>
 
-                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -710,7 +710,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Clipboard" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>
@@ -754,7 +754,7 @@
                                     </Items>
                                 </ext:ButtonGroup>
 
-                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="TableLayout">
+                                <ext:ButtonGroup runat="server" Title="Other Actions" Layout="Table">
                                     <LayoutConfig>
                                         <ext:TableLayoutConfig Columns="3" />
                                     </LayoutConfig>

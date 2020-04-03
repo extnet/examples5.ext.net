@@ -121,7 +121,7 @@
             runat="server"
             Width="700"
             Height="400"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:GridPanel
                     runat="server"

@@ -295,7 +295,7 @@
             MinWidth="650"
             Maximizable="true"
             Title="Scatter Chart Renderer"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

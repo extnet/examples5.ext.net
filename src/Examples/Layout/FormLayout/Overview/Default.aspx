@@ -23,7 +23,7 @@
             Width="350"
             Frame="true"
             ButtonAlign="Center"
-            Layout="FormLayout">
+            Layout="Form">
             <FieldDefaults MsgTarget="Side" LabelWidth="75" />
             <Plugins>
                 <ext:DataTip runat="server" />
@@ -113,7 +113,7 @@
                     CheckboxToggle="true"
                     Title="User Information"
                     Collapsed="true"
-                    Layout="FormLayout">
+                    Layout="Form">
                     <Defaults>
                         <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                     </Defaults>
@@ -128,7 +128,7 @@
                     runat="server"
                     Collapsible="true"
                     Title="Phone Number"
-                    Layout="FormLayout">
+                    Layout="Form">
                     <Defaults>
                         <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                     </Defaults>
@@ -159,13 +159,13 @@
             <Items>
                 <ext:Container runat="server" Layout="Column">
                     <Items>
-                        <ext:Container runat="server" Layout="FormLayout" ColumnWidth=".5" Padding="5">
+                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5" Padding="5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="First Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Company" LabelAlign="Top" />
                             </Items>
                         </ext:Container>
-                        <ext:Container runat="server" Layout="FormLayout" ColumnWidth=".5" Padding="5">
+                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5" Padding="5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="Last Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Email" LabelAlign="Top" />
@@ -173,7 +173,7 @@
                         </ext:Container>
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="AnchorLayout">
+                <ext:Container runat="server" Layout="Anchor">
                     <Items>
                         <ext:HtmlEditor runat="server" Height="200" FieldLabel="Biography" LabelAlign="Top" Padding="10" />
                     </Items>
@@ -201,7 +201,7 @@
                             runat="server"
                             Title="Personal Details"
                             BodyPadding="10"
-                            Layout="FormLayout">
+                            Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                             </Defaults>
@@ -216,7 +216,7 @@
                             runat="server"
                             Title="Phone Numbers"
                             BodyPadding="10"
-                            Layout="FormLayout">
+                            Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                             </Defaults>
@@ -248,13 +248,13 @@
             <Items>
                 <ext:Container runat="server">
                     <Items>
-                        <ext:Container runat="server" Layout="FormLayout" ColumnWidth=".5">
+                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="First Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Company" LabelAlign="Top" />
                             </Items>
                         </ext:Container>
-                        <ext:Container runat="server" Layout="FormLayout" ColumnWidth=".5">
+                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="Last Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Email" LabelAlign="Top" />
@@ -273,7 +273,7 @@
                             runat="server"
                             Title="Personal Details"
                             BodyPadding="10"
-                            Layout="FormLayout">
+                            Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                                 <ext:Parameter Name="LabelAlign" Value="top" Mode="Value" />
@@ -289,7 +289,7 @@
                             runat="server"
                             Title="Phone Numbers"
                             BodyPadding="10"
-                            Layout="FormLayout">
+                            Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                                 <ext:Parameter Name="LabelAlign" Value="top" Mode="Value" />
@@ -314,7 +314,7 @@
                             ID="Tab4"
                             runat="server"
                             Title="Tab 4"
-                            Layout="FormLayout"
+                            Layout="Form"
                             BodyPadding="10" >
                              <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />

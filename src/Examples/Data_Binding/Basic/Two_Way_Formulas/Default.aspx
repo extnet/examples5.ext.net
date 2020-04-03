@@ -134,7 +134,7 @@
             BodyPadding="10"
             Frame="true"
             Resizable="true"
-            Layout="FormLayout"
+            Layout="Form"
             Title="Two-Way Formulas"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">

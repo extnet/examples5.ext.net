@@ -106,7 +106,7 @@
         <ext:Viewport
             runat="server"
             StyleSpec="background-color: transparent;"
-            Layout="BorderLayout">
+            Layout="Border">
             <Items>
                 <ext:Panel
                     ID="pnlNorth"
@@ -141,7 +141,7 @@
                     MinWidth="175"
                     MaxWidth="400"
                     MarginSpec="5 0 5 5"
-                    Layout="AccordionLayout">
+                    Layout="Accordion">
                     <Items>
                         <ext:Panel
                             runat="server"

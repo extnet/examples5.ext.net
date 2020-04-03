@@ -148,7 +148,7 @@
             Frame="true"
             Width="800"
             Collapsible="true"
-            Layout="FitLayout"
+            Layout="Fit"
             Title="Simple DataView (0 items selected)">
             <Items>
                 <ext:DataView

@@ -37,12 +37,12 @@
             </Listeners>
         </ext:ResourceManager>
 
-        <ext:Container runat="server" Layout="VBoxLayout">
+        <ext:Container runat="server" Layout="VBox">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 7 0" Mode="Value"></ext:Parameter>
             </Defaults>
             <Items>
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Button runat="server" Text="Run" Width="75">
                             <DirectEvents>
@@ -60,13 +60,13 @@
                         <ext:Label runat="server" Text="&nbsp;- a long running DirectEvent with specific duration messages" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Button runat="server" Text="Run" OnDirectClick="DoSomething" Width="75" />
                         <ext:Label runat="server" Text="&nbsp;- a long running DirectEvent with global duration messages" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Button runat="server" Text="Run" Width="75">
                             <DirectEvents>
@@ -78,7 +78,7 @@
                         <ext:Label runat="server" Text="&nbsp;- a long running DirectEvent without any duration messages, but with a regular mask" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Button runat="server" Text="Run" Width="75">
                             <Listeners>
@@ -98,7 +98,7 @@
                         <ext:Label runat="server" Text="&nbsp;- a long running DirectMethod with specific duration messages" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="HBoxLayout">
+                <ext:Container runat="server" Layout="HBox">
                     <Items>
                         <ext:Button runat="server" Text="Forbid" Width="75">
                             <Listeners>

@@ -36,7 +36,7 @@
             Width="400"
             BodyPadding="10"
             Title="Color Components"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             DefaultAnchor="0"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">

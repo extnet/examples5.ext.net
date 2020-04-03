@@ -6,7 +6,7 @@
     Split="true"
     Height="375"
     BodyPadding="5"
-    Layout="AnchorLayout">
+    Layout="Anchor">
     <FieldDefaults LabelWidth="205" />
     <Defaults>
         <ext:Parameter Name="anchor" Value="100%" Mode="Value" />

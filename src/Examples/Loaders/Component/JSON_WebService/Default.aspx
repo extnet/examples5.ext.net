@@ -16,7 +16,7 @@
         runat="server"
         Height="200"
         Width="350"
-        Layout="AccordionLayout"
+        Layout="Accordion"
         Title="Load items from JSON WebService (automatic loading)">
         <Loader
             runat="server"
@@ -34,7 +34,7 @@
         runat="server"
         Height="200"
         Width="500"
-        Layout="FitLayout"
+        Layout="Fit"
         Title="Load user control from JSON WebService (manual loading)">
         <Loader
             runat="server"

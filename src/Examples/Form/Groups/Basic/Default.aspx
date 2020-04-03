@@ -127,13 +127,13 @@
                 <ext:Button runat="server" Text="Reset" Handler="this.up('form').reset();" />
             </Buttons>
             <Items>
-                <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 10">
+                <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 10">
                     <Items>
                         <ext:FieldSet
                             runat="server"
                             Flex="1"
                             Title="Individual Checkboxes"
-                            Layout="AnchorLayout"
+                            Layout="Anchor"
                             DefaultAnchor="100%">
 
                             <Defaults>
@@ -154,7 +154,7 @@
                             runat="server"
                             Flex="1"
                             Title="Individual Radios"
-                            Layout="AnchorLayout"
+                            Layout="Anchor"
                             DefaultAnchor="100%">
 
                             <Defaults>
@@ -174,7 +174,7 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Checkbox Groups (initially collapsed)"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     Collapsible="true"
                     Collapsed="true"
                     DefaultAnchor="100%">
@@ -260,7 +260,7 @@
                             FieldLabel="Custom Layout<br />(w/ validation)"
                             AllowBlank="false"
                             AutoFitErrors="false"
-                            Layout="ColumnLayout"
+                            Layout="Column"
                             AnchorHorizontal="-18">
                             <Items>
                                 <ext:Container runat="server" ColumnWidth="0.25">
@@ -295,7 +295,7 @@
                 <ext:FieldSet
                     runat="server"
                     Title="Radio Groups"
-                    Layout="AnchorLayout"
+                    Layout="Anchor"
                     Collapsible="true"
                     DefaultAnchor="100%">
                     <Items>
@@ -386,7 +386,7 @@
                             FieldLabel="Custom Layout<br />(w/ validation)"
                             AllowBlank="false"
                             AutoFitErrors="false"
-                            Layout="ColumnLayout"
+                            Layout="Column"
                             AnchorHorizontal="-18">
                             <Items>
                                 <ext:Container runat="server" ColumnWidth="0.25">

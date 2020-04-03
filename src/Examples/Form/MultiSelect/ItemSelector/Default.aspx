@@ -47,7 +47,7 @@
             Width="700"
             BodyPadding="10"
             Height="300"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:ItemSelector
                     ID="ItemSelector1"

@@ -132,12 +132,12 @@
                 <ext:TextField ID="txtFirstName" runat="server" FieldLabel="First Name" AllowBlank="false" />
                 <ext:TextField ID="txtLastName" runat="server" FieldLabel="Last Name" AllowBlank="false" />
                 <ext:TextField ID="txtCompany" runat="server" FieldLabel="Company" />
-                <ext:Panel ID="Panel1" runat="server" Header="false" Border="false" Layout="FitLayout">
+                <ext:Panel ID="Panel1" runat="server" Header="false" Border="false" Layout="Fit">
                     <Content>
                         <uc1:Address ID="ucShipping" runat="server" Title="SHIPPING ADDRESS" />
                     </Content>
                 </ext:Panel>
-                <ext:Panel ID="Panel2" runat="server" Header="false" Border="false" Layout="FitLayout">
+                <ext:Panel ID="Panel2" runat="server" Header="false" Border="false" Layout="Fit">
                     <Content>
                         <uc1:Address ID="ucBilling" runat="server" Title="BILLING ADDRESS" />
                     </Content>

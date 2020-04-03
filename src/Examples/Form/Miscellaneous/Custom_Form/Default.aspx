@@ -88,7 +88,7 @@
             Cls="search-results"
             Height="500"
             Width="600"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:DataView
                     runat="server"

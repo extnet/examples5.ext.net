@@ -64,7 +64,7 @@
                 <ext:FormPanel
                     runat="server"
                     BaseCls="x-plain"
-                    Layout="VBoxLayout">
+                    Layout="VBox">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

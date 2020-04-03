@@ -11,7 +11,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="CenterLayout">
+        <ext:Viewport runat="server" Layout="Center">
             <Items>
                 <ext:Panel
                     runat="server"

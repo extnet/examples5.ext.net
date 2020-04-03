@@ -27,7 +27,7 @@
             Title="Password Mask"
             Closable="false"
             BodyPadding="5"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             DefaultAnchor="100%">
             <Items>
                <ext:TextField

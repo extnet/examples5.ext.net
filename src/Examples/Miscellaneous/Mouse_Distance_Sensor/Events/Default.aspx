@@ -36,7 +36,7 @@
         Width="350"
         Height="215"
         Closable="false"
-        Layout="FitLayout"
+        Layout="Fit"
         PageX="100"
         PageY="100">
         <Items>

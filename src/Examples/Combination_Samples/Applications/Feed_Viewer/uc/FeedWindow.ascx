@@ -6,7 +6,7 @@
     Height="140"
     Title="Add Feed"
     IconCls="feed"
-    Layout="FitLayout"
+    Layout="Fit"
     Resizable="false">
     <Items>
         <ext:FormPanel runat="server"

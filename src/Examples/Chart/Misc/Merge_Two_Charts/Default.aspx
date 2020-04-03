@@ -103,7 +103,7 @@
                     Width="600"
                     Height="300"
                     Title="Trends, 2014"
-                    Layout="FitLayout">
+                    Layout="Fit">
                     <Items>
                         <ext:CartesianChart ID="Chart1" runat="server" InsetPadding="30">
                             <Store>
@@ -166,7 +166,7 @@
                     Width="600"
                     Height="300"
                     Title="Trends, 2015"
-                    Layout="FitLayout">
+                    Layout="Fit">
                     <Items>
                         <ext:CartesianChart ID="Chart2" runat="server" InsetPadding="30">
                             <Store>

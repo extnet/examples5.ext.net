@@ -90,7 +90,7 @@
             Title="Country Selector"
             BodyPadding="5"
             BodyBorder="0"
-            Layout="HBoxLayout">
+            Layout="HBox">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

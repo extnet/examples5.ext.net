@@ -98,7 +98,7 @@
             Title="Line Chart"
             Width="800"
             Height="400"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart
                     runat="server"
@@ -138,9 +138,9 @@
                                 TrackMouse="true"
                                 Width="580"
                                 Height="170"
-                                Layout="FitLayout">
+                                Layout="Fit">
                                 <Items>
-                                    <ext:Container runat="server" Layout="HBoxLayout">
+                                    <ext:Container runat="server" Layout="HBox">
                                         <Items>
                                             <ext:PolarChart
                                                 runat="server"

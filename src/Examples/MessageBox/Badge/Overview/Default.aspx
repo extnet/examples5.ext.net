@@ -37,7 +37,7 @@
 
     <h3>Scale</h3>
 
-    <ext:Container runat="server" Layout="HBoxLayout">
+    <ext:Container runat="server" Layout="HBox">
         <Defaults>
             <ext:Parameter Name="margin" Value="0 100 0 0" Mode="Value" />
         </Defaults>
@@ -66,7 +66,7 @@
 
     <h3>UI</h3>
 
-    <ext:Container runat="server" Layout="HBoxLayout">
+    <ext:Container runat="server" Layout="HBox">
         <Defaults>
             <ext:Parameter Name="margin" Value="0 20 0 0" Mode="Value" />
         </Defaults>
@@ -163,7 +163,7 @@
 
     <h3>Custom align</h3>
 
-    <ext:Container runat="server" Layout="HBoxLayout">
+    <ext:Container runat="server" Layout="HBox">
         <Defaults>
             <ext:Parameter Name="margin" Value="0 30 0 0" Mode="Value" />
         </Defaults>

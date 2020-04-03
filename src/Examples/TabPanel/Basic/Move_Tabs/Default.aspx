@@ -30,7 +30,7 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Layout="BorderLayout"
+            Layout="Border"
             Width="600"
             Height="250"
             Icon="Tab"

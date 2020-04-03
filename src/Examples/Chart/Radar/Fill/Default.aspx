@@ -30,7 +30,7 @@
             Width="800"
             Height="600"
             StyleSpec="overflow:hidden;"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

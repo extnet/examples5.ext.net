@@ -43,7 +43,7 @@
         Header="false"
         Width="610"
         BodyPadding="10"
-        Layout="ColumnLayout">
+        Layout="Column">
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
             <ext:Parameter Name="Width" Value="150" />
@@ -92,7 +92,7 @@
                 <BodyWidget>
                     <ext:Container
                         runat="server"
-                        Layout="AccordionLayout"
+                        Layout="Accordion"
                         Width="300"
                         Height="150">
                         <Items>
@@ -117,7 +117,7 @@
         Header="false"
         Width="610"
         AutoDataBind="true"
-        Layout="HBoxLayout">
+        Layout="HBox">
         <Defaults>
             <ext:Parameter Name="Margin" Value="10" />
         </Defaults>
@@ -164,7 +164,7 @@
         Width="610"
         BodyPadding="10"
         AutoDataBind="true"
-        Layout="ColumnLayout">
+        Layout="Column">
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
             <ext:Parameter Name="Width" Value="150" />

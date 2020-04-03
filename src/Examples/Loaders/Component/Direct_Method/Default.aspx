@@ -55,7 +55,7 @@
         runat="server"
         Height="200"
         Width="350"
-        Layout="AccordionLayout"
+        Layout="Accordion"
         Title="Load Items from the Page (DirectMethod, AutoLoad)">
         <Loader
             runat="server"
@@ -72,7 +72,7 @@
         runat="server"
         Height="200"
         Width="500"
-        Layout="FitLayout"
+        Layout="Fit"
         Title="Load UserControl from the Page (static DirectMethod, manual loading)">
         <Loader
             runat="server"
@@ -97,7 +97,7 @@
         runat="server"
         Height="200"
         Width="500"
-        Layout="AccordionLayout"
+        Layout="Accordion"
         Title="Load UserControl from the Page (static DirectMethod, dynamic inner items)">
         <Loader
             runat="server"

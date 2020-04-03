@@ -39,7 +39,7 @@
             <a href="http://www.openajax.org/member/wiki/OpenAjax_Hub_2.0_Specification_Topic_Names">OpenAjax Hub 2.0 Specification Topic Names</a>
         </p>
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:Panel
                     ID="Panel1"
@@ -47,7 +47,7 @@
                     Title="Catch ALL App Events"
                     Width="300"
                     Height="300"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     BodyPadding="5"
                     MarginSpec="5">
                     <MessageBusListeners>
@@ -76,7 +76,7 @@
                     ID="Panel2"
                     runat="server"
                     Title="Category Events"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     Width="350"
                     Height="300"
                     BodyPadding="5"

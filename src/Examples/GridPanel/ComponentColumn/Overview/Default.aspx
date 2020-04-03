@@ -161,7 +161,7 @@
 
                      <ext:ComponentColumn runat="server" OverOnly="true" Width="180">
                         <Component>
-                            <ext:Container runat="server" Layout="HBoxLayout">
+                            <ext:Container runat="server" Layout="HBox">
                                 <Items>
                                     <ext:Button runat="server" Text="Button 1" Icon="Add" />
                                     <ext:Button runat="server" Text="Button 2" Icon="Decline" />

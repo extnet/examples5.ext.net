@@ -89,7 +89,7 @@
         Height="400"
         MinWidth="300"
         MinHeight="200"
-        Layout="FitLayout">
+        Layout="Fit">
         <Items>
             <ext:GridPanel
                 ID="GridPanel1"

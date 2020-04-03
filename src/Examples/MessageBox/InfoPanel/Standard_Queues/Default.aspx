@@ -41,7 +41,7 @@
         <ext:Window
             runat="server"
             Title="Standard Alignment Queues"
-            Layout="HBoxLayout"
+            Layout="HBox"
             Width="500"
             Height="400"
             Closable="false">
@@ -49,7 +49,7 @@
                 <ext:HBoxLayoutConfig Align="Stretch"  />
             </LayoutConfig>
             <Items>
-                <ext:Container runat="server" Layout="VBoxLayout" Flex="1">
+                <ext:Container runat="server" Layout="VBox" Flex="1">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -61,7 +61,7 @@
                         <ext:Container runat="server" Flex="1" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="VBoxLayout" Flex="1">
+                <ext:Container runat="server" Layout="VBox" Flex="1">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -71,7 +71,7 @@
                         <ext:Button runat="server" Text="BottomLeft" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="VBoxLayout" Flex="1">
+                <ext:Container runat="server" Layout="VBox" Flex="1">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -83,7 +83,7 @@
                         <ext:Button runat="server" Text="Bottom" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="VBoxLayout" Flex="1">
+                <ext:Container runat="server" Layout="VBox" Flex="1">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
@@ -93,7 +93,7 @@
                         <ext:Button runat="server" Text="BottomRight" />
                     </Items>
                 </ext:Container>
-                <ext:Container runat="server" Layout="VBoxLayout" Flex="1">
+                <ext:Container runat="server" Layout="VBox" Flex="1">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

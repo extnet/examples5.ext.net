@@ -58,7 +58,7 @@
             Title="Customer Details"
             Width="350"
             BodyPadding="10"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             DefaultAnchor="-30"
             ModelValidation="true"
             ViewModel="<%# MyModel.Model %>"

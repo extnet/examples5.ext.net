@@ -36,7 +36,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport runat="server" Layout="Border">
         <Items>
             <ext:Container
                 ID="btns"
@@ -66,7 +66,7 @@
                     <ext:Container
                         runat="server"
                         AnchorHorizontal="100%"
-                        Layout="HBoxLayout"
+                        Layout="HBox"
                         Margin="10">
                         <Defaults>
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -83,7 +83,7 @@
                     </ext:Container>
                     <ext:Container
                         runat="server"
-                        Layout="HBoxLayout"
+                        Layout="HBox"
                         AnchorHorizontal="100%"
                         PaddingSpec="0 10 10">
                         <Defaults>
@@ -109,7 +109,7 @@
         <ext:Panel
             ID="pnlSpaced"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -129,7 +129,7 @@
         <ext:Panel
             ID="pnlAlignTop"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -148,7 +148,7 @@
         <ext:Panel
             ID="pnlAlignMiddle"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -167,7 +167,7 @@
         <ext:Panel
             ID="pnlAlignStretch"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -186,7 +186,7 @@
         <ext:Panel
             ID="pnlAlignStretchMax"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -205,7 +205,7 @@
         <ext:Panel
             ID="pnlFlexEven"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -224,7 +224,7 @@
         <ext:Panel
             ID="pnlFlexRatio"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -243,7 +243,7 @@
         <ext:Panel
             ID="pnlPackStart"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -262,7 +262,7 @@
         <ext:Panel
             ID="pnlPackCenter"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -281,7 +281,7 @@
         <ext:Panel
             ID="pnlPackEnd"
             runat="server"
-            Layout="HBoxLayout"
+            Layout="HBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />

@@ -27,7 +27,7 @@
             Width="800"
             Height="400"
             Title="Column Chart with Reload - Hits per Month"
-            Layout="FitLayout">
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

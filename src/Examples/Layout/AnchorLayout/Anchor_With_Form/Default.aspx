@@ -23,7 +23,7 @@
             BodyPadding="5"
             ButtonAlign="Center"
             LabelWidth="55"
-            Layout="AnchorLayout">
+            Layout="Anchor">
             <Items>
                 <ext:TextField
                     runat="server"

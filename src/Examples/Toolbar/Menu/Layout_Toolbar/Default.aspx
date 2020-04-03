@@ -31,7 +31,7 @@
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="TableLayout">
+                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="3" />
                         </LayoutConfig>
@@ -53,7 +53,7 @@
 
                     <ext:ToolbarSeparator runat="server" />
 
-                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="TableLayout">
+                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="3" />
                         </LayoutConfig>
@@ -73,7 +73,7 @@
 
                     <ext:ToolbarSeparator runat="server" />
 
-                    <ext:Toolbar runat="server" Width="105" Flat="false" Layout="TableLayout">
+                    <ext:Toolbar runat="server" Width="105" Flat="false" Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="1" />
                         </LayoutConfig>

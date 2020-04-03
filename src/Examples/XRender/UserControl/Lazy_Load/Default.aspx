@@ -37,13 +37,13 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Panel runat="server"
                     Region="North"
                     Height="200"
                     Title="North"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     Floatable="false"
                     Collapsed="true"
                     Collapsible="true">
@@ -59,7 +59,7 @@
                     Height="200"
                     Title="South"
                     Floatable="false"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
@@ -74,7 +74,7 @@
                     Width="200"
                     Title="West"
                     Floatable="false"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
@@ -89,7 +89,7 @@
                     Width="200"
                     Title="East"
                     Floatable="false"
-                    Layout="FitLayout"
+                    Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>

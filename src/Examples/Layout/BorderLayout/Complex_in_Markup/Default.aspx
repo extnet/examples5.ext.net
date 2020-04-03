@@ -33,7 +33,7 @@
         Collapsible="true"
         BodyBorder="0"
         AnimateTarget="Button1"
-        Layout="BorderLayout">
+        Layout="Border">
         <Items>
             <ext:Panel
                 ID="WestPanel"

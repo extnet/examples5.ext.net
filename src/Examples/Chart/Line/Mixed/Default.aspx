@@ -26,7 +26,7 @@
             Width="600"
             Height="300"
             Title="Trends, 2007/2008 (No styling)"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
@@ -85,7 +85,7 @@
             Width="600"
             Height="300"
             Title="Trends, 2007/2008 (No styling)"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
@@ -144,7 +144,7 @@
             Width="600"
             Height="300"
             Title="Trends, 2007/2008 (Simple styling)"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>

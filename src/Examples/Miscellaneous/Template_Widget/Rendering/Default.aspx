@@ -34,7 +34,7 @@
             Title="Tabs"
             Width="680"
             Height="500"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:TabPanel runat="server">
                     <Bin>

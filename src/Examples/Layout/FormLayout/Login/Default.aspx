@@ -49,7 +49,7 @@
             Width="350"
             Modal="true"
             BodyPadding="5"
-            Layout="FormLayout">
+            Layout="Form">
             <Items>
                 <ext:TextField
                     ID="txtUsername"

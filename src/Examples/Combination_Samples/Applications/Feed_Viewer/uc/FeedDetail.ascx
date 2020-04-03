@@ -15,10 +15,10 @@
 
 <ext:Panel runat="server"
     Cls="feed-detail"    
-    Layout="BorderLayout">
+    Layout="Border">
     <Items>
         <ext:Panel runat="server" 
-            Layout="FitLayout" 
+            Layout="Fit" 
             Region="Center" 
             Flex="2" 
             MinHeight="200" 
@@ -67,7 +67,7 @@
         </ext:Panel>        
 
         <ext:Container runat="server" 
-            Layout="FitLayout"
+            Layout="Fit"
             Region="South"
             Split="true"
             Flex="2"
@@ -79,7 +79,7 @@
 
         <ext:Panel runat="server" 
             Region="East"
-            Layout="FitLayout"
+            Layout="Fit"
             Flex="1"
             Split="true"
             Hidden="true"

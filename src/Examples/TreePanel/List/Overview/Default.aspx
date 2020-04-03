@@ -121,7 +121,7 @@
             Height="450"
             Closable="False"
             Resizable="false"
-            Layout="BorderLayout">
+            Layout="Border">
             <HeaderConfig runat="server">
                 <Items>
                     <ext:Button runat="server" Text="Options">

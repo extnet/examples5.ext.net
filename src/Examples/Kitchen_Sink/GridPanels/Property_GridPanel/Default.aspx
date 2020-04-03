@@ -126,7 +126,7 @@
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Container runat="server" Layout="HBoxLayout" MarginSpec="0 0 10 0">
+                        <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 10 0">
                             <Items>
                                 <ext:Button
                                     runat="server"

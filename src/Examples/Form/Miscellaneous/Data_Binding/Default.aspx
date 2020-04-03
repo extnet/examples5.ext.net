@@ -120,7 +120,7 @@
                     MsgTarget="Side"
                     CombineErrors="true"
                     FieldLabel="Date Range"
-                    Layout="HBoxLayout">
+                    Layout="HBox">
                     <Defaults>
                         <ext:Parameter Name="flex" Value="1" Mode="Raw" />
                         <ext:Parameter Name="hideLabel" Value="true" Mode="Raw" />
@@ -151,7 +151,7 @@
                             FieldLabel="Phone"
                             CombineErrors="true"
                             MsgTarget="Under"
-                            Layout="HBoxLayout">
+                            Layout="HBox">
                             <Defaults>
                                 <ext:Parameter Name="hideLabel" Value="true" Mode="Raw" />
                                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -185,7 +185,7 @@
                         <ext:FieldContainer
                             runat="server"
                             FieldLabel="Time worked"
-                            Layout="HBoxLayout"
+                            Layout="HBox"
                             CombineErrors="false">
                             <Defaults>
                                 <ext:Parameter Name="hideLabel" Value="true" Mode="Raw" />
@@ -212,7 +212,7 @@
                             CombineErrors="true"
                             MsgTarget="Side"
                             FieldLabel="Full Name"
-                            Layout="HBoxLayout">
+                            Layout="HBox">
                             <Defaults>
                                 <ext:Parameter Name="hideLabel" Value="true" Mode="Raw" />
                                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />

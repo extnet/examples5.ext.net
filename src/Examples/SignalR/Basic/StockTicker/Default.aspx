@@ -83,7 +83,7 @@
 
     <ext:Window
         runat="server"
-        Layout="FitLayout"
+        Layout="Fit"
         Icon="Table"
         Title="SignalR Stock Ticker with Ext.NET"
         Closable="false"

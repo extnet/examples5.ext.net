@@ -130,7 +130,7 @@
             gear icon can be used to switch between the two.
         </p>
 
-        <ext:Panel runat="server" Width="650" Layout="FitLayout">
+        <ext:Panel runat="server" Width="650" Layout="Fit">
             <Listeners>
                 <BeforeRender Fn="onBeforeRender" />
             </Listeners>

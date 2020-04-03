@@ -47,7 +47,7 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
                 <ext:Panel
                     runat="server"
@@ -59,7 +59,7 @@
                     MinWidth="175"
                     MaxWidth="400"
                     MarginSpec="5 0 5 5"
-                    Layout="AccordionLayout">
+                    Layout="Accordion">
                     <Items>
                         <ext:Panel
                             runat="server"

@@ -71,7 +71,7 @@
             Title="Company data"
             Width="1000"
             BodyPadding="5"
-            Layout="ColumnLayout">
+            Layout="Column">
 
             <FieldDefaults LabelAlign="Left" MsgTarget="Side" />
 

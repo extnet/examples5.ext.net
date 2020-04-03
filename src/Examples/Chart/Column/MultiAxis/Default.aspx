@@ -87,7 +87,7 @@
             runat="server"
             Width="650"
             Height="500"
-            Layout="FitLayout">
+            Layout="Fit">
             <Items>
                 <ext:CartesianChart
                     ID="Chart1"

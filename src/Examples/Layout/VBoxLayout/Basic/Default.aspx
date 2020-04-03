@@ -36,7 +36,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Viewport runat="server" Layout="BorderLayout">
+    <ext:Viewport runat="server" Layout="Border">
         <Items>
             <ext:Panel
                 ID="btns"
@@ -61,7 +61,7 @@
                 runat="server"
                 Region="Center"
                 MarginSpec="5 5 5 0"
-                Layout="VBoxLayout">
+                Layout="VBox">
                 <LayoutConfig>
                     <ext:VBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
@@ -70,7 +70,7 @@
                         runat="server"
                         BaseCls="x-plain"
                         Height="40"
-                        Layout="HBoxLayout"
+                        Layout="HBox"
                         BodyPadding="10">
                         <Defaults>
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -91,7 +91,7 @@
                         runat="server"
                         BaseCls="x-plain"
                         Height="40"
-                        Layout="HBoxLayout"
+                        Layout="HBox"
                         BodyPaddingSummary="0 10 10">
                         <Defaults>
                             <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -117,7 +117,7 @@
         <ext:Panel
             ID="pnlSpaced"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -137,7 +137,7 @@
         <ext:Panel
             ID="pnlMultiSpaced"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -159,7 +159,7 @@
         <ext:Panel
             ID="pnlAlignTop"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -178,7 +178,7 @@
         <ext:Panel
             ID="pnlAlignMiddle"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -197,7 +197,7 @@
         <ext:Panel
             ID="pnlAlignStretch"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -216,7 +216,7 @@
         <ext:Panel
             ID="pnlAlignStretchMax"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
@@ -235,7 +235,7 @@
         <ext:Panel
             ID="pnlFlexEven"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -254,7 +254,7 @@
         <ext:Panel
             ID="pnlFlexRatio"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -273,7 +273,7 @@
         <ext:Panel
             ID="pnlFlexStretch"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -292,7 +292,7 @@
         <ext:Panel
             ID="pnlPackStart"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -311,7 +311,7 @@
         <ext:Panel
             ID="pnlPackCenter"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />
@@ -330,7 +330,7 @@
         <ext:Panel
             ID="pnlPackEnd"
             runat="server"
-            Layout="VBoxLayout"
+            Layout="VBox"
             BodyPadding="5">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 5 0" Mode="Value" />

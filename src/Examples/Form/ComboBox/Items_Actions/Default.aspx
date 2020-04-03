@@ -95,7 +95,7 @@
 
         <br />
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:Button runat="server" Text="Insert: client side">
                     <Listeners>
@@ -139,7 +139,7 @@
 
         <br />
 
-        <ext:Container runat="server" Layout="HBoxLayout">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:Button runat="server" Text="Insert: client side">
                     <Listeners>
