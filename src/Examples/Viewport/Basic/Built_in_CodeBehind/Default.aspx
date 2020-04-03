@@ -46,7 +46,7 @@
         Panel east = new Panel
         {
             Region = Region.East,
-            Layout = "FitLayout",
+            Layout = "Fit",
             Title = "East",
             Width = 225,
             MinWidth = 225,
@@ -87,7 +87,7 @@
             Region = Region.West,
             Title = "West",
             Width = Unit.Pixel(225),
-            Layout = "AccordionLayout",
+            Layout = "Accordion",
             MinWidth = 225,
             MaxWidth = 400,
             Split = true,
@@ -117,7 +117,7 @@
         // Viewport
         Viewport viewport = new Viewport
         {
-            Layout = "BorderLayout",
+            Layout = "Border",
             Items =
             {
                 center,

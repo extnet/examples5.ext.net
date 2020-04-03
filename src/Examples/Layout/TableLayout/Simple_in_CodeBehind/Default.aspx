@@ -74,7 +74,7 @@
         pnlTableLayout.Items.Add(panel7);
 
         Viewport viewPort1 = new Viewport();
-        viewPort1.Layout = "BorderLayout";
+        viewPort1.Layout = "Border";
         viewPort1.Items.Add(pnlTableLayout);
 
         this.PlaceHolder1.Controls.Add(viewPort1);

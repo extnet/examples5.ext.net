@@ -29,7 +29,7 @@
         pnlSettings.BodyPadding = 6;
         pnlSettings.Icon = Icon.FolderWrench;
         pnlSettings.Html = "Some settings in here";
-        west.Layout = "AccordionLayout";
+        west.Layout = "Accordion";
 
         // Add Navigation and Settings Panels to West Panel
         west.Items.Add(pnlNavigation);
@@ -73,7 +73,7 @@
         east.ID = "EastPanel";
         east.Title = "East";
         east.Width = Unit.Pixel(225);
-        east.Layout = "FitLayout";
+        east.Layout = "Fit";
 
         // Make TabPanel for East Panel
         TabPanel tpEast = new TabPanel();
@@ -158,7 +158,7 @@
         win.BodyBorder = 0;
         win.Collapsible = true;
         win.AnimateTarget = "Button1";
-        win.Layout = "BorderLayout";
+        win.Layout = "Border";
 
         // Add BorderLayout to Window
         win.Items.Add(west);
