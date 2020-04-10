@@ -11,7 +11,7 @@
     <script>
         var renderTopic = function (value, p, record) {
             return Ext.String.format(
-                '<a href="http://sencha.com/forum/showthread.php?p={1}" target="_blank">{0}</a>',
+                '<a href="https://sencha.com/forum/showthread.php?p={1}" target="_blank">{0}</a>',
                 value,
                 record.getId()
             );
@@ -75,7 +75,7 @@
                     PageSize="50">
                     <Proxy>
                         <ext:JsonPProxy
-                            Url="http://www.sencha.com/forum/topics-remote.php"
+                            Url="https://www.sencha.com/forum/topics-remote.php"
                             SimpleSortMode="true"
                             FilterParam="query">
                             <Reader>
