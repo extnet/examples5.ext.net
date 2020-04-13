@@ -10,6 +10,8 @@
     <folder name="GridPanel\FilterHeader\Buffered_Local_Sql" />
   </new>
 
+  <!-- Way too many changed examples, EE became a christmas tree -->
+  <!--
   <updated version="5.2.0">
     <folder name="Chart\Bar\Mixed" />
     <folder name="XRender\UserControl\Lazy_Load" />
@@ -199,6 +201,7 @@
     <folder name="Layout\BorderLayout\Complex_in_CodeBehind" />
     <folder name="GridPanel\Infinite_Scrolling\Remote_Filter" />
   </updated>
+  -->
 
   <!--
   <new version="5.1.0">
