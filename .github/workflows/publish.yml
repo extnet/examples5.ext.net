@@ -1,4 +1,4 @@
-name: "Deploy Examples Explorer v4 to https://examples4.ext.net/"
+name: "Deploy Examples Explorer v4 (https://examples4.ext.net/)"
 
 on:
   push:
