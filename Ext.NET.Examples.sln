@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ext.Net.Examples", "src\Ext.Net.Examples.csproj", "{3E7DEBDF-20A8-4BE7-8BDE-6A42C7AD91C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB37BEEF-31C9-4ABC-BB70-58AC90566C70}"
+	ProjectSection(SolutionItems) = preProject
+		.git-ftp-ignore = .git-ftp-ignore
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C533A8E5-E90E-4E62-BAA2-AD8173C4E63C}
 	EndGlobalSection
 EndGlobal
