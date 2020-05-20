@@ -22,7 +22,7 @@ jobs:
         ftp-root: examples.ext.net/wwwroot
         slack-webhook:  ${{ secrets.SLACK_WEBHOOK }}
         slack-nick: "Examples Explorer Deploy Service"
-        slack-icon: ":ext:"
+        slack-icon: ":extglow:"
 
     - name: Deploy Examples Explorer to https://examples5.ext.net/
       uses: objectdotnet/action-ftp-deploy-then-slack-notification@0.2.0
@@ -34,4 +34,4 @@ jobs:
         ftp-root: examples5.ext.net/wwwroot
         slack-webhook:  ${{ secrets.SLACK_WEBHOOK }}
         slack-nick: "Examples Explorer Deploy Service"
-        slack-icon: ":ext:"
+        slack-icon: ":extglow:"
