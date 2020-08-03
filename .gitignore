@@ -235,5 +235,7 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 
+# Custom
 src/App_Readme/*
 !/src/App_Readme/Ext.Net/
+.DS_Store
