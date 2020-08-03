@@ -119,17 +119,39 @@
                 </Store>
                 <ColumnModel>
                     <Columns>
-                        <ext:Column runat="server" Text="Company" DataIndex="company" Width="200" />
-                        <ext:Column runat="server" Text="Price" DataIndex="price" Width="85">
+                        <ext:Column
+                            runat="server"
+                            Text="Company"
+                            DataIndex="company"
+                            Width="200"
+                            />
+                        <ext:Column
+                            runat="server"
+                            Text="Price"
+                            DataIndex="price"
+                            Width="85">
                             <Renderer Format="UsMoney" />
                         </ext:Column>
-                        <ext:Column runat="server" Text="Change" DataIndex="change" Width="85">
+                        <ext:Column
+                            runat="server"
+                            Text="Change"
+                            DataIndex="change"
+                            Width="85">
                             <Renderer Fn="change" />
                         </ext:Column>
-                        <ext:Column runat="server" Text="Change" DataIndex="pctChange" Width="85">
+                        <ext:Column
+                            runat="server"
+                            Text="Change"
+                            DataIndex="pctChange"
+                            Width="85">
                             <Renderer Fn="pctChange" />
                         </ext:Column>
-                        <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="85" />
+                        <ext:DateColumn
+                            runat="server"
+                            Text="Last Updated"
+                            DataIndex="lastChange"
+                            Width="85"
+                            />
                     </Columns>
                 </ColumnModel>
                 <SelectionModel>

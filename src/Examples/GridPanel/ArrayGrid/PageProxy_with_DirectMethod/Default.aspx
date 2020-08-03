@@ -123,7 +123,13 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="H:mm:ss" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        Format="H:mm:ss"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>

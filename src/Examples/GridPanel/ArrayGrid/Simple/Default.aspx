@@ -102,7 +102,12 @@
         </Store>
         <ColumnModel>
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="company"
+                    Flex="1"
+                    />
                 <ext:Column runat="server" Text="Price" DataIndex="price">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
@@ -112,7 +117,12 @@
                 <ext:Column runat="server" Text="Change" DataIndex="pctChange">
                     <Renderer Fn="pctChange" />
                 </ext:Column>
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="120" />
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="120"
+                    />
             </Columns>
         </ColumnModel>
         <SelectionModel>
@@ -121,7 +131,12 @@
         <BottomBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Button runat="server" Text="Print" Icon="Printer" Handler="this.up('grid').print();" />
+                    <ext:Button
+                        runat="server"
+                        Text="Print"
+                        Icon="Printer"
+                        Handler="this.up('grid').print();"
+                        />
                 </Items>
             </ext:Toolbar>
         </BottomBar>

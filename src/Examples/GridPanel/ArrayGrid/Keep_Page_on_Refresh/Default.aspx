@@ -142,17 +142,40 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="35" />
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="125" DataIndex="lastChange" Format="H:mm:ss" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="125"
+                        DataIndex="lastChange"
+                        Format="H:mm:ss"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
@@ -189,8 +212,18 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Print" Icon="Printer" Handler="this.up('grid').print();" />
-                        <ext:Button runat="server" Text="Print current grid page" Icon="Printer" Handler="this.up('grid').print({currentPageOnly : true});" />
+                        <ext:Button
+                            runat="server"
+                            Text="Print"
+                            Icon="Printer"
+                            Handler="this.up('grid').print();"
+                            />
+                        <ext:Button
+                            runat="server"
+                            Text="Print current grid page"
+                            Icon="Printer"
+                            Handler="this.up('grid').print({currentPageOnly : true});"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
