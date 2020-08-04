@@ -112,7 +112,12 @@
                 <Columns>
                      <ext:WidgetColumn runat="server" Width="105" DataIndex="progress" Text="Button">
                          <Widget>
-                             <ext:SplitButton runat="server" Width="90" Icon="FeedAdd" Handler="Ext.Msg.alert('Button clicked', 'Hey! ' + this.getWidgetRecord().get('name'));" />
+                             <ext:SplitButton
+                                runat="server"
+                                Width="90"
+                                Icon="FeedAdd"
+                                Handler="Ext.Msg.alert('Button clicked', 'Hey! ' + this.getWidgetRecord().get('name'));"
+                                />
                          </Widget>
                      </ext:WidgetColumn>
 
@@ -138,7 +143,12 @@
 
                     <ext:WidgetColumn runat="server" Width="120" DataIndex="progress" Text="Slider">
                         <Widget>
-                            <ext:SliderWidget runat="server" MinValue="0" MaxValue="1" DecimalPrecision="2" Ripple="true">
+                            <ext:SliderWidget
+                                runat="server"
+                                MinValue="0"
+                                MaxValue="1"
+                                DecimalPrecision="2"
+                                Ripple="true">
                                 <Listeners>
                                     <Change Handler="if (this.getWidgetRecord) {var rec = this.getWidgetRecord(); if (rec) { rec.set('progress', newValue);}}" />
                                 </Listeners>

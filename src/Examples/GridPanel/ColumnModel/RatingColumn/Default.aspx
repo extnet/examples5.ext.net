@@ -70,10 +70,31 @@
         </Store>
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
-                <ext:RatingColumn runat="server" Text="Rating" DataIndex="rating1" />
-                <ext:RatingColumn runat="server" Text="Editable" DataIndex="rating2" RoundToTick="false" Editable="true" />
-                <ext:RatingColumn runat="server" Text="Custom" DataIndex="rating3" SelectedCls="number-selected" UnselectedCls="number-unselected" />
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="company"
+                    Flex="1"
+                    />
+                <ext:RatingColumn
+                    runat="server"
+                    Text="Rating"
+                    DataIndex="rating1"
+                    />
+                <ext:RatingColumn
+                    runat="server"
+                    Text="Editable"
+                    DataIndex="rating2"
+                    RoundToTick="false"
+                    Editable="true"
+                    />
+                <ext:RatingColumn
+                    runat="server"
+                    Text="Custom"
+                    DataIndex="rating3"
+                    SelectedCls="number-selected"
+                    UnselectedCls="number-unselected"
+                    />
             </Columns>
         </ColumnModel>
     </ext:GridPanel>
