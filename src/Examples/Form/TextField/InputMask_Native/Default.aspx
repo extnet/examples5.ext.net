@@ -2,11 +2,6 @@
 <!DOCTYPE html>
 
 <script runat="server">
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-
     protected void HandleBtnClick(object sender, DirectEventArgs e)
     {
         TextField1.InputMask.SetPattern("99/99/9999");
@@ -22,6 +17,7 @@
     <script type="text/javascript">
         var toggleInputMask = function () {
             var newPattern = '(999) 999-9999';
+
             if (App.TextField1.inputMask.getPattern() == newPattern) {
                 newPattern = '(99) 9999-9999';
             };
@@ -36,6 +32,7 @@
         <ext:ResourceManager runat="server" />
 
         <h1>Native Input Mask</h1>
+
         <p>The Native InputMask is a TextField feature, used to add an input mask to the field.</p>
         <p>It has been introduced in Ext.NET 4.5 (ExtJS 6.5.2) and is a simpler approach to the InputMask plugin.</p>
 
