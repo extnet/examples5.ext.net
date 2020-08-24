@@ -219,7 +219,6 @@ body {
 #TriggerField1-inputEl {
     background-color: #6fb0e9;
     color: #fff;
-    font-weight: bold;
     padding-right: 30px;
     -webkit-transition: all 0.25s ease-in-out;
          -o-transition: all 0.25s ease-in-out;
@@ -381,7 +380,7 @@ body {
     -----------------------------------------------------------------------------------------------*/
 
 .left-header {
-    background-color: #5fa2dd;
+    background-color: #1989ff;
 }
 
 
@@ -634,7 +633,7 @@ td.alt2{
 }
 
 .x-tab-bar-default-top > .x-tab-bar-body-default {
-    padding: 8px 4px 0 0;
+    padding: 0 4px 0 0;
 }
 
 
@@ -670,7 +669,6 @@ td.alt2{
 }
 
 #exampleTree-body {
-    padding-top: 7px;
     padding-bottom: 7px;
 }
 
