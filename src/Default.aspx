@@ -367,13 +367,14 @@
                                                                         ID="SearchByTitles"
                                                                         runat="server"
                                                                         Checked="true"
-                                                                        Text="Titles" />
-
+                                                                        Text="Titles"
+                                                                        />
                                                                     <ext:CheckMenuItem
                                                                         ID="SearchByTags"
                                                                         runat="server"
                                                                         Checked="true"
-                                                                        Text="Tags" />
+                                                                        Text="Tags"
+                                                                        />
                                                                 </Items>
                                                             </ext:Menu>
                                                         </Menu>
