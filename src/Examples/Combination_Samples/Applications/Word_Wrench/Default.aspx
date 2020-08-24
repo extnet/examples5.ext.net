@@ -140,10 +140,9 @@
                             runat="server"
                             Title="Word Wrench"
                             Icon="Wrench"
-                            MarginSpec="5 5 5 5"
-                            Flex="2"
+                            Flex="8"
                             Layout="Fit"
-                            BodyBorder="0">
+                            BodyPadding="20">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
@@ -160,18 +159,17 @@
                                     ID="TextArea1"
                                     runat="server"
                                     EmptyText="[Paste Text Here] and Text Wrench will find words."
-                                    AutoUpdateData="true" />
+                                    AutoUpdateData="true"
+                                    />
                             </Items>
                         </ext:Panel>
                         <ext:FormPanel
                             ID="frmSettings"
                             runat="server"
                             Title="Settings"
-                            Flex="1"
+                            Flex="4"
                             Icon="Cog"
-                            Split="true"
-                            BodyPadding="5"
-                            MarginSpec="5 5 5 0"
+                            BodyPadding="20"
                             DefaultAnchor="100%"
                             Layout="VBox">
                             <LayoutConfig>
@@ -191,7 +189,7 @@
                                 </ext:Toolbar>
                             </TopBar>
                             <Items>
-                                <ext:Container runat="server" Height="55" Layout="HBox">
+                                <ext:Container runat="server" Flex="1" Layout="HBox">
                                     <LayoutConfig>
                                         <ext:HBoxLayoutConfig Align="Stretch" />
                                     </LayoutConfig>
@@ -209,7 +207,8 @@
                                                     FieldLabel="Text Pattern"
                                                     Text="a-zA-Z"
                                                     AllowBlank="false"
-                                                    AutoUpdateData="true" />
+                                                    AutoUpdateData="true"
+                                                    />
                                                 <ext:NumberField
                                                     ID="intRecordLimit"
                                                     runat="server"
@@ -218,7 +217,8 @@
                                                     MinValue="1"
                                                     MaxValue="999"
                                                     AllowDecimals="false"
-                                                    AutoUpdateData="true" />
+                                                    AutoUpdateData="true"
+                                                    />
                                             </Items>
                                         </ext:Container>
                                         <ext:Container
@@ -226,7 +226,6 @@
                                             Flex="1"
                                             Layout="Anchor"
                                             DefaultAnchor="100%"
-                                            MarginSpec="0 0 0 12"
                                             DefaultLabelAlign="right"
                                             DefaultLabelWidth="85">
                                             <Items>
@@ -234,22 +233,24 @@
                                                     ID="txtPrefixPattern"
                                                     runat="server"
                                                     FieldLabel="Prefix"
-                                                    AutoUpdateData="true" />
+                                                    AutoUpdateData="true"
+                                                    />
                                                 <ext:TextField
                                                     ID="txtSuffixPattern"
                                                     runat="server"
                                                     FieldLabel="Suffix"
-                                                    AutoUpdateData="true" />
+                                                    AutoUpdateData="true"
+                                                    />
                                             </Items>
                                         </ext:Container>
                                     </Items>
                                 </ext:Container>
                                 <ext:FieldContainer
                                     runat="server"
-                                    Height="30"
                                     FieldLabel="Text Length"
                                     Layout="HBox"
-                                    LabelWidth="85">
+                                    LabelWidth="85"
+                                    Anchor="100%">
                                     <Defaults>
                                         <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
                                     </Defaults>
@@ -257,49 +258,53 @@
                                         <ext:NumberField
                                             ID="intMinWordLength"
                                             runat="server"
-                                            Width="60"
+                                            Width="80"
                                             Number="3"
                                             MinValue="1"
                                             MaxValue="99"
                                             AllowDecimals="false"
                                             AllowBlank="false"
                                             AutoUpdateData="true" />
-                                        <ext:DisplayField runat="server" Text="Min" Width="17" />
+                                        <ext:DisplayField runat="server" Text="Min" Width="60" />
                                         <ext:NumberField
                                             ID="intMaxWordLength"
                                             runat="server"
-                                            Width="60"
+                                            Width="80"
                                             Number="20"
                                             MinValue="1"
                                             MaxValue="99"
                                             AllowDecimals="false"
                                             AllowBlank="false"
-                                            AutoUpdateData="true" />
-                                        <ext:DisplayField runat="server" Text="Max" Width="17" />
+                                            AutoUpdateData="true"
+                                            />
+                                        <ext:DisplayField runat="server" Text="Max" Width="60" />
                                     </Items>
                                 </ext:FieldContainer>
-                                <ext:Container runat="server" Height="75">
+                                <ext:Container runat="server" Layout="HBoxLayout">
                                     <Items>
                                         <ext:Checkbox
                                             ID="chkAllowIntegerPrefix"
                                             runat="server"
                                             BoxLabel="Allow Integer Prefix"
                                             AutoUpdateData="true"
-                                            Flex="1" />
+                                            Flex="1"
+                                            />
                                         <ext:Checkbox
                                             ID="chkAllowIntegers"
                                             runat="server"
                                             Checked="true"
                                             BoxLabel="Allow Integers"
                                             AutoUpdateData="true"
-                                            Flex="1" />
+                                            Flex="1"
+                                            />
                                         <ext:Checkbox
                                             ID="chkIgnoreCase"
                                             runat="server"
                                             Checked="true"
                                             BoxLabel="Ignore Case"
                                             AutoUpdateData="true"
-                                            Flex="1" />
+                                            Flex="1"
+                                            />
                                     </Items>
                                 </ext:Container>
                                 <ext:TextArea
@@ -309,14 +314,16 @@
                                     FieldLabel="Exclusion Words"
                                     LabelAlign="Top"
                                     Text="and the were with was are for that this"
-                                    AutoUpdateData="true" />
+                                    AutoUpdateData="true"
+                                    />
                                 <ext:TextArea
                                     ID="txtPattern"
                                     runat="server"
                                     Flex="1"
                                     FieldLabel="Regex Pattern (Auto Generated)"
                                     LabelAlign="Top"
-                                    ReadOnly="true" />
+                                    ReadOnly="true"
+                                    />
                             </Items>
                         </ext:FormPanel>
                     </Items>
@@ -325,7 +332,6 @@
                     ID="Container1"
                     runat="server"
                     Region="South"
-                    Split="true"
                     Height="350"
                     Layout="HBox">
                     <LayoutConfig>
@@ -354,7 +360,7 @@
                             ID="Chart1"
                             runat="server"
                             Shadow="true"
-                            Flex="6"
+                            Flex="8"
                             StoreID="Store1">
                             <Axes>
                                 <ext:NumericAxis
@@ -396,7 +402,6 @@
                             runat="server"
                             Title="Words"
                             Flex="2"
-                            MarginSpec="0 5 5 5"
                             StoreID="Store1">
                             <ColumnModel>
                                 <Columns>
@@ -410,8 +415,7 @@
                             Title="Raw Data"
                             Layout="Fit"
                             BodyPadding="5"
-                            MarginSpec="0 0 5 0"
-                            Flex="1">
+                            Flex="2">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
@@ -434,8 +438,7 @@
                                     StoreID="Store1"
                                     Scrollable="Both"
                                     Flex="1"
-                                    ItemSelector="div"
-                                    MarginSpec="5">
+                                    ItemSelector="div">
                                     <Tpl runat="server">
                                         <Html>
                                             <tpl for=".">
