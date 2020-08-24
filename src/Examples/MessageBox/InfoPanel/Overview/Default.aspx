@@ -12,6 +12,7 @@
 
             switch (curTheme.Theme)
             {
+                case Ext.Net.Theme.Spotless:
                 case Ext.Net.Theme.Triton:
                     Window1.Width = 310;
                     Window1.Height = 556;

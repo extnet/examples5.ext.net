@@ -11,7 +11,7 @@
     <ext:ResourceManager runat="server" Theme="Gray" />
 
     <p>The example is designed for the classic themes - Gray and Blue.</p>
-    <p>It might require adjusting for other themes like Crisp, Neptune or Triton.</p>
+    <p>It might require adjusting for other themes such as Crisp, Neptune, Triton, or Spotless.</p>
 
     <h2>Vertical Flat Toolbar</h2>
 

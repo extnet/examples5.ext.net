@@ -3,7 +3,7 @@
 <script runat="server">
     protected void Button_Click(object sender, DirectEventArgs e)
     {
-       X.Msg.Alert("DirectEvent", string.Format("Item - {0}", e.ExtraParams["Item"])).Show();
+        X.Msg.Alert("DirectEvent", string.Format("Item - {0}", e.ExtraParams["Item"])).Show();
     }
 </script>
 

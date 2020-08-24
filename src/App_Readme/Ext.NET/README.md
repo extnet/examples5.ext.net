@@ -1,7 +1,7 @@
 | Product | Ext.NET Enterprise |
 | :---- | :---- |
 | Release Date | 2020-04-13 |
-| Current Version | 5.2.0 |
+| Current Version | 5.3.0 |
 | Issue Tracker | [Ext.NET](https://github.com/extnet/Ext.NET/issues) on GitHub |
 
 ## Contents
@@ -49,7 +49,7 @@ See [CHANGELOG.md](https://github.com/extnet/Premium/blob/master/CHANGELOG.md), 
     <section name="extnet" type="Ext.Net.GlobalConfig" requirePermission="false" />
   </configSections>
 
-  <extnet theme="Triton" licenseKey="** Ext.NET LICENSE KEY HERE **" initScriptMode="Linked" />
+  <extnet theme="Spotless" licenseKey="** Ext.NET LICENSE KEY HERE **" initScriptMode="Linked" />
   
   <system.web>
     <!-- This httpHandlers config only required if using IIS6 (or lower) -->
@@ -195,7 +195,7 @@ Official Ext JS [browser support](http://docs.sencha.com/extjs/6.2.1/guides/supp
 | sourceFormatting | bool | Specifies whether the Ext.NET initializaztion script rendered to the page should be formatted. 'True' = formatted/non-minified, 'False' = minified/compressed. Default is 'False'. Options include [`True` \| `False`] |
 | stateProvider | StateProvider | Specifies the current state provider to maintain the controls' state. Default is `PostBack`. Options include [`PostBack` \| `Cookie` \| `None`] |
 | submitDisabled | bool | If `False` then disabled fields will not be submitted. Default is 'False'. Options include [`True` \| `False`] |
-| theme | Theme | Specifies the embedded theme to use. Default is `Default` (blue theme). Options include [`Aria` \| `Crisp` \| `CrispTouch` \| `Default` \| `Gray` \| `Neptune` \| `NeptuneTouch` \| `Triton` \| `None`] |
+| theme | Theme | Specifies the embedded theme to use. Default is `Default` (blue theme). Options include [`Aria` \| `Crisp` \| `CrispTouch` \| `Default` \| `Gray` \| `Neptune` \| `NeptuneTouch` \| `Spotless` \| `Triton` \| `None`] |
 | themePath | string | Configure the path to the custom theme .css and .js (if required) file globally across the entire application. This will override any `.Theme` setting. You can specify several files by delimiting them with `|`. For example, `some.css|another.css|some.js|another.js`. Regularly, you will need to specify the only .css file, for example, `some.css` or two files - one .css and one .js - `some.js|some.css`. Default is `""`. |
 | quickTips | bool | Specifies whether to render the QuickTips. Provides attractive and customizable tooltips for any element. Default is 'True'. Options include [`True` \| `False`] |
 

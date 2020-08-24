@@ -20,7 +20,7 @@
     </script>
 </head>
 <body class="welcome">
-    <ext:ResourceManager runat="server" Theme="Triton" />
+    <ext:ResourceManager runat="server" Theme="Spotless" />
 
     <ext:Container runat="server">
         <Content>

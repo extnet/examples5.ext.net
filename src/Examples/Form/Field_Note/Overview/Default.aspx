@@ -12,6 +12,7 @@
 
         switch (curTheme.Theme)
         {
+            case Ext.Net.Theme.Spotless:
             case Ext.Net.Theme.Triton:
             case Ext.Net.Theme.CrispTouch:
                 FormPanel1.Width = 270;

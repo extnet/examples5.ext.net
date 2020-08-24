@@ -17,6 +17,7 @@
 
             switch (curTheme.Theme)
             {
+                case Ext.Net.Theme.Spotless:
                 case Ext.Net.Theme.Triton:
                     // For this one the value specified in markup is good.
                     break;

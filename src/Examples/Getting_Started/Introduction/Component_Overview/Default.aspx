@@ -7,7 +7,7 @@
         {
             this.Store1.DataSource = this.TestData;
 
-            Theme theme = Ext.Net.Theme.Triton;
+            Theme theme = Ext.Net.Theme.Spotless;
 
             if (this.Session["Ext.Net.Theme"] != null)
             {

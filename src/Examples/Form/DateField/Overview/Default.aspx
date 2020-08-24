@@ -17,6 +17,7 @@
                     Container1.Width = 580;
                     break;
                 case Ext.Net.Theme.Triton:
+                case Ext.Net.Theme.Spotless:
                     Container1.Width = 640;
                     break;
                 case Ext.Net.Theme.CrispTouch:

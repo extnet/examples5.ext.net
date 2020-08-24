@@ -18,6 +18,7 @@
                 case Ext.Net.Theme.Neptune:
                 case Ext.Net.Theme.NeptuneTouch:
                 case Ext.Net.Theme.Triton:
+                case Ext.Net.Theme.Spotless:
                     break;
                 case Ext.Net.Theme.Graphite:
                 case Ext.Net.Theme.Material:

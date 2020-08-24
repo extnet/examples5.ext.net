@@ -13,7 +13,7 @@
         {
             this.ResourceManager1.DirectEventUrl = "/";
 
-            Theme theme = Ext.Net.Theme.Triton;
+            Theme theme = Ext.Net.Theme.Spotless;
 
             if (this.Session["Ext.Net.Theme"] != null)
             {
@@ -133,7 +133,7 @@
     </script>
 </head>
 <body>
-    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Triton" />
+    <ext:ResourceManager ID="ResourceManager1" runat="server" Theme="Spotless" />
 
     <ext:History runat="server">
         <Listeners>
@@ -179,7 +179,7 @@
                 </Items>
             </ext:Container>
 
-            <ext:Panel
+            <ext:Container
                 runat="server"
                 Header="false"
                 Region="North"
@@ -224,7 +224,7 @@
                         </nav>
                     </header>
                 </Content>
-            </ext:Panel>
+            </ext:Container>
             <ext:Panel
                 ID="rightnav"
                 runat="server"
@@ -272,7 +272,7 @@
                     <a href="https://ext.net/store/" class="button button-success button-block button-sidebar-right">Get Ext.NET</a>
                 </Content>
             </ext:Panel>
-            <ext:Panel
+            <ext:Container
                 runat="server"
                 Region="West"
                 Layout="Fit"
@@ -421,7 +421,7 @@
                         </Listeners>
                     </ext:TreePanel>
                 </Items>
-            </ext:Panel>
+            </ext:Container>
             <ext:TabPanel
                 ID="ExampleTabs"
                 runat="server"

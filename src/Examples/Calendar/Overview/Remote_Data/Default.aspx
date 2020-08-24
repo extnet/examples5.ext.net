@@ -20,6 +20,7 @@
                     DatePickPanel.Width = 282;
                     break;
                 case Ext.Net.Theme.Triton:
+                case Ext.Net.Theme.Spotless:
                     DatePickPanel.Width = 310;
                     break;
                 case Ext.Net.Theme.Gray:

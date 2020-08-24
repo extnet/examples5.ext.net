@@ -77,7 +77,7 @@
         #region Set up font awesome if the current theme does not natively supports it.
         var manager = Ext.Net.ResourceManager.GetInstance(HttpContext.Current);
         var theme = manager.Theme;
-        if (theme != Ext.Net.Theme.None && theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Material)
+        if (theme != Ext.Net.Theme.None && theme != Ext.Net.Theme.Triton && theme != Ext.Net.Theme.Material && theme != Ext.Net.Theme.Spotless)
         {
     %>
     <link href="/resources/font-awesome-5-free/css/solid.min.css" rel="stylesheet" />

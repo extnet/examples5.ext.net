@@ -17,6 +17,7 @@
                 case Ext.Net.Theme.Aria:
                     Window1.Height = 555;
                     break;
+                case Ext.Net.Theme.Spotless:
                 case Ext.Net.Theme.Triton:
                 case Ext.Net.Theme.CrispTouch:
                     Window1.Width = 665;
