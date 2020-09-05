@@ -37,13 +37,13 @@
 
         <h1>Show a Hidden Window</h1>
 
-        <p>This sample demonstrates several client-side and server-side techniques for triggering the &lt;ext:Window> to "show" if hidden.</p>
+        <p>This sample demonstrates several client-side and server-side techniques for triggering the <code>&lt;ext:Window></code> to show if hidden.</p>
 
-        <p>Within server-side code, the .Show() Method should be used. Within client-side code, the .show() function should be used.</p>
+        <p>Within server-side code, the <code>.Show()</code> Method should be used. Within client-side code, the <code>.show()</code> function should be used.</p>
 
         <h2>Example</h2>
 
-        <h3>ext:Button's</h3>
+        <h3>Ext.NET Buttons</h3>
 
         <p>
             <ext:Button
@@ -76,7 +76,7 @@
 
         <br />
 
-        <h3>asp:Button's</h3>
+        <h3>ASP.NET Buttons</h3>
 
         <br />
         <br />
@@ -111,9 +111,10 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Icon="House"
             Title="With PostBack"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="250"
             Y="100"
             />
@@ -121,9 +122,10 @@
         <ext:Window
             ID="Window2"
             runat="server"
-            Icon="House"
             Title="Click Listener"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="275"
             Y="150"
             />
@@ -131,9 +133,10 @@
         <ext:Window
             ID="Window3"
             runat="server"
-            Icon="House"
             Title="Click DirectEvent"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="300"
             Y="200"
             />
@@ -141,9 +144,10 @@
         <ext:Window
             ID="Window4"
             runat="server"
-            Icon="House"
             Title="ASP.NET Button with OnClientClick"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="325"
             Y="250"
             />
@@ -151,9 +155,10 @@
         <ext:Window
             ID="Window5"
             runat="server"
-            Icon="House"
             Title="ASP.NET Button with Custom DirectEvent"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="350"
             Y="300"
             />
@@ -161,9 +166,10 @@
         <ext:Window
             ID="Window6"
             runat="server"
-            Icon="House"
             Title="ASP.NET Button with Custom Listener"
             Hidden="true"
+            Width="350"
+            Height="185"
             X="375"
             Y="350"
             />
