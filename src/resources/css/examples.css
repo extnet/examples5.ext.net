@@ -1,6 +1,23 @@
-﻿html body {
-    padding: 20px;
-    font-family: 'OpenSansRegular';
+﻿/*  Fonts
+    -----------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Poppins;
+    font-weight: "400";
+    font-style: normal;
+    src: local("Poppins Regular"), local("Poppins-Regular"), url(/resources/fonts/Poppins-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: normal;
+    src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url(/resources/fonts/Poppins-SemiBold.ttf) format("truetype")
+}
+
+html body {
+    padding: 30px;
+    font-family: Poppins, sans-serif;
     color: #222222;
     font-size: 15px;
 }
@@ -14,27 +31,32 @@ blockquote {
     padding-left: 30px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    color: #1f1f26;
+    line-height: 1.2;
+}
+
 h1 {
-    margin-top: 0;
-    margin-bottom : 20px;
-    font-family: 'TitilliumText25L400wt';
-    font-size: 40px;
-    font-weight: normal;
-    line-height: normal;
-    -webkit-transform : rotate(-0.0000000001deg);
+    font-size: 36px;
+    margin-bottom: 50px;
 }
 
 h2 {
-    margin-bottom: 20px;
-    margin-top: 35px;
-    font-size: 20px;
-    font-family: 'TitilliumText25L400wt';
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 h3 {
-    margin: 12px 0px;
-    font-family: 'TitilliumText25L400wt';
-    font-size: 12px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 li ol li {
@@ -181,78 +203,6 @@ ol.expanded {
 .doc-optional {
     font-family: Consolas, monospace;
 }
-
-
-/*  Fonts
-    -----------------------------------------------------------------------------------------------*/
-
-@font-face {
-    font-family: 'TitilliumText25L400wt';
-    src: url('../fonts/TitilliumText25L003-webfont.eot');
-    src: url('../fonts/TitilliumText25L003-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/TitilliumText25L003-webfont.woff') format('woff'),
-         url('../fonts/TitilliumText25L003-webfont.ttf') format('truetype'),
-         url('../fonts/TitilliumText25L003-webfont.svg#TitilliumText25L400wt') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TitilliumText25L1wt';
-    src: url('../fonts/TitilliumText25L005-webfont.eot');
-    src: url('../fonts/TitilliumText25L005-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/TitilliumText25L005-webfont.woff') format('woff'),
-         url('../fonts/TitilliumText25L005-webfont.ttf') format('truetype'),
-         url('../fonts/TitilliumText25L005-webfont.svg#TitilliumText25L1wt') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'OpenSansRegular';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansLight';
-    src: url('../fonts/OpenSans-Light-webfont.eot');
-    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansSemibold';
-    src: url('../fonts/OpenSans-Semibold-webfont.eot');
-    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'OpenSansItalic';
-    src: url('../fonts/OpenSans-Italic-webfont.eot');
-    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 /*  Aria theme specific styles
     -----------------------------------------------------------------------------------------------*/

@@ -1326,6 +1326,8 @@
     <Content Include="resources\font-awesome-5-free\webfonts\fa-solid-900.ttf" />
     <Content Include="resources\font-awesome-5-free\webfonts\fa-solid-900.woff" />
     <Content Include="resources\font-awesome-5-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="resources\fonts\Poppins-Regular.ttf" />
+    <Content Include="resources\fonts\Poppins-SemiBold.ttf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
