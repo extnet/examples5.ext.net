@@ -157,13 +157,15 @@
                     <ext:Component
                         Cls="redirect-overlay-body"
                         runat="server"
-                        Html="<p>Looks like you are browsing from a phone or a tablet device. Would you like to redirect to Ext.NET Mobile examples?</p>"/>
+                        Html="<p>Looks like you are browsing from a phone or a tablet device. Would you like to redirect to Ext.NET Mobile examples?</p>"
+                        />
 
                     <ext:Button
                         runat="server"
                         Text="Redirect"
                         Flex="1"
-                        Handler="onRedirect" />
+                        Handler="onRedirect"
+                        />
 
                     <ext:Button
                         runat="server"
@@ -175,7 +177,8 @@
                         ID="RememberCheckbox"
                         Cls="remember-me"
                         runat="server"
-                        BoxLabel="Remember my choice" />
+                        BoxLabel="Remember my choice"
+                        />
                 </Items>
             </ext:Container>
 
@@ -285,6 +288,7 @@
                         ID="exampleTree"
                         runat="server"
                         Header="false"
+                        Rounded="false"
                         Scrollable="Both"
                         Lines="false"
                         UseArrows="true"
@@ -428,6 +432,7 @@
                 runat="server"
                 Region="Center"
                 MarginSpec="0"
+                Rounded="false"
                 Cls="tabs"
                 MinTabWidth="115">
                 <Items>
