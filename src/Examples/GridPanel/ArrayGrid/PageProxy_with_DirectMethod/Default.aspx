@@ -86,8 +86,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Array Grid"
-            Width="700"
-            Height="310">
+            Width="960"
+            Height="720">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

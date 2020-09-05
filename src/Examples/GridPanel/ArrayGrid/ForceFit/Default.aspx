@@ -85,10 +85,10 @@
     <ext:Window
         runat="server"
         Title="Force fit grid - columns will always fit"
-        Width="600"
-        Height="400"
-        MinWidth="300"
-        MinHeight="200"
+        Width="960"
+        Height="720"
+        MinWidth="480"
+        MinHeight="320"
         Layout="Fit">
         <Items>
             <ext:GridPanel

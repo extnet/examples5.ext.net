@@ -171,8 +171,8 @@
         runat="server"
         Title="Dynamic GridPanel"
         Layout="Fit"
-        Height="350"
-        Width="600">
+        Height="720"
+        Width="960">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>

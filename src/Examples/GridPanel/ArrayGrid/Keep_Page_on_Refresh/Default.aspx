@@ -123,7 +123,7 @@
             ID="GridPanel1"
             runat="server"
             Title="Array Grid"
-            Width="800">
+            Width="960">
             <Store>
                 <ext:Store ID="Store1" runat="server" OnReadData="MyData_Refresh" PageSize="10">
                     <Model>

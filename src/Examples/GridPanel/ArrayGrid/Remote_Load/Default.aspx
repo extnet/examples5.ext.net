@@ -81,8 +81,8 @@
         <ext:Panel
             runat="server"
             Title="Example"
-            Width="600"
-            Height="350"
+            Width="960"
+            Height="720"
             Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
