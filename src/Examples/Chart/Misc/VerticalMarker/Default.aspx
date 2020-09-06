@@ -52,7 +52,7 @@
         <ext:Panel
             runat="server"
             Title="Chart with VerticalMarker"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <Items>
@@ -100,7 +100,7 @@
         <ext:Panel
             runat="server"
             Title="VerticalMarker with Snap and multiple series"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <Items>

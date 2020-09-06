@@ -56,8 +56,8 @@
         <ext:Panel
             runat="server"
             Title="Customer Details"
-            Width="350"
-            BodyPadding="10"
+            Width="360"
+            BodyPadding="18"
             Layout="Anchor"
             DefaultAnchor="-30"
             ModelValidation="true"

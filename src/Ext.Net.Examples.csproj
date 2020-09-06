@@ -1262,13 +1262,6 @@
     <Content Include="resources\font-awesome-5-free\webfonts\fa-regular-400.svg" />
     <Content Include="resources\font-awesome-5-free\webfonts\fa-solid-900.svg" />
     <Content Include="resources\fonts\fontawesome-webfont.svg" />
-    <Content Include="resources\fonts\LICENSE_TITILLIUMTEXT.txt" />
-    <Content Include="resources\fonts\OpenSans-Italic-webfont.svg" />
-    <Content Include="resources\fonts\OpenSans-Light-webfont.svg" />
-    <Content Include="resources\fonts\OpenSans-Regular-webfont.svg" />
-    <Content Include="resources\fonts\OpenSans-Semibold-webfont.svg" />
-    <Content Include="resources\fonts\TitilliumText25L003-webfont.svg" />
-    <Content Include="resources\fonts\TitilliumText25L005-webfont.svg" />
     <Content Include="resources\icons\asterisk_orange.png" />
     <Content Include="resources\icons\pencil.png" />
     <Content Include="resources\images\404.png" />
@@ -1364,24 +1357,6 @@
     <None Include="resources\fonts\fontawesome-webfont.eot" />
     <None Include="resources\fonts\fontawesome-webfont.ttf" />
     <None Include="resources\fonts\fontawesome-webfont.woff" />
-    <None Include="resources\fonts\OpenSans-Italic-webfont.eot" />
-    <None Include="resources\fonts\OpenSans-Italic-webfont.ttf" />
-    <None Include="resources\fonts\OpenSans-Italic-webfont.woff" />
-    <None Include="resources\fonts\OpenSans-Light-webfont.eot" />
-    <None Include="resources\fonts\OpenSans-Light-webfont.ttf" />
-    <None Include="resources\fonts\OpenSans-Light-webfont.woff" />
-    <None Include="resources\fonts\OpenSans-Regular-webfont.eot" />
-    <None Include="resources\fonts\OpenSans-Regular-webfont.ttf" />
-    <None Include="resources\fonts\OpenSans-Regular-webfont.woff" />
-    <None Include="resources\fonts\OpenSans-Semibold-webfont.eot" />
-    <None Include="resources\fonts\OpenSans-Semibold-webfont.ttf" />
-    <None Include="resources\fonts\OpenSans-Semibold-webfont.woff" />
-    <None Include="resources\fonts\TitilliumText25L003-webfont.eot" />
-    <None Include="resources\fonts\TitilliumText25L003-webfont.ttf" />
-    <None Include="resources\fonts\TitilliumText25L003-webfont.woff" />
-    <None Include="resources\fonts\TitilliumText25L005-webfont.eot" />
-    <None Include="resources\fonts\TitilliumText25L005-webfont.ttf" />
-    <None Include="resources\fonts\TitilliumText25L005-webfont.woff" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Code\Northwind\Northwind.dbml.layout">

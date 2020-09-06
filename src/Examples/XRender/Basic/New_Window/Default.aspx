@@ -7,9 +7,9 @@
         {
             ID = "Window1",
             Title = "Example",
-            Height = 185,
-            Width = 350,
-            BodyPadding = 5,
+            Height = 270,
+            Width = 480,
+            BodyPadding = 18,
             Modal = true,
             CloseAction = CloseAction.Destroy,
             Html = "A new Window  was created at: " + DateTime.Now.ToLongTimeString()
@@ -36,7 +36,7 @@
             ID="Button1"
             runat="server"
             Text="Add Window"
-            Icon="Add"
+            IconCls="x-md md-icon-add-box"
             OnDirectClick="Button1_Click"
             />
     </form>

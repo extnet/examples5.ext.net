@@ -99,7 +99,7 @@
                 ID="TreePanel1"
                 runat="server"
                 Border="false"
-                Height="300"
+                Height="480"
                 Width="250"
                 UseArrows="true"
                 Animate="true">
@@ -130,7 +130,7 @@
             <ext:TreePanel
                 ID="TreePanel2"
                 runat="server"
-                Height="300"
+                Height="480"
                 Width="250"
                 Border="false"
                 UseArrows="true"

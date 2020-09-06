@@ -132,16 +132,16 @@
       &lt;!--MVC 5-->
       &lt;!--
       &lt;dependentAssembly>
-        &lt;assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35"/>
-        &lt;bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0"/>
+        &lt;assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
+        &lt;bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
       &lt;/dependentAssembly>
       &lt;dependentAssembly>
-        &lt;assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35"/>
-        &lt;bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0"/>
+        &lt;assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
+        &lt;bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
       &lt;/dependentAssembly>
       &lt;dependentAssembly>
-        &lt;assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35"/>
-        &lt;bindingRedirect oldVersion="1.0.0.0-5.2.2.0" newVersion="5.2.2.0"/>
+        &lt;assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        &lt;bindingRedirect oldVersion="1.0.0.0-5.2.2.0" newVersion="5.2.2.0" />
       &lt;/dependentAssembly>
       -->
     &lt;/assemblyBinding>

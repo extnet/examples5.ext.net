@@ -88,7 +88,7 @@
             runat="server"
             StoreID="Store1"
             Title="Grid"
-            Width="600"
+            Width="960"
             Height="250">
             <ColumnModel runat="server">
                 <Columns>
@@ -104,7 +104,7 @@
             runat="server"
             StoreID="Store2"
             Title="Grid"
-            Width="600"
+            Width="960"
             Height="250">
             <ColumnModel runat="server">
                 <Columns>

@@ -63,7 +63,7 @@
             runat="server"
             Width="785"
             Title="Example"
-            BodyPadding="6">
+            BodyPadding="18">
             <Items>
                 <ext:TextField
                     ID="Field1"

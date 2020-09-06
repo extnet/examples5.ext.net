@@ -88,7 +88,7 @@
         Title="SignalR Stock Ticker with Ext.NET"
         Closable="false"
         Width="675"
-        Height="300"
+        Height="480"
         Border="false">
         <Items>
             <ext:SignalRGridPanel ID="GridPanel1" runat="server" />

@@ -103,8 +103,8 @@
             ID="FormPanel1"
             runat="server"
             Title="Data binding"
-            Width="600"
-            BodyPadding="10"
+            Width="960"
+            BodyPadding="18"
             DefaultAnchor="100%">
             <Items>
                 <ext:TextField

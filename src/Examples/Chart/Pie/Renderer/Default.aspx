@@ -36,7 +36,7 @@
         <ext:Panel
             runat="server"
             Title="Pie Renderer Chart"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <TopBar>

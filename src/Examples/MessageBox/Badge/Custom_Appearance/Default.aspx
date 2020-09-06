@@ -68,7 +68,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Container runat="server" Layout="Column" Width="700">
+    <ext:Container runat="server" Layout="Column" Width="720">
         <Defaults>
             <ext:Parameter Name="width" Value="150" />
             <ext:Parameter Name="height" Value="75" />

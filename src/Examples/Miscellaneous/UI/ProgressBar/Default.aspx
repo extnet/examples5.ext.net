@@ -49,35 +49,35 @@
 
         <h3>ProgressBar UI</h3>
 
-        <ext:ProgressBar runat="server" Width="300" UI="Primary">
+        <ext:ProgressBar runat="server" Width="480" UI="Primary">
             <Listeners>
                 <AfterRender Fn="runProgressbar" />
             </Listeners>
         </ext:ProgressBar>
         <br />
 
-        <ext:ProgressBar runat="server" Width="300" UI="Success">
+        <ext:ProgressBar runat="server" Width="480" UI="Success">
             <Listeners>
                 <AfterRender Fn="runProgressbar" />
             </Listeners>
         </ext:ProgressBar>
         <br />
 
-        <ext:ProgressBar runat="server" Width="300" UI="Info">
+        <ext:ProgressBar runat="server" Width="480" UI="Info">
             <Listeners>
                 <AfterRender Fn="runProgressbar" />
             </Listeners>
         </ext:ProgressBar>
         <br />
 
-        <ext:ProgressBar runat="server" Width="300" UI="Danger">
+        <ext:ProgressBar runat="server" Width="480" UI="Danger">
             <Listeners>
                 <AfterRender Fn="runProgressbar" />
             </Listeners>
         </ext:ProgressBar>
         <br />
 
-        <ext:ProgressBar runat="server" Width="300" UI="Warning">
+        <ext:ProgressBar runat="server" Width="480" UI="Warning">
             <Listeners>
                 <AfterRender Fn="runProgressbar" />
             </Listeners>

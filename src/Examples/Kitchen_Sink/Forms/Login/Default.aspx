@@ -20,7 +20,7 @@
                 Title="Login"
                 Width="400"
                 Frame="true"
-                BodyPadding="13"
+                BodyPadding="18"
                 DefaultAnchor="100%">
                 <Items>
                     <ext:TextField

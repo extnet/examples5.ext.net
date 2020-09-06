@@ -53,7 +53,7 @@
 
         <p>This example shows how to setup two way drag and drop from one GridPanel to another.</p>
 
-        <ext:Panel runat="server" Width="650" Height="300">
+        <ext:Panel runat="server" Width="650" Height="480">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" Padding="5" />
             </LayoutConfig>
@@ -88,7 +88,7 @@
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
-                                <ext:GridDragDrop runat="server" DragGroup="firstGridDDGroup" DropGroup="secondGridDDGroup"/>
+                                <ext:GridDragDrop runat="server" DragGroup="firstGridDDGroup" DropGroup="secondGridDDGroup" />
                             </Plugins>
                             <Listeners>
                                 <AfterRender Handler="this.plugins[0].dragZone.getDragText = getDragDropText;" Delay="1" />
@@ -128,7 +128,7 @@
                     <View>
                         <ext:GridView runat="server">
                             <Plugins>
-                                <ext:GridDragDrop runat="server" DragGroup="secondGridDDGroup" DropGroup="firstGridDDGroup"/>
+                                <ext:GridDragDrop runat="server" DragGroup="secondGridDDGroup" DropGroup="firstGridDDGroup" />
                             </Plugins>
                             <Listeners>
                                 <AfterRender Handler="this.plugins[0].dragZone.getDragText = getDragDropText;" Delay="1" />

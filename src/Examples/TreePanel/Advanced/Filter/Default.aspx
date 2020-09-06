@@ -108,7 +108,7 @@
             ID="TreePanel1"
             runat="server"
             RootVisible="false"
-            Height="300"
+            Height="480"
             Width="400"
             UseArrows="true">
             <TopBar>

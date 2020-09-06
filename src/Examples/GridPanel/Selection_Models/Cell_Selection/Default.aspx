@@ -122,7 +122,7 @@
             StoreID="Store1"
             Title="Company List"
             Collapsible="true"
-            Width="700"
+            Width="720"
             EnableColumnMove="true">
             <ColumnModel runat="server">
                 <Columns>

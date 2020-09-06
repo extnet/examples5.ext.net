@@ -10,7 +10,7 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Window runat="server" Width="350" Height="500" Title="VBox window (drag below panels)">
+    <ext:Window runat="server" Width="360" Height="500" Title="VBox window (drag below panels)">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>

@@ -51,7 +51,7 @@
 
     <h2>Panel with Flat Toolbar</h2>
 
-    <ext:Panel runat="server" Title="Panel with toolbar" Width="300" Height="185" Frame="true">
+    <ext:Panel runat="server" Title="Panel with toolbar" Width="480" Height="270" Frame="true">
         <TopBar>
             <ext:Toolbar runat="server" Flat="true">
                 <Items>

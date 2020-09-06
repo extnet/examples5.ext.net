@@ -508,7 +508,7 @@
     </ext:Window>
 
     <div id="customEl" class="x-hidden">
-        <ext:Panel runat="server" Border="false" BodyPadding="2" Html="={stub}" Height="113" Width="180">
+        <ext:Panel runat="server" Border="false" BodyPadding="18" Html="={stub}" Height="113" Width="180">
             <BottomBar>
                 <ext:Toolbar runat="server">
                     <Items>

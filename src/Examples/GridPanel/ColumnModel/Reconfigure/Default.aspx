@@ -79,35 +79,35 @@
         {
             return new List<object>
             {
-               new { company = "3m Co", price = 71.72, change = 0.02, pctChange = 0.03, lastChange = "9/1 12:00am" },
-               new { company = "Alcoa Inc", price = 29.01, change = 0.42, pctChange = 1.47, lastChange = "9/1 12:00am" },
-               new { company = "Altria Group Inc", price = 83.81, change = 0.28, pctChange = 0.34, lastChange = "9/1 12:00am" },
-               new { company = "American Express Company", price = 52.55, change = 0.01, pctChange = 0.02, lastChange = "9/1 12:00am" },
-               new { company = "American International Group, Inc.", price = 64.13, change = 0.31, pctChange = 0.49, lastChange = "9/1 12:00am" },
-               new { company = "AT&T Inc.", price = 31.61, change = -0.48, pctChange = -1.54, lastChange = "9/1 12:00am" },
-               new { company = "Boeing Co.", price = 75.43, change = 0.53, pctChange = 0.71, lastChange = "9/1 12:00am" },
-               new { company = "Caterpillar Inc.", price = 67.27, change = 0.92, pctChange = 1.39, lastChange = "9/1 12:00am" },
-               new { company = "Citigroup, Inc.", price = 49.37, change = 0.02, pctChange = 0.04, lastChange = "9/1 12:00am" },
-               new { company = "E.I. du Pont de Nemours and Company", price = 40.48, change = 0.51, pctChange = 1.28, lastChange = "9/1 12:00am" },
-               new { company = "Exxon Mobil Corp", price = 68.1, change = -0.43, pctChange = -0.64, lastChange = "9/1 12:00am" },
-               new { company = "General Electric Company", price = 34.14, change = -0.08, pctChange = -0.23, lastChange = "9/1 12:00am" },
-               new { company = "General Motors Corporation", price = 30.27, change = 1.09, pctChange = 3.74, lastChange = "9/1 12:00am" },
-               new { company = "Hewlett-Packard Co.",  price = 36.53, change = -0.03, pctChange = -0.08, lastChange = "9/1 12:00am" },
-               new { company = "Honeywell Intl Inc",  price = 38.77, change = 0.05, pctChange = 0.13, lastChange = "9/1 12:00am" },
-               new { company = "Intel Corporation",  price = 19.88, change = 0.31, pctChange = 1.58, lastChange = "9/1 12:00am" },
-               new { company = "International Business Machines",  price = 81.41, change = 0.44, pctChange = 0.54, lastChange = "9/1 12:00am" },
-               new { company = "Johnson & Johnson",  price = 64.72, change = 0.06, pctChange = 0.09, lastChange = "9/1 12:00am" },
-               new { company = "JP Morgan & Chase & Co",  price = 45.73, change = 0.07, pctChange = 0.15, lastChange = "9/1 12:00am" },
-               new { company = "McDonald\"s Corporation",  price = 36.76, change = 0.86, pctChange = 2.40, lastChange = "9/1 12:00am" },
-               new { company = "Merck & Co., Inc.",  price = 40.96, change = 0.41, pctChange = 1.01, lastChange = "9/1 12:00am" },
-               new { company = "Microsoft Corporation",  price = 25.84, change = 0.14, pctChange = 0.54, lastChange = "9/1 12:00am" },
-               new { company = "Pfizer Inc",  price = 27.96, change = 0.4, pctChange = 1.45, lastChange = "9/1 12:00am" },
-               new { company = "The Coca-Cola Company",  price = 45.07, change = 0.26, pctChange = 0.58, lastChange = "9/1 12:00am" },
-               new { company = "The Home Depot, Inc.",  price = 34.64, change = 0.35, pctChange = 1.02, lastChange = "9/1 12:00am" },
-               new { company = "The Procter & Gamble Company",  price = 61.91, change = 0.01, pctChange = 0.02, lastChange = "9/1 12:00am" },
-               new { company = "United Technologies Corporation",  price = 63.26, change = 0.55, pctChange = 0.88, lastChange = "9/1 12:00am" },
-               new { company = "Verizon Communications",  price = 35.57, change = 0.39, pctChange = 1.11, lastChange = "9/1 12:00am" },
-               new { company = "Wal-Mart Stores, Inc.",  price = 45.45, change = 0.73, pctChange = 1.63, lastChange = "9/1 12:00am" }
+               new { company = "3m Co", price = 71.72, change = 0.02, pctChange = 0.03, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Alcoa Inc", price = 29.01, change = 0.42, pctChange = 1.47, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Altria Group Inc", price = 83.81, change = 0.28, pctChange = 0.34, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "American Express Company", price = 52.55, change = 0.01, pctChange = 0.02, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "American International Group, Inc.", price = 64.13, change = 0.31, pctChange = 0.49, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "AT&T Inc.", price = 31.61, change = -0.48, pctChange = -1.54, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Boeing Co.", price = 75.43, change = 0.53, pctChange = 0.71, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Caterpillar Inc.", price = 67.27, change = 0.92, pctChange = 1.39, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Citigroup, Inc.", price = 49.37, change = 0.02, pctChange = 0.04, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "E.I. du Pont de Nemours and Company", price = 40.48, change = 0.51, pctChange = 1.28, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Exxon Mobil Corp", price = 68.1, change = -0.43, pctChange = -0.64, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "General Electric Company", price = 34.14, change = -0.08, pctChange = -0.23, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "General Motors Corporation", price = 30.27, change = 1.09, pctChange = 3.74, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Hewlett-Packard Co.",  price = 36.53, change = -0.03, pctChange = -0.08, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Honeywell Intl Inc",  price = 38.77, change = 0.05, pctChange = 0.13, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Intel Corporation",  price = 19.88, change = 0.31, pctChange = 1.58, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "International Business Machines",  price = 81.41, change = 0.44, pctChange = 0.54, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Johnson & Johnson",  price = 64.72, change = 0.06, pctChange = 0.09, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "JP Morgan & Chase & Co",  price = 45.73, change = 0.07, pctChange = 0.15, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "McDonald\"s Corporation",  price = 36.76, change = 0.86, pctChange = 2.40, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Merck & Co., Inc.",  price = 40.96, change = 0.41, pctChange = 1.01, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Microsoft Corporation",  price = 25.84, change = 0.14, pctChange = 0.54, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Pfizer Inc",  price = 27.96, change = 0.4, pctChange = 1.45, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "The Coca-Cola Company",  price = 45.07, change = 0.26, pctChange = 0.58, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "The Home Depot, Inc.",  price = 34.64, change = 0.35, pctChange = 1.02, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "The Procter & Gamble Company",  price = 61.91, change = 0.01, pctChange = 0.02, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "United Technologies Corporation",  price = 63.26, change = 0.55, pctChange = 0.88, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Verizon Communications",  price = 35.57, change = 0.39, pctChange = 1.11, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+               new { company = "Wal-Mart Stores, Inc.",  price = 45.45, change = 0.73, pctChange = 1.63, lastChange = DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") }
             };
         }
     }
@@ -142,8 +142,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Array Grid"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -152,7 +152,7 @@
                                 <ext:ModelField Name="company" />
                                 <ext:ModelField Name="price" Type="Float" />
                                 <ext:ModelField Name="change" Type="Float" />
-                                <ext:ModelField Name="lastChange" Type="Date" DateFormat="M/d hh:mmtt" />
+                                <ext:ModelField Name="lastChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" />
                             </Fields>
                         </ext:Model>
                     </Model>

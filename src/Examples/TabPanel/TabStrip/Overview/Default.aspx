@@ -17,8 +17,8 @@
 
         <ext:Panel
             runat="server"
-            Height="185"
-            Width="350"
+            Height="270"
+            Width="360"
             Layout="card"
             ActiveIndex="0"
             DefaultBorder="false"
@@ -54,7 +54,7 @@
             ID="Panel2"
             runat="server"
             Height="105"
-            Width="350"
+            Width="360"
             Layout="card"
             ActiveIndex="0"
             DefaultBorder="false"

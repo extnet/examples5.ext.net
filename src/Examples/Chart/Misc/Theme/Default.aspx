@@ -49,7 +49,7 @@
         <ext:CartesianChart
             ID="Chart1"
             runat="server"
-            Width="800"
+            Width="960"
             Height="600"
             Shadow="true"
             FlipXY="true">

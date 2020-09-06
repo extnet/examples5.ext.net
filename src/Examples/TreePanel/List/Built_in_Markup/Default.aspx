@@ -46,7 +46,7 @@
             ID="Panel1"
             runat="server"
             Width="400"
-            Height="450"
+            Height="480"
             IconCls="x-fa fa-list"
             Title="Catalog"
             Scrollable="Both">

@@ -49,8 +49,8 @@
             ID="WizardPanel"
             runat="server"
             Title="Example Wizard"
-            BodyPadding="15"
-            Height="300"
+            BodyPadding="18"
+            Height="480"
             Layout="card"
             ActiveIndex="0">
             <Items>

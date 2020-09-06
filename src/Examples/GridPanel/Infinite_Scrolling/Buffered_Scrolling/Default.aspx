@@ -72,7 +72,7 @@
         <ext:GridPanel
             runat="server"
             Title="Buffered Grid of 5,000 random records"
-            Width="700"
+            Width="720"
             Height="500">
             <Store>
                 <ext:Store

@@ -29,7 +29,7 @@
         <p>The second gauge (left to right) in the first row uses a custom animation setup.</p>
         <p>Move the slider around to update the gauges' display value.</p>
 
-        <ext:Panel ID="Panel1" runat="server" Title="Gauges with various kinds of needles" Width="800" Height="500">
+        <ext:Panel ID="Panel1" runat="server" Title="Gauges with various kinds of needles" Width="960" Height="500">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

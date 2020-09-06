@@ -45,10 +45,10 @@
                     ID="Panel1"
                     runat="server"
                     Title="Catch ALL App Events"
-                    Width="300"
-                    Height="300"
+                    Width="480"
+                    Height="480"
                     Layout="Fit"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     MarginSpec="5">
                     <MessageBusListeners>
                         <ext:MessageBusListener
@@ -77,9 +77,9 @@
                     runat="server"
                     Title="Category Events"
                     Layout="Fit"
-                    Width="350"
-                    Height="300"
-                    BodyPadding="5"
+                    Width="360"
+                    Height="480"
+                    BodyPadding="18"
                     MarginSpec="5">
                     <MessageBusListeners>
                         <ext:MessageBusListener Name="Msg.Log" Handler="this.body.createChild({html: data, tag:'p', style:'color:blue;'});" />

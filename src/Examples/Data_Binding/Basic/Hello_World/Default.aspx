@@ -49,7 +49,7 @@
         <ext:Panel
             runat="server"
             Width="500"
-            BodyPadding="10"
+            BodyPadding="18"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Bind>

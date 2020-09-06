@@ -24,8 +24,8 @@
 
         <ext:Panel
             runat="server"
-            Width="800"
-            Height="400"
+            Width="960"
+            Height="480"
             Title="Column Chart with Reload - Hits per Month"
             Layout="Fit">
             <TopBar>

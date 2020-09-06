@@ -33,11 +33,11 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Panel runat="server" Border="false" Region="North" Height="160" BodyPadding="20">
+                <ext:Panel runat="server" Border="false" Region="North" Height="160" BodyPadding="18">
                     <Content>
                         <h1>Resizable Image</h1>
                         <h3>To resize the image, position your mouse anywhere near the right or bottom border</h3>
@@ -100,13 +100,13 @@
                     Border="false"
                     Scrollable="Both"
                     Region="Center"
-                    BodyPadding="20">
+                    BodyPadding="18">
                     <Items>
                         <ext:Image
                             ID="Image1"
                             runat="server"
                             ImageUrl="../Shared/tokyo-subway-map.jpg">
-                            <ResizableConfig runat="server" PreserveRatio="true" HandlesSummary="s e se"/>
+                            <ResizableConfig runat="server" PreserveRatio="true" HandlesSummary="s e se" />
                             <Listeners>
                                 <Complete Handler="newFactor(#{SizesCombo}, 0);" />
                                 <ResizerResize Handler="#{SizesCombo}.setValue('');" />

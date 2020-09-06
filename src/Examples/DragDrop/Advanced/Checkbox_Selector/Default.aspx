@@ -88,7 +88,7 @@
                     runat="server"
                     Cls="cb-cell"
                     Region="Center"
-                    BodyPadding="10"
+                    BodyPadding="18"
                     Layout="Table">
                     <LayoutConfig>
                         <ext:TableLayoutConfig Columns="10" />

@@ -65,8 +65,8 @@
             ID="Panel1"
             runat="server"
             Title="Panel"
-            Width="300"
-            BodyPadding="10"
+            Width="480"
+            BodyPadding="18"
             Html="<p><i>Apply the template to see results here</i></p>">
             <TopBar>
                 <ext:Toolbar runat="server">

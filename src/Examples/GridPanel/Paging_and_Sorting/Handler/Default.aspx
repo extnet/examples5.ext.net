@@ -16,7 +16,7 @@
             runat="server"
             Title="Employees"
             Frame="true"
-            Height="300">
+            Height="480">
             <Store>
                 <ext:Store runat="server" RemoteSort="true" PageSize="5">
                     <Proxy>

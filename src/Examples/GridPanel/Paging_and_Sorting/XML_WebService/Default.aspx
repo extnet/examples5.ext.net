@@ -16,7 +16,7 @@
             ID="GridPanel1"
             Title="Employees"
             Frame="true"
-            Height="300">
+            Height="480">
             <Store>
                 <ext:Store
                     ID="Store1"

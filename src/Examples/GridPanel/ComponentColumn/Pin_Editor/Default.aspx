@@ -63,7 +63,7 @@
             Title="ComponentColumn Pin Editor"
             Cls="x-over-editor-grid"
             Width="620"
-            Height="300">
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

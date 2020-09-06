@@ -36,7 +36,7 @@
         <br />
 
         <ext:DrawContainer ID="Draw1" runat="server"
-            Width="800"
+            Width="960"
             Height="600">
             <Items>
                 <ext:CompositeSprite SpriteID="circles" Duration="1000">

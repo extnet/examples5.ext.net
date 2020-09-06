@@ -178,7 +178,7 @@
         <ext:FormPanel
             runat="server"
             Frame="true"
-            BodyPadding="5"
+            BodyPadding="18"
             Width="870"
             Height="510">
             <Bin>

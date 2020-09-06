@@ -103,15 +103,15 @@
 
         <p>This example demonstrates the use of the GroupingSummaryFeature with server-side summary calculation (results are intentionally wrong).</p>
 
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
             Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
-            Width="800"
-            Height="450">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store runat="server" GroupField="Name" OnReadData="OnReadData">
                     <Sorters>

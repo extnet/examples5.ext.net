@@ -101,15 +101,15 @@
 
         <ext:ResourceManager runat="server" />
 
-        <ext:GridPanel ID="GridPanel1" runat="server" Width="300">
+        <ext:GridPanel ID="GridPanel1" runat="server" Width="480">
             <Store>
                 <ext:Store runat="server">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
-                                <ext:ModelField Name="test1" Type="Int"/>
-                                <ext:ModelField Name="test2" Type="Float"/>
-                                <ext:ModelField Name="test3" Type="Float"/>
+                                <ext:ModelField Name="test1" Type="Int" />
+                                <ext:ModelField Name="test2" Type="Float" />
+                                <ext:ModelField Name="test3" Type="Float" />
                             </Fields>
                         </ext:Model>
                     </Model>

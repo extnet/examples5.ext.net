@@ -56,7 +56,7 @@
             runat="server"
             Title="Core Team Projects"
             Width="500"
-            Height="300"
+            Height="480"
             Collapsible="true"
             UseArrows="true"
             RootVisible="false"

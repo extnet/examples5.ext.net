@@ -96,7 +96,7 @@
         <ext:Panel
             runat="server"
             Width="500"
-            Height="300"
+            Height="480"
             ReferenceHolder="true"
             Layout="HBox"
             ViewModel="<%# MyModel.Model %>"

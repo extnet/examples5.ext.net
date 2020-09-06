@@ -19,10 +19,10 @@
                 runat="server"
                 Title="Contact Us"
                 Frame="true"
-                Height="400"
+                Height="480"
                 Width="400"
                 Border="false"
-                BodyPadding="10"
+                BodyPadding="18"
                 DefaultAnchor="100%">
                 <FieldDefaults
                     LabelAlign="Top"

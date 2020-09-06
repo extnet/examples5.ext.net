@@ -61,7 +61,7 @@
                     Height="260"
                     Flex="1"
                     Layout="Fit"
-                    BodyPadding="5">
+                    BodyPadding="18">
                     <Items>
                         <ext:MultiSelect ID="MultiSelect1" runat="server" ListTitle="MultiSelect1">
                             <Items>
@@ -80,7 +80,7 @@
                     Height="260"
                     Flex="1"
                     Layout="Fit"
-                    BodyPadding="5">
+                    BodyPadding="18">
                     <Items>
                         <ext:MultiSelect ID="MultiSelect2" runat="server" ListTitle="MultiSelect2">
                             <Items>

@@ -103,7 +103,7 @@
         <ext:PropertyGrid
             ID="PropertyGrid1"
             runat="server"
-            Width="300"
+            Width="480"
             SortableColumns="false">
             <Source>
                 <ext:PropertyGridParameter Name="(name)" Value="Properties Grid" />

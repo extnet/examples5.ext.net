@@ -50,7 +50,7 @@
     <ext:Window
         runat="server"
         Width="950"
-        Height="400"
+        Height="480"
         Closable="false"
         Collapsible="true"
         Title="Example"

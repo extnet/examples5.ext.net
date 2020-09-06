@@ -212,7 +212,7 @@
                 TypeAhead="true"
                 Transform="stateSelect"
                 Width="135"
-                ForceSelection="true"/>
+                ForceSelection="true" />
 
             <div id="transformCombo">
                 <label for="stateSelect">Transformed select:</label>

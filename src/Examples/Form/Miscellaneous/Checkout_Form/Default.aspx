@@ -117,7 +117,7 @@
             Title="Complete Check Out"
             Frame="true"
             Width="550"
-            BodyPadding="5">
+            BodyPadding="18">
 
             <FieldDefaults LabelAlign="Right" LabelWidth="90" MsgTarget="Qtip" />
 
@@ -337,7 +337,7 @@
                                     EnforceMaxLength="true"
                                     MaskRe="[\d\-]"
                                     Regex="^\d{5}(\-\d{4})?$"
-                                    RegexText="Must be in the format xxxxx or xxxxx-xxxx"/>
+                                    RegexText="Must be in the format xxxxx or xxxxx-xxxx" />
                             </Items>
                         </ext:Container>
                     </Items>
@@ -404,7 +404,7 @@
                                     MinLength="15"
                                     MaxLength="16"
                                     EnforceMaxLength="true"
-                                    MaskRe="\d"/>
+                                    MaskRe="\d" />
 
                                 <ext:FieldContainer
                                     runat="server"

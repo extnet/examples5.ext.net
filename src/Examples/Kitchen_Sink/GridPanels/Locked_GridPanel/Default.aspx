@@ -19,8 +19,8 @@
                 runat="server"
                 Title="Restaurant Reviews"
                 Frame="true"
-                Width="800"
-                Height="400">
+                Width="960"
+                Height="480">
                 <Store>
                     <ext:Store
                         runat="server"
@@ -66,7 +66,7 @@
                         <ext:Column
                             runat="server"
                             Text="Review"
-                            Width="1000"
+                            Width="960"
                             DataIndex="description"
                             Sortable="false" />
                     </Columns>

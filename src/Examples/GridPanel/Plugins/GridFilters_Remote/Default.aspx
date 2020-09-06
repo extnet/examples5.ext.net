@@ -142,8 +142,8 @@
 
         <ext:Window
             runat="server"
-            Width="700"
-            Height="400"
+            Width="720"
+            Height="480"
             Closable="false"
             Collapsible="true"
             Title="Example"

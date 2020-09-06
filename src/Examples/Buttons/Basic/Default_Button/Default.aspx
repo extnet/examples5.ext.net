@@ -22,8 +22,8 @@
                 <ext:FormPanel
                     runat="server"
                     Title="Last Button by default"
-                    BodyPadding="5"
-                    Width="350">
+                    BodyPadding="18"
+                    Width="360">
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Item 1" />
                         <ext:TextField runat="server" FieldLabel="Item 2" />
@@ -38,8 +38,8 @@
                     runat="server"
                     Title="Button by Index"
                     DefaultButton="1"
-                    BodyPadding="5"
-                    Width="350">
+                    BodyPadding="18"
+                    Width="360">
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Item 1" />
                         <ext:TextField runat="server" FieldLabel="Item 2" />
@@ -56,8 +56,8 @@
                     runat="server"
                     Title="Button by ID"
                     DefaultButton="Button2"
-                    BodyPadding="5"
-                    Width="350">
+                    BodyPadding="18"
+                    Width="360">
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Item 1" />
                         <ext:TextField runat="server" FieldLabel="Item 2" />
@@ -75,8 +75,8 @@
                     runat="server"
                     Title="Button by Selector"
                     DefaultButton="button[text=Button2]"
-                    BodyPadding="5"
-                    Width="350">
+                    BodyPadding="18"
+                    Width="360">
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Item 1" />
                         <ext:TextField runat="server" FieldLabel="Item 2" />

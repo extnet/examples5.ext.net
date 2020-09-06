@@ -262,7 +262,7 @@
         runat="server"
         Title="Core Team Projects (click on a node to see the details)"
         Width="500"
-        Height="300"
+        Height="480"
         Collapsible="true"
         UseArrows="true"
         RootVisible="false"
@@ -409,7 +409,7 @@
 
     <ext:FormPanel runat="server"
         Title="Form panel (click a field to see validation result)"
-        BodyPadding="20"
+        BodyPadding="18"
         Width="500">
         <Defaults>
             <ext:Parameter Name="MsgTarget" Value="none" />

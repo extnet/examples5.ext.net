@@ -15,7 +15,7 @@
             <Items>
                 <ext:Panel
                     runat="server"
-                    BodyPadding="15"
+                    BodyPadding="18"
                     Title="Inner panel"
                     Html="This panel is fit 100% Height and 100% Width within its container."
                     />

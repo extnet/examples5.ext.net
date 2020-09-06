@@ -34,8 +34,8 @@
             <h2>Left-Aligned Tabs</h2>
             <ext:TabPanel runat="server"
                 TabPosition="Left"
-                Height="300"
-                Width="300">
+                Height="480"
+                Width="480">
                 <Items>
                     <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
@@ -49,8 +49,8 @@
             <h2>Right-Aligned Tabs</h2>
             <ext:TabPanel runat="server"
                 TabPosition="Right"
-                Height="300"
-                Width="300">
+                Height="480"
+                Width="480">
                 <Items>
                     <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
@@ -66,8 +66,8 @@
             <h2>Left-Aligned Tabs With Scrolling</h2>
             <ext:TabPanel runat="server"
                 TabPosition="Left"
-                Height="300"
-                Width="300">
+                Height="480"
+                Width="480">
                 <Items>
                     <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
@@ -85,8 +85,8 @@
             <h2>Right-Aligned Tabs With Scrolling</h2>
             <ext:TabPanel runat="server"
                 TabPosition="Right"
-                Height="300"
-                Width="300">
+                Height="480"
+                Width="480">
                 <Items>
                     <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />

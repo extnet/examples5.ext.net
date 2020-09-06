@@ -53,7 +53,7 @@
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Width="700"
+            Width="720"
             Height="500"
             Title="Sencha.com - Browse Forums">
             <Store>

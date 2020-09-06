@@ -169,7 +169,7 @@
             runat="server"
             StoreID="Store1"
             Title="Array Grid"
-            Width="600"
+            Width="960"
             Height="290">
             <TopBar>
                 <ext:Toolbar runat="server">

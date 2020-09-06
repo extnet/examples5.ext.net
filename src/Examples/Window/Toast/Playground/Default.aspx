@@ -120,46 +120,33 @@
 
 <html>
 <head runat="server">
-    <title>Window Toast Playground - Ext.NET Examples</title>
+    <title>Toast Playground - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Window Toast Playground</h1>
+        <h1>Toast Playground</h1>
 
         <p>
             Choose the message and the location on screen you want the Toast displayed,
-            then click "Toast!". In this page's source code you can see different ways to
-            trigger the toast.
+            then click <code>Toast!</code> Button.
         </p>
 
-        <ext:FormPanel runat="server">
-            <LayoutConfig>
-                <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
-            </LayoutConfig>
-            <Defaults>
-                <ext:Parameter Name="margin" Value="5px" />
-            </Defaults>
+        <ext:Panel runat="server" Width="720" BodyPadding="18" ButtonAlign="Right">
             <Items>
-                <ext:TextArea ID="toastText" runat="server" FieldLabel="Toast Contents" Text="My toast!" />
-                <ext:FieldSet runat="server" Title="Toast title">
-                    <LayoutConfig>
-                        <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
-                    </LayoutConfig>
+                <ext:TextArea ID="toastText" runat="server" FieldLabel="Message" Text="My toast!" />
+                <ext:FieldSet runat="server" Title="Title">
                     <Items>
-                        <ext:Checkbox ID="enableTitle" runat="server" FieldLabel="Show title" />
-                        <ext:TextField ID="toastTitle" runat="server" FieldLabel="Toast" />
+                        <ext:Checkbox ID="enableTitle" runat="server" FieldLabel="Enable" />
+                        <ext:TextField ID="toastTitle" runat="server" FieldLabel="Title" />
                     </Items>
                 </ext:FieldSet>
-                <ext:FieldSet runat="server" Title="Toast position">
-                    <LayoutConfig>
-                        <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
-                    </LayoutConfig>
+                <ext:FieldSet runat="server" Title="Position">
                     <Items>
-                        <ext:Checkbox ID="enableToastAlign" runat="server" FieldLabel="Specify Toast alignment on screen" />
-                        <ext:ComboBox ID="toastAlign" runat="server" ForceSelection="true" FieldLabel="Position to show on screen">
+                        <ext:Checkbox ID="enableToastAlign" runat="server" FieldLabel="Enable" />
+                        <ext:ComboBox ID="toastAlign" runat="server" ForceSelection="true" FieldLabel="Position">
                             <Items>
                                 <ext:ListItem Text="Bottom Right" Value="br" />
                                 <ext:ListItem Text="Bottom Left" Value="bl" />
@@ -176,23 +163,17 @@
                         </ext:ComboBox>
                     </Items>
                 </ext:FieldSet>
-                <ext:FieldSet runat="server" Title="Extra settings">
-                    <LayoutConfig>
-                        <ext:VBoxLayoutConfig Pack="Start" Align="Stretch" />
-                    </LayoutConfig>
-                    <Defaults>
-                        <ext:Parameter Name="labelWidth" Value="250" />
-                    </Defaults>
+                <ext:FieldSet runat="server" Title="Settings">
                     <Items>
-                        <ext:Checkbox runat="server" ID="enableExtra" FieldLabel="Use extra settings" />
+                        <ext:Checkbox ID="enableExtra" runat="server" FieldLabel="Enable" />
                         <ext:Container runat="server" Layout="HBox">
                             <Defaults>
                                 <ext:Parameter Name="width" Value="48%" />
                                 <ext:Parameter Name="labelWidth" Value="250" />
                             </Defaults>
                             <Items>
-                                <ext:Checkbox runat="server" ID="stickWhileHover" FieldLabel="Stick the toast while mouse is over it" />
-                                <ext:Checkbox runat="server" ID="disabled" FieldLabel="Grayed out / disabled" />
+                                <ext:Checkbox runat="server" ID="stickWhileHover" FieldLabel="Sticky" />
+                                <ext:Checkbox runat="server" ID="disabled" FieldLabel="Disabled" />
                             </Items>
                         </ext:Container>
                         <ext:Container runat="server" Layout="HBox">
@@ -201,26 +182,24 @@
                                 <ext:Parameter Name="labelWidth" Value="250" />
                             </Defaults>
                             <Items>
-                                <ext:Checkbox ID="closemd" runat="server" FieldLabel="Close when clicking the mouse anywhere" />
-                                <ext:Checkbox ID="autoClose" runat="server" FieldLabel="Close automatically after a delay" Checked="true" />
+                                <ext:Checkbox ID="closemd" runat="server" FieldLabel="Close on page click" />
+                                <ext:Checkbox ID="autoClose" runat="server" FieldLabel="Close after delay" Checked="true" />
                             </Items>
                         </ext:Container>
-                        <ext:TextField ID="acDelay" runat="server" FieldLabel="Delay (in milisseconds) to automatically close" Text="2500" />
+                        <ext:TextField ID="acDelay" runat="server" FieldLabel="Delay" Text="2500" />
                     </Items>
                 </ext:FieldSet>
+            </Items>
+            <Buttons>
                 <ext:Button
-                    ID="Button1"
                     runat="server"
                     Text="Toast!"
-                    Icon="Accept"
+                    IconCls="x-md md-icon-check-circle-outline"
                     OnDirectClick="Button1_Click"
                     />
-            </Items>
-        </ext:FormPanel>
-        <ext:Toast
-            ID="Toast1" 
-            runat="server"
-            StickWhileHover="true">
+            </Buttons>
+        </ext:Panel>
+        <ext:Toast runat="server" StickWhileHover="true">
             <Content>
                 This toast is defined in markup and shows once -- once the page is loaded.
             </Content>

@@ -119,7 +119,7 @@
         <ext:GridPanel
             runat="server"
             ColumnLines="true"
-            Height="400"
+            Height="480"
             Width="775"
             Title="Spreadsheet"
             Frame="true">

@@ -110,7 +110,7 @@
                     <ext:ModelField Name="Name" Type="String" />
                 </Fields>
                 <Associations>
-                    <ext:HasManyAssociation Model="Product" Name="products" AssociationKey="Products"/>
+                    <ext:HasManyAssociation Model="Product" Name="products" AssociationKey="Products" />
                 </Associations>
             </ext:Model>
         </Model>

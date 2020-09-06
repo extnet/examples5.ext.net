@@ -71,7 +71,7 @@
             runat="server"
             Title="Form"
             Width="400"
-            BodyPadding="10"
+            BodyPadding="18"
             LabelWidth="150">
             <Items>
                 <ext:SpinnerField

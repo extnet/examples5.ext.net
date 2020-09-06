@@ -62,7 +62,7 @@
                                                 <ext:TextField
                                                     runat="server"
                                                     Cls="x-form-field-editor"
-                                                    Width="300" />
+                                                    Width="480" />
                                             </Field>
                                         </ext:Editor>
                                     </Editor>
@@ -191,9 +191,9 @@
                                     ID="Panel1"
                                     runat="server"
                                     Width="610"
-                                    Height="300"
+                                    Height="480"
                                     Html="Content"
-                                    BodyPadding="6"
+                                    BodyPadding="18"
                                     Title="Editor panel">
                                     <TopBar>
                                         <ext:Toolbar runat="server">

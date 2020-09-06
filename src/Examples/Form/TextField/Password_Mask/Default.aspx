@@ -17,10 +17,10 @@
 
         <ext:Window
             runat="server"
-            Width="350"
+            Width="360"
             Title="Password Mask"
             Closable="false"
-            BodyPadding="5">
+            BodyPadding="18">
             <Items>
                 <ext:TextField
                     ID="PasswordField"

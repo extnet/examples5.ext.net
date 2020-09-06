@@ -190,7 +190,7 @@
                                     </Series>
                                 </ext:CartesianChart>
 
-                                <ext:GridPanel runat="server" StoreID="Store1" StyleSpec="margin-top: 10px;padding-left:40px;" Width="600">
+                                <ext:GridPanel runat="server" StoreID="Store1" StyleSpec="margin-top: 10px;padding-left:40px;" Width="960">
                                     <ColumnModel>
                                         <Columns>
                                             <ext:Column runat="server" Text="Complaint" DataIndex="complaint" Width="175" Sortable="false" MenuDisabled="true" />

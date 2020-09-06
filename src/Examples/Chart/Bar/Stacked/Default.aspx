@@ -43,7 +43,7 @@
 
         <ext:Container
             runat="server"
-            Width="800"
+            Width="960"
             Height="500"
             Layout="Fit">
             <Items>

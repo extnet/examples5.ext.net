@@ -116,7 +116,7 @@
             runat="server"
             Title="Company List"
             Collapsible="true"
-            Width="600">
+            Width="960">
             <Store>
                 <ext:Store ID="Store1" runat="server" PageSize="10">
                     <Model>

@@ -61,7 +61,7 @@
 
         <br />
 
-        <ext:ProgressBar ID="Progress1" runat="server" Width="300" />
+        <ext:ProgressBar ID="Progress1" runat="server" Width="480" />
 
         <ext:TaskManager ID="TaskManager1" runat="server">
             <Tasks>

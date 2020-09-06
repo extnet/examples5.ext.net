@@ -155,8 +155,8 @@
                             <ext:Panel
                                 runat="server"
                                 Title="Simple Panel"
-                                Width="300"
-                                Height="200"
+                                Width="480"
+                                Height="180"
                                 Html="Some content">
                                 <TopBar>
                                     <ext:Toolbar runat="server">
@@ -177,7 +177,7 @@
                             <ext:TabPanel
                                 runat="server"
                                 ActiveTabIndex="0"
-                                Width="300"
+                                Width="480"
                                 Height="100">
                                 <Items>
                                     <ext:Panel runat="server" Title="Tab1" Icon="Tab">
@@ -207,8 +207,8 @@
                         <Items>
                             <ext:PropertyGrid
                                 runat="server"
-                                Width="300"
-                                Height="300"
+                                Width="480"
+                                Height="480"
                                 NameColumnWidth="140">
                                 <Source>
                                     <ext:PropertyGridParameter Name="(name)" Value="Properties Grid" />
@@ -238,8 +238,8 @@
                         <Items>
                             <ext:Panel
                                 runat="server"
-                                Width="300"
-                                Height="200"
+                                Width="480"
+                                Height="180"
                                 Layout="Border">
                                 <Items>
                                     <ext:Panel
@@ -255,8 +255,8 @@
 
                             <ext:Panel
                                 runat="server"
-                                Width="300"
-                                Height="200"
+                                Width="480"
+                                Height="180"
                                 Layout="Accordion">
                                 <Items>
                                     <ext:Panel runat="server" Title="Panel1" Collapsed="false" />

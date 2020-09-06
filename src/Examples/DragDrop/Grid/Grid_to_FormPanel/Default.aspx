@@ -55,7 +55,7 @@
         <ext:Panel
             runat="server"
             Width="650"
-            Height="300"
+            Height="480"
             Layout="Border">
             <Items>
                 <ext:GridPanel
@@ -102,7 +102,7 @@
                     Region="Center"
                     Title="Generic Form Panel"
                     BodyStyle="background-color: #DFE8F6"
-                    BodyPadding="10"
+                    BodyPadding="18"
                     MarginSpec="5 5 5 0">
                     <Items>
                         <ext:TextField runat="server" FieldLabel="Record Name" Name="Name" />

@@ -23,7 +23,7 @@
         <ext:MonthPicker runat="server" SelectedMonth="1" SelectedYear="2010" />
 
         <h3>Time picker</h3>
-        <ext:TimePicker runat="server" Height="200" Width="200" SelectedTime="0:15" />
+        <ext:TimePicker runat="server" Height="180" Width="200" SelectedTime="0:15" />
     </form>
 </body>
 </html>

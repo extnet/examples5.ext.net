@@ -43,11 +43,11 @@
             Collapsible="true"
             Maximizable="true"
             Width="550"
-            Height="300"
+            Height="480"
             CloseAction="Destroy"
             Layout="Fit"
             Plain="true"
-            BodyPadding="5"
+            BodyPadding="18"
             ButtonAlign="Center"
             TemplateWidget="true"
             TemplateWidgetFnName="getMessageWindow">

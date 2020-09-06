@@ -29,8 +29,8 @@
         <ext:ResourceManager runat="server" />
 
         <ext:Window runat="server"
-            Width="600"
-            Height="400"
+            Width="960"
+            Height="480"
             Hidden="false"
             Border="false"
             Title="Draw Components"

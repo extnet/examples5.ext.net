@@ -153,7 +153,7 @@
                 ID="AddressPanel"
                 runat="server"
                 Title="Address"
-                BodyPadding="5"
+                BodyPadding="18"
                 Flex="1">
                 <Items>
                     <ext:DisplayField runat="server" FieldLabel="ID" Name="Id" />
@@ -184,7 +184,7 @@
                 <Component>
                     <ext:FormPanel
                         runat="server"
-                        BodyPadding="5">
+                        BodyPadding="18">
                         <Items>
                             <ext:DisplayField runat="server" FieldLabel="ID" Name="Id" />
                             <ext:DisplayField runat="server" FieldLabel="Number" Name="Number" />

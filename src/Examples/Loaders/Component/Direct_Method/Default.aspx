@@ -53,8 +53,8 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
-        Width="350"
+        Height="180"
+        Width="360"
         Layout="Accordion"
         Title="Load Items from the Page (DirectMethod, AutoLoad)">
         <Loader
@@ -70,7 +70,7 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="500"
         Layout="Fit"
         Title="Load UserControl from the Page (static DirectMethod, manual loading)">
@@ -95,7 +95,7 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="500"
         Layout="Accordion"
         Title="Load UserControl from the Page (static DirectMethod, dynamic inner items)">
@@ -114,7 +114,7 @@
 
     <ext:TabPanel
         runat="server"
-        Height="200"
+        Height="180"
         Width="500">
         <Loader
             runat="server"

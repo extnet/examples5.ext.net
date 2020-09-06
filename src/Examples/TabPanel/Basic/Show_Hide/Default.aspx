@@ -13,7 +13,7 @@
 
         <h1>Show and Hide Tabs</h1>
 
-        <ext:TabPanel ID="TabPanel1" runat="server" Width="800" Height="300">
+        <ext:TabPanel ID="TabPanel1" runat="server" Width="960" Height="480">
             <Items>
                 <ext:Panel ID="Tab1" Title="Tab1" runat="server" Closable="true" CloseAction="Hide" Html="Tab1">
                     <Listeners>

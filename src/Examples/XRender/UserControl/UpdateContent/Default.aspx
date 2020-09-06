@@ -72,7 +72,7 @@
             Title="User Controls"
             Width="500"
             Height="220"
-            BodyPadding="10">
+            BodyPadding="18">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

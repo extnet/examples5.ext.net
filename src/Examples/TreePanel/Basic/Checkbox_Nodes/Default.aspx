@@ -50,7 +50,7 @@
             runat="server"
             Title="My Task List"
             Icon="Accept"
-            Height="400"
+            Height="480"
             Width="250"
             UseArrows="true"
             Scrollable="Both"

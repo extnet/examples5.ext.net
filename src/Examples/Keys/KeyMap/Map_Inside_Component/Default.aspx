@@ -43,7 +43,7 @@
                 Title="North"
                 Region="North"
                 Frame="true"
-                Height="200"
+                Height="180"
                 Collapsible="true"
                 >
                 <Content>
@@ -61,7 +61,7 @@
                 Width="200"
                 Collapsible="true"
                 />
-            <ext:Panel runat="server" Region="Center" BodyPadding="5" Scrollable="Vertical">
+            <ext:Panel runat="server" Region="Center" BodyPadding="18" Scrollable="Vertical">
                 <Content>
                     <ul>
                         <li>If keys are not working then click on center area</li>
@@ -90,7 +90,7 @@
                 Title="South"
                 Region="South"
                 Frame="true"
-                Height="200"
+                Height="180"
                 Collapsible="true"
                 />
         </Items>

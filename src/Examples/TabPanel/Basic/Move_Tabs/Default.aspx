@@ -31,7 +31,7 @@
             ID="Window1"
             runat="server"
             Layout="Border"
-            Width="600"
+            Width="960"
             Height="250"
             Icon="Tab"
             Title="Moving tabs"
@@ -45,9 +45,9 @@
                     Width="200"
                     MarginSpec="5 0 5 5">
                     <Items>
-                        <ext:Panel ID="Tab1" runat="server" Title="Tab1" Html="Tab1" BodyPadding="5" />
-                        <ext:Panel ID="Tab2" runat="server" Title="Tab2" Html="Tab2" BodyPadding="5" />
-                        <ext:Panel ID="Tab3" runat="server" Title="Tab3" Html="Tab3" BodyPadding="5" />
+                        <ext:Panel ID="Tab1" runat="server" Title="Tab1" Html="Tab1" BodyPadding="18" />
+                        <ext:Panel ID="Tab2" runat="server" Title="Tab2" Html="Tab2" BodyPadding="18" />
+                        <ext:Panel ID="Tab3" runat="server" Title="Tab3" Html="Tab3" BodyPadding="18" />
                     </Items>
                 </ext:TabPanel>
                 <ext:Panel runat="server" Region="Center" MarginSpec="5 5 5 5">
@@ -84,9 +84,9 @@
                     Width="200"
                     MarginSpec="5 5 5 0">
                     <Items>
-                        <ext:Panel ID="Tab4" runat="server" Title="Tab4" Html="Tab4" BodyPadding="5" />
-                        <ext:Panel ID="Tab5" runat="server" Title="Tab5" Html="Tab5" BodyPadding="5" />
-                        <ext:Panel ID="Tab6" runat="server" Title="Tab6" Html="Tab6" BodyPadding="5" />
+                        <ext:Panel ID="Tab4" runat="server" Title="Tab4" Html="Tab4" BodyPadding="18" />
+                        <ext:Panel ID="Tab5" runat="server" Title="Tab5" Html="Tab5" BodyPadding="18" />
+                        <ext:Panel ID="Tab6" runat="server" Title="Tab6" Html="Tab6" BodyPadding="18" />
                     </Items>
                 </ext:TabPanel>
             </Items>

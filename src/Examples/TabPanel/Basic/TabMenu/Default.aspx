@@ -76,7 +76,7 @@
                     runat="server"
                     Title="Menu 2"
                     Closable="true"
-                    BodyPadding="6">
+                    BodyPadding="18">
                     <TabMenu>
                         <ext:ColorMenu runat="server">
                             <Listeners>

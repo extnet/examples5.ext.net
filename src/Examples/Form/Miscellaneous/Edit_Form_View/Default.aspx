@@ -182,7 +182,7 @@
             Title="Form View"
             Width="420"
             Height="245"
-            BodyPadding="10"
+            BodyPadding="18"
             Resizable="false"
             Closable="false"
             Layout="Fit">

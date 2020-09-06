@@ -27,7 +27,7 @@
             Frame="true"
             Title="Book List"
             Width="540"
-            Height="400"
+            Height="480"
             Layout="Border">
             <Items>
                 <ext:GridPanel
@@ -89,7 +89,7 @@
                     ID="DetailPanel"
                     runat="server"
                     Region="Center"
-                    BodyPadding="7"
+                    BodyPadding="18"
                     BodyStyle="background: #ffffff;"
                     Html="Please select a book to see additional details.">
                 </ext:Panel>

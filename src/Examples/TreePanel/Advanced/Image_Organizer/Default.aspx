@@ -79,7 +79,7 @@
 
         <ext:Panel
             runat="server"
-            Width="700"
+            Width="720"
             Height="490"
             Layout="Border">
             <Items>

@@ -42,7 +42,7 @@
             Width="550"
             Title="Input Mask"
             Closable="false"
-            BodyPadding="5">
+            BodyPadding="18">
             <Items>
                 <ext:Container runat="server" WidthSpec="100%" Layout="Form">
                     <Defaults>

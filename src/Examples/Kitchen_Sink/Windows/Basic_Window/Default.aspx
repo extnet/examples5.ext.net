@@ -32,7 +32,7 @@
         Title="Window"
         Width="400"
         Height="295"
-        BodyPadding="10"
+        BodyPadding="18"
         Scrollable="Both"
         Html="<%# TEST_HTML %>"
         AutoDataBind="true"

@@ -49,8 +49,8 @@
         <ext:FormPanel
             ID="FormPanel1"
             runat="server"
-            Height="350"
-            Width="350"
+            Height="480"
+            Width="360"
             Title="Form"
             Layout="VBox">
             <LayoutConfig>

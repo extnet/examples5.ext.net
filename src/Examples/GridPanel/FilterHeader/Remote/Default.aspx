@@ -164,8 +164,8 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Width="800"
-            Height="400"
+            Width="960"
+            Height="480"
             Closable="false"
             Title="Example"
             Maximizable="true"

@@ -84,7 +84,7 @@
                 Height="295"
                 Frame="true"
                 Title="Register"
-                BodyPadding="13"
+                BodyPadding="18"
                 Scrollable="Both">
                 <FieldDefaults LabelAlign="Right" LabelWidth="115" MsgTarget="Side" />
                 <Items>

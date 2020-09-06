@@ -17,8 +17,8 @@
 
         <ext:Panel
             runat="server"
-            Width="350"
-            BodyPadding="10"
+            Width="360"
+            BodyPadding="18"
             Layout="Anchor"
             Title="Sign Up Form"
             ViewModel="<%# true %>"

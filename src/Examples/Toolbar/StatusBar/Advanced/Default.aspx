@@ -51,7 +51,7 @@
         <ext:Panel
             runat="server"
             Title="StatusBar with Integrated Form Validation"
-            Width="350"
+            Width="360"
             Height="220"
             Layout="Fit">
             <Items>

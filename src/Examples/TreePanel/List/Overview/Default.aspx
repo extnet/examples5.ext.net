@@ -118,7 +118,7 @@
             Title="TreeList"
             IconCls="x-fa fa-gears"
             Width="500"
-            Height="450"
+            Height="480"
             Closable="False"
             Resizable="false"
             Layout="Border">
@@ -223,7 +223,7 @@
                     ID="SelectionPanel"
                     runat="server"
                     Region="Center"
-                    BodyPadding="10" />
+                    BodyPadding="18" />
             </Items>
         </ext:Window>
     </form>

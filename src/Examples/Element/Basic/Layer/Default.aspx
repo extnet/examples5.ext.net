@@ -59,7 +59,7 @@
             Floating = true,
             Title = "Panel in Layer",
             Html = "Ext.Net Panel",
-            BodyPadding = 5,
+            BodyPadding = 18,
             Width = 300,
             Height = 100,
             Shadow = false,
@@ -127,8 +127,8 @@
         ID="Panel1"
         runat="server"
         Title="Panel"
-        Width="300"
-        Height="300">
+        Width="480"
+        Height="480">
         <Buttons>
             <ext:Button ID="Button1" runat="server" Text="Show Right">
                 <DirectEvents>

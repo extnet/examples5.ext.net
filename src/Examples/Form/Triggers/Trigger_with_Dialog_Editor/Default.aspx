@@ -268,14 +268,14 @@
         runat="server"
         Hidden="true"
         Title="Pick a Value"
-        Width="300"
+        Width="480"
         Modal="true"
         Layout="card"
         Closable="false">
         <Items>
             <ext:Panel
                 runat="server"
-                BodyPadding="5"
+                BodyPadding="18"
                 Layout="anchor"
                 Border="false">
                 <Items>
@@ -301,7 +301,7 @@
                 </CustomConfig>
             </ext:Panel>
 
-            <ext:Panel runat="server" Layout="Fit" BodyPadding="5">
+            <ext:Panel runat="server" Layout="Fit" BodyPadding="18">
                 <Items>
                     <ext:RadioGroup ID="RatingChoose" runat="server" Vertical="true" ColumnsNumber="1" />
                 </Items>

@@ -49,10 +49,10 @@
             runat="server"
             Title="User Details"
             LabelWidth="110"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             Icon="User"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Form">
             <Items>
                 <ext:TextField
@@ -86,7 +86,7 @@
                     />
             </Field>
             <Listeners>
-                <BeforeComplete Fn="beforeComplete"/>
+                <BeforeComplete Fn="beforeComplete" />
                 <Complete Fn="complete" />
             </Listeners>
         </ext:Editor>

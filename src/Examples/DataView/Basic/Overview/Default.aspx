@@ -146,7 +146,7 @@
             runat="server"
             Cls="images-view"
             Frame="true"
-            Width="800"
+            Width="960"
             Collapsible="true"
             Layout="Fit"
             Title="Simple DataView (0 items selected)">

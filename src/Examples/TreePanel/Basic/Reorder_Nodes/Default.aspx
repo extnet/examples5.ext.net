@@ -74,7 +74,7 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Height="300"
+            Height="480"
             Width="250"
             UseArrows="true">
             <Listeners>

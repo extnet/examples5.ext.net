@@ -73,7 +73,7 @@
             ID="Window1"
             runat="server"
             Width="450"
-            Height="400"
+            Height="480"
             Closable="false"
             Title="Example"
             Layout="Fit">

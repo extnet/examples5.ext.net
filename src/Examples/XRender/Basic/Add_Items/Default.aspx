@@ -14,8 +14,8 @@
         {
             ID = "Tab" + index,
             Title = "Tab " + index,
-            Html = "Tab {0} : ({1})".FormatWith(index, DateTime.Now.ToLongTimeString()),
-            BodyPadding = 5,
+            Html = "Tab {0} at {1}".FormatWith(index, DateTime.Now.ToLongTimeString()),
+            BodyPadding = 18,
             Border = false
         };
 
@@ -30,8 +30,8 @@
         {
             ID = "Panel" + index,
             Title = "Panel " + index,
-            Html = "Panel {0} : ({1})".FormatWith(index, DateTime.Now.ToLongTimeString()),
-            BodyPadding = 5,
+            Html = "Panel {0} at {1}".FormatWith(index, DateTime.Now.ToLongTimeString()),
+            BodyPadding = 18,
             Border = false
         };
 
@@ -70,7 +70,7 @@
         <ext:Button
             runat="server"
             Text="Add Panel"
-            Icon="Add"
+            IconCls="x-md md-icon-add-box"
             OnDirectClick="Button1_Click"
             />
 
@@ -81,14 +81,14 @@
         <ext:TabPanel
             ID="TabPanel1"
             runat="server"
-            Height="185"
-            Width="350">
+            Height="360"
+            Width="480">
             <Items>
                 <ext:Panel
                     runat="server"
                     Title="Tab 1"
                     Html="Tab 1"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     />
             </Items>
         </ext:TabPanel>
@@ -99,15 +99,15 @@
             ID="Panel1"
             runat="server"
             Title="Accordion"
-            MinHeight="215"
-            Width="350"
+            Height="360"
+            Width="480"
             Layout="Accordion">
             <Items>
                 <ext:Panel
                     runat="server"
                     Title="Panel 1"
                     Html="Panel 1"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Border="false"
                     />
             </Items>

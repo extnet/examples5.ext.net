@@ -14,9 +14,9 @@
         ID="Window1"
         runat="server"
         Width="400"
-        Height="300"
+        Height="480"
         Title="Move/Resize Window"
-        BodyPadding="6">
+        BodyPadding="18">
         <Content>
             <ul>
                 <li>MOVE: Alt+LEFT/RIGHT/UP/DOWN</li>

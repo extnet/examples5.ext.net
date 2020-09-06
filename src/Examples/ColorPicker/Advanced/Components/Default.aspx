@@ -42,10 +42,10 @@
 
         <ext:Window 
             runat="server" 
-            Width="600" 
+            Width="960" 
             MinWidth="550" 
             Resizable="true" 
-            BodyPadding="5" 
+            BodyPadding="18" 
             Frame="true"
             Title="Color Picker Components" 
             Layout="VBox"

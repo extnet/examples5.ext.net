@@ -175,8 +175,8 @@
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Height="300"
-            Width="600"
+            Height="480"
+            Width="960"
             Title="Grid"
             ForceFit="true">
             <Store>

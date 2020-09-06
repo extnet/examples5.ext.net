@@ -88,7 +88,7 @@
                     Region="North"
                     Border="false"
                     Height="120"
-                    BodyPadding="6">
+                    BodyPadding="18">
                     <Content>
                         <h1>CRUD Grid Example</h1>
                         <p>Demonstrates how to get data from a page and save using Store (with custom logic).</p>

@@ -54,7 +54,7 @@
             <h2>Left-Aligned Tabs With Scrolling</h2>
             <ext:TabStrip runat="server"
                 TabPosition="Left"
-                Height="300">
+                Height="480">
                 <Items>
                     <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
                     <ext:Tab Text="Tab 2" Closable="true" />
@@ -72,7 +72,7 @@
             <h2>Right-Aligned Tabs With Scrolling</h2>
             <ext:TabStrip runat="server"
                 TabPosition="Right"
-                Height="300">
+                Height="480">
                 <Items>
                     <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
                     <ext:Tab Text="Tab 2" Closable="true" />

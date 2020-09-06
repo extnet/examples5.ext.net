@@ -43,7 +43,7 @@
             Title="Standard Alignment Queues"
             Layout="HBox"
             Width="500"
-            Height="400"
+            Height="480"
             Closable="false">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch"  />

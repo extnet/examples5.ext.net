@@ -21,7 +21,7 @@
             runat="server"
             Title="Form Panel"
             BodyStyle="padding:5px 5px 0;"
-            Width="600"
+            Width="960"
             Layout="HBox">
 
             <FieldDefaults LabelAlign="Top" MsgTarget="Side" />

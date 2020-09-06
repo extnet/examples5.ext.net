@@ -37,11 +37,11 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="200"
         Data="<%# Data %>"
         AutoDataBind="true"
-        BodyPadding="10"
+        BodyPadding="18"
         Title="Inline Data">
         <Tpl runat="server">
             <Html>
@@ -57,9 +57,9 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="200"
-        BodyPadding="10"
+        BodyPadding="18"
         Title="Data from direct method">
         <Tpl runat="server">
             <Html>
@@ -78,9 +78,9 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="200"
-        BodyPadding="10"
+        BodyPadding="18"
         Title="Data from http handler">
         <Tpl runat="server">
             <Html>
@@ -99,9 +99,9 @@
 
     <ext:Panel
         runat="server"
-        Height="200"
+        Height="180"
         Width="200"
-        BodyPadding="10"
+        BodyPadding="18"
         Title="Data from JSON web service">
         <Tpl runat="server">
             <Html>

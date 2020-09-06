@@ -136,8 +136,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Editable GridPanel"
-            Width="700"
-            Height="350">
+            Width="720"
+            Height="480">
             <Store>
                 <ext:Store runat="server">
                     <Model>

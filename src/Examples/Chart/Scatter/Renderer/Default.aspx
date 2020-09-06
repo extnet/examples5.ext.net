@@ -289,7 +289,7 @@
 
         <ext:Window
             runat="server"
-            Width="800"
+            Width="960"
             Height="600"
             MinHeight="400"
             MinWidth="650"

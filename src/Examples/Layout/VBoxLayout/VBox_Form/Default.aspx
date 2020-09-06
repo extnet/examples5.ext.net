@@ -58,7 +58,7 @@
             MinHeight="200"
             Layout="Fit"
             Plain="true"
-            BodyPadding="5"
+            BodyPadding="18"
             ButtonAlign="Center">
             <Items>
                 <ext:FormPanel

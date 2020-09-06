@@ -160,8 +160,8 @@ public void SetTimeStamp(string text)
         <ext:FormPanel
             runat="server"
             Title="Company Information"
-            Width="350"
-            BodyPadding="5"
+            Width="360"
+            BodyPadding="18"
             Frame="true">
             <Items>
                 <ext:TextField

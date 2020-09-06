@@ -19,11 +19,11 @@
 
         <ext:Window
             runat="server"
-            Width="350"
+            Width="360"
             Title="DateRange"
             Icon="Date"
             Closable="false"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Anchor"
             DefaultAnchor="100%">
             <Items>

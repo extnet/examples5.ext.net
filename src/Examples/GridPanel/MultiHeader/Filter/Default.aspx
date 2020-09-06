@@ -176,7 +176,7 @@
             runat="server"
             Title="Array Grid"
             Width="625"
-            Height="350">
+            Height="480">
             <ResizableConfig Handles="East" />
             <Store>
                 <ext:Store ID="Store1" runat="server">

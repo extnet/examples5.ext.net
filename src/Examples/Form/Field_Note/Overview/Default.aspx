@@ -78,7 +78,7 @@
 
         <h2>4. FormPanel with notes</h2>
 
-        <ext:FormPanel ID="FormPanel1" runat="server" BodyPadding="5" Frame="true">
+        <ext:FormPanel ID="FormPanel1" runat="server" BodyPadding="18" Frame="true">
             <FieldDefaults LabelWidth="50" />
             <Items>
                 <ext:TextField runat="server" FieldLabel="Field1" Note="Description" />

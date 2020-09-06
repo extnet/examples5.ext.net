@@ -62,8 +62,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Cell commands"
-            Width="700"
-            Height="300">
+            Width="720"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

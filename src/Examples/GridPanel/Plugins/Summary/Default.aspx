@@ -104,7 +104,7 @@
     <form runat="server">
         <h1>Summary Plugin</h1>
 
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:GridPanel
             ID="GridPanel1"
@@ -113,8 +113,8 @@
             Icon="ApplicationViewColumns"
             Frame="true"
             Collapsible="true"
-            Width="800"
-            Height="450">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store runat="server">
                     <Sorters>

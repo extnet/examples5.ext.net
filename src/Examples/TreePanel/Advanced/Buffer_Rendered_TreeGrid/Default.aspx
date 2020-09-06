@@ -30,8 +30,8 @@
 
         <ext:TreePanel runat="server"
             Title="Forum Folder Summary"
-            Width="600"
-            Height="400"
+            Width="960"
+            Height="480"
             Collapsible="true"
             UseArrows="true"
             RootVisible="false">

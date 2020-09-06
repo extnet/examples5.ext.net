@@ -38,7 +38,7 @@
             MultiSelect="true"
             Title="Grid"
             Width="400"
-            Height="300">
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -58,7 +58,7 @@
             <View>
                 <ext:GridView runat="server">
                     <Plugins>
-                        <ext:GridDragDrop runat="server" DragText="Drag and drop to reorganize"/>
+                        <ext:GridDragDrop runat="server" DragText="Drag and drop to reorganize" />
                     </Plugins>
                 </ext:GridView>
             </View>

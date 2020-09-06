@@ -27,7 +27,7 @@
                     <Menu>
                         <ext:Menu runat="server" ShowSeparator="false">
                             <Items>
-                                <ext:Container runat="server" Width="600" Layout="HBox">
+                                <ext:Container runat="server" Width="960" Layout="HBox">
                                     <Defaults>
                                         <ext:Parameter Name="Height" Value="230" Mode="Raw" />
                                         <ext:Parameter Name="Flex" Value="1" Mode="Raw" />

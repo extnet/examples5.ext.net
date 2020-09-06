@@ -34,7 +34,7 @@
 
         <h3>Panel UI</h3>
 
-        <ext:Panel runat="server" Width="800" Height="250" Title="Simple">
+        <ext:Panel runat="server" Width="960" Height="250" Title="Simple">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -52,7 +52,7 @@
 
         <br />
 
-        <ext:Panel runat="server" Width="800" Height="250" Title="Framed">
+        <ext:Panel runat="server" Width="960" Height="250" Title="Framed">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -72,8 +72,8 @@
 
         <ext:Panel
             runat="server"
-            Width="800"
-            Height="350"
+            Width="960"
+            Height="480"
             Title="Tools"
             UI="Primary"
             Frame="true"
@@ -111,7 +111,7 @@
 
         <ext:Panel
             runat="server"
-            Width="800"
+            Width="960"
             Height="500"
             Title="Border Layout"
             UI="Primary"

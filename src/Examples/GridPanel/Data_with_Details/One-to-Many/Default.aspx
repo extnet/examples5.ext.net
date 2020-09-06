@@ -67,7 +67,7 @@
                     Region="North"
                     Title="Description"
                     Height="100"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Frame="true"
                     Icon="Information"
                     MarginSpec="5 5 5 5">
@@ -147,7 +147,7 @@
                     runat="server"
                     Region="South"
                     Title="Products"
-                    Height="200"
+                    Height="180"
                     Icon="Basket"
                     Layout="Fit"
                     Collapsible="true"

@@ -67,7 +67,7 @@
             runat="server"
             Title="Customers"
             Width="630"
-            Height="300">
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

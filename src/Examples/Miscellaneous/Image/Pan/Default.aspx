@@ -9,14 +9,14 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:Window
             ID="Window1"
             runat="server"
             Title="The Universe Map"
             Icon="Map"
-            Width="800"
+            Width="960"
             Height="600"
             Shadow="false"
             Layout="Fit">

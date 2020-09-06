@@ -58,10 +58,10 @@
     <ext:Panel
         ID="Panel1"
         runat="server"
-        Width="350"
-        Height="200"
+        Width="360"
+        Height="180"
         Title="Html"
-        BodyPadding="5">
+        BodyPadding="18">
         <Content>
             <%= DateTime.Now.ToLongTimeString() %>
         </Content>
@@ -86,10 +86,10 @@
     <ext:Panel
         ID="Panel2"
         runat="server"
-        Width="350"
-        Height="200"
+        Width="360"
+        Height="180"
         Title="Merge Mode"
-        BodyPadding="5">
+        BodyPadding="18">
         <Loader runat="server" Url="Child.aspx" Mode="Html">
             <LoadMask ShowMask="true" />
         </Loader>
@@ -108,8 +108,8 @@
     <ext:Panel
         ID="Panel3"
         runat="server"
-        Width="350"
-        Height="200"
+        Width="360"
+        Height="180"
         Title="Frame Mode">
         <Loader
             runat="server"

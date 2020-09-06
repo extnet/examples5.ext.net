@@ -43,7 +43,7 @@
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Width="1000"
+            Width="960"
             Height="500"
             DisableSelection="true"
             Title="Northwind Data Sample">

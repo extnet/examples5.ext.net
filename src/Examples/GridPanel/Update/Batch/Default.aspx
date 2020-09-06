@@ -330,7 +330,7 @@
             Icon="Table"
             Frame="true"
             Title="Users"
-            Height="400"
+            Height="480"
             Width="500"
             StoreID="Store1"
             StyleSpec="margin-top: 10px">

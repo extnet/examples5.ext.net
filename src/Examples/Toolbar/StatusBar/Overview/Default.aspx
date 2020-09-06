@@ -79,8 +79,8 @@
             runat="server"
             Title="Basic StatusBar"
             Width="500"
-            Height="200"
-            BodyPadding="10">
+            Height="180"
+            BodyPadding="18">
             <Items>
                 <ext:Button
                     ID="Button1"
@@ -119,8 +119,8 @@
             runat="server"
             Title="Right-aligned StatusBar"
             Width="500"
-            Height="200"
-            BodyPadding="10">
+            Height="180"
+            BodyPadding="18">
             <Items>
                 <ext:Button
                     ID="Button2"
@@ -163,11 +163,11 @@
             Collapsible="false"
             Icon="Application"
             Title="StatusBar Window"
-            Width="600"
+            Width="960"
             MinWidth="350"
             Modal="true"
-            Height="200"
-            BodyPadding="10"
+            Height="180"
+            BodyPadding="18"
             Hidden="true">
             <Items>
                 <ext:Button ID="Button3" runat="server" Text="Do Loading">
@@ -214,7 +214,7 @@
             runat="server"
             Width="650"
             Title="Word Processor"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Fit">
             <Items>
                 <ext:TextArea

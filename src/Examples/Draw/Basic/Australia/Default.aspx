@@ -111,7 +111,7 @@
             </LayoutConfig>
             <Items>
                 <ext:DrawContainer ID="Draw1" runat="server" />
-                <ext:Container runat="server" Height="300" Width="300" Layout="Anchor">
+                <ext:Container runat="server" Height="480" Width="480" Layout="Anchor">
                     <Items>
                         <ext:DisplayField ID="StateName" runat="server" Cls="x-state-name" AnchorHorizontal="100%" />
                         <ext:DisplayField ID="StateDesc" runat="server" Cls="x-state-desc" AnchorHorizontal="100%" />

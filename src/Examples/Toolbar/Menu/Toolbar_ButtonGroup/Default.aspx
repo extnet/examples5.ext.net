@@ -30,7 +30,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -76,7 +76,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -163,7 +163,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -251,7 +251,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -348,7 +348,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -443,7 +443,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -480,7 +480,7 @@
             Width="900"
             Height="250"
             StyleSpec="margin-top:15px"
-            BodyPadding="10"
+            BodyPadding="18"
             Scrollable="Both">
             <TopBar>
                 <ext:Toolbar runat="server">
@@ -512,7 +512,7 @@
         </ext:Panel>
 
 
-        <ext:TabPanel runat="server" Height="300" StyleSpec="margin-top:15px">
+        <ext:TabPanel runat="server" Height="480" StyleSpec="margin-top:15px">
             <Items>
                 <ext:Panel runat="server" Title="Home">
                     <TopBar>

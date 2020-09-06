@@ -70,7 +70,7 @@
 
         <ext:Panel
             runat="server"
-            Width="600"
+            Width="960"
             Height="270"
             Layout="VBox"
             ViewModel="<%# MyModel.Model %>"
@@ -95,7 +95,7 @@
 
                 <ext:Container
                     runat="server"
-                    Width="600"
+                    Width="960"
                     MarginSpec="15 0 0 0"
                     Flex="1">
                     <LayoutConfig>

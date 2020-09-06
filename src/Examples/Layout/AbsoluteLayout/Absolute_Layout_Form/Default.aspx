@@ -27,7 +27,7 @@
                     runat="server"
                     Header="false"
                     Border="false"
-                    BodyPadding="15"
+                    BodyPadding="18"
                     Layout="Fit">
                     <Items>
                         <ext:Panel

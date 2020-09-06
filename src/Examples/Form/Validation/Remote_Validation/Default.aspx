@@ -63,7 +63,7 @@
         <ext:FormPanel
             runat="server"
             Title="Remote Validation Form"
-            BodyPadding="5"
+            BodyPadding="18"
             Frame="true"
             Width="500"
             DefaultAnchor="100%">

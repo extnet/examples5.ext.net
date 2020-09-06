@@ -30,8 +30,8 @@
 
         <ext:Panel
             runat="server"
-            Width="600"
-            Height="400"
+            Width="960"
+            Height="480"
             Layout="Border">
             <Items>
                 <ext:TreePanel

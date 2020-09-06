@@ -35,8 +35,8 @@
 
     <ext:GridPanel
         runat="server"
-        Width="600"
-        Height="300"
+        Width="960"
+        Height="480"
         Title="Edit Plants?"
         Frame="true">
         <Store>

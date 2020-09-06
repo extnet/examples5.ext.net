@@ -59,11 +59,11 @@
 
         <ext:Panel
             runat="server"
-            Height="300"
-            Width="600"
+            Height="480"
+            Width="960"
             Frame="true"
             Title="Sparklines"
-            BodyPadding="10">
+            BodyPadding="18">
             <Items>
                 <ext:TextField
                     ID="Values"

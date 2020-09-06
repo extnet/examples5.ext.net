@@ -105,8 +105,8 @@
             Collapsible="true"
             AnimCollapse="true"
             Icon="Table"
-            Width="600"
-            Height="450"
+            Width="960"
+            Height="480"
             DisableSelection="true">
             <Store>
                 <ext:Store ID="Store1" runat="server">

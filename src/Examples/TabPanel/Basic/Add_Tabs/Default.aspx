@@ -45,7 +45,7 @@
         <ext:Window
             runat="server"
             Title="Adding tab"
-            Width="700"
+            Width="720"
             Height="500"
             Icon="Link"
             Layout="Border">

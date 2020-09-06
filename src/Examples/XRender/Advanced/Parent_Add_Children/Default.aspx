@@ -50,8 +50,8 @@
         return this.X().Window()
                         .ID("Window1")
                         .Title("My Window")
-                        .Height(185)
-                        .Width(350)
+                        .Height(270)
+                        .Width(480)
                         .Layout("Fit");
     }
 
@@ -67,7 +67,7 @@
         return this.X().Panel()
                         .ID("Tab" + index)
                         .Title("Tab " + index)
-                        .Padding(5)
+                        .BodyPadding(18)
                         .Html("Tab" + index + " was created at: " + DateTime.Now.ToLongTimeString());
     }
 
@@ -87,14 +87,14 @@
 
 <html>
 <head runat="server">
-    <title>Dynamic Component creation during an Ajax Request - Ext.NET Examples</title>
+    <title>Dynamic creation from code-behind - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Dynamic Component creation during an Ajax Request</h1>
+        <h1>Dynamic creation from code-behind</h1>
 
         <ext:Hidden ID="Hidden1" runat="server" Text="2" />
 

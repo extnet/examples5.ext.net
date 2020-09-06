@@ -16,8 +16,8 @@
                 <ext:Panel
                     runat="server"
                     Width="200"
-                    Height="200"
-                    BodyPadding="15"
+                    Height="180"
+                    BodyPadding="18"
                     Title="Panel"
                     Html="This panel is centered within its container." />
             </Items>

@@ -209,7 +209,7 @@
             <Items>
                 <ext:FormPanel runat="server"
                     Reference="form"
-                    BodyPadding="10"
+                    BodyPadding="18"
                     Border="false"
                     ModelValidation="true">
                     <LayoutConfig>

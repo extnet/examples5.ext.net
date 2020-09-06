@@ -11,7 +11,7 @@
 
 <html>
 <head runat="server">
-    <title>Button Control Variations - Ext.NET Examples</title>
+    <title>Button Variations - Ext.NET Examples</title>
 
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
@@ -24,19 +24,19 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <h1>Button Control Variations</h1>
+    <h1>Buttons</h1>
 
-    <h2>1. Button with Listener</h2>
+    <h3>1. Button with Listener</h3>
 
-    <ext:Button runat="server" Text="Click Me">
+    <ext:Button runat="server" Text="Click Me" Scale="Medium">
         <Listeners>
-            <Click Handler="alert('Clicked');" />
+            <Click Handler="Ext.toast('Clicked');" />
         </Listeners>
     </ext:Button>
 
-    <h2>2. Button with DirectEvent</h2>
+    <h3>2. Button with DirectEvent</h3>
 
-    <ext:Button runat="server" Text="Click Me">
+    <ext:Button runat="server" Text="Click Me" Scale="Medium">
         <DirectEvents>
             <Click OnEvent="Button_Click">
                 <EventMask ShowMask="true" />
@@ -47,61 +47,64 @@
         </DirectEvents>
     </ext:Button>
 
-    <h2>3. Button with Icon</h2>
+    <h3>3. Button with Icon</h3>
 
-    <ext:Button runat="server" Text="Text" Icon="Add" />
+    <ext:Button runat="server" Text="Text" Scale="Medium" IconCls="x-md md-icon-check-circle-outline" />
 
-    <h2>4. Button with Custom Icon</h2>
+    <h3>4. Button with QuickTip</h3>
 
-    <ext:Button runat="server" Text="Text" IconCls="custom-icon1" />
-
-    <h2>5. Button with QuickTip</h2>
-
-    <ext:Button runat="server" Text="Text">
+    <ext:Button runat="server" Text="Text" Scale="Medium">
         <ToolTips>
             <ext:ToolTip runat="server" Title="Title" Html="Description" />
         </ToolTips>
     </ext:Button>
 
-    <h2>6. Toggle Buttons</h2>
+    <h3>5. Toggle Buttons</h3>
 
-    <ext:Button runat="server" Text="Button1" EnableToggle="true" ToggleGroup="Group1" Pressed="true" />
-    <ext:Button runat="server" Text="Button2" EnableToggle="true" ToggleGroup="Group1" />
-    <ext:Button runat="server" Text="Button3" EnableToggle="true" ToggleGroup="Group1" />
+    <ext:Container runat="server" Layout="HBoxLayout">
+        <Defaults>
+            <ext:Parameter Name="margin" Value="0 5 0 0" />
+        </Defaults>
+        <Items>
+            <ext:Button runat="server" Text="Button1" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" Pressed="true" />
+            <ext:Button runat="server" Text="Button2" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" />
+            <ext:Button runat="server" Text="Button3" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" />
+        </Items>
+    </ext:Container>
 
-    <h2>7. Button with menu</h2>
+    <h3>6. Button with menu</h3>
 
-    <ext:Button runat="server" Text="Text">
+    <ext:Button runat="server" Text="Text" Scale="Medium">
         <Menu>
             <ext:Menu runat="server">
                 <Items>
-                    <ext:MenuItem runat="server" Text="Item 1" Icon="GroupAdd" />
-                    <ext:MenuItem runat="server" Text="Item 2" Icon="GroupDelete" />
-                    <ext:MenuItem runat="server" Text="Item 3" Icon="GroupEdit" />
+                    <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-edit" />
+                    <ext:MenuItem runat="server" Text="Item 2" IconCls="x-md md-icon-save" />
+                    <ext:MenuItem runat="server" Text="Item 3" IconCls="x-md md-icon-print" />
                 </Items>
             </ext:Menu>
         </Menu>
     </ext:Button>
 
-    <h2>8. SplitButton with menu</h2>
+    <h3>7. SplitButton with menu</h3>
 
-    <ext:SplitButton runat="server" Text="Text">
+    <ext:SplitButton runat="server" Text="Text" Scale="Medium">
         <Menu>
             <ext:Menu runat="server">
                 <Items>
-                    <ext:MenuItem runat="server" Text="Item 1" Icon="GroupAdd" />
-                    <ext:MenuItem runat="server" Text="Item 2" Icon="GroupDelete" />
-                    <ext:MenuItem runat="server" Text="Item 3" Icon="GroupEdit" />
+                    <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-edit" />
+                    <ext:MenuItem runat="server" Text="Item 2" IconCls="x-md md-icon-save" />
+                    <ext:MenuItem runat="server" Text="Item 3" IconCls="x-md md-icon-print" />
                 </Items>
             </ext:Menu>
         </Menu>
     </ext:SplitButton>
 
-    <h2>9. SplitButton with custom drop down</h2>
+    <h3>8. SplitButton with custom drop down</h3>
 
-    <ext:SplitButton runat="server" Text="Text">
+    <ext:SplitButton runat="server" Text="Text" Scale="Medium">
         <Bin>
-            <ext:Panel runat="server" Width="150" Height="300" Layout="Accordion" Floating="true">
+            <ext:Panel runat="server" Width="180" Height="360" Layout="Accordion" Floating="true">
                 <Items>
                     <ext:Panel runat="server" Title="Item 1" />
                     <ext:Panel runat="server" Title="Item 2" />
@@ -113,7 +116,7 @@
                     <ext:Toolbar runat="server" ClassicButtonStyle="true">
                         <Items>
                             <ext:ToolbarFill runat="server" />
-                            <ext:Button runat="server" Text="Close" Handler="function () {this.up('panel').hide();}"/>
+                            <ext:Button runat="server" Text="Close" Handler="function () {this.up('panel').hide();}" />
                         </Items>
                     </ext:Toolbar>
                 </BottomBar>
@@ -125,29 +128,29 @@
         </Listeners>
     </ext:SplitButton>
 
-    <h2>10. CycleButton</h2>
+    <h3>9. CycleButton</h3>
 
-    <ext:CycleButton runat="server" ShowText="true" PrependText="View As ">
+    <ext:CycleButton runat="server" ShowText="true" Scale="Medium" PrependText="View As ">
         <Menu>
             <ext:Menu runat="server">
                 <Items>
-                    <ext:CheckMenuItem runat="server" Text="Text Only" Icon="Note" />
-                    <ext:CheckMenuItem runat="server" Text="Html" Icon="Html" Checked="true" />
+                    <ext:CheckMenuItem runat="server" Text="Text Only" IconCls="x-md md-icon-check-circle-outline" />
+                    <ext:CheckMenuItem runat="server" Text="Html" IconCls="x-md md-icon-check-circle-outline" Checked="true" />
                 </Items>
             </ext:Menu>
         </Menu>
     </ext:CycleButton>
 
-    <h2>11. Flat Button</h2>
+    <h3>10. Flat Button</h3>
 
-    <ext:Button runat="server" Text="FlatButton" Icon="Accept" Flat="true" />
+    <ext:Button runat="server" Text="FlatButton" Scale="Medium" IconCls="x-md md-icon-check-circle-outline" Flat="true" />
 
-    <h2>12. Custom Size Button</h2>
+    <h3>11. Custom Size Button</h3>
 
     <ext:Button ID="Button1" runat="server" Text="128 x 128" Height="128" Width="128" />
 
-    <h2>13. Hyperlink</h2>
+    <h3>12. Hyperlink</h3>
 
-    <ext:Hyperlink runat="server" Text="Hyperlink" Icon="World" />
+    <ext:Hyperlink runat="server" Text="Hyperlink" />
 </body>
 </html>

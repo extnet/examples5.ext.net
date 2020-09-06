@@ -22,7 +22,8 @@
             stickWhileHover = true,
             closeOnMouseDown = true,
             autoClose = true,
-            autoCloseDelay = 2500
+            autoCloseDelay = 2500,
+            width = 180
         };
 
         X.Toast(toastObj);
@@ -39,7 +40,8 @@
             StickWhileHover = true,
             CloseOnMouseDown = true,
             AutoClose = true,
-            AutoCloseDelay = 2500
+            AutoCloseDelay = 2500,
+            Width = 180
         };
 
         X.Toast(config);
@@ -59,12 +61,12 @@
 
         <h1>Window Toast Overview</h1>
         
-        <h2>Simple Client-Side Toast</h2>
+        <h2>Client-Side Toast</h2>
         
         <ext:Button runat="server" Handler="Ext.toast('Toast 1');" Text="Toast 1" />
 
 
-        <h2>Simple Server-Side Toast</h2>
+        <h2>Server-Side Toast</h2>
         
         <ext:Button runat="server" OnDirectClick="Button2_Click" Text="Toast 2" />
 
@@ -80,7 +82,7 @@
 
         <ext:Button ID="Button5" runat="server" OnDirectClick="Button5_Click" Text="Toast 5" />
 
-        <h2>Markup toast</h2>
+        <h2>Markup Toast</h2>
 
         <p>See source code for the Toast that is displayed on page load.</p>
 

@@ -75,7 +75,7 @@
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="180"
                     Html="Some panel content goes here!"
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -96,7 +96,7 @@
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="180"
                     Html="Some panel content goes here!"
                     PaddingSummary="10px 15px">
                     <Buttons>
@@ -118,7 +118,7 @@
                     Frame="true"
                     Title="Demo Panel"
                     Width="200"
-                    Height="200"
+                    Height="180"
                     Html="Some panel content goes here!"
                     PaddingSummary="10px 15px">
                     <Buttons>

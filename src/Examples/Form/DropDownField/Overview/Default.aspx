@@ -154,14 +154,14 @@
             ID="Field3"
             runat="server"
             Editable="false"
-            Width="300">
+            Width="480">
             <Component>
                 <ext:TreePanel
                     runat="server"
                     Title="My Task List"
                     Icon="Accept"
-                    Height="300"
-                    Width="300"
+                    Height="480"
+                    Width="480"
                     Shadow="false"
                     UseArrows="true"
                     Scrollable="Both"
@@ -231,14 +231,14 @@
             ID="DropDownFieldGrid"
             runat="server"
             Editable="false"
-            Width="300">
+            Width="480">
             <Listeners>
                 <Expand Handler="this.picker.setWidth(500);" />
             </Listeners>
             <Component>
                 <ext:GridPanel
                     runat="server"
-                    Height="350"
+                    Height="480"
                     Title="Plants"
                     Frame="true"
                     ForceFit="true">

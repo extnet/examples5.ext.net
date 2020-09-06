@@ -14,7 +14,7 @@
         <Items>
             <ext:Panel
                 runat="server"
-                BodyPadding="15"
+                BodyPadding="18"
                 Width="200"
                 Height="100"
                 Frame="true"
@@ -25,7 +25,7 @@
                 />
             <ext:Panel
                 runat="server"
-                BodyPadding="15"
+                BodyPadding="18"
                 Width="200"
                 Height="100"
                 Frame="true"

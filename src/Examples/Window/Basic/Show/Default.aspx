@@ -46,20 +46,7 @@
         <h3>Ext.NET Buttons</h3>
 
         <p>
-            <ext:Button
-                ID="Button1"
-                runat="server"
-                Text="With PostBack"
-                OnClick="Button1_Click"
-                AutoPostBack="true"
-                />
-        </p>
-
-        <p>
-            <ext:Button
-                ID="Button2"
-                runat="server"
-                Text="Click Listener">
+            <ext:Button runat="server" Text="Click Listener">
                 <Listeners>
                     <Click Handler="#{Window2}.show()" />
                 </Listeners>
@@ -74,38 +61,24 @@
             </ext:Button>
         </p>
 
+        <p>
+            <ext:Button runat="server" Text="With PostBack" OnClick="Button1_Click" AutoPostBack="true" />
+        </p>
+
         <br />
 
         <h3>ASP.NET Buttons</h3>
 
-        <br />
-        <br />
-
         <p>
-            <asp:Button
-                ID="Button4"
-                runat="server"
-                Text="ASP.NET Button with OnClientClick"
-                OnClientClick="App.Window4.show();return false;"
-                />
+            <asp:Button runat="server" Text="ASP.NET Button with OnClientClick" OnClientClick="App.Window4.show();return false;" />
         </p>
 
         <p>
-            <asp:Button
-                ID="Button5"
-                runat="server"
-                OnClientClick="return false;"
-                Text="ASP.NET Button with Custom DirectEvent"
-                />
+            <asp:Button runat="server" OnClientClick="return false;" Text="ASP.NET Button with Custom DirectEvent" />
         </p>
 
         <p>
-            <asp:Button
-                ID="Button6"
-                runat="server"
-                Text="ASP.NET Button with Custom Listener"
-                OnClientClick="return false;"
-                />
+            <asp:Button runat="server" Text="ASP.NET Button with Custom Listener" OnClientClick="return false;" />
         </p>
 
         <ext:Window
@@ -113,8 +86,8 @@
             runat="server"
             Title="With PostBack"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="250"
             Y="100"
             />
@@ -124,8 +97,8 @@
             runat="server"
             Title="Click Listener"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="275"
             Y="150"
             />
@@ -135,8 +108,8 @@
             runat="server"
             Title="Click DirectEvent"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="300"
             Y="200"
             />
@@ -146,8 +119,8 @@
             runat="server"
             Title="ASP.NET Button with OnClientClick"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="325"
             Y="250"
             />
@@ -157,8 +130,8 @@
             runat="server"
             Title="ASP.NET Button with Custom DirectEvent"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="350"
             Y="300"
             />
@@ -168,8 +141,8 @@
             runat="server"
             Title="ASP.NET Button with Custom Listener"
             Hidden="true"
-            Width="350"
-            Height="185"
+            Width="360"
+            Height="270"
             X="375"
             Y="350"
             />

@@ -14,11 +14,11 @@
         <Items>
             <ext:Panel
                 runat="server"
-                Width="300"
+                Width="480"
                 Border="false"
                 Region="West"
                 Layout="Fit"
-                BodyPadding="5">
+                BodyPadding="18">
                 <Items>
                     <ext:Panel runat="server" Layout="Accordion" MarginSpec="0 0 15 0">
                         <LayoutConfig>
@@ -35,7 +35,7 @@
                 </Items>
             </ext:Panel>
 
-            <ext:Panel runat="server" MarginSpec="5" Region="Center" BodyPadding="10">
+            <ext:Panel runat="server" MarginSpec="5" Region="Center" BodyPadding="18">
                 <Content>
                     <h1>Original header of the Accordion's item</h1>
                 </Content>

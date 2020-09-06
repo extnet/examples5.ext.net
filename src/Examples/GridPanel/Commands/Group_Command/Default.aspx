@@ -37,8 +37,8 @@
         <ext:GridPanel
             runat="server"
             Collapsible="true"
-            Width="600"
-            Height="350"
+            Width="960"
+            Height="480"
             RowLines="false"
             Title="Plants"
             Frame="true"

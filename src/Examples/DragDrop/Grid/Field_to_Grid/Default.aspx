@@ -206,8 +206,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Grid"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store
                     ID="Store1"
@@ -248,7 +248,7 @@
              ID="Panel1"
              runat="server"
              Frame="true"
-             Width="600">
+             Width="960">
             <Items>
                 <ext:TextField runat="server" FieldLabel="Drag this text" Text="test" />
                 <ext:NumberField runat="server" FieldLabel="Drag this number" Number="1.2" />

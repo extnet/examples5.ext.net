@@ -16,11 +16,11 @@
             Title="Resize Me"
             Icon="ArrowOut"
             Width="500"
-            Height="300"
+            Height="480"
             MinWidth="300"
             MinHeight="200"
             Plain="true"
-            BodyPadding="5"
+            BodyPadding="18"
             ButtonAlign="Center"
             LabelWidth="55"
             Layout="Anchor">

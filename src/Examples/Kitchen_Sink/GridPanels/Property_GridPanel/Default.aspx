@@ -121,7 +121,7 @@
                 <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
             </LayoutConfig>
             <Items>
-                <ext:Container runat="server" Width="275" Height="300">
+                <ext:Container runat="server" Width="275" Height="480">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

@@ -69,8 +69,8 @@
             ID="TreePanel1"
             runat="server"
             Title="Tree"
-            Width="300"
-            Height="450"
+            Width="480"
+            Height="480"
             Border="false">
             <Root>
                 <ext:Node NodeID="0" Text="Root" />

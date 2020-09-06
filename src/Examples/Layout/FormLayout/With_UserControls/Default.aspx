@@ -122,11 +122,11 @@
             Icon="User"
             Closable="false"
             Title="Customer Details"
-            Width="350"
+            Width="360"
             Height="530"
             Resizable="false"
             BodyStyle="background-color:#fff;"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Anchor">
             <Items>
                 <ext:TextField ID="txtFirstName" runat="server" FieldLabel="First Name" AllowBlank="false" />

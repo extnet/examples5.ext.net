@@ -111,7 +111,7 @@
         <ext:Panel
             runat="server"
             Title="Live Animated Chart"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <Items>

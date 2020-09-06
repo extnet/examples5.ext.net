@@ -52,7 +52,7 @@
             runat="server"
             Title="Welcome!"
             Width="500"
-            BodyPadding="20">
+            BodyPadding="18">
             <Items>
                 <ext:Component runat="server" MarginSpec="0 0 20 0">
                     <Content>

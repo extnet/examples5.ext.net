@@ -101,7 +101,7 @@
         <h1>Group Summary Plugin</h1>
         <p>Advanced grouping grid that allows cell editing and includes custom dynamic summary calculations.</p>
 
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:Store ID="Store1" runat="server" GroupField="Name">
             <Sorters>
@@ -132,8 +132,8 @@
             Collapsible="true"
             AnimCollapse="false"
             Icon="ApplicationViewColumns"
-            Width="800"
-            Height="450">
+            Width="960"
+            Height="480">
             <Plugins>
                 <ext:CellEditing runat="server" ClicksToEdit="1" />
             </Plugins>

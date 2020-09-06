@@ -80,7 +80,7 @@
                         <ext:Slider
                             runat="server"
                             HideLabel="true"
-                            Width="300"
+                            Width="480"
                             XMinValue="0"
                             MaxValue="500"
                             Numbers="100,200">

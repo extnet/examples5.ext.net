@@ -15,9 +15,10 @@
                 runat="server"
                 Title="North"
                 Region="North"
+                Rounded="false"
                 Split="true"
-                Height="200"
-                BodyPadding="6"
+                Height="180"
+                BodyPadding="18"
                 Html="North"
                 Collapsible="true"
                 />
@@ -25,10 +26,11 @@
                 runat="server"
                 Title="West"
                 Region="West"
+                Rounded="false"
                 Layout="Accordion"
-                Width="250"
-                MinWidth="250"
-                MaxWidth="400"
+                Width="270"
+                MinWidth="180"
+                MaxWidth="360"
                 Split="true"
                 Collapsible="true">
                 <Items>
@@ -36,16 +38,14 @@
                         runat="server"
                         Title="Navigation"
                         Border="false"
-                        BodyPadding="6"
-                        Icon="FolderGo"
+                        BodyPadding="18"
                         Html="West"
                         />
                     <ext:Panel
                         runat="server"
                         Title="Settings"
                         Border="false"
-                        BodyPadding="6"
-                        Icon="FolderWrench"
+                        BodyPadding="18"
                         Html="Some settings in here"
                         />
                 </Items>
@@ -56,7 +56,7 @@
                         runat="server"
                         Title="Center"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="<h1>Viewport with BorderLayout</h1>"
                         />
                     <ext:Panel
@@ -64,7 +64,7 @@
                         Title="Close Me"
                         Closable="true"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="Closeable Tab"
                         />
                 </Items>
@@ -73,14 +73,16 @@
                 runat="server"
                 Title="East"
                 Region="East"
+                Rounded="false"
                 Collapsible="true"
                 Split="true"
-                MinWidth="250"
-                Width="250"
+                MinWidth="180"
+                Width="270"
                 Layout="Fit">
                 <Items>
                     <ext:TabPanel
                         runat="server"
+                        Rounded="false"
                         ActiveTabIndex="1"
                         TabPosition="Bottom"
                         Border="false">
@@ -89,7 +91,7 @@
                                 runat="server"
                                 Title="Tab 1"
                                 Border="false"
-                                BodyPadding="6"
+                                BodyPadding="18"
                                 Html="East Tab 1"
                                 />
                             <ext:Panel
@@ -97,7 +99,7 @@
                                 Title="Tab 2"
                                 Closable="true"
                                 Border="false"
-                                BodyPadding="6"
+                                BodyPadding="18"
                                 Html="East Tab 2"
                                 />
                         </Items>
@@ -108,10 +110,11 @@
                 runat="server"
                 Title="South"
                 Region="South"
+                Rounded="false"
                 Split="true"
                 Collapsible="true"
-                Height="200"
-                BodyPadding="6"
+                Height="180"
+                BodyPadding="18"
                 Html="South"
                 />
         </Items>

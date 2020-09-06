@@ -174,8 +174,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Array Grid"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -192,7 +192,7 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Name" Flex="1" DataIndex="name" Sortable="false" />
-                    <ext:Column runat="server" Text="Rating" Width="125" DataIndex="rating" Sortable="false"/>
+                    <ext:Column runat="server" Text="Rating" Width="125" DataIndex="rating" Sortable="false" />
                     <ext:Column runat="server" Text="Salary" Width="125" DataIndex="salary" Sortable="false" Align="End">
                         <Renderer Format="UsMoney" />
                     </ext:Column>

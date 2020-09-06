@@ -16,11 +16,11 @@
                 <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
             </LayoutConfig>
             <Items>
-                <ext:DrawContainer runat="server" Width="320" Height="400">
+                <ext:DrawContainer runat="server" Width="320" Height="480">
                     <Items>
                         <ext:ImageSprite Src="bd.jpg" X="0" Y="0" Width="320" Height="240" />
                         <ext:ImageSprite Src="bd.jpg" X="0" Y="200" Width="320" Height="240" ScalingX="1" ScalingY="-0.7" Opacity="0.5" />
-                        <ext:RectSprite X="0" Y="210" Width="320" Height="200" FillStyle="url(#reflectGrd)" />
+                        <ext:RectSprite X="0" Y="210" Width="320" Height="180" FillStyle="url(#reflectGrd)" />
                     </Items>
                     <Gradients>
                         <ext:LinearGradient GradientID="reflectGrd" Degrees="90">

@@ -29,7 +29,7 @@
         <p>This component allows to easily set, interact and update nice gauges on screen.</p>
         <p>Move the slider around to update the gauges' display value.</p>
 
-        <ext:Panel ID="Panel1" runat="server" Title="Basic Gauge" Width="800" Height="500">
+        <ext:Panel ID="Panel1" runat="server" Title="Basic Gauge" Width="960" Height="500">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

@@ -86,7 +86,7 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Height="300"
+            Height="480"
             Width="250"
             UseArrows="true"
             Scrollable="Both"
@@ -99,7 +99,7 @@
             RemoteInsertUrl="RemoteTree.asmx/RemoteInsert"
             RemoteMoveUrl="RemoteTree.asmx/RemoteMove">
             <Editor>
-                <ext:TextField runat="server"/>
+                <ext:TextField runat="server" />
             </Editor>
 
             <Store>

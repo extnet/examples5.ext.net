@@ -26,7 +26,7 @@
             Width="400"
             Title="Password Mask"
             Closable="false"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Anchor"
             DefaultAnchor="100%">
             <Items>

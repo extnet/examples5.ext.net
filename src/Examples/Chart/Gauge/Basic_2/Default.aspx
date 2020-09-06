@@ -108,7 +108,7 @@
                         <ext:PolarChart
                             runat="server"
                             Height="240"
-                            Width="300"
+                            Width="480"
                             StoreID="Store1"
                             InsetPadding="30">
                             <Items>
@@ -126,7 +126,7 @@
                         <ext:PolarChart
                             runat="server"
                             Height="240"
-                            Width="300"
+                            Width="480"
                             InsetPadding="30"
                             StoreID="Store1">
                             <Items>
@@ -161,7 +161,7 @@
                         <ext:PolarChart
                             runat="server"
                             Height="240"
-                            Width="300"
+                            Width="480"
                             PaddingSpec="10 0 0 0"
                             StoreID="Store1"
                             InsetPadding="30">
@@ -182,7 +182,7 @@
                         <ext:PolarChart
                             runat="server"
                             Height="240"
-                            Width="300"
+                            Width="480"
                             PaddingSpec="10 0 0 0"
                             StoreID="Store1"
                             InsetPadding="30">

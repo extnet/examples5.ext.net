@@ -77,7 +77,7 @@
             Title="DisplayTime"
             Icon="Date"
             Closable="false"
-            BodyPadding="5"
+            BodyPadding="18"
             DefaultLabelSeparator=" ">
             <BottomBar>
                 <ext:Toolbar runat="server">

@@ -121,7 +121,7 @@
 
         <p>It is not possible to lock or unlock <i>all</i> columns using the user interface. Each side, locked or unlocked must always contain at least one column.</p>
 
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <ext:GridPanel
             ID="GridPanel1"
@@ -129,8 +129,8 @@
             Frame="true"
             Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
-            Width="800"
-            Height="450">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server" GroupField="Name">
                     <Sorters>
@@ -174,7 +174,7 @@
                         DataIndex="Description"
                         Hideable="false"
                         SummaryType="Count"
-                        Width="300">
+                        Width="480">
                         <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                         <Editor>
                             <ext:TextField runat="server" />

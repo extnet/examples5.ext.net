@@ -34,7 +34,7 @@
         <ext:Panel
             ID="Panel1"
             runat="server"
-            Height="200"
+            Height="180"
             Title="Right-Click on this Panel"
             ContextMenuID="ColorMenu1"
             />
@@ -42,7 +42,7 @@
         <ext:Panel
             ID="Panel2"
             runat="server"
-            Height="200"
+            Height="180"
             Title="Right-Click on this Panel too!"
             ContextMenuID="ColorMenu1"
             />

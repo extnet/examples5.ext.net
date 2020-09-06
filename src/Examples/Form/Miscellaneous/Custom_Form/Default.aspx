@@ -87,7 +87,7 @@
             Title="Forum Search"
             Cls="search-results"
             Height="500"
-            Width="600"
+            Width="960"
             Layout="Fit">
             <Items>
                 <ext:DataView

@@ -87,7 +87,7 @@
             runat="server"
             StoreID="Store1"
             Title="DataReader Grid"
-            Width="600"
+            Width="960"
             Height="320">
             <ColumnModel runat="server">
                 <Columns>

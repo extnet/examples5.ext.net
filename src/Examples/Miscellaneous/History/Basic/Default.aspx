@@ -65,8 +65,8 @@
         <ext:TabPanel
             ID="TabPanel1"
             runat="server"
-            Height="300"
-            Width="600"
+            Height="480"
+            Width="960"
             ActiveTabIndex="0">
             <Items>
                 <ext:Panel ID="Tab1" runat="server" Title="Tab1" Layout="Fit">

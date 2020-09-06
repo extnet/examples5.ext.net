@@ -20,7 +20,7 @@
             runat="server"
             Title="Simple Form"
             BodyPaddingSummary="5 5 0"
-            Width="350"
+            Width="360"
             Frame="true"
             ButtonAlign="Center"
             Layout="Form">
@@ -104,7 +104,7 @@
             runat="server"
             Title="Simple Form with FieldSets"
             PaddingSummary="5px 5px 0"
-            Width="350"
+            Width="360"
             Frame="true"
             ButtonAlign="Center">
             <Items>
@@ -154,7 +154,7 @@
             Title="Multi Column, Nested Layouts and Anchoring"
             Frame="true"
             PaddingSummary="5px 5px 0"
-            Width="600"
+            Width="960"
             ButtonAlign="Center">
             <Items>
                 <ext:Container runat="server" Layout="Column">
@@ -175,7 +175,7 @@
                 </ext:Container>
                 <ext:Container runat="server" Layout="Anchor">
                     <Items>
-                        <ext:HtmlEditor runat="server" Height="200" FieldLabel="Biography" LabelAlign="Top" Padding="10" />
+                        <ext:HtmlEditor runat="server" Height="180" FieldLabel="Biography" LabelAlign="Top" Padding="10" />
                     </Items>
                 </ext:Container>
             </Items>
@@ -191,7 +191,7 @@
             ID="Panel4"
             runat="server"
             Border="false"
-            Width="350"
+            Width="360"
             ButtonAlign="Center"
             Layout="Fit">
             <Items>
@@ -200,7 +200,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Personal Details"
-                            BodyPadding="10"
+                            BodyPadding="18"
                             Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
@@ -215,7 +215,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Phone Numbers"
-                            BodyPadding="10"
+                            BodyPadding="18"
                             Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
@@ -242,8 +242,8 @@
             ID="Panel5"
             runat="server"
             Title="Inner Tabs"
-            Width="600"
-            BodyPadding="5"
+            Width="960"
+            BodyPadding="18"
             ButtonAlign="Center">
             <Items>
                 <ext:Container runat="server">
@@ -272,7 +272,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Personal Details"
-                            BodyPadding="10"
+                            BodyPadding="18"
                             Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
@@ -288,7 +288,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Phone Numbers"
-                            BodyPadding="10"
+                            BodyPadding="18"
                             Layout="Form">
                             <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
@@ -304,7 +304,7 @@
                         <ext:Panel
                             runat="server"
                             Title="Biography"
-                            BodyPadding="10"
+                            BodyPadding="18"
                             Layout="Fit">
                             <Items>
                                 <ext:HtmlEditor runat="server" />
@@ -315,7 +315,7 @@
                             runat="server"
                             Title="Tab 4"
                             Layout="Form"
-                            BodyPadding="10" >
+                            BodyPadding="18" >
                              <Defaults>
                                 <ext:Parameter Name="LabelWidth" Value="75" Mode="Raw" />
                                 <ext:Parameter Name="LabelAlign" Value="top" Mode="Value" />

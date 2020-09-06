@@ -111,7 +111,7 @@
             <br />
 
             <ext:Label ID="StatusLabel" runat="server" Cls="status" Text="Nothing to see here." />
-            <ext:ProgressBar ID="Progress1" runat="server" Width="300" Text="Initializing..." Hidden="true" />
+            <ext:ProgressBar ID="Progress1" runat="server" Width="480" Text="Initializing..." Hidden="true" />
         </p>
 
         <p>
@@ -144,7 +144,7 @@
                 </Listeners>
             </ext:Button>
 
-            <ext:ProgressBar ID="Progress3" runat="server" Width="300">
+            <ext:ProgressBar ID="Progress3" runat="server" Width="480">
                 <Listeners>
                     <Update Handler="#{StatusLabel3}.setText(#{StatusLabel3}.getText()+'.');" />
                 </Listeners>
@@ -162,7 +162,7 @@
                 </Listeners>
             </ext:Button>
 
-            <ext:ProgressBar ID="Progress4" runat="server" Width="300" Text="Waiting on you..." TextEl="p4text" Cls="custom" />
+            <ext:ProgressBar ID="Progress4" runat="server" Width="480" Text="Waiting on you..." TextEl="p4text" Cls="custom" />
             <div class="status"><b>Status:</b> <span id="p4text"></span></div>
         </p>
     </form>

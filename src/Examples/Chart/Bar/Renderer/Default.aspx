@@ -52,7 +52,7 @@
         <ext:Panel
             runat="server"
             Title="Bar Renderer"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <TopBar>

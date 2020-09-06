@@ -67,7 +67,7 @@
 
         <h1>DropDownField ValueText Mode</h1>
 
-        <ext:Container runat="server" Width="350" Height="500">
+        <ext:Container runat="server" Width="360" Height="500">
             <Items>
                 <ext:DropDownField
                     ID="Field1"
@@ -75,7 +75,7 @@
                     UnderlyingValue="Item22,Item23"
                     Text="[Milk,Cereal]"
                     Editable="false"
-                    Width="300"
+                    Width="480"
                     TriggerIcon="SimpleArrowDown"
                     Mode="ValueText">
                     <Component>
@@ -83,8 +83,8 @@
                             runat="server"
                             Title="My Task List"
                             Icon="Accept"
-                            Height="300"
-                            Width="300"
+                            Height="480"
+                            Width="480"
                             Shadow="false"
                             UseArrows="true"
                             Scrollable="Both"

@@ -17,7 +17,7 @@
 
         <p>Each item in the Toolbar has an optional 'reorderable' property, which will make the button draggable if set to true. In this example the 4 rightmost buttons are reorderable.</p>
 
-        <ext:Toolbar runat="server" Width="600">
+        <ext:Toolbar runat="server" Width="960">
             <Plugins>
                 <ext:BoxReorderer runat="server" DefaultReorderable="true">
                     <Listeners>

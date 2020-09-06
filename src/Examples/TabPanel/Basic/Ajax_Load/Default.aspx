@@ -21,7 +21,7 @@
                 ID="TabPanel1"
                 runat="server"
                 ActiveTabIndex="0"
-                Width="600"
+                Width="960"
                 Height="250"
                 Plain="true">
                 <Items>
@@ -30,7 +30,7 @@
                         runat="server"
                         Title="Normal Tab"
                         Html="My content was added with the Html Property."
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Scrollable="Both"
                         />
                     <ext:Panel
@@ -38,14 +38,14 @@
                         runat="server"
                         Title="Closable Tab"
                         Html="You can close this Tab."
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Closable="true"
                         />
                     <ext:Panel
                         ID="Tab3"
                         runat="server"
                         Title="Ajax Tab"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Scrollable="Both">
                         <Loader runat="server" Url="ajax.aspx">
                             <LoadMask ShowMask="true" />
@@ -56,7 +56,7 @@
                         runat="server"
                         Title="Event Tab"
                         Html="I am tab 3's content. I also have an event listener attached."
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Scrollable="Both">
                         <Listeners>
                             <Activate Handler="Ext.Msg.alert('Event', this.title + ' was activated.');" Delay="1" />

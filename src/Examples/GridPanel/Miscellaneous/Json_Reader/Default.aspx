@@ -15,7 +15,7 @@
         Collapsible="true"
         Title="Plant Summary"
         Height="500"
-        Width="1000"
+        Width="960"
         Layout="Fit">
         <Items>
             <ext:GridPanel
@@ -46,7 +46,7 @@
                             </ext:Model>
                         </Model>
                         <Sorters>
-                            <ext:DataSorter Property="Common" Direction="ASC"/>
+                            <ext:DataSorter Property="Common" Direction="ASC" />
                         </Sorters>
                     </ext:Store>
                 </Store>

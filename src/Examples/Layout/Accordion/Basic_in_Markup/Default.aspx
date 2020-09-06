@@ -16,7 +16,7 @@
         runat="server"
         Title="Accordion"
         Width="250"
-        Height="400"
+        Height="480"
         Maximizable="true"
         BodyBorder="0"
         Icon="ApplicationTileVertical"

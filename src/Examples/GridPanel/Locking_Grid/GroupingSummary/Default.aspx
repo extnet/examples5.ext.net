@@ -112,7 +112,7 @@
 </head>
 <body>
     <form runat="server">
-        <ext:ResourceManager runat="server"/>
+        <ext:ResourceManager runat="server" />
 
         <h1>Locking, Cell Editing Summary Grid Example</h1>
 
@@ -124,8 +124,8 @@
             Frame="true"
             Title="Sponsored Projects"
             Icon="ApplicationViewColumns"
-            Width="800"
-            Height="450">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server" GroupField="Name">
                     <Sorters>
@@ -161,7 +161,7 @@
                         DataIndex="Description"
                         Hideable="false"
                         SummaryType="Count"
-                        Width="300">
+                        Width="480">
                         <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                     </ext:Column>
 

@@ -119,7 +119,7 @@
             resizes (maintaining its aspect ratio) in increments of 20 pixels in both directions.
         </p>
 
-        <img id="croix-de-fer" src="resources/images/CroixDeFer.jpg" width="160" height="120"/>
+        <img id="croix-de-fer" src="resources/images/CroixDeFer.jpg" width="160" height="120" />
 
         <ext:Resizer
             runat="server"
@@ -188,7 +188,7 @@
             runat="server"
             Title="Resizable panel"
             Width="400"
-            Height="200">
+            Height="180">
             <Loader
                 runat="server"
                 Url="https://ext.net"

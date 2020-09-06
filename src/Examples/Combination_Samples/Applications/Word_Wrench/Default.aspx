@@ -139,14 +139,15 @@
                         <ext:Panel
                             runat="server"
                             Title="Word Wrench"
-                            Icon="Wrench"
+                            Rounded="false"
+                            IconCls="x-md md-icon-build"
                             Flex="8"
                             Layout="Fit"
-                            BodyPadding="20">
+                            BodyPadding="18">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
-                                        <ext:Button runat="server" Text="Clear" Icon="ArrowUndo">
+                                        <ext:Button runat="server" Text="Clear" IconCls="x-md md-icon-clear">
                                             <Listeners>
                                                 <Click Handler="App.TextArea1.clear()" />
                                             </Listeners>
@@ -167,9 +168,10 @@
                             ID="frmSettings"
                             runat="server"
                             Title="Settings"
+                            Rounded="false"
                             Flex="4"
-                            Icon="Cog"
-                            BodyPadding="20"
+                            IconCls="x-md md-icon-settings"
+                            BodyPadding="18"
                             DefaultAnchor="100%"
                             Layout="VBox">
                             <LayoutConfig>
@@ -183,7 +185,7 @@
                                             ID="btnForm"
                                             runat="server"
                                             Text="Reset"
-                                            Icon="ArrowRedo"
+                                            IconCls="x-md md-icon-undo"
                                             OnClientClick="App.btnForm.up('form').reset();" />
                                     </Items>
                                 </ext:Toolbar>
@@ -332,7 +334,7 @@
                     ID="Container1"
                     runat="server"
                     Region="South"
-                    Height="350"
+                    Height="480"
                     Layout="HBox">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
@@ -401,6 +403,7 @@
                             ID="GridPanel1"
                             runat="server"
                             Title="Words"
+                            Rounded="false"
                             Flex="2"
                             StoreID="Store1">
                             <ColumnModel>
@@ -413,8 +416,9 @@
                         <ext:Panel
                             runat="server"
                             Title="Raw Data"
+                            Rounded="false"
                             Layout="Fit"
-                            BodyPadding="5"
+                            BodyPadding="18"
                             Flex="2">
                             <TopBar>
                                 <ext:Toolbar runat="server">

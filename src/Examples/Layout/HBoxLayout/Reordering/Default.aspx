@@ -12,7 +12,7 @@
 
     <ext:Window
         runat="server"
-        Width="600"
+        Width="960"
         Height="150"
         Title="HBox window (drag below panels)">
         <LayoutConfig>

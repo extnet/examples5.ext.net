@@ -17,11 +17,11 @@
 
         <ext:Window
             runat="server"
-            Width="350"
+            Width="360"
             Title="Password Verification"
             Icon="Textfield"
             Closable="false"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Form">
             <Defaults>
                 <ext:Parameter Name="LabelWidth" Value="125" Mode="Raw" />

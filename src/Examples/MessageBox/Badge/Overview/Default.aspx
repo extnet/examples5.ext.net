@@ -228,7 +228,7 @@
         runat="server"
         Title="Dynamic Badge"
         Width="200"
-        Height="200">
+        Height="180">
         <Defaults>
             <ext:Parameter Name="margin" Value="10" />
         </Defaults>

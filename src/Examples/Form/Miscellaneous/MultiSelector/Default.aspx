@@ -108,7 +108,7 @@
             runat="server"
             ID="Selector1"
             Width="400"
-            Height="300"
+            Height="480"
             Title="Selected Employees"
             FieldName="Name">
             <Store>

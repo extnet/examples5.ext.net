@@ -113,7 +113,7 @@
                     ID="ComboBoxTheme"
                     runat="server"
                     FieldLabel="Choose Theme"
-                    Width="300">
+                    Width="480">
                     <Listeners>
                         <Select Handler="window.location.search = '?theme=' + records[0].data[this.valueField];" />
                     </Listeners>
@@ -128,7 +128,7 @@
             Height="170"
             MinWidth="150"
             Title="Window"
-            BodyPadding="5"
+            BodyPadding="18"
             Html="Click Submit"
             Collapsible="true"
             X="570"
@@ -168,7 +168,7 @@
                     Width="170"
                     Height="170"
                     Title="Basic Panel"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Html="Some content"
                     Collapsible="true"
                     X="10"
@@ -179,7 +179,7 @@
                     Width="170"
                     Height="170"
                     Title="Masked Panel"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Html="Some content"
                     Collapsible="true"
                     X="190"
@@ -208,7 +208,7 @@
 
                 <ext:Panel
                     runat="server"
-                    Width="700"
+                    Width="720"
                     Height="170"
                     Title="Basic Panel With Toolbars"
                     X="730"
@@ -415,7 +415,7 @@
                 <ext:Panel
                     runat="server"
                     Title="BorderLayout Panel"
-                    Width="700"
+                    Width="720"
                     Height="380"
                     X="730"
                     Y="190"
@@ -440,7 +440,7 @@
                 <ext:GridPanel
                     runat="server"
                     Title="GridPanel"
-                    Width="700"
+                    Width="720"
                     Height="270"
                     X="730"
                     Y="580">
@@ -509,7 +509,7 @@
                 <ext:Panel
                     runat="server"
                     Title="AccordionLayout with TreePanel"
-                    Width="700"
+                    Width="720"
                     Height="320"
                     X="730"
                     Y="860"
@@ -531,8 +531,8 @@
                                 </ext:Node>
                             </Root>
                         </ext:TreePanel>
-                        <ext:Panel runat="server" Title="Item 2" BodyPadding="5" Html="Some content" />
-                        <ext:Panel runat="server" Title="Item 3" BodyPadding="5" Html="Some content" />
+                        <ext:Panel runat="server" Title="Item 2" BodyPadding="18" Html="Some content" />
+                        <ext:Panel runat="server" Title="Item 3" BodyPadding="18" Html="Some content" />
                     </Items>
                 </ext:Panel>
 
@@ -544,8 +544,8 @@
 
                 <ext:TabPanel
                     runat="server"
-                    Width="350"
-                    Height="200"
+                    Width="360"
+                    Height="180"
                     X="10"
                     Y="1330"
                     DefaultPadding="5">
@@ -562,8 +562,8 @@
 
                 <ext:TabPanel
                     runat="server"
-                    Width="350"
-                    Height="200"
+                    Width="360"
+                    Height="180"
                     X="370"
                     Y="1330"
                     DefaultPadding="5"
@@ -610,11 +610,11 @@
                 <ext:Panel
                     runat="server"
                     Title="ProgressBar / Slider"
-                    Width="700"
+                    Width="720"
                     Height="230"
                     X="730"
                     Y="1190"
-                    BodyPadding="15">
+                    BodyPadding="18">
                     <Items>
                         <ext:ProgressBar runat="server" Value=".5" Text="Progress text..." />
                         <ext:Slider runat="server" Number="50" Width="420" />
@@ -631,7 +631,7 @@
                 <ext:Panel
                     runat="server"
                     Title="ButtonGroup with various Buttons and Icon sizes"
-                    Width="700"
+                    Width="720"
                     Height="270"
                     X="730"
                     Y="1430">

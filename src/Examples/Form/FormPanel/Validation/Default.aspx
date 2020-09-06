@@ -25,14 +25,14 @@
         <ext:Panel
             runat="server"
             Layout="Fit"
-            Width="600"
+            Width="960"
             Height="250">
             <Items>
                 <ext:FormPanel
                     ID="FormPanel1"
                     runat="server"
                     Title="FormPanel Validation (all fields required)"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     ButtonAlign="Right"
                     Layout="Column">
                     <Items>

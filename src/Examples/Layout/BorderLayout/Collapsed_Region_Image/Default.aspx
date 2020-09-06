@@ -27,8 +27,8 @@
         runat="server"
         Title="Collapsed Region Image"
         Icon="Application"
-        Width="600"
-        Height="350"
+        Width="960"
+        Height="480"
         Border="false"
         Closable="false"
         X="100"
@@ -48,7 +48,7 @@
                 TitleCollapse="false"
                 Floatable="false"
                 Collapsed="true"
-                BodyPadding="5"
+                BodyPadding="18"
                 Html="Collapse Panel to see image.">
                 <Listeners>
                     <AfterRender Handler="this.setTitle('');" />

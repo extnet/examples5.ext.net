@@ -15,7 +15,7 @@
             <ext:Panel
                 runat="server"
                 Title="Short Text"
-                BodyPadding="6">
+                BodyPadding="18">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales
                     a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis,
@@ -29,7 +29,7 @@
             <ext:Panel
                 runat="server"
                 Title="Long Text"
-                BodyPadding="6">
+                BodyPadding="18">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales
                     a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis,

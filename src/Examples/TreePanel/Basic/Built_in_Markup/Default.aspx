@@ -16,8 +16,8 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Width="300"
-            Height="450"
+            Width="480"
+            Height="480"
             Icon="BookOpen"
             Title="Catalog"
             Scrollable="Both">

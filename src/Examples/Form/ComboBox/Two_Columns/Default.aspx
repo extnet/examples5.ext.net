@@ -116,7 +116,7 @@
                     </Model>
                 </ext:Store>
             </Store>
-            <ListConfig Width="320" Height="300" ItemSelector=".x-boundlist-item">
+            <ListConfig Width="320" Height="480" ItemSelector=".x-boundlist-item">
                 <Tpl runat="server">
                     <Html>
                         <tpl for=".">

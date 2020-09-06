@@ -87,8 +87,8 @@
 
     <ext:Panel
         runat="server"
-        Width="700"
-        Height="400"
+        Width="720"
+        Height="480"
         Border="false">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
@@ -96,7 +96,7 @@
         <Items>
             <ext:Container
                 runat="server"
-                Height="200"
+                Height="180"
                 Layout="Card"
                 MarginSpec="0 0 5 0">
                 <Items>

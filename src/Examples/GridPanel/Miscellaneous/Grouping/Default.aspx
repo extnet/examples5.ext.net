@@ -97,8 +97,8 @@
             ID="GridPanel1"
             runat="server"
             Collapsible="true"
-            Width="600"
-            Height="350"
+            Width="960"
+            Height="480"
             Title="Plants"
             Frame="true">
             <Store>

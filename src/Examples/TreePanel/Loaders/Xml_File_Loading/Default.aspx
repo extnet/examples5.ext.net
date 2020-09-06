@@ -15,7 +15,7 @@
             DataFile="~/Examples/TreePanel/Loaders/Xml_File_Loading/authors.xml">
         </asp:XmlDataSource>
 
-        <ext:TreePanel runat="server" Height="300" Width="250">
+        <ext:TreePanel runat="server" Height="480" Width="250">
             <Store>
                 <ext:TreeStore runat="server" DataSourceID="XmlDataSource1">
                     <DataBindings>

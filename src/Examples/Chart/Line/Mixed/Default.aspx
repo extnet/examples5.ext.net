@@ -23,8 +23,8 @@
 
         <ext:Panel
             runat="server"
-            Width="600"
-            Height="300"
+            Width="960"
+            Height="480"
             Title="Trends, 2007/2008 (No styling)"
             Layout="Fit">
             <Items>
@@ -82,8 +82,8 @@
 
         <ext:Panel
             runat="server"
-            Width="600"
-            Height="300"
+            Width="960"
+            Height="480"
             Title="Trends, 2007/2008 (No styling)"
             Layout="Fit">
             <Items>
@@ -141,8 +141,8 @@
 
         <ext:Panel
             runat="server"
-            Width="600"
-            Height="300"
+            Width="960"
+            Height="480"
             Title="Trends, 2007/2008 (Simple styling)"
             Layout="Fit">
             <Items>
@@ -188,7 +188,7 @@
                     <Series>
                         <ext:BarSeries XField="Name" YField="Data1">
                             <StyleSpec>
-                                <ext:Sprite FillStyle="url(#bar-gradient)" LineWidth="3" StrokeStyle="#77AECE"/>
+                                <ext:Sprite FillStyle="url(#bar-gradient)" LineWidth="3" StrokeStyle="#77AECE" />
                             </StyleSpec>
                         </ext:BarSeries>
 
@@ -202,7 +202,7 @@
                             </Tooltip>
 
                             <StyleSpec>
-                                <ext:Sprite FillStyle="#18428E" StrokeStyle="#18428E" LineWidth="3"/>
+                                <ext:Sprite FillStyle="#18428E" StrokeStyle="#18428E" LineWidth="3" />
                             </StyleSpec>
 
                             <Marker>

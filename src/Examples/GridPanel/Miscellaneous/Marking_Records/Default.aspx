@@ -73,8 +73,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Test Grid"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store runat="server">
                     <Model>

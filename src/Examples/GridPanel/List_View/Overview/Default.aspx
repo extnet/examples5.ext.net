@@ -117,8 +117,8 @@
         <ext:Panel
             ID="Panel1"
             runat="server"
-            Width="800"
-            Height="300"
+            Width="960"
+            Height="480"
             Title="Simple List <i>View (0 items selected)</i>"
             Layout="Fit">
             <Items>

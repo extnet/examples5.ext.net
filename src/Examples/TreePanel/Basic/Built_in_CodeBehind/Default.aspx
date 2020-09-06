@@ -10,8 +10,8 @@
         this.PlaceHolder1.Controls.Add(tree);
 
         tree.ID = "TreePanel1";
-        tree.Width = Unit.Pixel(300);
-        tree.Height = Unit.Pixel(450);
+        tree.Width = Unit.Pixel(480);
+        tree.Height = Unit.Pixel(480);
         tree.Icon = Icon.BookOpen;
         tree.Title = "Catalog";
         tree.Scrollable = ScrollableOption.Both;

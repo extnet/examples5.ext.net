@@ -136,7 +136,7 @@
                     ID="TreePanel1"
                     runat="server"
                     Region="West"
-                    Width="300"
+                    Width="480"
                     Title="Site Map - Preload"
                     Icon="ChartOrganisation">
                     <Listeners>
@@ -146,12 +146,12 @@
                 <ext:TabPanel
                     ID="Pages"
                     runat="server"
-                    Region="Center"/>
+                    Region="Center" />
                 <ext:TreePanel
                     ID="TreePanel2"
                     runat="server"
                     Region="East"
-                    Width="300"
+                    Width="480"
                     Title="Site Map - Dynamic"
                     Icon="ChartOrganisation">
                     <Listeners>

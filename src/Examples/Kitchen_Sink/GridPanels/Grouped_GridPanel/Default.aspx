@@ -88,8 +88,8 @@
                 Title="Restaurants"
                 Icon="Table"
                 Frame="true"
-                Width="600"
-                Height="400"
+                Width="960"
+                Height="480"
                 MinHeight="200"
                 Resizable="true"
                 Collapsible="true">

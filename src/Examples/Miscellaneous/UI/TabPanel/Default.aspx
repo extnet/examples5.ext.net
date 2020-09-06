@@ -49,7 +49,7 @@
 
         <h3>TabPanel UI</h3>
 
-        <ext:TabPanel runat="server" Width="800" Height="250" Title="TabPanel">
+        <ext:TabPanel runat="server" Width="960" Height="250" Title="TabPanel">
             <Items>
                 <ext:Panel runat="server" Title='Default' Html="Default" />
                 <ext:Panel runat="server" Title='UI="Primary"' Html='UI="Primary"'>

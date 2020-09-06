@@ -131,7 +131,7 @@
             runat="server"
             Width="450"
             Scrollable="Both"
-            BodyPadding="10"
+            BodyPadding="18"
             Frame="true"
             Resizable="true"
             Layout="Form"

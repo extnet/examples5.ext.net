@@ -17,7 +17,7 @@
             runat="server"
             Title="Parent"
             Width="400"
-            Height="200">
+            Height="180">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -26,7 +26,7 @@
                     ID="Panel1"
                     runat="server"
                     Title="A"
-                    BodyPadding="10"
+                    BodyPadding="18"
                     Flex="1">
                     <Loader
                         runat="server"
@@ -39,7 +39,7 @@
                     ID="Panel2"
                     runat="server"
                     Title="B"
-                    BodyPadding="10"
+                    BodyPadding="18"
                     Flex="1">
                     <Loader
                         runat="server"

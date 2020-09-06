@@ -44,9 +44,9 @@
         <ext:FormPanel
             runat="server"
             Title="ItemSelector Test"
-            Width="700"
-            BodyPadding="10"
-            Height="300"
+            Width="720"
+            BodyPadding="18"
+            Height="480"
             Layout="Fit">
             <Items>
                 <ext:ItemSelector

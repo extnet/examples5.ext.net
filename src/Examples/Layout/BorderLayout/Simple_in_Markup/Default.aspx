@@ -27,8 +27,8 @@
         runat="server"
         Title="Simple Layout"
         Icon="Application"
-        Width="600"
-        Height="350"
+        Width="960"
+        Height="480"
         Border="false"
         Collapsible="true"
         Plain="true"
@@ -51,14 +51,14 @@
                         ID="Tab1"
                         runat="server"
                         Title="First Tab"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="First Tab"
                         />
                     <ext:Panel
                         ID="Tab2"
                         runat="server"
                         Title="Another Tab"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="Another Tab"
                         />
                     <ext:Panel
@@ -66,7 +66,7 @@
                         runat="server"
                         Title="Closeable Tab"
                         Closable="true"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="Closable Tab"
                         />
                 </Items>

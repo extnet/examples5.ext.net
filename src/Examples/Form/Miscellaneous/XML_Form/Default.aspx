@@ -47,7 +47,7 @@
             Frame="true"
             Title="XML Form"
             Width="340"
-            BodyPadding="5">
+            BodyPadding="18">
 
             <FieldDefaults LabelAlign="Right" LabelWidth="85" MsgTarget="Side" />
 

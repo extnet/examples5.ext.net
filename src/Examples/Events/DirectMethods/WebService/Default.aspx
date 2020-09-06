@@ -45,8 +45,8 @@
         <ext:Panel
             runat="server"
             Title="Say Hello"
-            Width="300"
-            Height="185"
+            Width="480"
+            Height="270"
             Frame="true"
             ButtonAlign="Center"
             Layout="Form">

@@ -596,7 +596,7 @@
             ID="CustomEl1"
             runat="server"
             Border="false"
-            BodyPadding="2"
+            BodyPadding="18"
             AutoDataBind="true"
             Height="113"
             Width="180">

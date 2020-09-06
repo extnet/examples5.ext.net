@@ -86,7 +86,7 @@
 
         <h1>Add mode of Store</h1>
 
-        <ext:GridPanel ID="GridPanel1" runat="server" Title="Grid" Width="600">
+        <ext:GridPanel ID="GridPanel1" runat="server" Title="Grid" Width="960">
             <Store>
                 <ext:Store ID="Store1" runat="server" OnReadData="AddRecords" WarningOnDirty="false">
                     <Model>

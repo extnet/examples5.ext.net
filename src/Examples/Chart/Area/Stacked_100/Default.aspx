@@ -54,7 +54,7 @@
 
         <ext:Panel
             runat="server"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <Items>
@@ -126,7 +126,7 @@
                             XField="Date"
                             YField="IE,Chrome,Firefox,Safari,Opera,Other">
                                 <StyleSpec>
-                                    <ext:Sprite Opacity="0.8"/>
+                                    <ext:Sprite Opacity="0.8" />
                                 </StyleSpec>
                                 <Marker>
                                     <ext:CircleSprite Opacity="0" Scaling="0.01" Duration="200" Easing="EaseOut" />

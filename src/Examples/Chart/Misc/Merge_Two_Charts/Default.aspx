@@ -77,7 +77,7 @@
         <ext:Panel
             runat="server"
             Layout="VBox"
-            Width="600">
+            Width="960">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -100,8 +100,8 @@
             <Items>
                 <ext:Panel
                     runat="server"
-                    Width="600"
-                    Height="300"
+                    Width="960"
+                    Height="480"
                     Title="Trends, 2014"
                     Layout="Fit">
                     <Items>
@@ -163,8 +163,8 @@
 
                 <ext:Panel
                     runat="server"
-                    Width="600"
-                    Height="300"
+                    Width="960"
+                    Height="480"
                     Title="Trends, 2015"
                     Layout="Fit">
                     <Items>

@@ -16,7 +16,7 @@
                 {
                     Title = "Center",
                     BodyBorder = 0,
-                    BodyPadding = 6,
+                    BodyPadding = 18,
                     Html = "<h1>Viewport with BorderLayout</h1>"
                 },
                 new Panel
@@ -24,7 +24,7 @@
                     Title = "Close Me",
                     Closable = true,
                     BodyBorder = 0,
-                    BodyPadding = 6,
+                    BodyPadding = 18,
                     Html = "Closable Tab"
                 }
             }
@@ -35,8 +35,8 @@
         {
             Region = Region.North,
             Title = "North",
-            Height = Unit.Pixel(150),
-            BodyPadding = 6,
+            Height = Unit.Pixel(180),
+            BodyPadding = 18,
             Html = "North",
             Split = true,
             Collapsible = true
@@ -48,8 +48,8 @@
             Region = Region.East,
             Layout = "Fit",
             Title = "East",
-            Width = 225,
-            MinWidth = 225,
+            Width = 270,
+            MinWidth = 180,
             Split = true,
             Collapsible = true,
             Items =
@@ -65,15 +65,16 @@
                         {
                             Title = "Tab 1",
                             BodyBorder = 0,
-                            BodyPadding = 6,
+                            BodyPadding = 18,
                             Html = "East Tab 1"
                         },
                         new Panel
                         {
                             Title = "Tab 2",
                             BodyBorder = 0,
-                            BodyPadding = 6,
-                            Html = "East Tab 2"
+                            BodyPadding = 18,
+                            Html = "East Tab 2",
+                            Closable = true
                         }
                     }
                 }
@@ -86,10 +87,10 @@
         {
             Region = Region.West,
             Title = "West",
-            Width = Unit.Pixel(225),
+            Width = Unit.Pixel(270),
             Layout = "Accordion",
-            MinWidth = 225,
-            MaxWidth = 400,
+            MinWidth = 180,
+            MaxWidth = 360,
             Split = true,
             Collapsible = true,
             Items =
@@ -97,17 +98,15 @@
                 new Panel
                 {
                     Title = "Navigation",
-                    BodyBorder = 0,
-                    BodyStyle = "padding:6px;",
-                    Icon = Icon.FolderGo,
+                    Border = false,
+                    BodyPadding = 18,
                     Html = "West"
                 },
                 new Panel
                 {
                     Title = "Settings",
-                    BodyBorder = 0,
-                    BodyStyle = "padding:6px;",
-                    Icon = Icon.FolderWrench,
+                    Border = false,
+                    BodyPadding = 18,
                     Html = "Some settings in here"
                 }
             }
@@ -128,8 +127,8 @@
                 {
                     Region = Region.South,
                     Title = "South",
-                    Height = Unit.Pixel(150),
-                    BodyPadding = 6,
+                    Height = Unit.Pixel(180),
+                    BodyPadding = 18,
                     Html = "South",
                     Split = true,
                     Collapsible = true

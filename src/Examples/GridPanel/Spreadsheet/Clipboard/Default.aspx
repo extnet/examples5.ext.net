@@ -7,11 +7,11 @@
         {
             this.Store1.DataSource = new object[]
             {
-                new object[] { "<b>3m Co</b>", 71.72, 0.02, 0.03, "9/1 12:00am" },
-                new object[] { "<b>Alcoa Inc</b>", 29.01, -0.42, -1.47, "9/1 12:00am" },
-                new object[] { "<b>Altria Group Inc</b>", 83.81, 0.28, 0.34, "9/1 12:00am" },
-                new object[] { "<b>American Express Company</b>", 52.55, -0.01, -0.02, "9/1 12:00am" },
-                new object[] { "<b>American International Group, Inc.</b>", 64.13, 0.31, 0.49, "9/1 12:00am" }
+                new object[] { "<b>3m Co</b>", 71.72, 0.02, 0.03, DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+                new object[] { "<b>Alcoa Inc</b>", 29.01, -0.42, -1.47, DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+                new object[] { "<b>Altria Group Inc</b>", 83.81, 0.28, 0.34, DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+                new object[] { "<b>American Express Company</b>", 52.55, -0.01, -0.02, DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") },
+                new object[] { "<b>American International Group, Inc.</b>", 64.13, 0.31, 0.49, DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt") }
             };
         }
     }
@@ -91,7 +91,7 @@
         ID="GridPanel1"
         runat="server"
         Title="Array Grid"
-        Width="700">
+        Width="720">
         <Store>
             <ext:Store ID="Store1" runat="server">
                 <Model>
@@ -101,7 +101,7 @@
                             <ext:ModelField Name="price" Type="Float" />
                             <ext:ModelField Name="change" Type="Float" />
                             <ext:ModelField Name="pctChange" Type="Float" />
-                            <ext:ModelField Name="lastChange" Type="Date" DateFormat="M/d hh:mmtt" />
+                            <ext:ModelField Name="lastChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" />
                         </Fields>
                     </ext:Model>
                 </Model>

@@ -119,13 +119,13 @@
             runat="server"
             Closable="false"
             Resizable="false"
-            Height="200"
+            Height="180"
             Icon="Lock"
             Title="Login"
             Draggable="true"
-            Width="350"
+            Width="360"
             Modal="false"
-            BodyPadding="5"
+            BodyPadding="18"
             Layout="Form">
             <Items>
                 <ext:TextField

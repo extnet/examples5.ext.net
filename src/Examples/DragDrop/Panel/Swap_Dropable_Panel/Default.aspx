@@ -126,7 +126,7 @@
                             runat="server"
                             Cls="draggable"
                             Title="Center"
-                            BodyPadding="5"
+                            BodyPadding="18"
                             Html="Drag/Drop Panel Headers to a different Viewport Region" />
                     </Items>
                 </ext:Container>

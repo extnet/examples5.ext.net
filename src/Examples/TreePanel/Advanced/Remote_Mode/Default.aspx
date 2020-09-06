@@ -168,7 +168,7 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Height="300"
+            Height="480"
             Width="450"
             Scrollable="Both"
             Animate="true"

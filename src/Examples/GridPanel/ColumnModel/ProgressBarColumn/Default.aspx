@@ -33,7 +33,7 @@
             runat="server"
             Title="ProgressBar column"
             Width="320"
-            Height="200">
+            Height="180">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

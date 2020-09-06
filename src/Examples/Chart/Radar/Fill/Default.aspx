@@ -27,7 +27,7 @@
         <ext:Panel
             runat="server"
             Title="Filled Radar Chart"
-            Width="800"
+            Width="960"
             Height="600"
             StyleSpec="overflow:hidden;"
             Layout="Fit">

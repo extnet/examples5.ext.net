@@ -42,8 +42,8 @@
         <ext:HtmlEditor
             ID="HtmlEditor1"
             runat="server"
-            Width="600"
-            Height="200"
+            Width="960"
+            Height="180"
             EnableAlignments="false"
             EnableFontSize="false"
             CreateLinkText="My CreateLinkText">

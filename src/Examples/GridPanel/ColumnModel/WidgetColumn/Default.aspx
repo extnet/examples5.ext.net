@@ -76,7 +76,7 @@
             Collapsible="true"
             Title="Widget Grid"
             Width="1050"
-            Height="350"
+            Height="480"
             DisableSelection="true">
             <Store>
                 <ext:Store ID="Store1" runat="server">

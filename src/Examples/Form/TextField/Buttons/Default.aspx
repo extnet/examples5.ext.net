@@ -18,7 +18,7 @@
             Title="Buttons of Field"
             Closable="false"
             Layout="Form"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="LabelWidth" Value="200" />
             </Defaults>

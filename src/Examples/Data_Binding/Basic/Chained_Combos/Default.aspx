@@ -17,9 +17,9 @@
 
         <ext:Panel
             runat="server"
-            Width="350"
+            Width="360"
             Layout="Anchor"
-            BodyPadding="10"
+            BodyPadding="18"
             DefaultAnchor="-30"
             ReferenceHolder="true"
             Title="Location"

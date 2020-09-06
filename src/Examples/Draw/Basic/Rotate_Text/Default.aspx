@@ -40,7 +40,7 @@
             </Listeners>
         </ext:Slider>
 
-        <ext:DrawContainer ID="Draw1" runat="server" Height="350">
+        <ext:DrawContainer ID="Draw1" runat="server" Height="480">
             <Items>
                 <ext:TextSprite
                     SpriteID="Sprite1"

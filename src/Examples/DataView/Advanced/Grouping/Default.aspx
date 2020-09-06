@@ -122,7 +122,7 @@
         <ext:Panel
             runat="server"
             Cls="items-view"
-            Width="800"
+            Width="960"
             Border="false">
             <TopBar>
                 <ext:Toolbar runat="server" Flat="true">
@@ -173,7 +173,7 @@
                                         <div class="group-body">
                                             <tpl for="Items">
                                                 <div id="{Id}" class="item-wrap">
-                                                    <img src="{Icon}"/>
+                                                    <img src="{Icon}" />
                                                     <div>
                                                         <h6>{Title}</h6>
                                                     </div>

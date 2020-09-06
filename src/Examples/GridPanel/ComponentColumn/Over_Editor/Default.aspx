@@ -46,8 +46,8 @@
             runat="server"
             Title="ComponentColumn Over Editor"
             Cls="x-over-editor-grid"
-            Width="600"
-            Height="300">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

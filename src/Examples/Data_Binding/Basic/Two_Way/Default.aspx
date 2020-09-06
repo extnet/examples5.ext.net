@@ -35,8 +35,8 @@
 
         <ext:Panel
             runat="server"
-            Width="300"
-            BodyPadding="10"
+            Width="480"
+            BodyPadding="18"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Bind>

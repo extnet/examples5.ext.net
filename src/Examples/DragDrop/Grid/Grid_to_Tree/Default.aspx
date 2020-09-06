@@ -119,8 +119,8 @@
 
         <ext:Panel
             runat="server"
-            Width="700"
-            Height="400"
+            Width="720"
+            Height="480"
             Layout="Border">
             <Items>
                 <ext:GridPanel
@@ -140,7 +140,7 @@
                                         <ext:ModelField Name="price" Type="Float" />
                                         <ext:ModelField Name="change" Type="Float" />
                                         <ext:ModelField Name="pctChange" Type="Float" />
-                                        <ext:ModelField Name="lastChange" Type="Date"/>
+                                        <ext:ModelField Name="lastChange" Type="Date" />
                                     </Fields>
                                 </ext:Model>
                             </Model>
@@ -180,7 +180,7 @@
                 <ext:TreePanel
                     runat="server"
                     Region="East"
-                    Width="300"
+                    Width="480"
                     Title="Tree"
                     Scrollable="Both"
                     MarginSpec="5 5 5 0"
@@ -190,13 +190,13 @@
                             <Children>
                                 <ext:Node Text="Folder 1" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
-                                        <ext:Node Text="Subleaf 1" Qtip="Subleaf 1 Quick Tip" Leaf="true"  AllowDrag="false"/>
+                                        <ext:Node Text="Subleaf 1" Qtip="Subleaf 1 Quick Tip" Leaf="true"  AllowDrag="false" />
                                     </Children>
                                 </ext:Node>
 
                                 <ext:Node Text="Folder 2" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
-                                        <ext:Node Text="Subleaf 2" Qtip="Subleaf 2 Quick Tip" Leaf="true"  AllowDrag="false"/>
+                                        <ext:Node Text="Subleaf 2" Qtip="Subleaf 2 Quick Tip" Leaf="true"  AllowDrag="false" />
                                     </Children>
                                 </ext:Node>
 

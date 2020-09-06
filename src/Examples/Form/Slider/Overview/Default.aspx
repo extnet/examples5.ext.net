@@ -54,9 +54,9 @@
             runat="server"
             Title="Color Chooser"
             Width="400"
-            Height="300"
+            Height="480"
             ButtonAlign="Left"
-            BodyPadding="10"
+            BodyPadding="18"
             DefaultAnchor="100%">
             <Items>
                 <ext:Slider

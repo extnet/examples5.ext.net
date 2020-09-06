@@ -103,8 +103,8 @@
                     <ext:TreePanel
                         runat="server"
                         Title="TreePanel"
-                        Width="300"
-                        Height="200"
+                        Width="480"
+                        Height="180"
                         Margin="10"
                         RootVisible="false"
                         Lines="false"
@@ -114,8 +114,8 @@
                     <ext:TreePanel
                         runat="server"
                         Title="TreePanel with lines"
-                        Width="300"
-                        Height="200"
+                        Width="480"
+                        Height="180"
                         Margin="10"
                         RootVisible="false"
                         Lines="true"
@@ -125,8 +125,8 @@
                     <ext:TreePanel
                         runat="server"
                         Title="TreePanel with arrows"
-                        Width="300"
-                        Height="200"
+                        Width="480"
+                        Height="180"
                         Margin="10"
                         RootVisible="false"
                         Lines="false"

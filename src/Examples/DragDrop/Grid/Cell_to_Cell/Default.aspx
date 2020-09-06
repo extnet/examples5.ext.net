@@ -68,8 +68,8 @@
 
         <ext:GridPanel
             runat="server"
-            Width="800"
-            Height="400">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store
                     ID="Store1"
@@ -78,7 +78,7 @@
                         <ext:Model runat="server">
                             <Fields>
                                 <ext:ModelField Name="company" Type="String" />
-                                <ext:ModelField Name="firstChange" Type="Date" DateFormat="M/d hh:mmtt" />
+                                <ext:ModelField Name="firstChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" />
                                 <ext:ModelField Name="stock" />
                                 <ext:ModelField Name="price" Type="Float" />
                                 <ext:ModelField Name="change" Type="Float" />

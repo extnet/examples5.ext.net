@@ -44,9 +44,9 @@
             ID="Window1"
             runat="server"
             Title="Window"
-            Width="600"
-            Height="300"
-            BodyPadding="10">
+            Width="960"
+            Height="480"
+            BodyPadding="18">
             <Tools>
                 <ext:Tool Type="Toggle" />
                 <ext:Tool Type="Close" />

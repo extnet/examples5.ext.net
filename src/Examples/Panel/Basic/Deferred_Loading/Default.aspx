@@ -51,7 +51,7 @@
          <ext:TabPanel
             runat="server"
             Width="500"
-            Height="200"
+            Height="180"
             DeferredRender="false">
             <Items>
                 <ext:Panel runat="server" Title="Loading on render">
@@ -135,7 +135,7 @@
             runat="server"
             Title="Accordion with Deferred Loaded Panels"
             Width="500"
-            Height="300"
+            Height="480"
             Layout="Accordion">
             <Items>
                 <ext:Panel runat="server" Title="Panel 1">
@@ -175,7 +175,7 @@
             runat="server"
             Title="Panel"
             Width="500"
-            Height="300"
+            Height="480"
             Collapsible="true">
              <Loader
                 runat="server"
@@ -206,8 +206,8 @@
             ID="Window1"
             runat="server"
             Title="Window"
-            Width="300"
-            Height="185"
+            Width="480"
+            Height="270"
             Hidden="true">
             <Loader
                 runat="server"

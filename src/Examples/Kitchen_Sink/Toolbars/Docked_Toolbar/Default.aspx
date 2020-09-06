@@ -31,8 +31,8 @@
                         runat="server"
                         Title="Top"
                         Width="200"
-                        Height="200"
-                        BodyPadding="10"
+                        Height="180"
+                        BodyPadding="18"
                         Margin="10"
                         Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
@@ -54,8 +54,8 @@
                         runat="server"
                         Title="Right"
                         Width="200"
-                        Height="200"
-                        BodyPadding="10"
+                        Height="180"
+                        BodyPadding="18"
                         Margin="10"
                         Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
@@ -87,8 +87,8 @@
                         runat="server"
                         Title="Left"
                         Width="200"
-                        Height="200"
-                        BodyPadding="10"
+                        Height="180"
+                        BodyPadding="18"
                         Margin="10"
                         Html="<%# TEST_HTML %>"
                         AutoDataBind="true">
@@ -110,8 +110,8 @@
                         runat="server"
                         Title="Bottom"
                         Width="200"
-                        Height="200"
-                        BodyPadding="10"
+                        Height="180"
+                        BodyPadding="18"
                         Margin="10"
                         Html="<%# TEST_HTML %>"
                         AutoDataBind="true">

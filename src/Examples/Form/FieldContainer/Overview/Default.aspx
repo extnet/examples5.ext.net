@@ -64,10 +64,10 @@
 
     <ext:FormPanel
         runat="server"
-        Height="400"
+        Height="480"
         Width="650"
         Title="Form Panel"
-        BodyPadding="5"
+        BodyPadding="18"
         MonitorResize="true">
         <Items>
             <ext:FieldContainer
@@ -202,9 +202,9 @@
                 FieldLabel="Several notes"
                 Layout="HBox">
                 <Items>
-                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0"/>
-                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0"/>
-                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0"/>
+                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0" />
+                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0" />
+                    <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0" />
                 </Items>
             </ext:FieldContainer>
         </Items>
@@ -217,7 +217,7 @@
         runat="server"
         Title="FieldContainers"
         Width="650"
-        BodyPadding="10"
+        BodyPadding="18"
         DefaultAnchor="100%">
         <Items>
             <ext:TextField

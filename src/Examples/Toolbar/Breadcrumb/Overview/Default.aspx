@@ -63,9 +63,9 @@
             ID="Panel1"
             runat="server"
             Title="Breadcrumb Toolbar"
-            Height="400"
-            Width="600"
-            BodyPadding="20">
+            Height="480"
+            Width="960"
+            BodyPadding="18">
             <TopBar>
                 <ext:Breadcrumb
                     ID="Breadcrumb1"

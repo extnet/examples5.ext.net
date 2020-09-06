@@ -19,7 +19,7 @@
         cfg.BeforeRender += delegate(ComponentAddedEventArgs eCmp)
         {
             Ext.Net.Label label = Ext.Net.Utilities.ControlUtils.FindControl<Ext.Net.Label>(eCmp.Control);
-            label.Text = panel.Region.ToString();
+            label.Text = panel.Region.ToString() + " Region";
         };
 
         UserControlRenderer.Render(cfg);
@@ -37,14 +37,16 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="Border">
+        <ext:Viewport runat="server" Layout="Border" Rounded="false">
             <Items>
-                <ext:Panel runat="server"
-                    Region="North"
-                    Height="200"
+                <ext:Panel
+                    runat="server"
                     Title="North"
+                    Region="North"
+                    Height="270"
                     Layout="Fit"
-                    Floatable="false"
+                    BodyPadding="18"
+                    Rounded="false"
                     Collapsed="true"
                     Collapsible="true">
                     <DirectEvents>
@@ -54,11 +56,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server"
-                    Region="South"
-                    Height="200"
+                <ext:Panel
+                    runat="server"
                     Title="South"
-                    Floatable="false"
+                    Region="South"
+                    Height="270"
+                    Rounded="false"
+                    BodyPadding="18"
                     Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">
@@ -69,11 +73,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server"
-                    Region="West"
-                    Width="200"
+                <ext:Panel
+                    runat="server"
                     Title="West"
-                    Floatable="false"
+                    Region="West"
+                    Width="270"
+                    Rounded="false"
+                    BodyPadding="18"
                     Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">
@@ -84,11 +90,13 @@
                     </DirectEvents>
                 </ext:Panel>
 
-                <ext:Panel runat="server"
+                <ext:Panel
+                    runat="server"
                     Region="East"
                     Width="200"
                     Title="East"
-                    Floatable="false"
+                    Rounded="false"
+                    BodyPadding="18"
                     Layout="Fit"
                     Collapsed="true"
                     Collapsible="true">

@@ -29,8 +29,8 @@
         ID="Panel2"
         runat="server"
         Title="Child"
-        Width="300"
-        Height="185"
+        Width="480"
+        Height="270"
         Frame="true">
         <Items>
             <ext:Label ID="Label2" runat="server" />

@@ -39,7 +39,7 @@
 
         <ext:Panel
             runat="server"
-            Width="800"
+            Width="960"
             Height="600">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />

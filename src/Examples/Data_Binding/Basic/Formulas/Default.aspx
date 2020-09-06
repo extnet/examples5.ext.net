@@ -45,7 +45,7 @@
         <ext:Panel
             runat="server"
             Width="370"
-            BodyPadding="10"
+            BodyPadding="18"
             Title="View Model Formulas"
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">

@@ -7,7 +7,7 @@
         </LayoutConfig>
 
         <Items>
-            <ext:Panel runat="server" PreventHeader="true" Height="200" Layout="Fit">
+            <ext:Panel runat="server" PreventHeader="true" Height="180" Layout="Fit">
                 <MessageBusListeners>
                     <ext:MessageBusListener
                         Name="FromUserControl.*"
@@ -18,7 +18,7 @@
 
             <ext:Container runat="server" Flex="1" Layout="HBox">
                 <LayoutConfig>
-                    <ext:HBoxLayoutConfig Align="Stretch"/>
+                    <ext:HBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
                     <ext:UserControlLoader runat="server" Path="UserControl1.ascx" />

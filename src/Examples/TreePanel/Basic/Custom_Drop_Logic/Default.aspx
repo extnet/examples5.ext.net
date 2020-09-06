@@ -34,8 +34,8 @@
         </p>
 
         <ext:Panel runat="server"
-            Width="300"
-            Height="200">
+            Width="480"
+            Height="180">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

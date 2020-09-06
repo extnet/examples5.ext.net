@@ -63,7 +63,7 @@
                     MarginSpec="5 5 5 5"
                     Title="Description"
                     Height="100"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Frame="true"
                     Icon="Information">
                     <Content>
@@ -124,7 +124,7 @@
                     Region="East"
                     Split="true"
                     MarginSpec="0 5 5 5"
-                    BodyPadding="2"
+                    BodyPadding="18"
                     Frame="true"
                     Title="Employee Details"
                     Width="280"

@@ -16,7 +16,7 @@
                 if (!portlet.ID.Equals("Portlet1"))
                 {
                     portlet.Html = "={text}";
-                    portlet.BodyPadding = 5;
+                    portlet.BodyPadding = 18;
                 }
             }
         }
@@ -139,7 +139,7 @@
                     Collapsible="true"
                     Split="true"
                     MinWidth="175"
-                    MaxWidth="400"
+                    MaxWidth="480"
                     MarginSpec="5 0 5 5"
                     Layout="Accordion">
                     <Items>
@@ -149,21 +149,21 @@
                             Icon="PageWhiteCopy"
                             Title="Content"
                             Html="={text}"
-                            BodyPadding="6" />
+                            BodyPadding="18" />
                         <ext:Panel
                             runat="server"
                             Border="false"
                             Icon="Star"
                             Title="Activities"
                             Html="={text}"
-                            BodyPadding="6" />
+                            BodyPadding="18" />
                         <ext:Panel
                             runat="server"
                             Border="false"
                             Icon="Group"
                             Title="Contacts"
                             Html="={text}"
-                            BodyPadding="6" />
+                            BodyPadding="18" />
                     </Items>
                 </ext:Panel>
                 <ext:TabPanel
@@ -198,7 +198,7 @@
                                                     ID="Portlet1"
                                                     runat="server"
                                                     Title="Ext.Net"
-                                                    Height="450"
+                                                    Height="480"
                                                     BodyPadding="0">
                                                     <Loader runat="server" Url="https://ext.net/" Mode="Frame">
                                                         <LoadMask ShowMask="true" />

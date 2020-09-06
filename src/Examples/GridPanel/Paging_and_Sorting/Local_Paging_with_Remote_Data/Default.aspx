@@ -41,7 +41,7 @@
             ID="GridPanel1"
             runat="server"
             Title="Grid"
-            Width="600"
+            Width="960"
             Height="330">
             <Store>
                 <ext:Store

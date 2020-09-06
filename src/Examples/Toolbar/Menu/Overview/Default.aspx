@@ -22,8 +22,8 @@
             ID="Panel1"
             runat="server"
             Title="Panel with toolbars"
-            Width="700"
-            Height="300">
+            Width="720"
+            Height="480">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>

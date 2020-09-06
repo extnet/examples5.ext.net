@@ -147,8 +147,8 @@
             ID="FormPanel1"
             runat="server"
             Frame="true"
-            Width="350"
-            BodyPadding="10"
+            Width="360"
+            BodyPadding="18"
             BodyBorder="1"
             Title="Account Registration"
             DefaultAnchor="100%">

@@ -192,7 +192,7 @@
                         <ext:Window runat="server"
                             Title="Notepad"
                             Width="750"
-                            Height="400"
+                            Height="480"
                             Icon="ApplicationForm"
                             AnimCollapse="false"
                             Border="false"
@@ -238,10 +238,10 @@
                 </ContextMenu>
 
                 <Content>
-                   <ext:Image runat="server" ImageUrl="resources/logo.png" StyleSpec="position:absolute;top: 50%;left: 50%;width: 77px; height: 78px;margin-top: -39px; margin-left: -39px;"/>
-                   <ext:Image runat="server" ImageUrl="resources/powered.png" StyleSpec="position:absolute;right:10px;bottom:20px;width:300px;height:39px;"/>
-                   <ext:DisplayField runat="server" Text="You can place controls to desktop" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;"/>
-                   <ext:DisplayField runat="server" Text="Move mouse to the right edge -->" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;right:50px;top:50px;"/>
+                   <ext:Image runat="server" ImageUrl="resources/logo.png" StyleSpec="position:absolute;top: 50%;left: 50%;width: 77px; height: 78px;margin-top: -39px; margin-left: -39px;" />
+                   <ext:Image runat="server" ImageUrl="resources/powered.png" StyleSpec="position:absolute;right:10px;bottom:20px;width:300px;height:39px;" />
+                   <ext:DisplayField runat="server" Text="You can place controls to desktop" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;" />
+                   <ext:DisplayField runat="server" Text="Move mouse to the right edge -->" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;right:50px;top:50px;" />
 
                    <ext:Toolbar ID="CustomToolbar" runat="server" Width="545" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
                         <Defaults>
@@ -265,7 +265,7 @@
                 </Content>
             </DesktopConfig>
 
-            <StartMenu Title="Ext.Net Desktop" Icon="Application" Height="300">
+            <StartMenu Title="Ext.Net Desktop" Icon="Application" Height="480">
                 <ToolConfig>
                     <ext:Toolbar ID="StartMenuToolbar" runat="server" Width="100">
                         <Items>

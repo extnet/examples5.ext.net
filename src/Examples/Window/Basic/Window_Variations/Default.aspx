@@ -6,32 +6,26 @@
 <head runat="server">
     <title>Windows Example - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-    <style>
-        .x-panel-body p {
-            margin: 10px;
-            font-size: 12px;
-        }
-    </style>
 </head>
 <body>
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <h1>Windows Example</h1>
+        <h1>Window Variations</h1>
 
         <p>This illustrates the <code>headerPosition</code> config of Panels, and also relative z-index management.</p>
         <p>The third Window owns two floating Windows who's z-indices are managed relative
-            to <i>its</i> z-index. When that Window is occluded by another Window, and you click
+            to its z-index. When that Window is occluded by another Window, and you click
             to bring it to the front, both its dependent Windows move to the front too.</p>
-        <p>This also illustrates constraining Windows.</p>
+        <p>Constraining Windows is also demonstrated.</p>
 
         <ext:Window
             runat="server"
-            Height="200"
-            Width="400"
-            X="450"
-            Y="450"
-            Title="Constraining Window, plain: true"
+            Height="270"
+            Width="480"
+            X="480"
+            Y="480"
+            Title="Constraining Window"
             Closable="false"
             Plain="true"
             Layout="Fit">
@@ -39,8 +33,8 @@
                 <ext:Window
                     runat="server"
                     Title="Constrained Window"
-                    Width="200"
-                    Height="100"
+                    Width="270"
+                    Height="180"
                     X="20"
                     Y="20"
                     Constrain="true"
@@ -52,9 +46,9 @@
 
                 <ext:Window
                     runat="server"
-                    Title="Header-Constrained Win"
-                    Width="200"
-                    Height="100"
+                    Title="Constrain Header"
+                    Width="270"
+                    Height="180"
                     X="120"
                     Y="120"
                     ConstrainHeader="true"
@@ -70,11 +64,11 @@
 
         <ext:Window
             runat="server"
-            Title="Left Header, plain: true"
-            Width="400"
-            Height="200"
+            Title="Left Header"
+            Width="480"
+            Height="270"
             X="10"
-            Y="200"
+            Y="270"
             Plain="true"
             HeaderPosition="Left"
             Layout="Fit">
@@ -85,11 +79,11 @@
 
         <ext:Window
             runat="server"
-            Title="Right Header, plain: true"
-            Width="400"
-            Height="200"
-            X="450"
-            Y="200"
+            Title="Right Header"
+            Width="480"
+            Height="270"
+            X="500"
+            Y="270"
             HeaderPosition="Right"
             Layout="Fit">
             <Items>
@@ -99,11 +93,11 @@
 
         <ext:Window
             runat="server"
-            Title="Bottom Header, plain: true"
-            Width="400"
-            Height="200"
+            Title="Bottom Header"
+            Width="480"
+            Height="270"
             X="10"
-            Y="450"
+            Y="480"
             Plain="true"
             HeaderPosition="Bottom"
             Layout="Fit">

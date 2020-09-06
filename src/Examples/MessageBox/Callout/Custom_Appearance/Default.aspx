@@ -261,7 +261,7 @@
 
     <ext:Container
         runat="server"
-        BodyPadding="10" >
+        BodyPadding="18" >
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
             <ext:Parameter Name="Width" Value="150" />
@@ -272,7 +272,7 @@
             <ext:Callout runat="server" Title="Custom 2" UIName="custom2" />
             <ext:Callout runat="server" Title="Custom 3" UIName="custom3" NoArrow="true" />
             <ext:Callout runat="server" Title="Custom 4" UIName="custom4" Alignment="Top" />
-            <ext:Callout runat="server" Title="Custom 5" UIName="custom5" NoArrow="true" Width="350" Height="200">
+            <ext:Callout runat="server" Title="Custom 5" UIName="custom5" NoArrow="true" Width="360" Height="180">
                 <Content>
                     <div style="position:absolute;top:0px; left:0px;color:white;font-size:40px;width:40px;line-height:40px;text-align:center;">&#x2709;</div>
                     <div class="close-glyph" style="position:absolute;top:5px; right:5px;color:#bdddfa;font-size:25px;cursor:pointer;">&#x2716;</div>

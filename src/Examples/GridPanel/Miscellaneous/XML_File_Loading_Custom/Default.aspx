@@ -52,7 +52,7 @@
         runat="server"
         Title="Categories"
         Frame="true"
-        Height="400"
+        Height="480"
         Width="400">
         <Store>
             <ext:Store runat="server">

@@ -96,8 +96,8 @@
         <ext:Panel
             runat="server"
             Title="Line Chart"
-            Width="800"
-            Height="400"
+            Width="960"
+            Height="480"
             Layout="Fit">
             <Items>
                 <ext:CartesianChart

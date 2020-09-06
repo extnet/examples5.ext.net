@@ -14,7 +14,7 @@
             foreach (Portlet portlet in ControlUtils.FindControls<Portlet>(this.Page))
             {
                 portlet.Html = "={text}";
-                portlet.BodyPadding = 5;
+                portlet.BodyPadding = 18;
                 portlet.CloseAction = CloseAction.Hide;
             }
         }
@@ -57,7 +57,7 @@
                     Collapsible="true"
                     Split="true"
                     MinWidth="175"
-                    MaxWidth="400"
+                    MaxWidth="480"
                     MarginSpec="5 0 5 5"
                     Layout="Accordion">
                     <Items>
@@ -69,7 +69,7 @@
                             Scrollable="Both"
                             Title="Content"
                             Html="={text}"
-                            BodyPadding="5" />
+                            BodyPadding="18" />
                         <ext:Panel
                             runat="server"
                             Border="false"
@@ -78,7 +78,7 @@
                             Scrollable="Both"
                             Title="Settings"
                             Html="={text}"
-                            BodyPadding="5" />
+                            BodyPadding="18" />
                     </Items>
                 </ext:Panel>
                 <ext:TabPanel

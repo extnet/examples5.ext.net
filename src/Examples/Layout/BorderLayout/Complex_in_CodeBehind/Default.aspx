@@ -17,7 +17,7 @@
         pnlNavigation.ID = "Navigation";
         pnlNavigation.Title = "Navigation";
         pnlNavigation.Border = false;
-        pnlNavigation.BodyPadding = 6;
+        pnlNavigation.BodyPadding = 18;
         pnlNavigation.Icon = Icon.FolderGo;
         pnlNavigation.Html = "Navigation";
 
@@ -26,7 +26,7 @@
         pnlSettings.ID = "Settings";
         pnlSettings.Title = "Settings";
         pnlSettings.Border = false;
-        pnlSettings.BodyPadding = 6;
+        pnlSettings.BodyPadding = 18;
         pnlSettings.Icon = Icon.FolderWrench;
         pnlSettings.Html = "Some settings in here";
         west.Layout = "Accordion";
@@ -50,14 +50,14 @@
         tab1.Title = "Close Me";
         tab1.Closable = true;
         tab1.Border = false;
-        tab1.BodyPadding = 6;
+        tab1.BodyPadding = 18;
         tab1.Html = "Hello ...";
 
         Ext.Net.Panel tab2 = new Ext.Net.Panel();
         tab2.ID = "Tab2";
         tab2.Title = "Center";
         tab2.Border = false;
-        tab2.BodyPadding = 6;
+        tab2.BodyPadding = 18;
         tab2.Html = "... World";
 
         // Add Tab's to TabPanel
@@ -85,7 +85,7 @@
         Ext.Net.Panel tabEast1 = new Ext.Net.Panel();
         tabEast1.Title = "Tab 1";
         tabEast1.Border = false;
-        tabEast1.BodyPadding = 6;
+        tabEast1.BodyPadding = 18;
         tabEast1.Html = "East Tab 1";
 
         // Make Tab 2
@@ -93,7 +93,7 @@
         tabEast2.Title = "Tab 2";
         tabEast2.Closable = true;
         tabEast2.Border = false;
-        tabEast2.BodyPadding = 6;
+        tabEast2.BodyPadding = 18;
         tabEast2.Html = "East Tab 2";
 
         // Add Tab's to East TabPanel
@@ -112,7 +112,7 @@
         south.ID = "SouthPanel";
         south.Title = "South";
         south.Height = Unit.Pixel(150);
-        south.BodyPadding = 6;
+        south.BodyPadding = 18;
         south.Html = "South";
 
 
@@ -132,7 +132,7 @@
         west.Region = Region.West;
 
         // Set East Region properties
-        east.MinWidth = 225;
+        east.MinWidth = 180;
         east.Split = true;
         east.Collapsible = true;
         east.Region = Region.East;

@@ -66,8 +66,8 @@
             Maximizable="true"
             Icon="Lorry"
             Title="Job List"
-            Width="600"
-            Height="300"
+            Width="960"
+            Height="480"
             X="50"
             Y="50"
             Layout="Fit">

@@ -9,18 +9,18 @@
             this.ResourceManager1.RegisterIcon(Icon.MoneyDelete);
 
             this.Store1.DataSource = new object[] {
-                new object[] {1,  "3m Co",71.72,0.02,0.03,"9/1 12:00am"},
-                new object[] {2,  "Alcoa",29.01,0.42,1.47,"9/1 12:00am"},
-                new object[] {3,  "Altria Group",83.81,-0.28,0.34,"9/1 12:00am"},
-                new object[] {4,  "American Express",52.55,0.01,0.02,"9/1 12:00am"},
-                new object[] {5,  "Microsoft",25.84,-0.14,0.54,"9/1 12:00am"},
-                new object[] {6,  "Pfizer Inc",27.96,-0.4,1.45,"9/1 12:00am"},
-                new object[] {7,  "Coca-Cola",45.07,0.26,0.58,"9/1 12:00am"},
-                new object[] {8,  "Home Depot.",34.64,0.35,1.02,"9/1 12:00am"},
-                new object[] {9,  "Procter & Gamble",61.91,0.01,0.02,"9/1 12:00am"},
-                new object[] {10, "United Technologies",63.26,-0.55,0.88,"9/1 12:00am"},
-                new object[] {11, "Verizon Communications",35.57,0.39,1.11,"9/1 12:00am"},
-                new object[] {12, "Wal-Mart Stores",45.45,-0.73,1.63,"9/1 12:00am"}
+                new object[] {1,  "3m Co",71.72,0.02,0.03,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {2,  "Alcoa",29.01,0.42,1.47,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {3,  "Altria Group",83.81,-0.28,0.34,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {4,  "American Express",52.55,0.01,0.02,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {5,  "Microsoft",25.84,-0.14,0.54,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {6,  "Pfizer Inc",27.96,-0.4,1.45,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {7,  "Coca-Cola",45.07,0.26,0.58,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {8,  "Home Depot.",34.64,0.35,1.02,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {9,  "Procter & Gamble",61.91,0.01,0.02,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {10, "United Technologies",63.26,-0.55,0.88,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {11, "Verizon Communications",35.57,0.39,1.11,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")},
+                new object[] {12, "Wal-Mart Stores",45.45,-0.73,1.63,DateTime.Now.ToString("yyyy-MM-dd hh:mm:tt")}
             };
 
             this.Store1.DataBind();
@@ -122,7 +122,7 @@
         <p>The toolbar is configured with the Ext.ux.ToolbarDroppable plugin and a Ext.ux.ToolbarReorderer plugin.</p>
 
 
-        <ext:Panel runat="server" Width="600" Height="400" Layout="Fit">
+        <ext:Panel runat="server" Width="960" Height="480" Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server" EnableOverflow="true">
                     <Items>
@@ -157,7 +157,7 @@
                                         <ext:ModelField Name="price" Type="Float" />
                                         <ext:ModelField Name="change" Type="Float" />
                                         <ext:ModelField Name="pctChange" Type="Float" />
-                                        <ext:ModelField Name="lastChange" Type="Date" DateFormat="M/d hh:mmtt" />
+                                        <ext:ModelField Name="lastChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" />
                                     </Fields>
                                 </ext:Model>
                             </Model>

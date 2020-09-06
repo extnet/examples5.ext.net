@@ -35,7 +35,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Panel runat="server" BodyStyle="background: transparent !important" Width="700">
+        <ext:Panel runat="server" BodyStyle="background: transparent !important" Width="720">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
             </LayoutConfig>

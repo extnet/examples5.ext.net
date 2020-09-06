@@ -238,7 +238,7 @@
                     Region="North"
                     Title="Description"
                     Height="100"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Frame="true"
                     Icon="Information"
                     MarginSpec="5 5 5 5">
@@ -253,7 +253,7 @@
                     ID="Panel1"
                     runat="server"
                     Region="Center"
-                    Height="300"
+                    Height="480"
                     Header="false"
                     Layout="Fit"
                     MarginSpec="0 5 0 5">

@@ -36,13 +36,13 @@
             runat="server"
             Title="MenuPanel"
             Closable="false"
-            Width="600"
+            Width="960"
             Height="370"
             Layout="Border">
             <Items>
                 <ext:Panel
                     runat="server"
-                    Width="350"
+                    Width="360"
                     Layout="Accordion"
                     Split="true"
                     Region="West"
@@ -103,7 +103,7 @@
                     ID="PnlCenter"
                     runat="server"
                     Title="Selected Item"
-                    BodyPadding="5"
+                    BodyPadding="18"
                     Region="Center"
                     MarginSpec="5 5 5 0" />
             </Items>

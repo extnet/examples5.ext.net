@@ -33,7 +33,7 @@
         ID="Window1"
         runat="server"
         Title="Move Mouse to top of Window"
-        Width="350"
+        Width="360"
         Height="215"
         Closable="false"
         Layout="Fit"

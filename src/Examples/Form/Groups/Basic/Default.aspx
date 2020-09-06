@@ -112,8 +112,8 @@
             runat="server"
             Title="Check/Radio Groups Example"
             Frame="true"
-            Width="600"
-            BodyPadding="10">
+            Width="960"
+            BodyPadding="18">
             <FieldDefaults LabelWidth="110" LabelStyle="color:green;padding-left:4px;" />
             <Buttons>
                 <ext:Button ID="Button1" runat="server" Text="Save" Icon="Disk">

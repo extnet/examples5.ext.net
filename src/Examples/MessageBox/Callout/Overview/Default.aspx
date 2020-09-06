@@ -42,7 +42,7 @@
         Frame="true"
         Header="false"
         Width="610"
-        BodyPadding="10"
+        BodyPadding="18"
         Layout="Column">
         <Defaults>
             <ext:Parameter Name="Margin" Value="20" />
@@ -93,7 +93,7 @@
                     <ext:Container
                         runat="server"
                         Layout="Accordion"
-                        Width="300"
+                        Width="480"
                         Height="150">
                         <Items>
                             <ext:Panel runat="server" Title="Section1" Html="Content" />
@@ -162,7 +162,7 @@
         Frame="true"
         Header="false"
         Width="610"
-        BodyPadding="10"
+        BodyPadding="18"
         AutoDataBind="true"
         Layout="Column">
         <Defaults>

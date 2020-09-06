@@ -224,7 +224,7 @@
                 <ext:Panel
                     runat="server"
                     Title="Patients"
-                    Width="300"
+                    Width="480"
                     Region="West"
                     MarginSpec="0 5 5 5">
                     <Items>
@@ -298,7 +298,7 @@
                     <ColumnModel>
                         <Columns>
                             <ext:Column runat="server" DataIndex="Name" Text="NAME" Width="200" />
-                            <ext:Column runat="server" DataIndex="Address" Text="Address" Width="300" />
+                            <ext:Column runat="server" DataIndex="Address" Text="Address" Width="480" />
                             <ext:Column runat="server" DataIndex="Telephone" Text="Telephone" Width="100" />
                         </Columns>
                     </ColumnModel>

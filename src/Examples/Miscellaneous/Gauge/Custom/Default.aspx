@@ -45,7 +45,7 @@
         <p>The gauge's needle is defined by a SVG path string, and the gauge's track is round in its extremities.</p>
         <p>Move the slider around to update the gauge's display value.</p>
 
-        <ext:Panel ID="Panel1" runat="server" Title="You are in charge" Width="800" Height="500">
+        <ext:Panel ID="Panel1" runat="server" Title="You are in charge" Width="960" Height="500">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

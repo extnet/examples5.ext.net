@@ -39,8 +39,8 @@
             ID="MessageWindow"
             runat="server"
             Title="Compose message"
-            Width="350"
-            Height="200"
+            Width="360"
+            Height="180"
             Modal="true"
             TemplateWidget="true">
             <Buttons>

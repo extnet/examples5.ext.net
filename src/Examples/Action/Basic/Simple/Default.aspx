@@ -35,8 +35,8 @@
         ID="Panel1"
         runat="server"
         Title="Actions"
-        Width="500"
-        Height="300">
+        Width="480"
+        Height="480">
         <Bin>
             <ext:Action
                 ID="Action1"
@@ -64,11 +64,7 @@
             </ext:Toolbar>
         </TopBar>
         <Items>
-            <ext:ActionRef
-                runat="server"
-                Action="#{Action1}"
-                InstanceType="Ext.Net.SplitButton"
-                />
+            <ext:ActionRef runat="server" Action="#{Action1}" InstanceType="Ext.Net.SplitButton" />
         </Items>
         <BottomBar>
             <ext:Toolbar runat="server">

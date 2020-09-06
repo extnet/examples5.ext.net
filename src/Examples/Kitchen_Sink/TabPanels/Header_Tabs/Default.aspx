@@ -20,7 +20,7 @@
             runat="server"
             Title="Examples"
             Width="400"
-            Height="300"
+            Height="480"
             TabBarHeaderPosition="2">
             <Defaults>
                 <ext:Parameter Name="bodyPadding" Value="20" Mode="Raw" />

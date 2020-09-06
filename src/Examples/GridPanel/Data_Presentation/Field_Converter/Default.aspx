@@ -32,8 +32,8 @@
         <ext:GridPanel
             runat="server"
             Title="Grid"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

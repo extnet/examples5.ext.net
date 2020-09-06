@@ -32,9 +32,9 @@
         <ext:Panel
             runat="server"
             Title="Parent"
-            Height="300"
+            Height="480"
             Width="500"
-            BodyPadding="6">
+            BodyPadding="18">
             <Loader runat="server" Url="Child.aspx" Mode="Html" Scripts="true" />
             <Buttons>
                 <ext:Button

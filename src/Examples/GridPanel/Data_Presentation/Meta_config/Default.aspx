@@ -193,8 +193,8 @@
             ID="GridPanel1"
             runat="server"
             Title="Meta Grid"
-            Width="800"
-            Height="300">
+            Width="960"
+            Height="480">
             <Store>
                 <ext:Store runat="server" OnReadData="ReadData">
                     <Model>

@@ -6,17 +6,6 @@
 <head runat="server">
     <title>HBoxLayout - Ext.NET Examples</title>
     <link href="/resources/css/examples.css" rel="stylesheet" />
-
-    <style>
-        html, body {
-            font    : normal 12px verdana;
-            margin  : 0;
-            padding : 0;
-            border  : 0 none;
-            background-color : #dfe8f6 !important;
-        }
-    </style>
-
     <script>
         var replace = function (panel) {
             var btns = Ext.getCmp("btns"),
@@ -38,40 +27,24 @@
 
     <ext:Viewport runat="server" Layout="Border">
         <Items>
-            <ext:Container
+            <ext:Panel
                 ID="btns"
                 runat="server"
+                Title="HBox Layout"
+                Rounded="false"
                 Region="North"
                 Split="true"
-                MinHeight="40"
-                MaxHeight="85"
-                MarginSpec="5 5 0 5"
-                Height="50"
-                Layout="Fit">
+                Height="180"
+                Layout="Fit"
+                />
+            <ext:Panel runat="server" Region="Center" BodyPadding="18">
                 <Items>
-                    <ext:Container runat="server">
-                        <Content>
-                            <p style="padding:10px;color:#556677;">Select a configuration below:</p>
-                        </Content>
-                    </ext:Container>
-                </Items>
-            </ext:Container>
-            <ext:Panel
-                runat="server"
-                Layout="Anchor"
-                Region="Center"
-                MarginSpec="0 5 5 5"
-                BodyPadding="10">
-                <Items>
-                    <ext:Container
-                        runat="server"
-                        AnchorHorizontal="100%"
-                        Layout="HBox"
-                        Margin="10">
+                    <ext:Container runat="server" Layout="HBox">
                         <Defaults>
-                            <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
+                            <ext:Parameter Name="margin" Value="0 10 0 0" Mode="Value" />
                             <ext:Parameter Name="toggleGroup" Value="btns" Mode="Value" />
                             <ext:Parameter Name="allowDepress" Value="false" Mode="Raw" />
+                            <ext:Parameter Name="width" Value="150" Mode="Raw" />
                         </Defaults>
                         <Items>
                             <ext:Button runat="server" Text="Spaced" OnClientClick="replace(#{pnlSpaced});" />
@@ -81,16 +54,13 @@
                             <ext:Button runat="server" Text="Align: StretchMax" OnClientClick="replace(#{pnlAlignStretchMax});" />
                         </Items>
                     </ext:Container>
-                    <ext:Container
-                        runat="server"
-                        Layout="HBox"
-                        AnchorHorizontal="100%"
-                        PaddingSpec="0 10 10">
+                    <ext:Container runat="server" Layout="HBox" MarginSpec="10 0 0 0">
                         <Defaults>
-                            <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
+                            <ext:Parameter Name="margin" Value="0 10 0 0" Mode="Value" />
                             <ext:Parameter Name="pressed" Value="false" Mode="Raw" />
                             <ext:Parameter Name="toggleGroup" Value="btns" Mode="Value" />
                             <ext:Parameter Name="allowDepress" Value="false" Mode="Raw" />
+                            <ext:Parameter Name="width" Value="150" Mode="Raw" />
                         </Defaults>
                         <Items>
                             <ext:Button runat="server" Text="Flex: All Even" OnClientClick="replace(#{pnlFlexEven});" />
@@ -110,7 +80,7 @@
             ID="pnlSpaced"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -130,7 +100,7 @@
             ID="pnlAlignTop"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -149,7 +119,7 @@
             ID="pnlAlignMiddle"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -168,7 +138,7 @@
             ID="pnlAlignStretch"
             runat="server"
             Layout="HBox"
-            BodyPadding="5" >
+            BodyPadding="18" >
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -187,7 +157,7 @@
             ID="pnlAlignStretchMax"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -206,7 +176,7 @@
             ID="pnlFlexEven"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -225,7 +195,7 @@
             ID="pnlFlexRatio"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -244,7 +214,7 @@
             ID="pnlPackStart"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -263,7 +233,7 @@
             ID="pnlPackCenter"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>
@@ -282,7 +252,7 @@
             ID="pnlPackEnd"
             runat="server"
             Layout="HBox"
-            BodyPadding="5">
+            BodyPadding="18">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 5 0 0" Mode="Value" />
             </Defaults>

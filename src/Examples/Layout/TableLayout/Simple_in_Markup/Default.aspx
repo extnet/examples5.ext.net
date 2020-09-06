@@ -29,7 +29,7 @@
                 Region="Center"
                 Title="Table Layout"
                 Border="false"
-                BodyPadding="15"
+                BodyPadding="18"
                 Layout="Table">
                 <LayoutConfig>
                     <ext:TableLayoutConfig Columns="4" />
@@ -39,7 +39,7 @@
                         ID="Panel1"
                         runat="server"
                         Title="Lots of Spanning"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Height="320"
                         Html="<p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p>"
                         RowSpan="3"
@@ -48,7 +48,7 @@
                         ID="Panel2"
                         runat="server"
                         Title="Basic Table Cell"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Height="105"
                         Html="<p>Basic panel in a table cell.</p>"
                         />
@@ -56,7 +56,7 @@
                         ID="Panel3"
                         runat="server"
                         Header="false"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Height="105"
                         Html="<p>Plain panel</p>"
                         />
@@ -65,9 +65,9 @@
                         runat="server"
                         RowSpan="2"
                         Title="Another Cell"
-                        Width="300"
+                        Width="480"
                         Height="220"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Html="<p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p><br /><p>Row spanning.</p>"
                         />
 
@@ -77,7 +77,7 @@
                         ColSpan="2"
                         Height="100"
                         Header="false"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Html="Plain cell spanning two columns"
                         />
                     <ext:Panel
@@ -86,7 +86,7 @@
                         ColSpan="3"
                         Height="85"
                         Title="More Column Spanning"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Html="<p>Spanning three columns.</p>"
                         />
                     <ext:Panel
@@ -94,7 +94,7 @@
                         runat="server"
                         ColSpan="4"
                         Title="Spanning All Columns"
-                        BodyPadding="15"
+                        BodyPadding="18"
                         Html="<p>Spanning all columns.</p>"
                         />
                 </Items>

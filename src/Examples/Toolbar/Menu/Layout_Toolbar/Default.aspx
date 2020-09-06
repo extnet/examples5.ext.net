@@ -27,7 +27,7 @@
 
     <h2>Table Toolbar</h2>
 
-    <ext:Panel runat="server" Title="Panel" Height="200" Width="350">
+    <ext:Panel runat="server" Title="Panel" Height="180" Width="360">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
@@ -96,9 +96,9 @@
     <ext:Panel
         runat="server"
         Title="Vertical Toolbar"
-        Width="350"
-        Height="200"
-        BodyPadding="5"
+        Width="360"
+        Height="180"
+        BodyPadding="18"
         Html="Your Content">
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Left" Vertical="true">
@@ -115,7 +115,7 @@
 
     <h2>Multiple Toolbars</h2>
 
-    <ext:Panel runat="server" Title="Panel" Width="350" Height="200">
+    <ext:Panel runat="server" Title="Panel" Width="360" Height="180">
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>

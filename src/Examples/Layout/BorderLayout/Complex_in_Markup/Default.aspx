@@ -42,8 +42,8 @@
                 Title="West"
                 Width="250"
                 Layout="Accordion"
-                MinWidth="250"
-                MaxWidth="400"
+                MinWidth="180"
+                MaxWidth="480"
                 Split="true"
                 Collapsible="true">
                 <Items>
@@ -53,7 +53,7 @@
                         Title="Navigation"
                         Icon="FolderGo"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="Navigation"
                         />
                     <ext:Panel
@@ -62,7 +62,7 @@
                         Title="Settings"
                         Icon="FolderWrench"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Collapsed="True"
                         Html="Some settings in here."
                         />
@@ -80,7 +80,7 @@
                         Title="Close Me"
                         Closable="true"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="Hello ..."
                         />
                     <ext:Panel
@@ -88,7 +88,7 @@
                         runat="server"
                         Title="Center"
                         Border="false"
-                        BodyPadding="6"
+                        BodyPadding="18"
                         Html="... World"
                         />
                 </Items>
@@ -99,7 +99,7 @@
                 Region="East"
                 Collapsible="true"
                 Split="true"
-                MinWidth="250"
+                MinWidth="180"
                 Width="250"
                 Title="East"
                 Layout="Fit">
@@ -114,7 +114,7 @@
                                 runat="server"
                                 Title="Tab 1"
                                 Border="false"
-                                BodyPadding="6"
+                                BodyPadding="18"
                                 Html="East Tab 1"
                                 />
                             <ext:Panel
@@ -122,7 +122,7 @@
                                 Title="Tab 2"
                                 Closable="true"
                                 Border="false"
-                                BodyPadding="6"
+                                BodyPadding="18"
                                 Html="East Tab 2"
                                 />
                         </Items>
@@ -138,7 +138,7 @@
                 Title="South"
                 Html="South"
                 Height="250"
-                BodyPadding="6"
+                BodyPadding="18"
                 />
         </Items>
     </ext:Window>

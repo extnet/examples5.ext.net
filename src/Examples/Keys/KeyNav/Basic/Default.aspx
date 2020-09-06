@@ -59,10 +59,10 @@
         ID="Window1"
         runat="server"
         Width="400"
-        Height="300"
+        Height="480"
         Closable="false"
         Title="Move Window"
-        BodyPadding="6">
+        BodyPadding="18">
         <Content>
             <ul>
                 <li>Press:</li>

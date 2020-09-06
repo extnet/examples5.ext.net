@@ -32,7 +32,7 @@
         ID="Window1"
         runat="server"
         Title="Region Weights"
-        Width="800"
+        Width="960"
         Height="550"
         Border="false"
         Closable="false">
@@ -51,12 +51,12 @@
                 </Items>
             </ext:Panel>
 
-            <ext:Panel runat="server" Title="Settings" Height="200" BodyPadding="6" PaddingSpec="5 0 0 0">
+            <ext:Panel runat="server" Title="Settings" Height="180" BodyPadding="18" PaddingSpec="5 0 0 0">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
-                    <ext:FormPanel ID="Weights" runat="server" Border="false" Width="300">
+                    <ext:FormPanel ID="Weights" runat="server" Border="false" Width="480">
                         <Defaults>
                             <ext:Parameter Name="allowBlank" Value="false" Mode="Raw" />
                         </Defaults>

@@ -85,10 +85,10 @@
             runat="server"
             Closable="false"
             Height="553"
-            Width="700"
+            Width="720"
             Icon="WorldAdd"
             Title="Country Selector"
-            BodyPadding="5"
+            BodyPadding="18"
             BodyBorder="0"
             Layout="HBox">
             <LayoutConfig>
@@ -188,7 +188,7 @@
                     Layout="Anchor">
                     <Items>
                         <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" AnchorVertical="40%" />
-                        <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" BodyPadding="5">
+                        <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" BodyPadding="18">
                             <Items>
                                 <ext:Button runat="server" Icon="ResultsetNext" StyleSpec="margin-bottom:2px;">
                                     <Listeners>

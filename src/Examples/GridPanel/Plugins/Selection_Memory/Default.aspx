@@ -120,8 +120,8 @@
             StoreID="Store1"
             Title="Company List"
             Collapsible="true"
-            Width="600"
-            Height="350">
+            Width="960"
+            Height="480">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="Name" Flex="1" />

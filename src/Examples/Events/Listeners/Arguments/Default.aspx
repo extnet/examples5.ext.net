@@ -119,7 +119,7 @@
         <ext:FormPanel runat="server"
             Title="Listener Arguments"
             Width="400"
-            BodyPadding="6"
+            BodyPadding="18"
             DefaultAnchor="100%">
             <FieldDefaults LabelWidth="60" />
             <Items>
@@ -129,7 +129,7 @@
                     LabelSeparator="."
                     ForceSelection="true"
                     TypeAhead="true"
-                    Width="350">
+                    Width="360">
                     <DirectEvents>
                         <Select OnEvent="GetEvents">
                             <EventMask ShowMask="true" />
@@ -142,7 +142,7 @@
                     EmptyText="Select an event"
                     ForceSelection="true"
                     TypeAhead="true"
-                    Width="350">
+                    Width="360">
                     <DirectEvents>
                         <Select OnEvent="GetFunctionSignature">
                             <EventMask ShowMask="true" />

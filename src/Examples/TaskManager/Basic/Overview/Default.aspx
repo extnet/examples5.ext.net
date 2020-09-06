@@ -69,7 +69,7 @@
                             runat="server"
                             Title="Local time"
                             BodyStyle="text-align:center;"
-                            BodyPadding="20"
+                            BodyPadding="18"
                             Flex="1">
                             <LayoutConfig>
                                 <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
@@ -99,10 +99,10 @@
                             runat="server"
                             Title="Server Time (update every 5 seconds)"
                             BodyStyle="text-align:center;"
-                            BodyPadding="20"
+                            BodyPadding="18"
                             Flex="1">
                             <LayoutConfig>
-                                <ext:VBoxLayoutConfig Pack="Center" Align="Center"/>
+                                <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                             </LayoutConfig>
                             <Items>
                                 <ext:Label ID="ServerTimeLabel" runat="server" StyleSpec="font-weight:bold;font-size:500%;" Width="280" Height="50" />
@@ -129,7 +129,7 @@
                 <ext:Panel
                     runat="server"
                     Region="South"
-                    Height="200"
+                    Height="180"
                     Border="false"
                     Layout="Fit">
                     <Items>

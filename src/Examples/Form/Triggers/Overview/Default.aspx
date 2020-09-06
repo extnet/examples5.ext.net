@@ -77,7 +77,7 @@
             Title="Choose value"
             Hidden="true"
             Icon="ColorSwatch"
-            BodyPadding="3"
+            BodyPadding="18"
             Layout="Fit">
             <Items>
                 <ext:ColorPicker runat="server">

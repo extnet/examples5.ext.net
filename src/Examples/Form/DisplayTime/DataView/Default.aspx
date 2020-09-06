@@ -35,7 +35,7 @@
             Title="Messages"
             Icon="Date"
             Closable="false"
-            BodyPadding="5"
+            BodyPadding="18"
             BodyStyle="background-color:white;"
             Layout="Fit">
             <Items>

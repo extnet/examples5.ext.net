@@ -70,7 +70,7 @@
         <ext:Panel
             runat="server"
             Title="Area Chart"
-            Width="800"
+            Width="960"
             Height="600"
             Layout="Fit">
             <TopBar>
