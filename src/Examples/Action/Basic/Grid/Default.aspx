@@ -79,7 +79,7 @@
 
     <p>
         Both Buttons and MenuItems can be created from the same Action instance. Action's enable, disable, hide, show and
-    setText methods affect every Component created from that Action.<p>
+    setText methods affect every Component created from that Action.</p>
 
     <p>In this example, the Action is disabled when there is no grid selection, and this disables both Buttons and MenuItems.</p>
 
