@@ -46,4 +46,5 @@
     <h2>TimeField</h2>
 
     <ext:TimeField runat="server" TriggerIcon="SimpleTime" />
+</body>
 </html>

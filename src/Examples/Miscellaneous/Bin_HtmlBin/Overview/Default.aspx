@@ -44,7 +44,7 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;- The Bin controls don't participate in the layout logic.</p>
         <br/>
 
-        <p>The HtmlBin is for raw HTML.<p>
+        <p>The HtmlBin is for raw HTML.</p>
 
         <ext:FormPanel
             ID="FormPanel1"
