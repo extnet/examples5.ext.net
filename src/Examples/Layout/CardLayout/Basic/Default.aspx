@@ -68,7 +68,7 @@
                     />
             </Items>
             <Buttons>
-                <ext:Button ID="btnPrev" runat="server" Text="Prev" Disabled="true" Icon="PreviousGreen">
+                <ext:Button ID="btnPrev" runat="server" Text="Prev" Disabled="true" IconCls="x-md md-icon-chevron-left">
                     <DirectEvents>
                         <Click OnEvent="Prev_Click">
                             <ExtraParams>
@@ -77,7 +77,7 @@
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-                <ext:Button ID="btnNext" runat="server" Text="Next" Icon="NextGreen">
+                <ext:Button ID="btnNext" runat="server" Text="Next" IconCls="x-md md-icon-chevron-right">
                     <DirectEvents>
                         <Click OnEvent="Next_Click">
                             <ExtraParams>

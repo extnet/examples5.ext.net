@@ -29,7 +29,7 @@
             ID="Button1"
             runat="server"
             Text="Logout"
-            Icon="LockOpen">
+            IconCls="x-md md-icon-lock-open">
             <Listeners>
                 <Click Handler="#{Window1}.show();" />
             </Listeners>
@@ -43,7 +43,7 @@
             Closable="false"
             Resizable="false"
             Height="180"
-            Icon="Lock"
+            IconCls="x-md md-icon-lock"
             Title="Login"
             Draggable="false"
             Width="360"
@@ -68,7 +68,7 @@
                     Text="Demo" />
             </Items>
             <Buttons>
-                <ext:Button ID="btnLogin" runat="server" Text="Login" Icon="Accept">
+                <ext:Button ID="btnLogin" runat="server" Text="Login" IconCls="x-md md-icon-check-circle-outline">
                     <Listeners>
                         <Click Handler="
                             if (!#{txtUsername}.validate() || !#{txtPassword}.validate()) {
@@ -83,7 +83,7 @@
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-                <ext:Button ID="btnCancel" runat="server" Text="Cancel" Icon="Decline">
+                <ext:Button ID="btnCancel" runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
                     <Listeners>
                         <Click Handler="#{Window1}.hide();#{lblMessage}.setText('LOGIN CANCELED')" />
                     </Listeners>

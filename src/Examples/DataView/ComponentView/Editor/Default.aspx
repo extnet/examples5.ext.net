@@ -106,14 +106,14 @@
                             <Component>
                                 <ext:Button
                                     runat="server"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     Handler="var record = this.record, editing = record.get('editing'); record.set('editing', !editing); if (editing) {record.commit(true);} " />
                             </Component>
                         </ext:ViewItem>
 
                         <ext:ViewItem Selector="div.cancel-button">
                             <Component>
-                                <ext:Button runat="server" Icon="Decline" Text="Cancel" Handler="this.record.reject();" />
+                                <ext:Button runat="server" IconCls="x-md md-icon-cancel" Text="Cancel" Handler="this.record.reject();" />
                             </Component>
                         </ext:ViewItem>
 

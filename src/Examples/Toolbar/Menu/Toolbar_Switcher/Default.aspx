@@ -30,7 +30,7 @@
                 <Items>
                     <ext:Button
                         runat="server"
-                        Icon="FlagBlue"
+                        IconCls="x-md md-icon-flag"
                         ToggleGroup="region"
                         Pressed="true"
                         ToolTip="Europe">
@@ -41,7 +41,7 @@
 
                     <ext:Button
                         runat="server"
-                        Icon="FlagRed"
+                        IconCls="x-md md-icon-flag"
                         ToggleGroup="region"
                         ToolTip="North America">
                         <Listeners>
@@ -51,7 +51,7 @@
 
                     <ext:Button
                         runat="server"
-                        Icon="FlagWhite"
+                        IconCls="x-md md-icon-flag"
                         ToggleGroup="region"
                         ToolTip="Asia">
                         <Listeners>
@@ -67,12 +67,12 @@
                             <ext:ToolbarSpacer runat="server" />
                             <ext:ButtonGroup runat="server">
                                 <Items>
-                                    <ext:Button runat="server" Icon="FlagDk" Text="Denmark" />
-                                    <ext:Button runat="server" Icon="FlagFr" Text="France" />
-                                    <ext:Button runat="server" Icon="FlagFi" Text="Finland" />
-                                    <ext:Button runat="server" Icon="FlagDe" Text="Germany" />
-                                    <ext:Button runat="server" Icon="FlagSe" Text="Sweden" />
-                                    <ext:Button runat="server" Icon="FlagGb" Text="UK" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Denmark" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="France" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Finland" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Germany" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Sweden" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="UK" />
                                 </Items>
                             </ext:ButtonGroup>
                         </Items>
@@ -84,9 +84,9 @@
                             <ext:ToolbarSpacer runat="server" />
                             <ext:ButtonGroup runat="server">
                                 <Items>
-                                    <ext:Button runat="server" Icon="FlagCa" Text="Canada" />
-                                    <ext:Button runat="server" Icon="FlagUs" Text="United States of America" />
-                                    <ext:Button runat="server" Icon="FlagMx" Text="Mexico" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Canada" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="United States of America" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Mexico" />
                                 </Items>
                             </ext:ButtonGroup>
                         </Items>
@@ -98,10 +98,10 @@
                             <ext:ToolbarSpacer runat="server" />
                             <ext:ButtonGroup runat="server">
                                 <Items>
-                                    <ext:Button runat="server" Icon="FlagCn" Text="China" />
-                                    <ext:Button runat="server" Icon="FlagIn" Text="India" />
-                                    <ext:Button runat="server" Icon="FlagJp" Text="Japan" />
-                                    <ext:Button runat="server" Icon="FlagKr" Text="Republic of Korea" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="China" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="India" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Japan" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-flag" Text="Republic of Korea" />
                                 </Items>
                             </ext:ButtonGroup>
                         </Items>

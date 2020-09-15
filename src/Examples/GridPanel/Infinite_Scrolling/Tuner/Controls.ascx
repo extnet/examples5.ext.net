@@ -119,7 +119,7 @@
                     IDMode="Static"
                     Text="Reload"
                     StandOut="true"
-                    Icon="ArrowRefresh"
+                    IconCls="x-md md-icon-refresh"
                     Handler="initializeGrid" />
             </Items>
         </ext:Toolbar>

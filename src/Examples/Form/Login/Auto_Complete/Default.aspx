@@ -120,7 +120,7 @@
             Closable="false"
             Resizable="false"
             Height="180"
-            Icon="Lock"
+            IconCls="x-md md-icon-lock"
             Title="Login"
             Draggable="true"
             Width="360"
@@ -149,7 +149,7 @@
                     ID="Button1"
                     runat="server"
                     Text="Login"
-                    Icon="Accept"
+                    IconCls="x-md md-icon-check-circle-outline"
                     FormBind="true"
                     Handler="handleClientClick">
                     <DirectEvents>

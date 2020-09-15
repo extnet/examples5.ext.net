@@ -25,7 +25,7 @@
 
     <ext:Hyperlink
         runat="server"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         Target="_blank"
         NavigateUrl="https://ext.net"
         Text="https://ext.net"
@@ -35,7 +35,7 @@
 
     <ext:Hyperlink
         runat="server"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         IconAlign="Right"
         Target="_blank"
         NavigateUrl="https://ext.net"

@@ -153,7 +153,7 @@
                         <ext:Button
                             runat="server"
                             Text="Reconfigure"
-                            Icon="Accept">
+                            IconCls="x-md md-icon-check-circle-outline">
                             <DirectEvents>
                                 <Click OnEvent="Button1_Click">
                                     <EventMask

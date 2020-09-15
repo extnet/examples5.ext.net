@@ -100,11 +100,11 @@
 
     <ext:Toolbar runat="server" Width="530">
         <Items>
-            <ext:Button runat="server" Text="Form controls" Icon="NoteEdit">
+            <ext:Button runat="server" Text="Form controls" IconCls="x-md md-icon-edit">
                 <Menu>
                     <ext:Menu runat="server" EnableKeyNav="false">
                         <Items>
-                            <ext:MenuItem runat="server" Icon="NoteEdit" Text="Item" />
+                            <ext:MenuItem runat="server" IconCls="x-md md-icon-edit" Text="Item" />
                             <ext:TextField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
                             <ext:DateField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
                             <ext:MenuSeparator runat="server" />
@@ -148,7 +148,7 @@
                 </Menu>
             </ext:Button>
 
-            <ext:Button runat="server" Text="Panels" Icon="Application">
+            <ext:Button runat="server" Text="Panels" IconCls="x-md md-icon-open-in-new">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
@@ -180,17 +180,17 @@
                                 Width="480"
                                 Height="100">
                                 <Items>
-                                    <ext:Panel runat="server" Title="Tab1" Icon="Tab">
+                                    <ext:Panel runat="server" Title="Tab1" IconCls="x-md md-icon-tab">
                                         <Items>
-                                            <ext:Button runat="server" Text="Close Menu" Icon="Door">
+                                            <ext:Button runat="server" Text="Close Menu" IconCls="x-md md-icon-close">
                                                 <Listeners>
                                                     <Click Handler="this.up('menu').hide();" />
                                                 </Listeners>
                                             </ext:Button>
                                         </Items>
                                     </ext:Panel>
-                                    <ext:Panel runat="server" Title="Tab2" Icon="Tab" />
-                                    <ext:Panel runat="server" Title="Tab3" Icon="Tab" />
+                                    <ext:Panel runat="server" Title="Tab2" IconCls="x-md md-icon-tab" />
+                                    <ext:Panel runat="server" Title="Tab3" IconCls="x-md md-icon-tab" />
                                 </Items>
                             </ext:TabPanel>
                         </Items>
@@ -200,7 +200,7 @@
             <ext:Button
                 runat="server"
                 Text="Property Grid"
-                Icon="Table"
+                IconCls="x-md md-icon-grid-on"
                 ToolTip="The Property Grid menu has been configured to demonstrate how to keep a menu visible rather than auto-hiding as you move to other menus.<br/>See the Menu's Listeners.">
                 <Menu>
                     <ext:Menu runat="server">
@@ -225,14 +225,14 @@
                                     <ext:PropertyGridParameter Name="borderWidth" Value="5" Mode="Raw" />
                                 </Source>
                                 <Buttons>
-                                    <ext:Button runat="server" Text="Save" Icon="Disk" />
+                                    <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save" />
                                 </Buttons>
                             </ext:PropertyGrid>
                         </Items>
                     </ext:Menu>
                 </Menu>
             </ext:Button>
-            <ext:Button runat="server" Text="Layouts" Icon="Layout">
+            <ext:Button runat="server" Text="Layouts">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>

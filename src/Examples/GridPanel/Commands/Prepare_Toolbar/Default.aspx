@@ -119,8 +119,8 @@
                         />
                     <ext:CommandColumn runat="server" Width="160">
                         <Commands>
-                            <ext:GridCommand Icon="Delete" CommandName="Delete" Text="Delete" />
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit" Text="Edit" />
+                            <ext:GridCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete" Text="Delete" />
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit" Text="Edit" />
                         </Commands>
                         <PrepareToolbar Fn="prepare" />
                         <Listeners>

@@ -78,7 +78,6 @@
             runat="server"
             Frame="true"
             Title="Sponsored Projects"
-            Icon="ApplicationViewColumns"
             Width="960"
             Height="480">
             <Store>

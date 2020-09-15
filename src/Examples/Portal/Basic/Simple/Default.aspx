@@ -65,7 +65,7 @@
                             runat="server"
                             Border="false"
                             Collapsed="true"
-                            Icon="Note"
+                            IconCls="x-md md-icon-note"
                             Scrollable="Both"
                             Title="Content"
                             Html="={text}"
@@ -74,7 +74,6 @@
                             runat="server"
                             Border="false"
                             Collapsed="true"
-                            Icon="FolderWrench"
                             Scrollable="Both"
                             Title="Settings"
                             Html="={text}"
@@ -93,7 +92,7 @@
                                     <Items>
                                         <ext:PortalColumn runat="server">
                                             <Items>
-                                                <ext:Portlet ID="Portlet1" runat="server" Title="Another Panel 1" Icon="Accept" />
+                                                <ext:Portlet ID="Portlet1" runat="server" Title="Another Panel 1" IconCls="x-md md-icon-check-circle-outline" />
                                             </Items>
                                         </ext:PortalColumn>
                                         <ext:PortalColumn runat="server">

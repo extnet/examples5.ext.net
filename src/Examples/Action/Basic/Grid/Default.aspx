@@ -86,7 +86,7 @@
     <ext:Action
         ID="SellAction"
         runat="server"
-        Icon="Delete"
+        IconCls="x-md md-icon-remove-circle-outline"
         Text="Sell stock"
         Disabled="true"
         Handler="var rec = #{GridPanel1}.getSelectionModel().getSelection()[0]; if (rec) { Ext.Msg.alert('Sell', 'Sell ' + rec.get('company')); }"
@@ -95,7 +95,7 @@
     <ext:Action
         ID="BuyAction"
         runat="server"
-        Icon="Accept"
+        IconCls="x-md md-icon-check-circle-outline"
         Text="Buy stock"
         Disabled="true"
         Handler="var rec = #{GridPanel1}.getSelectionModel().getSelection()[0]; if (rec) { Ext.Msg.alert('Buy', 'Buy ' + rec.get('company')); }"

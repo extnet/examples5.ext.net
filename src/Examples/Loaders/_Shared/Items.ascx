@@ -9,7 +9,6 @@
             Split="true" 
             Width="150" 
             Collapsible="true" 
-            Icon="ApplicationSideExpand" 
             />
         <ext:Panel 
             runat="server" 
@@ -23,7 +22,6 @@
             Split="true" 
             Width="150" 
             Collapsible="true" 
-            Icon="ApplicationSideContract" 
             />
     </Items>
 </ext:Container>

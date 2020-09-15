@@ -73,7 +73,7 @@
             ID="TreePanel1"
             runat="server"
             Title="Tree"
-            Icon="Anchor"
+            IconCls="x-md md-icon-anchor"
             Width="250"
             RootVisible="false"
             BodyPaddingSummary="0 0 0 10">

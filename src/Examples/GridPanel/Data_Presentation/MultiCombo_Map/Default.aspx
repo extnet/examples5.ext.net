@@ -132,7 +132,7 @@
         <ext:GridPanel
             runat="server"
             Title="List"
-            Icon="Application">
+            IconCls="x-md md-icon-open-in-new">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>

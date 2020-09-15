@@ -44,10 +44,10 @@
 <ext:DesktopModuleProxy runat="server">
     <Module ModuleID="grid-win">
         <Shortcut Name="Grid Window" IconCls="x-grid-shortcut" SortIndex="1" />
-        <Launcher Text="Grid Window" Icon="Table" />
+        <Launcher Text="Grid Window" IconCls="x-md md-icon-grid-on" />
         <Window>
             <ext:Window runat="server"
-                Icon="Table" 
+                IconCls="x-md md-icon-grid-on" 
                 Width="740" 
                 Height="480"                
                 Layout="Fit"
@@ -55,17 +55,17 @@
                 <TopBar>
                     <ext:Toolbar runat="server">
                         <Items>
-                            <ext:Button runat="server" Text="Add Something" Icon="Add" ToolTip="Add a new row">
+                            <ext:Button runat="server" Text="Add Something" IconCls="x-md md-icon-add-circle-outline" ToolTip="Add a new row">
                             </ext:Button>
 
                             <ext:ToolbarSeparator runat="server" />
 
-                            <ext:Button runat="server" Text="Options" Icon="Plugin">
+                            <ext:Button runat="server" Text="Options" IconCls="x-md md-icon-extension">
                             </ext:Button>
 
                             <ext:ToolbarSeparator runat="server" />
 
-                            <ext:Button runat="server" Text="Remove Something" ToolTip="Remove the selected item" Icon="Decline">
+                            <ext:Button runat="server" Text="Remove Something" ToolTip="Remove the selected item" IconCls="x-md md-icon-cancel">
                                 <QTipCfg Text="Remove the selected user" />
                             </ext:Button>
                         </Items>

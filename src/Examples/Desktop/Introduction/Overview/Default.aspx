@@ -53,7 +53,7 @@
             Closable="false"
             Resizable="false"
             Height="180"
-            Icon="Lock"
+            IconCls="x-md md-icon-lock"
             Title="Login"
             Draggable="false"
             Width="360"
@@ -82,7 +82,7 @@
                     />
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Login" Icon="Accept">
+                <ext:Button ID="Button1" runat="server" Text="Login" IconCls="x-md md-icon-check-circle-outline">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" Success="#{Window1}.close();">
                             <EventMask ShowMask="true" Msg="Verifying..." MinDelay="1000" />

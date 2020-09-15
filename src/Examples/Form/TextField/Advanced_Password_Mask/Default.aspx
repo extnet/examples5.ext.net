@@ -48,14 +48,14 @@
                     RightButtonsShowMode="MouseOverOrFocus"
                     MsgTarget="Under">
                     <RightButtons>
-                        <ext:Button runat="server"
-                            Icon="ArrowSwitch"
+                        <ext:Button
+                            runat="server"
                             ToolTip="Generate password"
-                            Handler="this.up('textfield').passwordMask.generatePassword(); #{PassMode}.toggle(true, true);" />
+                            Handler="this.up('textfield').passwordMask.generatePassword(); #{PassMode}.toggle(true, true);"
+                            />
 
-                        <ext:Button runat="server"
-                            ID="PassMode"
-                            Icon="TextAb"
+                        <ext:Button
+                            runat="server"
                             AllowDepress="true"
                             EnableToggle="true"
                             ToolTip="Show password">

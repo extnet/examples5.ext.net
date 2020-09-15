@@ -37,10 +37,10 @@
                 Height="480"
                 Width="480">
                 <Items>
-                    <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 3" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabPanel>
         </div>
@@ -52,10 +52,10 @@
                 Height="480"
                 Width="480">
                 <Items>
-                    <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 3" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabPanel>
         </div>
@@ -69,14 +69,14 @@
                 Height="480"
                 Width="480">
                 <Items>
-                    <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 3" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
-                    <ext:Panel runat="server" Title="Tab 4" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 5" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 6" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabPanel>
         </div>
@@ -88,14 +88,14 @@
                 Height="480"
                 Width="480">
                 <Items>
-                    <ext:Panel runat="server" Title="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 2" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 3" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
-                    <ext:Panel runat="server" Title="Tab 4" Icon="ApplicationViewList" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Panel runat="server" Title="Tab 5" Closable="true" />
                     <ext:Panel runat="server" Title="Tab 6" />
-                    <ext:Panel runat="server" Title="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Panel runat="server" Title="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabPanel>
         </div>

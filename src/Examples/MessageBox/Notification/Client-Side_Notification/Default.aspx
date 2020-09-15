@@ -514,12 +514,12 @@
                     <Items>
                         <ext:ToolbarTextItem ID="BarLabel" runat="server" />
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Email" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-email" />
                     </Items>
                 </ext:Toolbar>
             </BottomBar>
         </ext:Panel>
     </div>
-</body>
+</body> 
 </html>

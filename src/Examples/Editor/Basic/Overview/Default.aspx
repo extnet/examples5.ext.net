@@ -53,7 +53,7 @@
                                     ID="Label1"
                                     runat="server"
                                     Cls="editable"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     OverCls="editable-over"
                                     Text="With predefined field and fixed width">
                                     <Editor>
@@ -73,7 +73,7 @@
                                     ID="Label2"
                                     runat="server"
                                     Cls="editable"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     OverCls="editable-over"
                                     Text="With standard field and auto width">
                                     <Editor>
@@ -88,7 +88,7 @@
                                     ID="Label4"
                                     runat="server"
                                     Cls="editable"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     OverCls="editable-over"
                                     Text="Double click editing">
                                     <Editor>
@@ -101,7 +101,7 @@
                                 <br />
                                 <ext:Label ID="Label5" runat="server"
                                     Cls="editable"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     OverCls="editable-over"
                                     Text="Custom editor aligment">
                                     <Editor>
@@ -157,7 +157,7 @@
                                     ID="AjaxLabel"
                                     runat="server"
                                     Cls="editable"
-                                    Icon="NoteEdit"
+                                    IconCls="x-md md-icon-edit"
                                     OverCls="editable-over"
                                     Text="Ajax Label">
                                     <Editor>
@@ -202,7 +202,7 @@
                                                     ID="Button1"
                                                     runat="server"
                                                     Text="Edit"
-                                                    Icon="Pencil">
+                                                    IconCls="x-md md-icon-edit">
                                                     <Listeners>
                                                         <Click Handler="this.setDisabled(true);#{Button2}.setDisabled(false);#{PanelEditor}.startEdit(#{Panel1}.getBody());" />
                                                     </Listeners>
@@ -211,7 +211,7 @@
                                                     ID="Button2"
                                                     runat="server"
                                                     Text="Save"
-                                                    Icon="Disk"
+                                                    IconCls="x-md md-icon-save"
                                                     Disabled="true">
                                                     <Listeners>
                                                         <Click Handler="this.setDisabled(true);#{Button1}.setDisabled(false);#{PanelEditor}.completeEdit();" />

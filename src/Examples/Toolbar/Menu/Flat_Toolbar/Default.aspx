@@ -14,7 +14,7 @@
 
     <ext:Toolbar runat="server" Flat="true">
         <Items>
-            <ext:Button runat="server" Icon="Add">
+            <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                 <Listeners>
                     <Click Handler="Ext.Msg.alert('Click','Click on Add');" />
                 </Listeners>
@@ -23,7 +23,7 @@
                 </ToolTips>
             </ext:Button>
 
-             <ext:Button runat="server" Icon="Accept">
+             <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline">
                 <Listeners>
                     <Click Handler="Ext.Msg.alert('Click','Click on Accept');" />
                 </Listeners>
@@ -32,7 +32,7 @@
                 </ToolTips>
             </ext:Button>
 
-             <ext:Button runat="server" Icon="Delete">
+             <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline">
                 <Listeners>
                     <Click Handler="Ext.Msg.alert('Click','Click on Delete');" />
                 </Listeners>
@@ -43,9 +43,9 @@
 
             <ext:ToolbarSeparator/>
 
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" Icon="GroupAdd" Pressed="true" />
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" Icon="GroupDelete" />
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" Icon="GroupEdit" />
+            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-add-circle-outline" Pressed="true" />
+            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-remove-circle-outline" />
+            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-edit" />
         </Items>
     </ext:Toolbar>
 
@@ -55,7 +55,7 @@
         <TopBar>
             <ext:Toolbar runat="server" Flat="true">
                 <Items>
-                    <ext:Button runat="server" Icon="Add">
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                         <Listeners>
                             <Click Handler="Ext.Msg.alert('Click','Click on Add');" />
                         </Listeners>
@@ -64,7 +64,7 @@
                         </ToolTips>
                     </ext:Button>
 
-                     <ext:Button runat="server" Icon="Accept">
+                     <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline">
                         <Listeners>
                             <Click Handler="Ext.Msg.alert('Click','Click on Accept');" />
                         </Listeners>
@@ -73,7 +73,7 @@
                         </ToolTips>
                     </ext:Button>
 
-                     <ext:Button runat="server" Icon="Delete">
+                     <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline">
                         <Listeners>
                             <Click Handler="Ext.Msg.alert('Click','Click on Delete');" />
                         </Listeners>
@@ -84,9 +84,9 @@
 
                     <ext:ToolbarSeparator/>
 
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" Icon="GroupAdd" Pressed="true" />
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" Icon="GroupDelete" />
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" Icon="GroupEdit" />
+                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-add-circle-outline" Pressed="true" />
+                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-remove-circle-outline" />
+                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-edit" />
                 </Items>
             </ext:Toolbar>
         </TopBar>

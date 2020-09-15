@@ -164,7 +164,7 @@
                         <Click OnEvent="RemovePropertyClick" />
                     </DirectEvents>
                 </ext:Button>
-                <ext:Button runat="server" ID="Button1" Text="Save" Icon="Disk">
+                <ext:Button runat="server" ID="Button1" Text="Save" IconCls="x-md md-icon-save">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" />
                     </DirectEvents>

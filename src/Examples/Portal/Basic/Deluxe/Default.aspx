@@ -146,21 +146,18 @@
                         <ext:Panel
                             runat="server"
                             Border="false"
-                            Icon="PageWhiteCopy"
                             Title="Content"
                             Html="={text}"
                             BodyPadding="18" />
                         <ext:Panel
                             runat="server"
                             Border="false"
-                            Icon="Star"
                             Title="Activities"
                             Html="={text}"
                             BodyPadding="18" />
                         <ext:Panel
                             runat="server"
                             Border="false"
-                            Icon="Group"
                             Title="Contacts"
                             Html="={text}"
                             BodyPadding="18" />
@@ -180,7 +177,6 @@
                             ID="Tab1"
                             runat="server"
                             Title="Internet"
-                            Icon="Vcard"
                             BodyStyle="background-color: transparent;"
                             Layout="Fit">
                             <Items>
@@ -230,7 +226,6 @@
                             ID="Tab2"
                             runat="server"
                             Title="General"
-                            Icon="House"
                             BodyStyle="background-color: transparent;"
                             Layout="Fit">
                             <Items>
@@ -259,7 +254,6 @@
                         <ext:Panel
                             runat="server"
                             Title="Fun"
-                            Icon="ColorSwatch"
                             BodyStyle="background-color: transparent;"
                             Layout="Fit">
                             <Items>

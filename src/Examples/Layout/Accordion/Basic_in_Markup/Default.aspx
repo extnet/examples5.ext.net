@@ -19,12 +19,11 @@
         Height="480"
         Maximizable="true"
         BodyBorder="0"
-        Icon="ApplicationTileVertical"
         Layout="Accordion">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Button runat="server" Icon="Connect">
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                         <ToolTips>
                             <ext:ToolTip
                                 runat="server"
@@ -32,8 +31,8 @@
                                 Html="Let your users know what they can do!" />
                         </ToolTips>
                     </ext:Button>
-                    <ext:Button ID="Button2" runat="server" Icon="UserAdd" />
-                    <ext:Button ID="Button3" runat="server" Icon="UserDelete" />
+                    <ext:Button ID="Button2" runat="server" IconCls="x-md md-icon-person-add" />
+                    <ext:Button ID="Button3" runat="server" IconCls="x-md md-icon-person-remove" />
                 </Items>
             </ext:Toolbar>
         </TopBar>
@@ -47,21 +46,21 @@
                         <Children>
                             <ext:Node Text="Friends" Expanded="true">
                                 <Children>
-                                    <ext:Node Text="George" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Brian" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Jon" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Tim" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Brent" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Fred" Icon="User" Leaf="True" />
-                                    <ext:Node Text="Bob" Icon="User" Leaf="True" />
+                                    <ext:Node Text="George" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Brian" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Jon" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Tim" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Brent" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Fred" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Bob" IconCls="x-md md-icon-person" Leaf="True" />
                                 </Children>
                             </ext:Node>
                             <ext:Node Text="Family" Expanded="true">
                                 <Children>
-                                    <ext:Node Text="Kelly" Icon="UserFemale" Leaf="True" />
-                                    <ext:Node Text="Sara" Icon="UserFemale" Leaf="True" />
-                                    <ext:Node Text="Zack" Icon="UserGreen" Leaf="True" />
-                                    <ext:Node Text="John" Icon="UserGreen" Leaf="True" />
+                                    <ext:Node Text="Kelly" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Sara" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="Zack" IconCls="x-md md-icon-person" Leaf="True" />
+                                    <ext:Node Text="John" IconCls="x-md md-icon-person" Leaf="True" />
                                 </Children>
                             </ext:Node>
                         </Children>

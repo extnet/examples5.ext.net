@@ -82,7 +82,7 @@
                         <ext:TreePanel
                             runat="server"
                             Title="My Task List"
-                            Icon="Accept"
+                            IconCls="x-md md-icon-check-circle-outline"
                             Height="480"
                             Width="480"
                             Shadow="false"
@@ -95,20 +95,20 @@
                             <Root>
                                 <ext:Node>
                                     <Children>
-                                        <ext:Node Text="To Do" Icon="Folder">
+                                        <ext:Node Text="To Do" IconCls="x-md md-icon-folder">
                                             <Children>
                                                 <ext:Node NodeID="Item11" Text="Go jogging" Leaf="true" Checked="False" />
                                                 <ext:Node NodeID="Item12" Text="Take a nap" Leaf="true" Checked="False" />
                                                 <ext:Node NodeID="Item13" Text="Clean house" Leaf="true" Checked="False" />
                                             </Children>
                                         </ext:Node>
-                                        <ext:Node Text="Grocery List" Icon="Folder">
+                                        <ext:Node Text="Grocery List" IconCls="x-md md-icon-folder">
                                             <Children>
                                                 <ext:Node NodeID="Item21" Text="Bananas" Leaf="true" Checked="False" />
                                                 <ext:Node NodeID="Item22" Text="Milk" Leaf="true" Checked="False" />
                                                 <ext:Node NodeID="Item23" Text="Cereal" Leaf="true" Checked="False" />
 
-                                                <ext:Node Text="Energy foods" Icon="Folder">
+                                                <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder">
                                                     <Children>
                                                         <ext:Node NodeID="Item241" Text="Coffee" Leaf="true" Checked="False" />
                                                         <ext:Node NodeID="Item242" Text="Red Bull" Leaf="true" Checked="False" />
@@ -116,7 +116,7 @@
                                                 </ext:Node>
                                             </Children>
                                         </ext:Node>
-                                        <ext:Node Text="Kitchen Remodel" Icon="Folder">
+                                        <ext:Node Text="Kitchen Remodel" IconCls="x-md md-icon-folder">
                                             <Children>
                                                 <ext:Node NodeID="Item31" Text="Finish the budget" Leaf="true" Checked="False" />
                                                 <ext:Node NodeID="Item32" Text="Call contractors" Leaf="true" Checked="False" />

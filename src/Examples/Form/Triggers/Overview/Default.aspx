@@ -60,7 +60,7 @@
             Width="200"
             Editable="false">
             <Triggers>
-                <ext:FieldTrigger Icon="Clear" QTip="Click to clear field" Hidden="true" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" QTip="Click to clear field" Hidden="true" />
                 <ext:FieldTrigger Icon="Ellipsis" QTip="Click to choose value" />
             </Triggers>
             <Listeners>
@@ -76,7 +76,6 @@
             Resizable="false"
             Title="Choose value"
             Hidden="true"
-            Icon="ColorSwatch"
             BodyPadding="18"
             Layout="Fit">
             <Items>
@@ -99,9 +98,9 @@
 
         <ext:TextField ID="TextField3" runat="server" Width="200">
             <Triggers>
-                <ext:FieldTrigger Icon="Date" QTip="Custom tip" />
-                <ext:FieldTrigger Icon="Clear" QTip="<b>Title</b><br/>Custom title" />
-                <ext:FieldTrigger Icon="Search" />
+                <ext:FieldTrigger IconCls="x-md md-icon-calendar-today" QTip="Custom tip" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" QTip="<b>Title</b><br/>Custom title" />
+                <ext:FieldTrigger IconCls="x-md md-icon-search" />
                 <ext:FieldTrigger Icon="Combo" Hidden="true" />
             </Triggers>
             <Listeners>

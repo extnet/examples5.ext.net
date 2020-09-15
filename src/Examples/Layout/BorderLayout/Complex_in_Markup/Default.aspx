@@ -15,7 +15,7 @@
     <ext:Button
         runat="server"
         Text="Show Window"
-        Icon="Application">
+        IconCls="x-md md-icon-open-in-new">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
         </Listeners>
@@ -25,7 +25,7 @@
         ID="Window1"
         runat="server"
         Title="Complex Layout"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         Width="960"
         Height="640"
         Plain="true"
@@ -51,7 +51,6 @@
                         ID="Navigation"
                         runat="server"
                         Title="Navigation"
-                        Icon="FolderGo"
                         Border="false"
                         BodyPadding="18"
                         Html="Navigation"
@@ -60,7 +59,6 @@
                         ID="Settings"
                         runat="server"
                         Title="Settings"
-                        Icon="FolderWrench"
                         Border="false"
                         BodyPadding="18"
                         Collapsed="True"

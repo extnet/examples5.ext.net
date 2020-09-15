@@ -137,8 +137,7 @@
                     runat="server"
                     Region="West"
                     Width="480"
-                    Title="Site Map - Preload"
-                    Icon="ChartOrganisation">
+                    Title="Site Map - Preload">
                     <Listeners>
                         <ItemClick Handler="if (record.data.url) { loadPage(#{Pages}, record); return false;}" />
                     </Listeners>
@@ -152,8 +151,7 @@
                     runat="server"
                     Region="East"
                     Width="480"
-                    Title="Site Map - Dynamic"
-                    Icon="ChartOrganisation">
+                    Title="Site Map - Dynamic">
                     <Listeners>
                         <ItemClick Handler="if (record.data.url) { loadPage(#{Pages}, record); }" />
                     </Listeners>

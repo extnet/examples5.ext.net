@@ -51,7 +51,7 @@
             LabelWidth="110"
             Width="360"
             Height="270"
-            Icon="User"
+            IconCls="x-md md-icon-person"
             BodyPadding="18"
             Layout="Form">
             <Items>

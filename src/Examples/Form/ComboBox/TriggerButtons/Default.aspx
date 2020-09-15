@@ -22,7 +22,7 @@
                 <ext:ListItem Text="5" />
             </Items>
             <Triggers>
-                <ext:FieldTrigger Icon="Clear" Hidden="true" Weight="-1" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" Hidden="true" Weight="-1" />
             </Triggers>
             <Listeners>
                 <Select Handler="this.getTrigger(0).show();" />

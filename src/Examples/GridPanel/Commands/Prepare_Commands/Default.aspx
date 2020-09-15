@@ -119,7 +119,7 @@
                         <Renderer Format="UsMoney" />
 
                         <Commands>
-                            <ext:ImageCommand Icon="MoneyDollar" CommandName="Dollar" />
+                            <ext:ImageCommand IconCls="x-md md-icon-attach-money" CommandName="Dollar" />
                         </Commands>
 
                         <PrepareCommand Fn="prepareCellCommand" />
@@ -135,10 +135,10 @@
 
                     <ext:ImageCommandColumn runat="server" Width="100" Text="Image Cmds">
                         <Commands>
-                            <ext:ImageCommand Icon="Delete" CommandName="Delete">
+                            <ext:ImageCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete">
                                 <ToolTip Text="Delete" />
                             </ext:ImageCommand>
-                             <ext:ImageCommand Icon="NoteEdit" CommandName="Edit">
+                             <ext:ImageCommand IconCls="x-md md-icon-edit" CommandName="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
                         </Commands>
@@ -151,11 +151,11 @@
 
                     <ext:CommandColumn runat="server" Width="100" Text="Toolbar Cmds">
                         <Commands>
-                            <ext:GridCommand Icon="Delete" CommandName="Delete">
+                            <ext:GridCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete">
                                 <ToolTip Text="Delete" />
                             </ext:GridCommand>
                             <ext:CommandSeparator />
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit">
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:GridCommand>
                         </Commands>

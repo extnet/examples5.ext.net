@@ -186,14 +186,13 @@
                 </ext:DesktopModule>
 
                 <ext:DesktopModule ModuleID="notepad">
-                    <Shortcut Name="Notepad" IconCls="x-notepad-shortcut" SortIndex="2" />
-                    <Launcher Text="Notepad" Icon="ApplicationForm" />
+                    <Shortcut Name="Notepad" SortIndex="2" />
+                    <Launcher Text="Notepad" />
                     <Window>
                         <ext:Window runat="server"
                             Title="Notepad"
                             Width="750"
                             Height="480"
-                            Icon="ApplicationForm"
                             AnimCollapse="false"
                             Border="false"
                             HideMode="Offsets"
@@ -231,8 +230,8 @@
                         <Items>
                             <ext:MenuItem runat="server" Text="Change Settings" />
                             <ext:MenuSeparator runat="server" />
-                            <ext:MenuItem runat="server" Text="Tile" Handler="tile" Icon="ApplicationTileVertical" />
-                            <ext:MenuItem runat="server" Text="Cascade" Handler="cascade" Icon="ApplicationCascade" />
+                            <ext:MenuItem runat="server" Text="Tile" Handler="tile" />
+                            <ext:MenuItem runat="server" Text="Cascade" Handler="cascade" />
                         </Items>
                     </ext:Menu>
                 </ContextMenu>
@@ -265,12 +264,12 @@
                 </Content>
             </DesktopConfig>
 
-            <StartMenu Title="Ext.Net Desktop" Icon="Application" Height="480">
+            <StartMenu Title="Ext.Net Desktop" IconCls="x-md md-icon-open-in-new" Height="480">
                 <ToolConfig>
                     <ext:Toolbar ID="StartMenuToolbar" runat="server" Width="100">
                         <Items>
-                            <ext:Button runat="server" Text="Settings" Icon="Cog" />
-                            <ext:Button runat="server" Text="Logout" Icon="Key">
+                            <ext:Button runat="server" Text="Settings" IconCls="x-md md-icon-settings" />
+                            <ext:Button runat="server" Text="Logout" IconCls="x-md md-icon-lock-open">
                                 <DirectEvents>
                                     <Click OnEvent="Logout_Click">
                                         <EventMask ShowMask="true" Msg="Good Bye..." MinDelay="1000" />
@@ -286,11 +285,11 @@
                 <QuickStart>
                     <ext:Toolbar runat="server">
                         <Items>
-                            <ext:Button runat="server" Handler="tile" Icon="ApplicationTileVertical" OverflowText="Tile windows">
+                            <ext:Button runat="server" Handler="tile" OverflowText="Tile windows">
                                 <QTipCfg Text="Tile windows" />
                             </ext:Button>
 
-                            <ext:Button runat="server" Handler="cascade" Icon="ApplicationCascade" OverflowText="Cascade windows">
+                            <ext:Button runat="server" Handler="cascade" OverflowText="Cascade windows">
                                 <QTipCfg Text="Cascade windows" />
                             </ext:Button>
                         </Items>
@@ -324,11 +323,11 @@
 
         <ext:Panel runat="server" Title="Slide panel" Frame="true" Width="250" Layout="Accordion" Floating="true" Shadow="false" Hidden="true">
             <Items>
-                <ext:Panel runat="server" Title="Section 1" Icon="User" />
-                <ext:Panel runat="server" Title="Section 2" Icon="UserB" />
-                <ext:Panel runat="server" Title="Section 3" Icon="UserB" />
-                <ext:Panel runat="server" Title="Section 4" Icon="UserB" />
-                <ext:Panel runat="server" Title="Section 5" Icon="UserB" />
+                <ext:Panel runat="server" Title="Section 1" IconCls="x-md md-icon-person" />
+                <ext:Panel runat="server" Title="Section 2" IconCls="x-md md-icon-person" />
+                <ext:Panel runat="server" Title="Section 3" IconCls="x-md md-icon-person" />
+                <ext:Panel runat="server" Title="Section 4" IconCls="x-md md-icon-person" />
+                <ext:Panel runat="server" Title="Section 5" IconCls="x-md md-icon-person" />
             </Items>
             <MessageBusListeners>
                 <ext:MessageBusListener Name="App.Desktop.ready" Fn="initSlidePanel" />

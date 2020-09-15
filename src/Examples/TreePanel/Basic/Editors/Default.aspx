@@ -64,7 +64,7 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Icon="Anchor"
+            IconCls="x-md md-icon-anchor"
             Title="Tree Editors Filter"
             Scrollable="Both"
             Width="250"
@@ -96,7 +96,7 @@
         <ext:TreePanel
             ID="TreePanel2"
             runat="server"
-            Icon="Anchor"
+            IconCls="x-md md-icon-anchor"
             Title="Tree Active Editor"
             Scrollable="Both"
             Width="250"

@@ -26,13 +26,13 @@
         <table border="1">
             <tr>
                 <td id="minusTd" style="width:50px;height:50px;text-align:center;cursor:pointer;">
-                    <ext:Label runat="server" Icon="Delete" />
+                    <ext:Label runat="server" IconCls="x-md md-icon-remove-circle-outline" />
                 </td>
                 <td style="width:100px;text-align:center;">
                     <ext:Label ID="ValueLabel" runat="server" Text="0" />
                 </td>
                 <td id="plusTd" style="width:50px;height:50px;text-align:center;cursor:pointer;">
-                    <ext:Label runat="server" Icon="Add" />
+                    <ext:Label runat="server" IconCls="x-md md-icon-add-circle-outline" />
                 </td>
             </tr>
         </table>

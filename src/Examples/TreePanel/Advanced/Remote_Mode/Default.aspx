@@ -130,31 +130,31 @@
             <Items>
                 <ext:Label ID="NodeName" runat="server" Cls="bold-text" />
                 <ext:MenuSeparator />
-                <ext:MenuItem runat="server" Text="Edit" Icon="Pencil">
+                <ext:MenuItem runat="server" Text="Edit" IconCls="x-md md-icon-edit">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.editingPlugin.startEdit(#{TreePanel1}.menuNode, 0);" />
                     </Listeners>
                 </ext:MenuItem>
 
-                <ext:MenuItem runat="server" Text="Rename to 'TEST'" Icon="Pencil">
+                <ext:MenuItem runat="server" Text="Rename to 'TEST'" IconCls="x-md md-icon-edit">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.editNode(#{TreePanel1}.menuNode, 'text', 'TEST');" />
                     </Listeners>
                 </ext:MenuItem>
 
-                <ext:MenuItem runat="server" Text="Remove" Icon="Delete">
+                <ext:MenuItem runat="server" Text="Remove" IconCls="x-md md-icon-remove-circle-outline">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.removeNode(#{TreePanel1}.menuNode);" />
                     </Listeners>
                 </ext:MenuItem>
 
-                <ext:MenuItem runat="server" Text="Append child" Icon="Add">
+                <ext:MenuItem runat="server" Text="Append child" IconCls="x-md md-icon-add-circle-outline">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.appendChild(#{TreePanel1}.menuNode, 'New');" />
                     </Listeners>
                 </ext:MenuItem>
 
-                <ext:MenuItem runat="server" Text="Insert before this node" Icon="ArrowRight">
+                <ext:MenuItem runat="server" Text="Insert before this node" IconCls="x-md md-icon-arrow-forward">
                     <Listeners>
                         <Click Handler="#{TreePanel1}.insertBefore(#{TreePanel1}.menuNode, 'New');" />
                     </Listeners>

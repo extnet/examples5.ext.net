@@ -89,7 +89,7 @@ CompanyX.DoYes();
 
     <form runat="server">
         <p>
-            <ext:Button runat="server" Text="Confirm" Icon="Error">
+            <ext:Button runat="server" Text="Confirm" IconCls="x-md md-icon-error-outline">
                 <Listeners>
                     <Click Handler="CompanyX.DoConfirm()" />
                 </Listeners>

@@ -30,7 +30,7 @@
 
         <h2>HyperlinkButton with Icon and Click DirectEvent</h2>
 
-        <ext:HyperlinkButton runat="server" Icon="Accept" Text="Click">
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-check-circle-outline" Text="Click">
             <DirectEvents>
                 <Click OnEvent="Button_Click" />
             </DirectEvents>
@@ -38,16 +38,16 @@
 
         <h2>HyperlinkButton with Right Aligned Icon</h2>
 
-        <ext:HyperlinkButton runat="server" Icon="Accept" IconAlign="Right" Text="Click" />
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-check-circle-outline" IconAlign="Right" Text="Click" />
 
         <h2>HyperlinkButton with Menu</h2>
 
-        <ext:HyperlinkButton runat="server" Icon="Accept" Text="Click">
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-check-circle-outline" Text="Click">
             <Menu>
                 <ext:Menu runat="server">
                     <Items>
-                        <ext:MenuItem runat="server" Text="Add" Icon="Add" />
-                        <ext:MenuItem runat="server" Text="Remove" Icon="Delete" />
+                        <ext:MenuItem runat="server" Text="Add" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:MenuItem runat="server" Text="Remove" IconCls="x-md md-icon-remove-circle-outline" />
                     </Items>
                 </ext:Menu>
             </Menu>
@@ -55,9 +55,9 @@
 
         <h2>HyperlinkButton in a ToggleGroup</h2>
 
-        <ext:HyperlinkButton runat="server" Icon="GroupAdd" Text="Add group" ToggleGroup="Group1" />&nbsp;&nbsp;
-        <ext:HyperlinkButton runat="server" Icon="GroupDelete" Text="Delete group" ToggleGroup="Group1" />&nbsp;&nbsp;
-        <ext:HyperlinkButton runat="server" Icon="GroupEdit" Text="Edit group" ToggleGroup="Group1" />
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-add-circle-outline" Text="Add group" ToggleGroup="Group1" />&nbsp;&nbsp;
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-remove-circle-outline" Text="Delete group" ToggleGroup="Group1" />&nbsp;&nbsp;
+        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-edit" Text="Edit group" ToggleGroup="Group1" />
     </form>
 </body>
 </html>

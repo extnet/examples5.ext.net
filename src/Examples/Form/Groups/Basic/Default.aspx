@@ -116,7 +116,7 @@
             BodyPadding="18">
             <FieldDefaults LabelWidth="110" LabelStyle="color:green;padding-left:4px;" />
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save" Icon="Disk">
+                <ext:Button ID="Button1" runat="server" Text="Save" IconCls="x-md md-icon-save">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" Before="return this.up('form').isValid();" />
                     </DirectEvents>

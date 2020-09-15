@@ -187,7 +187,7 @@
         ID="Button1"
         runat="server"
         Text="Show Window"
-        Icon="Application">
+        IconCls="x-md md-icon-open-in-new">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
         </Listeners>

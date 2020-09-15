@@ -120,18 +120,18 @@
             Resizable="false"
             Closable="false"
             Height="530"
-            Icon="Link"
+            IconCls="x-md md-icon-link"
             Layout="Fit">
             <Items>
                 <ext:TabPanel ID="TabPanel1" runat="server">
                     <TabBar>
-                        <ext:Button runat="server" Flat="true" Icon="Add">
+                        <ext:Button runat="server" Flat="true" IconCls="x-md md-icon-add-circle-outline">
                             <DirectEvents>
                                 <Click OnEvent="AddTab" />
                             </DirectEvents>
                         </ext:Button>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button runat="server" Flat="true" Icon="Help">
+                        <ext:Button runat="server" Flat="true" IconCls="x-md md-icon-help-outline">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Help', 'Here is help message');" />
                             </Listeners>

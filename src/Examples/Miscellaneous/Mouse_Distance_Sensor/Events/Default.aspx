@@ -67,9 +67,9 @@
         Hidden="true"
         Floating="true">
         <Items>
-            <ext:Button runat="server" Text="Paste" Icon="PastePlain" />
-            <ext:Button runat="server" Text="Copy" Icon="ApplicationDouble" />
-            <ext:Button runat="server" Text="Cut" Icon="Cut" />
+            <ext:Button runat="server" Text="Paste" IconCls="x-md md-icon-content-paste" />
+            <ext:Button runat="server" Text="Copy" IconCls="x-md md-icon-content-copy" />
+            <ext:Button runat="server" Text="Cut" IconCls="x-md md-icon-content-cut" />
         </Items>
     </ext:Toolbar>
 </body>

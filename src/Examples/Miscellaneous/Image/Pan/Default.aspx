@@ -15,7 +15,7 @@
             ID="Window1"
             runat="server"
             Title="The Universe Map"
-            Icon="Map"
+            IconCls="x-md md-icon-map"
             Width="960"
             Height="600"
             Shadow="false"

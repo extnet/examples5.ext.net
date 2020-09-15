@@ -26,8 +26,8 @@
             <TopBar>
                 <ext:Toolbar runat="server" StyleSpec="padding-bottom:0px;">
                     <Items>
-                        <ext:Button runat="server" Icon="Database" />
-                        <ext:Button runat="server" Icon="Disk" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-data-usage" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-save" />
                         <ext:ToolbarFill runat="server" />
                         <ext:TabStrip runat="server" Width="155">
                             <Items>
@@ -36,8 +36,8 @@
                             </Items>
                         </ext:TabStrip>
                         <ext:ToolbarSeparator runat="server" />
-                        <ext:Button runat="server" Icon="Key" />
-                        <ext:Button runat="server" Icon="Help" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-lock-open" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-help-outline" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

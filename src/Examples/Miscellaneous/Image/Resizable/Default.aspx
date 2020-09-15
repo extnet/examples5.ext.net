@@ -44,7 +44,7 @@
                         <br />
                         <ext:Toolbar runat="server" Flat="true">
                             <Items>
-                                <ext:Button runat="server" Icon="MagifierZoomOut">
+                                <ext:Button runat="server" IconCls="x-md md-icon-zoom-out">
                                     <Listeners>
                                         <Click Handler="newFactor(#{SizesCombo}, -1);" />
                                     </Listeners>
@@ -85,7 +85,7 @@
                                     </Listeners>
                                 </ext:ComboBox>
 
-                                <ext:Button runat="server" Icon="MagnifierZoomIn">
+                                <ext:Button runat="server" IconCls="x-md md-icon-zoom-in">
                                     <Listeners>
                                         <Click Handler="newFactor(#{SizesCombo}, 1);" />
                                     </Listeners>

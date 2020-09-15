@@ -240,7 +240,7 @@
                     Height="100"
                     BodyPadding="18"
                     Frame="true"
-                    Icon="Information"
+                    IconCls="x-md md-icon-info"
                     MarginSpec="5 5 5 5">
                     <Content>
                         Example - Ajax update (insert/delete/update) with SqlDataSource.
@@ -264,7 +264,7 @@
                             Title="Suppliers"
                             StoreID="Store1"
                             Border="false"
-                            Icon="Lorry">
+                            IconCls="x-md md-icon-business-center">
                             <ColumnModel runat="server">
                                 <Columns>
                                     <ext:Column runat="server"
@@ -337,27 +337,27 @@
                         </ext:GridPanel>
                     </Items>
                     <Buttons>
-                        <ext:Button ID="btnSave" runat="server" Text="Sync" Icon="Disk">
+                        <ext:Button ID="btnSave" runat="server" Text="Sync" IconCls="x-md md-icon-save">
                             <Listeners>
                                 <Click Handler="#{Store1}.sync();" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnDelete" runat="server" Text="Delete selected records" Icon="Delete">
+                        <ext:Button ID="btnDelete" runat="server" Text="Delete selected records" IconCls="x-md md-icon-remove-circle-outline">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.deleteSelected();" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnInsert" runat="server" Text="Insert" Icon="Add">
+                        <ext:Button ID="btnInsert" runat="server" Text="Insert" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="insertRecord(#{GridPanel1});" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRefresh" runat="server" Text="Refresh" Icon="ArrowRefresh">
+                        <ext:Button ID="btnRefresh" runat="server" Text="Refresh" IconCls="x-md md-icon-refresh">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({params:{EmulateError: 0}});" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnEmulError" runat="server" Text="Refresh with Emulated error" Icon="Exclamation">
+                        <ext:Button ID="btnEmulError" runat="server" Text="Refresh with Emulated error" IconCls="x-md md-icon-error">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({params:{EmulateError: 1}});" />
                             </Listeners>

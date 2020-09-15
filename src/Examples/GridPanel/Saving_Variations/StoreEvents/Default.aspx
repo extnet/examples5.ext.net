@@ -103,7 +103,7 @@
                     runat="server"
                     Region="Center"
                     Title="Suppliers"
-                    Icon="Lorry"
+                    IconCls="x-md md-icon-business-center"
                     Frame="true">
                     <Store>
                         <ext:Store
@@ -219,13 +219,13 @@
                     </Plugins>
 
                     <Buttons>
-                        <ext:Button runat="server" Text="Insert" Icon="Add">
+                        <ext:Button runat="server" Text="Insert" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="insertRecord(#{GridPanel1});" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="btnDelete" runat="server" Text="Delete" Icon="Delete" Disabled="true">
+                        <ext:Button ID="btnDelete" runat="server" Text="Delete" IconCls="x-md md-icon-remove-circle-outline" Disabled="true">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.deleteSelected();
                                                 if (!#{GridPanel1}.hasSelection()) {
@@ -234,13 +234,13 @@
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Save" Icon="Disk">
+                        <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save">
                             <Listeners>
                                 <Click Handler="#{Store1}.sync();" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Clear" Icon="Cancel">
+                        <ext:Button runat="server" Text="Clear" IconCls="x-md md-icon-cancel">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.getSelectionModel().deselectAll();;
                                                 if (!#{GridPanel1}.hasSelection()) {
@@ -249,7 +249,7 @@
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Refresh" Icon="ArrowRefresh">
+                        <ext:Button runat="server" Text="Refresh" IconCls="x-md md-icon-refresh">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload();" />
                             </Listeners>

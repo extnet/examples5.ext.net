@@ -74,7 +74,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:Button runat="server" Text="Load" Icon="Connect">
+                                <ext:Button runat="server" Text="Load">
                                     <Listeners>
                                         <Click Handler="#{ManuallyLoadTab}.reload();" />
                                     </Listeners>

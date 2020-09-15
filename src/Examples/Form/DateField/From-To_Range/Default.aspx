@@ -21,7 +21,7 @@
             runat="server"
             Width="360"
             Title="DateRange"
-            Icon="Date"
+            IconCls="x-md md-icon-calendar-today"
             Closable="false"
             BodyPadding="18"
             Layout="Anchor"

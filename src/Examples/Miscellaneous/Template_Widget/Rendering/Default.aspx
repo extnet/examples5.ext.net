@@ -42,7 +42,7 @@
                     </Bin>
                     <TabBar>
                         <ext:Button runat="server"
-                            Icon="Add"
+                            IconCls="x-md md-icon-add-circle-outline"
                             Flat="true"
                             Handler="addTab(this.up('tabpanel'));" />
                     </TabBar>

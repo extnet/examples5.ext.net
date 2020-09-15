@@ -36,7 +36,7 @@
             <ext:Parameter Name="MenuAlign" Value="tl-bl?" Mode="Value" />
         </Defaults>
         <Items>
-            <ext:MenuItem runat="server" Text="Item 1" Icon="BulletBlue">
+            <ext:MenuItem runat="server" Text="Item 1"">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
@@ -46,7 +46,7 @@
                     </ext:Menu>
                 </Menu>
             </ext:MenuItem>
-            <ext:MenuItem runat="server" Text="Item 2" Icon="BulletBlue">
+            <ext:MenuItem runat="server" Text="Item 2">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
@@ -56,7 +56,7 @@
                     </ext:Menu>
                 </Menu>
             </ext:MenuItem>
-            <ext:MenuItem runat="server" Text="Item 3" Icon="BulletBlue">
+            <ext:MenuItem runat="server" Text="Item 3">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>
@@ -66,7 +66,7 @@
                     </ext:Menu>
                 </Menu>
             </ext:MenuItem>
-            <ext:MenuItem runat="server" Text="Item 4" Icon="BulletBlue">
+            <ext:MenuItem runat="server" Text="Item 4">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>

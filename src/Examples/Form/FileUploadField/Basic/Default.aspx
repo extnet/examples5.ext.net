@@ -77,7 +77,7 @@
         <p>A typical file upload field with Ext style.  Direct editing of the text field cannot be done in a
             consistent, cross-browser way, so it is always read-only in this implementation.</p>
 
-        <ext:FileUploadField ID="BasicField" runat="server" Width="400" Icon="Attach" />
+        <ext:FileUploadField ID="BasicField" runat="server" Width="400" IconCls="x-md md-icon-attach-file" />
 
         <ext:Button runat="server" Text="Get File Path">
             <Listeners>
@@ -125,7 +125,7 @@
                     EmptyText="Select an image"
                     FieldLabel="Photo"
                     ButtonText=""
-                    Icon="ImageAdd"
+                    IconCls="x-md md-icon-add-photo-alt"
                     />
             </Items>
             <Listeners>

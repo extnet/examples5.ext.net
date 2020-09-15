@@ -291,7 +291,7 @@
         <ext:FormPanel
             ID="UserForm"
             runat="server"
-            Icon="User"
+            IconCls="x-md md-icon-person"
             Frame="true"
             Title="User -- All fields are required"
             DefaultAnchor="100%"
@@ -319,7 +319,7 @@
                 <ext:Button
                     runat="server"
                     Text="Save"
-                    Icon="Disk">
+                    IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="updateRecord(#{UserForm});" />
                     </Listeners>
@@ -328,7 +328,7 @@
                 <ext:Button
                     runat="server"
                     Text="Create"
-                    Icon="UserAdd">
+                    IconCls="x-md md-icon-person-add">
                     <Listeners>
                         <Click Handler="addRecord(#{UserForm}, #{GridPanel1});" />
                     </Listeners>
@@ -347,7 +347,7 @@
         <ext:GridPanel
             ID="GridPanel1"
             runat="server"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Frame="true"
             Title="Users"
             Height="480"
@@ -380,7 +380,7 @@
 
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
-                            <ext:GridCommand Text="Reject" ToolTip-Text="Reject row changes" CommandName="reject" Icon="ArrowUndo" />
+                            <ext:GridCommand Text="Reject" ToolTip-Text="Reject row changes" CommandName="reject" IconCls="x-md md-icon-undo" />
                         </Commands>
                         <PrepareToolbar Handler="toolbar.items.get(0).setVisible(record.dirty);" />
                         <Listeners>
@@ -393,13 +393,13 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Add" Icon="Add">
+                        <ext:Button runat="server" Text="Add" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="#{Store1}.insert(0, new Person());" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Delete" Icon="Exclamation">
+                        <ext:Button runat="server" Text="Delete" IconCls="x-md md-icon-error">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.deleteSelected(); #{UserForm}.getForm().reset();" />
                             </Listeners>
@@ -430,7 +430,7 @@
             </SelectionModel>
 
             <Buttons>
-                <ext:Button runat="server" Text="Sync" Icon="Disk">
+                <ext:Button runat="server" Text="Sync" IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="#{Store1}.sync();" />
                     </Listeners>

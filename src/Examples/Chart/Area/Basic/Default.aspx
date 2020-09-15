@@ -79,13 +79,13 @@
                                         <ext:Button
                                             runat="server"
                                             Text="Preview"
-                                            Icon="Magnifier"
+                                            IconCls="x-md md-icon-search"
                                             Handler="App.Chart1.preview();" />
 
                                         <ext:SplitButton
                                             runat="server"
                                             Text="Download as PNG"
-                                            Icon="DiskUpload"
+                                            IconCls="x-md md-icon-save-alt"
                                             Handler="App.Chart1.download();">
                                             <Menu>
                                                 <ext:Menu runat="server" Plain="true">

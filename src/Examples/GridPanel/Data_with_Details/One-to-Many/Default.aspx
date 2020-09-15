@@ -69,7 +69,7 @@
                     Height="100"
                     BodyPadding="18"
                     Frame="true"
-                    Icon="Information"
+                    IconCls="x-md md-icon-info"
                     MarginSpec="5 5 5 5">
                     <Content>
                         <p>One to Many Data Relationship with GridPanels. Click on any record within the parent GridPanel to load related data into second GridPanel.
@@ -82,7 +82,7 @@
                     Region="Center"
                     Frame="true"
                     Title="Suppliers"
-                    Icon="Lorry"
+                    IconCls="x-md md-icon-business-center"
                     Layout="Fit"
                     MarginSpec="0 5 0 5">
                     <Items>
@@ -148,7 +148,7 @@
                     Region="South"
                     Title="Products"
                     Height="180"
-                    Icon="Basket"
+                    IconCls="x-md md-icon-shopping-cart"
                     Layout="Fit"
                     Collapsible="true"
                     Split="true"

@@ -77,7 +77,7 @@
 
         <ext:Toolbar runat="server" Width="822">
             <Items>
-                <ext:Button ID="MenuButton" runat="server" Text="Button w/Menu" Icon="ArrowDown">
+                <ext:Button ID="MenuButton" runat="server" Text="Button w/Menu" IconCls="x-md md-icon-arrow-circle-down">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
@@ -98,7 +98,7 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:MenuItem>
-                                <ext:MenuItem runat="server" Text="Choose a Date" Icon="Calendar">
+                                <ext:MenuItem runat="server" Text="Choose a Date" IconCls="x-md md-icon-calendar-today">
                                     <Menu>
                                         <ext:DateMenu runat="server">
                                             <Picker runat="server" />
@@ -108,7 +108,7 @@
                                         </ext:DateMenu>
                                     </Menu>
                                 </ext:MenuItem>
-                                <ext:MenuItem runat="server" Text="Choose a Color" Icon="ColorSwatch">
+                                <ext:MenuItem runat="server" Text="Choose a Color">
                                     <Menu>
                                         <ext:ColorMenu runat="server">
                                             <Listeners>
@@ -122,7 +122,7 @@
                         </ext:Menu>
                     </Menu>
                 </ext:Button>
-                <ext:SplitButton runat="server" Text="Split Button" Icon="NoteGo" Handler="onButtonClick">
+                <ext:SplitButton runat="server" Text="Split Button" Handler="onButtonClick">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
@@ -156,13 +156,13 @@
                 <ext:ToolbarSeparator />
                 <ext:Button runat="server" Text="Toggle Me" EnableToggle="true" ToggleHandler="onItemToggle" />
                 <ext:ToolbarSeparator />
-                <ext:Button runat="server" Icon="Table">
+                <ext:Button runat="server" IconCls="x-md md-icon-grid-on">
                     <ToolTips>
                         <ext:ToolTip runat="server" Html="<b>Quick Tips</b><br/>Icon only button with tooltip" />
                     </ToolTips>
                 </ext:Button>
                 <ext:ToolbarSeparator />
-                <ext:Button ID="ScrollingMenuButton" runat="server" Text="Scrolling Menu" Icon="ApplicationForm" />
+                <ext:Button ID="ScrollingMenuButton" runat="server" Text="Scrolling Menu" />
                 <ext:ComboBox ID="ComboBox1" runat="server" EmptyText="Select an option">
                     <Items>
                         <ext:ListItem Text="Option1" />

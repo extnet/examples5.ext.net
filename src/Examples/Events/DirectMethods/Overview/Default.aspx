@@ -58,7 +58,7 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button ID="Button1" runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button ID="Button1" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="App.direct.SetTimeStamp();" />
             </Listeners>
@@ -78,7 +78,7 @@ public void SetTimeStamp(string text)
     }
 &lt;/script>
 
-&lt;ext:Button ID="Button5" runat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button ID="Button5" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="App.direct.SetTimeStamp();" />
     &lt;/Listeners>
@@ -103,7 +103,7 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button ID="Button2" runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button ID="Button2" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="
                     App.direct.GetTimeStamp({
@@ -124,7 +124,7 @@ public void SetTimeStamp(string text)
     }
 &lt;/script>
 
-&lt;ext:Button runat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="
             App.direct.GetTimeStamp({
@@ -187,7 +187,7 @@ public void SetTimeStamp(string text)
                 </ext:ComboBox>
             </Items>
             <Buttons>
-                <ext:Button runat="server" Text="Submit" Icon="Lightning" FormBind="true">
+                <ext:Button runat="server" Text="Submit" IconCls="x-md md-icon-offline-bolt" FormBind="true">
                     <Listeners>
                         <Click Handler="App.direct.LogCompanyInfo(#{TextField3}.getValue(), #{ComboBox3}.getValue());" />
                     </Listeners>
@@ -238,7 +238,7 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="
                     App.direct.GetTimeStamp4({
@@ -259,7 +259,7 @@ public void SetTimeStamp(string text)
     }
 &lt;/script>
 
-&lt;ext:Button xrunat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button xrunat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="
             App.direct.GetTimeStamp4({
@@ -318,7 +318,7 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="
                     App.direct.GetCustomer({
@@ -375,7 +375,7 @@ public void SetTimeStamp(string text)
     }
 &lt;/script>
 
-&lt;ext:Button runat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="
             App.direct.GetCustomer({
@@ -580,7 +580,7 @@ public string GetTimeStamp()
             }
         </script>
 
-        <ext:Button runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="Ext.net.DirectMethod.request(
                     'GetTimeStamp6',
@@ -602,7 +602,7 @@ public string GetTimeStamp()
     }
 &lt;/script>
 
-&lt;ext:Button runat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="Ext.net.DirectMethod.request(
             'GetTimeStamp6',
@@ -633,7 +633,7 @@ public string GetTimeStamp()
             }
         </script>
 
-        <ext:Button ID="Button3" runat="server" Text="Click Me" Icon="Lightning">
+        <ext:Button ID="Button3" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="App.direct.LogMessage('Hello World', {
                             success: function (result) {
@@ -658,7 +658,7 @@ public string GetTimeStamp()
     }
 &lt;/script>
 
-&lt;ext:Button ID="Button4" runat="server" Text="Click Me" Icon="Lightning">
+&lt;ext:Button ID="Button4" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
     &lt;Listeners>
         &lt;Click Handler="App.direct.LogMessage('Hello World', {
                     success: function (result) {

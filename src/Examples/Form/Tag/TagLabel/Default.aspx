@@ -41,9 +41,9 @@
 
         <ext:TagLabel runat="server">
             <Tags>
-                <ext:Tag Text="Tag 1" Icon="UserAdd" />
-                <ext:Tag Text="Tag 2" Icon="UserAlert" />
-                <ext:Tag Text="Tag 3" Icon="UserDelete" />
+                <ext:Tag Text="Tag 1" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Text="Tag 2" IconCls="x-md md-icon-person" />
+                <ext:Tag Text="Tag 3" IconCls="x-md md-icon-person-remove" />
             </Tags>
         </ext:TagLabel>
 
@@ -146,13 +146,13 @@
                         <ext:MenuItem
                             runat="server"
                             Text="Add"
-                            Icon="Add"
+                            IconCls="x-md md-icon-add-circle-outline"
                             Handler="var menu = this.up('menu'); menu.tagLabel.insert(menu.tagLabel.indexOf(menu.activeTag), {text: Ext.id()});"
                             />
                         <ext:MenuItem
                             runat="server"
                             Text="Delete"
-                            Icon="Decline"
+                            IconCls="x-md md-icon-cancel"
                             Handler="var menu = this.up('menu'); menu.tagLabel.remove(menu.activeTag);"
                             />
                     </Items>

@@ -110,7 +110,7 @@
             <BottomBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button ID="MoreButton" runat="server" Text="More" Icon="Add">
+                        <ext:Button ID="MoreButton" runat="server" Text="More" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({addRecords:true, start: #{Store1}.getCount(), params : {count: #{Store1}.getCount()} });" />
                             </Listeners>

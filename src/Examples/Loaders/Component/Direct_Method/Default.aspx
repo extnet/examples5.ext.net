@@ -82,7 +82,7 @@
             <LoadMask ShowMask="true" />
         </Loader>
         <Buttons>
-            <ext:Button runat="server" Text="Load" Icon="PluginGo">
+            <ext:Button runat="server" Text="Load" IconCls="x-md md-icon-extension">
                 <Listeners>
                     <Click Handler="this.up('panel').load();this.disable();" />
                 </Listeners>
@@ -131,7 +131,7 @@
             <ext:Panel runat="server" Title="Tab 1" />
         </Items>
         <Buttons>
-            <ext:Button runat="server" Text="Add Tab" Icon="PluginGo">
+            <ext:Button runat="server" Text="Add Tab" IconCls="x-md md-icon-extension">
                 <Listeners>
                     <Click Handler="this.up('panel').load({callback:function () {this.setActiveTab(this.items.getCount()-1)}, scope: this.up('panel')});" />
                 </Listeners>

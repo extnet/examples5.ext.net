@@ -73,7 +73,7 @@
                         <ext:DateField runat="server" FieldLabel="Birthdate" BlankText="Birthdate is required" />
                     </Items>
                     <Buttons>
-                        <ext:Button runat="server" Text="Save" Icon="Disk">
+                        <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save">
                             <DirectEvents>
                                 <Click
                                     OnEvent="FormSave"

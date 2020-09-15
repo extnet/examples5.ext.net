@@ -111,14 +111,14 @@
                                 <ext:CheckMenuItem
                                     ID="mnuHideIndicator"
                                     runat="server"
-                                    Icon="Decline"
+                                    IconCls="x-md md-icon-cancel"
                                     Text="Hide indicator - Field3"
                                     Checked="true"
                                     />
                                 <ext:CheckMenuItem
                                     ID="mnuShowIndicator"
                                     runat="server"
-                                    Icon="Add"
+                                    IconCls="x-md md-icon-add-circle-outline"
                                     Text="Show indicator - Field3"
                                     />
                             </Items>

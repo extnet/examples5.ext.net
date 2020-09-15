@@ -121,7 +121,7 @@
                             runat="server"
                             EnableKeyEvents="true">
                             <Triggers>
-                                <ext:FieldTrigger Icon="Clear" />
+                                <ext:FieldTrigger IconCls="x-md md-icon-clear" />
                             </Triggers>
                             <Listeners>
                                 <KeyUp Fn="filterTree" Buffer="250" />

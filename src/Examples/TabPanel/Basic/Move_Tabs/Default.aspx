@@ -33,7 +33,7 @@
             Layout="Border"
             Width="960"
             Height="250"
-            Icon="Tab"
+            IconCls="x-md md-icon-tab"
             Title="Moving tabs"
             X="100"
             Y="100">
@@ -54,7 +54,7 @@
                     <TopBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:Button runat="server" Icon="ArrowRight">
+                                <ext:Button runat="server" IconCls="x-md md-icon-arrow-forward">
                                     <ToolTips>
                                         <ext:ToolTip runat="server" Title="Move Tab" Html="West To East" />
                                     </ToolTips>
@@ -65,7 +65,7 @@
 
                                 <ext:ToolbarFill />
 
-                                <ext:Button runat="server" Icon="ArrowLeft">
+                                <ext:Button runat="server" IconCls="x-md md-icon-arrow-back">
                                     <ToolTips>
                                         <ext:ToolTip runat="server" Title="Move Tab" Html="East to West" />
                                     </ToolTips>

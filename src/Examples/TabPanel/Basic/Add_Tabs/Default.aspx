@@ -47,7 +47,7 @@
             Title="Adding tab"
             Width="720"
             Height="500"
-            Icon="Link"
+            IconCls="x-md md-icon-link"
             Layout="Border">
             <Items>
                 <ext:MenuPanel

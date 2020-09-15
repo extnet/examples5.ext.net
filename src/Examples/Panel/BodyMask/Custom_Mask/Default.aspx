@@ -33,7 +33,7 @@
             runat="server"
             Width="500"
             Height="470"
-            Icon="Link"
+            IconCls="x-md md-icon-link"
             Title="Frame Loader"
             Closable="false">
             <Loader runat="server" Url="https://ext.net" Mode="Frame">
@@ -52,7 +52,7 @@
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Refresh" Icon="ArrowRotateClockwise">
+                        <ext:Button runat="server" Text="Refresh" IconCls="x-md md-icon-rotate-right">
                             <Listeners>
                                 <Click Handler="#{Window1}.reload();" />
                             </Listeners>

@@ -44,7 +44,7 @@
         <ext:Button
             ID="Button1"
             runat="server"
-            Icon="Add"
+            IconCls="x-md md-icon-add-circle-outline"
             Text="Insert Image">
             <DirectEvents>
                 <Click OnEvent="CreateChooser" Before="return beforeCreate();" />

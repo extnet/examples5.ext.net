@@ -55,13 +55,13 @@
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
 
                         <ext:Button
                             runat="server"
                             Text="Save Chart"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart" />
                     </Items>
                 </ext:Toolbar>

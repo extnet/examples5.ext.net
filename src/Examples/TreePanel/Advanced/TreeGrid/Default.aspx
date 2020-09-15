@@ -111,7 +111,7 @@
                         MenuDisabled="true"
                         Align="Center">
                         <Items>
-                            <ext:ActionItem Tooltip="Edit task" Icon="PageWhiteEdit" Handler="handler">
+                            <ext:ActionItem Tooltip="Edit task" IconCls="x-md md-icon-edit" Handler="handler">
                                 <IsDisabled Handler="return !record.data.leaf;" />
                             </ext:ActionItem>
                         </Items>
@@ -123,14 +123,14 @@
             <Root>
                 <ext:Node Text="Tasks">
                     <Children>
-                        <ext:Node Icon="Folder" Expanded="true">
+                        <ext:Node IconCls="x-md md-icon-folder" Expanded="true">
                             <CustomAttributes>
                                 <ext:ConfigItem Name="task" Value="Project: Shopping" Mode="Value" />
                                 <ext:ConfigItem Name="duration" Value="13.25" />
                                 <ext:ConfigItem Name="user" Value="Clark Lewis" Mode="Value" />
                             </CustomAttributes>
                             <Children>
-                                <ext:Node Icon="Folder">
+                                <ext:Node IconCls="x-md md-icon-folder">
                                     <CustomAttributes>
                                         <ext:ConfigItem Name="task" Value="Housewares" Mode="Value" />
                                         <ext:ConfigItem Name="duration" Value="1.25" />
@@ -168,7 +168,7 @@
                                         </ext:Node>
                                     </Children>
                                 </ext:Node>
-                                <ext:Node Icon="Folder" Expanded="true">
+                                <ext:Node IconCls="x-md md-icon-folder" Expanded="true">
                                     <CustomAttributes>
                                         <ext:ConfigItem Name="task" Value="Remodeling" Mode="Value" />
                                         <ext:ConfigItem Name="duration" Value="12" />
@@ -182,7 +182,7 @@
                                                 <ext:ConfigItem Name="user" Value="Clark Lewis" Mode="Value" />
                                             </CustomAttributes>
                                         </ext:Node>
-                                        <ext:Node Icon="Folder">
+                                        <ext:Node IconCls="x-md md-icon-folder">
                                             <CustomAttributes>
                                                 <ext:ConfigItem Name="task" Value="Paint bedroom" Mode="Value" />
                                                 <ext:ConfigItem Name="duration" Value="2.75" />
@@ -232,14 +232,14 @@
                                 </ext:Node>
                             </Children>
                         </ext:Node>
-                        <ext:Node Icon="Folder">
+                        <ext:Node IconCls="x-md md-icon-folder">
                             <CustomAttributes>
                                 <ext:ConfigItem Name="task" Value="Project: Testing" Mode="Value" />
                                 <ext:ConfigItem Name="duration" Value="2" />
                                 <ext:ConfigItem Name="user" Value="Core Team" Mode="Value" />
                             </CustomAttributes>
                             <Children>
-                                <ext:Node Icon="Folder">
+                                <ext:Node IconCls="x-md md-icon-folder">
                                     <CustomAttributes>
                                         <ext:ConfigItem Name="task" Value="Mac OSX" Mode="Value" />
                                         <ext:ConfigItem Name="duration" Value="0.75" />
@@ -269,7 +269,7 @@
                                         </ext:Node>
                                     </Children>
                                 </ext:Node>
-                                <ext:Node Icon="Folder">
+                                <ext:Node IconCls="x-md md-icon-folder">
                                     <CustomAttributes>
                                         <ext:ConfigItem Name="task" Value="Windows" Mode="Value" />
                                         <ext:ConfigItem Name="duration" Value="3.75" />
@@ -306,7 +306,7 @@
                                         </ext:Node>
                                     </Children>
                                 </ext:Node>
-                                <ext:Node Icon="Folder">
+                                <ext:Node IconCls="x-md md-icon-folder">
                                     <CustomAttributes>
                                         <ext:ConfigItem Name="task" Value="Linux" Mode="Value" />
                                         <ext:ConfigItem Name="duration" Value="0.5" />

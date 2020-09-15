@@ -131,7 +131,6 @@
             Title="Sponsored Projects"
             Collapsible="true"
             AnimCollapse="false"
-            Icon="ApplicationViewColumns"
             Width="960"
             Height="480">
             <Plugins>

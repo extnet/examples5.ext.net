@@ -202,7 +202,7 @@
                         <ext:Button
                             runat="server"
                             Text="Refresh"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
 
                         <ext:Button

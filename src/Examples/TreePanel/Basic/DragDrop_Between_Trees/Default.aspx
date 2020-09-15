@@ -147,7 +147,7 @@
                             <ext:DataSorter Property="text" />
                         </Sorters>
                         <Root>
-                            <ext:Node Text="My Files" Icon="Folder" Expanded="true" EmptyChildren="true" />
+                            <ext:Node Text="My Files" IconCls="x-md md-icon-folder" Expanded="true" EmptyChildren="true" />
                         </Root>
                     </ext:TreeStore>
                 </Store>

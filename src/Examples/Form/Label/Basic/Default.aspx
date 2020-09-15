@@ -22,14 +22,14 @@
 
     <h2>Label with Icon</h2>
 
-    <ext:Label runat="server" Text="Hello World" Icon="Accept" />
+    <ext:Label runat="server" Text="Hello World" IconCls="x-md md-icon-check-circle-outline" />
 
     <h2>Label with Right Aligned Icon</h2>
 
     <ext:Label
         runat="server"
         Text="Hello World"
-        Icon="Accept"
+        IconCls="x-md md-icon-check-circle-outline"
         IconAlign="Right"
         />
 </body>

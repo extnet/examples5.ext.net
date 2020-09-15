@@ -33,7 +33,7 @@
             Width="500"
             Height="500"
             Title="Messages"
-            Icon="Date"
+            IconCls="x-md md-icon-calendar-today"
             Closable="false"
             BodyPadding="18"
             BodyStyle="background-color:white;"

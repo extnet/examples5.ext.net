@@ -59,7 +59,7 @@
                 <Items>
                     <ext:SegmentedButton runat="server" AllowToggle="false">
                         <Items>
-                            <ext:Button runat="server" Text="Button" Icon="Add" />
+                            <ext:Button runat="server" Text="Button" IconCls="x-md md-icon-add-circle-outline" />
                             <ext:Button runat="server" Text="Menu Button">
                                 <Menu>
                                     <ext:Menu runat="server">
@@ -143,7 +143,7 @@
                 <Items>
                     <ext:SegmentedButton runat="server" AllowToggle="false" Vertical="true">
                         <Items>
-                            <ext:Button runat="server" Text="Button" Icon="Add" />
+                            <ext:Button runat="server" Text="Button" IconCls="x-md md-icon-add-circle-outline" />
                             <ext:Button runat="server" Text="Menu Button">
                                 <Menu>
                                     <ext:Menu runat="server">

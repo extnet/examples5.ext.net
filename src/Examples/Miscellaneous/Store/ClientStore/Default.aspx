@@ -145,25 +145,29 @@
                     <ext:Button
                         runat="server"
                         Text="Add"
-                        Icon="Add"
-                        OnDirectClick="AddRandomRecord" />
+                        IconCls="x-md md-icon-add-circle-outline"
+                        OnDirectClick="AddRandomRecord"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Delete"
-                        Icon="Delete"
-                        OnClientClick="App.Store1.removeAt(App.Store1.getCount() - 1)" />
+                        IconCls="x-md md-icon-remove-circle-outline"
+                        OnClientClick="App.Store1.removeAt(App.Store1.getCount() - 1)"
+                        />
                     <ext:Button
                         runat="server"
                         ID="SaveBtn"
                         Text="Save"
                         Disabled="true"
-                        Icon="DatabaseSave"
-                        OnClientClick="save()" />
+                        IconCls="x-md md-icon-save"
+                        OnClientClick="save()"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Reset"
-                        Icon="ArrowRefresh"
-                        OnClientClick="App.Store1.load(); App.Store1.sync(); App.SaveBtn.disable();" />
+                        IconCls="x-md md-icon-refresh"
+                        OnClientClick="App.Store1.load(); App.Store1.sync(); App.SaveBtn.disable();"
+                        />
                 </Items>
             </ext:Toolbar>
         </BottomBar>

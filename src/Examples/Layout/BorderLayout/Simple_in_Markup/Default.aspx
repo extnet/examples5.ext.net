@@ -16,7 +16,7 @@
         ID="Button1"
         runat="server"
         Text="Show Window"
-        Icon="Application">
+        IconCls="x-md md-icon-open-in-new">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
         </Listeners>
@@ -26,7 +26,7 @@
         ID="Window1"
         runat="server"
         Title="Simple Layout"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         Width="960"
         Height="480"
         Border="false"

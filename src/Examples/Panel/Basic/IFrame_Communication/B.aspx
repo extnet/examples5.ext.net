@@ -11,7 +11,7 @@
 
         <ext:TextField ID="TextField1" runat="server" />
 
-        <ext:Button runat="server" Text="To the A" Icon="ArrowLeft">
+        <ext:Button runat="server" Text="To the A" IconCls="x-md md-icon-arrow-back">
             <Listeners>
                 <Click Handler="parent.App.Panel1.getBody().App.TextField1.setValue(App.TextField1.getValue());" />
             </Listeners>

@@ -246,7 +246,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Add record" Icon="Add">
+                        <ext:Button runat="server" Text="Add record" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="var grid = #{GridPanel1},
                                                     store = grid.store;
@@ -256,7 +256,7 @@
                                                 }, 100); " />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button runat="server" Text="Delete selected" Icon="Delete">
+                        <ext:Button runat="server" Text="Delete selected" IconCls="x-md md-icon-remove-circle-outline">
                             <Listeners>
                                 <Click Handler="var grid = #{GridPanel1},
                                                     store = grid.store,
@@ -266,22 +266,22 @@
                             </Listeners>
                         </ext:Button>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button runat="server" Text="Find 'Government Motors'" Icon="Find">
+                        <ext:Button runat="server" Text="Find 'Government Motors'" IconCls="x-md md-icon-search">
                             <Listeners>
                                 <Click Handler="selectRecord('Government Motors Corporation');" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button runat="server" Text="To XML" Icon="PageCode">
+                        <ext:Button runat="server" Text="To XML" IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Handler="exportData();" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button runat="server" Text="Selection To XML" Icon="PageCode">
+                        <ext:Button runat="server" Text="Selection To XML" IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Handler="exportData(true);" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button runat="server"  Text="Save" Icon="Disk">
+                        <ext:Button runat="server"  Text="Save" IconCls="x-md md-icon-save">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.store.sync();" />
                             </Listeners>

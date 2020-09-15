@@ -86,13 +86,13 @@
                         <ext:Button
                             runat="server"
                             Text="Reload"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
 
                         <ext:Button
                             runat="server"
                             Text="Download"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="download" />
                     </Items>
                 </ext:Toolbar>

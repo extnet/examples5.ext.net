@@ -128,13 +128,13 @@
         <BottomBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Button runat="server" Text="Code Behind Filter" Icon="Magnifier" OnDirectClick="ApplyFilter" />
+                    <ext:Button runat="server" Text="Code Behind Filter" IconCls="x-md md-icon-search" OnDirectClick="ApplyFilter" />
                     <ext:Button
                         runat="server"
                         Text="Client Side Filter"
-                        Icon="MagnifierZoomIn"
+                        IconCls="x-md md-icon-zoom-in"
                         Handler="var fquery='company like &quot;Ameri&quot; or price > 75'; App.Store1.addFilter(Ext.create('Ext.data.Query', { source: fquery })); Ext.toast('Client-filtered by query: ' + fquery);" />
-                    <ext:Button runat="server" Text="Reset Filter" Icon="BulletCross" Handler="App.Store1.clearFilter()" />
+                    <ext:Button runat="server" Text="Reset Filter" IconCls="x-md md-icon-clear" Handler="App.Store1.clearFilter()" />
                 </Items>
             </ext:Toolbar>
         </BottomBar>

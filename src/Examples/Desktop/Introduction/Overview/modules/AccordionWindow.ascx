@@ -19,7 +19,7 @@
 <ext:DesktopModuleProxy runat="server">
     <Module ModuleID="acc-win">
         <Shortcut Name="Accordion Window" IconCls="x-im-shortcut" QTip="List of Online Users" SortIndex="0" />
-        <Launcher Text="Accordion Window" Icon="User" />
+        <Launcher Text="Accordion Window" IconCls="x-md md-icon-person" />
         <Window>
             <ext:Window 
                 runat="server" 
@@ -30,17 +30,17 @@
                 <TopBar>
                     <ext:Toolbar runat="server" UIName="plain">
                         <Items>
-                            <ext:Button runat="server" Icon="Connect">
+                            <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                                 <QTipCfg Title="Rich Tooltips" Text="Let your users know what they can do!" />
                             </ext:Button>
 
                             <ext:ToolbarSeparator runat="server" />
 
-                            <ext:Button runat="server" Icon="UserAdd">
+                            <ext:Button runat="server" IconCls="x-md md-icon-person-add">
                                 <QTipCfg Text="Add a new user" />
                             </ext:Button>
 
-                            <ext:Button runat="server" Icon="UserDelete">
+                            <ext:Button runat="server" IconCls="x-md md-icon-person-remove">
                                 <QTipCfg Text="Remove the selected user" />
                             </ext:Button>
                         </Items>
@@ -65,25 +65,25 @@
                                         <Children>
                                             <ext:Node Text="Friends" Expanded="true">
                                                 <Children>
-                                                    <ext:Node Text="Brian" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Kevin" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Mark" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Matt" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Michael" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Mike Jr" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Mike Sr" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="JR" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Rich" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Brent" Icon="User" Leaf="true" />
-                                                    <ext:Node Text="Zac" Icon="User" Leaf="true" />
+                                                    <ext:Node Text="Brian" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Kevin" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Mark" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Matt" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Michael" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Mike Jr" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Mike Sr" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="JR" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Rich" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Brent" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Zac" IconCls="x-md md-icon-person" Leaf="true" />
                                                 </Children>
                                             </ext:Node>
 
                                             <ext:Node Text="Family" Expanded="true">
                                                 <Children>
-                                                    <ext:Node Text="Kiana" Icon="UserFemale" Leaf="true" />
-                                                    <ext:Node Text="Aubrey" Icon="UserFemale" Leaf="true" />
-                                                    <ext:Node Text="Cale" Icon="UserGreen" Leaf="true" />
+                                                    <ext:Node Text="Kiana" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Aubrey" IconCls="x-md md-icon-person" Leaf="true" />
+                                                    <ext:Node Text="Cale" IconCls="x-md md-icon-person" Leaf="true" />
                                                 </Children>
                                             </ext:Node>
                                         </Children>

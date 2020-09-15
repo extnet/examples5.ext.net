@@ -110,7 +110,6 @@
             ID="GridPanel1"
             runat="server"
             Title="Sponsored Projects"
-            Icon="ApplicationViewColumns"
             Frame="true"
             Collapsible="true"
             Width="960"

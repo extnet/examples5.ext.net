@@ -39,12 +39,12 @@
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Top">
                                 <Items>
-                                    <ext:Button runat="server" Icon="ApplicationViewList" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-apps" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="Cross" />
-                                    <ext:Button runat="server" Icon="PastePlain" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-add" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-content-paste" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="ApplicationEdit" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-edit" />
                                 </Items>
                             </ext:Toolbar>
                         </DockedItems>
@@ -62,12 +62,12 @@
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Right">
                                 <Items>
-                                    <ext:Button runat="server" Icon="ApplicationViewList" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-apps" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="Cross" />
-                                    <ext:Button runat="server" Icon="PastePlain" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-add" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-content-paste" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="ApplicationEdit" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-edit" />
                                 </Items>
                             </ext:Toolbar>
                         </DockedItems>
@@ -95,12 +95,12 @@
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Left">
                                 <Items>
-                                    <ext:Button runat="server" Icon="ApplicationViewList" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-apps" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="Cross" />
-                                    <ext:Button runat="server" Icon="PastePlain" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-add" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-content-paste" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="ApplicationEdit" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-edit" />
                                 </Items>
                             </ext:Toolbar>
                         </DockedItems>
@@ -118,12 +118,12 @@
                         <DockedItems>
                             <ext:Toolbar runat="server" Dock="Bottom">
                                 <Items>
-                                    <ext:Button runat="server" Icon="ApplicationViewList" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-apps" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="Cross" />
-                                    <ext:Button runat="server" Icon="PastePlain" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-add" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-content-paste" />
                                     <ext:ToolbarSeparator runat="server" />
-                                    <ext:Button runat="server" Icon="ApplicationEdit" />
+                                    <ext:Button runat="server" IconCls="x-md md-icon-edit" />
                                 </Items>
                             </ext:Toolbar>
                         </DockedItems>

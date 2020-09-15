@@ -97,7 +97,7 @@ for (var i in {0}.proxy.data) {{
             Title="RowExpander"
             Collapsible="true"
             AnimCollapse="true"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Width="960"
             Height="600">
             <Store>

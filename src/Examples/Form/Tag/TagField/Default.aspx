@@ -36,11 +36,11 @@
                 <ext:Tag Value="1" />
             </Tags>
             <Items>
-                <ext:Tag Value="1" Text="George" Icon="User" />
-                <ext:Tag Value="2" Text="Bob" Icon="UserAdd" />
-                <ext:Tag Value="3" Text="John" Icon="UserAlert" />
-                <ext:Tag Value="4" Text="Bill" Icon="UserB" />
-                <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
+                <ext:Tag Value="1" Text="George" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="2" Text="Bob" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Value="3" Text="John" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="4" Text="Bill" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="5" Text="Ronald" IconCls="x-md md-icon-person-remove" />
             </Items>
         </ext:TagField>
 
@@ -60,11 +60,11 @@
                 <ext:Tag Value="1" />
             </Tags>
             <Items>
-                <ext:Tag Value="1" Text="George" Icon="User" />
-                <ext:Tag Value="2" Text="Bob" Icon="UserAdd" />
-                <ext:Tag Value="3" Text="John" Icon="UserAlert" />
-                <ext:Tag Value="4" Text="Bill" Icon="UserB" />
-                <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
+                <ext:Tag Value="1" Text="George" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="2" Text="Bob" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Value="3" Text="John" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="4" Text="Bill" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="5" Text="Ronald" IconCls="x-md md-icon-person-remove" />
             </Items>
         </ext:TagField>
 
@@ -87,11 +87,11 @@
                 <ext:Tag Value="3" />
             </Tags>
             <Items>
-                <ext:Tag Value="1" Text="George" Icon="User" />
-                <ext:Tag Value="2" Text="Bob" Icon="UserAdd" />
-                <ext:Tag Value="3" Text="John" Icon="UserAlert" />
-                <ext:Tag Value="4" Text="Bill" Icon="UserB" />
-                <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
+                <ext:Tag Value="1" Text="George" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="2" Text="Bob" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Value="3" Text="John" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="4" Text="Bill" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="5" Text="Ronald" IconCls="x-md md-icon-person-remove" />
             </Items>
         </ext:TagField>
 
@@ -114,11 +114,11 @@
                 <ext:Tag Value="5" />
             </Tags>
             <Items>
-                <ext:Tag Value="1" Text="George" Icon="User" />
-                <ext:Tag Value="2" Text="Bob" Icon="UserAdd" />
-                <ext:Tag Value="3" Text="John" Icon="UserAlert" />
-                <ext:Tag Value="4" Text="Bill" Icon="UserB" />
-                <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
+                <ext:Tag Value="1" Text="George" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="2" Text="Bob" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Value="3" Text="John" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="4" Text="Bill" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="5" Text="Ronald" IconCls="x-md md-icon-person-remove" />
             </Items>
         </ext:TagField>
 
@@ -135,11 +135,11 @@
             TypeAhead="true"
             EmptyText="[Add tags]" >
             <Items>
-                <ext:Tag Value="1" Text="George" Icon="User" />
-                <ext:Tag Value="2" Text="Bob" Icon="UserAdd" />
-                <ext:Tag Value="3" Text="John" Icon="UserAlert" />
-                <ext:Tag Value="4" Text="Bill" Icon="UserB" />
-                <ext:Tag Value="5" Text="Ronald" Icon="UserDelete" />
+                <ext:Tag Value="1" Text="George" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="2" Text="Bob" IconCls="x-md md-icon-person-add" />
+                <ext:Tag Value="3" Text="John" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="4" Text="Bill" IconCls="x-md md-icon-person" />
+                <ext:Tag Value="5" Text="Ronald" IconCls="x-md md-icon-person-remove" />
             </Items>
         </ext:TagField>
         <ext:Container runat="server" Layout="HBox">

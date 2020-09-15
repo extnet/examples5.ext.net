@@ -81,13 +81,13 @@
 
                 <ext:Menu ID="Menu1" runat="server">
                     <Items>
-                        <ext:MenuItem runat="server" Text="Item from Menu1" Icon="Application" />
+                        <ext:MenuItem runat="server" Text="Item from Menu1" IconCls="x-md md-icon-open-in-new" />
                     </Items>
                 </ext:Menu>
 
                 <ext:Menu ID="Menu2" runat="server">
                     <Items>
-                        <ext:MenuItem runat="server" Text="Item from Menu2" Icon="Note" />
+                        <ext:MenuItem runat="server" Text="Item from Menu2" IconCls="x-md md-icon-note" />
                     </Items>
                 </ext:Menu>
             </Bin>

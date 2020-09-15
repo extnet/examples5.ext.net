@@ -138,7 +138,7 @@
                     </html>                </Tpl>
             </ListConfig>
             <Triggers>
-                <ext:FieldTrigger Icon="Clear" Hidden="true" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" Hidden="true" />
             </Triggers>
             <Listeners>
                 <BeforeQuery Handler="this.getTrigger(0)[this.getRawValue().toString().length == 0 ? 'hide' : 'show']();" />

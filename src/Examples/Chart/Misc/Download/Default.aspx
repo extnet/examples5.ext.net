@@ -81,19 +81,19 @@
                         <ext:Button
                             runat="server"
                             Text="Download via chart.download()"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart" />
 
                         <ext:Button
                             runat="server"
                             Text="Download via DirectMethod"
-                            Icon="DiskDownload"
+                            IconCls="x-md md-icon-save-alt"
                             Handler="exportChart" />
 
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
                     </Items>
                 </ext:Toolbar>

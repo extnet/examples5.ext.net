@@ -57,7 +57,7 @@
                     Layout="Fit"
                     MarginSpec="5 0 5 0">
                     <Items>
-                        <ext:Panel runat="server" Title="Drag me" Icon="ArrowNsew">
+                        <ext:Panel runat="server" Title="Drag me" IconCls="x-md md-icon-open-with">
                             <DraggablePanelConfig runat="server" Group="panelDD">
                                 <StartDrag handler="Ext.select('.dropable').addCls('x-drop-marker'); this.panelProxy.moveOnDrag = false;" />
                                 <EndDrag handler="Ext.select('.dropable').removeCls('x-drop-marker'); Ext.panel.DD.prototype.endDrag.apply(this, arguments);" />

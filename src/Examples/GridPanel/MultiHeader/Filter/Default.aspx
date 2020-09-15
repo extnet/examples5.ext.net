@@ -204,7 +204,7 @@
                             <ext:ComboBox
                                 ID="ComboBox1"
                                 runat="server"
-                                Icon="Magnifier"
+                                IconCls="x-md md-icon-search"
                                 TriggerAction="All"
                                 QueryMode="Local"
                                 DisplayField="company"
@@ -289,7 +289,7 @@
                         <Items>
                             <ext:Container runat="server">
                                 <Items>
-                                    <ext:Button ID="ClearFilterButton" runat="server" Icon="Cancel">
+                                    <ext:Button ID="ClearFilterButton" runat="server" IconCls="x-md md-icon-cancel">
                                         <ToolTips>
                                             <ext:ToolTip runat="server" Html="Clear filter" />
                                         </ToolTips>

@@ -113,7 +113,6 @@
         <ext:Button
             ID="Button1"
             runat="server"
-            Icon="Rgb"
             Text="[Select Colors]"
             Width="200">
             <Menu>

@@ -51,19 +51,19 @@
                 <Items>
                     <ext:Panel
                         runat="server"
-                        Icon="BulletHome"
+                        IconCls="x-md md-icon-home"
                         Html="<%# TEST_HTML_1  %>"
                         AutoDataBind="true" />
 
                     <ext:Panel
                         runat="server"
-                        Icon="Link"
+                        IconCls="x-md md-icon-link"
                         Html="<%# TEST_HTML_2  %>"
                         AutoDataBind="true" />
 
                     <ext:Panel
                         runat="server"
-                        Icon="Star"
+                        IconCls="x-md md-icon-star-border"
                         Disabled="true" />
                 </Items>
             </ext:TabPanel>
@@ -82,22 +82,25 @@
                     <ext:Panel
                         runat="server"
                         Title="Active Tab"
-                        Icon="BulletHome"
+                        IconCls="x-md md-icon-home"
                         Html="<%# TEST_HTML_1  %>"
-                        AutoDataBind="true" />
+                        AutoDataBind="true"
+                        />
 
                     <ext:Panel
                         runat="server"
                         Title="Inactive Tab"
-                        Icon="Link"
+                        IconCls="x-md md-icon-link"
                         Html="<%# TEST_HTML_2  %>"
-                        AutoDataBind="true" />
+                        AutoDataBind="true"
+                        />
 
                     <ext:Panel
                         runat="server"
                         Title="Disabled Tab"
-                        Icon="Star"
-                        Disabled="true" />
+                        IconCls="x-md md-icon-star-border"
+                        Disabled="true"
+                        />
                 </Items>
             </ext:TabPanel>
         </Items>

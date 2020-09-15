@@ -119,7 +119,7 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Icon="User"
+            IconCls="x-md md-icon-person"
             Closable="false"
             Title="Customer Details"
             Width="360"
@@ -144,7 +144,7 @@
                 </ext:Panel>
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save" Icon="Disk">
+                <ext:Button ID="Button1" runat="server" Text="Save" IconCls="x-md md-icon-save">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click">
                             <EventMask ShowMask="true" Msg="Saving..." MinDelay="500" />

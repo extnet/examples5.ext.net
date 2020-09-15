@@ -138,12 +138,12 @@
     <ext:Menu ID="DataViewContextMenu" runat="server">
         <Items>
             <ext:Label ID="CustomerLabel" runat="server" Cls="customer-label" />
-            <ext:MenuItem runat="server" Text="Send Mail" Icon="Mail">
+            <ext:MenuItem runat="server" Text="Send Mail" IconCls="x-md md-icon-mail-outline">
                 <Listeners>
                     <Click Handler="if (Ext.isEmpty(this.parentMenu.node.email, false)) { Ext.Msg.alert('Error', 'Customer has no email');} else { parent.location = 'mailto:'+this.parentMenu.node.email; }" />
                 </Listeners>
             </ext:MenuItem>
-            <ext:MenuItem runat="server" Text="Show Details" Icon="ApplicationFormEdit">
+            <ext:MenuItem runat="server" Text="Show Details" IconCls="x-md md-icon-edit">
                 <Listeners>
                     <Click Handler="Ext.Msg.alert('Details', Ext.encode(this.parentMenu.node));" />
                 </Listeners>
@@ -159,7 +159,7 @@
             <ext:Button
                 runat="server"
                 Text="Print"
-                Icon="Printer"
+                IconCls="x-md md-icon-print"
                 OnClientClick="window.print();"
                 />
         </Items>

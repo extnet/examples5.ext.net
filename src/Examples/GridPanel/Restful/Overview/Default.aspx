@@ -39,7 +39,7 @@
         <ext:GridPanel
             ID="UserGrid"
             runat="server"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Frame="true"
             Title="Users"
             Height="480"
@@ -105,7 +105,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Add" Icon="Add">
+                        <ext:Button runat="server" Text="Add" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="var grid = #{UserGrid},
                                                     store = grid.getStore();
@@ -116,7 +116,7 @@
                                                 grid.editingPlugin.startEdit(0, 0);" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Delete" Icon="Exclamation">
+                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Delete" IconCls="x-md md-icon-error">
                             <Listeners>
                                 <Click Handler="var selection = #{UserGrid}.getView().getSelectionModel().getSelection()[0];
                                                 if (selection) {

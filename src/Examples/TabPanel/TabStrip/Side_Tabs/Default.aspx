@@ -28,10 +28,10 @@
             <h2>Left-Aligned Tabs</h2>
             <ext:TabStrip runat="server" TabPosition="Left">
                 <Items>
-                    <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -40,10 +40,10 @@
             <h2>Right-Aligned Tabs</h2>
             <ext:TabStrip runat="server" TabPosition="Right">
                 <Items>
-                    <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -56,14 +56,14 @@
                 TabPosition="Left"
                 Height="480">
                 <Items>
-                    <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
-                    <ext:Tab Text="Tab 4" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 5" Closable="true" />
                     <ext:Tab Text="Tab 6" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -74,14 +74,14 @@
                 TabPosition="Right"
                 Height="480">
                 <Items>
-                    <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
-                    <ext:Tab Text="Tab 4" Icon="ApplicationViewList" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 5" Closable="true" />
                     <ext:Tab Text="Tab 6" />
-                    <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -94,39 +94,39 @@
                 <ext:TabStrip runat="server"
                     TabPosition="Left">
                     <Items>
-                        <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                        <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                     </Items>
                 </ext:TabStrip>
 
                 <ext:TabStrip runat="server"
                     TabPosition="Right">
                     <Items>
-                        <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                        <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                     </Items>
                 </ext:TabStrip>
 
                 <ext:TabStrip runat="server">
                     <Items>
-                        <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                        <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                     </Items>
                 </ext:TabStrip>
 
                 <ext:TabStrip runat="server"
                     TabPosition="Bottom">
                     <Items>
-                        <ext:Tab Text="Tab 1" Icon="ApplicationViewList" />
+                        <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" Icon="ApplicationViewList" Closable="true" Disabled="true" />
+                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
                     </Items>
                 </ext:TabStrip>
             </DockedItems>

@@ -108,7 +108,7 @@
                 </ext:CellEditing>
             </Plugins>
             <Buttons>
-                <ext:Button runat="server" Text="Insert record" Icon="Add">
+                <ext:Button runat="server" Text="Insert record" IconCls="x-md md-icon-add-circle-outline">
                     <Listeners>
                         <Click Fn="insertRecord" />
                     </Listeners>

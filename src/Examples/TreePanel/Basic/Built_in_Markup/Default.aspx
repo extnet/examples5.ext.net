@@ -18,7 +18,7 @@
             runat="server"
             Width="480"
             Height="480"
-            Icon="BookOpen"
+            IconCls="x-md md-icon-arrow-menu-book"
             Title="Catalog"
             Scrollable="Both">
             <TopBar>
@@ -40,88 +40,88 @@
             <Root>
                 <ext:Node Text="Composers" Expanded="true">
                     <Children>
-                        <ext:Node Text="Beethoven" Icon="UserGray">
+                        <ext:Node Text="Beethoven" IconCls="x-md md-icon-person">
                             <Children>
                                 <ext:Node Text="Concertos">
                                     <Children>
-                                        <ext:Node Text="No. 1 - C" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 2 - B-Flat Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 3 - C Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 4 - G Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 5 - E-Flat Major" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="No. 1 - C" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 2 - B-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 3 - C Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 4 - G Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 5 - E-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Quartets">
                                     <Children>
-                                        <ext:Node Text="Six String Quartets" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Three String Quartets" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Grosse Fugue for String Quartets" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Six String Quartets" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Three String Quartets" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Grosse Fugue for String Quartets" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Sonatas">
                                     <Children>
-                                        <ext:Node Text="Sonata in A Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="sonata in F Major" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Sonata in A Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="sonata in F Major" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Symphonies">
                                     <Children>
-                                        <ext:Node Text="No. 1 - C Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 2 - D Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 3 - E-Flat Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 4 - B-Flat Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 5 - C Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 6 - F Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 7 - A Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 8 - F Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 9 - D Minor" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="No. 1 - C Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 2 - D Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 3 - E-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 4 - B-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 5 - C Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 6 - F Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 7 - A Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 8 - F Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 9 - D Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                             </Children>
                         </ext:Node>
-                        <ext:Node Text="Brahms" Icon="UserGray">
+                        <ext:Node Text="Brahms" IconCls="x-md md-icon-person">
                             <Children>
                                 <ext:Node Text="Concertos">
                                     <Children>
-                                        <ext:Node Text="Violin Concerto" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Double Concerto - A Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Concerto No. 1 - D Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Concerto No. 2 - B-Flat Major" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Violin Concerto" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Double Concerto - A Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Concerto No. 1 - D Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Concerto No. 2 - B-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Quartets">
                                     <Children>
-                                        <ext:Node Text="Piano Quartet No. 1 - G Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Quartet No. 2 - A Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Quartet No. 3 - C Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Quartet No. 3 - B-Flat Minor" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Piano Quartet No. 1 - G Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Quartet No. 2 - A Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Quartet No. 3 - C Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Quartet No. 3 - B-Flat Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Sonatas">
                                     <Children>
-                                        <ext:Node Text="Two Sonatas for Clarinet - F Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Two Sonatas for Clarinet - E-Flat Major" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Two Sonatas for Clarinet - F Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Two Sonatas for Clarinet - E-Flat Major" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                                 <ext:Node Text="Symphonies">
                                     <Children>
-                                        <ext:Node Text="No. 1 - C Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 2 - D Minor" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 3 - F Major" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="No. 4 - E Minor" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="No. 1 - C Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 2 - D Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 3 - F Major" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="No. 4 - E Minor" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                             </Children>
                         </ext:Node>
-                        <ext:Node Text="Mozart" Icon="UserGray">
+                        <ext:Node Text="Mozart" IconCls="x-md md-icon-person">
                             <Children>
                                 <ext:Node Text="Concertos">
                                     <Children>
-                                        <ext:Node Text="Piano Concerto No. 12" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Piano Concerto No. 17" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Clarinet Concerto" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Violin Concerto No. 5" Icon="Music" Leaf="true" />
-                                        <ext:Node Text="Violin Concerto No. 4" Icon="Music" Leaf="true" />
+                                        <ext:Node Text="Piano Concerto No. 12" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Piano Concerto No. 17" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Clarinet Concerto" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Violin Concerto No. 5" IconCls="x-md md-icon-music-note" Leaf="true" />
+                                        <ext:Node Text="Violin Concerto No. 4" IconCls="x-md md-icon-music-note" Leaf="true" />
                                     </Children>
                                 </ext:Node>
                             </Children>

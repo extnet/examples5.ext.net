@@ -13,7 +13,7 @@
     <ext:Button
         runat="server"
         Text="Primary"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         Width="100"
         Handler="Ext.Msg.info({ui: 'primary', title: 'UI', html: 'Primary', iconCls: '#Application'});"
         />
@@ -23,7 +23,7 @@
     <ext:Button
         runat="server"
         Text="Info"
-        Icon="Information"
+        IconCls="x-md md-icon-info"
         Width="100"
         Handler="Ext.Msg.info({ui: 'info', title: 'UI', html: 'Info', iconCls: '#Information'});"
         />
@@ -33,7 +33,7 @@
     <ext:Button
         runat="server"
         Text="Success"
-        Icon="Accept"
+        IconCls="x-md md-icon-check-circle-outline"
         Width="100"
         Handler="Ext.Msg.info({ui: 'success', title: 'UI', html: 'Success', iconCls: '#Accept'});"
         />
@@ -43,7 +43,7 @@
     <ext:Button
         runat="server"
         Text="Danger"
-        Icon="Exclamation"
+        IconCls="x-md md-icon-error"
         Width="100"
         Handler="Ext.Msg.info({ui: 'danger', title: 'UI', html: 'Danger', iconCls: '#Exclamation'});"
         />
@@ -53,7 +53,7 @@
     <ext:Button
         runat="server"
         Text="Warning"
-        Icon="Error"
+        IconCls="x-md md-icon-error-outline"
         Width="100"
         Handler="Ext.Msg.info({ui:'warning', title: 'UI', html: 'Warning', iconCls: '#Error'});"
         />

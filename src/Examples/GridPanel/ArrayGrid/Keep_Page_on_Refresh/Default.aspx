@@ -215,13 +215,13 @@
                         <ext:Button
                             runat="server"
                             Text="Print"
-                            Icon="Printer"
+                            IconCls="x-md md-icon-print"
                             Handler="this.up('grid').print();"
                             />
                         <ext:Button
                             runat="server"
                             Text="Print current grid page"
-                            Icon="Printer"
+                            IconCls="x-md md-icon-print"
                             Handler="this.up('grid').print({currentPageOnly : true});"
                             />
                     </Items>

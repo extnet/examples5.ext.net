@@ -36,7 +36,7 @@
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
 
                         <ext:Button

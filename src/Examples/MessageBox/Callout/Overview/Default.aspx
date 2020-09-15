@@ -75,13 +75,13 @@
 
     <ext:Button runat="server" Text="Click">
         <Callouts>
-            <ext:Callout runat="server" Title="Header" Icon="Comment" BodyStyle="padding:1px;">
+            <ext:Callout runat="server" Title="Header" IconCls="x-md md-icon-comment" BodyStyle="padding:1px;">
                 <HeaderToolbar>
                     <ext:Toolbar runat="server" Flat="true">
                         <Items>
                             <ext:Button
                                 runat="server"
-                                Icon="Decline"
+                                IconCls="x-md md-icon-cancel"
                                 ToolTip="Close"
                                 Handler="this.up('toolbar').callout.hide();"
                                 />

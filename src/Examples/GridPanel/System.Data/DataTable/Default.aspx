@@ -213,19 +213,19 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button ID="Button1" runat="server" Text="To XML" Icon="PageCode">
+                        <ext:Button ID="Button1" runat="server" Text="To XML" IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Handler="exportData('xml');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button2" runat="server" Text="To Excel" Icon="PageExcel">
+                        <ext:Button ID="Button2" runat="server" Text="To Excel" IconCls="x-md md-icon-apps">
                             <Listeners>
                                 <Click Handler="exportData('xls');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button3" runat="server" Text="To CSV" Icon="PageAttach">
+                        <ext:Button ID="Button3" runat="server" Text="To CSV" IconCls="x-md md-icon-attachment">
                             <Listeners>
                                 <Click Handler="exportData('csv');" />
                             </Listeners>

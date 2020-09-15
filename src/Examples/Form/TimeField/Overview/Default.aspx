@@ -65,7 +65,6 @@
         <ext:Button
             runat="server"
             Text="Swap Selected Times"
-            Icon="ArrowInout"
             OnDirectClick="Button1_Click"
             />
     </form>

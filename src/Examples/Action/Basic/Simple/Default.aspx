@@ -43,7 +43,7 @@
                 runat="server"
                 Text="Do something"
                 Handler="Ext.Msg.alert('Click', 'You did something.');"
-                Icon="Add"
+                IconCls="x-md md-icon-add-circle-outline"
                 ItemID="myAction"
                 />
         </Bin>

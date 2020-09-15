@@ -19,7 +19,7 @@
             runat="server"
             Width="360"
             Title="Password Verification"
-            Icon="Textfield"
+            IconCls="x-md md-icon-text-fields"
             Closable="false"
             BodyPadding="18"
             Layout="Form">

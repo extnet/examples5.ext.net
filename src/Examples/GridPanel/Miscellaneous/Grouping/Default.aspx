@@ -193,13 +193,12 @@
                 </ext:RowBody>
             </Features>
             <Buttons>
-                <ext:Button runat="server" Text="Print" Icon="Printer" Handler="this.up('grid').print();" />
+                <ext:Button runat="server" Text="Print" IconCls="x-md md-icon-print" Handler="this.up('grid').print();" />
 
                 <ext:Button
                     ID="btnToggleGroups"
                     runat="server"
                     Text="Expand/Collapse Groups"
-                    Icon="TableSort"
                     Style="margin-left: 6px;">
                     <Listeners>
                         <Click Handler="#{Grouping1}[#{Grouping1}.expanded ? 'collapseAll' : 'expandAll'](); #{Grouping1}.expanded = !#{Grouping1}.expanded;" />

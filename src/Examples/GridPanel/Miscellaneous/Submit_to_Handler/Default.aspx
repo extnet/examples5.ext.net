@@ -256,12 +256,12 @@
                 </ext:GridPanel>
             </Items>
             <Buttons>
-                <ext:Button runat="server" Text="Save Selected Countries" Icon="Disk">
+                <ext:Button runat="server" Text="Save Selected Countries" IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="CountrySelector.submitData(#{Store2});" />
                     </Listeners>
                 </ext:Button>
-                <ext:Button runat="server" Text="Cancel" Icon="Cancel">
+                <ext:Button runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
                     <Listeners>
                         <Click Handler="CountrySelector.removeAll(#{GridPanel1}, #{GridPanel2});" />
                     </Listeners>

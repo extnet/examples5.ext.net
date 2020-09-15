@@ -137,8 +137,8 @@
                         Flex="1"
                         Flat="true">
                         <Items>
-                            <ext:Button runat="server" Text="Button" Icon="Add" />
-                            <ext:SplitButton runat="server" Text="Split" Icon="ArrowDown">
+                            <ext:Button runat="server" Text="Button" IconCls="x-md md-icon-add-circle-outline" />
+                            <ext:SplitButton runat="server" Text="Split" IconCls="x-md md-icon-arrow-circle-down">
                                 <Menu>
                                     <ext:Menu runat="server">
                                         <Items>

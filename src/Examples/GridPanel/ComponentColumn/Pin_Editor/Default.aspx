@@ -155,7 +155,7 @@
                             <ext:Button
                                 runat="server"
                                 ToolTip="Pin editors"
-                                Icon="Pencil"
+                                IconCls="x-md md-icon-edit"
                                 AllowDepress="true"
                                 EnableToggle="true">
                                 <Listeners>

@@ -17,11 +17,10 @@
 
     <ext:Toolbar runat="server" Layout="Container" Width="25" Flat="true">
         <Items>
-            <ext:Button runat="server" Icon="Accept" />
-            <ext:Button runat="server" Icon="Add" />
-            <ext:Button runat="server" Icon="Application" />
-            <ext:Button runat="server" Icon="Bell" />
-            <ext:Button runat="server" Icon="Bomb" />
+            <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
+            <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+            <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" />
+            <ext:Button runat="server" IconCls="x-md md-icon-notifications" />
         </Items>
     </ext:Toolbar>
 
@@ -81,9 +80,9 @@
                             <ext:Parameter Name="width" Value="99" Mode="Raw" />
                         </Defaults>
                         <Items>
-                            <ext:Button runat="server" Text="1" Icon="BulletTick" />
-                            <ext:Button runat="server" Text="2" Icon="BulletTick" />
-                            <ext:Button runat="server" Text="3" Icon="BulletTick" />
+                            <ext:Button runat="server" Text="1" />
+                            <ext:Button runat="server" Text="2" />
+                            <ext:Button runat="server" Text="3" />
                         </Items>
                     </ext:Toolbar>
                 </Items>
@@ -103,11 +102,10 @@
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Left" Vertical="true">
                 <Items>
-                    <ext:Button runat="server" Icon="Accept" />
-                    <ext:Button runat="server" Icon="Add" />
-                    <ext:Button runat="server" Icon="Application" />
-                    <ext:Button runat="server" Icon="Bell" />
-                    <ext:Button runat="server" Icon="Bomb" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-notifications" />
                 </Items>
             </ext:Toolbar>
         </DockedItems>
@@ -119,31 +117,28 @@
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>
-                    <ext:Button runat="server" Icon="Accept" />
-                    <ext:Button runat="server" Icon="Add" />
-                    <ext:Button runat="server" Icon="Application" />
-                    <ext:Button runat="server" Icon="Bell" />
-                    <ext:Button runat="server" Icon="Bomb" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-notifications" />
                 </Items>
             </ext:Toolbar>
 
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>
-                    <ext:Button runat="server" Icon="Accept" />
-                    <ext:Button runat="server" Icon="Add" />
-                    <ext:Button runat="server" Icon="Application" />
-                    <ext:Button runat="server" Icon="Bell" />
-                    <ext:Button runat="server" Icon="Bomb" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-notifications" />
                 </Items>
             </ext:Toolbar>
 
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>
-                    <ext:Button runat="server" Icon="Accept" />
-                    <ext:Button runat="server" Icon="Add" />
-                    <ext:Button runat="server" Icon="Application" />
-                    <ext:Button runat="server" Icon="Bell" />
-                    <ext:Button runat="server" Icon="Bomb" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" />
+                    <ext:Button runat="server" IconCls="x-md md-icon-notifications" />
                 </Items>
             </ext:Toolbar>
         </DockedItems>

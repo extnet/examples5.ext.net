@@ -304,35 +304,36 @@
                         Pressed="true"
                         EnableToggle="true"
                         ToggleGroup="tag"
-                        Handler="filter()" />
+                        Handler="filter()"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Info"
                         EnableToggle="true"
                         ToggleGroup="tag"
-                        Icon="BulletBlue"
-                        Handler="filter('info')" />
+                        Handler="filter('info')"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Success"
                         EnableToggle="true"
                         ToggleGroup="tag"
-                        Icon="BulletGreen"
-                        Handler="filter('success')" />
+                        Handler="filter('success')"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Danger"
                         EnableToggle="true"
                         ToggleGroup="tag"
-                        Icon="BulletRed"
-                        Handler="filter('danger')" />
+                        Handler="filter('danger')"
+                        />
                     <ext:Button
                         runat="server"
                         Text="Warning"
                         EnableToggle="true"
                         ToggleGroup="tag"
-                        Icon="BulletYellow"
-                        Handler="filter('warning')" />
+                        Handler="filter('warning')"
+                        />
                 </Items>
             </ext:Toolbar>
         </TopBar>

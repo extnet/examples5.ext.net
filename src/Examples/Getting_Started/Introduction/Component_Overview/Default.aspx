@@ -145,7 +145,7 @@
                     ID="Button1"
                     runat="server"
                     Text="Submit"
-                    Icon="Accept"
+                    IconCls="x-md md-icon-check-circle-outline"
                     OnDirectClick="Button1_Click" />
             </Buttons>
         </ext:Window>
@@ -350,8 +350,8 @@
 
                         <ext:TextField runat="server" FieldLabel="TextField with triggers">
                             <Triggers>
-                                <ext:FieldTrigger Icon="Clear" />
-                                <ext:FieldTrigger Icon="Search" />
+                                <ext:FieldTrigger IconCls="x-md md-icon-clear" />
+                                <ext:FieldTrigger IconCls="x-md md-icon-search" />
                             </Triggers>
                         </ext:TextField>
 
@@ -488,8 +488,8 @@
                                 <ext:ToolbarFill runat="server" />
                                 <ext:TextField runat="server">
                                     <Triggers>
-                                        <ext:FieldTrigger Icon="Clear" />
-                                        <ext:FieldTrigger Icon="Search" />
+                                        <ext:FieldTrigger IconCls="x-md md-icon-clear" />
+                                        <ext:FieldTrigger IconCls="x-md md-icon-search" />
                                     </Triggers>
                                 </ext:TextField>
                             </Items>

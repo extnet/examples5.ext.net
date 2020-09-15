@@ -14,7 +14,7 @@
         <ext:Panel
             runat="server"
             Title="Drag Me"
-            Icon="ArrowNsew"
+            IconCls="x-md md-icon-open-with"
             Frame="true"
             Width="200"
             Height="180"
@@ -27,7 +27,7 @@
         <ext:Panel
             runat="server"
             Title="Drag Me Too"
-            Icon="ArrowNsew"
+            IconCls="x-md md-icon-open-with"
             Frame="true"
             Width="200"
             Height="180"

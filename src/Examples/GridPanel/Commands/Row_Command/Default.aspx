@@ -110,11 +110,11 @@
                         />
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
-                            <ext:GridCommand Icon="Delete" CommandName="Delete">
+                            <ext:GridCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete">
                                 <ToolTip Text="Delete" />
                             </ext:GridCommand>
                             <ext:CommandSeparator />
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit">
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:GridCommand>
                         </Commands>
@@ -176,8 +176,8 @@
                         />
                     <ext:CommandColumn runat="server" Width="160">
                         <Commands>
-                            <ext:GridCommand Icon="Delete" CommandName="Delete" Text="Delete" />
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit" Text="Edit" />
+                            <ext:GridCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete" Text="Delete" />
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit" Text="Edit" />
                         </Commands>
                         <Listeners>
                             <Command Handler="Ext.Msg.alert(command, record.data.company);" />
@@ -237,11 +237,11 @@
                         />
                     <ext:CommandColumn runat="server" Width="70">
                         <Commands>
-                            <ext:GridCommand Icon="Delete" CommandName="Delete" StandOut="true">
+                            <ext:GridCommand IconCls="x-md md-icon-remove-circle-outline" CommandName="Delete" StandOut="true">
                                 <ToolTip Text="Delete" />
                             </ext:GridCommand>
                             <ext:CommandSeparator />
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit" StandOut="true">
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit" StandOut="true">
                                 <ToolTip Text="Edit" />
                             </ext:GridCommand>
                         </Commands>

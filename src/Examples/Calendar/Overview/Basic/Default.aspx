@@ -141,7 +141,7 @@
                                         <ext:Button
                                             runat="server"
                                             Text="Save All Events"
-                                            Icon="Disk"
+                                            IconCls="x-md md-icon-save"
                                             Handler="CompanyX.record.saveAll"
                                             />
                                     </Items>

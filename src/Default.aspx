@@ -307,7 +307,7 @@
                                         EmptyText="Filter Examples..."
                                         RemoveClearTrigger="true">
                                         <Triggers>
-                                            <ext:FieldTrigger Icon="Clear" Hidden="true" />
+                                            <ext:FieldTrigger IconCls="x-md md-icon-clear" Hidden="true" />
                                         </Triggers>
                                         <Listeners>
                                             <KeyUp Fn="keyUp" Buffer="500" />
@@ -351,7 +351,7 @@
 
                                                     <ext:MenuSeparator runat="server" />
 
-                                                    <ext:MenuItem runat="server" Text="Theme" Icon="Paintcan">
+                                                    <ext:MenuItem runat="server" Text="Theme" IconCls="x-md md-icon-format-paint">
                                                         <Menu>
                                                             <ext:Menu ID="ThemesMenu" runat="server" MinWidth="200">
                                                                 <Listeners>
@@ -363,7 +363,7 @@
 
                                                     <ext:MenuSeparator runat="server" />
 
-                                                    <ext:MenuItem runat="server" Text="Search by" Icon="Find">
+                                                    <ext:MenuItem runat="server" Text="Search by" IconCls="x-md md-icon-search">
                                                         <Menu>
                                                             <ext:Menu runat="server" MinWidth="200">
                                                                 <Items>
@@ -384,7 +384,7 @@
                                                         </Menu>
                                                     </ext:MenuItem>
 
-                                                    <%--<ext:MenuItem runat="server" Text="Tag Cloud" Icon="WeatherClouds">
+                                                    <%--<ext:MenuItem runat="server" Text="Tag Cloud">
                                                         <Listeners>
                                                             <Click Fn="showTagCloud" />
                                                         </Listeners>

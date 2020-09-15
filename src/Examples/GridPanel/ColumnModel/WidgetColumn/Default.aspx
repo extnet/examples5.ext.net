@@ -115,7 +115,7 @@
                              <ext:SplitButton
                                 runat="server"
                                 Width="90"
-                                Icon="FeedAdd"
+                                IconCls="x-md md-icon-add-circle-outline"
                                 Handler="Ext.Msg.alert('Button clicked', 'Hey! ' + this.getWidgetRecord().get('name'));"
                                 />
                          </Widget>

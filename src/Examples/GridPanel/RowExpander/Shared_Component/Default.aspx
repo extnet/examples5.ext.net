@@ -85,7 +85,7 @@
             Title="Expander Rows with control"
             Collapsible="true"
             AnimCollapse="true"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Width="960">
             <Store>
                 <ext:Store
@@ -170,14 +170,14 @@
                             </Items>
 
                             <Buttons>
-                                <ext:Button runat="server" Text="Save" Icon="Disk">
+                                <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save">
                                     <Listeners>
                                         <Click Handler="var grid = this.up('grid'), form = this.up('form');
                                                         grid.getRowExpander().collapseRow(grid.store.indexOf(form.record));
                                                         form.getForm().updateRecord(form.record);" />
                                     </Listeners>
                                 </ext:Button>
-                                <ext:Button runat="server" Text="Cancel" Icon="Decline">
+                                <ext:Button runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
                                     <Listeners>
                                         <Click Handler="var grid = this.up('grid'), form = this.up('form');
                                                         grid.getRowExpander().collapseRow(grid.store.indexOf(form.record));" />

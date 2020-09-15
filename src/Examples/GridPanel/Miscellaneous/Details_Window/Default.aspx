@@ -114,7 +114,7 @@
                     <ext:Column runat="server" Text="Address" DataIndex="Address" Width="250" />
                     <ext:CommandColumn runat="server" Width="35">
                         <Commands>
-                            <ext:GridCommand Icon="NoteEdit" CommandName="Edit">
+                            <ext:GridCommand IconCls="x-md md-icon-edit" CommandName="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:GridCommand>
                         </Commands>

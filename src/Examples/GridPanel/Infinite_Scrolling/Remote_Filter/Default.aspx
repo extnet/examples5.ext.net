@@ -157,8 +157,8 @@
                             FieldLabel="Search"
                             LabelWidth="50">
                             <Triggers>
-                                <ext:FieldTrigger Icon="Clear" Hidden="true" />
-                                <ext:FieldTrigger Icon="Search" />
+                                <ext:FieldTrigger IconCls="x-md md-icon-clear" Hidden="true" />
+                                <ext:FieldTrigger IconCls="x-md md-icon-search" />
                             </Triggers>
                             <Listeners>
                                 <TriggerClick Fn="searchFieldTriggerClick" />

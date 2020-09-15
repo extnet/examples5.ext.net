@@ -25,22 +25,22 @@
             <Items>
                 <ext:TextField runat="server" FieldLabel="Right buttons">
                     <RightButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </RightButtons>
                 </ext:TextField>
 
                 <ext:TextField runat="server" FieldLabel="Left buttons">
                      <LeftButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </LeftButtons>
                 </ext:TextField>
 
                 <ext:TextField runat="server" FieldLabel="StandOut buttons">
                      <RightButtons>
-                        <ext:Button runat="server" Icon="Add" StandOut="true" />
-                        <ext:Button runat="server" Icon="Accept" Flat="false" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" StandOut="true" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" Flat="false" />
                     </RightButtons>
                 </ext:TextField>
 
@@ -88,12 +88,12 @@
 
                 <ext:TextField runat="server" FieldLabel="Left and right buttons">
                     <LeftButtons>
-                        <ext:Button runat="server" Icon="UserAdd" />
-                        <ext:Button runat="server" Icon="UserAlert" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-person-add" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-person" />
                     </LeftButtons>
                     <RightButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </RightButtons>
                 </ext:TextField>
 
@@ -103,8 +103,8 @@
                     RightButtonsShowMode="MouseOver"
                     EmptyText="Move mouse here">
                     <RightButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </RightButtons>
                 </ext:TextField>
 
@@ -114,8 +114,8 @@
                     RightButtonsShowMode="Focus"
                     EmptyText="Click here">
                     <RightButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </RightButtons>
                 </ext:TextField>
 
@@ -125,8 +125,8 @@
                     RightButtonsShowMode="NonBlank"
                     EmptyText="Type something">
                     <RightButtons>
-                        <ext:Button runat="server" Icon="Add" />
-                        <ext:Button runat="server" Icon="Accept" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
+                        <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
                     </RightButtons>
                 </ext:TextField>
             </Items>

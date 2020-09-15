@@ -27,7 +27,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Icon="Add" StandOut="true">
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" StandOut="true">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Add');" />
                             </Listeners>
@@ -36,7 +36,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Accept" StandOut="true">
+                         <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" StandOut="true">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Accept');" />
                             </Listeners>
@@ -45,7 +45,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Delete" StandOut="true">
+                         <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline" StandOut="true">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Delete');" />
                             </Listeners>
@@ -56,7 +56,7 @@
 
                         <ext:ToolbarSeparator/>
 
-                        <ext:Button runat="server" Icon="Add">
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Add');" />
                             </Listeners>
@@ -65,7 +65,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Accept">
+                         <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Accept');" />
                             </Listeners>
@@ -74,7 +74,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Delete">
+                         <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Delete');" />
                             </Listeners>
@@ -85,7 +85,7 @@
 
                         <ext:ToolbarSeparator/>
 
-                        <ext:Button runat="server" Icon="Add" Text="Add">
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" Text="Add">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Add');" />
                             </Listeners>
@@ -94,7 +94,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Accept" Text="Accept" Disabled="true">
+                         <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" Text="Accept" Disabled="true">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Accept');" />
                             </Listeners>
@@ -103,7 +103,7 @@
                             </ToolTips>
                         </ext:Button>
 
-                         <ext:Button runat="server" Icon="Delete" Text="Delete">
+                         <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline" Text="Delete">
                             <Listeners>
                                 <Click Handler="Ext.Msg.alert('Click','Click on Delete');" />
                             </Listeners>
@@ -116,12 +116,12 @@
 
                         <ext:ToolbarSpacer runat="server" />
 
-                        <ext:Button runat="server" Icon="Application" Text="With menu">
+                        <ext:Button runat="server" IconCls="x-md md-icon-open-in-new" Text="With menu">
                             <Menu>
                               <ext:Menu runat="server">
                                 <Items>
-                                    <ext:MenuItem runat="server" Icon="Accept" Text="Menu 1" Handler="function () {alert('Menu 1');}" />
-                                    <ext:MenuItem runat="server" Icon="Add" Text="Menu 2">
+                                    <ext:MenuItem runat="server" IconCls="x-md md-icon-check-circle-outline" Text="Menu 1" Handler="function () {alert('Menu 1');}" />
+                                    <ext:MenuItem runat="server" IconCls="x-md md-icon-add-circle-outline" Text="Menu 2">
                                         <Listeners>
                                             <Click Handler="alert('Menu 2');" />
                                         </Listeners>
@@ -148,9 +148,9 @@
 
                         <ext:ToolbarFill />
 
-                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" Icon="GroupAdd" Pressed="true" />
-                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" Icon="GroupDelete" />
-                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" Icon="GroupEdit" />
+                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" IconCls="x-md md-icon-add-circle-outline" Pressed="true" />
+                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" IconCls="x-md md-icon-remove-circle-outline" />
+                        <ext:Button runat="server" EnableToggle="true" ToggleGroup="G1" IconCls="x-md md-icon-edit" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

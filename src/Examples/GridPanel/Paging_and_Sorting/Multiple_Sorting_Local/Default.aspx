@@ -206,7 +206,7 @@
                         <ext:SplitButton
                             runat="server"
                             Text="Rating"
-                            Icon="SortDescending"
+                            IconCls="x-md md-icon-sort-by-alpha"
                             OnClientClick="changeSortDirection(this, true);"
                             SortData="={{property:'rating',direction:'DESC'}}"
                             Reorderable="true">
@@ -221,7 +221,7 @@
                         <ext:SplitButton
                             runat="server"
                             Text="Salary"
-                            Icon="SortAscending"
+                            IconCls="x-md md-icon-sort-by-alpha"
                             OnClientClick="changeSortDirection(this, true);"
                             SortData="={{property:'salary',direction:'ASC'}}"
                             Reorderable="true">

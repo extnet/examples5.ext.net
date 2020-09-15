@@ -40,12 +40,12 @@
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
-                                        <ext:Button runat="server" Text="Send" Icon="EmailGo" />
-                                        <ext:Button runat="server" Text="Save" Icon="Disk" />
-                                        <ext:Button runat="server" Text="Check Spelling" Icon="Spellcheck" />
-                                        <ext:Button runat="server" Text="Print" Icon="Printer" />
+                                        <ext:Button runat="server" Text="Send" IconCls="x-md md-icon-email" />
+                                        <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save" />
+                                        <ext:Button runat="server" Text="Check Spelling" IconCls="x-md md-icon-spellcheck" />
+                                        <ext:Button runat="server" Text="Print" IconCls="x-md md-icon-print" />
                                         <ext:ToolbarFill runat="server" />
-                                        <ext:Button runat="server" Text="Attach a File" Icon="PageAttach" />
+                                        <ext:Button runat="server" Text="Attach a File" IconCls="x-md md-icon-attachment" />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>

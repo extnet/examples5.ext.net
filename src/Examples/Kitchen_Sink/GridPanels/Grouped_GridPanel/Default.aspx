@@ -86,7 +86,7 @@
                 ID="GridPanel1"
                 runat="server"
                 Title="Restaurants"
-                Icon="Table"
+                IconCls="x-md md-icon-grid-on"
                 Frame="true"
                 Width="960"
                 Height="480"
@@ -152,7 +152,7 @@
                             <ext:Button
                                 runat="server"
                                 Text="Clear Grouping"
-                                Icon="Bin"
+                                IconCls="x-md md-icon-clear"
                                 Handler="onClearGroupingClick" />
                         </Items>
                     </ext:Toolbar>

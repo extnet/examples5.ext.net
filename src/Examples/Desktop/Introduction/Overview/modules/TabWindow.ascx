@@ -3,10 +3,10 @@
 <ext:DesktopModuleProxy runat="server">
     <Module ModuleID="tab-win">
         <Shortcut Name="Tab Window" />
-        <Launcher Text="Tab Window" Icon="Tab" />
+        <Launcher Text="Tab Window" IconCls="x-md md-icon-tab" />
         <Window>
             <ext:Window runat="server"
-                Icon="Tab"
+                IconCls="x-md md-icon-tab"
                 Width="740" 
                 Height="480" 
                 ConstrainHeader="true"         

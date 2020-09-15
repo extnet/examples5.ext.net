@@ -65,8 +65,8 @@
         <Menu>
             <ext:Menu runat="server">
                 <Items>
-                    <ext:MenuItem runat="server" Text="Add" Icon="Add" />
-                    <ext:MenuItem runat="server" Text="Accept" Icon="Accept" />
+                    <ext:MenuItem runat="server" Text="Add" IconCls="x-md md-icon-add-circle-outline" />
+                    <ext:MenuItem runat="server" Text="Accept" IconCls="x-md md-icon-check-circle-outline" />
                 </Items>
             </ext:Menu>
         </Menu>

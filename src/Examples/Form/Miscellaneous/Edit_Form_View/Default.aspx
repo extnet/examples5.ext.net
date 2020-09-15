@@ -236,12 +236,12 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Icon="Add" Text="Add">
+                        <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" Text="Add">
                             <DirectEvents>
                                 <Click OnEvent="AddClick" />
                             </DirectEvents>
                         </ext:Button>
-                        <ext:Button runat="server" Icon="Delete" Text="Delete">
+                        <ext:Button runat="server" IconCls="x-md md-icon-remove-circle-outline" Text="Delete">
                             <DirectEvents>
                                 <Click OnEvent="DeleteClick" Success="Ext.Msg.alert('Action', 'Deleted');">
                                     <ExtraParams>
@@ -254,7 +254,7 @@
                         <ext:Button
                             ID="btnSaveRecord"
                             runat="server"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Text="Save"
                             Disabled="true">
                             <DirectEvents>

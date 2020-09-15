@@ -26,7 +26,7 @@
     <ext:Window
         runat="server"
         Title="Collapsed Region Image"
-        Icon="Application"
+        IconCls="x-md md-icon-open-in-new"
         Width="960"
         Height="480"
         Border="false"

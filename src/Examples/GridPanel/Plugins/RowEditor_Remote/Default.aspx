@@ -161,12 +161,12 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Add Employee" Icon="UserAdd">
+                        <ext:Button runat="server" Text="Add Employee" IconCls="x-md md-icon-person-add">
                             <Listeners>
                                 <Click Fn="addEmployee" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Remove Employee" Icon="UserDelete" Disabled="true">
+                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Remove Employee" IconCls="x-md md-icon-person-remove" Disabled="true">
                             <Listeners>
                                 <Click Fn="removeEmployee" />
                             </Listeners>

@@ -31,13 +31,13 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill />
-                        <ext:Button runat="server" Text="Load Ext.NET forums" Icon="Application">
+                        <ext:Button runat="server" Text="Load Ext.NET forums" IconCls="x-md md-icon-open-in-new">
                             <Listeners>
                                 <Click Handler="#{Window1}.load('https://forums.ext.net/');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="Refresh" Icon="ArrowRotateClockwise">
+                        <ext:Button runat="server" Text="Refresh" IconCls="x-md md-icon-rotate-right">
                             <Listeners>
                                 <Click Handler="#{Window1}.reload();" />
                             </Listeners>

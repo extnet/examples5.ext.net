@@ -287,14 +287,14 @@
         <Root>
             <ext:Node Text="Tasks">
                 <Children>
-                    <ext:Node Icon="Folder">
+                    <ext:Node IconCls="x-md md-icon-folder">
                         <CustomAttributes>
                             <ext:ConfigItem Name="task" Value="Project: Testing" Mode="Value" />
                             <ext:ConfigItem Name="duration" Value="2" />
                             <ext:ConfigItem Name="user" Value="Core Team" Mode="Value" />
                         </CustomAttributes>
                         <Children>
-                            <ext:Node Icon="Folder">
+                            <ext:Node IconCls="x-md md-icon-folder">
                                 <CustomAttributes>
                                     <ext:ConfigItem Name="task" Value="Mac OSX" Mode="Value" />
                                     <ext:ConfigItem Name="duration" Value="0.75" />
@@ -324,7 +324,7 @@
                                     </ext:Node>
                                 </Children>
                             </ext:Node>
-                            <ext:Node Icon="Folder">
+                            <ext:Node IconCls="x-md md-icon-folder">
                                 <CustomAttributes>
                                     <ext:ConfigItem Name="task" Value="Windows" Mode="Value" />
                                     <ext:ConfigItem Name="duration" Value="3.75" />
@@ -361,7 +361,7 @@
                                     </ext:Node>
                                 </Children>
                             </ext:Node>
-                            <ext:Node Icon="Folder">
+                            <ext:Node IconCls="x-md md-icon-folder">
                                 <CustomAttributes>
                                     <ext:ConfigItem Name="task" Value="Linux" Mode="Value" />
                                     <ext:ConfigItem Name="duration" Value="0.5" />
@@ -464,7 +464,7 @@
             <FieldErrorChange Handler="if (field.hasFocus && (!this._e || this._e.field != field || this._e.error != error)) {this._e = {field: field, error: error}; var c = this.callouts[0]; c.triggerElement = field.el; error ? (c.hidden ? c.show() : c.setHtml(field.getActiveError())) : c.hide();}" />
         </Listeners>
         <Callouts>
-            <ext:Callout runat="server" Delegate=".x-field" Trigger="Click" Title="Errors" Icon="Decline">
+            <ext:Callout runat="server" Delegate=".x-field" Trigger="Click" Title="Errors" IconCls="x-md md-icon-cancel">
                 <Listeners>
                     <BeforeShow Fn="setFieldErrors" />
                 </Listeners>

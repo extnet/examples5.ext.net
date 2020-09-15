@@ -14,7 +14,6 @@
         <ext:Window
             runat="server"
             Title="Resize Me"
-            Icon="ArrowOut"
             Width="500"
             Height="480"
             MinWidth="300"
@@ -43,8 +42,8 @@
                     />
             </Items>
             <Buttons>
-                <ext:Button runat="server" Text="Save" Icon="Disk" />
-                <ext:Button runat="server" Text="Cancel" Icon="Decline" />
+                <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save" />
+                <ext:Button runat="server" Text="Cancel" IconCls="x-md md-icon-cancel" />
             </Buttons>
         </ext:Window>
     </form>

@@ -81,7 +81,7 @@
             Width="500"
             Height="250"
             Title="DisplayTime"
-            Icon="Date"
+            IconCls="x-md md-icon-calendar-today"
             Closable="false"
             BodyPadding="18"
             DefaultLabelSeparator=" "

@@ -58,7 +58,7 @@
         <ext:TreePanel
             ID="TreePanel1"
             runat="server"
-            Icon="Anchor"
+            IconCls="x-md md-icon-anchor"
             Title="Tree"
             Width="550"
             RootVisible="false"

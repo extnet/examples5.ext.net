@@ -65,7 +65,7 @@
                     Height="100"
                     BodyPadding="18"
                     Frame="true"
-                    Icon="Information">
+                    IconCls="x-md md-icon-info">
                     <Content>
                         <b>GridPanel with Form Details</b>
                         <p>Click on any record with the GridPanel and the record details will be loaded into the Details Form.</p>
@@ -75,7 +75,7 @@
                     runat="server"
                     Title="Employees"
                     MarginSpec="0 0 5 5"
-                    Icon="UserSuit"
+                    IconCls="x-md md-icon-person"
                     Region="Center"
                     Frame="true">
                     <Store>
@@ -128,7 +128,7 @@
                     Frame="true"
                     Title="Employee Details"
                     Width="280"
-                    Icon="User"
+                    IconCls="x-md md-icon-person"
                     DefaultAnchor="100%"
                     Scrollable="Both">
                     <FieldDefaults ReadOnly="true" />

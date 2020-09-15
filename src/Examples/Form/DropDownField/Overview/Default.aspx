@@ -39,7 +39,7 @@
             <Component>
                 <ext:Panel runat="server" Height="250" Layout="Accordion">
                     <Items>
-                        <ext:MenuPanel runat="server" Title="Group 1" Icon="Group">
+                        <ext:MenuPanel runat="server" Title="Group 1" IconCls="x-md md-icon-group">
                             <Menu runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" />
@@ -52,7 +52,7 @@
                             </Menu>
                         </ext:MenuPanel>
 
-                        <ext:MenuPanel runat="server" Title="Group 2" Icon="Group">
+                        <ext:MenuPanel runat="server" Title="Group 2" IconCls="x-md md-icon-group">
                             <Menu runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" />
@@ -65,7 +65,7 @@
                             </Menu>
                         </ext:MenuPanel>
 
-                        <ext:MenuPanel runat="server" Title="Group 3" Icon="Group">
+                        <ext:MenuPanel runat="server" Title="Group 3" IconCls="x-md md-icon-group">
                             <Menu runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" />
@@ -108,9 +108,9 @@
                             SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
-                                    <ext:MenuItem runat="server" Text="Item 1" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 2" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 3" Icon="Group" />
+                                    <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 2" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 3" IconCls="x-md md-icon-group" />
                                 </Items>
                                 <Listeners>
                                     <Click Handler="#{Field2}.setValue(menuItem.text);" />
@@ -121,9 +121,9 @@
                         <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
-                                    <ext:MenuItem runat="server" Text="Item 4" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 5" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 6" Icon="Group" />
+                                    <ext:MenuItem runat="server" Text="Item 4" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 5" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 6" IconCls="x-md md-icon-group" />
                                 </Items>
                                 <Listeners>
                                     <Click Handler="#{Field2}.setValue(menuItem.text);" />
@@ -134,9 +134,9 @@
                         <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
-                                    <ext:MenuItem runat="server" Text="Item 7" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 8" Icon="Group" />
-                                    <ext:MenuItem runat="server" Text="Item 9" Icon="Group" />
+                                    <ext:MenuItem runat="server" Text="Item 7" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 8" IconCls="x-md md-icon-group" />
+                                    <ext:MenuItem runat="server" Text="Item 9" IconCls="x-md md-icon-group" />
                                 </Items>
                                 <Listeners>
                                     <Click Handler="#{Field2}.setValue(menuItem.text);" />
@@ -159,7 +159,7 @@
                 <ext:TreePanel
                     runat="server"
                     Title="My Task List"
-                    Icon="Accept"
+                    IconCls="x-md md-icon-check-circle-outline"
                     Height="480"
                     Width="480"
                     Shadow="false"
@@ -172,7 +172,7 @@
                     <Root>
                         <ext:Node>
                             <Children>
-                                <ext:Node Text="To Do" Icon="Folder">
+                                <ext:Node Text="To Do" IconCls="x-md md-icon-folder">
                                     <Children>
                                         <ext:Node Text="Go jogging" Leaf="true" Checked="False" />
                                         <ext:Node Text="Take a nap" Leaf="true" Checked="False" />
@@ -180,13 +180,13 @@
                                     </Children>
                                 </ext:Node>
 
-                                <ext:Node Text="Grocery List" Icon="Folder">
+                                <ext:Node Text="Grocery List" IconCls="x-md md-icon-folder">
                                     <Children>
                                         <ext:Node Text="Bananas" Leaf="true" Checked="False" />
                                         <ext:Node Text="Milk" Leaf="true" Checked="False" />
                                         <ext:Node Text="Cereal" Leaf="true" Checked="False" />
 
-                                        <ext:Node Text="Energy foods" Icon="Folder">
+                                        <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder">
                                             <Children>
                                                 <ext:Node Text="Coffee" Leaf="true" Checked="False" />
                                                 <ext:Node Text="Red Bull" Leaf="true" Checked="False" />
@@ -195,7 +195,7 @@
                                     </Children>
                                 </ext:Node>
 
-                                <ext:Node Text="Kitchen Remodel" Icon="Folder">
+                                <ext:Node Text="Kitchen Remodel" IconCls="x-md md-icon-folder">
                                     <Children>
                                         <ext:Node Text="Finish the budget" Leaf="true" Checked="False" />
                                         <ext:Node Text="Call contractors" Leaf="true" Checked="False" />
@@ -280,7 +280,7 @@
                             </ext:Column>
                             <ext:ImageCommandColumn runat="server" Align="Center">
                                 <Commands>
-                                    <ext:ImageCommand Icon="Accept" CommandName="Pick">
+                                    <ext:ImageCommand IconCls="x-md md-icon-check-circle-outline" CommandName="Pick">
                                         <ToolTip Title="Plant" Text="Click to choose this plant" />
                                     </ext:ImageCommand>
                                 </Commands>

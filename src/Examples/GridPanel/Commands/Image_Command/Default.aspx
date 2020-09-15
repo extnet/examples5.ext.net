@@ -109,25 +109,25 @@
                         />
                     <ext:ImageCommandColumn runat="server" Width="200">
                         <Commands>
-                            <ext:ImageCommand CommandName="Delete" Icon="Delete" Text="Delete">
+                            <ext:ImageCommand CommandName="Delete" IconCls="x-md md-icon-remove-circle-outline" Text="Delete">
                                 <ToolTip Text="Delete" />
                             </ext:ImageCommand>
-                            <ext:ImageCommand CommandName="Edit" Icon="TableEdit" Text="Edit">
+                            <ext:ImageCommand CommandName="Edit" IconCls="x-md md-icon-edit" Text="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
-                            <ext:ImageCommand CommandName="Disabled" Icon="PageWhiteEdit" Text="Disabled" Disabled="true">
+                            <ext:ImageCommand CommandName="Disabled" IconCls="x-md md-icon-edit" Text="Disabled" Disabled="true">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
                         </Commands>
 
                         <GroupCommands>
-                            <ext:GroupImageCommand CommandName="Delete" Icon="Delete" Text="Delete">
+                            <ext:GroupImageCommand CommandName="Delete" IconCls="x-md md-icon-remove-circle-outline" Text="Delete">
                                 <ToolTip Text="Delete" />
                             </ext:GroupImageCommand>
-                            <ext:GroupImageCommand CommandName="Edit" Icon="TableEdit" Text="Edit">
+                            <ext:GroupImageCommand CommandName="Edit" IconCls="x-md md-icon-edit" Text="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:GroupImageCommand>
-                            <ext:GroupImageCommand CommandName="Chart" Icon="ChartBar" RightAlign="true">
+                            <ext:GroupImageCommand CommandName="Chart" IconCls="x-md md-icon-bar-chart" RightAlign="true">
                                 <ToolTip Text="Chart" />
                             </ext:GroupImageCommand>
                         </GroupCommands>

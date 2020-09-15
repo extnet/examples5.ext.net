@@ -85,7 +85,7 @@
                 <ext:ListItem Text="Text2" Value="2" />
             </Items>
             <Triggers>
-                <ext:FieldTrigger Icon="Clear" QTip="Remove selected" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" QTip="Remove selected" />
             </Triggers>
             <Listeners>
                 <TriggerClick Handler="this.removeByValue(this.getValue());
@@ -129,7 +129,7 @@
                 <ext:ListItem Text="Text5" Value="5" />
             </Items>
             <Triggers>
-                <ext:FieldTrigger Icon="Clear" Qtip="Remove selected" />
+                <ext:FieldTrigger IconCls="x-md md-icon-clear" Qtip="Remove selected" />
             </Triggers>
             <Listeners>
                 <TriggerClick Handler="this.removeByValue(this.getValue());

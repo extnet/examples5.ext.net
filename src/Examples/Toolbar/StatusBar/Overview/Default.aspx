@@ -161,7 +161,7 @@
             ID="Window1"
             runat="server"
             Collapsible="false"
-            Icon="Application"
+            IconCls="x-md md-icon-open-in-new"
             Title="StatusBar Window"
             Width="960"
             MinWidth="350"

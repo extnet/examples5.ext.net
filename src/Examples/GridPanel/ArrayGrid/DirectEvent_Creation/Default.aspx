@@ -179,7 +179,7 @@
                     <ext:Button
                         runat="server"
                         Text="Add GridPanel"
-                        Icon="Add">
+                        IconCls="x-md md-icon-add-circle-outline">
                         <DirectEvents>
                             <Click OnEvent="Button1_Click">
                                 <EventMask ShowMask="true"

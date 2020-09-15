@@ -51,28 +51,28 @@
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData"
                             />
 
                         <ext:Button
                             runat="server"
                             Text="Save 1st Chart"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart(#{Chart1});"
                             />
 
                         <ext:Button
                             runat="server"
                             Text="Save 2nd Chart"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart(#{Chart2});"
                             />
 
                         <ext:Button
                             runat="server"
                             Text="Save 3rd Chart"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart(#{Chart3});"
                             />
                     </Items>

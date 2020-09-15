@@ -129,13 +129,13 @@
                     <Items>
                         <ext:ToolbarFill />
 
-                        <ext:Button runat="server" Icon="BulletPlus" Text="Expand All">
+                        <ext:Button runat="server" IconCls="x-md md-icon-expand-more" Text="Expand All">
                             <Listeners>
                                 <Click Handler="#{Dashboard}.el.select('.group-header').removeCls('collapsed');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Icon="BulletMinus" Text="Collapse All">
+                        <ext:Button runat="server" IconCls="x-md md-icon-expand-less" Text="Collapse All">
                             <Listeners>
                                 <Click Handler="#{Dashboard}.el.select('.group-header').addCls('collapsed');" />
                             </Listeners>

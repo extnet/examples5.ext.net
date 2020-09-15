@@ -92,7 +92,7 @@
             Title="RowExpander plugin with server side data"
             Collapsible="true"
             AnimCollapse="true"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Width="960"
             Height="480">
             <Store>

@@ -43,7 +43,7 @@
             <LoadMask ShowMask="true" />
         </Loader>
         <Buttons>
-            <ext:Button runat="server" Text="Load" Icon="PluginGo">
+            <ext:Button runat="server" Text="Load" IconCls="x-md md-icon-extension">
                 <Listeners>
                     <Click Handler="this.up('panel').load();this.disable();" />
                 </Listeners>

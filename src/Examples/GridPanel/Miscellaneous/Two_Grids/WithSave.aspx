@@ -100,7 +100,7 @@
             Closable="false"
             Height="553"
             Width="720"
-            Icon="WorldAdd"
+            IconCls="x-md md-icon-add-circle-outline"
             Title="Country Selector"
             BodyPadding="18"
             BodyBorder="false"
@@ -191,12 +191,12 @@
                 </ext:GridPanel>
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save Selected Countries" Icon="Disk">
+                <ext:Button ID="Button1" runat="server" Text="Save Selected Countries" IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="#{GridPanel2}.store.sync();" />
                     </Listeners>
                 </ext:Button>
-                <ext:Button ID="Button2" runat="server" Text="Cancel" Icon="Cancel">
+                <ext:Button ID="Button2" runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
                     <Listeners>
                         <Click Handler="CountrySelector.removeAll(GridPanel1, GridPanel2);" />
                     </Listeners>

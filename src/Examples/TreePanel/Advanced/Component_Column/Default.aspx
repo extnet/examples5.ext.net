@@ -17,7 +17,7 @@
             ID="TreePanel1"
             runat="server"
             Title="My Task List"
-            Icon="Accept"
+            IconCls="x-md md-icon-check-circle-outline"
             Height="480"
             Width="360"
             UseArrows="true"
@@ -28,7 +28,7 @@
             <Root>
                 <ext:Node>
                     <Children>
-                        <ext:Node Text="To Do" Icon="Folder" Expanded="true">
+                        <ext:Node Text="To Do" IconCls="x-md md-icon-folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Go jogging" Leaf="true" />
                                 <ext:Node Text="Take a nap" Leaf="true" />
@@ -36,13 +36,13 @@
                             </Children>
                         </ext:Node>
 
-                        <ext:Node Text="Grocery List" Icon="Folder" Expanded="true">
+                        <ext:Node Text="Grocery List" IconCls="x-md md-icon-folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Bananas" Leaf="true" />
                                 <ext:Node Text="Milk" Leaf="true" />
                                 <ext:Node Text="Cereal" Leaf="true" />
 
-                                <ext:Node Text="Energy foods" Icon="Folder" Expanded="true">
+                                <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder" Expanded="true">
                                     <Children>
                                         <ext:Node Text="Coffee" Leaf="true" />
                                         <ext:Node Text="Red Bull" Leaf="true" />
@@ -51,7 +51,7 @@
                             </Children>
                         </ext:Node>
 
-                        <ext:Node Text="Kitchen Remodel" Icon="Folder" Expanded="true">
+                        <ext:Node Text="Kitchen Remodel" IconCls="x-md md-icon-folder" Expanded="true">
                             <Children>
                                 <ext:Node Text="Finish the budget" Leaf="true" />
                                 <ext:Node Text="Call contractors" Leaf="true" />

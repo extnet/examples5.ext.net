@@ -34,7 +34,7 @@
                     runat="server"
                     Region="Center"
                     Title="TaskManager example"
-                    Icon="Time"
+                    IconCls="x-md md-icon-watch-later"
                     Border="false">
                     <TopBar>
                         <ext:Toolbar runat="server">
@@ -43,7 +43,6 @@
                                     ID="btnStartAll"
                                     runat="server"
                                     Text="Start All Tasks"
-                                    Icon="ControlPlayBlue"
                                     Disabled="true">
                                     <Listeners>
                                         <Click Handler="this.disable();#{TaskManager1}.startAll();#{btnStopAll}.enable()" />
@@ -52,8 +51,7 @@
                                 <ext:Button
                                     ID="btnStopAll"
                                     runat="server"
-                                    Text="Stop All Tasks"
-                                    Icon="ControlStopBlue">
+                                    Text="Stop All Tasks">
                                     <Listeners>
                                         <Click Handler="this.disable();#{TaskManager1}.stopAll();#{btnStartAll}.enable();" />
                                     </Listeners>

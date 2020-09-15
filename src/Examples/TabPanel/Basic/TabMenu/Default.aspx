@@ -60,7 +60,7 @@
                                 <ext:Label runat="server" Text="Rename Tab:" StyleSpec="padding-left:30px;" />
                                 <ext:TextField ID="RenameField" runat="server" Text="New title" StyleSpec="margin-left:30px;">
                                     <Triggers>
-                                        <ext:FieldTrigger Icon="Empty" QTip="Click to rename" />
+                                        <ext:FieldTrigger IconCls="x-md md-icon-edit" QTip="Click to rename" />
                                     </Triggers>
                                     <Listeners>
                                         <TriggerClick Handler="var menu = this.up('menu'); menu.tab.setTitle(this.getValue());menu.hide();" />

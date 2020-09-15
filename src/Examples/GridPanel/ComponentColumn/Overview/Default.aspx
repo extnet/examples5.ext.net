@@ -163,8 +163,8 @@
                         <Component>
                             <ext:Container runat="server" Layout="HBox">
                                 <Items>
-                                    <ext:Button runat="server" Text="Button 1" Icon="Add" />
-                                    <ext:Button runat="server" Text="Button 2" Icon="Decline" />
+                                    <ext:Button runat="server" Text="Button 1" IconCls="x-md md-icon-add-circle-outline" />
+                                    <ext:Button runat="server" Text="Button 2" IconCls="x-md md-icon-cancel" />
                                 </Items>
                             </ext:Container>
                         </Component>

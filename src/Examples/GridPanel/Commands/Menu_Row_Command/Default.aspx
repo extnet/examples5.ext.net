@@ -108,15 +108,15 @@
                         />
                     <ext:CommandColumn runat="server" Width="120">
                         <Commands>
-                            <ext:GridCommand Icon="ArrowDown">
+                            <ext:GridCommand IconCls="x-md md-icon-arrow-circle-down">
                                 <Menu EnableScrolling="false">
                                     <Items>
-                                        <ext:MenuCommand Text="Item1" Icon="ArrowRight" CommandName="Item1" />
-                                        <ext:MenuCommand Text="Submenu" Icon="ArrowRight">
+                                        <ext:MenuCommand Text="Item1" IconCls="x-md md-icon-arrow-forward" CommandName="Item1" />
+                                        <ext:MenuCommand Text="Submenu" IconCls="x-md md-icon-arrow-forward">
                                             <Menu EnableScrolling="false">
                                                 <Items>
-                                                    <ext:MenuCommand Text="Item11" Icon="ArrowRight" CommandName="Item11" />
-                                                    <ext:MenuCommand Text="Item12" Icon="ArrowRight" CommandName="Item12" />
+                                                    <ext:MenuCommand Text="Item11" IconCls="x-md md-icon-arrow-forward" CommandName="Item11" />
+                                                    <ext:MenuCommand Text="Item12" IconCls="x-md md-icon-arrow-forward" CommandName="Item12" />
                                                 </Items>
                                             </Menu>
                                         </ext:MenuCommand>
@@ -127,15 +127,15 @@
 
                             <ext:CommandSeparator />
 
-                            <ext:SplitCommand Icon="ArrowDown" CommandName="Split">
+                            <ext:SplitCommand IconCls="x-md md-icon-arrow-circle-down" CommandName="Split">
                                 <Menu EnableScrolling="false">
                                     <Items>
-                                        <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />
-                                        <ext:MenuCommand Text="Submenu" Icon="ArrowRight">
+                                        <ext:MenuCommand Text="Item" IconCls="x-md md-icon-arrow-forward" CommandName="Item" />
+                                        <ext:MenuCommand Text="Submenu" IconCls="x-md md-icon-arrow-forward">
                                             <Menu EnableScrolling="false">
                                                 <Items>
-                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />
-                                                    <ext:MenuCommand Text="Item" Icon="ArrowRight" CommandName="Item" />
+                                                    <ext:MenuCommand Text="Item" IconCls="x-md md-icon-arrow-forward" CommandName="Item" />
+                                                    <ext:MenuCommand Text="Item" IconCls="x-md md-icon-arrow-forward" CommandName="Item" />
                                                 </Items>
                                             </Menu>
                                         </ext:MenuCommand>

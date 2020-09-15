@@ -133,13 +133,13 @@
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
-                            Icon="ArrowRefresh"
+                            IconCls="x-md md-icon-refresh"
                             OnDirectClick="ReloadData" />
 
                         <ext:Button
                             runat="server"
                             Text="={Ext.os.is.Desktop ? 'Download' : 'Preview'}"
-                            Icon="Disk"
+                            IconCls="x-md md-icon-save"
                             Handler="saveChart" />
                     </Items>
                 </ext:Toolbar>

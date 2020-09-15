@@ -134,7 +134,7 @@
                     <ext:Button
                         runat="server"
                         Text="Print"
-                        Icon="Printer"
+                        IconCls="x-md md-icon-print"
                         Handler="this.up('grid').print();"
                         />
                 </Items>

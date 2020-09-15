@@ -82,7 +82,7 @@
                 <Columns>
                     <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
                         <Commands>
-                            <ext:ImageCommand CommandName="Edit" Icon="NoteEdit" Text="Edit">
+                            <ext:ImageCommand CommandName="Edit" IconCls="x-md md-icon-edit" Text="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
                         </Commands>
@@ -93,8 +93,8 @@
                     <ext:Column runat="server" Text="Price" Width="100" DataIndex="price" Align="End" RightCommandAlign="false">
                         <Renderer Format="UsMoney" />
                         <Commands>
-                            <ext:ImageCommand CommandName="Dollar" Icon="MoneyDollar" />
-                            <ext:ImageCommand CommandName="Euro" Icon="MoneyEuro" />
+                            <ext:ImageCommand CommandName="Dollar" IconCls="x-md md-icon-attach-money" />
+                            <ext:ImageCommand CommandName="Euro" IconCls="x-md md-icon-euro" />
                         </Commands>
                         <Listeners>
                             <Command Fn="onCommand" />
@@ -103,8 +103,8 @@
                     <ext:Column runat="server" Text="Change" Width="100" DataIndex="change" Align="End" RightCommandAlign="false">
                         <Renderer Fn="change" />
                         <Commands>
-                            <ext:ImageCommand CommandName="Dollar" Icon="MoneyDollar" />
-                            <ext:ImageCommand CommandName="Euro" Icon="MoneyEuro" />
+                            <ext:ImageCommand CommandName="Dollar" IconCls="x-md md-icon-attach-money" />
+                            <ext:ImageCommand CommandName="Euro" IconCls="x-md md-icon-euro" />
                         </Commands>
                         <PrepareCommand Fn="prepare" />
                         <Listeners>
@@ -114,7 +114,7 @@
                     <ext:Column runat="server" Text="Change" DataIndex="pctChange" Align="End">
                         <Renderer Fn="pctChange" />
                         <Commands>
-                            <ext:ImageCommand CommandName="Chart" Icon="ChartBar" Style="margin-left:5px !important;" />
+                            <ext:ImageCommand CommandName="Chart" IconCls="x-md md-icon-bar-chart" Style="margin-left:5px !important;" />
                         </Commands>
                         <Listeners>
                             <Command Fn="onCommand" />

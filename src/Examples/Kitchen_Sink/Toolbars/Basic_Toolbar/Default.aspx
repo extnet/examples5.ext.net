@@ -17,7 +17,7 @@
         <Items>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:SplitButton runat="server" Text="Menu Button" Icon="ApplicationViewList">
+                    <ext:SplitButton runat="server" Text="Menu Button" IconCls="x-md md-icon-apps">
                         <Menu>
                             <ext:Menu runat="server">
                                 <Items>
@@ -27,7 +27,7 @@
                         </Menu>
                     </ext:SplitButton>
                     <ext:ToolbarSeparator runat="server" />
-                    <ext:SplitButton runat="server" Text="Cut" Icon="Cut">
+                    <ext:SplitButton runat="server" Text="Cut" IconCls="x-md md-icon-content-cut">
                         <Menu>
                             <ext:Menu runat="server">
                                 <Items>
@@ -36,8 +36,8 @@
                             </ext:Menu>
                         </Menu>
                     </ext:SplitButton>
-                    <ext:Button runat="server" Text="Copy" Icon="PageCopy" />
-                    <ext:Button runat="server" Text="Paste" Icon="PastePlain">
+                    <ext:Button runat="server" Text="Copy" IconCls="x-md md-icon-content-copy" />
+                    <ext:Button runat="server" Text="Paste" IconCls="x-md md-icon-content-paste">
                         <Menu>
                             <ext:Menu runat="server">
                                 <Items>
@@ -47,7 +47,7 @@
                         </Menu>
                     </ext:Button>
                     <ext:ToolbarSeparator runat="server" />
-                    <ext:Button runat="server" Text="Format" Icon="ApplicationEdit" />
+                    <ext:Button runat="server" Text="Format" IconCls="x-md md-icon-edit" />
                 </Items>
             </ext:Toolbar>
         </Items>

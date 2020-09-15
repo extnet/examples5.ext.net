@@ -64,7 +64,7 @@
             runat="server"
             Collapsible="true"
             Maximizable="true"
-            Icon="Lorry"
+            IconCls="x-md md-icon-business-center"
             Title="Job List"
             Width="960"
             Height="480"

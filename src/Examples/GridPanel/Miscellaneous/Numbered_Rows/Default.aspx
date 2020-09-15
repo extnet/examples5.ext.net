@@ -69,7 +69,7 @@
         <ext:GridPanel
             runat="server"
             Title="Grid with Numbered Rows and Force Fit"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Width="960"
             Height="480">
             <Store>

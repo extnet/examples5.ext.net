@@ -94,7 +94,7 @@
             runat="server"
             StoreID="Store1"
             Title="Grid with Custom Column and Force Fit"
-            Icon="Table"
+            IconCls="x-md md-icon-grid-on"
             Width="960"
             Height="480">
             <ColumnModel ID="ColumnModel3" runat="server">
