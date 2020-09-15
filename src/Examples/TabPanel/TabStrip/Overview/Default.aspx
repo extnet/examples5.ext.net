@@ -42,8 +42,18 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:Panel ID="pnlSummary" runat="server" Html="Summary" Header="false" />
-                <ext:Panel ID="pnlData" runat="server" Html="Data" Header="false" />
+                <ext:Panel
+                    ID="pnlSummary"
+                    runat="server"
+                    Html="Summary"
+                    Header="false"
+                    />
+                <ext:Panel
+                    ID="pnlData"
+                    runat="server"
+                    Html="Data"
+                    Header="false"
+                    />
             </Items>
         </ext:Panel>
 

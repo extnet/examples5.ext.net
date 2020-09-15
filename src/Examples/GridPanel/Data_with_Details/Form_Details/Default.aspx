@@ -148,7 +148,12 @@
                         <ext:DateField runat="server" FieldLabel="Birth date" Name="BirthDate" Format="yyyy-MM-dd" />
                         <ext:TextField runat="server" FieldLabel="Region" Name="Region" />
                         <ext:TextField runat="server" FieldLabel="Country" Name="Country" />
-                        <ext:TextArea runat="server" FieldLabel="Note" Height="50" Name="Notes" />
+                        <ext:TextArea
+                            runat="server"
+                            FieldLabel="Note"
+                            Height="50"
+                            Name="Notes"
+                            />
                     </Items>
                 </ext:FormPanel>
             </Items>

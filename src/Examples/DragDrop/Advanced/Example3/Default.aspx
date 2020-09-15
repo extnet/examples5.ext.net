@@ -298,9 +298,24 @@
                     </Store>
                     <ColumnModel>
                         <Columns>
-                            <ext:Column runat="server" DataIndex="Name" Text="NAME" Width="200" />
-                            <ext:Column runat="server" DataIndex="Address" Text="Address" Width="480" />
-                            <ext:Column runat="server" DataIndex="Telephone" Text="Telephone" Width="100" />
+                            <ext:Column
+                                runat="server"
+                                DataIndex="Name"
+                                Text="NAME"
+                                Width="200"
+                                />
+                            <ext:Column
+                                runat="server"
+                                DataIndex="Address"
+                                Text="Address"
+                                Width="480"
+                                />
+                            <ext:Column
+                                runat="server"
+                                DataIndex="Telephone"
+                                Text="Telephone"
+                                Width="100"
+                                />
                         </Columns>
                     </ColumnModel>
                     <Features>

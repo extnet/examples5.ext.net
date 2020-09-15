@@ -117,9 +117,24 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Test1" DataIndex="test1" Flex="1" />
-                    <ext:Column runat="server" Text="Test2" DataIndex="test2" Flex="1" />
-                    <ext:Column runat="server" Text="Test3" DataIndex="test3" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Test1"
+                        DataIndex="test1"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Test2"
+                        DataIndex="test2"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Test3"
+                        DataIndex="test3"
+                        Flex="1"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

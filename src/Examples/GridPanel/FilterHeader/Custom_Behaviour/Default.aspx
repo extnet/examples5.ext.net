@@ -107,8 +107,19 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="ID" DataIndex="Id" Filterable="false" Width="40" />
-                            <ext:Column runat="server" Text="Company" DataIndex="Company" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="ID"
+                                DataIndex="Id"
+                                Filterable="false"
+                                Width="40"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                DataIndex="Company"
+                                Flex="1"
+                                />
                         </Columns>
                     </ColumnModel>
                     <Plugins>

@@ -135,7 +135,12 @@
                                 <div class="editable" field="txt">Lorem ipsum dolor sit amet #2</div>
                                 <div class="editable" field="tar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a urna. Praesent libero. Nullam vitae nisl. Maecenas pellentesque, magna eget pharetra fermentum, tortor dolor suscipit est, ultricies sollicitudin turpis orci vitae quam. Vestibulum augue diam, auctor ac, interdum eu, egestas ac, leo. Nulla justo mauris, mollis quis, consectetur non, varius ac, nunc. Sed facilisis. Sed elementum. Praesent tortor. Maecenas ipsum tellus, fringilla nec, scelerisque sed, scelerisque a, nulla. Phasellus eleifend interdum arcu. Nulla porta ligula placerat tortor.</div>
 
-                                <ext:Editor ID="TextLineEditor" runat="server" AutoSize="true" Shadow="false" />
+                                <ext:Editor
+                                    ID="TextLineEditor"
+                                    runat="server"
+                                    AutoSize="true"
+                                    Shadow="false"
+                                    />
 
                                 <ext:Editor ID="TextBlockEditor" runat="server" AutoSize="true" Shadow="false">
                                     <Field>

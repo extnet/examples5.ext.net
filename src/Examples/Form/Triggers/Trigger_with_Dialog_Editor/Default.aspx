@@ -303,7 +303,12 @@
 
             <ext:Panel runat="server" Layout="Fit" BodyPadding="18">
                 <Items>
-                    <ext:RadioGroup ID="RatingChoose" runat="server" Vertical="true" ColumnsNumber="1" />
+                    <ext:RadioGroup
+                        ID="RatingChoose"
+                        runat="server"
+                        Vertical="true"
+                        ColumnsNumber="1"
+                        />
                 </Items>
                 <CustomConfig>
                     <ext:ConfigItem Name="initValue" Value="setActiveRating" Mode="Raw" />

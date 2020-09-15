@@ -202,7 +202,12 @@
                     <ColumnModel runat="server">
                         <Columns>
                             <ext:Column runat="server" Text="ID" DataIndex="Id" />
-                            <ext:Column runat="server" Text="Company" DataIndex="Company" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                DataIndex="Company"
+                                Flex="1"
+                                />
                             <ext:Column runat="server" Text="Price" DataIndex="Price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>

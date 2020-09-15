@@ -93,8 +93,18 @@
                         <ext:Button runat="server" Text="Change Color" OnDirectClick="ChangeColor" Disabled="true" />
                         <ext:Button runat="server" Text="Rotate -45" OnDirectClick="RotateLeft" Disabled="true" />
                         <ext:Button runat="server" Text="Rotate back (animaton)" OnDirectClick="RotateRight" Disabled="true" />
-                        <ext:Button runat="server" Text="Scaling" OnDirectClick="Scaling" Disabled="true" />
-                        <ext:Button runat="server" Text="Translation" OnDirectClick="Translation" Disabled="true" />
+                        <ext:Button
+                            runat="server"
+                            Text="Scaling"
+                            OnDirectClick="Scaling"
+                            Disabled="true"
+                            />
+                        <ext:Button
+                            runat="server"
+                            Text="Translation"
+                            OnDirectClick="Translation"
+                            Disabled="true"
+                            />
                     </Items>
                 </ext:Panel>
                 <ext:DrawContainer ID="Draw1" runat="server" Region="Center" />

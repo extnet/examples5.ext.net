@@ -180,7 +180,12 @@
                         </Editor>
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="Project" DataIndex="Name" Width="180" />
+                    <ext:Column
+                        runat="server"
+                        Text="Project"
+                        DataIndex="Name"
+                        Width="180"
+                        />
 
                     <ext:Column runat="server" Text="Schedule">
                         <Columns>

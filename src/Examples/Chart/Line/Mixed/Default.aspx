@@ -174,7 +174,12 @@
                     </Gradients>
 
                     <Axes>
-                        <ext:NumericAxis Position="Left" Minimum="0" Maximum="100" Fields="Data1" Grid="true">
+                        <ext:NumericAxis
+                            Position="Left"
+                            Minimum="0"
+                            Maximum="100"
+                            Fields="Data1"
+                            Grid="true">
                             <Label FontSize="10" />
                             <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                         </ext:NumericAxis>

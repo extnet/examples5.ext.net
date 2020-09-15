@@ -145,19 +145,86 @@
             </SelectionModel>
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="Year" DataIndex="year" Flex="1" MinWidth="70" />
-                    <ext:Column runat="server" Text="Jan" DataIndex="jan" Width="50" />
-                    <ext:Column runat="server" Text="Feb" DataIndex="feb" Width="50" />
-                    <ext:Column runat="server" Text="Mar" DataIndex="mar" Width="50" />
-                    <ext:Column runat="server" Text="Apr" DataIndex="apr" Width="50" />
-                    <ext:Column runat="server" Text="May" DataIndex="may" Width="50" />
-                    <ext:Column ID="JuneColumn" runat="server" Text="Jun" DataIndex="jun" Width="50" />
-                    <ext:Column runat="server" Text="Jul" DataIndex="jul" Width="50" />
-                    <ext:Column runat="server" Text="Aug" DataIndex="aug" Width="50" />
-                    <ext:Column runat="server" Text="Sep" DataIndex="sep" Width="50" />
-                    <ext:Column runat="server" Text="Oct" DataIndex="oct" Width="50" />
-                    <ext:Column runat="server" Text="Nov" DataIndex="nov" Width="50" />
-                    <ext:Column runat="server" Text="Dec" DataIndex="dec" Width="50" />
+                    <ext:Column
+                        runat="server"
+                        Text="Year"
+                        DataIndex="year"
+                        Flex="1"
+                        MinWidth="70"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Jan"
+                        DataIndex="jan"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Feb"
+                        DataIndex="feb"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Mar"
+                        DataIndex="mar"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Apr"
+                        DataIndex="apr"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="May"
+                        DataIndex="may"
+                        Width="50"
+                        />
+                    <ext:Column
+                        ID="JuneColumn"
+                        runat="server"
+                        Text="Jun"
+                        DataIndex="jun"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Jul"
+                        DataIndex="jul"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Aug"
+                        DataIndex="aug"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Sep"
+                        DataIndex="sep"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Oct"
+                        DataIndex="oct"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Nov"
+                        DataIndex="nov"
+                        Width="50"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Dec"
+                        DataIndex="dec"
+                        Width="50"
+                        />
                 </Columns>
             </ColumnModel>
             <ViewConfig TrackOver="false" />

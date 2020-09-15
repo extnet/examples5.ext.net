@@ -52,7 +52,12 @@
                             </Listeners>
                         </ext:CycleButton>
 
-                        <ext:Button runat="server" IconCls="summary" Text="Summary" EnableToggle="true" Pressed="true">
+                        <ext:Button
+                            runat="server"
+                            IconCls="summary"
+                            Text="Summary"
+                            EnableToggle="true"
+                            Pressed="true">
                             <Listeners>
                                 <Toggle Handler="this.up('panel').down('gridpanel').getView().getPlugin('preview').toggleExpanded(pressed);" />
                             </Listeners>

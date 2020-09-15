@@ -53,11 +53,36 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
-                    <ext:CheckColumn runat="server" Text="Active" Width="50" DataIndex="active" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange"
+                        />
+                    <ext:CheckColumn
+                        runat="server"
+                        Text="Active"
+                        Width="50"
+                        DataIndex="active"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>

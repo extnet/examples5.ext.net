@@ -118,7 +118,12 @@
                                         <ext:ModelField Name="title" Mapping="topic_title" />
                                         <ext:ModelField Name="topicId" Mapping="topic_id" />
                                         <ext:ModelField Name="author" Mapping="author" />
-                                        <ext:ModelField Name="lastPost" Mapping="post_time" Type="Date" DateFormat="timestamp" />
+                                        <ext:ModelField
+                                            Name="lastPost"
+                                            Mapping="post_time"
+                                            Type="Date"
+                                            DateFormat="timestamp"
+                                            />
                                         <ext:ModelField Name="excerpt" Mapping="post_text" />
                                     </Fields>
                                 </ext:Model>

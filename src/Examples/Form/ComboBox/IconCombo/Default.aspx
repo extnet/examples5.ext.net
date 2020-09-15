@@ -76,7 +76,7 @@
                 </ItemTpl>
             </ListConfig>
             <Listeners>
-                <Change Handler="if(this.valueCollection.getCount() > 0) {this.setIconCls(this.valueCollection.getAt(0).get('iconCls'));}" />
+                <Change Handler="if (this.valueCollection.getCount() > 0) {this.setIconCls(this.valueCollection.getAt(0).get('iconCls'));}" />
             </Listeners>
         </ext:ComboBox>
     </form>

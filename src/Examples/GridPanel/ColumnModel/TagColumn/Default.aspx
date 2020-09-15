@@ -60,7 +60,12 @@
         <ColumnModel>
             <Columns>
                 <ext:RowNumbererColumn runat="server" />
-                <ext:TagColumn runat="server" Text="Tags" DataIndex="tags" Flex="1" />
+                <ext:TagColumn
+                    runat="server"
+                    Text="Tags"
+                    DataIndex="tags"
+                    Flex="1"
+                    />
             </Columns>
         </ColumnModel>
     </ext:GridPanel>

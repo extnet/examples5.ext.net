@@ -43,8 +43,18 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column runat="server" Text="Name" Flex="1" DataIndex="name" />
-                        <ext:Column runat="server" Text="Cuisine" Flex="1" DataIndex="cuisine" />
+                        <ext:Column
+                            runat="server"
+                            Text="Name"
+                            Flex="1"
+                            DataIndex="name"
+                            />
+                        <ext:Column
+                            runat="server"
+                            Text="Cuisine"
+                            Flex="1"
+                            DataIndex="cuisine"
+                            />
                     </Columns>
                 </ColumnModel>
             </ext:GridPanel>

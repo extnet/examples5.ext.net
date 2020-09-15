@@ -186,7 +186,12 @@
                                 <ext:Checkbox ID="autoClose" runat="server" FieldLabel="Close after delay" Checked="true" />
                             </Items>
                         </ext:Container>
-                        <ext:TextField ID="acDelay" runat="server" FieldLabel="Delay" Text="2500" />
+                        <ext:TextField
+                            ID="acDelay"
+                            runat="server"
+                            FieldLabel="Delay"
+                            Text="2500"
+                            />
                     </Items>
                 </ext:FieldSet>
             </Items>

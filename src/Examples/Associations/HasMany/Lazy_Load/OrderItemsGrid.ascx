@@ -4,7 +4,12 @@
     <ColumnModel>
         <Columns>
             <ext:Column runat="server" Text="Id" DataIndex="Id" />
-            <ext:Column runat="server" Text="Product" DataIndex="Product" Flex="1" />
+            <ext:Column
+                runat="server"
+                Text="Product"
+                DataIndex="Product"
+                Flex="1"
+                />
             <ext:Column runat="server" Text="Quantity" DataIndex="Quantity" />
             <ext:Column runat="server" Text="Price" DataIndex="Price">
                 <Renderer Format="UsMoney" />

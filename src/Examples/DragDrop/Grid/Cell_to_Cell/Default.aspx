@@ -91,11 +91,26 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Width="160" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Width="160"
+                        />
                     <ext:DateColumn runat="server" Text="First Updated" DataIndex="firstChange" Width="235" />
-                    <ext:Column runat="server" Text="Price" DataIndex="price" Width="75" />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="price"
+                        Width="75"
+                        />
                     <ext:Column runat="server" Text="Stock " DataIndex="stock" Width="75" />
-                    <ext:Column runat="server" Text="Change" DataIndex="change" Width="75" />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        DataIndex="change"
+                        Width="75"
+                        />
                     <ext:Column runat="server" Text="% Change" DataIndex="pctChange" Width="75" />
                     <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="235" />
                 </Columns>

@@ -104,20 +104,50 @@
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Primary" />
-                <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Primary" />
-                <ext:Button runat="server" Text="Large" Scale="Large" UI="Primary" />
+                <ext:Button
+                    runat="server"
+                    Text="Medium"
+                    Scale="Medium"
+                    UI="Primary"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Large"
+                    Scale="Large"
+                    UI="Primary"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:Button runat="server" Text="Menu" UI="Primary" />
-                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Primary" />
-                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Primary" />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Medium"
+                    UI="Primary"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Large"
+                    UI="Primary"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:SplitButton runat="server" Text="Split" UI="Primary" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Primary" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Primary" />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Medium"
+                    UI="Primary"
+                    />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Large"
+                    UI="Primary"
+                    />
             </Items>
         </ext:Container>
 
@@ -132,20 +162,50 @@
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Danger" />
-                <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Danger" />
-                <ext:Button runat="server" Text="Large" Scale="Large" UI="Danger" />
+                <ext:Button
+                    runat="server"
+                    Text="Medium"
+                    Scale="Medium"
+                    UI="Danger"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Large"
+                    Scale="Large"
+                    UI="Danger"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:Button runat="server" Text="Menu" UI="Danger" />
-                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Danger" />
-                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Danger" />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Medium"
+                    UI="Danger"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Large"
+                    UI="Danger"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:SplitButton runat="server" Text="Split" UI="Danger" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Danger" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Danger" />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Medium"
+                    UI="Danger"
+                    />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Large"
+                    UI="Danger"
+                    />
             </Items>
         </ext:Container>
 
@@ -160,20 +220,50 @@
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Info" />
-                <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Info" />
-                <ext:Button runat="server" Text="Large" Scale="Large" UI="Info" />
+                <ext:Button
+                    runat="server"
+                    Text="Medium"
+                    Scale="Medium"
+                    UI="Info"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Large"
+                    Scale="Large"
+                    UI="Info"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:Button runat="server" Text="Menu" UI="Info" />
-                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Info" />
-                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Info" />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Medium"
+                    UI="Info"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Large"
+                    UI="Info"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:SplitButton runat="server" Text="Split" UI="Info" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Info" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Info" />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Medium"
+                    UI="Info"
+                    />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Large"
+                    UI="Info"
+                    />
             </Items>
         </ext:Container>
 
@@ -188,20 +278,50 @@
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Success" />
-                <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Success" />
-                <ext:Button runat="server" Text="Large" Scale="Large" UI="Success" />
+                <ext:Button
+                    runat="server"
+                    Text="Medium"
+                    Scale="Medium"
+                    UI="Success"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Large"
+                    Scale="Large"
+                    UI="Success"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:Button runat="server" Text="Menu" UI="Success" />
-                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Success" />
-                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Success" />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Medium"
+                    UI="Success"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Large"
+                    UI="Success"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:SplitButton runat="server" Text="Split" UI="Success" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Success" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Success" />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Medium"
+                    UI="Success"
+                    />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Large"
+                    UI="Success"
+                    />
             </Items>
         </ext:Container>
 
@@ -216,20 +336,50 @@
             </Defaults>
             <Items>
                 <ext:Button runat="server" Text="Small" UI="Warning" />
-                <ext:Button runat="server" Text="Medium" Scale="Medium" UI="Warning" />
-                <ext:Button runat="server" Text="Large" Scale="Large" UI="Warning" />
+                <ext:Button
+                    runat="server"
+                    Text="Medium"
+                    Scale="Medium"
+                    UI="Warning"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Large"
+                    Scale="Large"
+                    UI="Warning"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:Button runat="server" Text="Menu" UI="Warning" />
-                <ext:Button runat="server" Text="Menu" Scale="Medium" UI="Warning" />
-                <ext:Button runat="server" Text="Menu" Scale="Large" UI="Warning" />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Medium"
+                    UI="Warning"
+                    />
+                <ext:Button
+                    runat="server"
+                    Text="Menu"
+                    Scale="Large"
+                    UI="Warning"
+                    />
 
                 <ext:Component runat="server" Width="25" />
 
                 <ext:SplitButton runat="server" Text="Split" UI="Warning" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Medium" UI="Warning" />
-                <ext:SplitButton runat="server" Text="Split" Scale="Large" UI="Warning" />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Medium"
+                    UI="Warning"
+                    />
+                <ext:SplitButton
+                    runat="server"
+                    Text="Split"
+                    Scale="Large"
+                    UI="Warning"
+                    />
             </Items>
         </ext:Container>
     </form>

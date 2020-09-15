@@ -71,7 +71,12 @@
                         <ext:TextField runat="server" FieldLabel="First Name" EmptyText="First Name" Name="first" />
                         <ext:TextField runat="server" FieldLabel="Last Name" EmptyText="Last Name" Name="last" />
                         <ext:TextField runat="server" FieldLabel="Company" Name="company" />
-                        <ext:TextField runat="server" FieldLabel="Email" Name="email" Vtype="email" />
+                        <ext:TextField
+                            runat="server"
+                            FieldLabel="Email"
+                            Name="email"
+                            Vtype="email"
+                            />
                         <ext:ComboBox
                             runat="server"
                             FieldLabel="State"

@@ -28,7 +28,12 @@
 
                     <ext:ResponsiveRule Rule="tall">
                         <ResponsiveConfig>
-                            <ext:Button runat="server" IconAlign="Top" TextAlign="Center" Width="120" />
+                            <ext:Button
+                                runat="server"
+                                IconAlign="Top"
+                                TextAlign="Center"
+                                Width="120"
+                                />
                         </ResponsiveConfig>
                     </ext:ResponsiveRule>
                 </ResponsiveConfig>

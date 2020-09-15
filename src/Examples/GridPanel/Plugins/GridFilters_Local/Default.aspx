@@ -84,7 +84,12 @@
                                 <ext:NumberFilter />
                             </Filter>
                         </ext:Column>
-                        <ext:Column ID="CompanyColumn" runat="server" Text="Company" DataIndex="Company" Flex="1">
+                        <ext:Column
+                            ID="CompanyColumn"
+                            runat="server"
+                            Text="Company"
+                            DataIndex="Company"
+                            Flex="1">
                             <Filter>
                                 <ext:StringFilter />
                             </Filter>

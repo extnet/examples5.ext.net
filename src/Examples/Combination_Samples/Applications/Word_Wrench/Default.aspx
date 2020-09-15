@@ -412,7 +412,12 @@
                             StoreID="Store1">
                             <ColumnModel>
                                 <Columns>
-                                    <ext:Column runat="server" Text="Text" DataIndex="Text" Flex="1" />
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Text"
+                                        DataIndex="Text"
+                                        Flex="1"
+                                        />
                                     <ext:Column runat="server" Text="Count" DataIndex="Count" />
                                 </Columns>
                             </ColumnModel>

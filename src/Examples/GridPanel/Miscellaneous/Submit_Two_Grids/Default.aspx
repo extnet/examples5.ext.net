@@ -92,9 +92,25 @@
             Height="250">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="company"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>
@@ -108,9 +124,25 @@
             Height="250">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="company"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>

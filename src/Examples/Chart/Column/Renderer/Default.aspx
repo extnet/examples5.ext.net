@@ -349,7 +349,13 @@
                             XField="Name"
                             YField="G2">
                             <StyleSpec>
-                                <ext:SeriesSprite LineWidth="2" MaxBarWidth="12" StrokeStyle="tomato" FillStyle="mistyrose" Radius="20" />
+                                <ext:SeriesSprite
+                                    LineWidth="2"
+                                    MaxBarWidth="12"
+                                    StrokeStyle="tomato"
+                                    FillStyle="mistyrose"
+                                    Radius="20"
+                                    />
                             </StyleSpec>
                             <Renderer Fn="renderer2" />
                         </ext:BarSeries>

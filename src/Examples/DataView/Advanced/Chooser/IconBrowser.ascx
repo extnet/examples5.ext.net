@@ -70,7 +70,7 @@
             </tpl>
         </html>    </Tpl>
     <Listeners>
-        <SelectionChange Handler="if(selected[0]) {App.ImgDetailPanel.loadRecord(selected[0])}" />
+        <SelectionChange Handler="if (selected[0]) {App.ImgDetailPanel.loadRecord(selected[0])}" />
         <ItemDblClick Handler="App.ImgChooserDlg.down('button[text=OK]').fireEvent('click');" />
     </Listeners>
 </ext:DataView>

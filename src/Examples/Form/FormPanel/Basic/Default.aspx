@@ -102,11 +102,26 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Company" DataIndex="company" Flex="2" />
-                            <ext:Column runat="server" Text="Price" Width="75" DataIndex="price" Flex="1">
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                DataIndex="company"
+                                Flex="2"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Price"
+                                Width="75"
+                                DataIndex="price"
+                                Flex="1">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
-                            <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" Flex="1">
+                            <ext:Column
+                                runat="server"
+                                Text="Change"
+                                Width="75"
+                                DataIndex="change"
+                                Flex="1">
                                 <Renderer Fn="change" />
                             </ext:Column>
                             <ext:Column runat="server" Text="Rating" Width="50" Sortable="true" DataIndex="rating" Flex="1">
@@ -135,9 +150,27 @@
                         <ext:DateField Name="lastChange" runat="server" FieldLabel="Last Updated" Format="yyyy-MM-dd" />
                         <ext:RadioGroup runat="server" FieldLabel="Rating" ColumnsNumber="3" AutomaticGrouping="false">
                             <Items>
-                                <ext:Radio runat="server" Name="rating" InputValue="0" BoxLabel="A" ReadOnly="true" />
-                                <ext:Radio runat="server" Name="rating" InputValue="1" BoxLabel="B" ReadOnly="true" />
-                                <ext:Radio runat="server" Name="rating" InputValue="2" BoxLabel="C" ReadOnly="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    Name="rating"
+                                    InputValue="0"
+                                    BoxLabel="A"
+                                    ReadOnly="true"
+                                    />
+                                <ext:Radio
+                                    runat="server"
+                                    Name="rating"
+                                    InputValue="1"
+                                    BoxLabel="B"
+                                    ReadOnly="true"
+                                    />
+                                <ext:Radio
+                                    runat="server"
+                                    Name="rating"
+                                    InputValue="2"
+                                    BoxLabel="C"
+                                    ReadOnly="true"
+                                    />
                             </Items>
                         </ext:RadioGroup>
                     </Items>

@@ -119,7 +119,12 @@
                     <View>
                         <ext:TreeView runat="server">
                             <Plugins>
-                                <ext:TreeViewDragDrop runat="server" EnableDrag="false" EnableDrop="true" AppendOnly="true" />
+                                <ext:TreeViewDragDrop
+                                    runat="server"
+                                    EnableDrag="false"
+                                    EnableDrop="true"
+                                    AppendOnly="true"
+                                    />
                             </Plugins>
                         </ext:TreeView>
                     </View>

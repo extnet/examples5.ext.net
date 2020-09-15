@@ -193,7 +193,12 @@
         Width="550">
         <ColumnModel>
             <Columns>
-                <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Name"
+                    DataIndex="Name"
+                    Flex="1"
+                    />
                 <ext:Column
                     runat="server"
                     ItemID="Products"

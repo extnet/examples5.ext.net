@@ -97,7 +97,13 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="ID" DataIndex="Id" Filterable="false" Width="40" />
+                            <ext:Column
+                                runat="server"
+                                Text="ID"
+                                DataIndex="Id"
+                                Filterable="false"
+                                Width="40"
+                                />
                             <ext:Column runat="server" Text="Company" DataIndex="Company" Width="250">
                                 <Items>
                                     <ext:Container runat="server" Layout="HBox" Margin="2">

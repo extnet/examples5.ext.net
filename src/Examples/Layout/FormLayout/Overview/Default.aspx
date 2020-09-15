@@ -175,7 +175,13 @@
                 </ext:Container>
                 <ext:Container runat="server" Layout="Anchor">
                     <Items>
-                        <ext:HtmlEditor runat="server" Height="180" FieldLabel="Biography" LabelAlign="Top" Padding="10" />
+                        <ext:HtmlEditor
+                            runat="server"
+                            Height="180"
+                            FieldLabel="Biography"
+                            LabelAlign="Top"
+                            Padding="10"
+                            />
                     </Items>
                 </ext:Container>
             </Items>

@@ -106,7 +106,12 @@
         Height="480">
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="Name" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="Name"
+                    Flex="1"
+                    />
                 <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                     <Renderer Format="UsMoney" />
                 </ext:Column>

@@ -80,7 +80,12 @@
                             <ext:ModelField Name="forumid" />
                             <ext:ModelField Name="author" />
                             <ext:ModelField Name="replycount" Type="Int" />
-                            <ext:ModelField Name="lastpost" Mapping="lastpost" Type="Date" DateFormat="timestamp" />
+                            <ext:ModelField
+                                Name="lastpost"
+                                Mapping="lastpost"
+                                Type="Date"
+                                DateFormat="timestamp"
+                                />
                             <ext:ModelField Name="lastposter" />
                             <ext:ModelField Name="excerpt" />
                             <ext:ModelField Name="threadid" />

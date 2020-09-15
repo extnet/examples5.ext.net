@@ -133,7 +133,7 @@
                             </Model>
                             <Listeners>
                                 <%-- Remove old (time) data --%>
-                                <DataChanged Handler="if(this.getCount() > 10) {this.suspendEvents(); this.removeAt(0);this.resumeEvents();}" />
+                                <DataChanged Handler="if (this.getCount() > 10) {this.suspendEvents(); this.removeAt(0);this.resumeEvents();}" />
                             </Listeners>
                         </ext:Store>
                     </Store>

@@ -422,7 +422,13 @@
                     DefaultCollapsible="true"
                     DefaultSplit="true">
                     <Items>
-                        <ext:Panel runat="server" Title="Center" Region="Center" Html="Center" Collapsible="false" />
+                        <ext:Panel
+                            runat="server"
+                            Title="Center"
+                            Region="Center"
+                            Html="Center"
+                            Collapsible="false"
+                            />
                         <ext:Panel runat="server" Title="North" Region="North" Html="North" Height="70" MarginSpec="5 5 0 5" />
                         <ext:Panel runat="server" Title="East" Region="East" Html="East" Width="140" MarginSpec="0 5 0 0" />
                         <ext:Panel runat="server" Title="West" Region="West" Html="West" Width="140" MarginSpec="0 0 0 5" CollapseMode="Mini" />
@@ -464,12 +470,28 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                Width="160"
+                                DataIndex="company"
+                                Flex="1"
+                                />
                             <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
-                            <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
-                            <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
+                            <ext:Column
+                                runat="server"
+                                Text="Change"
+                                Width="75"
+                                DataIndex="change"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Change"
+                                Width="75"
+                                DataIndex="pctChange"
+                                />
                             <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="H:mm:ss" />
                         </Columns>
                     </ColumnModel>
@@ -617,7 +639,12 @@
                     <Items>
                         <ext:ProgressBar runat="server" Value=".5" Text="Progress text..." />
                         <ext:Slider runat="server" Number="50" Width="420" />
-                        <ext:Slider runat="server" Vertical="true" Number="50" Height="100" />
+                        <ext:Slider
+                            runat="server"
+                            Vertical="true"
+                            Number="50"
+                            Height="100"
+                            />
                     </Items>
                 </ext:Panel>
 

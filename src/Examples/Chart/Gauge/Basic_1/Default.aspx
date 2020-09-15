@@ -130,7 +130,13 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis Position="Gauge" Minimum="0" Maximum="100" MajorTickSteps="10" Margin="7" />
+                        <ext:NumericAxis
+                            Position="Gauge"
+                            Minimum="0"
+                            Maximum="100"
+                            MajorTickSteps="10"
+                            Margin="7"
+                            />
                     </Axes>
                     <Series>
                         <ext:GaugeSeries AngleField="Data1" Donut="30" Colors="#82B525,#ddd" TotalAngleDegrees="180" />
@@ -160,7 +166,13 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis Position="Gauge" Minimum="0" Maximum="100" MajorTickSteps="10" Margin="7" />
+                        <ext:NumericAxis
+                            Position="Gauge"
+                            Minimum="0"
+                            Maximum="100"
+                            MajorTickSteps="10"
+                            Margin="7"
+                            />
                     </Axes>
                     <Series>
                         <ext:GaugeSeries AngleField="Data1" Donut="80" Colors="#3AA8CB,#ddd" TotalAngleDegrees="180" />

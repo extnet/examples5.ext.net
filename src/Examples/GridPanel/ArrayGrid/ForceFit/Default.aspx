@@ -108,9 +108,24 @@
                                     Specifying defaultValue as undefined will also save code. *As long as there will always be values in the data, or the app tolerates undefined field values
                                     --%>
                                     <ext:ModelField Name="company" NullConvert="true" DefaultValue="undefined" />
-                                    <ext:ModelField Name="price" Type="Float" NullConvert="true" DefaultValue="undefined" />
-                                    <ext:ModelField Name="change" Type="Float" NullConvert="true" DefaultValue="undefined" />
-                                    <ext:ModelField Name="pctChange" Type="Float" NullConvert="true" DefaultValue="undefined" />
+                                    <ext:ModelField
+                                        Name="price"
+                                        Type="Float"
+                                        NullConvert="true"
+                                        DefaultValue="undefined"
+                                        />
+                                    <ext:ModelField
+                                        Name="change"
+                                        Type="Float"
+                                        NullConvert="true"
+                                        DefaultValue="undefined"
+                                        />
+                                    <ext:ModelField
+                                        Name="pctChange"
+                                        Type="Float"
+                                        NullConvert="true"
+                                        DefaultValue="undefined"
+                                        />
                                     <ext:ModelField Name="lastChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" />
                                 </Fields>
                             </ext:Model>

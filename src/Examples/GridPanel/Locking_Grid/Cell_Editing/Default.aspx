@@ -104,7 +104,12 @@
                     </Editor>
                 </ext:Column>
 
-                <ext:Column runat="server" Text="Price" DataIndex="price" Width="97" Lockable="false">
+                <ext:Column
+                    runat="server"
+                    Text="Price"
+                    DataIndex="price"
+                    Width="97"
+                    Lockable="false">
                     <Renderer Format="UsMoney" />
                     <Editor>
                         <ext:NumberField runat="server" />

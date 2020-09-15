@@ -34,7 +34,7 @@
 
         var saveChart = function (btn) {
             Ext.MessageBox.confirm('Confirm Download', 'Would you like to download the chart as an image?', function (choice) {
-                if(choice == 'yes') {
+                if (choice == 'yes') {
                     btn.up('panel').down('chart').download();
                 }
             });

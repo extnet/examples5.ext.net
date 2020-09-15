@@ -45,7 +45,7 @@
             EventsCombo.Items.Sort((a, b) => string.Compare(a.Text, b.Text));
         }
 
-        if(EventsCombo.Items.Count == 0)
+        if (EventsCombo.Items.Count == 0)
         {
             EventsCombo.Items.Add(new Ext.Net.ListItem("-- No events --", "-1"));
         }

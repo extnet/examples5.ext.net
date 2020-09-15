@@ -145,7 +145,12 @@
                 <Columns>
                     <ext:Column runat="server" Text="Common Name" DataIndex="Common" Flex="1" />
 
-                    <ext:Column runat="server" Text="Light" DataIndex="Light" Width="130" />
+                    <ext:Column
+                        runat="server"
+                        Text="Light"
+                        DataIndex="Light"
+                        Width="130"
+                        />
 
                     <ext:Column
                         runat="server"

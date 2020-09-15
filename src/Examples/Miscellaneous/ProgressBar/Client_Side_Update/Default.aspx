@@ -39,7 +39,7 @@
             if (value > count) {
                 btn.setDisabled(false);
                 callback();
-            }else{
+            } else {
                 pbar.updateProgress(value / count, 'Loading item ' + value + ' of ' + count + '...');
             }
        }
@@ -136,7 +136,12 @@
             <b>Waiting Bar</b><br />
             Wait for a long operation to complete (example will stop after 5 secs):
 
-            <ext:Label ID="StatusLabel3" runat="server" Cls="status" Text="Ready" />
+            <ext:Label
+                ID="StatusLabel3"
+                runat="server"
+                Cls="status"
+                Text="Ready"
+                />
 
             <ext:Button ID="Button2" runat="server" Text="Show">
                 <Listeners>

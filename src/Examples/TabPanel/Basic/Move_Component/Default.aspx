@@ -89,10 +89,31 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" Width="160" DataIndex="company" Flex="1" />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        Width="160"
+                        DataIndex="company"
+                        Flex="1"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange"
+                        />
                     <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
                 </Columns>
             </ColumnModel>
@@ -101,7 +122,12 @@
             </View>
         </ext:GridPanel>
 
-        <ext:TabPanel ID="TabPanel1" runat="server" Width="960" Height="480" />
+        <ext:TabPanel
+            ID="TabPanel1"
+            runat="server"
+            Width="960"
+            Height="480"
+            />
     </form>
 </body>
 </html>

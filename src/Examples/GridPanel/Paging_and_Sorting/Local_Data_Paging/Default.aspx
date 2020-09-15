@@ -224,8 +224,18 @@
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange"
+                        />
                     <ext:DateColumn
                         runat="server"
                         Text="Last Updated"

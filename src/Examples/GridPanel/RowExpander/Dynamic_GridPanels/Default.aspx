@@ -122,7 +122,13 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Supplier" DataIndex="Name" Flex="1" Hideable="false" />
+                    <ext:Column
+                        runat="server"
+                        Text="Supplier"
+                        DataIndex="Name"
+                        Flex="1"
+                        Hideable="false"
+                        />
                 </Columns>
             </ColumnModel>
             <Plugins>

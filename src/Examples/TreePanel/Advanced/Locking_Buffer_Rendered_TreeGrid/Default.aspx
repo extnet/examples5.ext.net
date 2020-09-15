@@ -71,8 +71,19 @@
             </Store>
             <ColumnModel>
                 <Columns>
-                    <ext:TreeColumn runat="server" Text="Forum" Width="275" DataIndex="forumtitle" Locked="true" />
-                    <ext:Column runat="server" Text="User" Width="120" DataIndex="username" />
+                    <ext:TreeColumn
+                        runat="server"
+                        Text="Forum"
+                        Width="275"
+                        DataIndex="forumtitle"
+                        Locked="true"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="User"
+                        Width="120"
+                        DataIndex="username"
+                        />
                     <ext:Column runat="server" Text="Title" Width="480" DataIndex="title">
                         <Renderer Fn="renderTitle" />
                     </ext:Column>

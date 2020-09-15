@@ -244,7 +244,12 @@
                     </ext:Column>
                     <ext:Column runat="server" Text="Changes">
                         <Columns>
-                            <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" HideTitleEl="true">
+                            <ext:Column
+                                runat="server"
+                                Text="Change"
+                                Width="75"
+                                DataIndex="change"
+                                HideTitleEl="true">
                                 <Renderer Fn="change" />
                                 <Items>
                                     <ext:TextField ID="ChangeFilter" runat="server">

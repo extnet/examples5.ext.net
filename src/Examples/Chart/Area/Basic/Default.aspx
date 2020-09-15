@@ -191,8 +191,19 @@
                                 <ext:GridPanel runat="server" StoreID="Store1" StyleSpec="margin-top: 10px;" Width="250">
                                     <ColumnModel>
                                         <Columns>
-                                            <ext:Column runat="server" Text="Month" DataIndex="month" Sortable="false" MenuDisabled="true" />
-                                            <ext:Column runat="server" Text="IE" DataIndex="data1" Sortable="false" MenuDisabled="true">
+                                            <ext:Column
+                                                runat="server"
+                                                Text="Month"
+                                                DataIndex="month"
+                                                Sortable="false"
+                                                MenuDisabled="true"
+                                                />
+                                            <ext:Column
+                                                runat="server"
+                                                Text="IE"
+                                                DataIndex="data1"
+                                                Sortable="false"
+                                                MenuDisabled="true">
                                                 <Renderer Handler="return value + '%';" />
                                             </ext:Column>
                                         </Columns>

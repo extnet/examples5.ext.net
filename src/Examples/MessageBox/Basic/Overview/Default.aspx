@@ -181,19 +181,34 @@
 
     <span>A multi-line prompt dialog.</span>
 
-    <ext:Button ID="Button3" runat="server" Text="Show" OnDirectClick="Button3_Click" />
+    <ext:Button
+        ID="Button3"
+        runat="server"
+        Text="Show"
+        OnDirectClick="Button3_Click"
+        />
 
     <h2>4. Yes/No/Cancel</h2>
 
     <span>Standard Yes/No/Cancel dialog.</span>
 
-    <ext:Button ID="Button4" runat="server" Text="Show" OnDirectClick="Button4_Click" />
+    <ext:Button
+        ID="Button4"
+        runat="server"
+        Text="Show"
+        OnDirectClick="Button4_Click"
+        />
 
     <h2>5. Progress Dialog</h2>
 
     <span>Dialog with measured progress bar.</span>
 
-    <ext:Button ID="Button5" runat="server" Text="Show" OnDirectClick="Button5_Click" />
+    <ext:Button
+        ID="Button5"
+        runat="server"
+        Text="Show"
+        OnDirectClick="Button5_Click"
+        />
 
     <ext:TaskManager ID="TaskManager1" runat="server">
         <Tasks>
@@ -212,13 +227,23 @@
 
     <span>Dialog with indefinite ProgressBar and custom Icon (will close after 8 sec).</span>
 
-    <ext:Button ID="Button6" runat="server" Text="Show" OnDirectClick="Button6_Click" />
+    <ext:Button
+        ID="Button6"
+        runat="server"
+        Text="Show"
+        OnDirectClick="Button6_Click"
+        />
 
     <h2>7. Alert</h2>
 
     <span>Standard Alert dialog.</span>
 
-    <ext:Button ID="Button7" runat="server" Text="Show" OnDirectClick="Button7_Click" />
+    <ext:Button
+        ID="Button7"
+        runat="server"
+        Text="Show"
+        OnDirectClick="Button7_Click"
+        />
 
     <h2>8. Icons</h2>
 

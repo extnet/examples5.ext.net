@@ -117,7 +117,12 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                DataIndex="company"
+                                Flex="1"
+                                />
                             <ext:Column runat="server" Text="Price" DataIndex="price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>

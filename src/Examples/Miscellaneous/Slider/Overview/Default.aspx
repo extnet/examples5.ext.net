@@ -35,7 +35,12 @@
 
         <h3>Snapping Slider</h3>
 
-        <ext:Slider runat="server" Width="214" Number="50" Increment="10" />
+        <ext:Slider
+            runat="server"
+            Width="214"
+            Number="50"
+            Increment="10"
+            />
 
         <br/>
 

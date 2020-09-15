@@ -122,7 +122,12 @@
                                     <ext:Column runat="server" DataIndex="ContactTitle" Text="Contact Title" />
                                     <ext:Column runat="server" DataIndex="Address" Text="Address" />
                                     <ext:Column runat="server" DataIndex="City" Text="City" />
-                                    <ext:Column runat="server" DataIndex="Region" Text="Region" Width="200" />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="Region"
+                                        Text="Region"
+                                        Width="200"
+                                        />
                                     <ext:Column runat="server" DataIndex="PostalCode" Text="Postal Code" />
                                     <ext:Column runat="server" DataIndex="Country" Text="Country" />
                                     <ext:Column runat="server" DataIndex="Phone" Text="Phone" />

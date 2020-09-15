@@ -191,7 +191,12 @@
         <ext:ModelField Name="Phone" />
     </Fields>
     <Associations>
-        <ext:HasManyAssociation Model="Order" AutoLoad="true" PrimaryKey="Id" ForeignKey="CustomerId" />
+        <ext:HasManyAssociation
+            Model="Order"
+            AutoLoad="true"
+            PrimaryKey="Id"
+            ForeignKey="CustomerId"
+            />
     </Associations>
     <Proxy>
         <ext:PageProxy DirectFn="App.direct.GetCustomers" />
@@ -210,7 +215,12 @@
             a BelongsTo from Order to Customer would also work.
         --%>
         <%--<ext:BelongsToAssociation Model="Customer" ForeignKey="CustomerId" PrimaryKey="Id" />--%>
-        <ext:HasManyAssociation Model="OrderItem" AutoLoad="true" PrimaryKey="Id" ForeignKey="OrderId" />
+        <ext:HasManyAssociation
+            Model="OrderItem"
+            AutoLoad="true"
+            PrimaryKey="Id"
+            ForeignKey="OrderId"
+            />
     </Associations>
     <Proxy>
         <ext:PageProxy DirectFn="App.direct.GetOrders" />

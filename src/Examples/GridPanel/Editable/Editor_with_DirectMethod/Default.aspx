@@ -156,7 +156,12 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="ID" DataIndex="ID" Width="35" />
+                    <ext:Column
+                        runat="server"
+                        Text="ID"
+                        DataIndex="ID"
+                        Width="35"
+                        />
                     <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1">
                         <Editor>
                             <ext:TextField runat="server" />

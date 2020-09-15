@@ -43,7 +43,12 @@
 
         <p>Set custom node prefix:</p>
 
-        <ext:TextField ID="TextField1" runat="server" Text="Node" Width="200" />
+        <ext:TextField
+            ID="TextField1"
+            runat="server"
+            Text="Node"
+            Width="200"
+            />
 
         <ext:TreePanel
             ID="TreePanel1"

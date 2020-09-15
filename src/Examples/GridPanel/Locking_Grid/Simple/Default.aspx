@@ -97,7 +97,12 @@
             <Columns>
                 <ext:RowNumbererColumn runat="server" />
                 <ext:Column runat="server" Text="Company<br>Name" DataIndex="company" Width="200" Locked="true" Sortable="false" />
-                <ext:Column runat="server" Text="Price" DataIndex="price" Width="125" Lockable="false">
+                <ext:Column
+                    runat="server"
+                    Text="Price"
+                    DataIndex="price"
+                    Width="125"
+                    Lockable="false">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
                 <ext:Column runat="server" Text="Change" DataIndex="change" Width="125">

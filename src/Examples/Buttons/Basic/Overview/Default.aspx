@@ -67,8 +67,20 @@
         </Defaults>
         <Items>
             <ext:Button runat="server" Text="Button1" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" Pressed="true" />
-            <ext:Button runat="server" Text="Button2" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" />
-            <ext:Button runat="server" Text="Button3" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" />
+            <ext:Button
+                runat="server"
+                Text="Button2"
+                Scale="Medium"
+                EnableToggle="true"
+                ToggleGroup="Group1"
+                />
+            <ext:Button
+                runat="server"
+                Text="Button3"
+                Scale="Medium"
+                EnableToggle="true"
+                ToggleGroup="Group1"
+                />
         </Items>
     </ext:Container>
 
@@ -104,7 +116,12 @@
 
     <ext:SplitButton runat="server" Text="Text" Scale="Medium">
         <Bin>
-            <ext:Panel runat="server" Width="180" Height="360" Layout="Accordion" Floating="true">
+            <ext:Panel
+                runat="server"
+                Width="180"
+                Height="360"
+                Layout="Accordion"
+                Floating="true">
                 <Items>
                     <ext:Panel runat="server" Title="Item 1" />
                     <ext:Panel runat="server" Title="Item 2" />

@@ -121,7 +121,12 @@
         </Store>
         <ColumnModel>
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="company"
+                    Flex="1"
+                    />
                 <ext:Column runat="server" Text="Price" DataIndex="price">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
@@ -142,7 +147,7 @@
                 <Listeners>
                     <RegExpError Handler="#{StatusBar1}.setStatus({text: message, iconCls: 'x-status-error'});" />
                     <BeforeSearch Handler="#{StatusBar1}.setStatus({text: 'Nothing Found', iconCls: ''});" />
-                    <Search Handler="if(count>0) {#{StatusBar1}.setStatus({text: count + ' match(es) found.', iconCls: 'x-status-valid'});}" />
+                    <Search Handler="if (count>0) {#{StatusBar1}.setStatus({text: count + ' match(es) found.', iconCls: 'x-status-valid'});}" />
                 </Listeners>
             </ext:LiveSearchGridPanel>
         </Plugins>
@@ -157,7 +162,7 @@
                         Pressed="true"
                         EnableToggle="true"
                         ToggleGroup="highlightColor"
-                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-livesearch-match';}}"
+                        ToggleHandler="function (b, state) {if (state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-livesearch-match';}}"
                         />
 
                     <ext:Button
@@ -166,7 +171,7 @@
                         IconCls="x-blue-highlight"
                         EnableToggle="true"
                         ToggleGroup="highlightColor"
-                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-blue-livesearch-match';}}"
+                        ToggleHandler="function (b, state) {if (state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-blue-livesearch-match';}}"
                         />
 
                     <ext:Button runat="server" Text="Refresh" Handler="var p = this.up('gridpanel').liveSearchPlugin; if (p.value) { p.search(p.value); }" />

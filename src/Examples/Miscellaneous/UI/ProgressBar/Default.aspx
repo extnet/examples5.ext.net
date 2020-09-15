@@ -45,7 +45,12 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:ComboBox ID="ThemeSelector" runat="server" FieldLabel="Theme" AutoPostBack="true" />
+        <ext:ComboBox
+            ID="ThemeSelector"
+            runat="server"
+            FieldLabel="Theme"
+            AutoPostBack="true"
+            />
 
         <h3>ProgressBar UI</h3>
 

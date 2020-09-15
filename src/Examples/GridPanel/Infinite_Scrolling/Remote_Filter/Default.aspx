@@ -22,12 +22,11 @@
                 store = me.up("grid").getStore(),
                 value = me.getValue();
 
-            if(index == 0) {
+            if (index == 0) {
                 me.setValue('');
                 store.clearFilter();
                 trigger.hide();
-            }
-            else{
+            } else {
                 if (value.length > 0) {
                     // Param name is ignored here since we use custom encoding in the proxy.
                     // id is used by the Store to replace any previous filter
@@ -42,7 +41,7 @@
         };
 
         var onSpecialKey = function (field, e) {
-             if (e.getKey() === e.ENTER) {
+            if (e.getKey() === e.ENTER) {
                 searchFieldTriggerClick(field, null, 1);
                 e.stopEvent();
             }
@@ -94,7 +93,12 @@
                                 <ext:ModelField Name="forumid" Type="Int" />
                                 <ext:ModelField Name="username" Mapping="author" />
                                 <ext:ModelField Name="replycount" Mapping="reply_count" Type="Int" />
-                                <ext:ModelField Name="lastpost" Mapping="post_time" Type="Date" DateFormat="timestamp" />
+                                <ext:ModelField
+                                    Name="lastpost"
+                                    Mapping="post_time"
+                                    Type="Date"
+                                    DateFormat="timestamp"
+                                    />
                                 <ext:ModelField Name="lastposter" />
                                 <ext:ModelField Name="excerpt" />
                                 <ext:ModelField Name="topic_id" />

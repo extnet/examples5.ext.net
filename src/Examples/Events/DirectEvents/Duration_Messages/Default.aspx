@@ -62,7 +62,12 @@
                 </ext:Container>
                 <ext:Container runat="server" Layout="HBox">
                     <Items>
-                        <ext:Button runat="server" Text="Run" OnDirectClick="DoSomething" Width="75" />
+                        <ext:Button
+                            runat="server"
+                            Text="Run"
+                            OnDirectClick="DoSomething"
+                            Width="75"
+                            />
                         <ext:Label runat="server" Text="&nbsp;- a long running DirectEvent with global duration messages" />
                     </Items>
                 </ext:Container>

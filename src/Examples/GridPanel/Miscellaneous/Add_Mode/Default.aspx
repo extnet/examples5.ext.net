@@ -101,7 +101,13 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="25" />
-                    <ext:Column runat="server" ID="Company" Text="Company" Flex="1" DataIndex="company" />
+                    <ext:Column
+                        runat="server"
+                        ID="Company"
+                        Text="Company"
+                        Flex="1"
+                        DataIndex="company"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

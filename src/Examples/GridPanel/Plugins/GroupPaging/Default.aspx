@@ -112,7 +112,12 @@
                         Flex="1"
                         />
 
-                    <ext:Column runat="server" Text="Project" DataIndex="Name" Width="20" />
+                    <ext:Column
+                        runat="server"
+                        Text="Project"
+                        DataIndex="Name"
+                        Width="20"
+                        />
 
                     <ext:Column
                         runat="server"

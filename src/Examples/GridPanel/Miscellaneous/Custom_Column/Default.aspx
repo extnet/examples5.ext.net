@@ -102,7 +102,12 @@
                     <ext:Column ID="label" runat="server" Text="¹" Fixed="true" Sortable="false" MenuDisabled="true" Flex="1">
                         <Renderer Fn="function (v, p, record, rowIndex) {return 'Row ¹'+rowIndex}" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
+                        />
                     <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
                         <Renderer Format="UsMoney" />
                     </ext:Column>

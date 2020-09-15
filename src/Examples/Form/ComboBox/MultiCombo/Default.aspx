@@ -121,7 +121,12 @@
                         <ext:Parameter Name="HideOnClick" Value="false" Mode="Raw" />
                     </Defaults>
                     <Items>
-                        <ext:CheckMenuItem runat="server" Text="Red" CheckHandler="updateButtonText" Width="194" />
+                        <ext:CheckMenuItem
+                            runat="server"
+                            Text="Red"
+                            CheckHandler="updateButtonText"
+                            Width="194"
+                            />
                         <ext:CheckMenuItem runat="server" Text="Green" CheckHandler="updateButtonText" />
                         <ext:CheckMenuItem runat="server" Text="Blue" CheckHandler="updateButtonText" />
                     </Items>

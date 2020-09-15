@@ -112,7 +112,12 @@
                         </Store>
                         <ColumnModel>
                             <Columns>
-                                <ext:Column runat="server" Text="Link" DataIndex="link" Flex="1" />
+                                <ext:Column
+                                    runat="server"
+                                    Text="Link"
+                                    DataIndex="link"
+                                    Flex="1"
+                                    />
                             </Columns>
                         </ColumnModel>
                     </ext:GridPanel>

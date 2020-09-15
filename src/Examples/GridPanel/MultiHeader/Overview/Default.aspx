@@ -89,7 +89,12 @@
                                     <ext:ListItem Text="2" />
                                 </Items>
                             </ext:ComboBox>
-                            <ext:TextArea ID="TextArea1" runat="server" Height="47" PreventScrollbars="true" />
+                            <ext:TextArea
+                                ID="TextArea1"
+                                runat="server"
+                                Height="47"
+                                PreventScrollbars="true"
+                                />
                         </Items>
                     </ext:Column>
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
@@ -101,7 +106,12 @@
                     <ext:Column runat="server" Text="Change" Width="75" DataIndex="change">
                         <Items>
                             <ext:DateField ID="ChangeField" runat="server" />
-                            <ext:TextArea ID="TextArea3" runat="server" Height="47" PreventScrollbars="true" />
+                            <ext:TextArea
+                                ID="TextArea3"
+                                runat="server"
+                                Height="47"
+                                PreventScrollbars="true"
+                                />
                         </Items>
                     </ext:Column>
                 </Columns>

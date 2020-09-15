@@ -103,10 +103,25 @@
                     <ext:Column runat="server" Text="Full Name" DataIndex="LastName" Flex="1">
                         <Renderer Handler="return '<b>' + record.data['LastName'] + '</b>,' + record.data['FirstName']" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Title" DataIndex="Title" Width="150" />
+                    <ext:Column
+                        runat="server"
+                        Text="Title"
+                        DataIndex="Title"
+                        Width="150"
+                        />
                     <ext:DateColumn runat="server" Text="Birth Date" DataIndex="BirthDate" Format="yyyy-MM-dd" />
-                    <ext:Column runat="server" Text="City" DataIndex="City" Width="100" />
-                    <ext:Column runat="server" Text="Address" DataIndex="Address" Width="250" />
+                    <ext:Column
+                        runat="server"
+                        Text="City"
+                        DataIndex="City"
+                        Width="100"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Address"
+                        DataIndex="Address"
+                        Width="250"
+                        />
                     <ext:Column
                         ID="Details"
                         runat="server"

@@ -37,7 +37,12 @@
 
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Panel runat="server" Border="false" Region="North" Height="160" BodyPadding="18">
+                <ext:Panel
+                    runat="server"
+                    Border="false"
+                    Region="North"
+                    Height="160"
+                    BodyPadding="18">
                     <Content>
                         <h1>Resizable Image</h1>
                         <h3>To resize the image, position your mouse anywhere near the right or bottom border</h3>

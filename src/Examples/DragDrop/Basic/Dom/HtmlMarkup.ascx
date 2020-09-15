@@ -17,19 +17,19 @@
                 <tr>
                     <td>
                         <div id="cars" class="availableLot">
-                            <div id="carCamaro" class="vehicleIcon"><img src="images/camaro.jpg" class="imgThumb" qtip="Camaro"/></div>
-                            <div id="carMiata" class="vehicleIcon"><img src="images/miata.jpg" class="imgThumb" qtip="Miata"/></div>
-                            <div id="carMustang" class="vehicleIcon"><img src="images/mustang.jpg" class="imgThumb" qtip="Mustang"/></div>
-                            <div id="carCorvette" class="vehicleIcon"><img src="images/corvette.jpg" class="imgThumb" qtip="Corvette"/></div>
+                            <div id="carCamaro" class="vehicleIcon"><img src="images/camaro.jpg" class="imgThumb" qtip="Camaro" /></div>
+                            <div id="carMiata" class="vehicleIcon"><img src="images/miata.jpg" class="imgThumb" qtip="Miata" /></div>
+                            <div id="carMustang" class="vehicleIcon"><img src="images/mustang.jpg" class="imgThumb" qtip="Mustang" /></div>
+                            <div id="carCorvette" class="vehicleIcon"><img src="images/corvette.jpg" class="imgThumb" qtip="Corvette" /></div>
                         </div>
                     </td>
 
                         <td>
                             <div id="trucks" class="availableLot trucksLot">
-                                <div id="truckF150" class="vehicleIcon"><img src="images/f150.jpg" class="imgThumb"  qtip="F150"/></div>
-                                <div id="truckTahoe" class="vehicleIcon"><img src="images/tahoe.jpg" class="imgThumb" qtip="Tahoe"/></div>
-                                <div id="truckTacoma" class="vehicleIcon"><img src="images/tacoma.jpg" class="imgThumb" qtip="Tacoma"/></div>
-                                <div id="truckS10" class="vehicleIcon"><img src="images/s10.jpg" class="imgThumb" qtip="S10"/></div>
+                                <div id="truckF150" class="vehicleIcon"><img src="images/f150.jpg" class="imgThumb"  qtip="F150" /></div>
+                                <div id="truckTahoe" class="vehicleIcon"><img src="images/tahoe.jpg" class="imgThumb" qtip="Tahoe" /></div>
+                                <div id="truckTacoma" class="vehicleIcon"><img src="images/tacoma.jpg" class="imgThumb" qtip="Tacoma" /></div>
+                                <div id="truckS10" class="vehicleIcon"><img src="images/s10.jpg" class="imgThumb" qtip="S10" /></div>
                             </div>
                         </td>
                     </tr>

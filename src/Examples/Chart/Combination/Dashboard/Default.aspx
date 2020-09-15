@@ -225,7 +225,12 @@
                             </Interactions>
                             <AnimationConfig Duration="300" Easing="EaseOut" />
                             <Axes>
-                                <ext:NumericAxis Position="Left" Fields="price" Minimum="0" Hidden="true" />
+                                <ext:NumericAxis
+                                    Position="Left"
+                                    Fields="price"
+                                    Minimum="0"
+                                    Hidden="true"
+                                    />
                                 <ext:CategoryAxis Position="Bottom" Fields="company">
                                     <Label Font="9px Arial" RotationDegrees="-45" />
                                     <Renderer Handler="return Ext.String.ellipsis(label, 15, false);" />
@@ -289,7 +294,13 @@
                                 <ext:CategoryAxis Position="Angular" Grid="true">
                                     <Label FontSize="10" />
                                 </ext:CategoryAxis>
-                                <ext:NumericAxis MajorTickSteps="5" Minimum="0" Maximum="100" Position="Radial" Grid="true" />
+                                <ext:NumericAxis
+                                    MajorTickSteps="5"
+                                    Minimum="0"
+                                    Maximum="100"
+                                    Position="Radial"
+                                    Grid="true"
+                                    />
                             </Axes>
                             <Series>
                                 <ext:RadarSeries

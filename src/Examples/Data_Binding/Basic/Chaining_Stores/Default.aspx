@@ -223,7 +223,12 @@
                        <Columns>
                            <ext:Column runat="server" Text="First Name" DataIndex="firstName" Flex="1" />
                            <ext:Column runat="server" Text="Last Name" DataIndex="lastName" Flex="1" />
-                           <ext:Column runat="server" Text="Age" DataIndex="age" Width="120" />
+                           <ext:Column
+                               runat="server"
+                               Text="Age"
+                               DataIndex="age"
+                               Width="120"
+                               />
 
                            <ext:Column runat="server" Text="Fav. Color" DataIndex="favoriteColor" Flex="1">
                                <Renderer Handler="return Ext.String.format('<span style=\'color: {0};\'>{1}</span>', value.toLowerCase(), value);" />

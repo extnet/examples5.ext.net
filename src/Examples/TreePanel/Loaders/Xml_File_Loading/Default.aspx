@@ -21,7 +21,12 @@
                     <DataBindings>
                         <ext:NodeBinding DataMember="Authors" Text="Authors List" />
                         <ext:NodeBinding DataMember="Author" TextField="name" />
-                        <ext:NodeBinding DataMember="blog" HrefField="url" TextField="url" Leaf="true" />
+                        <ext:NodeBinding
+                            DataMember="blog"
+                            HrefField="url"
+                            TextField="url"
+                            Leaf="true"
+                            />
                     </DataBindings>
                 </ext:TreeStore>
             </Store>

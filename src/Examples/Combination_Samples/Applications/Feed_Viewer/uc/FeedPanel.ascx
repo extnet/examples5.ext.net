@@ -37,7 +37,7 @@
 
                 <ext:MenuItem runat="server" Text="Add feed" IconCls="feed-add">
                     <DirectEvents>
-                        <Click OnEvent="AddFeedClick"/>
+                        <Click OnEvent="AddFeedClick" />
                     </DirectEvents>
                 </ext:MenuItem>
 

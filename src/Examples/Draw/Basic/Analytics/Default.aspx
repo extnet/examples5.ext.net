@@ -133,7 +133,7 @@
                      Font = "12px Helvetica, Arial"
                 });
 
-                if(i == 0)
+                if (i == 0)
                 {
                     p.AddRange(new string[]{"M", JSON.Serialize(xc), JSON.Serialize(yc),
                                             "C", JSON.Serialize(xc), JSON.Serialize(yc)});
@@ -143,7 +143,7 @@
                                                "C", JSON.Serialize(xc), JSON.Serialize(yc)});
                 }
 
-                if(i > 0 && i < (labels.Count - 1))
+                if (i > 0 && i < (labels.Count - 1))
                 {
                     double Y0 = Math.Round(height - bottomgutter - y * data[i - 1]);
                     double X0 = Math.Round(leftgutter + x * (i - 0.5));
@@ -181,7 +181,7 @@
 
                 draw.Items.Add(rect);
 
-                if(i == (labels.Count -1))
+                if (i == (labels.Count -1))
                 {
                     p.AddRange(new string[]{JSON.Serialize(xc), JSON.Serialize(yc), JSON.Serialize(xc), JSON.Serialize(yc)});
                     bgpp.AddRange(new string[]{JSON.Serialize(xc), JSON.Serialize(yc), JSON.Serialize(xc), JSON.Serialize(yc), "L", JSON.Serialize(xc), JSON.Serialize(height - bottomgutter), "z"});

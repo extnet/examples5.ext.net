@@ -100,13 +100,48 @@
                     <ext:Column runat="server" DataIndex="TitleOfCourtesy" Text="Title Of Courtesy"  Width="150" />
                     <ext:DateColumn runat="server" DataIndex="BirthDate" Text="BirthDate" Width="110" Format="yyyy-MM-dd" />
                     <ext:DateColumn runat="server" DataIndex="HireDate" Text="HireDate" Width="110" Format="yyyy-MM-dd" />
-                    <ext:Column runat="server" DataIndex="Address" Text="Address" Width="150" />
-                    <ext:Column runat="server" DataIndex="City" Text="City" Width="100" />
-                    <ext:Column runat="server" DataIndex="Region" Text="Region" Width="100" />
-                    <ext:Column runat="server" DataIndex="PostalCode" Text="PostalCode" Width="100" />
-                    <ext:Column runat="server" DataIndex="Country" Text="Country" Width="100" />
-                    <ext:Column runat="server" DataIndex="HomePhone" Text="HomePhone" Width="150" />
-                    <ext:Column runat="server" DataIndex="Extension" Text="Extension" Width="100" />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="Address"
+                        Text="Address"
+                        Width="150"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="City"
+                        Text="City"
+                        Width="100"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="Region"
+                        Text="Region"
+                        Width="100"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="PostalCode"
+                        Text="PostalCode"
+                        Width="100"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="Country"
+                        Text="Country"
+                        Width="100"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="HomePhone"
+                        Text="HomePhone"
+                        Width="150"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="Extension"
+                        Text="Extension"
+                        Width="100"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

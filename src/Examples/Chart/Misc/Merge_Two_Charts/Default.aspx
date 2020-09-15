@@ -125,7 +125,12 @@
                             </Store>
 
                             <Axes>
-                                <ext:NumericAxis Position="Left" Minimum="0" Maximum="100" Fields="Data1" Grid="false">
+                                <ext:NumericAxis
+                                    Position="Left"
+                                    Minimum="0"
+                                    Maximum="100"
+                                    Fields="Data1"
+                                    Grid="false">
                                     <Label Font="10px Arial" />
                                     <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                                 </ext:NumericAxis>
@@ -189,7 +194,12 @@
                             </Store>
 
                             <Axes>
-                                <ext:NumericAxis Position="Left" Minimum="0" Maximum="100" Fields="Data2" Grid="false">
+                                <ext:NumericAxis
+                                    Position="Left"
+                                    Minimum="0"
+                                    Maximum="100"
+                                    Fields="Data2"
+                                    Grid="false">
                                     <Label Font="10px Arial" />
                                     <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                                 </ext:NumericAxis>

@@ -114,7 +114,12 @@
             Height="480">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
+                        />
                     <ext:Column runat="server" Text="Price" Width="100" DataIndex="price">
                         <Renderer Format="UsMoney" />
 
@@ -129,8 +134,18 @@
                             <Command Handler="Ext.Msg.alert(command, record.data.company);" />
                         </Listeners>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change" />
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange" />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange"
+                        />
                     <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
 
                     <ext:ImageCommandColumn runat="server" Width="100" Text="Image Cmds">

@@ -450,8 +450,18 @@
                     <Items>
                         <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
-                                <ext:Button runat="server" Text="Cut" IconCls="add24" Scale="Medium" />
-                                <ext:Button runat="server" Text="Copy" IconCls="add24" Scale="Medium" />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="add24"
+                                    Scale="Medium"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="add24"
+                                    Scale="Medium"
+                                    />
                                 <ext:Button runat="server" Text="Paste" IconCls="add24" Scale="Medium">
                                     <Menu>
                                         <ext:Menu runat="server">
@@ -466,7 +476,12 @@
 
                         <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
-                                <ext:Button runat="server" Text="Format" IconCls="add24" Scale="Medium" />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Format"
+                                    IconCls="add24"
+                                    Scale="Medium"
+                                    />
                             </Items>
                         </ext:ButtonGroup>
                     </Items>

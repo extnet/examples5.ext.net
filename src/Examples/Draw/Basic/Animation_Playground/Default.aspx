@@ -43,7 +43,12 @@
                         <ext:Toolbar runat="server">
                             <Items>
                                 <ext:TextField ID="toConfig" runat="server" Width="400" Text="{fill: '#223fa3', stroke: '#000', 'stroke-width': 80, 'stroke-opacity': 0.5}" />
-                                <ext:NumberField ID="duration" runat="server" Number="2000" Width="70" />
+                                <ext:NumberField
+                                    ID="duration"
+                                    runat="server"
+                                    Number="2000"
+                                    Width="70"
+                                    />
                                 <ext:Button runat="server" Text="Run">
                                     <Listeners>
                                         <Click Handler="

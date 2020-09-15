@@ -193,8 +193,20 @@
                                     <ColumnModel>
                                         <Columns>
                                             <ext:Column runat="server" Text="Complaint" DataIndex="complaint" Width="175" Sortable="false" MenuDisabled="true" />
-                                            <ext:Column runat="server" Text="Count" DataIndex="count" Sortable="false" MenuDisabled="true" />
-                                            <ext:Column runat="server" Text="Cumulative" DataIndex="cumnumber" Sortable="false" MenuDisabled="true" />
+                                            <ext:Column
+                                                runat="server"
+                                                Text="Count"
+                                                DataIndex="count"
+                                                Sortable="false"
+                                                MenuDisabled="true"
+                                                />
+                                            <ext:Column
+                                                runat="server"
+                                                Text="Cumulative"
+                                                DataIndex="cumnumber"
+                                                Sortable="false"
+                                                MenuDisabled="true"
+                                                />
                                             <ext:Column runat="server" Text="Cumulative %" DataIndex="cumpercent" Width="175" Sortable="false" MenuDisabled="true">
                                                 <Renderer Handler="return value + '%';" />
                                             </ext:Column>

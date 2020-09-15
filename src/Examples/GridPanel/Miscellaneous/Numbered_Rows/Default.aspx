@@ -91,7 +91,12 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="25" />
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1"
+                        />
                     <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
                         <Renderer Format="UsMoney" />
                     </ext:Column>

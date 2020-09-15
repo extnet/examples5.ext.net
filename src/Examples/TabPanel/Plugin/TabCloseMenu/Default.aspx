@@ -55,7 +55,12 @@
                 <ext:Panel runat="server" Title="Tab Five" Closable="true" />
             </Items>
             <Plugins>
-                <ext:TabCloseMenu runat="server" CloseAllTabsIcon="TabRed" CloseOtherTabsIcon="Delete" CloseTabIcon="TabDelete" />
+                <ext:TabCloseMenu
+                    runat="server"
+                    CloseAllTabsIcon="TabRed"
+                    CloseOtherTabsIcon="Delete"
+                    CloseTabIcon="TabDelete"
+                    />
             </Plugins>
         </ext:TabPanel>
 

@@ -65,7 +65,12 @@
                     <Items>
                         <ext:Label runat="server" Html="<div class='label'>With Legend</div>" />
                         <ext:Label runat="server" Html="<div class='label'>Without Legend</div>" />
-                        <ext:Panel runat="server" Border="false" Width="480" Height="260" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="260"
+                            Layout="Fit">
                             <Items>
                                 <ext:FieldSet
                                     runat="server"
@@ -118,7 +123,12 @@
                     <Items>
                         <ext:Label runat="server" Html="<div class='label'>Simple Select</div>" />
                         <ext:Label runat="server" Html="<div class='label'>Multi Select with Ctrl/Shift</div>" />
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect runat="server">
                                     <Items>
@@ -131,7 +141,12 @@
                                 </ext:MultiSelect>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect runat="server" MultiSelect="true">
                                     <Items>
@@ -154,7 +169,12 @@
                     <Items>
                         <ext:Label runat="server" Html="<div class='label'>Top Bar</div>" />
                         <ext:Label runat="server" Html="<div class='label'>Bottom Bar</div>" />
-                        <ext:Panel runat="server" Border="false" Layout="Fit" Width="480" Height="250">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Layout="Fit"
+                            Width="480"
+                            Height="250">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
@@ -178,7 +198,12 @@
                                 </ext:MultiSelect>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Border="false" Layout="Fit" Width="480" Height="250">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Layout="Fit"
+                            Width="480"
+                            Height="250">
                             <Items>
                                 <ext:MultiSelect ID="MultiSelect2" runat="server">
                                     <Items>
@@ -217,7 +242,12 @@
                     <Items>
                         <ext:Label ID="Label1" runat="server" Html="<div class='label'>Drag</div>" />
                         <ext:Label ID="Label2" runat="server" Html="<div class='label'>Drop</div>" />
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
                                     runat="server"
@@ -233,7 +263,12 @@
                                 </ext:MultiSelect>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
                                     runat="server"
@@ -264,7 +299,12 @@
                     <Items>
                         <ext:Label runat="server" Html="<div class='label'>Drag/Drop with Reorder</div>" />
                         <ext:Label runat="server" Html="<div class='label'>Drag/Drop with Reorder</div>" />
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
                                     runat="server"
@@ -281,7 +321,12 @@
                                 </ext:MultiSelect>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
                                     runat="server"
@@ -308,7 +353,12 @@
                     </LayoutConfig>
                     <Items>
                         <ext:Label runat="server" Html="<div class='label'>Indexes, Values and Text Submit</div>" />
-                        <ext:Panel runat="server" Border="false" Width="480" Height="250" Layout="Fit">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Width="480"
+                            Height="250"
+                            Layout="Fit">
                             <Items>
                                 <ext:MultiSelect ID="MultiSelect3" runat="server" SubmitText="false">
                                     <Items>

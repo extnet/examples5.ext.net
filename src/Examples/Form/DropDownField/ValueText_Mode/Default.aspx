@@ -104,13 +104,33 @@
                                         </ext:Node>
                                         <ext:Node Text="Grocery List" IconCls="x-md md-icon-folder">
                                             <Children>
-                                                <ext:Node NodeID="Item21" Text="Bananas" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item22" Text="Milk" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item23" Text="Cereal" Leaf="true" Checked="False" />
+                                                <ext:Node
+                                                    NodeID="Item21"
+                                                    Text="Bananas"
+                                                    Leaf="true"
+                                                    Checked="False"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item22"
+                                                    Text="Milk"
+                                                    Leaf="true"
+                                                    Checked="False"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item23"
+                                                    Text="Cereal"
+                                                    Leaf="true"
+                                                    Checked="False"
+                                                    />
 
                                                 <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder">
                                                     <Children>
-                                                        <ext:Node NodeID="Item241" Text="Coffee" Leaf="true" Checked="False" />
+                                                        <ext:Node
+                                                            NodeID="Item241"
+                                                            Text="Coffee"
+                                                            Leaf="true"
+                                                            Checked="False"
+                                                            />
                                                         <ext:Node NodeID="Item242" Text="Red Bull" Leaf="true" Checked="False" />
                                                     </Children>
                                                 </ext:Node>

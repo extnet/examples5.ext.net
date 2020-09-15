@@ -112,7 +112,12 @@
                             </Bind>
                             <ColumnModel>
                                 <Columns>
-                                    <ext:Column runat="server" Text="Name" DataIndex="name" Flex="1" />
+                                    <ext:Column
+                                        runat="server"
+                                        Text="Name"
+                                        DataIndex="name"
+                                        Flex="1"
+                                        />
                                     <ext:Column runat="server" Text="Phone" DataIndex="phone" />
                                 </Columns>
                             </ColumnModel>

@@ -141,7 +141,12 @@
                 Flex="1">
                 <ColumnModel>
                     <Columns>
-                        <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                        <ext:Column
+                            runat="server"
+                            Text="Name"
+                            DataIndex="Name"
+                            Flex="1"
+                            />
                     </Columns>
                 </ColumnModel>
                 <Listeners>
@@ -176,7 +181,12 @@
         Height="250">
         <ColumnModel>
             <Columns>
-                <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Name"
+                    DataIndex="Name"
+                    Flex="1"
+                    />
             </Columns>
         </ColumnModel>
         <Plugins>

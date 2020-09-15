@@ -131,7 +131,12 @@
                 Flex="1">
                 <ColumnModel>
                     <Columns>
-                        <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                        <ext:Column
+                            runat="server"
+                            Text="Name"
+                            DataIndex="Name"
+                            Flex="1"
+                            />
                     </Columns>
                 </ColumnModel>
                 <Listeners>
@@ -149,7 +154,12 @@
                 </Store>
                 <ColumnModel>
                     <Columns>
-                        <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                        <ext:Column
+                            runat="server"
+                            Text="Name"
+                            DataIndex="Name"
+                            Flex="1"
+                            />
                     </Columns>
                 </ColumnModel>
             </ext:GridPanel>
@@ -166,7 +176,12 @@
         Height="250">
         <ColumnModel>
             <Columns>
-                <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                <ext:Column
+                    runat="server"
+                    Text="Name"
+                    DataIndex="Name"
+                    Flex="1"
+                    />
             </Columns>
         </ColumnModel>
         <Plugins>
@@ -178,7 +193,12 @@
                         </Store>
                         <ColumnModel>
                             <Columns>
-                                <ext:Column runat="server" Text="Name" DataIndex="Name" Flex="1" />
+                                <ext:Column
+                                    runat="server"
+                                    Text="Name"
+                                    DataIndex="Name"
+                                    Flex="1"
+                                    />
                             </Columns>
                         </ColumnModel>
                         <Listeners>

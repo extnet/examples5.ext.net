@@ -49,7 +49,12 @@
                                 <ActionMethods Read="GET" />
                                 <API Sync="../../Shared/SuppliersService.asmx/SaveSuppliers" />
                                 <Reader>
-                                    <ext:XmlReader Record="Supplier" IDProperty="SupplierID" SuccessProperty="Success" MessageProperty="Message" />
+                                    <ext:XmlReader
+                                        Record="Supplier"
+                                        IDProperty="SupplierID"
+                                        SuccessProperty="Success"
+                                        MessageProperty="Message"
+                                        />
                                 </Reader>
                                 <Writer>
                                     <ext:JsonWriter Encode="true" RootProperty="data" />

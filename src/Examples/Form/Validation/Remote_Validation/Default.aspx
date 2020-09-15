@@ -100,7 +100,12 @@
                 </ext:ComboBox>
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Submit" Disabled="true" />
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Submit"
+                    Disabled="true"
+                    />
             </Buttons>
             <Listeners>
                 <ValidityChange Handler="#{Button1}.setDisabled(!valid);" />

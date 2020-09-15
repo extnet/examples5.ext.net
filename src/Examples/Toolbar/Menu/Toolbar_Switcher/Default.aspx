@@ -24,7 +24,12 @@
 
     <p>Click on any of the first three flags to change region</p>
 
-    <ext:Panel ID="Panel1" runat="server" Title="Regions" Height="250" Width="750">
+    <ext:Panel
+        ID="Panel1"
+        runat="server"
+        Title="Regions"
+        Height="250"
+        Width="750">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>

@@ -42,10 +42,30 @@
         <Items>
             <ext:Panel ID="BorderLayoutPanel" runat="server" Flex="1" Layout="Border">
                 <Items>
-                    <ext:Panel runat="server" Title="West" Region="West" Width="200" />
-                    <ext:Panel runat="server" Title="North" Region="North" Height="100" />
-                    <ext:Panel runat="server" Title="South" Region="South" Height="100" />
-                    <ext:Panel runat="server" Title="East" Region="East" Width="200" />
+                    <ext:Panel
+                        runat="server"
+                        Title="West"
+                        Region="West"
+                        Width="200"
+                        />
+                    <ext:Panel
+                        runat="server"
+                        Title="North"
+                        Region="North"
+                        Height="100"
+                        />
+                    <ext:Panel
+                        runat="server"
+                        Title="South"
+                        Region="South"
+                        Height="100"
+                        />
+                    <ext:Panel
+                        runat="server"
+                        Title="East"
+                        Region="East"
+                        Width="200"
+                        />
 
                     <ext:Panel runat="server" Region="Center" Title="Center" />
                 </Items>
@@ -62,10 +82,30 @@
                         </Defaults>
 
                         <Items>
-                            <ext:NumberField ID="WestWeight" runat="server" FieldLabel="West" Number="0" />
-                            <ext:NumberField ID="NorthWeight" runat="server" FieldLabel="North" Number="0" />
-                            <ext:NumberField ID="SouthWeight" runat="server" FieldLabel="South" Number="0" />
-                            <ext:NumberField ID="EastWeight" runat="server" FieldLabel="East" Number="0" />
+                            <ext:NumberField
+                                ID="WestWeight"
+                                runat="server"
+                                FieldLabel="West"
+                                Number="0"
+                                />
+                            <ext:NumberField
+                                ID="NorthWeight"
+                                runat="server"
+                                FieldLabel="North"
+                                Number="0"
+                                />
+                            <ext:NumberField
+                                ID="SouthWeight"
+                                runat="server"
+                                FieldLabel="South"
+                                Number="0"
+                                />
+                            <ext:NumberField
+                                ID="EastWeight"
+                                runat="server"
+                                FieldLabel="East"
+                                Number="0"
+                                />
                         </Items>
 
                         <DirectEvents>

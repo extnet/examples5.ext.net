@@ -156,7 +156,12 @@
                 </ext:Store>
             </Store>
             <Plugins>
-                <ext:RowEditing runat="server" ClicksToMoveEditor="1" AutoCancel="false" SaveHandler="validateSave" />
+                <ext:RowEditing
+                    runat="server"
+                    ClicksToMoveEditor="1"
+                    AutoCancel="false"
+                    SaveHandler="validateSave"
+                    />
             </Plugins>
             <TopBar>
                 <ext:Toolbar runat="server">

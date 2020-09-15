@@ -144,7 +144,12 @@
                                 <ext:TextField ID="TextField1" runat="server" FieldLabel="Alignment Test" />
                                 <ext:Checkbox ID="CheckboxDog" runat="server" BoxLabel="Dog" FieldLabel="Favorite Animals" />
                                 <ext:Checkbox ID="CheckboxCat" runat="server" BoxLabel="Cat" />
-                                <ext:Checkbox ID="CheckboxMonkey" runat="server" BoxLabel="Monkey" Checked="true" />
+                                <ext:Checkbox
+                                    ID="CheckboxMonkey"
+                                    runat="server"
+                                    BoxLabel="Monkey"
+                                    Checked="true"
+                                    />
                             </Items>
                         </ext:FieldSet>
 

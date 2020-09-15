@@ -83,7 +83,7 @@
                     Disabled="true"
                     FormBind="true">
                     <Listeners>
-                        <Click Handler="if (#{FormPanel1}.getForm().isValid()) {Ext.Msg.alert('Submit', 'Saved!');}else{Ext.Msg.show({icon: Ext.MessageBox.ERROR, msg: 'FormPanel is incorrect', buttons:Ext.Msg.OK});}" />
+                        <Click Handler="if (#{FormPanel1}.getForm().isValid()) { Ext.Msg.alert('Submit', 'Saved!'); } else { Ext.Msg.show({icon: Ext.MessageBox.ERROR, msg: 'FormPanel is incorrect', buttons:Ext.Msg.OK }); }" />
                     </Listeners>
                 </ext:Button>
                 <ext:Button runat="server" Text="Cancel" />

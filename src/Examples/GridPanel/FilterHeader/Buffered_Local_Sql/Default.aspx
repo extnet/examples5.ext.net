@@ -71,12 +71,32 @@
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="40" />
                     <ext:Column runat="server" Text="Order #" DataIndex="ordernum" Width="70" />
-                    <ext:Column runat="server" Text="Description" DataIndex="item" Flex="5" />
+                    <ext:Column
+                        runat="server"
+                        Text="Description"
+                        DataIndex="item"
+                        Flex="5"
+                        />
                     <ext:Column runat="server" Text="Buying Company" DataIndex="customer_company" Flex="4" />
                     <ext:Column runat="server" Text="Seller Representative" DataIndex="seller" Flex="4" />
-                    <ext:Column runat="server" Text="Price" DataIndex="original_price" Width="60" />
-                    <ext:Column runat="server" Text="Paid" DataIndex="effective_price" Width="60" />
-                    <ext:Column runat="server" Text="Discount" DataIndex="discount" Width="80" />
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="original_price"
+                        Width="60"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Paid"
+                        DataIndex="effective_price"
+                        Width="60"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Discount"
+                        DataIndex="discount"
+                        Width="80"
+                        />
                 </Columns>
             </ColumnModel>
             <Plugins>

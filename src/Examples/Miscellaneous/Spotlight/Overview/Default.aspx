@@ -45,7 +45,12 @@
 
         <p>This control allows you to restrict input to a particular element by masking all other page content.</p>
 
-        <ext:Spotlight ID="Spot" runat="server" Easing="EaseOut" Duration="300" />
+        <ext:Spotlight
+            ID="Spot"
+            runat="server"
+            Easing="EaseOut"
+            Duration="300"
+            />
 
         <ext:Button runat="server" Text="Start">
             <Listeners>

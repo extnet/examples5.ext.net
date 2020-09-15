@@ -96,11 +96,28 @@
                         <ColumnModel>
                             <Columns>
                                 <ext:RowNumbererColumn runat="server" />
-                                <ext:Column runat="server" Text="Company" Flex="1" Sortable="true" DataIndex="Company" />
-                                <ext:Column runat="server" Text="Price" Width="70" Sortable="true" DataIndex="Price">
+                                <ext:Column
+                                    runat="server"
+                                    Text="Company"
+                                    Flex="1"
+                                    Sortable="true"
+                                    DataIndex="Company"
+                                    />
+                                <ext:Column
+                                    runat="server"
+                                    Text="Price"
+                                    Width="70"
+                                    Sortable="true"
+                                    DataIndex="Price">
                                     <Renderer Format="UsMoney" />
                                 </ext:Column>
-                                <ext:Column runat="server" Text="Change" Width="70" Sortable="true" DataIndex="Change" />
+                                <ext:Column
+                                    runat="server"
+                                    Text="Change"
+                                    Width="70"
+                                    Sortable="true"
+                                    DataIndex="Change"
+                                    />
                                 <ext:Column runat="server" Text="% Change" Width="70" Sortable="true" DataIndex="PctChange" />
                             </Columns>
                         </ColumnModel>
