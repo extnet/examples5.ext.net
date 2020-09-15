@@ -61,8 +61,8 @@
             />
 
         <ext:GridPanel
-            runat="server"
             ID="GridPanel1"
+            runat="server"
             Height="570"
             Title="Employees"
             Frame="true">

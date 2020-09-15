@@ -87,19 +87,22 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
 
                         <ext:TextSprite
                             Text="Data: Browser Stats 2012"
                             FontSize="10"
                             X="12"
-                            Y="580" />
+                            Y="580"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="595" />
+                            Y="595"
+                            />
                     </Items>
                     <Axes>
                         <ext:NumericAxis

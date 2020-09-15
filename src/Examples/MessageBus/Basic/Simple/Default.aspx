@@ -51,10 +51,7 @@
                     BodyPadding="18"
                     MarginSpec="5">
                     <MessageBusListeners>
-                        <ext:MessageBusListener
-                            Name="App.*"
-                            Handler="this.body.createChild({html: name + ' from ' + data.item.id, tag:'p'});"
-                            />
+                        <ext:MessageBusListener Name="App.*" Handler="this.body.createChild({html: name + ' from ' + data.item.id, tag:'p'});" />
                     </MessageBusListeners>
 
                     <Buttons>

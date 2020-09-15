@@ -300,8 +300,7 @@
                                     IconAlign="Top"
                                     ArrowAlign="Bottom"
                                     Scale="Large"
-                                    RowSpan="3"
-                                    >
+                                    RowSpan="3">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>

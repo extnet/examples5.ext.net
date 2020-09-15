@@ -87,13 +87,15 @@
                             runat="server"
                             Text="Reload"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="Download"
                             IconCls="x-md md-icon-save"
-                            Handler="download" />
+                            Handler="download"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -153,7 +155,8 @@
                                             Radius="4"
                                             LineWidth="0"
                                             FillStyle="#18428E"
-                                            StrokeStyle="#18428E" />
+                                            StrokeStyle="#18428E"
+                                            />
                                     </Marker>
                                 </ext:LineSeries>
                             </Series>
@@ -212,7 +215,8 @@
                                             Radius="4"
                                             LineWidth="0"
                                             FillStyle="#18428E"
-                                            StrokeStyle="#18428E" />
+                                            StrokeStyle="#18428E"
+                                            />
                                     </Marker>
                                 </ext:LineSeries>
                             </Series>

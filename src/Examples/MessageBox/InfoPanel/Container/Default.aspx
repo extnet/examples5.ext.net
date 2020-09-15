@@ -264,22 +264,10 @@
             <ext:MenuPanel runat="server" Width="200" SaveSelection="false">
                 <Menu runat="server">
                     <Items>
-                        <ext:MenuItem
-                            runat="server"
-                            Text="Info (client)"
-                            Handler="showInfo('info', 'Info', 'You can insert message here');" />
-                        <ext:MenuItem
-                            runat="server"
-                            Text="Success (client)"
-                            Handler="showInfo('success', 'Success Info', 'You can insert message here');" />
-                        <ext:MenuItem
-                            runat="server"
-                            Text="Danger (server)"
-                            OnDirectClick="ShowDangerInfo" />
-                        <ext:MenuItem
-                            runat="server"
-                            Text="Warning (server)"
-                            OnDirectClick="ShowWarningInfo" />
+                        <ext:MenuItem runat="server" Text="Info (client)" Handler="showInfo('info', 'Info', 'You can insert message here');" />
+                        <ext:MenuItem runat="server" Text="Success (client)" Handler="showInfo('success', 'Success Info', 'You can insert message here');" />
+                        <ext:MenuItem runat="server" Text="Danger (server)" OnDirectClick="ShowDangerInfo" />
+                        <ext:MenuItem runat="server" Text="Warning (server)" OnDirectClick="ShowWarningInfo" />
                     </Items>
                 </Menu>
             </ext:MenuPanel>

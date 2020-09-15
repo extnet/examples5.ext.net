@@ -13,11 +13,10 @@
     }
 </script>
 
-<ext:Panel runat="server"
-    Cls="feed-detail"    
-    Layout="Border">
+<ext:Panel runat="server" Cls="feed-detail" Layout="Border">
     <Items>
-        <ext:Panel runat="server" 
+        <ext:Panel
+            runat="server"
             Layout="Fit" 
             Region="Center" 
             Flex="2" 
@@ -34,7 +33,8 @@
 
                         <ext:ToolbarSeparator />
 
-                        <ext:CycleButton runat="server" 
+                        <ext:CycleButton
+                            runat="server"
                             Text="Reading Pane"
                             PrependText="Preview: "
                             ShowText="true">
@@ -66,7 +66,8 @@
             </Items>
         </ext:Panel>        
 
-        <ext:Container runat="server" 
+        <ext:Container
+            runat="server"
             Layout="Fit"
             Region="South"
             Split="true"
@@ -77,7 +78,8 @@
             </Items>
         </ext:Container>
 
-        <ext:Panel runat="server" 
+        <ext:Panel
+            runat="server"
             Region="East"
             Layout="Fit"
             Flex="1"

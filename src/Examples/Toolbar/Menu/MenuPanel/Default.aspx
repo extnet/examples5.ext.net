@@ -102,7 +102,8 @@
                     Title="Selected Item"
                     BodyPadding="18"
                     Region="Center"
-                    MarginSpec="5 5 5 0" />
+                    MarginSpec="5 5 5 0"
+                    />
             </Items>
         </ext:Window>
     </form>

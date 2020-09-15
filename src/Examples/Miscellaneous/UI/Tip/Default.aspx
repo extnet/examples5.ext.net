@@ -71,7 +71,8 @@
                             Html="UI = 'Warning'"
                             UI="Warning"
                             AutoHide="false"
-                            Closable="true" />
+                            Closable="true"
+                            />
                     </ToolTips>
                 </ext:Button>
             </Items>

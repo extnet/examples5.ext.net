@@ -132,7 +132,8 @@
                                         ID="ExpanderOnlyToggle"
                                         runat="server"
                                         Text="Expander Only"
-                                        Handler="App.TreeList1.setExpanderOnly(this.checked)" />
+                                        Handler="App.TreeList1.setExpanderOnly(this.checked)"
+                                        />
                                     <ext:CheckMenuItem ID="SingleExpandToggle" runat="server" Text="Single Expand">
                                         <Listeners>
                                             <CheckChange Fn="handleSEToggle" />
@@ -223,7 +224,8 @@
                     ID="SelectionPanel"
                     runat="server"
                     Region="Center"
-                    BodyPadding="18" />
+                    BodyPadding="18"
+                    />
             </Items>
         </ext:Window>
     </form>

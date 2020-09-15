@@ -95,7 +95,7 @@
                     OverflowY="Auto"
                     ItemSelector="div.search-item"
                     EmptyText="<div class='x-grid-empty'>No Matching Threads</div>">
-                    <Tpl>
+                    <Tpl runat="server">
                         <Html>
                             <tpl for=".">
                                 <div class="search-item">
@@ -109,7 +109,6 @@
                             <ext:JFunction Name="formatDate" Handler="return Ext.Date.format(value, 'M j, Y');" Args="value" />
                         </Functions>
                     </Tpl>
-
                     <Store>
                         <ext:Store ID="PostStore1" runat="server" PageSize="25">
                             <Model>
@@ -149,7 +148,8 @@
                     Dock="Bottom"
                     StoreID="PostStore1"
                     DisplayMsg="Topics {0} - {1} of {2}"
-                    EmptyMsg="No topics to display" />
+                    EmptyMsg="No topics to display"
+                    />
             </DockedItems>
         </ext:Panel>
     </form>

@@ -139,8 +139,10 @@
                                 Text="Date"
                                 DataIndex="date"
                                 Flex="1"
-                                Format="yyyy-MM-dd" />
-                            <ext:BooleanColumn runat="server"
+                                Format="yyyy-MM-dd"
+                                />
+                            <ext:BooleanColumn
+                                runat="server"
                                 Text="Shipped"
                                 DataIndex="shipped"
                                 Align="Center"

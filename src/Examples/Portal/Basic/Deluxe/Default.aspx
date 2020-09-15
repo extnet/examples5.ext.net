@@ -148,19 +148,22 @@
                             Border="false"
                             Title="Content"
                             Html="={text}"
-                            BodyPadding="18" />
+                            BodyPadding="18"
+                            />
                         <ext:Panel
                             runat="server"
                             Border="false"
                             Title="Activities"
                             Html="={text}"
-                            BodyPadding="18" />
+                            BodyPadding="18"
+                            />
                         <ext:Panel
                             runat="server"
                             Border="false"
                             Title="Contacts"
                             Html="={text}"
-                            BodyPadding="18" />
+                            BodyPadding="18"
+                            />
                     </Items>
                 </ext:Panel>
                 <ext:TabPanel

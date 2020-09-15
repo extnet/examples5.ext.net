@@ -78,7 +78,7 @@
                         Border="false"
                         Cls="sidebar-list"
                         ItemSelector=".product">
-                        <Tpl>
+                        <Tpl runat="server">
                             <Html>
                                 <div class="sidebar-title">Books</div>
                                 <tpl for=".">
@@ -100,11 +100,7 @@
                             <SelectionChange BroadcastOnBus="App.SelectionChange" />
                         </Listeners>
                         <MessageBusListeners>
-                            <ext:MessageBusListener
-                                Name="App.BooksLoad"
-                                Handler="data.records.length && this.getSelectionModel().select(data.records[0]);"
-                                Delay="500"
-                                />
+                            <ext:MessageBusListener Name="App.BooksLoad" Handler="data.records.length && this.getSelectionModel().select(data.records[0]);" Delay="500" />
                         </MessageBusListeners>
                     </ext:DataView>
                 </DockedItems>
@@ -128,10 +124,7 @@
                                 ImageUrl="={Ext.BLANK_IMAGE_URL}">
                                 <LoadMask ShowMask="true" />
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener
-                                        Name="App.SelectionChange"
-                                        Handler="data.selected && this.setImageUrl(data.selected[0].get('image'))"
-                                        />
+                                    <ext:MessageBusListener Name="App.SelectionChange" Handler="data.selected && this.setImageUrl(data.selected[0].get('image'))" />
                                 </MessageBusListeners>
                             </ext:Image>
                             <ext:Component runat="server" Width="500" Border="false">
@@ -142,10 +135,7 @@
                                         <div class="detail">{detail}</div>
                                     </html>                                </Tpl>
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener
-                                        Name="App.SelectionChange"
-                                        Handler="data.selected.length && this.update(data.selected[0].getData())"
-                                        />
+                                    <ext:MessageBusListener Name="App.SelectionChange" Handler="data.selected.length && this.update(data.selected[0].getData())" />
                                 </MessageBusListeners>
                             </ext:Component>
                         </Items>
@@ -172,7 +162,7 @@
                                 Cls="review-list"
                                 Scrollable="Both"
                                 ItemSelector=".review">
-                                <Tpl>
+                                <Tpl runat="server">
                                     <Html>
                                         <tpl for=".">
                                             <div class="review {[xindex === 1 ? "first-review" : ""]}">
@@ -189,10 +179,7 @@
                                     <ext:Store ID="ReviewsStore" runat="server" ModelName="Books.Review" />
                                 </Store>
                                 <MessageBusListeners>
-                                    <ext:MessageBusListener
-                                        Name="App.SelectionChange"
-                                        Handler="data.selected.length && this.bindStore(data.selected[0].reviews())"
-                                        />
+                                    <ext:MessageBusListener Name="App.SelectionChange" Handler="data.selected.length && this.bindStore(data.selected[0].reviews())" />
                                 </MessageBusListeners>
                             </ext:DataView>
                         </Items>

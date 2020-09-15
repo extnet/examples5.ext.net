@@ -49,7 +49,8 @@
             <Items>
                 <ext:Panel runat="server" Title="Line Chart" Layout="Fit">
                     <Items>
-                        <ext:CartesianChart runat="server"
+                        <ext:CartesianChart
+                            runat="server"
                             Animation="false"
                             BindString="{priceData}"
                             InsetPadding="40"
@@ -101,7 +102,8 @@
 
                 <ext:Panel runat="server" Title="Bar Chart" Layout="Fit">
                     <Items>
-                        <ext:CartesianChart runat="server"
+                        <ext:CartesianChart
+                            runat="server"
                             Animation="false"
                             BindString="{priceData}"
                             InsetPadding="40">
@@ -146,7 +148,8 @@
 
                 <ext:Panel runat="server" Title="Radial" Layout="Fit">
                     <Items>
-                        <ext:PolarChart runat="server"
+                        <ext:PolarChart
+                            runat="server"
                             Animation="false"
                             BindString="{priceData}"
                             InsetPadding="40">
@@ -165,9 +168,7 @@
                                     <Renderer Fn="Ext.util.Format.usMoney" />
                                 </ext:NumericAxis>
 
-                                <ext:CategoryAxis
-                                    Position="Angular"
-                                    Grid="true" />
+                                <ext:CategoryAxis Position="Angular" Grid="true" />
                             </Axes>
 
                             <Series>

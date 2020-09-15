@@ -52,12 +52,14 @@
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
                         <ext:Button
                             runat="server"
                             Text="Save Chart"
                             IconCls="x-md md-icon-save"
-                            Handler="saveChart" />
+                            Handler="saveChart"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -92,19 +94,22 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
 
                         <ext:TextSprite
                             Text="Data: Browser Stats 2012 - Internet Explorer"
                             FontSize="10"
                             X="12"
-                            Y="480" />
+                            Y="480"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="495" />
+                            Y="495"
+                            />
                     </Items>
                     <Axes>
                         <ext:NumericAxis
@@ -115,10 +120,7 @@
                             <Renderer Handler="return label.toFixed(0) + '%';" />
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Fields="Name"
-                            Position="Left"
-                            Grid="true" />
+                        <ext:CategoryAxis Fields="Name" Position="Left" Grid="true" />
                     </Axes>
 
                     <Series>
@@ -136,7 +138,8 @@
                             </Tooltip>
                             <Label
                                 Display="InsideEnd"
-                                Field="Data1" />
+                                Field="Data1"
+                                />
                         </ext:BarSeries>
                     </Series>
                 </ext:CartesianChart>

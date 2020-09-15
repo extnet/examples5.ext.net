@@ -96,9 +96,7 @@
                     DataIndex="light"
                     Width="130">
                     <Editor>
-                        <ext:ComboBox runat="server"
-                            TypeAhead="true"
-                            SelectOnTab="true">
+                        <ext:ComboBox runat="server" TypeAhead="true" SelectOnTab="true">
                             <Items>
                                 <ext:ListItem Text="Shade" />
                                 <ext:ListItem Text="Mostly Shady" />
@@ -130,7 +128,8 @@
                     Width="95"
                     Format="MMM dd, yyyy">
                     <Editor>
-                        <ext:DateField runat="server"
+                        <ext:DateField
+                            runat="server"
                             Format="yyyy-MM-dd"
                             MinDate="01.01.2006"
                             DisabledDays="0,6"
@@ -145,7 +144,8 @@
                     DataIndex="indoor"
                     StopSelection="false"
                     Editable="true"
-                    Width="55" />
+                    Width="55"
+                    />
 
                 <ext:ImageCommandColumn runat="server" Width="30" Sortable="false">
                     <Commands>

@@ -152,7 +152,8 @@
             <ColumnModel>
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="25" />
-                    <ext:Column runat="server"
+                    <ext:Column
+                        runat="server"
                         Text="Name"
                         DataIndex="name"
                         Flex="1">
@@ -165,7 +166,8 @@
                             <ext:TextField runat="server" AllowBlank="false" Vtype="email" />
                         </Editor>
                     </ext:Column>
-                    <ext:DateColumn runat="server"
+                    <ext:DateColumn
+                        runat="server"
                         Text="Start Date"
                         DataIndex="start"
                         Format="MM/dd/yyyy"

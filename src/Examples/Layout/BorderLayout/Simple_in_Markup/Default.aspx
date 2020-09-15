@@ -41,7 +41,8 @@
                 MinWidth="175"
                 Split="true"
                 Width="175"
-                Title="Navigation" />
+                Title="Navigation"
+                />
             <ext:TabPanel
                 runat="server"
                 Region="Center"

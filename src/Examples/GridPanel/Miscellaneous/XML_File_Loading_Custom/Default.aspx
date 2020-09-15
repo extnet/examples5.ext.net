@@ -83,15 +83,13 @@
         <ColumnModel runat="server">
             <Columns>
                 <ext:Column
-                    runat="server"
                     ID="Category"
+                    runat="server"
                     Text="Category"
                     DataIndex="category"
-                    Flex="1" />
-                <ext:Column
-                    runat="server"
-                    Text="ID"
-                    DataIndex="id" />
+                    Flex="1"
+                    />
+                <ext:Column runat="server" Text="ID" DataIndex="id" />
             </Columns>
         </ColumnModel>
         <Plugins>

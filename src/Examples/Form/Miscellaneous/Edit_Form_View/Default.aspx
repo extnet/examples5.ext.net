@@ -276,7 +276,8 @@
                     ID="Pager1"
                     runat="server"
                     StoreID="Store1"
-                    DisplayInfo="false" />
+                    DisplayInfo="false"
+                    />
             </BottomBar>
         </ext:Window>
     </form>

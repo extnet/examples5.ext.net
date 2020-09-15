@@ -92,11 +92,7 @@
                             <Renderer Fn="Ext.util.Format.numberRenderer('0,0')" />
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Fields="Name"
-                            Position="Left"
-                            Title="Month of the Year"
-                            />
+                        <ext:CategoryAxis Fields="Name" Position="Left" Title="Month of the Year" />
                     </Axes>
                     <Series>
                         <ext:BarSeries Stacked="false"

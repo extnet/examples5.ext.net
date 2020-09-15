@@ -9,10 +9,7 @@
         <Items>
             <ext:Panel runat="server" PreventHeader="true" Height="180" Layout="Fit">
                 <MessageBusListeners>
-                    <ext:MessageBusListener
-                        Name="FromUserControl.*"
-                        Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});"
-                        />
+                    <ext:MessageBusListener Name="FromUserControl.*" Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});" />
                 </MessageBusListeners>
             </ext:Panel>
 

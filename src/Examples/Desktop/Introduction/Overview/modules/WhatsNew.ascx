@@ -4,7 +4,8 @@
     <Module ModuleID="whatsnew-win">
         <Shortcut Name="What's new" SortIndex="100" />
         <Window>
-            <ext:Window runat="server"
+            <ext:Window
+                runat="server"
                 Width="600" 
                 Height="250" 
                 AnimCollapse="false"

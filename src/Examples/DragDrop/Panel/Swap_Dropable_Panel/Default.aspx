@@ -127,7 +127,8 @@
                             Cls="draggable"
                             Title="Center"
                             BodyPadding="18"
-                            Html="Drag/Drop Panel Headers to a different Viewport Region" />
+                            Html="Drag/Drop Panel Headers to a different Viewport Region"
+                            />
                     </Items>
                 </ext:Container>
             </Items>

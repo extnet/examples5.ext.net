@@ -33,9 +33,7 @@
             </ul>
         </p>
 
-        <ext:Panel runat="server"
-            Width="480"
-            Height="180">
+        <ext:Panel runat="server" Width="480" Height="180">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -49,7 +47,8 @@
                 </ext:Model>
             </Bin>
             <Items>
-                <ext:TreePanel runat="server"
+                <ext:TreePanel
+                    runat="server"
                     RootVisible="false"
                     Flex="1"
                     Title="Source">
@@ -100,7 +99,8 @@
                     </View>
                 </ext:TreePanel>
 
-                <ext:TreePanel runat="server"
+                <ext:TreePanel
+                    runat="server"
                     RootVisible="false"
                     Flex="1"
                     Title="Destination">

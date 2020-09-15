@@ -156,7 +156,8 @@
                     ColumnSelect="true"
                     CheckboxSelect="true"
                     PruneRemoved="false"
-                    Extensible="Y" />
+                    Extensible="Y"
+                    />
             </SelectionModel>
             <ColumnModel>
                 <Columns>
@@ -189,21 +190,24 @@
                             Text="Rows"
                             EnableToggle="true"
                             ToggleHandler="toggleRowSelect"
-                            Pressed="true" />
+                            Pressed="true"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="Cells"
                             EnableToggle="true"
                             ToggleHandler="toggleCellSelect"
-                            Pressed="true" />
+                            Pressed="true"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="Columns"
                             EnableToggle="true"
                             ToggleHandler="toggleColumnSelect"
-                            Pressed="true" />
+                            Pressed="true"
+                            />
 
                         <ext:ToolbarFill runat="server" />
 

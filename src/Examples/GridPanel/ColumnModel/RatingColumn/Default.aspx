@@ -76,11 +76,7 @@
                     DataIndex="company"
                     Flex="1"
                     />
-                <ext:RatingColumn
-                    runat="server"
-                    Text="Rating"
-                    DataIndex="rating1"
-                    />
+                <ext:RatingColumn runat="server" Text="Rating" DataIndex="rating1" />
                 <ext:RatingColumn
                     runat="server"
                     Text="Editable"

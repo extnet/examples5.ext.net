@@ -234,7 +234,7 @@
                                 </Fields>
                             </ext:Store>
                         </Store>
-                        <Tpl>
+                        <Tpl runat="server">
                             <Html>
                                 <ul>
                                     <tpl for=".">
@@ -280,7 +280,8 @@
                     Text="Task"
                     Flex="1"
                     Sortable="true"
-                    DataIndex="task" />
+                    DataIndex="task"
+                    />
             </Columns>
         </ColumnModel>
 
@@ -407,7 +408,8 @@
     <br />
     <br />
 
-    <ext:FormPanel runat="server"
+    <ext:FormPanel
+        runat="server"
         Title="Form panel (click a field to see validation result)"
         BodyPadding="18"
         Width="500">
@@ -416,7 +418,8 @@
         </Defaults>
 
         <Items>
-            <ext:TextField runat="server"
+            <ext:TextField
+                runat="server"
                 FieldLabel="Username"
                 AllowBlank="false"
                 MinLength="6">

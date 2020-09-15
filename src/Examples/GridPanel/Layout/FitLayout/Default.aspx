@@ -93,7 +93,8 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server"
+                            <ext:Column
+                                runat="server"
                                 Text="ID"
                                 Width="40"
                                 Sortable="true"
@@ -102,7 +103,8 @@
                                     <ext:NumberFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:Column runat="server"
+                            <ext:Column
+                                runat="server"
                                 Text="Job Name"
                                 Sortable="true"
                                 DataIndex="Name"
@@ -111,7 +113,8 @@
                                     <ext:StringFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:DateColumn runat="server"
+                            <ext:DateColumn
+                                runat="server"
                                 Text="Start"
                                 Width="120"
                                 Sortable="true"
@@ -123,7 +126,8 @@
                                     </ext:DateFilter>
                                 </Filter>
                             </ext:DateColumn>
-                            <ext:DateColumn runat="server"
+                            <ext:DateColumn
+                                runat="server"
                                 Text="End"
                                 Width="120"
                                 Sortable="true"
@@ -135,7 +139,8 @@
                                     </ext:DateFilter>
                                 </Filter>
                             </ext:DateColumn>
-                            <ext:Column runat="server"
+                            <ext:Column
+                                runat="server"
                                 Text="Completed"
                                 Width="80"
                                 Sortable="true"
@@ -154,11 +159,7 @@
                         <ext:GridFilters runat="server" />
                     </Plugins>
                     <BottomBar>
-                        <ext:PagingToolbar
-                            runat="server"
-                            DisplayInfo="true"
-                            DisplayMsg="Displaying Jobs {0} - {1} of {2}"
-                            />
+                        <ext:PagingToolbar runat="server" DisplayInfo="true" DisplayMsg="Displaying Jobs {0} - {1} of {2}" />
                     </BottomBar>
                 </ext:GridPanel>
             </Items>

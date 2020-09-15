@@ -54,31 +54,11 @@
                             <Menu>
                                 <ext:Menu runat="server">
                                     <Items>
-                                        <ext:MenuItem
-                                            runat="server"
-                                            Text="Today"
-                                            Handler="this.up('datefield').setValue(new Date());"
-                                            />
-                                        <ext:MenuItem
-                                            runat="server"
-                                            Text="Tomorrow"
-                                            Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.DAY, 1));"
-                                            />
-                                        <ext:MenuItem
-                                            runat="server"
-                                            Text="+One week"
-                                            Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.WEEK, 1));"
-                                            />
-                                        <ext:MenuItem
-                                            runat="server"
-                                            Text="+Two week"
-                                            Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.WEEK, 2));"
-                                            />
-                                        <ext:MenuItem
-                                            runat="server"
-                                            Text="+One month"
-                                            Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.MONTH, 1));"
-                                            />
+                                        <ext:MenuItem runat="server" Text="Today" Handler="this.up('datefield').setValue(new Date());" />
+                                        <ext:MenuItem runat="server" Text="Tomorrow" Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.DAY, 1));" />
+                                        <ext:MenuItem runat="server" Text="+One week" Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.WEEK, 1));" />
+                                        <ext:MenuItem runat="server" Text="+Two week" Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.WEEK, 2));" />
+                                        <ext:MenuItem runat="server" Text="+One month" Handler="this.up('datefield').setValue(Ext.Date.add(new Date(), Ext.Date.MONTH, 1));" />
                                     </Items>
                                 </ext:Menu>
                             </Menu>

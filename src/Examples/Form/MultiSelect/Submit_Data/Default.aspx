@@ -103,12 +103,14 @@
                                     Name="multi1"
                                     Value="#{MultiSelect1}.getValues()"
                                     Mode="Raw"
-                                    Encode="true" />
+                                    Encode="true"
+                                    />
                                 <ext:Parameter
                                     Name="multi2"
                                     Value="#{MultiSelect2}.getValues(true)"
                                     Mode="Raw"
-                                    Encode="true" />
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

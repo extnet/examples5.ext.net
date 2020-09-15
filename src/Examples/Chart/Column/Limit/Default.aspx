@@ -134,13 +134,15 @@
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="={Ext.os.is.Desktop ? 'Download' : 'Preview'}"
                             IconCls="x-md md-icon-save"
-                            Handler="saveChart" />
+                            Handler="saveChart"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -206,7 +208,8 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
                     </Items>
                 </ext:CartesianChart>
             </Items>

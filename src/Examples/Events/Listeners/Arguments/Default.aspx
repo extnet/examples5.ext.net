@@ -116,7 +116,8 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:FormPanel runat="server"
+        <ext:FormPanel
+            runat="server"
             Title="Listener Arguments"
             Width="400"
             BodyPadding="18"
@@ -164,7 +165,8 @@
 
                 <ext:DisplayField ID="FunctionLabel" runat="server"
                     FieldLabel="Signature"
-                    FieldCls="func-label" />
+                    FieldCls="func-label"
+                    />
             </Items>
         </ext:FormPanel>
 

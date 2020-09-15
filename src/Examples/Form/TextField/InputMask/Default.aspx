@@ -109,11 +109,13 @@
 
                 <ext:TextField runat="server" FieldLabel="ClearWhenInvalid=false" Note="Always visible mask">
                     <Plugins>
-                        <ext:InputMask runat="server"
+                        <ext:InputMask
+                            runat="server"
                             Mask="(999) 999-9999"
                             AlwaysShow="true"
                             ClearWhenInvalid="false"
-                            InvalidMaskText="The value doesn't match the mask" />
+                            InvalidMaskText="The value doesn't match the mask"
+                            />
                     </Plugins>
                 </ext:TextField>
 

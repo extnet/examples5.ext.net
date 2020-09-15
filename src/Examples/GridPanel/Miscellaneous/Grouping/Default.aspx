@@ -136,7 +136,8 @@
                                               #{btnToggleGroups}.setDisabled(!isGrouped);
 
                                               #{btnMenuGroups}.setDisabled(this.getGroupField() !== 'Light');"
-                                     Delay="100" />
+                                     Delay="100"
+                                     />
                     </Listeners>
                 </ext:Store>
             </Store>
@@ -156,7 +157,8 @@
                         <Renderer Format="UsMoney" />
                     </ext:Column>
 
-                    <ext:DateColumn runat="server"
+                    <ext:DateColumn
+                        runat="server"
                         Text="Available"
                         DataIndex="Availability"
                         Width="95"
@@ -209,7 +211,8 @@
                     ID="btnClearGrouping"
                     runat="server"
                     Text="Clear Grouping"
-                    Handler="clearGrouping" />
+                    Handler="clearGrouping"
+                    />
             </Buttons>
 
             <TopBar>

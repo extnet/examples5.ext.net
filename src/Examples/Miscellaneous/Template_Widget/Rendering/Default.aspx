@@ -30,7 +30,8 @@
 
         <h1>Template Widget Rendering</h1>
 
-        <ext:Window runat="server"
+        <ext:Window
+            runat="server"
             Title="Tabs"
             Width="680"
             Height="500"
@@ -41,10 +42,12 @@
                         <ext:UserControlLoader runat="server" Path="Tab.ascx" />
                     </Bin>
                     <TabBar>
-                        <ext:Button runat="server"
+                        <ext:Button
+                            runat="server"
                             IconCls="x-md md-icon-add-circle-outline"
                             Flat="true"
-                            Handler="addTab(this.up('tabpanel'));" />
+                            Handler="addTab(this.up('tabpanel'));"
+                            />
                     </TabBar>
                 </ext:TabPanel>
             </Items>

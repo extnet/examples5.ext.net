@@ -284,7 +284,9 @@
                         height     : 200
                     });"
 
-                    Buffer="10" />
+                    Buffer="10"
+
+                    />
             </Listeners>
         </ext:Store>
 
@@ -298,45 +300,32 @@
             Width="500">
             <FieldDefaults LabelAlign="Right" AllowBlank="false" />
             <Items>
-                <ext:TextField runat="server"
+                <ext:TextField
+                    runat="server"
                     FieldLabel="Email"
                     Name="Email"
                     Vtype="email"
                     />
 
-                <ext:TextField runat="server"
-                    FieldLabel="First"
-                    Name="First"
-                    />
+                <ext:TextField runat="server" FieldLabel="First" Name="First" />
 
-                <ext:TextField runat="server"
-                    FieldLabel="Last"
-                    Name="Last"
-                    />
+                <ext:TextField runat="server" FieldLabel="Last" Name="Last" />
             </Items>
 
             <Buttons>
-                <ext:Button
-                    runat="server"
-                    Text="Save"
-                    IconCls="x-md md-icon-save">
+                <ext:Button runat="server" Text="Save" IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="updateRecord(#{UserForm});" />
                     </Listeners>
                 </ext:Button>
 
-                <ext:Button
-                    runat="server"
-                    Text="Create"
-                    IconCls="x-md md-icon-person-add">
+                <ext:Button runat="server" Text="Create" IconCls="x-md md-icon-person-add">
                     <Listeners>
                         <Click Handler="addRecord(#{UserForm}, #{GridPanel1});" />
                     </Listeners>
                 </ext:Button>
 
-                <ext:Button
-                    runat="server"
-                    Text="Reset">
+                <ext:Button runat="server" Text="Reset">
                     <Listeners>
                         <Click Handler="#{UserForm}.getForm().reset();" />
                     </Listeners>

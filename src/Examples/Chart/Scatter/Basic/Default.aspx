@@ -101,7 +101,8 @@
                             Width="100"
                             Height="10"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
                     </Items>
                     <Series>
                         <ext:ScatterSeries XField="x" YField="y">

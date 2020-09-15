@@ -24,16 +24,8 @@
             LabelWidth="55"
             Layout="Anchor">
             <Items>
-                <ext:TextField
-                    runat="server"
-                    FieldLabel="Send to"
-                    AnchorHorizontal="100%"
-                    />
-                <ext:TextField
-                    runat="server"
-                    FieldLabel="Subject"
-                    AnchorHorizontal="100%"
-                    />
+                <ext:TextField runat="server" FieldLabel="Send to" AnchorHorizontal="100%" />
+                <ext:TextField runat="server" FieldLabel="Subject" AnchorHorizontal="100%" />
                 <ext:TextArea
                     runat="server"
                     HideLabel="true"

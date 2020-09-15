@@ -197,7 +197,8 @@
             </TopBar>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server"
+                    <ext:Column
+                        runat="server"
                         Text="Company"
                         Sortable="true"
                         DataIndex="company"

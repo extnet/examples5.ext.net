@@ -198,7 +198,8 @@
                                     Name="Values"
                                     Value="#{ImageView}.getRowsValues({ selectedOnly : true })"
                                     Mode="Raw"
-                                    Encode="true" />
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

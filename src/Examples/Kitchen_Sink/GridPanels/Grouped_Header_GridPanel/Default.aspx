@@ -105,7 +105,8 @@
                             Text="Company"
                             DataIndex="company"
                             Flex="1"
-                            Sortable="false" />
+                            Sortable="false"
+                            />
 
                         <ext:Column runat="server" Text="Stock Price">
                             <Columns>
@@ -143,7 +144,8 @@
                             DataIndex="lastChange"
                             Width="95"
                             Sortable="true"
-                            Format="dd/MM/yyyy" />
+                            Format="dd/MM/yyyy"
+                            />
                     </Columns>
                 </ColumnModel>
             </ext:GridPanel>

@@ -133,7 +133,8 @@
                         runat="server"
                         Text="Client Side Filter"
                         IconCls="x-md md-icon-zoom-in"
-                        Handler="var fquery='company like &quot;Ameri&quot; or price > 75'; App.Store1.addFilter(Ext.create('Ext.data.Query', { source: fquery })); Ext.toast('Client-filtered by query: ' + fquery);" />
+                        Handler="var fquery='company like &quot;Ameri&quot; or price > 75'; App.Store1.addFilter(Ext.create('Ext.data.Query', { source: fquery })); Ext.toast('Client-filtered by query: ' + fquery);"
+                        />
                     <ext:Button runat="server" Text="Reset Filter" IconCls="x-md md-icon-clear" Handler="App.Store1.clearFilter()" />
                 </Items>
             </ext:Toolbar>

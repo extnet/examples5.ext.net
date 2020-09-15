@@ -28,28 +28,32 @@
                     Cls="dropable"
                     Layout="Fit"
                     Height="100"
-                    MarginSpec="10 10 5 10" />
+                    MarginSpec="10 10 5 10"
+                    />
                 <ext:Container
                     runat="server"
                     Region="East"
                     Cls="dropable"
                     Layout="Fit"
                     Width="200"
-                    MarginSpec="5 10 5 10" />
+                    MarginSpec="5 10 5 10"
+                    />
                 <ext:Container
                     runat="server"
                     Region="West"
                     Cls="dropable"
                     Layout="Fit"
                     Width="200"
-                    MarginSpec="5 10 5 10" />
+                    MarginSpec="5 10 5 10"
+                    />
                 <ext:Container
                     runat="server"
                     Region="South"
                     Cls="dropable"
                     Layout="Fit"
                     Height="100"
-                    MarginSpec="5 10 10 10" />
+                    MarginSpec="5 10 10 10"
+                    />
                 <ext:Container
                     runat="server"
                     Region="Center"

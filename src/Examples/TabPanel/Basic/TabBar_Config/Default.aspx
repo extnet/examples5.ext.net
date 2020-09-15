@@ -113,8 +113,8 @@
         <ext:ResourceManager runat="server" />
 
         <ext:Window
-            runat="server"
             ID="Window1"
+            runat="server"
             Title="TabBar Config"
             Width="680"
             Resizable="false"

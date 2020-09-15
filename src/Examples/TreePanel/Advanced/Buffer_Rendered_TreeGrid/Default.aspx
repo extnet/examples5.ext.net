@@ -28,7 +28,8 @@
              Tree with buffered rendering of nodes so that extremely large trees can be rendered.
         </p>
 
-        <ext:TreePanel runat="server"
+        <ext:TreePanel
+            runat="server"
             Title="Forum Folder Summary"
             Width="960"
             Height="480"

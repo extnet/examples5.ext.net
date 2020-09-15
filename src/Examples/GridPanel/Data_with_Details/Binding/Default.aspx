@@ -63,21 +63,21 @@
                                 runat="server"
                                 Text="Author"
                                 Width="120"
-                                DataIndex="Author" />
+                                DataIndex="Author"
+                                />
                             <ext:Column
                                 runat="server"
                                 Text="Title"
                                 Flex="1"
-                                DataIndex="Title" />
+                                DataIndex="Title"
+                                />
                             <ext:Column
                                 runat="server"
                                 Text="Manufacturer"
                                 Width="115"
-                                DataIndex="Manufacturer" />
-                            <ext:Column
-                                runat="server"
-                                Text="Product Group"
-                                DataIndex="ProductGroup" />
+                                DataIndex="Manufacturer"
+                                />
+                            <ext:Column runat="server" Text="Product Group" DataIndex="ProductGroup" />
                        </Columns>
                    </ColumnModel>
                    <Listeners>

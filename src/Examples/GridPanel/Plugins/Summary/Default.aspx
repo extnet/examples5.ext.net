@@ -186,7 +186,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 AllowNegative="false"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                     </ext:Column>
 
@@ -203,7 +204,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 AllowNegative="false"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                         <%-- Remove after fixing #563 --%>
                         <SummaryRenderer Format="UsMoney" />

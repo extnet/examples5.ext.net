@@ -32,7 +32,8 @@
                     runat="server"
                     FieldLabel="Label"
                     LabelStyle="color:blue;"
-                    LabelSeparator="-" />
+                    LabelSeparator="-"
+                    />
             </Items>
         </ext:Panel>
 

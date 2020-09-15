@@ -64,8 +64,12 @@
                     </Items>
                     <Buttons>
                         <ext:Button runat="server" Text="Button1" />
-                        <ext:Button runat="server" ID="Button2" Text="Button2"
-                            OnClientClick="Ext.Msg.alert('ENTER', 'ENTER is intercepted by Button2');" />
+                        <ext:Button
+                            ID="Button2"
+                            runat="server"
+                            Text="Button2"
+                            OnClientClick="Ext.Msg.alert('ENTER', 'ENTER is intercepted by Button2');"
+                            />
                         <ext:Button runat="server" Text="Button3" />
                         <ext:Button runat="server" Text="Button4" />
                     </Buttons>

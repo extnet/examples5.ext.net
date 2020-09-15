@@ -101,19 +101,22 @@
                         runat="server"
                         Lockable="false"
                         Locked="true"
-                        Width="50" />
+                        Width="50"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Company"
                         DataIndex="Company"
-                        Width="170" />
+                        Width="170"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Price, $"
                         DataIndex="Price"
                         Width="170"
                         Sortable="false"
-                        Align="Center" />
+                        Align="Center"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Last Update"

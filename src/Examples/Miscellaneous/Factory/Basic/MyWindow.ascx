@@ -13,10 +13,7 @@
     BodyPadding="5"
     ButtonAlign="Center">
     <Items>
-        <ext:FormPanel 
-            runat="server"
-            BaseCls="x-plain" 
-            Layout="VBox">
+        <ext:FormPanel runat="server" BaseCls="x-plain" Layout="VBox">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -32,7 +29,8 @@
                     </Items>
                 </ext:ComboBox>
 
-                <ext:TextField runat="server" 
+                <ext:TextField
+                    runat="server"
                     LabelWidth="55" 
                     FieldLabel="Subject"
                     Name="subject">
@@ -40,9 +38,7 @@
                         <ext:ClearButton runat="server" />
                     </Plugins>
                 </ext:TextField>
-                <ext:TextArea runat="server" 
-                    Flex="1" 
-                    Name="body">
+                <ext:TextArea runat="server" Flex="1" Name="body">
                     <Plugins>
                         <ext:ClearButton runat="server" />
                     </Plugins>

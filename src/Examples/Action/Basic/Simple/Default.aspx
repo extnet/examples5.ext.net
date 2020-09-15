@@ -81,17 +81,9 @@
                         </Listeners>
                     </ext:Button>
 
-                    <ext:Button
-                        runat="server"
-                        Text="Change Text"
-                        Handler="#{Action1}.setText('Something else');"
-                        />
+                    <ext:Button runat="server" Text="Change Text" Handler="#{Action1}.setText('Something else');" />
 
-                    <ext:Button
-                        runat="server"
-                        Text="Another Text Change"
-                        Handler="changeText(#{Panel1});"
-                        />
+                    <ext:Button runat="server" Text="Another Text Change" Handler="changeText(#{Panel1});" />
                 </Items>
             </ext:Toolbar>
         </BottomBar>

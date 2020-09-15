@@ -210,7 +210,8 @@
                                     Radius="4"
                                     LineWidth="0"
                                     FillStyle="#18428E"
-                                    StrokeStyle="#18428E" />
+                                    StrokeStyle="#18428E"
+                                    />
                             </Marker>
                         </ext:LineSeries>
                     </Series>

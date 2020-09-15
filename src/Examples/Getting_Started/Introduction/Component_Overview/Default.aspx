@@ -146,7 +146,8 @@
                     runat="server"
                     Text="Submit"
                     IconCls="x-md md-icon-check-circle-outline"
-                    OnDirectClick="Button1_Click" />
+                    OnDirectClick="Button1_Click"
+                    />
             </Buttons>
         </ext:Window>
 
@@ -172,7 +173,8 @@
                     Html="Some content"
                     Collapsible="true"
                     X="10"
-                    Y="10" />
+                    Y="10"
+                    />
 
                 <ext:Panel
                     runat="server"
@@ -198,7 +200,8 @@
                     Html="Some content"
                     Collapsible="true"
                     X="370"
-                    Y="10" />
+                    Y="10"
+                    />
 
                 <%--
                     =============================================================
@@ -308,25 +311,21 @@
                         <ext:Tool Type="Print" />
                     </Tools>
                     <Items>
-                        <ext:DisplayField
-                            runat="server"
-                            FieldLabel="DisplayField"
-                            Text="A value here" />
+                        <ext:DisplayField runat="server" FieldLabel="DisplayField" Text="A value here" />
                         <ext:TextField
                             runat="server"
                             FieldLabel="TextField"
                             EmptyText="Enter a value"
-                            AllowBlank="false" />
-                        <ext:NumberField
-                            runat="server"
-                            FieldLabel="NumberField"
-                            EmptyText="(This field is optional)" />
+                            AllowBlank="false"
+                            />
+                        <ext:NumberField runat="server" FieldLabel="NumberField" EmptyText="(This field is optional)" />
                         <ext:TextField
                             runat="server"
                             FieldLabel="w/Indicator"
                             IndicatorIcon="Information"
                             Anchor="-20"
-                            IndicatorTip="An Indicator ToolTip" />
+                            IndicatorTip="An Indicator ToolTip"
+                            />
                         <ext:TextField runat="server" FieldLabel="w/Note" Note="Simple note" />
 
                         <ext:FieldContainer runat="server" FieldLabel="FieldContainer" Layout="HBox">
@@ -650,7 +649,8 @@
                                             Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" />
+                                            RowSpan="3"
+                                            />
                                         <ext:SplitButton
                                             runat="server"
                                             Text="Menu Button"
@@ -693,7 +693,8 @@
                                             Scale="Large"
                                             IconAlign="Top"
                                             Cls="x-btn-as-arrow"
-                                            RowSpan="3" />
+                                            RowSpan="3"
+                                            />
                                         <ext:SplitButton
                                             runat="server"
                                             Text="Menu Button"

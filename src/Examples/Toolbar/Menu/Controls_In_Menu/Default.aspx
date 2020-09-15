@@ -89,7 +89,8 @@
         runat="server"
         Width="200"
         ContextMenuID="ContextMenu"
-        ReadOnly="true" />
+        ReadOnly="true"
+        />
 
     <h2>See Menu in the Toolbar</h2>
 
@@ -113,7 +114,8 @@
                                 Width="200"
                                 Height="100"
                                 MarginSpec="0 0 2 30"
-                                Focusable="false" />
+                                Focusable="false"
+                                />
                             <ext:MenuSeparator runat="server" />
                             <ext:ComboBox
                                 ID="ComboBox1"
@@ -248,7 +250,8 @@
                                         Split="true"
                                         Collapsible="true"
                                         Title="West"
-                                        Width="100" />
+                                        Width="100"
+                                        />
                                     <ext:Panel runat="server" Region="Center" Title="Center" />
                                 </Items>
                             </ext:Panel>

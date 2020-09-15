@@ -28,7 +28,8 @@
                         AllowBlank="false"
                         FieldLabel="User ID"
                         Name="user"
-                        EmptyText="user id" />
+                        EmptyText="user id"
+                        />
 
                     <ext:TextField
                         runat="server"
@@ -36,7 +37,8 @@
                         FieldLabel="Password"
                         Name="pass"
                         EmptyText="password"
-                        InputType="Password" />
+                        InputType="Password"
+                        />
 
                     <ext:Checkbox runat="server" FieldLabel="Remember me" Name="remember" />
                 </Items>

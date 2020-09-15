@@ -59,11 +59,7 @@
 
         <div id="tip1" class="tip-target">Basic ToolTip</div>
 
-        <ext:ToolTip
-            runat="server"
-            Target="tip1"
-            Html="A very simple tooltip"
-            />
+        <ext:ToolTip runat="server" Target="tip1" Html="A very simple tooltip" />
 
 
         <div id="tip2" class="tip-target">AutoHide Disabled</div>

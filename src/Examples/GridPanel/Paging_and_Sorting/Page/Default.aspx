@@ -81,8 +81,8 @@
         </asp:ObjectDataSource>
 
         <ext:GridPanel
-            runat="server"
             ID="GridPanel1"
+            runat="server"
             Title="Employees"
             Frame="true"
             Height="480">
@@ -151,7 +151,8 @@
             <Features>
                 <ext:RowBody runat="server">
                     <GetAdditionalData
-                        Handler="return {rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>'};" />
+                        Handler="return {rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>'};"
+                        />
                 </ext:RowBody>
             </Features>
             <BottomBar>

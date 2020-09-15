@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" %>
 <%@ Register Namespace="Ext.Net.Examples" Assembly="Ext.Net.Examples" TagPrefix="ee" %>
 
-<ext:PolarChart runat="server"
+<ext:PolarChart
+    runat="server"
     AnchorHorizontal="100%"
     Height="1375"
     Animation="false"

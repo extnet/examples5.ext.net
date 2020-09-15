@@ -191,9 +191,7 @@
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
                         </Items>
                     </ext:FieldContainer>
-                    <ext:DisplayField
-                        runat="server"
-                        Text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" />
+                    <ext:DisplayField runat="server" Text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit" />
                 </Items>
             </ext:FieldContainer>
 
@@ -226,7 +224,8 @@
                 FieldLabel="Email Address"
                 Vtype="email"
                 MsgTarget="Side"
-                AllowBlank="false" />
+                AllowBlank="false"
+                />
 
             <ext:FieldContainer
                 runat="server"
@@ -269,20 +268,23 @@
                                 runat="server"
                                 Name="Phone1"
                                 Width="29"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
                             <ext:DisplayField runat="server" Text=")" />
                             <ext:TextField
                                 runat="server"
                                 Name="Phone2"
                                 Width="29"
                                 AllowBlank="false"
-                                MarginSpec="0 5 0 0" />
+                                MarginSpec="0 5 0 0"
+                                />
                             <ext:DisplayField runat="server" Text="-" />
                             <ext:TextField
                                 runat="server"
                                 Name="Phone3"
                                 Width="48"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
                         </Items>
                     </ext:FieldContainer>
 
@@ -300,13 +302,15 @@
                                 runat="server"
                                 Name="Hours"
                                 Width="51"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
                             <ext:DisplayField runat="server" Text="hours" />
                             <ext:NumberField
                                 runat="server"
                                 Name="Minutes"
                                 Width="51"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
                             <ext:DisplayField runat="server" Text="mins" />
                         </Items>
                     </ext:FieldContainer>
@@ -341,13 +345,15 @@
                                 runat="server"
                                 Flex="1"
                                 Name="FirstName"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
 
                             <ext:TextField
                                 runat="server"
                                 Flex="1"
                                 Name="LastName"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
                         </Items>
                     </ext:FieldContainer>
                 </Items>
@@ -369,7 +375,8 @@
                                 Name="values"
                                 Value="#{FormPanel1}.getForm().getValues()"
                                 Mode="Raw"
-                                Encode="true" />
+                                Encode="true"
+                                />
                         </ExtraParams>
                     </Click>
                 </DirectEvents>

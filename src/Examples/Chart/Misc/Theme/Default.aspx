@@ -80,10 +80,7 @@
                     <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                 </ext:NumericAxis>
 
-                <ext:CategoryAxis
-                    Fields="Name"
-                    Position="Left"
-                    Title="Month of the Year" />
+                <ext:CategoryAxis Fields="Name" Position="Left" Title="Month of the Year" />
             </Axes>
 
             <Series>
@@ -96,7 +93,8 @@
                         Field="Data1"
                         Orientation="Horizontal"
                         Color="#333"
-                        TextAlign="Center" />
+                        TextAlign="Center"
+                        />
                 </ext:BarSeries>
             </Series>
         </ext:CartesianChart>

@@ -316,21 +316,24 @@
                                             Text="Data1"
                                             Handler="xAxisHandler"
                                             Checked="true"
-                                            Group="x" />
+                                            Group="x"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data2"
                                             Handler="xAxisHandler"
                                             Checked="false"
-                                            Group="x" />
+                                            Group="x"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data3"
                                             Handler="xAxisHandler"
                                             Checked="false"
-                                            Group="x" />
+                                            Group="x"
+                                            />
                                     </Items>
                                 </ext:Menu>
                             </Menu>
@@ -345,21 +348,24 @@
                                             Text="Data1"
                                             Handler="yAxisHandler"
                                             Checked="false"
-                                            Group="y" />
+                                            Group="y"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data2"
                                             Handler="yAxisHandler"
                                             Checked="true"
-                                            Group="y" />
+                                            Group="y"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data3"
                                             Handler="yAxisHandler"
                                             Checked="false"
-                                            Group="y" />
+                                            Group="y"
+                                            />
                                     </Items>
                                 </ext:Menu>
                             </Menu>
@@ -374,21 +380,24 @@
                                             Text="Data1"
                                             Handler="colorVariableHandler"
                                             Checked="false"
-                                            Group="color" />
+                                            Group="color"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data2"
                                             Handler="colorVariableHandler"
                                             Checked="false"
-                                            Group="color" />
+                                            Group="color"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data3"
                                             Handler="colorVariableHandler"
                                             Checked="false"
-                                            Group="color" />
+                                            Group="color"
+                                            />
 
                                         <ext:MenuItem runat="server" Text="Color From">
                                             <Menu>
@@ -399,63 +408,72 @@
                                                             Text="rgb(250, 20, 20)"
                                                             Handler="colorToHandler"
                                                             Checked="true"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(20, 250, 20)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(20, 20, 250)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(127, 0, 240)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(213, 70, 121)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(44, 153, 201)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(146, 6, 157)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(49, 149, 0)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(249, 153, 0)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="colorrange" />
+                                                            Group="colorrange"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>
@@ -470,63 +488,72 @@
                                                             Text="rgb(250, 20, 20)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(20, 250, 20)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(20, 20, 250)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(127, 0, 240)"
                                                             Handler="colorToHandler"
                                                             Checked="true"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(213, 70, 121)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(44, 153, 201)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(146, 6, 157)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(49, 149, 0)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(249, 153, 0)"
                                                             Handler="colorToHandler"
                                                             Checked="false"
-                                                            Group="tocolorrange" />
+                                                            Group="tocolorrange"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>
@@ -545,21 +572,24 @@
                                             Text="Data1"
                                             Handler="grayscaleVariableHandler"
                                             Checked="false"
-                                            Group="gs" />
+                                            Group="gs"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data2"
                                             Handler="grayscaleVariableHandler"
                                             Checked="false"
-                                            Group="gs" />
+                                            Group="gs"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data3"
                                             Handler="grayscaleVariableHandler"
                                             Checked="false"
-                                            Group="gs" />
+                                            Group="gs"
+                                            />
 
                                         <ext:MenuItem runat="server" Text="Scale From">
                                             <Menu>
@@ -570,42 +600,48 @@
                                                             Text="rgb(20, 20, 20)"
                                                             Handler="scaleFromHandler"
                                                             Checked="true"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(80, 80, 80)"
                                                             Handler="scaleFromHandler"
                                                             Checked="false"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(120, 120, 120)"
                                                             Handler="scaleFromHandler"
                                                             Checked="false"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(180, 180, 180)"
                                                             Handler="scaleFromHandler"
                                                             Checked="false"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(220, 220, 220)"
                                                             Handler="scaleFromHandler"
                                                             Checked="false"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(250, 250, 250)"
                                                             Handler="scaleFromHandler"
                                                             Checked="false"
-                                                            Group="gsrange" />
+                                                            Group="gsrange"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>
@@ -620,42 +656,48 @@
                                                             Text="rgb(20, 20, 20)"
                                                             Handler="scaleToHandler"
                                                             Checked="false"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(80, 80, 80)"
                                                             Handler="scaleToHandler"
                                                             Checked="false"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(120, 120, 120)"
                                                             Handler="scaleToHandler"
                                                             Checked="false"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(180, 180, 180)"
                                                             Handler="scaleToHandler"
                                                             Checked="false"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(220, 220, 220)"
                                                             Handler="scaleToHandler"
                                                             Checked="true"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="rgb(250, 250, 250)"
                                                             Handler="scaleToHandler"
                                                             Checked="false"
-                                                            Group="togsrange" />
+                                                            Group="togsrange"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>
@@ -674,21 +716,24 @@
                                             Text="Data1"
                                             Handler="radiusHandler"
                                             Checked="false"
-                                            Group="radius" />
+                                            Group="radius"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data2"
                                             Handler="radiusHandler"
                                             Checked="false"
-                                            Group="radius" />
+                                            Group="radius"
+                                            />
 
                                         <ext:CheckMenuItem
                                             runat="server"
                                             Text="Data3"
                                             Handler="radiusHandler"
                                             Checked="false"
-                                            Group="radius" />
+                                            Group="radius"
+                                            />
 
                                         <ext:MenuItem runat="server" Text="Max Radius">
                                             <Menu>
@@ -699,35 +744,40 @@
                                                             Text="20"
                                                             Handler="radiusSizeHandler"
                                                             Checked="false"
-                                                            Group="sradius" />
+                                                            Group="sradius"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="30"
                                                             Handler="radiusSizeHandler"
                                                             Checked="false"
-                                                            Group="sradius" />
+                                                            Group="sradius"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="40"
                                                             Handler="radiusSizeHandler"
                                                             Checked="false"
-                                                            Group="sradius" />
+                                                            Group="sradius"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="50"
                                                             Handler="radiusSizeHandler"
                                                             Checked="true"
-                                                            Group="sradius" />
+                                                            Group="sradius"
+                                                            />
 
                                                         <ext:CheckMenuItem
                                                             runat="server"
                                                             Text="60"
                                                             Handler="radiusSizeHandler"
                                                             Checked="false"
-                                                            Group="sradius" />
+                                                            Group="sradius"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>

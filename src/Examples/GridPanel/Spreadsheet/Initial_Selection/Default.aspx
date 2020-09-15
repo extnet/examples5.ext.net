@@ -132,7 +132,8 @@
                     ID="SpreadsheetSelectionModel1" 
                     runat="server" 
                     ColumnSelect="true"
-                    CheckboxSelect="true" />
+                    CheckboxSelect="true"
+                    />
             </SelectionModel>
             <ColumnModel>
                 <Columns>

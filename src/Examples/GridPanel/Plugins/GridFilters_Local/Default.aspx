@@ -127,7 +127,8 @@
                                 runat="server"
                                 Text="All Filters"
                                 ToolTip="Get Filters of Grid"
-                                Handler="getFilters" />
+                                Handler="getFilters"
+                                />
 
                             <ext:Button runat="server" Text="Clear Filters" Handler="this.up('grid').filters.clearFilters();" />
                         </Items>

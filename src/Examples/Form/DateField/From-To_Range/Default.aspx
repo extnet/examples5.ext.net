@@ -44,7 +44,8 @@
                     runat="server"
                     FieldLabel="From"
                     Vtype="daterange"
-                    EndDateField="DateField2" />--%>
+                    EndDateField="DateField2"
+                    />--%>
 
                 <ext:DateField
                     ID="DateField2"
@@ -63,7 +64,8 @@
                     runat="server"
                     Vtype="daterange"
                     FieldLabel="To"
-                    StartDateField="DateField1" />--%>
+                    StartDateField="DateField1"
+                    />--%>
             </Items>
         </ext:Window>
     </form>

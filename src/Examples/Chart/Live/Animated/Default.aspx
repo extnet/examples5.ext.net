@@ -161,7 +161,8 @@
                             FromDate="<%# new DateTime(2014, 1, 1) %>"
                             ToDate="<%# new DateTime(2014, 1, 7) %>"
                             Grid="true"
-                            AutoDataBind="true" />
+                            AutoDataBind="true"
+                            />
                     </Axes>
                     <Series>
                         <ext:LineSeries XField="Date" YField="Visits">

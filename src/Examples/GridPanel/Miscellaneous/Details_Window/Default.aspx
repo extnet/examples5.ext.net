@@ -59,8 +59,8 @@
         <p>For view/edit additional properties please click on the image in last column.</p>
 
         <ext:GridPanel
-            runat="server"
             ID="GridPanel1"
+            runat="server"
             Title="Employees">
             <Store>
                 <ext:Store runat="server" PageSize="5">

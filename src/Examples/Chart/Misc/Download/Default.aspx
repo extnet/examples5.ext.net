@@ -82,19 +82,22 @@
                             runat="server"
                             Text="Download via chart.download()"
                             IconCls="x-md md-icon-save"
-                            Handler="saveChart" />
+                            Handler="saveChart"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="Download via DirectMethod"
                             IconCls="x-md md-icon-save-alt"
-                            Handler="exportChart" />
+                            Handler="exportChart"
+                            />
 
                         <ext:Button
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -136,10 +139,7 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis
-                            Fields="Data1,Data2,Data3,Data4,Data5,Data6,Data7"
-                            Title="Number of Hits"
-                            Minimum="0" />
+                        <ext:NumericAxis Fields="Data1,Data2,Data3,Data4,Data5,Data6,Data7" Title="Number of Hits" Minimum="0" />
 
                         <ext:CategoryAxis
                             Position="Bottom"

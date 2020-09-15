@@ -253,7 +253,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 AllowNegative="false"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                     </ext:Column>
 
@@ -271,7 +272,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 AllowNegative="false"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                     </ext:Column>
 
@@ -318,7 +320,8 @@
                     runat="server"
                     GroupHeaderTplString="{name}"
                     HideGroupedHeader="true"
-                    EnableGroupingMenu="false" />
+                    EnableGroupingMenu="false"
+                    />
             </Features>
             <DockedItems>
                 <ext:Container

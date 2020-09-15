@@ -128,16 +128,14 @@
                     <Items>
                         <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 10 0">
                             <Items>
-                                <ext:Button
-                                    runat="server"
-                                    Text="Update source"
-                                    OnDirectClick="UpdateSource_Click" />
+                                <ext:Button runat="server" Text="Update source" OnDirectClick="UpdateSource_Click" />
 
                                 <ext:Button
                                     runat="server"
                                     Text="New data source"
                                     OnDirectClick="NewDataSource_Click"
-                                    MarginSpec="0 0 0 10" />
+                                    MarginSpec="0 0 0 10"
+                                    />
                             </Items>
                         </ext:Container>
                         <ext:PropertyGrid ID="PropertyGrid1" runat="server">

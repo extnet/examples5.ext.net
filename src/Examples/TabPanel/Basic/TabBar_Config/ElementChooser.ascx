@@ -15,11 +15,12 @@
     }
 </script>
 
-<ext:DataView runat="server" 
+<ext:DataView
+    runat="server"
     TrackOver="true"
     ItemSelector=".x-newtab-item"
     OverItemCls="x-newtab-over-item">
-    <Tpl>
+    <Tpl runat="server">
         <Html>
             <tpl for=".">
                 <div class="x-newtab-item">

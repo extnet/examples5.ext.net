@@ -85,7 +85,8 @@
                                 </ext:FieldSet>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server"
+                        <ext:Panel
+                            runat="server"
                             Border="false"
                             Width="480"
                             PaddingSpec="2 0 0 0"

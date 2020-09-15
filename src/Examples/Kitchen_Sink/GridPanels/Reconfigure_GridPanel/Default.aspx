@@ -215,14 +215,16 @@
                                     ID="ShowOfficesButton"
                                     runat="server"
                                     Text="Show Offices"
-                                    OnDirectClick="ShowOfficesButton_Click" />
+                                    OnDirectClick="ShowOfficesButton_Click"
+                                    />
 
                                 <ext:Button
                                     ID="ShowEmployeesButton"
                                     runat="server"
                                     Text="Show Employees"
                                     OnDirectClick="ShowEmployeesButton_Click"
-                                    MarginSpec="0 0 0 10" />
+                                    MarginSpec="0 0 0 10"
+                                    />
                             </Items>
                         </ext:Container>
                         <ext:GridPanel

@@ -109,7 +109,8 @@
                         RootVisible="false"
                         Lines="false"
                         UseArrows="false"
-                        StoreID="TreeStore1" />
+                        StoreID="TreeStore1"
+                        />
 
                     <ext:TreePanel
                         runat="server"
@@ -120,7 +121,8 @@
                         RootVisible="false"
                         Lines="true"
                         UseArrows="false"
-                        StoreID="TreeStore1" />
+                        StoreID="TreeStore1"
+                        />
 
                     <ext:TreePanel
                         runat="server"
@@ -131,7 +133,8 @@
                         RootVisible="false"
                         Lines="false"
                         UseArrows="true"
-                        StoreID="TreeStore1" />
+                        StoreID="TreeStore1"
+                        />
                 </Items>
             </ext:Container>
         </Items>

@@ -47,10 +47,7 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('chart').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('chart').preview();" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -84,19 +81,22 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
 
                         <ext:TextSprite
                             Text="Data: Browser Stats 2012"
                             FontSize="10"
                             X="12"
-                            Y="480" />
+                            Y="480"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="495" />
+                            Y="495"
+                            />
                     </Items>
 
                     <Axes>

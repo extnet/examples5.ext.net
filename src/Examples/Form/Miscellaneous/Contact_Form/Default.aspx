@@ -74,7 +74,8 @@
                                 <Click
                                     OnEvent="ShowContactForm"
                                     Single="true"
-                                    Success="this.windowId = result.extraParamsResponse.windowId; this.on('click', function () {Ext.getCmp(this.windowId).show();}, this);" />
+                                    Success="this.windowId = result.extraParamsResponse.windowId; this.on('click', function () {Ext.getCmp(this.windowId).show();}, this);"
+                                    />
                             </DirectEvents>
                         </ext:Button>
                     </Items>

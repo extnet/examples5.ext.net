@@ -80,7 +80,8 @@
                                             runat="server"
                                             Text="Preview"
                                             IconCls="x-md md-icon-search"
-                                            Handler="App.Chart1.preview();" />
+                                            Handler="App.Chart1.preview();"
+                                            />
 
                                         <ext:SplitButton
                                             runat="server"
@@ -91,10 +92,12 @@
                                                 <ext:Menu runat="server" Plain="true">
                                                     <Items>
                                                         <ext:UserControlLoader runat="server" Path="DownloadOptions.ascx" />
-                                                        <ext:Button runat="server"
+                                                        <ext:Button
+                                                            runat="server"
                                                             Text="Download with options"
                                                             Margin="10"
-                                                            Handler="downloadWithOptions(App.Chart1, this.prev());" />
+                                                            Handler="downloadWithOptions(App.Chart1, this.prev());"
+                                                            />
                                                     </Items>
                                                 </ext:Menu>
                                             </Menu>
@@ -131,19 +134,22 @@
                                             Width="100"
                                             Height="30"
                                             X="40"
-                                            Y="20" />
+                                            Y="20"
+                                            />
 
                                         <ext:TextSprite
                                             Text="Data: Browser Stats 2012 - Internet Explorer"
                                             FontSize="10"
                                             X="12"
-                                            Y="480" />
+                                            Y="480"
+                                            />
 
                                         <ext:TextSprite
                                             Text="Source: http://www.w3schools.com/"
                                             FontSize="10"
                                             X="12"
-                                            Y="495" />
+                                            Y="495"
+                                            />
                                     </Items>
                                     <Axes>
                                         <ext:NumericAxis

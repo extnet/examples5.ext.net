@@ -134,7 +134,8 @@
                     Name="username"
                     FieldLabel="Username"
                     AllowBlank="false"
-                    BlankText="Your username is required." />
+                    BlankText="Your username is required."
+                    />
                 <ext:TextField
                     ID="txtPassword"
                     runat="server"
@@ -142,7 +143,8 @@
                     InputType="Password"
                     FieldLabel="Password"
                     AllowBlank="false"
-                    BlankText="Your password is required." />
+                    BlankText="Your password is required."
+                    />
             </Items>
             <Buttons>
                 <ext:Button

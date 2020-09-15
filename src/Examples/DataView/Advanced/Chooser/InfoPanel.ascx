@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#"  %>
 
-<ext:Panel ID="ImgDetailPanel" runat="server"
+<ext:Panel
+    ID="ImgDetailPanel"
+    runat="server"
     Width="150"
     Region="East"
     Split="true"
@@ -12,12 +14,13 @@
             this.body.slideIn('l', {
                 duration: 250
             });}" 
-         Mode="Raw" />
+         Mode="Raw"
+         />
     </CustomConfig>
-    <Tpl>
+    <Tpl runat="server">
         <Html>
             <div class="details">
-                <tpl for=".">                        
+                <tpl for=".">
                     <tpl if="!Ext.isIE6">
                         <img src="{url}" />
                     </tpl>
@@ -34,5 +37,6 @@
                     </div>
                 </tpl>
             </div>
-        </html>    </Tpl>
+        </html>
+    </Tpl>
 </ext:Panel>

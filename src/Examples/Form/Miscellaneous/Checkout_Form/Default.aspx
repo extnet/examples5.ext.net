@@ -135,23 +135,28 @@
                             CombineErrors="true">
                             <FieldDefaults HideLabel="true" />
                             <Items>
-                                <ext:TextField runat="server"
+                                <ext:TextField
+                                    runat="server"
                                     Name="firstName"
                                     FieldLabel="First Name"
                                     Flex="2"
                                     EmptyText="First"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
 
-                                <ext:TextField runat="server"
+                                <ext:TextField
+                                    runat="server"
                                     Name="lastName"
                                     FieldLabel="Last Name"
                                     Flex="3"
                                     MarginSpec="0 0 0 6"
                                     EmptyText="Last"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                             </Items>
                         </ext:FieldContainer>
-                        <ext:Container runat="server"
+                        <ext:Container
+                            runat="server"
                             Layout="HBox"
                             MarginSpec="0 0 5 0">
                             <Items>
@@ -289,7 +294,8 @@
                             FieldLabel="Street Address"
                             Name="billingStreet"
                             Disabled="true"
-                            AllowBlank="false" />
+                            AllowBlank="false"
+                            />
 
                         <ext:Container
                             runat="server"
@@ -304,7 +310,8 @@
                                     AutoDataBind="true"
                                     Flex="1"
                                     Disabled="true"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
 
                                 <ext:ComboBox
                                     runat="server"
@@ -321,7 +328,8 @@
                                     QueryMode="Local"
                                     Disabled="true"
                                     AllowBlank="false"
-                                    ForceSelection="true" />
+                                    ForceSelection="true"
+                                    />
 
                                 <ext:TextField
                                     runat="server"
@@ -337,7 +345,8 @@
                                     EnforceMaxLength="true"
                                     MaskRe="[\d\-]"
                                     Regex="^\d{5}(\-\d{4})?$"
-                                    RegexText="Must be in the format xxxxx or xxxxx-xxxx" />
+                                    RegexText="Must be in the format xxxxx or xxxxx-xxxx"
+                                    />
                             </Items>
                         </ext:Container>
                     </Items>
@@ -349,10 +358,7 @@
                     Layout="Anchor"
                     DefaultAnchor="100%">
                     <Items>
-                        <ext:RadioGroup
-                            runat="server"
-                            Anchor="none"
-                            >
+                        <ext:RadioGroup runat="server" Anchor="none">
                             <LayoutConfig>
                                 <ext:CheckboxGroupLayoutConfig AutoFlex="false" />
                             </LayoutConfig>
@@ -365,22 +371,14 @@
                                     runat="server"
                                     InputValue="visa"
                                     BoxLabel="VISA"
-                                    Checked="true" />
+                                    Checked="true"
+                                    />
 
-                                <ext:Radio
-                                    runat="server"
-                                    InputValue="mastercard"
-                                    BoxLabel="MasterCard" />
+                                <ext:Radio runat="server" InputValue="mastercard" BoxLabel="MasterCard" />
 
-                                <ext:Radio
-                                    runat="server"
-                                    InputValue="amex"
-                                    BoxLabel="American Express" />
+                                <ext:Radio runat="server" InputValue="amex" BoxLabel="American Express" />
 
-                                <ext:Radio
-                                    runat="server"
-                                    InputValue="discover"
-                                    BoxLabel="Discover" />
+                                <ext:Radio runat="server" InputValue="discover" BoxLabel="Discover" />
                             </Items>
                         </ext:RadioGroup>
 
@@ -388,7 +386,8 @@
                             runat="server"
                             Name="ccName"
                             FieldLabel="Name On Card"
-                            AllowBlank="false" />
+                            AllowBlank="false"
+                            />
 
                         <ext:Container
                             runat="server"
@@ -404,7 +403,8 @@
                                     MinLength="15"
                                     MaxLength="16"
                                     EnforceMaxLength="true"
-                                    MaskRe="\d" />
+                                    MaskRe="\d"
+                                    />
 
                                 <ext:FieldContainer
                                     runat="server"
@@ -446,7 +446,8 @@
                                             Number="<%# DateTime.Now.Year %>"
                                             MinValue="<%# DateTime.Now.Year %>"
                                             AutoDataBind="true"
-                                            AllowBlank="false" />
+                                            AllowBlank="false"
+                                            />
                                     </Items>
                                 </ext:FieldContainer>
                             </Items>

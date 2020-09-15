@@ -167,8 +167,9 @@
             <Modules>
                 <ext:DesktopModule ModuleID="Hello" AutoRun="true">
                     <Window>
-                        <ext:Window runat="server"
+                        <ext:Window
                             ID="GreetingWindow"
+                            runat="server"
                             Plain="true"
                             Padding="10"
                             Width="150"
@@ -188,7 +189,8 @@
                     <Shortcut Name="Notepad" SortIndex="2" />
                     <Launcher Text="Notepad" />
                     <Window>
-                        <ext:Window runat="server"
+                        <ext:Window
+                            runat="server"
                             Title="Notepad"
                             Width="750"
                             Height="480"
@@ -198,9 +200,7 @@
                             Layout="Fit"
                             CloseAction="Destroy">
                             <Items>
-                                <ext:HtmlEditor
-                                    runat="server"
-                                    Text="Some <b>rich</b> <font color='red'>text</font> goes <u>here</u><br>Give it a try!" />
+                                <ext:HtmlEditor runat="server" Text="Some <b>rich</b> <font color='red'>text</font> goes <u>here</u><br>Give it a try!" />
                             </Items>
                         </ext:Window>
                     </Window>

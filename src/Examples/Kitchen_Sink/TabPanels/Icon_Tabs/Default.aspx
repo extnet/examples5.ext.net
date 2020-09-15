@@ -53,18 +53,17 @@
                         runat="server"
                         IconCls="x-md md-icon-home"
                         Html="<%# TEST_HTML_1  %>"
-                        AutoDataBind="true" />
+                        AutoDataBind="true"
+                        />
 
                     <ext:Panel
                         runat="server"
                         IconCls="x-md md-icon-link"
                         Html="<%# TEST_HTML_2  %>"
-                        AutoDataBind="true" />
+                        AutoDataBind="true"
+                        />
 
-                    <ext:Panel
-                        runat="server"
-                        IconCls="x-md md-icon-star-border"
-                        Disabled="true" />
+                    <ext:Panel runat="server" IconCls="x-md md-icon-star-border" Disabled="true" />
                 </Items>
             </ext:TabPanel>
 

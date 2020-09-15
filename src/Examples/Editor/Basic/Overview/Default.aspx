@@ -59,10 +59,7 @@
                                     <Editor>
                                         <ext:Editor runat="server" Shadow="false" Alignment="tl-tl?">
                                             <Field>
-                                                <ext:TextField
-                                                    runat="server"
-                                                    Cls="x-form-field-editor"
-                                                    Width="480" />
+                                                <ext:TextField runat="server" Cls="x-form-field-editor" Width="480" />
                                             </Field>
                                         </ext:Editor>
                                     </Editor>
@@ -173,7 +170,8 @@
                                                     <EventMask
                                                         ShowMask="true"
                                                         Target="CustomTarget"
-                                                        CustomTarget="={#{Tab3}.body}" />
+                                                        CustomTarget="={#{Tab3}.body}"
+                                                        />
                                                     <ExtraParams>
                                                         <ext:Parameter Name="value" Value="value" Mode="Raw" />
                                                     </ExtraParams>

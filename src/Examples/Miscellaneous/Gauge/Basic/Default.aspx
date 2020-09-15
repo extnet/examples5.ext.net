@@ -42,7 +42,8 @@
                             Single="true"
                             FieldLabel="Value"
                             BindString="{value}"
-                            WidthSpec="100%" />
+                            WidthSpec="100%"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

@@ -48,12 +48,10 @@
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('polar').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('polar').preview();" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

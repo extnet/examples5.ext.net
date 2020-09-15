@@ -57,7 +57,8 @@
                     FieldLabel="Username"
                     AllowBlank="false"
                     BlankText="Your username is required."
-                    Text="Demo" />
+                    Text="Demo"
+                    />
                 <ext:TextField
                     ID="txtPassword"
                     runat="server"
@@ -65,7 +66,8 @@
                     FieldLabel="Password"
                     AllowBlank="false"
                     BlankText="Your password is required."
-                    Text="Demo" />
+                    Text="Demo"
+                    />
             </Items>
             <Buttons>
                 <ext:Button ID="btnLogin" runat="server" Text="Login" IconCls="x-md md-icon-check-circle-outline">

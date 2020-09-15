@@ -186,7 +186,8 @@
                                             runat="server"
                                             Text="Reset"
                                             IconCls="x-md md-icon-undo"
-                                            OnClientClick="App.btnForm.up('form').reset();" />
+                                            OnClientClick="App.btnForm.up('form').reset();"
+                                            />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>
@@ -266,7 +267,8 @@
                                             MaxValue="99"
                                             AllowDecimals="false"
                                             AllowBlank="false"
-                                            AutoUpdateData="true" />
+                                            AutoUpdateData="true"
+                                            />
                                         <ext:DisplayField runat="server" Text="Min" Width="60" />
                                         <ext:NumberField
                                             ID="intMaxWordLength"
@@ -371,7 +373,8 @@
                                     Grid="true"
                                     Title="Count"
                                     Minimum="0"
-                                    MajorTickSteps="1" />
+                                    MajorTickSteps="1"
+                                    />
                                 <ext:CategoryAxis
                                     Position="Bottom"
                                     Fields="Text">
@@ -395,7 +398,8 @@
                                         Field="Count"
                                         Orientation="Horizontal"
                                         Color="#333"
-                                        TextAlign="Center" />
+                                        TextAlign="Center"
+                                        />
                                 </ext:BarSeries>
                             </Series>
                         </ext:CartesianChart>

@@ -62,11 +62,7 @@
         <br />
         <br />
 
-        <ext:Button
-            runat="server"
-            Text="Swap Selected Times"
-            OnDirectClick="Button1_Click"
-            />
+        <ext:Button runat="server" Text="Swap Selected Times" OnDirectClick="Button1_Click" />
     </form>
 
 </body>

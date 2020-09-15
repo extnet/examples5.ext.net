@@ -46,10 +46,7 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Undo Zoom"
-                            Handler="undoZoom" />
+                        <ext:Button runat="server" Text="Undo Zoom" Handler="undoZoom" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -90,7 +87,8 @@
                             VisibleRange="0,1"
                             Fields="time"
                             TitleMargin="12"
-                            Title="Date" />
+                            Title="Date"
+                            />
                     </Axes>
                     <Series>
                         <ext:LineSeries XField="time" YField="value">

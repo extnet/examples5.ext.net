@@ -69,7 +69,8 @@
                             Scrollable="Both"
                             Title="Content"
                             Html="={text}"
-                            BodyPadding="18" />
+                            BodyPadding="18"
+                            />
                         <ext:Panel
                             runat="server"
                             Border="false"
@@ -77,7 +78,8 @@
                             Scrollable="Both"
                             Title="Settings"
                             Html="={text}"
-                            BodyPadding="18" />
+                            BodyPadding="18"
+                            />
                     </Items>
                 </ext:Panel>
                 <ext:TabPanel

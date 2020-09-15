@@ -101,19 +101,22 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
 
                         <ext:TextSprite
                             Text="Data: Browser Stats 2012 - Internet Explorer"
                             FontSize="10"
                             X="12"
-                            Y="480" />
+                            Y="480"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="495" />
+                            Y="495"
+                            />
                     </Items>
                     <Axes>
                         <ext:NumericAxis
@@ -124,35 +127,22 @@
                             <Renderer Handler="return label.toFixed(0) + '%';" />
                         </ext:NumericAxis>
 
-                        <ext:Category3DAxis
-                            Fields="Name"
-                            Position="Left"
-                            Grid="true" />
+                        <ext:Category3DAxis Fields="Name" Position="Left" Grid="true" />
                     </Axes>
                     <Series>
-                        <ext:Bar3DSeries
-                            XField="Name"
-                            YField="Data1">
+                        <ext:Bar3DSeries XField="Name" YField="Data1">
                             <StyleSpec>
                                 <ext:SeriesSprite Opacity="0.8" MinGapWidth="5" />
                             </StyleSpec>
                             <HighlightConfig>
-                                <ext:Sprite
-                                    FillStyle="rgba(249, 204, 157, 1.0)"
-                                    StrokeStyle="black"
-                                    LineWidth="2" />
+                                <ext:Sprite FillStyle="rgba(249, 204, 157, 1.0)" StrokeStyle="black" LineWidth="2" />
                             </HighlightConfig>
 
-                            <Tooltip
-                                runat="server"
-                                TrackMouse="true"
-                                StyleSpec="background: #fff">
+                            <Tooltip runat="server" TrackMouse="true" StyleSpec="background: #fff">
                                 <Renderer Handler="toolTip.setHtml(record.get('Name') + ': ' + record.get('Data1') + '%');" />
                             </Tooltip>
 
-                            <Label
-                                Display="InsideEnd"
-                                Field="Data1" />
+                            <Label Display="InsideEnd" Field="Data1" />
                         </ext:Bar3DSeries>
                     </Series>
                 </ext:CartesianChart>

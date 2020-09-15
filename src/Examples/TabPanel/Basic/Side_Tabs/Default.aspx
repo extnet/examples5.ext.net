@@ -32,7 +32,9 @@
 
         <div id="left-tabs" class="tab-cont">
             <h2>Left-Aligned Tabs</h2>
-            <ext:TabPanel runat="server"
+
+            <ext:TabPanel
+                runat="server"
                 TabPosition="Left"
                 Height="480"
                 Width="480">
@@ -47,7 +49,9 @@
 
         <div id="right-tabs" class="tab-cont">
             <h2>Right-Aligned Tabs</h2>
-            <ext:TabPanel runat="server"
+
+            <ext:TabPanel
+                runat="server"
                 TabPosition="Right"
                 Height="480"
                 Width="480">
@@ -64,7 +68,9 @@
 
         <div id="right-scroll-tabs" class="tab-cont">
             <h2>Left-Aligned Tabs With Scrolling</h2>
-            <ext:TabPanel runat="server"
+
+            <ext:TabPanel
+                runat="server"
                 TabPosition="Left"
                 Height="480"
                 Width="480">
@@ -83,7 +89,9 @@
 
         <div id="left-scroll-tabs" class="tab-cont">
             <h2>Right-Aligned Tabs With Scrolling</h2>
-            <ext:TabPanel runat="server"
+
+            <ext:TabPanel
+                runat="server"
                 TabPosition="Right"
                 Height="480"
                 Width="480">

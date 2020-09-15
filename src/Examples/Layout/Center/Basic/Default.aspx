@@ -19,7 +19,8 @@
                     Height="180"
                     BodyPadding="18"
                     Title="Panel"
-                    Html="This panel is centered within its container." />
+                    Html="This panel is centered within its container."
+                    />
             </Items>
         </ext:Viewport>
     </form>

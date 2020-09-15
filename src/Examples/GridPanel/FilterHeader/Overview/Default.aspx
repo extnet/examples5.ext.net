@@ -115,11 +115,7 @@
                                     AllowDepress="true"
                                     ToggleHandler="var plugin = this.up('grid').filterHeader; plugin.caseSensitive = this.pressed; plugin.applyFilter();"
                                     />
-                                <ext:Button
-                                    runat="server"
-                                    Text="Load Filters"
-                                    Handler="loadFilter(this.up('grid').filterHeader);"
-                                    />
+                                <ext:Button runat="server" Text="Load Filters" Handler="loadFilter(this.up('grid').filterHeader);" />
                                 <ext:Button
                                     runat="server"
                                     Text="Get Fields Values"
@@ -132,11 +128,7 @@
                                     ToolTip="Get Filter Values of Grid"
                                     Handler="var filters = Ext.encode(this.up('grid').filterHeader.getFilterValues()); Ext.Msg.alert('Filter Values', filters);"
                                     />
-                                <ext:Button
-                                    runat="server"
-                                    Text="Clear Filters"
-                                    Handler="this.up('grid').filterHeader.clearFilter();"
-                                    />
+                                <ext:Button runat="server" Text="Clear Filters" Handler="this.up('grid').filterHeader.clearFilter();" />
                             </Items>
                         </ext:Toolbar>
                     </DockedItems>

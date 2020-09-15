@@ -64,7 +64,8 @@
                                             X="0"
                                             Y="91"
                                             AnchorHorizontal="100%"
-                                            AnchorVertical="100%" />
+                                            AnchorVertical="100%"
+                                            />
                                     </Items>
                                 </ext:Container>
                             </Items>

@@ -88,17 +88,9 @@
 
         <p>Please note that Content cannot be used inside factory widget because the Content region cannot be clonned.</p>
 
-        <ext:Button
-            runat="server"
-            Text="Factory widget, click me"
-            FactoryAlias="mybutton"
-            />
+        <ext:Button runat="server" Text="Factory widget, click me" FactoryAlias="mybutton" />
 
-        <ext:Button
-            runat="server"
-            Text="Render factory window"
-            OnDirectClick="RenderWindow"
-            />
+        <ext:Button runat="server" Text="Render factory window" OnDirectClick="RenderWindow" />
     </form>
 </body>
 </html>

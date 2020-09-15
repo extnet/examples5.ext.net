@@ -33,13 +33,14 @@
 </script>
 
 
-<ext:DataView runat="server"
+<ext:DataView
+    runat="server"
     SingleSelect="true"
     Cls="img-chooser-view"
     OverItemCls="x-view-over"
     ItemSelector="div.thumb-wrap">
     <Store>
-        <ext:Store ID="Store1" runat="server">        
+        <ext:Store ID="Store1" runat="server">
             <Model>
                 <ext:Model runat="server">
                     <Fields>
@@ -52,7 +53,7 @@
             </Model>
         </ext:Store>      
     </Store>
-    <Tpl>
+    <Tpl runat="server">
         <Html>
             <tpl for=".">
                 <div class="thumb-wrap">

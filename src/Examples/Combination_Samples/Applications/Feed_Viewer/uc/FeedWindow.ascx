@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Window runat="server"
+<ext:Window
+    runat="server"
     Plain="true"
     Width="500"
     Height="140"
@@ -9,12 +10,14 @@
     Layout="Fit"
     Resizable="false">
     <Items>
-        <ext:FormPanel runat="server"
+        <ext:FormPanel
+            runat="server"
             BodyPaddingSummary="12 10 10"
             Border="false"
             Unstyled="true">
             <Items>
-                <ext:ComboBox runat="server"
+                <ext:ComboBox
+                    runat="server"
                     ItemId="feed"
                     FieldLabel="Enter the URL of the feed to add"
                     LabelAlign="Top"

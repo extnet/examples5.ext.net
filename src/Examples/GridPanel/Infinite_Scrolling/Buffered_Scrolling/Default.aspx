@@ -98,20 +98,19 @@
             </SelectionModel>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:RowNumbererColumn
-                        runat="server"
-                        Width="40"
-                        Sortable="false" />
+                    <ext:RowNumbererColumn runat="server" Width="40" Sortable="false" />
                     <ext:Column
                         runat="server"
                         Text="Name"
                         Flex="1"
-                        DataIndex="name" />
+                        DataIndex="name"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Rating"
                         Width="125"
-                        DataIndex="rating" />
+                        DataIndex="rating"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Salary"

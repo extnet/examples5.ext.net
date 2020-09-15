@@ -155,8 +155,8 @@
                         OnClientClick="App.Store1.removeAt(App.Store1.getCount() - 1)"
                         />
                     <ext:Button
-                        runat="server"
                         ID="SaveBtn"
+                        runat="server"
                         Text="Save"
                         Disabled="true"
                         IconCls="x-md md-icon-save"

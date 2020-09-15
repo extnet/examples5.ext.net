@@ -123,7 +123,7 @@
                             Flex="1"
                             Cls="binding-selection-view"
                             ItemSelector=".customer">
-                            <Tpl>
+                            <Tpl runat="server">
                                 <Html>
                                     <h1>Customer View</h1><tpl for="."><div class="customer">{name}</div></tpl>
                                 </Html>

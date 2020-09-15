@@ -170,51 +170,31 @@
         <Items>
             <ext:Panel runat="server" Width="70" Height="80" Title="Panel 1" Frame="true">
                 <Plugins>
-                    <ext:Badge
-                        runat="server"
-                        Text="1"
-                        AlignmentSpec="l-tl"
-                        />
+                    <ext:Badge runat="server" Text="1" AlignmentSpec="l-tl" />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server" Width="70" Height="80" Title="Panel 2" Frame="true">
                 <Plugins>
-                    <ext:Badge
-                        runat="server"
-                        Text="2"
-                        AlignmentSpec="c-l"
-                        />
+                    <ext:Badge runat="server" Text="2" AlignmentSpec="c-l" />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server" Width="70" Height="80" Title="Panel 3" Frame="true">
                 <Plugins>
-                    <ext:Badge
-                        runat="server"
-                        Text="3"
-                        AlignmentSpec="b-bl"
-                        />
+                    <ext:Badge runat="server" Text="3" AlignmentSpec="b-bl" />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server" Width="70" Height="80" Title="Panel 4" Frame="true">
                 <Plugins>
-                    <ext:Badge
-                        runat="server"
-                        Text="4"
-                        AlignmentSpec="bl-tr"
-                        />
+                    <ext:Badge runat="server" Text="4" AlignmentSpec="bl-tr" />
                 </Plugins>
             </ext:Panel>
 
             <ext:Panel runat="server" Width="70" Height="80" Title="Panel 5" Frame="true">
                 <Plugins>
-                    <ext:Badge
-                        runat="server"
-                        Text="5"
-                        AlignmentSpec="c-c"
-                        />
+                    <ext:Badge runat="server" Text="5" AlignmentSpec="c-c" />
                 </Plugins>
             </ext:Panel>
         </Items>

@@ -110,8 +110,8 @@
         <h1>DataView Example with paging</h1>
 
         <ext:Panel
-            runat="server"
             ID="ImagePanel"
+            runat="server"
             Cls="images-view"
             Frame="true"
             Width="535"

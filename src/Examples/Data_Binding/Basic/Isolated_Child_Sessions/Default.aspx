@@ -192,7 +192,8 @@
             </Proxy>
         </ext:Model>
 
-        <ext:Window runat="server"
+        <ext:Window
+            runat="server"
             LazyMode="Config"
             Layout="Fit"
             Modal="true"
@@ -207,7 +208,8 @@
             </Bind>
 
             <Items>
-                <ext:FormPanel runat="server"
+                <ext:FormPanel
+                    runat="server"
                     Reference="form"
                     BodyPadding="18"
                     Border="false"
@@ -216,19 +218,24 @@
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:TextField runat="server"
+                        <ext:TextField
+                            runat="server"
                             FieldLabel="Name"
                             Reference="name"
                             MsgTarget="Side"
-                            BindString="{theCustomer.name}" />
+                            BindString="{theCustomer.name}"
+                            />
 
-                        <ext:TextField runat="server"
+                        <ext:TextField
+                            runat="server"
                             FieldLabel="Phone"
                             Reference="phone"
                             MsgTarget="Side"
-                            BindString="{theCustomer.phone}" />
+                            BindString="{theCustomer.phone}"
+                            />
 
-                        <ext:GridPanel runat="server"
+                        <ext:GridPanel
+                            runat="server"
                             Flex="1"
                             Reference="orders"
                             MarginSpec="10 0 0 0"
@@ -284,20 +291,25 @@
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
            <Items>
-               <ext:GridPanel runat="server"
+               <ext:GridPanel
+                   runat="server"
                    BindString="{customers}"
                    Reference="customerGrid"
                    Flex="1">
                    <ColumnModel>
                        <Columns>
-                           <ext:Column runat="server"
+                           <ext:Column
+                               runat="server"
                                Text="Name"
                                DataIndex="name"
-                               Flex="1" />
-                           <ext:Column runat="server"
+                               Flex="1"
+                               />
+                           <ext:Column
+                               runat="server"
                                Text="Phone"
                                DataIndex="phone"
-                               Width="115" />
+                               Width="115"
+                               />
 
                            <ext:CommandColumn runat="server" Width="50">
                                 <Commands>

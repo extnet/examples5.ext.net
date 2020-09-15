@@ -150,20 +150,24 @@
             <ext:LiveSearchToolbar runat="server">
                 <Items>
                     <ext:ToolbarFill />
-                    <ext:Button runat="server"
+                    <ext:Button
+                        runat="server"
                         ToolTip="Yellow highlight"
                         IconCls="x-yellow-highlight"
                         Pressed="true"
                         EnableToggle="true"
                         ToggleGroup="highlightColor"
-                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-livesearch-match';}}" />
+                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-livesearch-match';}}"
+                        />
 
-                    <ext:Button runat="server"
+                    <ext:Button
+                        runat="server"
                         ToolTip="Blue highlight"
                         IconCls="x-blue-highlight"
                         EnableToggle="true"
                         ToggleGroup="highlightColor"
-                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-blue-livesearch-match';}}" />
+                        ToggleHandler="function (b, state) {if(state) {this.up('gridpanel').liveSearchPlugin.matchCls = 'x-blue-livesearch-match';}}"
+                        />
 
                     <ext:Button runat="server" Text="Refresh" Handler="var p = this.up('gridpanel').liveSearchPlugin; if (p.value) { p.search(p.value); }" />
                 </Items>

@@ -113,7 +113,8 @@
                         runat="server"
                         Text="Company"
                         DataIndex="company"
-                        Flex="1" />
+                        Flex="1"
+                        />
                     <ext:Column runat="server" Text="Price" DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
@@ -128,7 +129,8 @@
                         Text="Last Updated"
                         DataIndex="lastChange"
                         Format="yyyy/MM/dd"
-                        Width="105" />
+                        Width="105"
+                        />
                 </Columns>
             </ColumnModel>
             <Plugins>
@@ -141,26 +143,10 @@
                             DefaultAnchor="-5"
                             Cls="white-footer">
                             <Items>
-                                <ext:TextField
-                                    runat="server"
-                                    Name="company"
-                                    FieldLabel="Company"
-                                    />
-                                <ext:NumberField
-                                    runat="server"
-                                    Name="price"
-                                    FieldLabel="Price"
-                                    />
-                                <ext:NumberField
-                                    runat="server"
-                                    Name="change"
-                                    FieldLabel="Change"
-                                    />
-                                <ext:NumberField
-                                    runat="server"
-                                    Name="pctChange"
-                                    FieldLabel="% Change"
-                                    />
+                                <ext:TextField runat="server" Name="company" FieldLabel="Company" />
+                                <ext:NumberField runat="server" Name="price" FieldLabel="Price" />
+                                <ext:NumberField runat="server" Name="change" FieldLabel="Change" />
+                                <ext:NumberField runat="server" Name="pctChange" FieldLabel="% Change" />
                                 <ext:DateField
                                     runat="server"
                                     Name="lastChange"

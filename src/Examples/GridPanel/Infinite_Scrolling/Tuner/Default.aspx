@@ -231,21 +231,16 @@
                                             Text="Logging on"
                                             Pressed="true"
                                             EnableToggle="true"
-                                            ToggleHandler="toggleLogging" />
+                                            ToggleHandler="toggleLogging"
+                                            />
 
-                                        <ext:Button
-                                            runat="server"
-                                            Text="Clear"
-                                            Handler="function(){ this.up('panel').body.update(''); }" />
+                                        <ext:Button runat="server" Text="Clear" Handler="function(){ this.up('panel').body.update(''); }" />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>
 
                             <CustomConfig>
-                                <ext:ConfigItem
-                                    Name="log"
-                                    Value="function (m) { if (this.rendered && !this.disabled) { this.body.createChild({html: m}); this.body.dom.scrollTop = 1000000; }}"
-                                    Mode="Raw" />
+                                <ext:ConfigItem Name="log" Value="function (m) { if (this.rendered && !this.disabled) { this.body.createChild({html: m}); this.body.dom.scrollTop = 1000000; }}" Mode="Raw" />
                             </CustomConfig>
                         </ext:Panel>
                     </Items>
@@ -256,8 +251,9 @@
                     </Listeners>
                 </ext:Panel>
 
-                <ext:Panel runat="server"
+                <ext:Panel
                     ID="Center"
+                    runat="server"
                     Region="Center"
                     Layout="Fit">
                     <Items>
@@ -291,26 +287,32 @@
                     <BottomBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:Button runat="server"
+                                <ext:Button
+                                    runat="server"
                                     Text="Scroll top to bottom"
                                     Handler="scrollTopToBottomHandler"
                                     ToolTip="Time a full scroll of the grid from top to bottom"
-                                    StandOut="true" />
+                                    StandOut="true"
+                                    />
 
-                                <ext:Button runat="server"
+                                <ext:Button
+                                    runat="server"
                                     Text="Scroll bottom to top"
                                     Handler="scrollBottomToTopHandler"
                                     ToolTip="Time a full scroll of the grid bottom to top"
-                                    StandOut="true" />
+                                    StandOut="true"
+                                    />
 
-                                <ext:NumberField runat="server"
+                                <ext:NumberField
+                                    runat="server"
                                     ItemID="groupSize"
                                     FieldLabel="Group size"
                                     MinValue="0"
                                     MaxValue="10000"
                                     Width="140"
                                     LabelWidth="70"
-                                    MarginSpec="0 0 0 10" />
+                                    MarginSpec="0 0 0 10"
+                                    />
                             </Items>
                         </ext:Toolbar>
                     </BottomBar>

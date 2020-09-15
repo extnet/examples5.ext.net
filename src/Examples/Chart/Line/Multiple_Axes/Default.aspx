@@ -114,7 +114,8 @@
                             DateFormat="MMM dd"
                             FromDate="<%# DateTime.Today %>"
                             ToDate="<%# DateTime.Today.AddDays(14) %>"
-                            AutoDataBind="true" />
+                            AutoDataBind="true"
+                            />
 
                         <ext:NumericAxis
                             Title="Data (blue)"

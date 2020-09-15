@@ -145,7 +145,8 @@
                             runat="server"
                             AllowBlank="false"
                             BlankText="A name is required"
-                            SelectOnFocus="true" />
+                            SelectOnFocus="true"
+                            />
                     </Editor>
 
                     <Plugins>

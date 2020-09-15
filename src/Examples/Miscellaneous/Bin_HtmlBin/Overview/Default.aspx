@@ -100,7 +100,8 @@
                     DisplayField="Text"
                     ValueField="Value"
                     TriggerAction="All"
-                    QueryMode="Local" />
+                    QueryMode="Local"
+                    />
 
                 <ext:ComboBox
                     runat="server"
@@ -109,19 +110,22 @@
                     DisplayField="Text"
                     ValueField="Value"
                     TriggerAction="All"
-                    QueryMode="Local" />
+                    QueryMode="Local"
+                    />
 
                 <ext:Panel
                     runat="server"
                     Title="Menu Area 1 - Click right button"
                     Flex="1"
-                    ContextMenuID="Menu1" />
+                    ContextMenuID="Menu1"
+                    />
 
                 <ext:Panel
                     runat="server"
                     Title="Menu Area 2 - Click right button"
                     Flex="1"
-                    ContextMenuID="Menu2" />
+                    ContextMenuID="Menu2"
+                    />
             </Items>
 
             <Buttons>

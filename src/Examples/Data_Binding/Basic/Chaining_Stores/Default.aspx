@@ -161,7 +161,8 @@
                <ext:VBoxLayoutConfig Align="Stretch" />
            </LayoutConfig>
            <Items>
-               <ext:GridPanel runat="server"
+               <ext:GridPanel
+                   runat="server"
                    BindString="{everyone}"
                    Title="All People"
                    Flex="1">

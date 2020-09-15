@@ -82,10 +82,7 @@
                                     <Items>
                                         <ext:ToolbarFill />
 
-                                        <ext:Button
-                                            runat="server"
-                                            Text="={Ext.os.is.Desktop ? 'Download' : 'Preview'}"
-                                            Handler="download" />
+                                        <ext:Button runat="server" Text="={Ext.os.is.Desktop ? 'Download' : 'Preview'}" Handler="download" />
                                     </Items>
                                 </ext:Toolbar>
                             </TopBar>
@@ -121,14 +118,16 @@
                                             Width="100"
                                             Height="30"
                                             X="40"
-                                            Y="20" />
+                                            Y="20"
+                                            />
 
                                         <ext:TextSprite
                                             Text="Data: Restaurant Complaints"
                                             FontSize="10"
                                             FontFamily="Helvetica"
                                             X="12"
-                                            Y="480" />
+                                            Y="480"
+                                            />
                                     </Items>
                                     <Axes>
                                         <ext:NumericAxis

@@ -89,8 +89,8 @@
         ValueNotFoundText="Loading...">
         <Store>
             <ext:Store
-                runat="server"
                 ID="CitiesStore"
+                runat="server"
                 AutoLoad="false"
                 OnReadData="CitiesRefresh">
                 <Model>

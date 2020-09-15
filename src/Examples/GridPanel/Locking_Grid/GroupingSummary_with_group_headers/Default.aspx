@@ -154,7 +154,7 @@
             <Plugins>
                 <ext:CellEditing runat="server" ClicksToEdit="1" />
                 <ext:DataTip runat="server">
-                    <Tpl>
+                    <Tpl runat="server">
                         <Html>
                             Click to edit {colName}
                         </Html>
@@ -252,7 +252,8 @@
                     runat="server"
                     GroupHeaderTplString="{name}"
                     HideGroupedHeader="true"
-                    EnableGroupingMenu="false" />
+                    EnableGroupingMenu="false"
+                    />
 
                 <ext:Summary runat="server" Dock="Bottom" />
             </Features>

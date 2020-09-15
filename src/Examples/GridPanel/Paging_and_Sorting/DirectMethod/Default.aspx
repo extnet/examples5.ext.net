@@ -73,8 +73,8 @@
         </p>
 
         <ext:GridPanel
-            runat="server"
             ID="GridPanel1"
+            runat="server"
             Title="Employees"
             Frame="true"
             Height="480">
@@ -142,7 +142,8 @@
             <Features>
                 <ext:RowBody runat="server">
                     <GetAdditionalData
-                        Handler="return { rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>' };" />
+                        Handler="return { rowBodyColspan : record.getFields().length, rowBody : '<p>' + data.Notes + '</p>' };"
+                        />
                 </ext:RowBody>
             </Features>
             <BottomBar>
@@ -150,8 +151,7 @@
                     runat="server"
                     DisplayInfo="true"
                     DisplayMsg="Displaying employees {0} - {1} of {2}"
-                    EmptyMsg="No employees to display"
-                    >
+                    EmptyMsg="No employees to display">
                     <Items>
                         <ext:Button runat="server" Text="Clear Sort" Handler="#{Store1}.sorters.clear();" />
                     </Items>

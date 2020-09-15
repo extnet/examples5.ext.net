@@ -107,7 +107,8 @@
                                 <ext:Button
                                     runat="server"
                                     IconCls="x-md md-icon-edit"
-                                    Handler="var record = this.record, editing = record.get('editing'); record.set('editing', !editing); if (editing) {record.commit(true);} " />
+                                    Handler="var record = this.record, editing = record.get('editing'); record.set('editing', !editing); if (editing) {record.commit(true);} "
+                                    />
                             </Component>
                         </ext:ViewItem>
 
@@ -143,7 +144,8 @@
                                     StoreID="ComboStore"
                                     Editable="false"
                                     DisplayField="Text"
-                                    ValueField="Value" />
+                                    ValueField="Value"
+                                    />
                             </Component>
                         </ext:ViewItem>
 

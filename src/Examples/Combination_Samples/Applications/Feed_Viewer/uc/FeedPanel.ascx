@@ -20,7 +20,8 @@
     }
 </script>
 
-<ext:Panel runat="server"
+<ext:Panel
+    runat="server"
     Cls="feed-panel"
     AnimCollapse="true"
     Layout="Fit"
@@ -66,7 +67,8 @@
         </ext:Toolbar>
     </TopBar>
     <Items>        
-        <ext:DataView runat="server" 
+        <ext:DataView
+            runat="server"
             SingleSelect="true"
             TrackOver="true"
             Cls="feed-list"
@@ -85,14 +87,15 @@
                 </ext:Store>
             </Store>
 
-            <Tpl>
+            <Tpl runat="server">
                 <Html>
                     <tpl for=".">
                         <div class="feed-list-item">
                             {title}
                         </div>
                     </tpl>
-                </html>            </Tpl>
+                </html>
+            </Tpl>
 
             <Listeners>
                 <SelectionChange Fn="FeedViewer.FeedPanel.onSelectionChange" />

@@ -110,8 +110,8 @@
             </LayoutConfig>
             <Items>
                 <ext:GridPanel
-                    runat="server"
                     ID="GridPanel1"
+                    runat="server"
                     EnableDragDrop="true"
                     StoreID="Store1"
                     Flex="1">
@@ -173,8 +173,8 @@
                     </Items>
                 </ext:Panel>
                 <ext:GridPanel
-                    runat="server"
                     ID="GridPanel2"
+                    runat="server"
                     EnableDragDrop="false"
                     StoreID="Store2"
                     Flex="1">

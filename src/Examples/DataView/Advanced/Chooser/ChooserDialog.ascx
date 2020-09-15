@@ -1,6 +1,8 @@
 ﻿<%@ Control Language="C#"  %>
 
-<ext:Window ID="ImgChooserDlg" runat="server"
+<ext:Window
+    ID="ImgChooserDlg"
+    runat="server"
     Height="400"
     Width="600"
     Cls="img-chooser-dlg"
@@ -15,7 +17,8 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:TextField runat="server" 
+                        <ext:TextField
+                            runat="server"
                             FieldLabel="Filter"
                             Width="150" 
                             LabelAlign="Right" 
@@ -37,13 +40,15 @@
                                                 } else {
                                                     store.clearFilter();
                                                 }" 
-                                    Buffer="50" />
+                                    Buffer="50"
+                                    />
                             </Listeners>
                         </ext:TextField>
 
                         <ext:ToolbarSpacer runat="server" />
 
-                        <ext:ComboBox runat="server"
+                        <ext:ComboBox
+                            runat="server"
                             FieldLabel="Sort By"
                             LabelAlign="Right"
                             LabelWidth="45"

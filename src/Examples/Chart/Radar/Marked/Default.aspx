@@ -79,19 +79,22 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
 
                         <ext:TextSprite
                             Text="Data: Browser Stats 2012"
                             FontSize="10"
                             X="12"
-                            Y="480" />
+                            Y="480"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="495" />
+                            Y="495"
+                            />
                     </Items>
                     <Axes>
                         <ext:NumericAxis
@@ -99,7 +102,8 @@
                             Grid="true"
                             Minimum="0"
                             Maximum="50"
-                            MajorTickSteps="9" />
+                            MajorTickSteps="9"
+                            />
 
                         <ext:CategoryAxis Position="Angular" Grid="true" />
                     </Axes>

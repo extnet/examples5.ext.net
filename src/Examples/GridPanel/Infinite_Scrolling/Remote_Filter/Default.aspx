@@ -82,10 +82,7 @@
                                 <ext:JsonReader RootProperty="topics" TotalProperty="totalCount" />
                             </Reader>
                             <CustomConfig>
-                                <ext:ConfigItem
-                                    Name="encodeFilters"
-                                    Value="function (filters) { return filters[0].getValue(); }"
-                                    Mode="Raw" />
+                                <ext:ConfigItem Name="encodeFilters" Value="function (filters) { return filters[0].getValue(); }" Mode="Raw" />
                             </CustomConfig>
                         </ext:JsonPProxy>
                     </Proxy>
@@ -124,14 +121,16 @@
                         Text="Author"
                         DataIndex="username"
                         Hidden="true"
-                        Sortable="false" />
+                        Sortable="false"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Replies"
                         DataIndex="replycount"
                         Width="70"
                         Align="Center"
-                        Sortable="false" />
+                        Sortable="false"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Last Post"

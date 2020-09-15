@@ -267,7 +267,8 @@
                             IconCls="x-md md-icon-business-center">
                             <ColumnModel runat="server">
                                 <Columns>
-                                    <ext:Column runat="server"
+                                    <ext:Column
+                                        runat="server"
                                         DataIndex="CompanyName"
                                         Text="Company Name"
                                         Flex="1">
@@ -323,10 +324,7 @@
                                 </Columns>
                             </ColumnModel>
                             <BottomBar>
-                                <ext:PagingToolbar
-                                    runat="server"
-                                    StoreID="Store1"
-                                    DisplayInfo="false" />
+                                <ext:PagingToolbar runat="server" StoreID="Store1" DisplayInfo="false" />
                             </BottomBar>
                             <SelectionModel>
                                 <ext:RowSelectionModel runat="server" Mode="Multi" />

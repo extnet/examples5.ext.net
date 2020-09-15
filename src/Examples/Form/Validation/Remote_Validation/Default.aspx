@@ -86,7 +86,8 @@
                     <RemoteValidation Url="ValidationService.asmx/CheckField" Json="true" />
                 </ext:TextField>
 
-                <ext:ComboBox runat="server"
+                <ext:ComboBox
+                    runat="server"
                     AllowBlank="false"
                     Editable="false"
                     FieldLabel="ComboBox"

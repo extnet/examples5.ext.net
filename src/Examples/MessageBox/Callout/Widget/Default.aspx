@@ -94,7 +94,7 @@
                                 </Fields>
                             </ext:Store>
                         </Store>
-                        <Tpl>
+                        <Tpl runat="server">
                             <Html>
                                 <h3>Saved Users</h3>
                                 <ul>

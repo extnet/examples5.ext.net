@@ -279,12 +279,10 @@
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Switch Theme"
-                            Handler="switchTheme" />
+                        <ext:Button runat="server" Text="Switch Theme" Handler="switchTheme" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

@@ -106,20 +106,11 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Refresh"
-                            OnDirectClick="OnRefresh" />
+                        <ext:Button runat="server" Text="Refresh" OnDirectClick="OnRefresh" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('chart').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('chart').preview();" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Reset pan/zoom"
-                            Handler="resetChart" />
+                        <ext:Button runat="server" Text="Reset pan/zoom" Handler="resetChart" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

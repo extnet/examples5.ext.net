@@ -70,7 +70,8 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server"
+                    <ext:Column
+                        runat="server"
                         Text="Field"
                         Sortable="true"
                         DataIndex="field"

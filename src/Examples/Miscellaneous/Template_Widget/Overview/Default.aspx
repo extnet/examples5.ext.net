@@ -30,11 +30,7 @@
 
         <p>Please note that Content cannot be used inside template widget (if you are planning to create several instances) because the Content region cannot be clonned.</p>
 
-        <ext:Button
-            runat="server"
-            Text="Send email (you can open several windows at one time)"
-            Handler="App.getMessageWindow().show();"
-            />
+        <ext:Button runat="server" Text="Send email (you can open several windows at one time)" Handler="App.getMessageWindow().show();" />
 
         <ext:Window
             runat="server"
@@ -71,13 +67,13 @@
                             </Items>
                         </ext:ComboBox>
 
-                        <ext:TextField runat="server"
+                        <ext:TextField
+                            runat="server"
                             LabelWidth="55"
                             FieldLabel="Subject"
-                            Name="subject" />
-                        <ext:TextArea runat="server"
-                            Flex="1"
-                            Name="body" />
+                            Name="subject"
+                            />
+                        <ext:TextArea runat="server" Flex="1" Name="body" />
                     </Items>
                 </ext:FormPanel>
             </Items>

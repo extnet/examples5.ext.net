@@ -48,27 +48,31 @@
                             Text="Name"
                             Width="150"
                             DataIndex="name"
-                            Locked="true" />
+                            Locked="true"
+                            />
 
                         <ext:RatingColumn
                             runat="server"
                             Text="Rating"
                             DataIndex="rating"
                             Width="90"
-                            Sortable="false" />
+                            Sortable="false"
+                            />
 
                         <ext:Column
                             runat="server"
                             Text="Cuisine"
                             Width="90"
-                            DataIndex="cuisine" />
+                            DataIndex="cuisine"
+                            />
 
                         <ext:Column
                             runat="server"
                             Text="Review"
                             Width="960"
                             DataIndex="description"
-                            Sortable="false" />
+                            Sortable="false"
+                            />
                     </Columns>
                 </ColumnModel>
             </ext:GridPanel>

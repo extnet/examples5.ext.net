@@ -95,7 +95,8 @@
                                 AllowBlank="false"
                                 FieldLabel="User ID"
                                 Name="user"
-                                EmptyText="user id" />
+                                EmptyText="user id"
+                                />
 
                             <ext:TextField
                                 runat="server"
@@ -103,7 +104,8 @@
                                 FieldLabel="Password"
                                 Name="pass"
                                 EmptyText="password"
-                                InputType="password" />
+                                InputType="password"
+                                />
 
                             <ext:TextField
                                 runat="server"
@@ -111,7 +113,8 @@
                                 FieldLabel="Verify"
                                 Name="pass"
                                 EmptyText="password"
-                                InputType="password" />
+                                InputType="password"
+                                />
                         </Items>
                     </ext:FieldSet>
 
@@ -121,24 +124,24 @@
                                 runat="server"
                                 FieldLabel="First Name"
                                 Name="first"
-                                EmptyText="First Name" />
+                                EmptyText="First Name"
+                                />
 
                             <ext:TextField
                                 runat="server"
                                 FieldLabel="Last Name"
                                 Name="last"
-                                EmptyText="Last Name" />
+                                EmptyText="Last Name"
+                                />
 
-                            <ext:TextField
-                                runat="server"
-                                FieldLabel="Company"
-                                Name="company" />
+                            <ext:TextField runat="server" FieldLabel="Company" Name="company" />
 
                             <ext:TextField
                                 runat="server"
                                 FieldLabel="Email"
                                 Name="email"
-                                Vtype="email" />
+                                Vtype="email"
+                                />
 
                             <ext:ComboBox
                                 runat="server"
@@ -174,7 +177,8 @@
                                 Name="dob"
                                 AllowBlank="false"
                                 MaxDate="<%# DateTime.Today %>"
-                                AutoDataBind="true" />
+                                AutoDataBind="true"
+                                />
                         </Items>
                     </ext:FieldSet>
                 </Items>
@@ -183,7 +187,8 @@
                         runat="server"
                         Text="Register"
                         Disabled="true"
-                        FormBind="true" />
+                        FormBind="true"
+                        />
                 </Buttons>
             </ext:FormPanel>
         </Items>

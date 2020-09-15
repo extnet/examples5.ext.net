@@ -44,10 +44,7 @@
 
         <ext:TabPanel ID="TabPanel1" runat="server" Height="100">
             <Items>
-                <ext:Panel
-                    runat="server"
-                    Title="No Menu"
-                    />
+                <ext:Panel runat="server" Title="No Menu" />
                 <ext:Panel
                     runat="server"
                     Title="Menu 1">
@@ -107,25 +104,10 @@
                 <BeforeTabMenuShow Fn="beforeMenu" />
             </Listeners>
             <Items>
-                <ext:Panel
-                    runat="server"
-                    TabMenuHidden="true"
-                    Title="No Menu"
-                    />
-                <ext:Panel
-                    runat="server"
-                    Title="Default Menu"
-                    />
-                <ext:Panel
-                    ID="customMenuTab"
-                    runat="server"
-                    Title="Default Menu +"
-                    />
-                <ext:Panel
-                    runat="server"
-                    TabMenuHidden="true"
-                    Title="Default Menu"
-                    />
+                <ext:Panel runat="server" TabMenuHidden="true" Title="No Menu" />
+                <ext:Panel runat="server" Title="Default Menu" />
+                <ext:Panel ID="customMenuTab" runat="server" Title="Default Menu +" />
+                <ext:Panel runat="server" TabMenuHidden="true" Title="Default Menu" />
             </Items>
         </ext:TabPanel>
     </form>

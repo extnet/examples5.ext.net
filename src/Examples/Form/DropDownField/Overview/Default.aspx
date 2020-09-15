@@ -300,10 +300,7 @@
                     </SelectionModel>
 
                     <Features>
-                        <ext:Grouping
-                            runat="server"
-                            HideGroupedHeader="true"
-                            StartCollapsed="true" />
+                        <ext:Grouping runat="server" HideGroupedHeader="true" StartCollapsed="true" />
                     </Features>
                 </ext:GridPanel>
             </Component>

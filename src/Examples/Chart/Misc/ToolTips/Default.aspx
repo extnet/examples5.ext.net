@@ -167,7 +167,8 @@
                                                         <Label
                                                             Field="name"
                                                             Font="9px Arial"
-                                                            CalloutLine="false" />
+                                                            CalloutLine="false"
+                                                            />
                                                     </ext:PieSeries>
                                                 </Series>
                                             </ext:PolarChart>

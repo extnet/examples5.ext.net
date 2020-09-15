@@ -118,10 +118,7 @@
     </style>
 </head>
 <body>
-    <ext:ResourceManager
-        runat="server"
-        Namespace=""
-        DirectMethodNamespace="CompanyX" />
+    <ext:ResourceManager runat="server" Namespace="" DirectMethodNamespace="CompanyX" />
 
     <ext:Panel
         ID="Panel1"

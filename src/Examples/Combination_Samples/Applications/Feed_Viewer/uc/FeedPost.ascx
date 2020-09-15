@@ -1,15 +1,14 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Panel runat="server"
+<ext:Panel
+    runat="server"
     Cls="preview"
     Scrollable="Both"
-    Border="true">    
+    Border="true">
     <DockedItems>
         <ext:Toolbar runat="server" Dock="Top">
             <Items>
-                <ext:Button runat="server"
-                    Text="View in new tab"
-                    IconCls="tab-new">
+                <ext:Button runat="server" Text="View in new tab" IconCls="tab-new">
                     <Listeners>
                         <Click Handler="FeedViewer.FeedInfo.tabOpen(this.up('panel').active);" />
                     </Listeners>
@@ -17,9 +16,7 @@
 
                 <ext:ToolbarSeparator />
 
-                <ext:Button runat="server"
-                    Text="Go to post"
-                    IconCls="post-go">
+                <ext:Button runat="server" Text="Go to post" IconCls="post-go">
                     <Listeners>
                         <Click Handler="window.open(this.up('panel').active.get('link'));" />
                     </Listeners>
@@ -28,7 +25,7 @@
         </ext:Toolbar>    
     </DockedItems>
 
-    <Tpl>
+    <Tpl runat="server">
         <Html>
              <div class="post-data">
                 <span class="post-date">{pubDate:this.formatDate}</span>

@@ -86,20 +86,20 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:RowNumbererColumn
-                        runat="server"
-                        Width="50" />
+                    <ext:RowNumbererColumn runat="server" Width="50" />
                     <ext:Column
                         runat="server"
                         Text="Company"
                         DataIndex="Company"
-                        Flex="1" />
+                        Flex="1"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Price, $"
                         DataIndex="Price"
                         Width="70"
-                        Align="Center" />
+                        Align="Center"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Last Update"

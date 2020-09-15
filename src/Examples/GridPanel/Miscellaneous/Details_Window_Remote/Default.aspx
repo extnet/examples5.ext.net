@@ -107,8 +107,9 @@
                     <ext:DateColumn runat="server" Text="Birth Date" DataIndex="BirthDate" Format="yyyy-MM-dd" />
                     <ext:Column runat="server" Text="City" DataIndex="City" Width="100" />
                     <ext:Column runat="server" Text="Address" DataIndex="Address" Width="250" />
-                    <ext:Column runat="server"
+                    <ext:Column
                         ID="Details"
+                        runat="server"
                         Text="Details"
                         Width="50"
                         Align="Center"

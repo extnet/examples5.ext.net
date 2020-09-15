@@ -28,7 +28,8 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Window runat="server"
+        <ext:Window
+            runat="server"
             Width="960"
             Height="480"
             Hidden="false"

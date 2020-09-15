@@ -245,7 +245,8 @@
 
                     <ext:ChartTheme runat="server"  ThemeName="Memory" 
                         Colors="<%# MemoryColors %>"
-                        AutoDataBind="true" />
+                        AutoDataBind="true"
+                        />
                 </Bin>
                 <Items>
                     <ext:Panel runat="server">
@@ -253,7 +254,8 @@
                             <ext:HBoxLayoutConfig Align="Stretch" />
                         </LayoutConfig>
                         <Items>
-                            <ext:Container runat="server" 
+                            <ext:Container
+                                runat="server"
                                 Flex="1">
                                 <LayoutConfig>
                                     <ext:VBoxLayoutConfig Align="Stretch" />
@@ -324,7 +326,8 @@
                                 </Items>
                             </ext:Container>
 
-                            <ext:Container runat="server" 
+                            <ext:Container
+                                runat="server"
                                 Flex="1">
                                 <LayoutConfig>
                                     <ext:VBoxLayoutConfig Align="Stretch" />
@@ -336,7 +339,7 @@
                                         InnerPadding="20"
                                         Shadow="true"
                                         Animation="true"
-                                        Theme="Memory">                                        
+                                        Theme="Memory">
                                         <LegendConfig runat="server" Dock="Right" />
                                         <Series>
                                             <ext:PieSeries
@@ -357,7 +360,8 @@
                                         </Series>
                                     </ext:PolarChart>
 
-                                    <ext:CartesianChart runat="server"
+                                    <ext:CartesianChart
+                                        runat="server"
                                         Flex="1"
                                         StandardTheme="Category1"
                                         StoreID="ProcessStore">

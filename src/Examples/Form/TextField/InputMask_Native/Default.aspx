@@ -75,7 +75,8 @@
                             runat="server"
                             Note="99.999-999 (quick string pattern)"
                             FieldLabel="String pattern"
-                            InputMaskString="99.999-999" />
+                            InputMaskString="99.999-999"
+                            />
 
                         <ext:TextField runat="server" ID="TextField1" Note="(999) 999-9999" FieldLabel="Masked Input">
                             <InputMask Pattern="(999) 999-9999" />

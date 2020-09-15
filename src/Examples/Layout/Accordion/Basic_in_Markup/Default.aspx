@@ -25,10 +25,7 @@
                 <Items>
                     <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline">
                         <ToolTips>
-                            <ext:ToolTip
-                                runat="server"
-                                Title="Rich ToolTips"
-                                Html="Let your users know what they can do!" />
+                            <ext:ToolTip runat="server" Title="Rich ToolTips" Html="Let your users know what they can do!" />
                         </ToolTips>
                     </ext:Button>
                     <ext:Button ID="Button2" runat="server" IconCls="x-md md-icon-person-add" />

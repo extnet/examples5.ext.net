@@ -46,7 +46,8 @@
         <Shortcut Name="Grid Window" IconCls="x-grid-shortcut" SortIndex="1" />
         <Launcher Text="Grid Window" IconCls="x-md md-icon-grid-on" />
         <Window>
-            <ext:Window runat="server"
+            <ext:Window
+                runat="server"
                 IconCls="x-md md-icon-grid-on" 
                 Width="740" 
                 Height="480"                
@@ -73,8 +74,7 @@
                 </TopBar>
 
                 <Items>
-                    <ext:GridPanel runat="server"
-                        Border="false">
+                    <ext:GridPanel runat="server" Border="false">
                         <Store>
                             <ext:Store runat="server" Data="<%# TestData %>" AutoDataBind="true">
                                 <Model>

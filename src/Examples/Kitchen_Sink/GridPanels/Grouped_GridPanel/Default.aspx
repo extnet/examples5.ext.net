@@ -128,7 +128,8 @@
                         runat="server"
                         HideGroupedHeader="true"
                         GroupHeaderTplString="Cuisine: {name} ({rows.length} Item{[values.rows.length > 1 ? 's' : '']})"
-                        StartCollapsed="true" />
+                        StartCollapsed="true"
+                        />
                 </Features>
                 <TopBar>
                     <ext:Toolbar runat="server">
@@ -153,7 +154,8 @@
                                 runat="server"
                                 Text="Clear Grouping"
                                 IconCls="x-md md-icon-clear"
-                                Handler="onClearGroupingClick" />
+                                Handler="onClearGroupingClick"
+                                />
                         </Items>
                     </ext:Toolbar>
                 </FooterBar>

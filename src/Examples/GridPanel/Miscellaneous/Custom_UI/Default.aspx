@@ -215,11 +215,7 @@
                     <ext:PagingToolbar runat="server" />
                 </BottomBar>
                 <View>
-                    <ext:GridView
-                        runat="server"
-                        StripeRows="true"
-                        TrackOver="true"
-                        />
+                    <ext:GridView runat="server" StripeRows="true" TrackOver="true" />
                 </View>
             </ext:GridPanel>
         </Items>

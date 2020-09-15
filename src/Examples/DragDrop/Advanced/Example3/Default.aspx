@@ -219,7 +219,8 @@
                     Height="30"
                     Region="North"
                     Html="<h1>Patient Hospital Assignment</h1>"
-                    MarginSpec="5" />
+                    MarginSpec="5"
+                    />
 
                 <ext:Panel
                     runat="server"
@@ -305,7 +306,8 @@
                     <Features>
                         <ext:RowBody runat="server" RowBodyDivCls="hospital-target">
                             <GetAdditionalData
-                                Handler="return {rowBody: 'Drop Patient Here', rowBodyDivCls:'hospital-target'};" />
+                                Handler="return {rowBody: 'Drop Patient Here', rowBodyDivCls:'hospital-target'};"
+                                />
                         </ext:RowBody>
                     </Features>
                 </ext:GridPanel>

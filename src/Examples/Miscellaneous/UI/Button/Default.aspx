@@ -55,7 +55,8 @@
             ID="ThemeSelector"
             runat="server"
             FieldLabel="Theme"
-            AutoPostBack="true" />
+            AutoPostBack="true"
+            />
 
         <br/>
         <p>To use color buttons styles just set <code>UI</code> property of Button: </p>

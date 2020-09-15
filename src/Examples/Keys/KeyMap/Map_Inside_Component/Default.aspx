@@ -44,8 +44,7 @@
                 Region="North"
                 Frame="true"
                 Height="180"
-                Collapsible="true"
-                >
+                Collapsible="true">
                 <Content>
                     <h2>Here, the key bindings are set to the viewport component directly, instead of a standalone keymap with an arbitrary target.</h2>
                     <p>The key binding specification is different and this example illustrates some uses of it.</p>

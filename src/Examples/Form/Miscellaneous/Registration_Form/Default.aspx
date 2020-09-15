@@ -166,14 +166,16 @@
                     Name="username"
                     FieldLabel="User Name"
                     AllowBlank="false"
-                    MinLength="6" />
+                    MinLength="6"
+                    />
 
                 <ext:TextField
                     runat="server"
                     Name="email"
                     FieldLabel="Email Address"
                     AllowBlank="false"
-                    Vtype="email" />
+                    Vtype="email"
+                    />
 
                 <ext:TextField
                     runat="server"
@@ -182,7 +184,8 @@
                     InputType="Password"
                     StyleSpec="margin-top:15px;"
                     AllowBlank="false"
-                    MinLength="8" />
+                    MinLength="8"
+                    />
 
                 <ext:TextField
                     runat="server"
@@ -248,7 +251,8 @@
                                     Closable="true"
                                     Disabled="true"
                                     ConstrainPosition="false"
-                                    Cls="errors-tip" />
+                                    Cls="errors-tip"
+                                    />
                             </ToolTips>
                         </ext:Component>
 

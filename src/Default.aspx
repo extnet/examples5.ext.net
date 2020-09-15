@@ -154,11 +154,7 @@
                     <ext:VBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
-                    <ext:Component
-                        Cls="redirect-overlay-body"
-                        runat="server"
-                        Html="<p>Looks like you are browsing from a phone or a tablet device. Would you like to redirect to Ext.NET Mobile examples?</p>"
-                        />
+                    <ext:Component Cls="redirect-overlay-body" runat="server" Html="<p>Looks like you are browsing from a phone or a tablet device. Would you like to redirect to Ext.NET Mobile examples?</p>" />
 
                     <ext:Button
                         runat="server"
@@ -171,7 +167,8 @@
                         runat="server"
                         Text="Stay here"
                         Flex="1"
-                        Handler="onStay" />
+                        Handler="onStay"
+                        />
 
                     <ext:Checkbox
                         ID="RememberCheckbox"
@@ -219,7 +216,7 @@
                                         </Menu>
                                     </ext:Button>
                                 </div>
-                                <input type="checkbox" id="menu-button-checkbox"/>
+                                <input type="checkbox" id="menu-button-checkbox" />
                                 <label id="menu-button" for="menu-button-checkbox">
                                     <span></span>
                                 </label>

@@ -32,7 +32,8 @@
 
         <p>Shows how a Slider widget can be used with a ViewModel.</p>
 
-        <ext:Panel runat="server"
+        <ext:Panel
+            runat="server"
             Width="400"
             BodyPadding="18"
             Title="Color Components"
@@ -41,9 +42,7 @@
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
-                <ext:FieldContainer runat="server"
-                    FieldLabel="Red"
-                    LabelWidth="60">
+                <ext:FieldContainer runat="server" FieldLabel="Red" LabelWidth="60">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
@@ -53,9 +52,7 @@
                     </Items>
                 </ext:FieldContainer>
 
-                <ext:FieldContainer runat="server"
-                    FieldLabel="Green"
-                    LabelWidth="60">
+                <ext:FieldContainer runat="server" FieldLabel="Green" LabelWidth="60">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
@@ -65,9 +62,7 @@
                     </Items>
                 </ext:FieldContainer>
 
-                <ext:FieldContainer runat="server"
-                    FieldLabel="Blue"
-                    LabelWidth="60">
+                <ext:FieldContainer runat="server" FieldLabel="Blue" LabelWidth="60">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>

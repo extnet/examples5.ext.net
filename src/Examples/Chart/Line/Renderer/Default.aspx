@@ -166,7 +166,8 @@
                             runat="server"
                             Text="Refresh"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
                     </Items>
                 </ext:Toolbar>
             </TopBar>

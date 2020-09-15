@@ -113,7 +113,8 @@
                     FieldLabel="Email Address"
                     Vtype="email"
                     MsgTarget="Side"
-                    AllowBlank="false" />
+                    AllowBlank="false"
+                    />
 
                 <ext:FieldContainer
                     runat="server"
@@ -131,7 +132,8 @@
                             FieldLabel="Start"
                             Name="StartDate"
                             AllowBlank="false"
-                            MarginSpec="0 5 0 0" />
+                            MarginSpec="0 5 0 0"
+                            />
 
                         <ext:DateField runat="server" FieldLabel="End" Name="EndDate" />
                     </Items>
@@ -163,7 +165,8 @@
                                     Name="PhoneHome"
                                     DataIndex="Phone.Home"
                                     Width="29"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                                 <ext:DisplayField runat="server" Text=")" />
                                 <ext:TextField
                                     runat="server"
@@ -171,14 +174,16 @@
                                     DataIndex="Phone.Work"
                                     Width="29"
                                     AllowBlank="false"
-                                    MarginSpec="0 5 0 0" />
+                                    MarginSpec="0 5 0 0"
+                                    />
                                 <ext:DisplayField runat="server" Text="-" />
                                 <ext:TextField
                                     runat="server"
                                     Name="PhoneOther"
                                     DataIndex="Phone.Other"
                                     Width="48"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                             </Items>
                         </ext:FieldContainer>
 
@@ -196,13 +201,15 @@
                                     runat="server"
                                     Name="Hours"
                                     Width="48"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                                 <ext:DisplayField runat="server" Text="hours" />
                                 <ext:NumberField
                                     runat="server"
                                     Name="Minutes"
                                     Width="48"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                                 <ext:DisplayField runat="server" Text="mins" />
                             </Items>
                         </ext:FieldContainer>
@@ -238,13 +245,15 @@
                                     runat="server"
                                     Flex="1"
                                     Name="FirstName"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
 
                                 <ext:TextField
                                     runat="server"
                                     Flex="1"
                                     Name="LastName"
-                                    AllowBlank="false" />
+                                    AllowBlank="false"
+                                    />
                             </Items>
                         </ext:FieldContainer>
                     </Items>
@@ -252,15 +261,9 @@
             </Items>
 
             <Buttons>
-                <ext:Button
-                    runat="server"
-                    Text="Load test data via SetValues"
-                    OnDirectClick="LoadDataViaSetValues" />
+                <ext:Button runat="server" Text="Load test data via SetValues" OnDirectClick="LoadDataViaSetValues" />
 
-                <ext:Button
-                    runat="server"
-                    Text="Load test data via Store and loadRecord"
-                    OnDirectClick="LoadDataViaStore" />
+                <ext:Button runat="server" Text="Load test data via Store and loadRecord" OnDirectClick="LoadDataViaStore" />
 
                 <ext:Button runat="server" Text="Save">
                     <DirectEvents>
@@ -270,7 +273,8 @@
                                     Name="values"
                                     Value="#{FormPanel1}.getForm().getValues()"
                                     Mode="Raw"
-                                    Encode="true" />
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

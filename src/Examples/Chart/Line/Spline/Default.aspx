@@ -74,10 +74,7 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('chart').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('chart').preview();" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -106,7 +103,8 @@
                             Width="100"
                             Height="30"
                             X="40"
-                            Y="20" />
+                            Y="20"
+                            />
                     </Items>
 
                     <Axes>

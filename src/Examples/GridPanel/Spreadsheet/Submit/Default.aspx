@@ -294,7 +294,8 @@
                     ID="SpreadsheetSelectionModel1"
                     runat="server"
                     ColumnSelect="true"
-                    CheckboxSelect="true" />
+                    CheckboxSelect="true"
+                    />
             </SelectionModel>
             <ColumnModel>
                 <Columns>
@@ -330,7 +331,8 @@
                                             Name="Values"
                                             Value="App.SpreadsheetSelectionModel1.getSubmitData({ excludeId: true })"
                                             Mode="Raw"
-                                            Encode="true" />
+                                            Encode="true"
+                                            />
                                     </ExtraParams>
                                 </Click>
                             </DirectEvents>

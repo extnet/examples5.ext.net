@@ -114,14 +114,16 @@
                         runat="server"
                         Text="Author"
                         DataIndex="author"
-                        Hidden="true" />
+                        Hidden="true"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Replies"
                         DataIndex="replycount"
                         Width="70"
                         Align="Center"
-                        Sortable="false" />
+                        Sortable="false"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Last Post"

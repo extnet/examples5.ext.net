@@ -76,7 +76,8 @@
                         Text="Task"
                         Flex="2"
                         Sortable="true"
-                        DataIndex="task" />
+                        DataIndex="task"
+                        />
                     <ext:TemplateColumn
                         runat="server"
                         Text="Duration"
@@ -98,14 +99,18 @@
                         Text="Assigned To"
                         Flex="1"
                         Sortable="true"
-                        DataIndex="user" />
-                    <ext:CheckColumn runat="server"
+                        DataIndex="user"
+                        />
+                    <ext:CheckColumn
+                       runat="server"
                        Text="Done"
                        DataIndex="done"
                        Width="60"
                        Editable="true"
-                       StopSelection="false" />
-                    <ext:ActionColumn runat="server"
+                       StopSelection="false"
+                       />
+                    <ext:ActionColumn
+                        runat="server"
                         Text="Edit"
                         Width="50"
                         MenuDisabled="true"

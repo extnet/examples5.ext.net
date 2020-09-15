@@ -208,11 +208,7 @@
                             OnDirectClick="ToggleChange"
                             />
 
-                         <ext:Button
-                            runat="server"
-                            Text="Set New Pattern"
-                            OnDirectClick="SetNewPattern"
-                            />
+                         <ext:Button runat="server" Text="Set New Pattern" OnDirectClick="SetNewPattern" />
                     </Items>
                 </ext:Toolbar>
             </BottomBar>

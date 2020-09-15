@@ -51,7 +51,8 @@
                         Title="Collapsed Panel"
                         Collapsed="true"
                         Collapsible="true"
-                        Width="640" />
+                        Width="640"
+                        />
                 </Items>
             </ext:Container>
         </Items>

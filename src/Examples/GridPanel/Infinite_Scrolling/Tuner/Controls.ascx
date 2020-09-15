@@ -18,21 +18,24 @@
             ItemID="latency"
             Number="1000"
             MinValue="0"
-            MaxValue="5000" />
+            MaxValue="5000"
+            />
 
         <ext:NumberField
             runat="server"
             FieldLabel="Dataset row count"
             ItemID="rowCount"
             Number="5000"
-            MinValue="200" />
+            MinValue="200"
+            />
 
         <ext:NumberField
             runat="server"
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.panel.Table.html#cfg-trailingBufferZone' target='docs' tabIndex='-1'>trailingBufferZone</a>"
             ItemID="scrollerTrailingBufferZone"
             Number="10"
-            MaxValue="100" />
+            MaxValue="100"
+            />
 
         <ext:NumberField
             runat="server"
@@ -50,16 +53,19 @@
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.panel.Table.html#cfg-numFromEdge' target='docs' tabIndex='-1'>numFromEdge</a>"
             ItemID="scrollerNumFromEdge"
             Number="8"
-            MaxValue="19" />
+            MaxValue="19"
+            />
 
         <ext:NumberField
             runat="server"
             FieldLabel="Num columns"
             ItemID="numFields"
             Number="10"
-            MinValue="1" />
+            MinValue="1"
+            />
 
-        <ext:Checkbox runat="server"
+        <ext:Checkbox
+            runat="server"
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore' target='docs' tabIndex='-1'>BufferedStore</a>"
             ItemID="buffered">
             <Listeners>
@@ -72,21 +78,24 @@
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore.html#cfg-pageSize' target='docs' tabIndex='-1'>BufferedStore pageSize</a>"
             ItemID="pageSize"
             Number="150"
-            Disabled="true" />
+            Disabled="true"
+            />
 
         <ext:NumberField
             runat="server"
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore.html#cfg-trailingBufferZone' target='docs' tabIndex='-1'>BufferedStore trailingBufferZone</a>"
             ItemID="storeTrailingBufferZone"
             Number="25"
-            Disabled="true" />
+            Disabled="true"
+            />
 
         <ext:NumberField
             runat="server"
             FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore.html#cfg-leadingBufferZone' target='docs' tabIndex='-1'>BufferedStore leadingBufferZone</a>"
             ItemID="storeLeadingBufferZone"
             Number="200"
-            Disabled="true" />
+            Disabled="true"
+            />
 
         <ext:NumberField
             runat="server"
@@ -94,7 +103,8 @@
             ItemID="purgePageCount"
             Number="5"
             MinValue="0"
-            Disabled="true" />
+            Disabled="true"
+            />
 
         <ext:NumberField
             runat="server"
@@ -120,7 +130,8 @@
                     Text="Reload"
                     StandOut="true"
                     IconCls="x-md md-icon-refresh"
-                    Handler="initializeGrid" />
+                    Handler="initializeGrid"
+                    />
             </Items>
         </ext:Toolbar>
     </TopBar>

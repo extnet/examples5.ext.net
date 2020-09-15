@@ -37,12 +37,10 @@
                             runat="server"
                             Text="Reload Data"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('cartesian').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('cartesian').preview();" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -75,7 +73,8 @@
                             Title="Hits"
                             Minimum="0"
                             Maximum="100"
-                            Position="Left" />
+                            Position="Left"
+                            />
 
                         <ext:CategoryAxis
                             Position="Bottom"

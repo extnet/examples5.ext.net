@@ -192,12 +192,14 @@
             <Loader
                 runat="server"
                 Url="https://ext.net"
-                Mode="Frame" />
+                Mode="Frame"
+                />
             <ResizableConfig
                 runat="server"
                 MinHeight="200"
                 MinWidth="200"
-                Transparent="true" />
+                Transparent="true"
+                />
         </ext:Panel>
 
 

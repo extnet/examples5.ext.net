@@ -218,7 +218,8 @@
                     runat="server"
                     GroupHeaderTplString="{name}"
                     HideGroupedHeader="true"
-                    RemoteRoot="data.summaryData" />
+                    RemoteRoot="data.summaryData"
+                    />
             </Features>
         </ext:GridPanel>
     </form>

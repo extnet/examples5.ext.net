@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Panel runat="server"
+<ext:Panel
+    runat="server"
     Title="Loader log"
     TplWriteMode="Append"
     BodyPadding="5"

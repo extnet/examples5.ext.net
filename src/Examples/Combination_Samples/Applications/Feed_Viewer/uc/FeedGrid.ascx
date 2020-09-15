@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:GridPanel runat="server"
+<ext:GridPanel
+    runat="server"
     Cls="feed-grid">
     <Store>
         <ext:Store runat="server" AutoLoad="false">

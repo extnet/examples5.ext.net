@@ -52,9 +52,7 @@
 
         <div class="tab-cont">
             <h2>Left-Aligned Tabs With Scrolling</h2>
-            <ext:TabStrip runat="server"
-                TabPosition="Left"
-                Height="480">
+            <ext:TabStrip runat="server" TabPosition="Left" Height="480">
                 <Items>
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
@@ -70,9 +68,7 @@
 
         <div class="tab-cont">
             <h2>Right-Aligned Tabs With Scrolling</h2>
-            <ext:TabStrip runat="server"
-                TabPosition="Right"
-                Height="480">
+            <ext:TabStrip runat="server" TabPosition="Right" Height="480">
                 <Items>
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
@@ -91,8 +87,7 @@
         <h2>Docked TabStrip</h2>
         <ext:Panel runat="server" Width="345" Height="294">
             <DockedItems>
-                <ext:TabStrip runat="server"
-                    TabPosition="Left">
+                <ext:TabStrip runat="server" TabPosition="Left">
                     <Items>
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
@@ -101,8 +96,7 @@
                     </Items>
                 </ext:TabStrip>
 
-                <ext:TabStrip runat="server"
-                    TabPosition="Right">
+                <ext:TabStrip runat="server" TabPosition="Right">
                     <Items>
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
@@ -120,8 +114,7 @@
                     </Items>
                 </ext:TabStrip>
 
-                <ext:TabStrip runat="server"
-                    TabPosition="Bottom">
+                <ext:TabStrip runat="server" TabPosition="Bottom">
                     <Items>
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />

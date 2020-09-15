@@ -203,16 +203,12 @@
                             runat="server"
                             Text="Refresh"
                             IconCls="x-md md-icon-refresh"
-                            OnDirectClick="ReloadData" />
+                            OnDirectClick="ReloadData"
+                            />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Switch Theme"
-                            Handler="switchTheme" />
+                        <ext:Button runat="server" Text="Switch Theme" Handler="switchTheme" />
 
-                        <ext:Button runat="server"
-                            Text="Reset pan/zoom"
-                            Handler="resetPan" />
+                        <ext:Button runat="server" Text="Reset pan/zoom" Handler="resetPan" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -285,7 +281,8 @@
                                     X="-24"
                                     Y="-24"
                                     Scaling="0.7"
-                                    Duration="200" />
+                                    Duration="200"
+                                    />
                             </Marker>
                         </ext:LineSeries>
 
@@ -307,7 +304,8 @@
                                     X="-24"
                                     Y="-24"
                                     Scaling="0.7"
-                                    Duration="200" />
+                                    Duration="200"
+                                    />
                             </Marker>
                         </ext:LineSeries>
 
@@ -329,7 +327,8 @@
                                     X="-24"
                                     Y="-24"
                                     Scaling="0.7"
-                                    Duration="200" />
+                                    Duration="200"
+                                    />
                             </Marker>
                         </ext:LineSeries>
                     </Series>

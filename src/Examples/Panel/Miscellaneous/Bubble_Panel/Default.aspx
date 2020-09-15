@@ -55,8 +55,8 @@
     </ext:Button>
 
     <ext:Panel
-        runat="server"
         ID="Panel1"
+        runat="server"
         Title="Plain Old Panel"
         Width="400"
         Frame="true"

@@ -58,10 +58,7 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button
-                            runat="server"
-                            Text="Preview"
-                            Handler="this.up('panel').down('cartesian').preview();" />
+                        <ext:Button runat="server" Text="Preview" Handler="this.up('panel').down('cartesian').preview();" />
                     </Items>
                 </ext:Toolbar>
             </TopBar>
@@ -97,13 +94,15 @@
                             Text="Data: Browser Stats 2012"
                             FontSize="10"
                             X="12"
-                            Y="380" />
+                            Y="380"
+                            />
 
                         <ext:TextSprite
                             Text="Source: http://www.w3schools.com/"
                             FontSize="10"
                             X="12"
-                            Y="395" />
+                            Y="395"
+                            />
                     </Items>
 
                     <Axes>

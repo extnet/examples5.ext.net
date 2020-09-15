@@ -103,11 +103,7 @@
                     </Tags>
                 </ext:TagLabel>
 
-                <ext:Button
-                    runat="server"
-                    Text="Show selected tags"
-                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));"
-                    />
+                <ext:Button runat="server" Text="Show selected tags" Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));" />
             </Items>
         </ext:Container>
 
@@ -121,11 +117,7 @@
                     </Tags>
                 </ext:TagLabel>
 
-                <ext:Button
-                    runat="server"
-                    Text="Show selected tags"
-                    Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));"
-                    />
+                <ext:Button runat="server" Text="Show selected tags" Handler="alert(Ext.Array.pluck(this.prev().getSelected(), 'text').join(','));" />
             </Items>
         </ext:Container>
 

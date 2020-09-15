@@ -126,8 +126,8 @@
                 <h3 style="margin-bottom:5px;">Search the plants</h3>
 
             <ext:ComboBox
-                runat="server"
                 ID="ComboBox1"
+                runat="server"
                 DisplayField="Common"
                 ValueField="Common"
                 TypeAhead="false"

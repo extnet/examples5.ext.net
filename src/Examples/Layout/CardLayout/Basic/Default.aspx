@@ -54,18 +54,9 @@
             Layout="card"
             ActiveIndex="0">
             <Items>
-                <ext:Container
-                    runat="server"
-                    Html="<h1>Welcome to the Wizard!</h1><p>Step 1 of 3</p>"
-                    />
-                <ext:Container
-                    runat="server"
-                    Html="<h1>Card 2</h1><p>Step 2 of 3</p>"
-                    />
-                <ext:Container
-                    runat="server"
-                    Html="<h1>Congratulations!</h1><p>Step 3 of 3 - Complete</p>"
-                    />
+                <ext:Container runat="server" Html="<h1>Welcome to the Wizard!</h1><p>Step 1 of 3</p>" />
+                <ext:Container runat="server" Html="<h1>Card 2</h1><p>Step 2 of 3</p>" />
+                <ext:Container runat="server" Html="<h1>Congratulations!</h1><p>Step 3 of 3 - Complete</p>" />
             </Items>
             <Buttons>
                 <ext:Button ID="btnPrev" runat="server" Text="Prev" Disabled="true" IconCls="x-md md-icon-chevron-left">

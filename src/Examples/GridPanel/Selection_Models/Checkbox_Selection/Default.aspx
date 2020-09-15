@@ -141,7 +141,8 @@
                         DataIndex="Name"
                         Resizable="false"
                         MenuDisabled="true"
-                        Flex="1" />
+                        Flex="1"
+                        />
 
                     <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
                         <Renderer Format="UsMoney" />

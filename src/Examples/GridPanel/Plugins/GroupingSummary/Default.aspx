@@ -181,7 +181,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 MinValue="0"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                     </ext:Column>
 
@@ -200,7 +201,8 @@
                                 runat="server"
                                 AllowBlank="false"
                                 MinValue="0"
-                                StyleSpec="text-align:left" />
+                                StyleSpec="text-align:left"
+                                />
                         </Editor>
                     </ext:Column>
 
@@ -227,7 +229,8 @@
                     runat="server"
                     GroupHeaderTplString="{name}"
                     HideGroupedHeader="true"
-                    EnableGroupingMenu="false" />
+                    EnableGroupingMenu="false"
+                    />
             </Features>
 
             <TopBar>

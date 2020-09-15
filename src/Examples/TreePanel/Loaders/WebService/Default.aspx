@@ -26,8 +26,7 @@
 
         <h1>TreePanel using WebService</h1>
 
-        <ext:Container runat="server"
-            Layout="HBox">
+        <ext:Container runat="server" Layout="HBox">
             <Items>
                 <ext:TreePanel
                     ID="TreePanel1"
@@ -72,8 +71,7 @@
                                 <ext:AjaxProxy Url="TreeJsonService.asmx/GetNodes" Json="true">
                                     <ActionMethods Read="POST" />
                                     <Reader>
-                                        <ext:JsonReader RootProperty="d">
-                                        </ext:JsonReader>
+                                        <ext:JsonReader RootProperty="d" />
                                     </Reader>
                                 </ext:AjaxProxy>
                             </Proxy>

@@ -57,9 +57,9 @@
     }
 </script>
 
-<ext:TabPanel runat="server"
+<ext:TabPanel
+    runat="server"
     MaxTabWidth="230"
     Cls="feed-info"
-    Border="false">
-
-</ext:TabPanel>
+    Border="false"
+    />

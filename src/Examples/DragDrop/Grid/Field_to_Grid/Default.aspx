@@ -256,7 +256,8 @@
                     runat="server"
                     FieldLabel="Drag this date"
                     SelectedDate="<%# DateTime.Now %>"
-                    AutoDataBind="true" />
+                    AutoDataBind="true"
+                    />
             </Items>
         </ext:Panel>
 

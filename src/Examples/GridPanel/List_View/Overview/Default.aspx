@@ -170,9 +170,7 @@
                         </Columns>
                     </ColumnModel>
                     <View>
-                        <ext:GridView
-                            runat="server"
-                            EmptyText="No Images to Display" />
+                        <ext:GridView runat="server" EmptyText="No Images to Display" />
                     </View>
                     <SelectionModel>
                         <ext:RowSelectionModel ID="RowSelectionModel1" runat="server" Mode="Multi" />
@@ -192,7 +190,8 @@
                                     Name="Values"
                                     Value="#{GridPanel1}.getRowsValues({ selectedOnly : true })"
                                     Mode="Raw"
-                                    Encode="true" />
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

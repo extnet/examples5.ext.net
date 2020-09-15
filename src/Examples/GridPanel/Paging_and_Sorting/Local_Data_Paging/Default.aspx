@@ -231,7 +231,8 @@
                         Text="Last Updated"
                         Width="120"
                         DataIndex="lastChange"
-                        Format="HH:mm:ss" />
+                        Format="HH:mm:ss"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>

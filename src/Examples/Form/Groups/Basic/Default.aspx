@@ -273,11 +273,7 @@
                                 <ext:Container runat="server" ColumnWidth="0.5">
                                     <Items>
                                         <ext:Component runat="server" Html="Heading 2" Cls="x-form-check-group-label" />
-                                        <ext:Checkbox
-                                            ID="Checkbox29"
-                                            runat="server"
-                                            BoxLabel="A long item just for fun"
-                                            />
+                                        <ext:Checkbox ID="Checkbox29" runat="server" BoxLabel="A long item just for fun" />
                                     </Items>
                                 </ext:Container>
                                 <ext:Container runat="server" ColumnWidth="0.25">

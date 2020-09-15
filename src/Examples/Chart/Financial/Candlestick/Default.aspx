@@ -207,7 +207,8 @@
                             Fields="open,high,low,close"
                             Position="Left"
                             Maximum="1000"
-                            Minimum="0" />
+                            Minimum="0"
+                            />
 
                         <ext:TimeAxis Fields="time" Position="Bottom" VisibleRange="0,0.3" />
                     </Axes>

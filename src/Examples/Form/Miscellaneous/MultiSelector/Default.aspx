@@ -105,8 +105,8 @@
         </ext:Model>
 
         <ext:MultiSelector
-            runat="server"
             ID="Selector1"
+            runat="server"
             Width="400"
             Height="480"
             Title="Selected Employees"

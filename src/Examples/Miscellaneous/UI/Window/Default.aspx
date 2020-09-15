@@ -36,7 +36,8 @@
             ID="ThemeSelector"
             runat="server"
             FieldLabel="Theme"
-            AutoPostBack="true" />
+            AutoPostBack="true"
+            />
 
         <h3>Window UI</h3>
 

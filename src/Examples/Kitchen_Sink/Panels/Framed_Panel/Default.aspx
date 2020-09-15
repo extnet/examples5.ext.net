@@ -53,7 +53,8 @@
                         Collapsed="true"
                         Collapsible="true"
                         Width="640"
-                        Frame="true" />
+                        Frame="true"
+                        />
                 </Items>
             </ext:Container>
         </Items>

@@ -12,8 +12,8 @@
         <ext:ResourceManager runat="server" />
 
         <ext:GridPanel
-            runat="server"
             ID="GridPanel1"
+            runat="server"
             Title="Employees"
             Frame="true"
             Height="480">

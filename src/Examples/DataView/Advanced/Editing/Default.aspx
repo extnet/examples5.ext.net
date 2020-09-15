@@ -59,7 +59,7 @@
                     </Listeners>
                 </ext:Store>
             </Store>
-            <Tpl>
+            <Tpl runat="server">
                 <Html>
                     <tpl for=".">
                         <li class="<tpl if="Checked">done</tpl> <tpl if="editing">editing</tpl>">
@@ -71,7 +71,8 @@
                             <input class="edit" type="text" value="{Label}">
                         </li>
                     </tpl>
-                </html>            </Tpl>
+                </html>
+            </Tpl>
             <Listeners>
                 <AfterRender Fn="initEvents" />
                 <ItemDblClick Fn="startEdit" />

@@ -142,10 +142,7 @@
                         <ItemClick Handler="if (record.data.url) { loadPage(#{Pages}, record); return false;}" />
                     </Listeners>
                 </ext:TreePanel>
-                <ext:TabPanel
-                    ID="Pages"
-                    runat="server"
-                    Region="Center" />
+                <ext:TabPanel ID="Pages" runat="server" Region="Center" />
                 <ext:TreePanel
                     ID="TreePanel2"
                     runat="server"

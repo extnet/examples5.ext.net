@@ -201,7 +201,8 @@
                                         IconCls="x-md md-icon-cancel"
                                         ToolTip="Delete"
                                         Flat="true"
-                                        Handler="var view = this.parentView.view; Ext.defer(view.pickerField.alignPicker, 1, view.pickerField); view.store.remove(this.record);" />
+                                        Handler="var view = this.parentView.view; Ext.defer(view.pickerField.alignPicker, 1, view.pickerField); view.store.remove(this.record);"
+                                        />
                                 </Component>
                             </ext:ViewItem>
                         </Items>

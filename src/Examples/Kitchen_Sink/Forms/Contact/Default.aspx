@@ -27,7 +27,8 @@
                 <FieldDefaults
                     LabelAlign="Top"
                     LabelWidth="100"
-                    LabelStyle="font-weight:bold;" />
+                    LabelStyle="font-weight:bold;"
+                    />
                 <Defaults>
                     <ext:Parameter Name="margin" Value="0 0 10 0" Mode="Value" />
                 </Defaults>
@@ -44,14 +45,16 @@
                                 Name="firstName"
                                 Flex="1"
                                 FieldLabel="First"
-                                AllowBlank="false" />
+                                AllowBlank="false"
+                                />
 
                             <ext:TextField
                                 runat="server"
                                 Width="30"
                                 Name="middleInitial"
                                 FieldLabel="MI"
-                                MarginSpec="0 0 0 5" />
+                                MarginSpec="0 0 0 5"
+                                />
 
                             <ext:TextField
                                 runat="server"
@@ -59,7 +62,8 @@
                                 Name="lastName"
                                 FieldLabel="Last"
                                 AllowBlank="false"
-                                MarginSpec="0 0 0 5" />
+                                MarginSpec="0 0 0 5"
+                                />
                         </Items>
                     </ext:FieldContainer>
 
@@ -67,7 +71,8 @@
                         runat="server"
                         FieldLabel="Your Email Address"
                         Vtype="email"
-                        AllowBlank="false" />
+                        AllowBlank="false"
+                        />
 
                     <ext:TextField runat="server" FieldLabel="Subject" AllowBlank="false" />
 
@@ -76,7 +81,8 @@
                         FieldLabel="Message"
                         Flex="1"
                         MarginSpec="0"
-                        AllowBlank="false" />
+                        AllowBlank="false"
+                        />
                 </Items>
                 <Buttons>
                     <ext:Button runat="server" Text="Cancel" />

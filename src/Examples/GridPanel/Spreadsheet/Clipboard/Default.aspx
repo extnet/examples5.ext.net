@@ -68,22 +68,14 @@
                 runat="server"
                 BoxLabel="<b>cell</b> - Complete field data that can be matched to other grids using the same model regardless of column order"
                 InputValue="cell"
-                Checked="true" />
+                Checked="true"
+                />
 
-            <ext:Radio
-                runat="server"
-                BoxLabel="<b>text</b> - Cell content stripped of HTML tags."
-                InputValue="text" />
+            <ext:Radio runat="server" BoxLabel="<b>text</b> - Cell content stripped of HTML tags." InputValue="text" />
 
-            <ext:Radio
-                runat="server"
-                BoxLabel="<b>html</b> - Complete cell content, including any rendered HTML tags."
-                InputValue="html" />
+            <ext:Radio runat="server" BoxLabel="<b>html</b> - Complete cell content, including any rendered HTML tags." InputValue="html" />
 
-            <ext:Radio
-                runat="server"
-                BoxLabel="<b>raw</b> - Underlying field values based on dataIndex."
-                InputValue="raw" />
+            <ext:Radio runat="server" BoxLabel="<b>raw</b> - Underlying field values based on dataIndex." InputValue="raw" />
         </Items>
     </ext:RadioGroup>
 
