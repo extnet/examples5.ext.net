@@ -139,7 +139,7 @@ namespace Ext.Net.Examples.SimpleTasks
                     new Button
                     {
                         ToolTip = "New Category",
-                        Icon = Icon.New,
+                        IconCls = "x-md md-icon-add-circle",
                         Disabled = true
                     },
                     new Button

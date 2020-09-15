@@ -18,7 +18,6 @@
         pnlNavigation.Title = "Navigation";
         pnlNavigation.Border = false;
         pnlNavigation.BodyPadding = 18;
-        pnlNavigation.Icon = Icon.FolderGo;
         pnlNavigation.Html = "Navigation";
 
         // Make Settings Panel for Accordion
@@ -27,7 +26,6 @@
         pnlSettings.Title = "Settings";
         pnlSettings.Border = false;
         pnlSettings.BodyPadding = 18;
-        pnlSettings.Icon = Icon.FolderWrench;
         pnlSettings.Html = "Some settings in here";
         west.Layout = "Accordion";
 
@@ -150,7 +148,6 @@
         Window win = new Window();
         win.ID = "Window1";
         win.Title = "Complex Layout";
-        win.Icon = Icon.Application;
         win.Width = Unit.Pixel(640);
         win.Height = Unit.Pixel(480);
         win.Plain = true;

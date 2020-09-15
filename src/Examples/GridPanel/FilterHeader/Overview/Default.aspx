@@ -14,7 +14,7 @@
     {
         if(column.DataIndex == "Id")
         {
-            ((TextField)defaultField).Icon = Icon.Magnifier;
+            ((TextField)defaultField).IconCls = "x-md md-icon-search";
         }
 
         return defaultField;

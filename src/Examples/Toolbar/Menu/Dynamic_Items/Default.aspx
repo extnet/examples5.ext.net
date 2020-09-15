@@ -11,12 +11,11 @@
         switch (tag)
         {
             case "file":
-                items.Add(new Ext.Net.MenuItem("New") { Icon = Icon.New });
-                items.Add(new Ext.Net.MenuItem("Open") { Icon = Icon.Folder });
-                items.Add(new Ext.Net.MenuItem("Save") { Icon = Icon.Disk });
+                items.Add(new Ext.Net.MenuItem("New") { IconCls = "x-md md-icon-add-circle" });
+                items.Add(new Ext.Net.MenuItem("Open") { IconCls = "x-md md-icon-folder" });
+                items.Add(new Ext.Net.MenuItem("Save") { IconCls = "x-md md-icon-save" });
                 items.Add(new Ext.Net.MenuItem("Save As")
                 {
-                    Icon = Icon.DiskMultiple,
                     Menu = {
                         new Ext.Net.Menu
                         {
@@ -38,7 +37,7 @@
                 });
                 items.Add(new Ext.Net.MenuItem("Print")
                 {
-                    Icon = Ext.Net.Icon.Printer,
+                    IconCls = "x-md md-icon-print",
                     Menu =
                     {
                         new Ext.Net.Menu
@@ -62,15 +61,15 @@
                 break;
 
             case "edit":
-                items.Add(new Ext.Net.MenuItem("Copy") { Icon = Icon.PageCopy });
-                items.Add(new Ext.Net.MenuItem("Paste") { Icon = Icon.PastePlain });
-                items.Add(new Ext.Net.MenuItem("Cut") { Icon = Icon.Cut });
+                items.Add(new Ext.Net.MenuItem("Copy") { });
+                items.Add(new Ext.Net.MenuItem("Paste") { });
+                items.Add(new Ext.Net.MenuItem("Cut") { });
                 break;
 
             case "insert":
-                items.Add(new Ext.Net.MenuItem("Picture") { Icon = Icon.Picture });
-                items.Add(new Ext.Net.MenuItem("Shape") { Icon = Icon.Shape3d });
-                items.Add(new Ext.Net.MenuItem("Chart") { Icon = Icon.ChartBar });
+                items.Add(new Ext.Net.MenuItem("Picture") { });
+                items.Add(new Ext.Net.MenuItem("Shape") { });
+                items.Add(new Ext.Net.MenuItem("Chart") { });
                 break;
 
             case "saveas":

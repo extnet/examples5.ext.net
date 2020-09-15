@@ -24,43 +24,43 @@
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "George",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Brian",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Jon",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Tim",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Brent",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Fred",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node1.Children.Add(new Ext.Net.Node()
             {
                 Text = "Bob",
-                Icon = Icon.User,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
 
@@ -73,25 +73,25 @@
         node2.Children.Add(new Ext.Net.Node()
             {
                 Text = "Kelly",
-                Icon = Icon.UserFemale,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node2.Children.Add(new Ext.Net.Node()
             {
                 Text = "Sara",
-                Icon = Icon.UserFemale,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node2.Children.Add(new Ext.Net.Node()
             {
                 Text = "Zack",
-                Icon = Icon.UserFemale,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
         node2.Children.Add(new Ext.Net.Node()
             {
                 Text = "John",
-                Icon = Icon.UserFemale,
+                IconCls = "x-md md-icon-person",
                 Leaf = true
             });
 
@@ -113,10 +113,10 @@
         button1.ToolTips.Add(tooltip);
 
         Ext.Net.Button button2 = new Ext.Net.Button();
-        button2.Icon = Icon.UserAdd;
+        button2.IconCls = "x-md md-icon-person";
 
         Ext.Net.Button button3 = new Ext.Net.Button();
-        button3.Icon = Icon.UserDelete;
+        button3.IconCls = "x-md md-icon-person";
 
         toolbar.Items.Add(button1);
         toolbar.Items.Add(button2);
@@ -128,7 +128,6 @@
         window.Width = Unit.Pixel(250);
         window.Height = Unit.Pixel(400);
         window.Maximizable = true;
-        window.Icon = Icon.ApplicationTileVertical;
         window.BodyBorder = 0;
         window.Layout = "Accordion";
 

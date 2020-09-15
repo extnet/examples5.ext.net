@@ -58,7 +58,7 @@
         #endregion Tree List store
 
         panel.ID = "Panel1";
-        panel.Icon = Icon.BookOpen;
+        panel.IconCls = "x-md md-icon-menu-book";
         panel.Title = "Catalog";
         panel.Scrollable = ScrollableOption.Both;
         panel.Width = Unit.Pixel(400);

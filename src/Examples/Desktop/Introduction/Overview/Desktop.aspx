@@ -116,7 +116,6 @@
                     Width = 300,
                     Height = 300,
                     DefaultRenderTo = Ext.Net.DefaultRenderTo.Form,
-                    Icon = Icon.ApplicationAdd
                 }
             },
 

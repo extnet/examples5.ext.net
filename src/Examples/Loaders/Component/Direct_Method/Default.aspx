@@ -7,9 +7,9 @@
     public string Items()
     {
         return ComponentLoader.ToConfig(new List<AbstractComponent>() {
-                new Panel { Title="Item 1", Icon = Icon.UserBrown },
-                new Panel { Title="Item 2", Icon = Icon.UserGray },
-                new Panel { Title="Item 3", Icon = Icon.UserGreen }
+                new Panel { Title="Item 1", IconCls = "x-md md-icon-person" },
+                new Panel { Title="Item 2", IconCls = "x-md md-icon-person" },
+                new Panel { Title="Item 3", IconCls = "x-md md-icon-person" }
             }
         );
     }
@@ -33,7 +33,7 @@
 
         return ComponentLoader.ToConfig(new Panel {
             Title = prms["name"],
-            Icon = Icon.TabAdd,
+            IconCls = "x-md md-icon-add-circle-outline",
             Html = "Server time: " + DateTime.Now.ToLongTimeString()
         });
     }

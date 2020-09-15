@@ -249,7 +249,7 @@ namespace Ext.Net.Examples.SimpleTasks
                     Items = {
                         new Button
                         {
-                            Icon = Icon.Add,
+                            IconCls = "x-md md-add-circle-outline"
                             ToolTip = "Add new task",
                             Handler = TasksGrid.SCOPE + ".onAddTask",
                             Scope = TasksGrid.SCOPE

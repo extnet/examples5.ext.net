@@ -64,7 +64,6 @@
         X.Msg.Info(new InfoPanel
         {
             Title = "Server time",
-            Icon = Icon.Clock,
             Html = DateTime.Now.ToShortTimeString()
         }).Show();
     }
@@ -79,7 +78,6 @@
         X.Msg.Info(new InfoPanel
         {
             Title = "Server time",
-            Icon = Icon.Clock,
             Html = DateTime.Now.ToShortTimeString(),
             QueueName = "bottomright"
         }).Show();

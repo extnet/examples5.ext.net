@@ -12,7 +12,7 @@
         tree.ID = "TreePanel1";
         tree.Width = Unit.Pixel(480);
         tree.Height = Unit.Pixel(480);
-        tree.Icon = Icon.BookOpen;
+        tree.IconCls = "x-md md-icon-menu-book";
         tree.Title = "Catalog";
         tree.Scrollable = ScrollableOption.Both;
 
@@ -55,7 +55,7 @@
             Ext.Net.Node composerNode = new Ext.Net.Node()
                                             {
                                                 Text = composer.Name,
-                                                Icon = Icon.UserGray
+                                                IconCls = "x-md md-icon-person"
                                             };
             root.Children.Add(composerNode);
 
@@ -72,7 +72,7 @@
                     Ext.Net.Node pieceNode = new Ext.Net.Node()
                                                 {
                                                     Text = piece.Title,
-                                                    Icon = Icon.Music,
+                                                    IconCls = "x-md md-icon-music-note",
                                                     Leaf = true
                                                 };
                     compositionNode.Children.Add(pieceNode);

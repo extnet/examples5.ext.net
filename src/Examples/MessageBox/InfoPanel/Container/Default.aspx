@@ -58,7 +58,7 @@
                         {
                             Cls= "close",
                             Hidden = true,
-                            Icon = Icon.Decline,
+                            IconCls = "x-md md-icon-clear",
                             Handler = "this.up('infopanel').destroy();"
                         }
                     }

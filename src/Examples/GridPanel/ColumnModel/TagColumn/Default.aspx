@@ -16,17 +16,17 @@
         {
             return new List<object>()
             {
-                new {tags = "Tag 1,Tag 2,Tag 3"},
-                new {tags = new string[] {"Tag 1", "Tag 2", "Tag 3" }},
-                new {tags = new object[] {
-                    new {text = "Tag 1", iconCls = "#User"},
-                    new {text = "Tag 2", iconCls = "#UserAdd"},
-                    new {text = "Tag 3", iconCls = "#UserDelete"}
+                new { tags = "Tag 1, Tag 2, Tag 3" },
+                new { tags = new string[] { "Tag 1", "Tag 2", "Tag 3" }},
+                new { tags = new object[] {
+                    new { text = "Tag 1", iconCls = "#User" },
+                    new { text = "Tag 2", iconCls = "#UserAdd" },
+                    new { text = "Tag 3", iconCls = "#UserDelete" }
                 }},
                 new {tags = new Tags {
-                    new Tag{Text = "Tag 1", Icon = Icon.CommentAdd},
-                    new Tag{Text = "Tag 2", Icon = Icon.CommentDelete},
-                    new Tag{Text = "Tag 3", Icon = Icon.CommentEdit}
+                    new Tag{ Text = "Tag 1" },
+                    new Tag{ Text = "Tag 2" },
+                    new Tag{ Text = "Tag 3" }
                 }}
             };
         }

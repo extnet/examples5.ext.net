@@ -58,7 +58,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             Html = stub
         });
     }
@@ -123,7 +123,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             Height = 150,
             Width = 300,
             BodyStyle = "padding:10px",
@@ -138,7 +138,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             AutoHide = false,
             Html = stub
         });
@@ -149,7 +149,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             HideDelay = 2000,
             Html = stub
         });
@@ -160,7 +160,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             PinEvent = "mouseover",
             Html = stub
         });
@@ -171,7 +171,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             CloseVisible = true,
             Html = stub
         });
@@ -182,7 +182,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             Width = 500,
             Height = 400,
             AutoHide = false,
@@ -199,7 +199,7 @@
         Notification.Show(new NotificationConfig
         {
             Title = "Title",
-            Icon = Icon.Information,
+            IconCls = "x-md md-icon-info",
             Height = 150,
             AutoHide = false,
             CloseVisible = true,
@@ -362,14 +362,12 @@
                     Collapsible = true,
                     Title = "West",
                     Width = 100,
-                    Icon = Icon.Add
                 },
 
                 new Ext.Net.Panel
                 {
                     Title = "Center",
                     Region = Region.Center,
-                    Icon = Icon.PageWhiteEdit
                 }
             },
             DockedItems =
@@ -391,7 +389,7 @@
                                 }
                             }
                         },
-                        new Ext.Net.Button { Icon = Icon.Magnifier }
+                        new Ext.Net.Button { IconCls = "x-md md-icon-search" }
                     }
                 }
             }

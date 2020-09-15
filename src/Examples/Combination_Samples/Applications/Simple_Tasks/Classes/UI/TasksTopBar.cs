@@ -36,7 +36,7 @@
                                     new MenuItem
                                     {
                                         Text = "New Category",
-                                        Icon = Icon.New
+                                        IconCls = "x-md md-icon-add-circle"
                                     },
                                     new MenuItem
                                     {

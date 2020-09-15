@@ -50,7 +50,6 @@
         win.ID = "Window1";
         win.Layout = LayoutType.Border.ToString();
         win.Title = "Simple Layout";
-        win.Icon = Icon.Application;
         win.Width = Unit.Pixel(600);
         win.Height = Unit.Pixel(350);
         win.Border = false;

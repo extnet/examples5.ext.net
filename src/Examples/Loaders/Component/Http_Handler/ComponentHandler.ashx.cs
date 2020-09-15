@@ -22,9 +22,9 @@ namespace Ext.Net.Examples.Examples.Loader.Component.Http_Handler
                 default:
                     ComponentLoader.Render(new List<AbstractComponent>()
                         {
-                            new Panel { Title="Item 1", Icon = Icon.UserBrown },
-                            new Panel { Title="Item 2", Icon = Icon.UserGray },
-                            new Panel { Title="Item 3", Icon = Icon.UserGreen }
+                            new Panel { Title="Item 1", IconCls = "x-md md-icon-person" },
+                            new Panel { Title="Item 2", IconCls = "x-md md-icon-person" },
+                            new Panel { Title="Item 3", IconCls = "x-md md-icon-person" }
                         }
                     );
                     break;
