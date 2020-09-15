@@ -61,7 +61,7 @@
 
     <h3>5. Toggle Buttons</h3>
 
-    <ext:Container runat="server" Layout="HBoxLayout">
+    <ext:Container runat="server" Layout="HBox">
         <Defaults>
             <ext:Parameter Name="margin" Value="0 5 0 0" />
         </Defaults>

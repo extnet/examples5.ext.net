@@ -11,15 +11,15 @@
     <form id="form1" runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:Viewport runat="server" Layout="BorderLayout">
+        <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Panel runat="server" Title="Global logger in master page" Height="200" Region="North" Layout="FitLayout">
+                <ext:Panel runat="server" Title="Global logger in master page" Height="200" Region="North" Layout="Fit">
                     <MessageBusListeners>
                         <ext:MessageBusListener Name="**" Handler="this.body.createChild({html: 'Name: ' + name, tag:'p'});" />
                     </MessageBusListeners>
                 </ext:Panel>
 
-                <ext:Container runat="server" Layout="FitLayout" Region="Center">
+                <ext:Container runat="server" Layout="Fit" Region="Center">
                     <Content>
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">        
                         </asp:ContentPlaceHolder>            

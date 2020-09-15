@@ -282,7 +282,7 @@
                                         <ext:DisplayField runat="server" Text="Max" Width="60" />
                                     </Items>
                                 </ext:FieldContainer>
-                                <ext:Container runat="server" Layout="HBoxLayout">
+                                <ext:Container runat="server" Layout="HBox">
                                     <Items>
                                         <ext:Checkbox
                                             ID="chkAllowIntegerPrefix"
