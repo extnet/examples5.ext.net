@@ -20,14 +20,14 @@
                 new ButtonConfig{
                     Name = "Icon Only",
                     Config = new Ext.Net.Button.Config {
-                        IconCls = "add"
+                        IconCls = "x-md md-icon-check-circle-outline"
                     }
                 },
 
                 new ButtonConfig{
                     Name = "Icon (left) and Text",
                     Config = new Ext.Net.Button.Config {
-                        IconCls = "add",
+                        IconCls = "x-md md-icon-check-circle-outline",
                         IconAlign = IconAlign.Left
                     }
                 },
@@ -35,7 +35,7 @@
                 new ButtonConfig{
                     Name = "Icon (top) and Text",
                     Config = new Ext.Net.Button.Config {
-                        IconCls = "add",
+                        IconCls = "x-md md-icon-check-circle-outline",
                         IconAlign = IconAlign.Top
                     }
                 },
@@ -43,7 +43,7 @@
                 new ButtonConfig{
                     Name = "Icon (right) and Text",
                     Config = new Ext.Net.Button.Config {
-                        IconCls = "add",
+                        IconCls = "x-md md-icon-check-circle-outline",
                         IconAlign = IconAlign.Right
                     }
                 },
@@ -51,7 +51,7 @@
                 new ButtonConfig{
                     Name = "Icon (bottom) and Text",
                     Config = new Ext.Net.Button.Config {
-                        IconCls = "add",
+                        IconCls = "x-md md-icon-check-circle-outline",
                         IconAlign = IconAlign.Bottom
                     }
                 }
@@ -100,7 +100,7 @@
         {
             this.Buttons.Controls.Add(new HtmlGenericControl
             {
-                TagName = "h3",
+                TagName = "h4",
                 InnerText = config.Name
             });
 
@@ -174,29 +174,6 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <style>
-        .x-btn-default-large .add {
-            background-image: url(images/add32.gif) !important;
-        }
-        .x-btn-default-small .add {
-            background-image: url(images/add16.gif) !important;
-        }
-        .x-btn-default-medium .add {
-            background-image: url(images/add24.gif) !important;
-        }
-
-        h2 {
-            color:#083772 !important;
-            margin: 20px 0 0 !important;
-            padding: 5px;
-            background:#eee;
-            width:400px;
-        }
-
-        h3 {
-            font-weight:normal !important;
-            margin:10px;
-        }
-
         .x-btn {
             margin-left:10px;
         }

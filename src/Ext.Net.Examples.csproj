@@ -1571,9 +1571,6 @@
     <Content Include="Examples\Buttons\Basic\Overview\thumbnail.gif" />
     <Content Include="Examples\Buttons\Basic\Variations\config.xml" />
     <Content Include="Examples\Buttons\Basic\Variations\Default.aspx" />
-    <Content Include="Examples\Buttons\Basic\Variations\images\add32.gif" />
-    <Content Include="Examples\Buttons\Basic\Variations\images\add16.gif" />
-    <Content Include="Examples\Buttons\Basic\Variations\images\add24.gif" />
     <Content Include="Examples\Buttons\config.xml" />
     <Content Include="Examples\ColorPicker\Basic\Custom_Colors\config.xml" />
     <Content Include="Examples\ColorPicker\Basic\Custom_Colors\Default.aspx" />
