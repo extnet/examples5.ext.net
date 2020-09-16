@@ -61,22 +61,22 @@
                     <Children>
                         <ext:Node Text="To Do" IconCls="x-md md-icon-folder">
                             <Children>
-                                <ext:Node Text="Go jogging" Leaf="true" Checked="False" />
-                                <ext:Node Text="Take a nap" Leaf="true" Checked="False" />
-                                <ext:Node Text="Clean house" Leaf="true" Checked="False" />
+                                <ext:Node Text="Go jogging" Leaf="true" Checked="false" />
+                                <ext:Node Text="Take a nap" Leaf="true" Checked="false" />
+                                <ext:Node Text="Clean house" Leaf="true" Checked="false" />
                             </Children>
                         </ext:Node>
 
                         <ext:Node Text="Grocery List" IconCls="x-md md-icon-folder">
                             <Children>
-                                <ext:Node Text="Bananas" Leaf="true" Checked="False" />
-                                <ext:Node Text="Milk" Leaf="true" Checked="False" />
-                                <ext:Node Text="Cereal" Leaf="true" Checked="False" />
+                                <ext:Node Text="Bananas" Leaf="true" Checked="false" />
+                                <ext:Node Text="Milk" Leaf="true" Checked="false" />
+                                <ext:Node Text="Cereal" Leaf="true" Checked="false" />
 
                                 <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder">
                                     <Children>
-                                        <ext:Node Text="Coffee" Leaf="true" Checked="False" />
-                                        <ext:Node Text="Red Bull" Leaf="true" Checked="False" />
+                                        <ext:Node Text="Coffee" Leaf="true" Checked="false" />
+                                        <ext:Node Text="Red Bull" Leaf="true" Checked="false" />
                                     </Children>
                                 </ext:Node>
                             </Children>
@@ -84,9 +84,9 @@
 
                         <ext:Node Text="Kitchen Remodel" IconCls="x-md md-icon-folder">
                             <Children>
-                                <ext:Node Text="Finish the budget" Leaf="true" Checked="False" />
-                                <ext:Node Text="Call contractors" Leaf="true" Checked="False" />
-                                <ext:Node Text="Choose design" Leaf="true" Checked="False" />
+                                <ext:Node Text="Finish the budget" Leaf="true" Checked="false" />
+                                <ext:Node Text="Call contractors" Leaf="true" Checked="false" />
+                                <ext:Node Text="Choose design" Leaf="true" Checked="false" />
                             </Children>
                         </ext:Node>
                     </Children>

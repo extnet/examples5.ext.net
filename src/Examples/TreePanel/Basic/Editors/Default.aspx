@@ -69,7 +69,7 @@
             Scrollable="Both"
             Width="250"
             CollapseFirst="True"
-            RootVisible="False">
+            RootVisible="false">
             <Fields>
                 <ext:ModelField Name="editor" Type="Int" />
             </Fields>
@@ -102,7 +102,7 @@
             Width="250"
             CollapseFirst="True"
             ActiveEditor="Editor1"
-            RootVisible="False">
+            RootVisible="false">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
