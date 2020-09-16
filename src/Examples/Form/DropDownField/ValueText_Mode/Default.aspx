@@ -97,30 +97,85 @@
                                     <Children>
                                         <ext:Node Text="To Do" Icon="Folder">
                                             <Children>
-                                                <ext:Node NodeID="Item11" Text="Go jogging" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item12" Text="Take a nap" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item13" Text="Clean house" Leaf="true" Checked="False" />
+                                                <ext:Node
+                                                    NodeID="Item11"
+                                                    Text="Go jogging"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item12"
+                                                    Text="Take a nap"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item13"
+                                                    Text="Clean house"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
                                             </Children>
                                         </ext:Node>
                                         <ext:Node Text="Grocery List" Icon="Folder">
                                             <Children>
-                                                <ext:Node NodeID="Item21" Text="Bananas" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item22" Text="Milk" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item23" Text="Cereal" Leaf="true" Checked="False" />
+                                                <ext:Node
+                                                    NodeID="Item21"
+                                                    Text="Bananas"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item22"
+                                                    Text="Milk"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item23"
+                                                    Text="Cereal"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
 
-                                                <ext:Node Text="Energy foods" Icon="Folder">
+                                                <ext:Node Text="Energy foods" IconCls="x-md md-icon-folder">
                                                     <Children>
-                                                        <ext:Node NodeID="Item241" Text="Coffee" Leaf="true" Checked="False" />
-                                                        <ext:Node NodeID="Item242" Text="Red Bull" Leaf="true" Checked="False" />
+                                                        <ext:Node
+                                                            NodeID="Item241"
+                                                            Text="Coffee"
+                                                            Leaf="true"
+                                                            Checked="false"
+                                                            />
+                                                        <ext:Node
+                                                            NodeID="Item242"
+                                                            Text="Red Bull"
+                                                            Leaf="true"
+                                                            Checked="false"
+                                                            />
                                                     </Children>
                                                 </ext:Node>
                                             </Children>
                                         </ext:Node>
                                         <ext:Node Text="Kitchen Remodel" Icon="Folder">
                                             <Children>
-                                                <ext:Node NodeID="Item31" Text="Finish the budget" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item32" Text="Call contractors" Leaf="true" Checked="False" />
-                                                <ext:Node NodeID="Item33" Text="Choose design" Leaf="true" Checked="False" />
+                                                <ext:Node
+                                                    NodeID="Item31"
+                                                    Text="Finish the budget"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item32"
+                                                    Text="Call contractors"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
+                                                <ext:Node
+                                                    NodeID="Item33"
+                                                    Text="Choose design"
+                                                    Leaf="true"
+                                                    Checked="false"
+                                                    />
                                             </Children>
                                         </ext:Node>
                                     </Children>
