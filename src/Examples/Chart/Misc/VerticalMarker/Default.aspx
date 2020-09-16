@@ -84,12 +84,16 @@
                             Fields="Visits"
                             Title="Number of Hits"
                             Minimum="0"
-                            Maximum="100">
-                        </ext:NumericAxis>
+                            Maximum="100"
+                            />
                     </Axes>
                     <Series>
-                        <ext:LineSeries XField="Date" YField="Visits" Smooth="3" ShowMarkers="false">
-                        </ext:LineSeries>
+                        <ext:LineSeries
+                            XField="Date"
+                            YField="Visits"
+                            Smooth="3"
+                            ShowMarkers="false"
+                            />
                     </Series>
                 </ext:CartesianChart>
             </Items>
@@ -141,11 +145,7 @@
                             </GridConfig>
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Position="Bottom"
-                            Fields="Name"
-                            Title="Month of the Year">
-                            </ext:CategoryAxis>
+                        <ext:CategoryAxis Position="Bottom" Fields="Name" Title="Month of the Year" />
                     </Axes>
                     <Series>
                         <ext:LineSeries XField="Name" YField="Data1">
