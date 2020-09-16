@@ -8,7 +8,7 @@
     Cls="img-chooser-dlg"
     Title="Choose an Image"
     Layout="Border"
-    BodyBorder="0">
+    BodyBorder="false">
     <Items>
         <ext:Panel runat="server" Region="Center" Scrollable="Both">
             <Items>
