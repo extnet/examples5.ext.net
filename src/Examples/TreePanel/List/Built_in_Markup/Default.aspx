@@ -181,9 +181,7 @@
                     </Store>
 
                     <Listeners>
-                        <SelectionChange
-                            Handler="#{StatusBar1}.setStatus({text: 'Node Selected: <b>' + record.data.text + '<br />', clear: false});"
-                            />
+                        <SelectionChange Handler="#{StatusBar1}.setStatus({text: 'Node Selected: <b>' + record.data.text + '<br />', clear: false});" />
                     </Listeners>
                 </ext:TreeList>
             </Items>
