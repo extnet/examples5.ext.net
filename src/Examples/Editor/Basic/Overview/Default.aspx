@@ -250,7 +250,7 @@
                                     AutoSize="true"
                                     Alignment="tl-tl?"
                                     AllowBlur="false"
-                                    Shadow="False">
+                                    Shadow="false">
                                     <AutoSizeConfig Width="BoundEl" Height="BoundEl" />
                                     <Field>
                                         <ext:HtmlEditor ID="HtmlEditor1" runat="server">
