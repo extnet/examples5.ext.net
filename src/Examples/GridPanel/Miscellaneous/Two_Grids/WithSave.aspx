@@ -103,7 +103,7 @@
             IconCls="x-md md-icon-add-circle-outline"
             Title="Country Selector"
             BodyPadding="18"
-            BodyBorder="false"
+            BodyBorder="0"
             Layout="HBox">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
