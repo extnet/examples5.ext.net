@@ -116,10 +116,10 @@
             ID="Window1"
             runat="server"
             Title="TreeList"
-            IconCls="x-fa fa-gears"
+            IconCls="x-md md-icon-settings"
             Width="500"
             Height="480"
-            Closable="False"
+            Closable="false"
             Resizable="false"
             Layout="Border">
             <HeaderConfig runat="server">
@@ -185,12 +185,12 @@
                                     <Root>
                                         <ext:Node Expanded="true">
                                             <Children>
-                                                <ext:Node Text="Home" IconCls="x-fa fa-home">
+                                                <ext:Node Text="Home" IconCls="x-md md-icon-home">
                                                     <Children>
-                                                        <ext:Node Text="Messages" IconCls="x-fa fa-inbox" Leaf="true" />
-                                                        <ext:Node Text="Archive" IconCls="x-fa fa-database">
+                                                        <ext:Node Text="Messages" IconCls="x-md md-icon-mail-outline" Leaf="true" />
+                                                        <ext:Node Text="Archive" IconCls="x-md md-icon-data-usage">
                                                             <Children>
-                                                                <ext:Node Text="First" IconCls="x-fa fa-file" Leaf="true" />
+                                                                <ext:Node Text="First" IconCls="x-md md-icon-folder" Leaf="true" />
                                                                 <ext:Node Text="No Icon" IconCls="" Leaf="true" />
                                                             </Children>
                                                         </ext:Node>
@@ -198,16 +198,16 @@
                                                         <ext:Node Text="Video" IconCls="x-fa fa-film" Leaf="true" />
                                                     </Children>
                                                 </ext:Node>
-                                                <ext:Node Text="Users" IconCls="x-fa fa-user">
+                                                <ext:Node Text="Users" IconCls="x-md md-icon-person">
                                                     <Children>
                                                         <ext:Node Text="Tagged" IconCls="x-fa fa-tag" Leaf="true" />
                                                         <ext:Node Text="Inactive" IconCls="x-fa fa-trash" Leaf="true" />
                                                     </Children>
                                                 </ext:Node>
                                                 <ext:Node Text="Groups" IconCls="x-fa fa-users" Leaf="true" />
-                                                <ext:Node Text="Settings" IconCls="x-fa fa-wrench">
+                                                <ext:Node Text="Settings" IconCls="x-md md-icon-settings">
                                                     <Children>
-                                                        <ext:Node Text="Sharing" IconCls="x-fa fa-share-alt" Leaf="true" />
+                                                        <ext:Node Text="Sharing" IconCls="x-md md-icon-share" Leaf="true" />
                                                         <ext:Node Text="Notifications" IconCls="x-fa fa-flag" Leaf="true" />
                                                         <ext:Node Text="Network" IconCls="x-fa fa-signal" Leaf="true" />
                                                     </Children>
