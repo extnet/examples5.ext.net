@@ -165,9 +165,7 @@
                         </ext:NumericAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries
-                            XField="x"
-                            YField="y">
+                        <ext:LineSeries XField="x" YField="y">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="2" StrokeStyle="rgb(0, 119, 204)" />
                             </StyleSpec>

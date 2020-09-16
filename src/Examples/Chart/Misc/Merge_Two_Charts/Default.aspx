@@ -74,10 +74,7 @@
 
         <h1>Merge Two Charts Sample</h1>
 
-        <ext:Panel
-            runat="server"
-            Layout="VBox"
-            Width="960">
+        <ext:Panel runat="server" Layout="VBox" Width="960">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -109,10 +106,7 @@
                     <Items>
                         <ext:CartesianChart ID="Chart1" runat="server" InsetPadding="30">
                             <Store>
-                                <ext:Store
-                                    runat="server"
-                                    Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                                    AutoDataBind="true">
+                                <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                                     <Model>
                                         <ext:Model runat="server">
                                             <Fields>
@@ -178,10 +172,7 @@
                     <Items>
                         <ext:CartesianChart ID="Chart2" runat="server" InsetPadding="30">
                             <Store>
-                                <ext:Store
-                                    runat="server"
-                                    Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                                    AutoDataBind="true">
+                                <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                                     <Model>
                                         <ext:Model runat="server">
                                             <Fields>

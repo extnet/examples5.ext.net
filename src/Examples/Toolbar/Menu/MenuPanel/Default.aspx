@@ -49,10 +49,7 @@
                     MarginSpec="5 0 5 5"
                     Border="false">
                     <Items>
-                        <ext:MenuPanel
-                            runat="server"
-                            Title="MenuPanel with Selection Saving"
-                            SelectedTextCls="bold-highlight">
+                        <ext:MenuPanel runat="server" Title="MenuPanel with Selection Saving" SelectedTextCls="bold-highlight">
                             <Menu ID="mnu1" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-arrow-forward" />
@@ -64,10 +61,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        <ext:MenuPanel
-                            runat="server"
-                            Title="MenuPanel without Selection Saving"
-                            SaveSelection="false">
+                        <ext:MenuPanel runat="server" Title="MenuPanel without Selection Saving" SaveSelection="false">
                             <Menu ID="mnu2" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-arrow-forward" />
@@ -79,10 +73,7 @@
                                 </Listeners>
                             </Menu>
                         </ext:MenuPanel>
-                        <ext:MenuPanel
-                            runat="server"
-                            Title="Menu with Predefined Selection"
-                            SelectedIndex="1">
+                        <ext:MenuPanel runat="server" Title="Menu with Predefined Selection" SelectedIndex="1">
                             <Menu ID="mnu3" runat="server">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 1" IconCls="x-md md-icon-arrow-forward" />

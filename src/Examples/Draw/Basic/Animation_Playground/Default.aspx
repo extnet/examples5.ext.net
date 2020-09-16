@@ -17,7 +17,15 @@
                 <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
             </LayoutConfig>
             <Items>
-                <ext:Panel runat="server" Border="false" PreventHeader="true" Width="640" Height="480" Layout="Fit" BodyStyle="background:transparent;" ButtonAlign="Center">
+                <ext:Panel
+                    runat="server"
+                    Border="false"
+                    PreventHeader="true"
+                    Width="640"
+                    Height="480"
+                    Layout="Fit"
+                    BodyStyle="background:transparent;"
+                    ButtonAlign="Center">
                     <Items>
                         <ext:DrawContainer ID="Canvas" runat="server">
                             <Items>
@@ -42,7 +50,12 @@
                     <FooterBar>
                         <ext:Toolbar runat="server">
                             <Items>
-                                <ext:TextField ID="toConfig" runat="server" Width="400" Text="{fill: '#223fa3', stroke: '#000', 'stroke-width': 80, 'stroke-opacity': 0.5}" />
+                                <ext:TextField
+                                    ID="toConfig"
+                                    runat="server"
+                                    Width="400"
+                                    Text="{fill: '#223fa3', stroke: '#000', 'stroke-width': 80, 'stroke-opacity': 0.5}"
+                                    />
                                 <ext:NumberField
                                     ID="duration"
                                     runat="server"

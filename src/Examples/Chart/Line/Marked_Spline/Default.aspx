@@ -77,10 +77,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    InsetPaddingSpec="40 40 20 20">
+                <ext:CartesianChart ID="Chart1" runat="server" InsetPaddingSpec="40 40 20 20">
                     <Store>
                         <ext:Store runat="server">
                             <Model>
@@ -114,10 +111,7 @@
                     </Items>
 
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Left"
-                            Fields="sin,cos,tan"
-                            Grid="true">
+                        <ext:NumericAxis Position="Left" Fields="sin,cos,tan" Grid="true">
                             <Renderer Handler="return Ext.util.Format.number(label, '0.0');" />
                         </ext:NumericAxis>
 
@@ -131,10 +125,7 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries
-                            XField="theta"
-                            YField="sin"
-                            UseSmooth="true">
+                        <ext:LineSeries XField="theta" YField="sin" UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
                             </StyleSpec>
@@ -142,14 +133,16 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite FillStyle="#000" Radius="5" LineWidth="2" StrokeStyle="#fff" />
+                                <ext:Sprite
+                                    FillStyle="#000"
+                                    Radius="5"
+                                    LineWidth="2"
+                                    StrokeStyle="#fff"
+                                    />
                             </HighlightConfig>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            XField="theta"
-                            YField="cos"
-                            UseSmooth="true">
+                        <ext:LineSeries XField="theta" YField="cos" UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
                             </StyleSpec>
@@ -157,14 +150,16 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite FillStyle="#000" Radius="5" LineWidth="2" StrokeStyle="#fff" />
+                                <ext:Sprite
+                                    FillStyle="#000"
+                                    Radius="5"
+                                    LineWidth="2"
+                                    StrokeStyle="#fff"
+                                    />
                             </HighlightConfig>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            XField="theta"
-                            YField="tan"
-                            UseSmooth="true">
+                        <ext:LineSeries XField="theta" YField="tan" UseSmooth="true">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="4" />
                             </StyleSpec>
@@ -172,7 +167,12 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite FillStyle="#000" Radius="5" LineWidth="2" StrokeStyle="#fff" />
+                                <ext:Sprite
+                                    FillStyle="#000"
+                                    Radius="5"
+                                    LineWidth="2"
+                                    StrokeStyle="#fff"
+                                    />
                             </HighlightConfig>
                         </ext:LineSeries>
                     </Series>

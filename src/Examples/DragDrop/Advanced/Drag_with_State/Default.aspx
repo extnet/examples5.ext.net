@@ -116,10 +116,7 @@
             </Items>
         </ext:Viewport>
 
-        <ext:DDProxy
-            runat="server"
-            Target="${div.draggable-item}"
-            Group="group">
+        <ext:DDProxy runat="server" Target="${div.draggable-item}" Group="group">
             <StartDrag Fn="startDrag" />
             <AfterDrag Fn="afterDrag" />
         </ext:DDProxy>

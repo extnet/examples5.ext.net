@@ -82,10 +82,7 @@
             Height="180"
             BodyPadding="18">
             <Items>
-                <ext:Button
-                    ID="Button1"
-                    runat="server"
-                    Text="Do Loading">
+                <ext:Button ID="Button1" runat="server" Text="Do Loading">
                     <DirectEvents>
                         <Click OnEvent="UpdateStatusBar" Before="el.disable();#{StatusBar1}.showBusy();">
                             <EventMask MinDelay="2000" />
@@ -97,10 +94,7 @@
                 </ext:Button>
             </Items>
             <BottomBar>
-                <ext:StatusBar
-                    ID="StatusBar1"
-                    runat="server"
-                    DefaultText="Default status">
+                <ext:StatusBar ID="StatusBar1" runat="server" DefaultText="Default status">
                     <Items>
                         <ext:Button runat="server" Text="A Button" />
                         <ext:ToolbarSeparator runat="server" />
@@ -122,10 +116,7 @@
             Height="180"
             BodyPadding="18">
             <Items>
-                <ext:Button
-                    ID="Button2"
-                    runat="server"
-                    Text="Do Loading">
+                <ext:Button ID="Button2" runat="server" Text="Do Loading">
                     <DirectEvents>
                         <Click OnEvent="UpdateStatusBar" Before="el.disable();#{StatusBar2}.showBusy();">
                             <EventMask MinDelay="2000" />
@@ -155,7 +146,12 @@
 
         <p>You can add a StatusBar to a window in exactly the same way.</p>
 
-        <ext:Button ID="Button4" runat="server" Text="Show Window" OnClientClick="#{Window1}.show();" />
+        <ext:Button
+            ID="Button4"
+            runat="server"
+            Text="Show Window"
+            OnClientClick="#{Window1}.show();"
+            />
 
         <ext:Window
             ID="Window1"
@@ -182,10 +178,7 @@
                 </ext:Button>
             </Items>
             <BottomBar>
-                <ext:StatusBar
-                    ID="StatusBar3"
-                    runat="server"
-                    DefaultText="Ready">
+                <ext:StatusBar ID="StatusBar3" runat="server" DefaultText="Ready">
                     <Items>
                         <ext:Button runat="server" Text="A Button" />
                         <ext:ToolbarSeparator runat="server" />
@@ -249,14 +242,33 @@
                 </ext:TextArea>
             </Items>
             <BottomBar>
-                <ext:StatusBar ID="StatusBar4" CtCls="word-status" runat="server" DefaultText="Ready">
+                <ext:StatusBar
+                    ID="StatusBar4"
+                    CtCls="word-status"
+                    runat="server"
+                    DefaultText="Ready">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:ToolbarTextItem ID="wordCount" runat="server" Text="Words: 0" CtCls="x-status-text-panel" />
+                        <ext:ToolbarTextItem
+                            ID="wordCount"
+                            runat="server"
+                            Text="Words: 0"
+                            CtCls="x-status-text-panel"
+                            />
                         <ext:ToolbarSeparator runat="server" />
-                        <ext:ToolbarTextItem ID="charCount" runat="server" Text="Chars: 0" CtCls="x-status-text-panel" />
+                        <ext:ToolbarTextItem
+                            ID="charCount"
+                            runat="server"
+                            Text="Chars: 0"
+                            CtCls="x-status-text-panel"
+                            />
                         <ext:ToolbarSeparator runat="server" />
-                        <ext:ToolbarTextItem ID="clock" runat="server" Text=" " CtCls="x-status-text-panel" />
+                        <ext:ToolbarTextItem
+                            ID="clock"
+                            runat="server"
+                            Text=" "
+                            CtCls="x-status-text-panel"
+                            />
                     </Items>
                 </ext:StatusBar>
             </BottomBar>

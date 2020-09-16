@@ -29,7 +29,12 @@
         <p>The second gauge (left to right) in the first row uses a custom animation setup.</p>
         <p>Move the slider around to update the gauges' display value.</p>
 
-        <ext:Panel ID="Panel1" runat="server" Title="Gauges with various kinds of needles" Width="960" Height="500">
+        <ext:Panel
+            ID="Panel1"
+            runat="server"
+            Title="Gauges with various kinds of needles"
+            Width="960"
+            Height="500">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -85,7 +90,11 @@
                             NeedleObject="<%# SpikyNeedle %>"
                             AutoDataBind="true"
                             />
-                        <ext:Gauge ID="Gauge4" runat="server" Flex="1" BindString="{value}">
+                        <ext:Gauge
+                            ID="Gauge4"
+                            runat="server"
+                            Flex="1"
+                            BindString="{value}">
                             <TextOffset Y="45" />
                             <NeedleConfig Type="Arrow" InnerRadius="0" />
                         </ext:Gauge>

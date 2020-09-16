@@ -97,8 +97,18 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" DataIndex="LastName" Text="Last Name" Flex="1" />
-                            <ext:Column runat="server" DataIndex="FirstName" Text="First Name" Width="150" />
+                            <ext:Column
+                                runat="server"
+                                DataIndex="LastName"
+                                Text="Last Name"
+                                Flex="1"
+                                />
+                            <ext:Column
+                                runat="server"
+                                DataIndex="FirstName"
+                                Text="First Name"
+                                Width="150"
+                                />
                         </Columns>
                     </ColumnModel>
                     <SelectionModel>
@@ -138,14 +148,24 @@
                         <ext:TextField runat="server" FieldLabel="Last Name" Name="LastName" />
                         <ext:TextField runat="server" FieldLabel="Title" Name="Title" />
                         <ext:TextField runat="server" FieldLabel="Reports to" Name="ReportsTo" />
-                        <ext:DateField runat="server" FieldLabel="Hire date" Name="HireDate" Format="yyyy-MM-dd" />
+                        <ext:DateField
+                            runat="server"
+                            FieldLabel="Hire date"
+                            Name="HireDate"
+                            Format="yyyy-MM-dd"
+                            />
                         <ext:TextField runat="server" FieldLabel="Extension" Name="Extension" />
                         <ext:TextField runat="server" FieldLabel="Address" Name="Address" />
                         <ext:TextField runat="server" FieldLabel="City" Name="City" />
                         <ext:TextField runat="server" FieldLabel="Post Code" Name="PostalCode" />
                         <ext:TextField runat="server" FieldLabel="Home Phone" Name="HomePhone" />
                         <ext:TextField runat="server" FieldLabel="Title Of Courtesy" Name="TitleOfCourtesy" />
-                        <ext:DateField runat="server" FieldLabel="Birth date" Name="BirthDate" Format="yyyy-MM-dd" />
+                        <ext:DateField
+                            runat="server"
+                            FieldLabel="Birth date"
+                            Name="BirthDate"
+                            Format="yyyy-MM-dd"
+                            />
                         <ext:TextField runat="server" FieldLabel="Region" Name="Region" />
                         <ext:TextField runat="server" FieldLabel="Country" Name="Country" />
                         <ext:TextArea

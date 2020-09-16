@@ -59,15 +59,10 @@
             </TopBar>
 
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server">
+                <ext:CartesianChart ID="Chart1" runat="server">
                     <AnimationConfig Easing="BounceOut" Duration="750" />
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(5, 0) %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData(5, 0) %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -134,10 +129,7 @@
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries
-                            Highlight="true"
-                            XField="Name"
-                            YField="Data1">
+                        <ext:BarSeries Highlight="true" XField="Name" YField="Data1">
                             <Label
                                 Display="InsideEnd"
                                 Field="Data1"

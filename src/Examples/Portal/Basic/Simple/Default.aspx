@@ -94,7 +94,12 @@
                                     <Items>
                                         <ext:PortalColumn runat="server">
                                             <Items>
-                                                <ext:Portlet ID="Portlet1" runat="server" Title="Another Panel 1" IconCls="x-md md-icon-check-circle-outline" />
+                                                <ext:Portlet
+                                                    ID="Portlet1"
+                                                    runat="server"
+                                                    Title="Another Panel 1"
+                                                    IconCls="x-md md-icon-check-circle-outline"
+                                                    />
                                             </Items>
                                         </ext:PortalColumn>
                                         <ext:PortalColumn runat="server">

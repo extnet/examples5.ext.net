@@ -122,7 +122,11 @@
         <p>The toolbar is configured with the Ext.ux.ToolbarDroppable plugin and a Ext.ux.ToolbarReorderer plugin.</p>
 
 
-        <ext:Panel runat="server" Width="960" Height="480" Layout="Fit">
+        <ext:Panel
+            runat="server"
+            Width="960"
+            Height="480"
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server" EnableOverflow="true">
                     <Items>

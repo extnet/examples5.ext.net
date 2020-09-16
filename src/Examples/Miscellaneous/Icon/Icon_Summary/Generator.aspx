@@ -53,10 +53,7 @@
 <body>
     <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-    <ext:DataView
-        ID="DataView1"
-        runat="server"
-        ItemSelector="div.thumb-wrap">
+    <ext:DataView ID="DataView1" runat="server" ItemSelector="div.thumb-wrap">
         <Store>
             <ext:Store runat="server">
                 <Model>

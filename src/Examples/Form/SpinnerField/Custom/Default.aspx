@@ -74,10 +74,7 @@
             BodyPadding="18"
             LabelWidth="150">
             <Items>
-                <ext:SpinnerField
-                    ID="SpinnerField1"
-                    runat="server"
-                    Index="2">
+                <ext:SpinnerField ID="SpinnerField1" runat="server" Index="2">
                     <Listeners>
                         <Spin Fn="onSpin" Buffer="100" />
                     </Listeners>

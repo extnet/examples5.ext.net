@@ -296,7 +296,11 @@
                                             <ext:TextField runat="server" />
                                         </Editor>
                                     </ext:Column>
-                                    <ext:Column runat="server" DataIndex="Region" Text="Region" Width="200">
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="Region"
+                                        Text="Region"
+                                        Width="200">
                                         <Editor>
                                             <ext:ComboBox ID="cbStates" runat="server" />
                                         </Editor>
@@ -335,27 +339,47 @@
                         </ext:GridPanel>
                     </Items>
                     <Buttons>
-                        <ext:Button ID="btnSave" runat="server" Text="Sync" IconCls="x-md md-icon-save">
+                        <ext:Button
+                            ID="btnSave"
+                            runat="server"
+                            Text="Sync"
+                            IconCls="x-md md-icon-save">
                             <Listeners>
                                 <Click Handler="#{Store1}.sync();" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnDelete" runat="server" Text="Delete selected records" IconCls="x-md md-icon-remove-circle-outline">
+                        <ext:Button
+                            ID="btnDelete"
+                            runat="server"
+                            Text="Delete selected records"
+                            IconCls="x-md md-icon-remove-circle-outline">
                             <Listeners>
                                 <Click Handler="#{GridPanel1}.deleteSelected();" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnInsert" runat="server" Text="Insert" IconCls="x-md md-icon-add-circle-outline">
+                        <ext:Button
+                            ID="btnInsert"
+                            runat="server"
+                            Text="Insert"
+                            IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="insertRecord(#{GridPanel1});" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRefresh" runat="server" Text="Refresh" IconCls="x-md md-icon-refresh">
+                        <ext:Button
+                            ID="btnRefresh"
+                            runat="server"
+                            Text="Refresh"
+                            IconCls="x-md md-icon-refresh">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({params:{EmulateError: 0}});" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnEmulError" runat="server" Text="Refresh with Emulated error" IconCls="x-md md-icon-error">
+                        <ext:Button
+                            ID="btnEmulError"
+                            runat="server"
+                            Text="Refresh with Emulated error"
+                            IconCls="x-md md-icon-error">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({params:{EmulateError: 1}});" />
                             </Listeners>

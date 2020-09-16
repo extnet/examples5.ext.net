@@ -254,7 +254,13 @@
                                         <Renderer Handler=" if (String(value).indexOf('O') > -1) {value = value.replace('Order-', 'O');} return value;" />
                                     </ext:Column>
 
-                                    <ext:DateColumn runat="server" Text="Date" DataIndex="date" Format="yyyy-MM-dd" Flex="1" />
+                                    <ext:DateColumn
+                                        runat="server"
+                                        Text="Date"
+                                        DataIndex="date"
+                                        Format="yyyy-MM-dd"
+                                        Flex="1"
+                                        />
 
                                     <ext:CheckColumn runat="server" Text="Shipped" DataIndex="shipped" />
 

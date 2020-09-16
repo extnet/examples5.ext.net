@@ -269,7 +269,12 @@
                             <ExtraParams>
                                 <ext:Parameter Name="field" Value="e.field" Mode="Raw" />
                                 <ext:Parameter Name="index" Value="e.rowIdx" Mode="Raw" />
-                                <ext:Parameter Name="record" Value="e.record.data" Mode="Raw" Encode="true" />
+                                <ext:Parameter
+                                    Name="record"
+                                    Value="e.record.data"
+                                    Mode="Raw"
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Edit>
                     </DirectEvents>

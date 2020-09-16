@@ -248,16 +248,36 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="40" />
-                    <ext:Column runat="server" Text="DB row #" DataIndex="RawRowNum" Width="70" />
-                    <ext:Column runat="server" Text="Order #" DataIndex="OrderNum" Width="70" />
+                    <ext:Column
+                        runat="server"
+                        Text="DB row #"
+                        DataIndex="RawRowNum"
+                        Width="70"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Order #"
+                        DataIndex="OrderNum"
+                        Width="70"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Description"
                         DataIndex="Item"
                         Flex="5"
                         />
-                    <ext:Column runat="server" Text="Buying Company" DataIndex="CustomerCompany" Flex="4" />
-                    <ext:Column runat="server" Text="Seller Representative" DataIndex="Seller" Flex="4" />
+                    <ext:Column
+                        runat="server"
+                        Text="Buying Company"
+                        DataIndex="CustomerCompany"
+                        Flex="4"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Seller Representative"
+                        DataIndex="Seller"
+                        Flex="4"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Price"

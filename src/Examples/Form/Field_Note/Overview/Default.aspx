@@ -74,11 +74,20 @@
 
         <h2>3. Custom note</h2>
 
-        <ext:TextArea runat="server" BoxLabel="CheckBox" Note="Red note" NoteCls="red-note" />
+        <ext:TextArea
+            runat="server"
+            BoxLabel="CheckBox"
+            Note="Red note"
+            NoteCls="red-note"
+            />
 
         <h2>4. FormPanel with notes</h2>
 
-        <ext:FormPanel ID="FormPanel1" runat="server" BodyPadding="18" Frame="true">
+        <ext:FormPanel
+            ID="FormPanel1"
+            runat="server"
+            BodyPadding="18"
+            Frame="true">
             <FieldDefaults LabelWidth="50" />
             <Items>
                 <ext:TextField runat="server" FieldLabel="Field1" Note="Description" />

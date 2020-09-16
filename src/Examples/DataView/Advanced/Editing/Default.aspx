@@ -28,7 +28,11 @@
             </Listeners>
         </ext:TextField>
 
-        <ext:Checkbox ID="Checkbox1" runat="server" BoxLabel="Mark all as complete" Hidden="true">
+        <ext:Checkbox
+            ID="Checkbox1"
+            runat="server"
+            BoxLabel="Mark all as complete"
+            Hidden="true">
             <Listeners>
                 <Change Fn="checkAllClick" />
             </Listeners>
@@ -79,7 +83,11 @@
             </Listeners>
         </ext:DataView>
 
-        <ext:Toolbar ID="Toolbar1" runat="server" Width="470" Hidden="true">
+        <ext:Toolbar
+            ID="Toolbar1"
+            runat="server"
+            Width="470"
+            Hidden="true">
             <Items>
                 <ext:Container runat="server" />
                 <ext:ToolbarFill />

@@ -120,7 +120,11 @@
                         DataIndex="company"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" Width="100" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="100"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
 
                         <Commands>
@@ -146,7 +150,12 @@
                         Width="75"
                         DataIndex="pctChange"
                         />
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        />
 
                     <ext:ImageCommandColumn runat="server" Width="100" Text="Image Cmds">
                         <Commands>

@@ -339,11 +339,41 @@
                         <ext:Parameter Name="height" Value="24" />
                     </Defaults>
                     <Items>
-                        <ext:DisplayField ID="ColumnField1" runat="server" Name="Description" Cls="total-field" Text="-" />
-                        <ext:DisplayField ID="ColumnField2" runat="server" Name="Due" Cls="total-field" Text="-" />
-                        <ext:DisplayField ID="ColumnField3" runat="server" Name="Estimate" Cls="total-field" Text="-" />
-                        <ext:DisplayField ID="ColumnField4" runat="server" Name="Rate" Cls="total-field" Text="-" />
-                        <ext:DisplayField ID="ColumnField5" runat="server" Name="Cost" Cls="total-field" Text="-" />
+                        <ext:DisplayField
+                            ID="ColumnField1"
+                            runat="server"
+                            Name="Description"
+                            Cls="total-field"
+                            Text="-"
+                            />
+                        <ext:DisplayField
+                            ID="ColumnField2"
+                            runat="server"
+                            Name="Due"
+                            Cls="total-field"
+                            Text="-"
+                            />
+                        <ext:DisplayField
+                            ID="ColumnField3"
+                            runat="server"
+                            Name="Estimate"
+                            Cls="total-field"
+                            Text="-"
+                            />
+                        <ext:DisplayField
+                            ID="ColumnField4"
+                            runat="server"
+                            Name="Rate"
+                            Cls="total-field"
+                            Text="-"
+                            />
+                        <ext:DisplayField
+                            ID="ColumnField5"
+                            runat="server"
+                            Name="Cost"
+                            Cls="total-field"
+                            Text="-"
+                            />
                     </Items>
                 </ext:Container>
             </DockedItems>

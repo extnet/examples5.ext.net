@@ -215,7 +215,12 @@
                                 <%-- Remove after fixing #563 --%>
                                 <SummaryRenderer Handler="return value + ' hours';" />
                                 <Editor>
-                                    <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
+                                    <ext:NumberField
+                                        runat="server"
+                                        AllowBlank="false"
+                                        MinValue="0"
+                                        StyleSpec="text-align:left"
+                                        />
                                 </Editor>
                             </ext:Column>
 
@@ -230,7 +235,12 @@
                                 <%-- Remove after fixing #563 --%>
                                 <SummaryRenderer Format="UsMoney" />
                                 <Editor>
-                                    <ext:NumberField runat="server" AllowBlank="false" MinValue="0" StyleSpec="text-align:left" />
+                                    <ext:NumberField
+                                        runat="server"
+                                        AllowBlank="false"
+                                        MinValue="0"
+                                        StyleSpec="text-align:left"
+                                        />
                                 </Editor>
                             </ext:Column>
 

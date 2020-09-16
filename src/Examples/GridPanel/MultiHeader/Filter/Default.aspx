@@ -229,7 +229,11 @@
                             </ext:ComboBox>
                         </Items>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                         <Items>
                             <ext:TextField ID="PriceFilter" runat="server">
@@ -262,7 +266,12 @@
                                     </ext:TextField>
                                 </Items>
                             </ext:Column>
-                            <ext:Column runat="server" Text="Change %" Width="75" DataIndex="pctChange" HideTitleEl="true">
+                            <ext:Column
+                                runat="server"
+                                Text="Change %"
+                                Width="75"
+                                DataIndex="pctChange"
+                                HideTitleEl="true">
                                 <Renderer Fn="pctChange" />
                                 <Items>
                                     <ext:TextField ID="PctChangeFilter" runat="server">
@@ -277,7 +286,11 @@
                             </ext:Column>
                         </Columns>
                     </ext:Column>
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="120" DataIndex="lastChange">
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="120"
+                        DataIndex="lastChange">
                         <Items>
                             <ext:DateField ID="LastChangeFilter" runat="server" Editable="false">
                                 <Listeners>
@@ -289,7 +302,14 @@
                             </ext:DateField>
                         </Items>
                     </ext:DateColumn>
-                    <ext:Column runat="server" Width="25" DataIndex="company" Sortable="false" MenuDisabled="true" Text="&nbsp;" Resizable="false">
+                    <ext:Column
+                        runat="server"
+                        Width="25"
+                        DataIndex="company"
+                        Sortable="false"
+                        MenuDisabled="true"
+                        Text="&nbsp;"
+                        Resizable="false">
                         <Renderer Handler="return '';" />
                         <Items>
                             <ext:Container runat="server">

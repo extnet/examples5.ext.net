@@ -119,6 +119,11 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Button ID="Button1" runat="server" Text="Create cards" OnDirectClick="CreateClick" />
+    <ext:Button
+        ID="Button1"
+        runat="server"
+        Text="Create cards"
+        OnDirectClick="CreateClick"
+        />
 </body>
 </html>

@@ -75,7 +75,12 @@
 
         <h3>Multi Slider Vertical</h3>
 
-        <ext:Slider runat="server" Height="214" Numbers="10,50,90" Vertical="true" />
+        <ext:Slider
+            runat="server"
+            Height="214"
+            Numbers="10,50,90"
+            Vertical="true"
+            />
     </form>
 </body>
 </html>

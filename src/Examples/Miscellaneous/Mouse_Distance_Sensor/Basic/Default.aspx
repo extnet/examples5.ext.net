@@ -74,7 +74,11 @@
 
     <ext:Viewport runat="server" Layout="Border">
         <Items>
-            <ext:Panel runat="server" Region="North" Height="75" BodyPadding="18">
+            <ext:Panel
+                runat="server"
+                Region="North"
+                Height="75"
+                BodyPadding="18">
                 <Content>
                     <h1>Mouse Sensor Distance</h1>
                 </Content>

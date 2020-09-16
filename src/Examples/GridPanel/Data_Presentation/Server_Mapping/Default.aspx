@@ -109,7 +109,12 @@
                     <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" />
                     <ext:Column runat="server" Text="FULL NAME" DataIndex="Fullname" />
                     <ext:Column runat="server" Text="DEPARTMENT" DataIndex="Department" />
-                    <ext:Column runat="server" Text="DEPARTMENT ID:NAME" DataIndex="DepartmentIdPlusName" Width="125" />
+                    <ext:Column
+                        runat="server"
+                        Text="DEPARTMENT ID:NAME"
+                        DataIndex="DepartmentIdPlusName"
+                        Width="125"
+                        />
                     <ext:Column runat="server" Text="PHONE HOME" DataIndex="PhoneHome" />
                     <ext:Column runat="server" Text="PHONE WORK" DataIndex="PhoneWork" />
                 </Columns>

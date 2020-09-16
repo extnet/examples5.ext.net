@@ -171,7 +171,12 @@
                                 <Click Fn="addEmployee" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Remove Employee" IconCls="x-md md-icon-person-remove" Disabled="true">
+                        <ext:Button
+                            ID="btnRemoveEmployee"
+                            runat="server"
+                            Text="Remove Employee"
+                            IconCls="x-md md-icon-person-remove"
+                            Disabled="true">
                             <Listeners>
                                 <Click Fn="removeEmployee" />
                             </Listeners>
@@ -191,7 +196,11 @@
                             <ext:TextField runat="server" AllowBlank="false" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Email" DataIndex="email" Width="160">
+                    <ext:Column
+                        runat="server"
+                        Text="Email"
+                        DataIndex="email"
+                        Width="160">
                         <Editor>
                             <ext:TextField runat="server" AllowBlank="false" Vtype="email" />
                         </Editor>

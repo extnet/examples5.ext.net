@@ -148,9 +148,27 @@
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
                     <Items>
-                        <ext:NumberField runat="server" Width="100" BindString="{age}" MinValue="0" />
-                        <ext:Slider runat="server" Width="80" MarginSpec="0 0 0 8" BindString="{age}" Single="true" />
-                        <ext:Slider runat="server" Width="80" PublishOnComplete="false" MarginSpec="0 0 0 8" BindString="{age}" Single="true" />
+                        <ext:NumberField
+                            runat="server"
+                            Width="100"
+                            BindString="{age}"
+                            MinValue="0"
+                            />
+                        <ext:Slider
+                            runat="server"
+                            Width="80"
+                            MarginSpec="0 0 0 8"
+                            BindString="{age}"
+                            Single="true"
+                            />
+                        <ext:Slider
+                            runat="server"
+                            Width="80"
+                            PublishOnComplete="false"
+                            MarginSpec="0 0 0 8"
+                            BindString="{age}"
+                            Single="true"
+                            />
                     </Items>
                 </ext:FieldContainer>
 
@@ -168,7 +186,12 @@
                     <DirectEvents>
                         <Click OnEvent="SubmitModel">
                             <ExtraParams>
-                                <ext:Parameter Name="model" Value="this.up('panel').getViewModel().getData()" Encode="true" Mode="Raw" />
+                                <ext:Parameter
+                                    Name="model"
+                                    Value="this.up('panel').getViewModel().getData()"
+                                    Encode="true"
+                                    Mode="Raw"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

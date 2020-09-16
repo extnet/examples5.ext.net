@@ -12,10 +12,7 @@
 
     <ext:TabPanel runat="server" Width="450">
         <Items>
-            <ext:Panel
-                runat="server"
-                Title="Short Text"
-                BodyPadding="18">
+            <ext:Panel runat="server" Title="Short Text" BodyPadding="18">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales
                     a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis,
@@ -26,10 +23,7 @@
                     nunc sem, pretium eget, cursus a, fringilla vel, urna.
                 </Content>
             </ext:Panel>
-            <ext:Panel
-                runat="server"
-                Title="Long Text"
-                BodyPadding="18">
+            <ext:Panel runat="server" Title="Long Text" BodyPadding="18">
                 <Content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed metus nibh, sodales
                     a, porta at, vulputate eget, dui. Pellentesque ut nisl. Maecenas tortor turpis,

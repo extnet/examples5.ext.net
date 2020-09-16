@@ -13,31 +13,64 @@
 
         <h1>Show and Hide Tabs</h1>
 
-        <ext:TabPanel ID="TabPanel1" runat="server" Width="960" Height="480">
+        <ext:TabPanel
+            ID="TabPanel1"
+            runat="server"
+            Width="960"
+            Height="480">
             <Items>
-                <ext:Panel ID="Tab1" Title="Tab1" runat="server" Closable="true" CloseAction="Hide" Html="Tab1">
+                <ext:Panel
+                    ID="Tab1"
+                    runat="server"
+                    Title="Tab1"
+                    Closable="true"
+                    CloseAction="Hide"
+                    Html="Tab1">
                     <Listeners>
                         <Close Handler="#{ShowTab1}.setDisabled(false);#{CloseTab1}.setDisabled(true);" />
                     </Listeners>
                 </ext:Panel>
-                <ext:Panel ID="Tab2" Title="Tab2" runat="server" Closable="true" CloseAction="Hide" Html="Tab2">
+                <ext:Panel
+                    ID="Tab2"
+                    runat="server"
+                    Title="Tab2"
+                    Closable="true"
+                    CloseAction="Hide"
+                    Html="Tab2">
                     <Listeners>
                         <Close Handler="#{ShowTab2}.setDisabled(false);" />
                     </Listeners>
                 </ext:Panel>
-                <ext:Panel ID="Tab3" Title="Tab3" runat="server" Closable="true" CloseAction="Hide" Html="Tab3">
+                <ext:Panel
+                    ID="Tab3"
+                    runat="server"
+                    Title="Tab3"
+                    Closable="true"
+                    CloseAction="Hide"
+                    Html="Tab3">
                     <Listeners>
                         <Close Handler="#{ShowTab3}.setDisabled(false);" />
                     </Listeners>
                 </ext:Panel>
 
-                <ext:Panel ID="Tab4" Title="Tab4" runat="server" Closable="true" CloseAction="Hide" Html="Tab4">
+                <ext:Panel
+                    ID="Tab4"
+                    runat="server"
+                    Title="Tab4"
+                    Closable="true"
+                    CloseAction="Hide"
+                    Html="Tab4">
                     <Listeners>
                         <Close Handler="#{ShowTab4}.setDisabled(false);" />
                     </Listeners>
                 </ext:Panel>
 
-                <ext:Panel ID="Tab5" Title="Tab5 - Close Event" runat="server" Closable="true" CloseAction="Destroy">
+                <ext:Panel
+                    ID="Tab5"
+                    runat="server"
+                    Title="Tab5 - Close Event"
+                    Closable="true"
+                    CloseAction="Destroy">
                     <Content>
                         Tab5 with CloseAction='Close' (after closing the tab can't be reshow)
                     </Content>
@@ -48,7 +81,14 @@
             </Items>
 
             <Bin>
-                <ext:Panel ID="Tab6" Title="Tab6" runat="server" Closable="true" CloseAction="Hide" Hidden="true" Html="PreHidden Tab6">
+                <ext:Panel
+                    ID="Tab6"
+                    runat="server"
+                    Title="Tab6"
+                    Closable="true"
+                    CloseAction="Hide"
+                    Hidden="true"
+                    Html="PreHidden Tab6">
                     <Listeners>
                         <Close Handler="#{ShowTab6}.setDisabled(false);" />
                     </Listeners>
@@ -65,25 +105,41 @@
                         </ext:Button>
 
                         <ext:ToolbarFill />
-                        <ext:Button ID="ShowTab1" runat="server" Text="Show Tab1" Disabled="true">
+                        <ext:Button
+                            ID="ShowTab1"
+                            runat="server"
+                            Text="Show Tab1"
+                            Disabled="true">
                             <Listeners>
                                 <Click Handler="#{TabPanel1}.addTab(#{Tab1});this.setDisabled(true);#{CloseTab1}.setDisabled(false);" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="ShowTab2" runat="server" Text="Show Tab2" Disabled="true">
+                        <ext:Button
+                            ID="ShowTab2"
+                            runat="server"
+                            Text="Show Tab2"
+                            Disabled="true">
                             <Listeners>
                                 <Click Handler="#{TabPanel1}.addTab(#{Tab2});this.setDisabled(true);" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="ShowTab3" runat="server" Text="Show Tab3 at begin" Disabled="true">
+                        <ext:Button
+                            ID="ShowTab3"
+                            runat="server"
+                            Text="Show Tab3 at begin"
+                            Disabled="true">
                             <Listeners>
                                 <Click Handler="#{TabPanel1}.addTab(#{Tab3}, 0);this.setDisabled(true);" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="ShowTab4" runat="server" Text="Show Tab4 without activate" Disabled="true">
+                        <ext:Button
+                            ID="ShowTab4"
+                            runat="server"
+                            Text="Show Tab4 without activate"
+                            Disabled="true">
                             <Listeners>
                                 <Click Handler="#{TabPanel1}.addTab(#{Tab4}, false);this.setDisabled(true);" />
                             </Listeners>

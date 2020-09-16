@@ -175,19 +175,31 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button ID="Button2" runat="server" Text="To XML" IconCls="x-md md-icon-xml">
+                        <ext:Button
+                            ID="Button2"
+                            runat="server"
+                            Text="To XML"
+                            IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'xml');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button3" runat="server" Text="To Excel" IconCls="x-md md-icon-apps">
+                        <ext:Button
+                            ID="Button3"
+                            runat="server"
+                            Text="To Excel"
+                            IconCls="x-md md-icon-apps">
                             <Listeners>
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'xls');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button4" runat="server" Text="To CSV" IconCls="x-md md-icon-attachment">
+                        <ext:Button
+                            ID="Button4"
+                            runat="server"
+                            Text="To CSV"
+                            IconCls="x-md md-icon-attachment">
                             <Listeners>
                                 <Click Handler="submitValue(#{GridPanel1}, #{FormatType}, 'csv');" />
                             </Listeners>
@@ -207,7 +219,11 @@
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                         <Editor>
                             <ext:TextField runat="server" />
@@ -225,7 +241,13 @@
                         Width="75"
                         DataIndex="pctChange"
                         />
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="HH:mm:ss" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        Format="HH:mm:ss"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>

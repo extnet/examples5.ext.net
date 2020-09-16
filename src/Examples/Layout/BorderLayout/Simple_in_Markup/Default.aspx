@@ -43,10 +43,7 @@
                 Width="175"
                 Title="Navigation"
                 />
-            <ext:TabPanel
-                runat="server"
-                Region="Center"
-                ActiveTabIndex="0">
+            <ext:TabPanel runat="server" Region="Center" ActiveTabIndex="0">
                 <Items>
                     <ext:Panel
                         ID="Tab1"

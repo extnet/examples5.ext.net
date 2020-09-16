@@ -58,7 +58,11 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button ID="Button1" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
+        <ext:Button
+            ID="Button1"
+            runat="server"
+            Text="Click Me"
+            IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="App.direct.SetTimeStamp();" />
             </Listeners>
@@ -103,7 +107,11 @@ public void SetTimeStamp(string text)
             }
         </script>
 
-        <ext:Button ID="Button2" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
+        <ext:Button
+            ID="Button2"
+            runat="server"
+            Text="Click Me"
+            IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="
                     App.direct.GetTimeStamp({
@@ -187,7 +195,11 @@ public void SetTimeStamp(string text)
                 </ext:ComboBox>
             </Items>
             <Buttons>
-                <ext:Button runat="server" Text="Submit" IconCls="x-md md-icon-offline-bolt" FormBind="true">
+                <ext:Button
+                    runat="server"
+                    Text="Submit"
+                    IconCls="x-md md-icon-offline-bolt"
+                    FormBind="true">
                     <Listeners>
                         <Click Handler="App.direct.LogCompanyInfo(#{TextField3}.getValue(), #{ComboBox3}.getValue());" />
                     </Listeners>
@@ -633,7 +645,11 @@ public string GetTimeStamp()
             }
         </script>
 
-        <ext:Button ID="Button3" runat="server" Text="Click Me" IconCls="x-md md-icon-offline-bolt">
+        <ext:Button
+            ID="Button3"
+            runat="server"
+            Text="Click Me"
+            IconCls="x-md md-icon-offline-bolt">
             <Listeners>
                 <Click Handler="App.direct.LogMessage('Hello World', {
                             success: function (result) {

@@ -106,7 +106,11 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button runat="server" Text="Editor1" ToggleGroup="editor" Pressed="true">
+                        <ext:Button
+                            runat="server"
+                            Text="Editor1"
+                            ToggleGroup="editor"
+                            Pressed="true">
                             <Listeners>
                                 <Click Handler="#{TreePanel2}.activeEditorIndex = 0;" />
                             </Listeners>

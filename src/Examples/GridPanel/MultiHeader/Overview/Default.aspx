@@ -81,7 +81,11 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1">
                         <Items>
                              <ext:ComboBox ID="CompanyField" runat="server">
                                 <Items>
@@ -97,13 +101,21 @@
                                 />
                         </Items>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Items>
                             <ext:DisplayField runat="server" Height="22" />
                             <ext:Container runat="server" Cls="test-ct" Html="Container" />
                         </Items>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change">
                         <Items>
                             <ext:DateField ID="ChangeField" runat="server" />
                             <ext:TextArea

@@ -129,23 +129,16 @@
                         <ext:RotateInteraction />
                     </Interactions>
                     <Axes>
-                        <ext:CategoryAxis
-                            AxisID="main-angular-axis"
-                            Position="Angular"
-                            Grid="true">
+                        <ext:CategoryAxis AxisID="main-angular-axis" Position="Angular" Grid="true">
                             <Style MajorTickSize="20" StrokeStyle="rgb(73,112,142)" />
                         </ext:CategoryAxis>
 
-                        <ext:CategoryAxis
-                            Position="Angular"
-                            LinkedToID="main-angular-axis">
+                        <ext:CategoryAxis Position="Angular" LinkedToID="main-angular-axis">
                             <Renderer Handler="return label === 'Jan' ? '' : label;" />
                             <FloatingConfig ValueInt="20" AlongAxisID="radial-axis" />
                         </ext:CategoryAxis>
 
-                        <ext:NumericAxis
-                            AxisID="radial-axis"
-                            Position="Radial">
+                        <ext:NumericAxis AxisID="radial-axis" Position="Radial">
                             <Label FontWeight="bold" />
                             <FloatingConfig ValueString="Jan" AlongAxisID="main-angular-axis" />
                         </ext:NumericAxis>

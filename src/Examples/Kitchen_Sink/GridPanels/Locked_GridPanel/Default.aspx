@@ -22,9 +22,7 @@
                 Width="960"
                 Height="480">
                 <Store>
-                    <ext:Store
-                        runat="server"
-                        Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>">
+                    <ext:Store runat="server" Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>">
                         <Model>
                             <ext:Model runat="server">
                                 <Fields>

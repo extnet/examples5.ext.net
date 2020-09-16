@@ -49,7 +49,12 @@
 
     <h3>3. Button with Icon</h3>
 
-    <ext:Button runat="server" Text="Text" Scale="Medium" IconCls="x-md md-icon-check-circle-outline" />
+    <ext:Button
+        runat="server"
+        Text="Text"
+        Scale="Medium"
+        IconCls="x-md md-icon-check-circle-outline"
+        />
 
     <h3>4. Button with QuickTip</h3>
 
@@ -66,7 +71,14 @@
             <ext:Parameter Name="margin" Value="0 5 0 0" />
         </Defaults>
         <Items>
-            <ext:Button runat="server" Text="Button1" Scale="Medium" EnableToggle="true" ToggleGroup="Group1" Pressed="true" />
+            <ext:Button
+                runat="server"
+                Text="Button1"
+                Scale="Medium"
+                EnableToggle="true"
+                ToggleGroup="Group1"
+                Pressed="true"
+                />
             <ext:Button
                 runat="server"
                 Text="Button2"
@@ -147,12 +159,21 @@
 
     <h3>9. CycleButton</h3>
 
-    <ext:CycleButton runat="server" ShowText="true" Scale="Medium" PrependText="View As ">
+    <ext:CycleButton
+        runat="server"
+        ShowText="true"
+        Scale="Medium"
+        PrependText="View As ">
         <Menu>
             <ext:Menu runat="server">
                 <Items>
                     <ext:CheckMenuItem runat="server" Text="Text Only" IconCls="x-md md-icon-check-circle-outline" />
-                    <ext:CheckMenuItem runat="server" Text="Html" IconCls="x-md md-icon-check-circle-outline" Checked="true" />
+                    <ext:CheckMenuItem
+                        runat="server"
+                        Text="Html"
+                        IconCls="x-md md-icon-check-circle-outline"
+                        Checked="true"
+                        />
                 </Items>
             </ext:Menu>
         </Menu>
@@ -160,11 +181,23 @@
 
     <h3>10. Flat Button</h3>
 
-    <ext:Button runat="server" Text="FlatButton" Scale="Medium" IconCls="x-md md-icon-check-circle-outline" Flat="true" />
+    <ext:Button
+        runat="server"
+        Text="FlatButton"
+        Scale="Medium"
+        IconCls="x-md md-icon-check-circle-outline"
+        Flat="true"
+        />
 
     <h3>11. Custom Size Button</h3>
 
-    <ext:Button ID="Button1" runat="server" Text="128 x 128" Height="128" Width="128" />
+    <ext:Button
+        ID="Button1"
+        runat="server"
+        Text="128 x 128"
+        Height="128"
+        Width="128"
+        />
 
     <h3>12. Hyperlink</h3>
 

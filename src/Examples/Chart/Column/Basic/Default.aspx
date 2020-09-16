@@ -59,14 +59,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server">
+                <ext:CartesianChart ID="Chart1" runat="server">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -93,10 +88,7 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:BarSeries
-                            Highlight="true"
-                            XField="Name"
-                            YField="Data1">
+                        <ext:BarSeries Highlight="true" XField="Name" YField="Data1">
                             <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setTitle(record.get('Name') + ': ' + record.get('Data1'));" />
                             </Tooltip>

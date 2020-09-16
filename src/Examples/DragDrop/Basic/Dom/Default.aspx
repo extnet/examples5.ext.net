@@ -118,14 +118,22 @@
     <uc:HtmlMarkup runat="server" />
 
     <%-- Set as drag zones on every item inside both the cars and trucks divs --%>
-    <ext:DDProxy runat="server" Target="${#cars div}" Group="carsDDGroup" IsTarget="false">
+    <ext:DDProxy
+        runat="server"
+        Target="${#cars div}"
+        Group="carsDDGroup"
+        IsTarget="false">
         <StartDrag Fn="App.ddOverrides.startDrag" />
         <EndDrag Fn="App.ddOverrides.endDrag" />
         <OnDragEnter Fn="App.ddOverrides.onDragEnter" />
         <OnDragOut Fn="App.ddOverrides.onDragOut" />
     </ext:DDProxy>
 
-    <ext:DDProxy runat="server" Target="${#trucks div}" Group="carsDDGroup" IsTarget="false">
+    <ext:DDProxy
+        runat="server"
+        Target="${#trucks div}"
+        Group="carsDDGroup"
+        IsTarget="false">
         <StartDrag Fn="App.ddOverrides.startDrag" />
         <EndDrag Fn="App.ddOverrides.endDrag" />
         <OnDragEnter Fn="App.ddOverrides.onDragEnter" />

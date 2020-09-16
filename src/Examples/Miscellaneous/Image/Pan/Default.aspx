@@ -34,7 +34,12 @@
                             </Listeners>
                         </ext:Button>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Label ID="LabelStatus" runat="server" Text="Status: " Width="100" />
+                        <ext:Label
+                            ID="LabelStatus"
+                            runat="server"
+                            Text="Status: "
+                            Width="100"
+                            />
                         <ext:ProgressBar ID="Progress1" runat="server" Width="200">
                             <Listeners>
                                 <AfterRender Handler="this.wait({interval: 200, increment: 15, text: 'Loading...'});" />

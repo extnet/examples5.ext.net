@@ -147,7 +147,11 @@
                         DataIndex="company"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                     <ext:Column
@@ -156,8 +160,18 @@
                         Width="75"
                         DataIndex="change"
                         />
-                    <ext:Column runat="server" Text="Pct.Change" Width="75" DataIndex="pctChange" />
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
+                    <ext:Column
+                        runat="server"
+                        Text="Pct.Change"
+                        Width="75"
+                        DataIndex="pctChange"
+                        />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
@@ -171,19 +185,34 @@
                     <Items>
                         <ext:ToolbarFill runat="server" />
 
-                        <ext:Button runat="server" Text="To XML" AutoPostBack="true" OnClick="ToXml" IconCls="x-md md-icon-xml">
+                        <ext:Button
+                            runat="server"
+                            Text="To XML"
+                            AutoPostBack="true"
+                            OnClick="ToXml"
+                            IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Fn="saveData" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="To Excel" AutoPostBack="true" OnClick="ToExcel" IconCls="x-md md-icon-apps">
+                        <ext:Button
+                            runat="server"
+                            Text="To Excel"
+                            AutoPostBack="true"
+                            OnClick="ToExcel"
+                            IconCls="x-md md-icon-apps">
                             <Listeners>
                                 <Click Fn="saveData" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button runat="server" Text="To CSV" AutoPostBack="true" OnClick="ToCsv" IconCls="x-md md-icon-attachment">
+                        <ext:Button
+                            runat="server"
+                            Text="To CSV"
+                            AutoPostBack="true"
+                            OnClick="ToCsv"
+                            IconCls="x-md md-icon-attachment">
                             <Listeners>
                                 <Click Fn="saveData" />
                             </Listeners>

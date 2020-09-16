@@ -1,8 +1,6 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:GridPanel
-    runat="server"
-    Cls="feed-grid">
+<ext:GridPanel runat="server" Cls="feed-grid">
     <Store>
         <ext:Store runat="server" AutoLoad="false">
             <Model>
@@ -78,7 +76,11 @@
 
     <ColumnModel>
         <Columns>
-            <ext:Column runat="server" Text="Title" DataIndex="title" Flex="1">
+            <ext:Column
+                runat="server"
+                Text="Title"
+                DataIndex="title"
+                Flex="1">
                 <Renderer Handler="return Ext.String.format('<div class=\'topic\'><b>{0}</b><span class=\'author\'>{1}</span></div>', value, record.get('author') || 'Unknown');" />
             </ext:Column>
             <ext:Column
@@ -88,7 +90,11 @@
                 Hidden="true"
                 Width="200"
                 />
-            <ext:Column runat="server" Text="Date" DataIndex="pubDate" Width="200">
+            <ext:Column
+                runat="server"
+                Text="Date"
+                DataIndex="pubDate"
+                Width="200">
                 <Renderer Fn="FeedViewer.FeedGrid.formatDate" />
             </ext:Column>
         </Columns>

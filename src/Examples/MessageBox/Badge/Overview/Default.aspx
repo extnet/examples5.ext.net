@@ -42,19 +42,31 @@
             <ext:Parameter Name="margin" Value="0 100 0 0" Mode="Value" />
         </Defaults>
         <Items>
-            <ext:Panel runat="server" Width="150" Height="60" Title="Panel 1">
+            <ext:Panel
+                runat="server"
+                Width="150"
+                Height="60"
+                Title="Panel 1">
                 <Plugins>
                     <ext:Badge runat="server" Scale="Small" Text="Small" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="150" Height="60" Title="Panel 2">
+            <ext:Panel
+                runat="server"
+                Width="150"
+                Height="60"
+                Title="Panel 2">
                 <Plugins>
                     <ext:Badge runat="server" Scale="Medium" Text="Medium" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="150" Height="60" Title="Panel 3">
+            <ext:Panel
+                runat="server"
+                Width="150"
+                Height="60"
+                Title="Panel 3">
                 <Plugins>
                     <ext:Badge runat="server" Scale="Large" Text="Large" />
                 </Plugins>
@@ -149,9 +161,17 @@
 
     <h3>Action</h3>
 
-    <ext:Panel runat="server" Width="150" Height="60" Title="Click on the badge">
+    <ext:Panel
+        runat="server"
+        Width="150"
+        Height="60"
+        Title="Click on the badge">
         <Plugins>
-            <ext:Badge runat="server" Scale="Medium" Text="99" OverCls="x-badge-over">
+            <ext:Badge
+                runat="server"
+                Scale="Medium"
+                Text="99"
+                OverCls="x-badge-over">
                 <Listeners>
                     <Click Handler="alert(item.html);" />
                 </Listeners>
@@ -168,31 +188,56 @@
             <ext:Parameter Name="margin" Value="0 30 0 0" Mode="Value" />
         </Defaults>
         <Items>
-            <ext:Panel runat="server" Width="70" Height="80" Title="Panel 1" Frame="true">
+            <ext:Panel
+                runat="server"
+                Width="70"
+                Height="80"
+                Title="Panel 1"
+                Frame="true">
                 <Plugins>
                     <ext:Badge runat="server" Text="1" AlignmentSpec="l-tl" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="70" Height="80" Title="Panel 2" Frame="true">
+            <ext:Panel
+                runat="server"
+                Width="70"
+                Height="80"
+                Title="Panel 2"
+                Frame="true">
                 <Plugins>
                     <ext:Badge runat="server" Text="2" AlignmentSpec="c-l" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="70" Height="80" Title="Panel 3" Frame="true">
+            <ext:Panel
+                runat="server"
+                Width="70"
+                Height="80"
+                Title="Panel 3"
+                Frame="true">
                 <Plugins>
                     <ext:Badge runat="server" Text="3" AlignmentSpec="b-bl" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="70" Height="80" Title="Panel 4" Frame="true">
+            <ext:Panel
+                runat="server"
+                Width="70"
+                Height="80"
+                Title="Panel 4"
+                Frame="true">
                 <Plugins>
                     <ext:Badge runat="server" Text="4" AlignmentSpec="bl-tr" />
                 </Plugins>
             </ext:Panel>
 
-            <ext:Panel runat="server" Width="70" Height="80" Title="Panel 5" Frame="true">
+            <ext:Panel
+                runat="server"
+                Width="70"
+                Height="80"
+                Title="Panel 5"
+                Frame="true">
                 <Plugins>
                     <ext:Badge runat="server" Text="5" AlignmentSpec="c-c" />
                 </Plugins>

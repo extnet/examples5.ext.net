@@ -212,10 +212,7 @@
 
     <ext:TaskManager ID="TaskManager1" runat="server">
         <Tasks>
-            <ext:Task
-                TaskID="Task1"
-                Interval="1000"
-                AutoRun="false">
+            <ext:Task TaskID="Task1" Interval="1000" AutoRun="false">
                 <DirectEvents>
                     <Update OnEvent="RefreshProgress" />
                 </DirectEvents>

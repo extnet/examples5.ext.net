@@ -214,12 +214,20 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="company"
+                        Flex="1">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>

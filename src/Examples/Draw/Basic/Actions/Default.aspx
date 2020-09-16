@@ -79,9 +79,20 @@
         <ext:ResourceManager runat="server" />
         <h1>Draw Actions</h1>
 
-        <ext:Window runat="server" Title="Draw Actions" Width="640" Height="480" Layout="Border">
+        <ext:Window
+            runat="server"
+            Title="Draw Actions"
+            Width="640"
+            Height="480"
+            Layout="Border">
             <Items>
-                <ext:Panel runat="server" Frame="true" Width="200" Region="West" Layout="VBox" Margin="5">
+                <ext:Panel
+                    runat="server"
+                    Frame="true"
+                    Width="200"
+                    Region="West"
+                    Layout="VBox"
+                    Margin="5">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" Pack="Center" />
                     </LayoutConfig>
@@ -90,9 +101,24 @@
                     </Defaults>
                     <Items>
                         <ext:Button runat="server" Text="Create Sprite" OnDirectClick="CreateSprite" />
-                        <ext:Button runat="server" Text="Change Color" OnDirectClick="ChangeColor" Disabled="true" />
-                        <ext:Button runat="server" Text="Rotate -45" OnDirectClick="RotateLeft" Disabled="true" />
-                        <ext:Button runat="server" Text="Rotate back (animaton)" OnDirectClick="RotateRight" Disabled="true" />
+                        <ext:Button
+                            runat="server"
+                            Text="Change Color"
+                            OnDirectClick="ChangeColor"
+                            Disabled="true"
+                            />
+                        <ext:Button
+                            runat="server"
+                            Text="Rotate -45"
+                            OnDirectClick="RotateLeft"
+                            Disabled="true"
+                            />
+                        <ext:Button
+                            runat="server"
+                            Text="Rotate back (animaton)"
+                            OnDirectClick="RotateRight"
+                            Disabled="true"
+                            />
                         <ext:Button
                             runat="server"
                             Text="Scaling"

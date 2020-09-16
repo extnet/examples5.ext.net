@@ -104,10 +104,7 @@
                 UseArrows="true"
                 Animate="true">
                 <Store>
-                    <ext:TreeStore
-                        runat="server"
-                        OnReadData="LoadPages"
-                        FolderSort="true">
+                    <ext:TreeStore runat="server" OnReadData="LoadPages" FolderSort="true">
                         <Proxy>
                             <ext:PageProxy />
                         </Proxy>
@@ -136,10 +133,7 @@
                 UseArrows="true"
                 Scrollable="Both">
                 <Store>
-                    <ext:TreeStore
-                        runat="server"
-                        OnReadData="LoadPages"
-                        FolderSort="true">
+                    <ext:TreeStore runat="server" OnReadData="LoadPages" FolderSort="true">
                         <Proxy>
                             <ext:PageProxy />
                         </Proxy>
@@ -147,7 +141,12 @@
                             <ext:DataSorter Property="text" />
                         </Sorters>
                         <Root>
-                            <ext:Node Text="My Files" IconCls="x-md md-icon-folder" Expanded="true" EmptyChildren="true" />
+                            <ext:Node
+                                Text="My Files"
+                                IconCls="x-md md-icon-folder"
+                                Expanded="true"
+                                EmptyChildren="true"
+                                />
                         </Root>
                     </ext:TreeStore>
                 </Store>

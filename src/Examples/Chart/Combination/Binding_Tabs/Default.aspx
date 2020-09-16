@@ -45,7 +45,11 @@
         <h1>Binding & Tabs</h1>
         <p>This example shows how to use data binding to attach stores to charts. Each tab uses the same dataset from the ViewModel.</p>
 
-        <ext:TabPanel ID="TabPanel1" runat="server" Width="650" Height="500">
+        <ext:TabPanel
+            ID="TabPanel1"
+            runat="server"
+            Width="650"
+            Height="500">
             <Items>
                 <ext:Panel runat="server" Title="Line Chart" Layout="Fit">
                     <Items>
@@ -70,18 +74,13 @@
                                     <Renderer Fn="Ext.util.Format.usMoney" />
                                 </ext:NumericAxis>
 
-                                <ext:CategoryAxis
-                                    Fields="month"
-                                    Position="Bottom"
-                                    Grid="true">
+                                <ext:CategoryAxis Fields="month" Position="Bottom" Grid="true">
                                     <Label RotationDegrees="-45" />
                                 </ext:CategoryAxis>
                             </Axes>
 
                             <Series>
-                                <ext:LineSeries
-                                    XField="month"
-                                    YField="price">
+                                <ext:LineSeries XField="month" YField="price">
                                     <Marker>
                                         <ext:Sprite Radius="4" />
                                     </Marker>
@@ -119,16 +118,13 @@
                                     <Renderer Fn="Ext.util.Format.usMoney" />
                                 </ext:NumericAxis>
 
-                                <ext:CategoryAxis
-                                    Position="Bottom">
+                                <ext:CategoryAxis Position="Bottom">
                                     <Label RotationDegrees="-45" />
                                 </ext:CategoryAxis>
                             </Axes>
 
                             <Series>
-                                <ext:BarSeries
-                                    XField="month"
-                                    YField="price">
+                                <ext:BarSeries XField="month" YField="price">
                                     <StyleSpec>
                                         <ext:SeriesSprite MinGapWidth="20" />
                                     </StyleSpec>
@@ -172,9 +168,7 @@
                             </Axes>
 
                             <Series>
-                                <ext:RadarSeries
-                                    AngleField="month"
-                                    RadiusField="price">
+                                <ext:RadarSeries AngleField="month" RadiusField="price">
                                     <StyleSpec>
                                         <ext:Sprite Opacity="0.8" />
                                     </StyleSpec>

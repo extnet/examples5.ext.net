@@ -12,10 +12,7 @@
 
     <h1>Complex BorderLayout in Markup</h1>
 
-    <ext:Button
-        runat="server"
-        Text="Show Window"
-        IconCls="x-md md-icon-open-in-new">
+    <ext:Button runat="server" Text="Show Window" IconCls="x-md md-icon-open-in-new">
         <Listeners>
             <Click Handler="#{Window1}.show();" />
         </Listeners>

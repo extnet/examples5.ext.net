@@ -116,10 +116,7 @@
                     <Items>
                         <ext:ToolbarTextItem runat="server" Text="Filter:" />
                         <ext:ToolbarSpacer />
-                        <ext:TextField
-                            ID="TriggerField1"
-                            runat="server"
-                            EnableKeyEvents="true">
+                        <ext:TextField ID="TriggerField1" runat="server" EnableKeyEvents="true">
                             <Triggers>
                                 <ext:FieldTrigger IconCls="x-md md-icon-clear" />
                             </Triggers>
@@ -129,7 +126,11 @@
                             </Listeners>
                         </ext:TextField>
                         <ext:ToolbarSpacer />
-                        <ext:Checkbox ID="FilterLogic" runat="server" BoxLabel="TreePanel filtering" Checked="true">
+                        <ext:Checkbox
+                            ID="FilterLogic"
+                            runat="server"
+                            BoxLabel="TreePanel filtering"
+                            Checked="true">
                             <ToolTips>
                                 <ext:ToolTip runat="server" Html="If checked then tree logic filtering (instead store logic)" />
                             </ToolTips>

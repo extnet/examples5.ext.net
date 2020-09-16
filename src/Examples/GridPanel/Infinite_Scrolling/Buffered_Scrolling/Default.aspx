@@ -75,9 +75,7 @@
             Width="720"
             Height="500">
             <Store>
-                <ext:Store
-                    ID="Store1"
-                    runat="server">
+                <ext:Store ID="Store1" runat="server">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>

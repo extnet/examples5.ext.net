@@ -57,7 +57,12 @@
 
         <h2>Add a &lt;Click> DirectEvent to &lt;ext:Button></h2>
 
-        <ext:Button ID="Button1" runat="server" Text="Click Me" OnDirectClick="UpdateTimeStamp" />
+        <ext:Button
+            ID="Button1"
+            runat="server"
+            Text="Click Me"
+            OnDirectClick="UpdateTimeStamp"
+            />
 
         <h2>Add a &lt;Click> DirectEvent with confirmation to &lt;ext:Button></h2>
 

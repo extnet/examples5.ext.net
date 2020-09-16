@@ -129,8 +129,18 @@
             BodyPadding="18"
             Layout="Anchor">
             <Items>
-                <ext:TextField ID="txtFirstName" runat="server" FieldLabel="First Name" AllowBlank="false" />
-                <ext:TextField ID="txtLastName" runat="server" FieldLabel="Last Name" AllowBlank="false" />
+                <ext:TextField
+                    ID="txtFirstName"
+                    runat="server"
+                    FieldLabel="First Name"
+                    AllowBlank="false"
+                    />
+                <ext:TextField
+                    ID="txtLastName"
+                    runat="server"
+                    FieldLabel="Last Name"
+                    AllowBlank="false"
+                    />
                 <ext:TextField ID="txtCompany" runat="server" FieldLabel="Company" />
                 <ext:Panel
                     ID="Panel1"
@@ -154,7 +164,11 @@
                 </ext:Panel>
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save" IconCls="x-md md-icon-save">
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Save"
+                    IconCls="x-md md-icon-save">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click">
                             <EventMask ShowMask="true" Msg="Saving..." MinDelay="500" />

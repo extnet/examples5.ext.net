@@ -13,7 +13,11 @@
 
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Container runat="server" Region="North" PaddingSpec="20 0 0 20" Height="125">
+                <ext:Container
+                    runat="server"
+                    Region="North"
+                    PaddingSpec="20 0 0 20"
+                    Height="125">
                     <Content>
                         <h1>Bin and HtmlBin with UserControl</h1>
                         <p>Demonstrates how helpful can be the Bin and HtmlBin features with UserControls.</p>

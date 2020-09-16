@@ -238,10 +238,28 @@
                 <Content>
                    <ext:Image runat="server" ImageUrl="resources/logo.png" StyleSpec="position:absolute;top: 50%;left: 50%;width: 77px; height: 78px;margin-top: -39px; margin-left: -39px;" />
                    <ext:Image runat="server" ImageUrl="resources/powered.png" StyleSpec="position:absolute;right:10px;bottom:20px;width:300px;height:39px;" />
-                   <ext:DisplayField runat="server" Text="You can place controls to desktop" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;" />
-                   <ext:DisplayField runat="server" Text="Move mouse to the right edge -->" FieldStyle="color:white;font-size:24px;" StyleSpec="position:absolute;right:50px;top:50px;" />
+                   <ext:DisplayField
+                       runat="server"
+                       Text="You can place controls to desktop"
+                       FieldStyle="color:white;font-size:24px;"
+                       StyleSpec="position:absolute;left: 50%; bottom: 100px;margin-left: -180px;"
+                       />
+                   <ext:DisplayField
+                       runat="server"
+                       Text="Move mouse to the right edge -->"
+                       FieldStyle="color:white;font-size:24px;"
+                       StyleSpec="position:absolute;right:50px;top:50px;"
+                       />
 
-                   <ext:Toolbar ID="CustomToolbar" runat="server" Width="545" Floating="true" ClassicButtonStyle="true" Flat="true" Border="false" Shadow="false">
+                   <ext:Toolbar
+                       ID="CustomToolbar"
+                       runat="server"
+                       Width="545"
+                       Floating="true"
+                       ClassicButtonStyle="true"
+                       Flat="true"
+                       Border="false"
+                       Shadow="false">
                         <Defaults>
                             <ext:Parameter Name="IconAlign" Value="top" />
                             <ext:Parameter Name="Width" Value="105" />
@@ -298,12 +316,29 @@
                 <Tray>
                     <ext:Toolbar runat="server">
                         <Items>
-                            <ext:Button ID="LangButton" runat="server" Text="EN" Cls="x-bold-text" MenuAlign="br-tr" ArrowVisible="false">
+                            <ext:Button
+                                ID="LangButton"
+                                runat="server"
+                                Text="EN"
+                                Cls="x-bold-text"
+                                MenuAlign="br-tr"
+                                ArrowVisible="false">
                                 <Menu>
                                     <ext:Menu runat="server">
                                         <Items>
-                                            <ext:CheckMenuItem runat="server" Group="lang" Text="English" Checked="true" CheckHandler="function (item, checked) {checked && #{LangButton}.setText('EN');}" />
-                                            <ext:CheckMenuItem runat="server" Group="lang" Text="French" CheckHandler="function (item, checked) {checked && #{LangButton}.setText('FR');}" />
+                                            <ext:CheckMenuItem
+                                                runat="server"
+                                                Group="lang"
+                                                Text="English"
+                                                Checked="true"
+                                                CheckHandler="function (item, checked) {checked && #{LangButton}.setText('EN');}"
+                                                />
+                                            <ext:CheckMenuItem
+                                                runat="server"
+                                                Group="lang"
+                                                Text="French"
+                                                CheckHandler="function (item, checked) {checked && #{LangButton}.setText('FR');}"
+                                                />
                                             <ext:MenuSeparator runat="server" />
                                             <ext:MenuItem runat="server" Text="Show the Language Bar" />
                                         </Items>
@@ -320,7 +355,15 @@
             </Listeners>
         </ext:Desktop>
 
-        <ext:Panel runat="server" Title="Slide panel" Frame="true" Width="250" Layout="Accordion" Floating="true" Shadow="false" Hidden="true">
+        <ext:Panel
+            runat="server"
+            Title="Slide panel"
+            Frame="true"
+            Width="250"
+            Layout="Accordion"
+            Floating="true"
+            Shadow="false"
+            Hidden="true">
             <Items>
                 <ext:Panel runat="server" Title="Section 1" IconCls="x-md md-icon-person" />
                 <ext:Panel runat="server" Title="Section 2" IconCls="x-md md-icon-person" />

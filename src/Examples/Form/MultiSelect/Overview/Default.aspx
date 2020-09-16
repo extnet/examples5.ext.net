@@ -49,10 +49,7 @@
     <form runat="server">
         <ext:ResourceManager runat="server" />
 
-        <ext:TabPanel
-            runat="server"
-            Plain="true"
-            Height="480">
+        <ext:TabPanel runat="server" Plain="true" Height="480">
             <Items>
                 <ext:Panel
                     runat="server"
@@ -72,10 +69,7 @@
                             Height="260"
                             Layout="Fit">
                             <Items>
-                                <ext:FieldSet
-                                    runat="server"
-                                    Title="With Legend"
-                                    Layout="Fit">
+                                <ext:FieldSet runat="server" Title="With Legend" Layout="Fit">
                                     <Items>
                                         <ext:MultiSelect runat="server" Border="false">
                                             <Items>
@@ -162,7 +156,11 @@
                     </Items>
                 </ext:Panel>
 
-                <ext:Panel runat="server" Title="Bars" BodyPadding="18" Layout="Table">
+                <ext:Panel
+                    runat="server"
+                    Title="Bars"
+                    BodyPadding="18"
+                    Layout="Table">
                     <LayoutConfig>
                         <ext:TableLayoutConfig Columns="2" />
                     </LayoutConfig>
@@ -249,10 +247,7 @@
                             Height="250"
                             Layout="Fit">
                             <Items>
-                                <ext:MultiSelect
-                                    runat="server"
-                                    DragGroup="grp1"
-                                    MultiSelect="true">
+                                <ext:MultiSelect runat="server" DragGroup="grp1" MultiSelect="true">
                                     <Items>
                                         <ext:ListItem Text="Item 1" Value="1" />
                                         <ext:ListItem Text="Item 2" Value="2" />
@@ -347,7 +342,11 @@
                     </Items>
                 </ext:Panel>
 
-                <ext:Panel runat="server" Title="Submit" BodyPadding="18" Layout="Table">
+                <ext:Panel
+                    runat="server"
+                    Title="Submit"
+                    BodyPadding="18"
+                    Layout="Table">
                     <LayoutConfig>
                         <ext:TableLayoutConfig Columns="1" />
                     </LayoutConfig>

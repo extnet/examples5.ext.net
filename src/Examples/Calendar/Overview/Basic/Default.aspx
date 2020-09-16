@@ -126,10 +126,7 @@
                             Border="false"
                             Cls="app-west">
                             <Items>
-                                <ext:DatePicker
-                                    ID="DatePicker1"
-                                    runat="server"
-                                    Cls="ext-cal-nav-picker">
+                                <ext:DatePicker ID="DatePicker1" runat="server" Cls="ext-cal-nav-picker">
                                     <Listeners>
                                         <Select Fn="CompanyX.setStartDate" Scope="CompanyX" />
                                     </Listeners>

@@ -313,7 +313,12 @@
                                         </Listeners>
                                     </ext:TextField>
 
-                                    <ext:Button runat="server" id="OptionsButton" IconCls="fa fa-cog" ToolTip="Options" ArrowVisible="false">
+                                    <ext:Button
+                                        runat="server"
+                                        id="OptionsButton"
+                                        IconCls="fa fa-cog"
+                                        ToolTip="Options"
+                                        ArrowVisible="false">
                                         <Menu>
                                             <ext:Menu runat="server" MinWidth="200">
                                                 <Items>
@@ -337,10 +342,7 @@
                                                         </Listeners>
                                                     </ext:CheckMenuItem>
 
-                                                    <ext:CheckMenuItem
-                                                        ID="CheckMenuItemScriptMode"
-                                                        runat="server"
-                                                        Text="Debug Mode">
+                                                    <ext:CheckMenuItem ID="CheckMenuItemScriptMode" runat="server" Text="Debug Mode">
                                                         <Listeners>
                                                             <CheckChange Handler="App.direct.ChangeScriptMode(checked);" />
                                                         </Listeners>

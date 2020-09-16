@@ -11,10 +11,7 @@
 
         <ext:ResourceManager runat="server" />
 
-        <ext:Container
-            runat="server"
-            Layout="VBox"
-            Height="650">
+        <ext:Container runat="server" Layout="VBox" Height="650">
             <Defaults>
                 <ext:Parameter Name="margin" Value="0 0 24 0" Mode="Value" />
             </Defaults>

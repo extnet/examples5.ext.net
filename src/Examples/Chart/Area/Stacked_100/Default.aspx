@@ -115,24 +115,23 @@
                             Maximum="100">
                             <Renderer Handler="return label + '%';" />
                         </ext:NumericAxis>
-                        <ext:CategoryAxis
-                            Position="Bottom"
-                            Fields="Date"
-                            Grid="true">
+                        <ext:CategoryAxis Position="Bottom" Fields="Date" Grid="true">
                             <Label RotationDegrees="-90" />
                             <Renderer Handler="return Ext.Date.format(label, 'M d');" />
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:AreaSeries
-                            Titles="IE,Chrome,Firefox,Safari,Opera,Other"
-                            XField="Date"
-                            YField="IE,Chrome,Firefox,Safari,Opera,Other">
+                        <ext:AreaSeries Titles="IE,Chrome,Firefox,Safari,Opera,Other" XField="Date" YField="IE,Chrome,Firefox,Safari,Opera,Other">
                                 <StyleSpec>
                                     <ext:Sprite Opacity="0.8" />
                                 </StyleSpec>
                                 <Marker>
-                                    <ext:CircleSprite Opacity="0" Scaling="0.01" Duration="200" Easing="EaseOut" />
+                                    <ext:CircleSprite
+                                        Opacity="0"
+                                        Scaling="0.01"
+                                        Duration="200"
+                                        Easing="EaseOut"
+                                        />
                                 </Marker>
                                 <HighlightDefaults>
                                     <ext:CircleSprite Opacity="1" Scaling="1.5" />

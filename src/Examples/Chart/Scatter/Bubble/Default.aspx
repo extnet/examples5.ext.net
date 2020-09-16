@@ -122,15 +122,17 @@
          <br /> diameter or the color of the bubbles.
         </p>
 
-        <ext:Panel
-            runat="server"
-            Layout="Fit"
-            Width="650">
+        <ext:Panel runat="server" Layout="Fit" Width="650">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button runat="server" Text="Refresh" Handler="fromHSL = Ext.draw.Color.fly('blue').getHSL();" OnDirectClick="OnRefresh" />
+                        <ext:Button
+                            runat="server"
+                            Text="Refresh"
+                            Handler="fromHSL = Ext.draw.Color.fly('blue').getHSL();"
+                            OnDirectClick="OnRefresh"
+                            />
                         <ext:Button runat="server" Text="Drop all bubbles" Handler="fromHSL = Ext.draw.Color.fly('cyan').getHSL();">
                             <DirectEvents>
                                 <Click OnEvent="OnDrop">
@@ -181,7 +183,11 @@
                             </GridConfig>
                         </ext:NumericAxis>
 
-                        <ext:NumericAxis Position="Bottom" Fields="id" Minimum="0" Maximum="50">
+                        <ext:NumericAxis
+                            Position="Bottom"
+                            Fields="id"
+                            Minimum="0"
+                            Maximum="50">
                             <Style MajorTickSize="10" LineWidth="3" StrokeStyle="#888" EstStepSize="100" />
                             <Label Color="#888" FontFamily="Chalkboard, sans-serif" FontSize="20" />
                             <GridConfig Stroke="#444" />
@@ -191,7 +197,14 @@
                     <Series>
                         <ext:ScatterSeries XField="id" YField="g2">
                             <Marker>
-                                <ext:CircleSprite Radius="5" FillStyle="rgb(203,143,203)" MiterLimit="1" LineCap="Butt" LineWidth="1" Duration="200" />
+                                <ext:CircleSprite
+                                    Radius="5"
+                                    FillStyle="rgb(203,143,203)"
+                                    MiterLimit="1"
+                                    LineCap="Butt"
+                                    LineWidth="1"
+                                    Duration="200"
+                                    />
                             </Marker>
                             <HighlightDefaults>
                                 <ext:Sprite Scaling="1.3" />

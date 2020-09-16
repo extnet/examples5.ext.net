@@ -311,9 +311,7 @@
                     </Interactions>
 
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Left"
-                            Grid="true">
+                        <ext:NumericAxis Position="Left" Grid="true">
                             <Label RotationDegrees="-30" />
                             <Listeners>
                                 <RangeChange Fn="rangeChange" />

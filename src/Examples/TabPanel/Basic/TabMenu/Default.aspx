@@ -45,9 +45,7 @@
         <ext:TabPanel ID="TabPanel1" runat="server" Height="100">
             <Items>
                 <ext:Panel runat="server" Title="No Menu" />
-                <ext:Panel
-                    runat="server"
-                    Title="Menu 1">
+                <ext:Panel runat="server" Title="Menu 1">
                     <TabMenu>
                         <ext:Menu runat="server">
                             <Items>
@@ -55,7 +53,11 @@
                                 <ext:MenuItem runat="server" Text="Item 2" />
                                 <ext:MenuSeparator runat="server" />
                                 <ext:Label runat="server" Text="Rename Tab:" StyleSpec="padding-left:30px;" />
-                                <ext:TextField ID="RenameField" runat="server" Text="New title" StyleSpec="margin-left:30px;">
+                                <ext:TextField
+                                    ID="RenameField"
+                                    runat="server"
+                                    Text="New title"
+                                    StyleSpec="margin-left:30px;">
                                     <Triggers>
                                         <ext:FieldTrigger IconCls="x-md md-icon-edit" QTip="Click to rename" />
                                     </Triggers>

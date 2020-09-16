@@ -63,10 +63,7 @@
                     Shadow="true"
                     InnerPadding="20">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(5) %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData(5) %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -83,10 +80,7 @@
                         <ext:RotateInteraction />
                     </Interactions>
                     <Series>
-                        <ext:PieSeries
-                            AngleField="Data1"
-                            RadiusField="Data2"
-                            HighlightMargin="20">
+                        <ext:PieSeries AngleField="Data1" RadiusField="Data2" HighlightMargin="20">
                             <StyleSpec>
                                 <ext:Sprite LineWidth="1" StrokeStyle="#fff" />
                             </StyleSpec>

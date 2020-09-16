@@ -93,13 +93,39 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column ID="fullName" runat="server" Text="Full Name" Width="150">
+                    <ext:Column
+                        ID="fullName"
+                        runat="server"
+                        Text="Full Name"
+                        Width="150">
                         <Renderer Fn="fullName" />
                     </ext:Column>
-                    <ext:Column runat="server" DataIndex="Title" Text="Title"  Width="150" />
-                    <ext:Column runat="server" DataIndex="TitleOfCourtesy" Text="Title Of Courtesy"  Width="150" />
-                    <ext:DateColumn runat="server" DataIndex="BirthDate" Text="BirthDate" Width="110" Format="yyyy-MM-dd" />
-                    <ext:DateColumn runat="server" DataIndex="HireDate" Text="HireDate" Width="110" Format="yyyy-MM-dd" />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="Title"
+                        Text="Title"
+                        Width="150"
+                        />
+                    <ext:Column
+                        runat="server"
+                        DataIndex="TitleOfCourtesy"
+                        Text="Title Of Courtesy"
+                        Width="150"
+                        />
+                    <ext:DateColumn
+                        runat="server"
+                        DataIndex="BirthDate"
+                        Text="BirthDate"
+                        Width="110"
+                        Format="yyyy-MM-dd"
+                        />
+                    <ext:DateColumn
+                        runat="server"
+                        DataIndex="HireDate"
+                        Text="HireDate"
+                        Width="110"
+                        Format="yyyy-MM-dd"
+                        />
                     <ext:Column
                         runat="server"
                         DataIndex="Address"

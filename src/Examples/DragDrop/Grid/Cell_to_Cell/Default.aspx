@@ -66,14 +66,9 @@
         <p>This illustrates how a custom plugin can enable a cell to cell drag and drop operation within the same GridView.</p>
         <p>This example only allows a drag and drop operation for cells with the same data type, although that is configurable. The custom plugin allows for other configs, please see the comments in the source.</p>
 
-        <ext:GridPanel
-            runat="server"
-            Width="960"
-            Height="480">
+        <ext:GridPanel runat="server" Width="960" Height="480">
             <Store>
-                <ext:Store
-                    ID="Store1"
-                    runat="server">
+                <ext:Store ID="Store1" runat="server">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
@@ -97,22 +92,42 @@
                         DataIndex="company"
                         Width="160"
                         />
-                    <ext:DateColumn runat="server" Text="First Updated" DataIndex="firstChange" Width="235" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="First Updated"
+                        DataIndex="firstChange"
+                        Width="235"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Price"
                         DataIndex="price"
                         Width="75"
                         />
-                    <ext:Column runat="server" Text="Stock " DataIndex="stock" Width="75" />
+                    <ext:Column
+                        runat="server"
+                        Text="Stock "
+                        DataIndex="stock"
+                        Width="75"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Change"
                         DataIndex="change"
                         Width="75"
                         />
-                    <ext:Column runat="server" Text="% Change" DataIndex="pctChange" Width="75" />
-                    <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="235" />
+                    <ext:Column
+                        runat="server"
+                        Text="% Change"
+                        DataIndex="pctChange"
+                        Width="75"
+                        />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        DataIndex="lastChange"
+                        Width="235"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

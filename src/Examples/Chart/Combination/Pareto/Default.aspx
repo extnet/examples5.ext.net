@@ -26,7 +26,7 @@
     <link href="/resources/css/examples.css" rel="stylesheet" />
 
     <script>
-        function download() {
+        var download = function () {
             var chart = App.Chart1;
 
             if (Ext.os.is.Desktop) {
@@ -38,7 +38,7 @@
             }
         }
 
-        function renderer(toolTip, record, context) {
+        var renderer = function (toolTip, record, context) {
             var store = record.store,
                 i, complaints = [];
 
@@ -56,7 +56,11 @@
 
         <ext:Viewport runat="server" Layout="Border">
             <Items>
-                <ext:Container runat="server" Region="North" Height="125" PaddingSpec="20 0 0 20">
+                <ext:Container
+                    runat="server"
+                    Region="North"
+                    Height="125"
+                    PaddingSpec="20 0 0 20">
                     <Content>
                         <h1>Pareto Chart Example</h1>
 
@@ -70,10 +74,7 @@
                         <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Panel
-                            runat="server"
-                            Width="650"
-                            BodyStyle="background: transparent !important">
+                        <ext:Panel runat="server" Width="650" BodyStyle="background: transparent !important">
                             <LayoutConfig>
                                 <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                             </LayoutConfig>
@@ -95,9 +96,7 @@
                                     Width="650"
                                     InsetPaddingSpec="40 40 20 40">
                                     <Store>
-                                        <ext:Store
-                                            ID="Store1"
-                                            runat="server">
+                                        <ext:Store ID="Store1" runat="server">
                                             <Model>
                                                 <ext:Model runat="server">
                                                     <Fields>
@@ -110,7 +109,7 @@
                                             </Model>
                                         </ext:Store>
                                     </Store>
-                                    <LegendConfig Dock="Bottom" />
+                                    <LegendConfig runat="server" Dock="Bottom" />
                                     <Items>
                                         <ext:TextSprite
                                             Text="Restaurant Complaints by Reported Cause"
@@ -136,12 +135,10 @@
                                             Grid="true"
                                             Minimum="0"
                                             MajorTickSteps="10"
-                                            ReconcileRange="true">
-                                        </ext:NumericAxis>
+                                            ReconcileRange="true"
+                                            />
 
-                                        <ext:CategoryAxis
-                                            Position="Bottom"
-                                            Fields="complaint">
+                                        <ext:CategoryAxis Position="Bottom" Fields="complaint">
                                             <Label RotationDegrees="-45" />
                                         </ext:CategoryAxis>
 
@@ -154,10 +151,7 @@
                                         </ext:NumericAxis>
                                     </Axes>
                                     <Series>
-                                        <ext:BarSeries
-                                            Title="Causes"
-                                            XField="complaint"
-                                            YField="count">
+                                        <ext:BarSeries Title="Causes" XField="complaint" YField="count">
                                             <StyleSpec>
                                                 <ext:Sprite GlobalAlpha="0.8" />
                                             </StyleSpec>
@@ -169,10 +163,7 @@
                                             </Tooltip>
                                         </ext:BarSeries>
 
-                                        <ext:LineSeries
-                                            Title="Cumulative %"
-                                            XField="complaint"
-                                            YField="cumnumber">
+                                        <ext:LineSeries Title="Cumulative %" XField="complaint" YField="cumnumber">
                                             <StyleSpec>
                                                 <ext:Sprite LineWidth="2" GlobalAlpha="0.8" />
                                             </StyleSpec>
@@ -189,10 +180,21 @@
                                     </Series>
                                 </ext:CartesianChart>
 
-                                <ext:GridPanel runat="server" StoreID="Store1" StyleSpec="margin-top: 10px;padding-left:40px;" Width="960">
+                                <ext:GridPanel
+                                    runat="server"
+                                    StoreID="Store1"
+                                    StyleSpec="margin-top: 10px;padding-left:40px;"
+                                    Width="960">
                                     <ColumnModel>
                                         <Columns>
-                                            <ext:Column runat="server" Text="Complaint" DataIndex="complaint" Width="175" Sortable="false" MenuDisabled="true" />
+                                            <ext:Column
+                                                runat="server"
+                                                Text="Complaint"
+                                                DataIndex="complaint"
+                                                Width="175"
+                                                Sortable="false"
+                                                MenuDisabled="true"
+                                                />
                                             <ext:Column
                                                 runat="server"
                                                 Text="Count"
@@ -207,7 +209,13 @@
                                                 Sortable="false"
                                                 MenuDisabled="true"
                                                 />
-                                            <ext:Column runat="server" Text="Cumulative %" DataIndex="cumpercent" Width="175" Sortable="false" MenuDisabled="true">
+                                            <ext:Column
+                                                runat="server"
+                                                Text="Cumulative %"
+                                                DataIndex="cumpercent"
+                                                Width="175"
+                                                Sortable="false"
+                                                MenuDisabled="true">
                                                 <Renderer Handler="return value + '%';" />
                                             </ext:Column>
                                         </Columns>

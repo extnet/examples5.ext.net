@@ -61,7 +61,11 @@
             drag anywhere on the chart.
         </p>
 
-        <ext:Panel runat="server" Width="650" Height="500" Layout="Fit">
+        <ext:Panel
+            runat="server"
+            Width="650"
+            Height="500"
+            Layout="Fit">
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
@@ -71,17 +75,11 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:PolarChart
-                    ID="Chart1"
-                    runat="server"
-                    StandardTheme="Category1">
+                <ext:PolarChart ID="Chart1" runat="server" StandardTheme="Category1">
                     <Background Fill="white" />
                     <AnimationConfig Duration="500" Easing="EaseIn" />
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(6) %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData(6) %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -96,10 +94,7 @@
                         <ext:RotateInteraction />
                     </Interactions>
                     <Series>
-                        <ext:Pie3DSeries
-                            AngleField="Data1"
-                            Donut="30"
-                            Distortion="0.6">
+                        <ext:Pie3DSeries AngleField="Data1" Donut="30" Distortion="0.6">
                             <StyleSpec>
                                 <ext:SeriesSprite StrokeStyle="white" Opacity="0.9" />
                             </StyleSpec>

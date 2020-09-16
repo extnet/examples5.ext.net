@@ -191,9 +191,7 @@
                     </Listeners>
                 </ext:Button>
 
-                <ext:Button
-                    runat="server"
-                    Text="Refresh Current Data">
+                <ext:Button runat="server" Text="Refresh Current Data">
                     <Listeners>
                         <Click Handler="#{GridPanel1}.store.reload();" />
                     </Listeners>

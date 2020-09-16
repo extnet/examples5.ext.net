@@ -61,7 +61,11 @@
             <HeaderConfig>
                 <Items>
                     <ext:Component runat="server" Cls="x-panel-header-title-default-framed" Html="Color button &#8680;" />
-                    <ext:ColorButton runat="server" Width="15" Height="15" BindString="{color}">
+                    <ext:ColorButton
+                        runat="server"
+                        Width="15"
+                        Height="15"
+                        BindString="{color}">
                         <Listeners>
                             <Change Fn="onChange" />
                         </Listeners>
@@ -70,7 +74,11 @@
             </HeaderConfig>
 
             <Items>
-                <ext:ColorField runat="server" FieldLabel="Color Field" LabelWidth="75" BindString="{color}">
+                <ext:ColorField
+                    runat="server"
+                    FieldLabel="Color Field"
+                    LabelWidth="75"
+                    BindString="{color}">
                     <Listeners>
                         <Change Fn="onChange" />
                     </Listeners>

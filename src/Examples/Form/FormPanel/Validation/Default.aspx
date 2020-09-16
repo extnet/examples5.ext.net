@@ -52,14 +52,24 @@
                                 <ext:TextField runat="server" FieldLabel="Company" AnchorHorizontal="92%" />
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" Border="false" Layout="Form" ColumnWidth=".5" LabelAlign="Top">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            Layout="Form"
+                            ColumnWidth=".5"
+                            LabelAlign="Top">
                             <Defaults>
                                 <ext:Parameter Name="AllowBlank" Value="false" Mode="Raw" />
                                 <ext:Parameter Name="MsgTarget" Value="side" />
                             </Defaults>
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="Last Name" AnchorHorizontal="92%" />
-                                <ext:TextField runat="server" FieldLabel="Email" Vtype="email" AnchorHorizontal="92%" />
+                                <ext:TextField
+                                    runat="server"
+                                    FieldLabel="Email"
+                                    Vtype="email"
+                                    AnchorHorizontal="92%"
+                                    />
                             </Items>
                         </ext:Panel>
                     </Items>

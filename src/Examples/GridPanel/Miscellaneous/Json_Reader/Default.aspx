@@ -52,7 +52,12 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column runat="server" Text="Common Name" DataIndex="Common" Flex="1" />
+                        <ext:Column
+                            runat="server"
+                            Text="Common Name"
+                            DataIndex="Common"
+                            Flex="1"
+                            />
                         <ext:Column
                             runat="server"
                             Text="Light"
@@ -72,7 +77,12 @@
                             DataIndex="Availability"
                             Width="95"
                             />
-                        <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
+                        <ext:Column
+                            runat="server"
+                            Text="Indoor?"
+                            DataIndex="Indoor"
+                            Width="55"
+                            />
                     </Columns>
                 </ColumnModel>
             </ext:GridPanel>

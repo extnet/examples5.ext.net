@@ -41,7 +41,12 @@
                             <Menu>
                                 <ext:Menu runat="server" Cls="reading-menu">
                                     <Items>
-                                        <ext:CheckMenuItem runat="server" Text="Bottom" Checked="true" IconCls="preview-bottom" />
+                                        <ext:CheckMenuItem
+                                            runat="server"
+                                            Text="Bottom"
+                                            Checked="true"
+                                            IconCls="preview-bottom"
+                                            />
                                         <ext:CheckMenuItem runat="server" Text="Right" IconCls="preview-right" />
                                         <ext:CheckMenuItem runat="server" Text="Hide" IconCls="preview-hide" />
                                     </Items>

@@ -119,13 +119,25 @@
                         DataIndex="company"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="change">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="pctChange">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="pctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
                     <ext:DateColumn

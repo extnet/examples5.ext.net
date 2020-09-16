@@ -147,10 +147,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    InsetPaddingSpec="40 40 20 40">
+                <ext:CartesianChart ID="Chart1" runat="server" InsetPaddingSpec="40 40 20 40">
                     <Store>
                         <ext:Store runat="server">
                             <Model>
@@ -183,10 +180,7 @@
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries
-                            Highlight="true"
-                            XField="Month"
-                            YField="High">
+                        <ext:BarSeries Highlight="true" XField="Month" YField="High">
                             <StyleSpec>
                                 <ext:SeriesSprite MinGapWidth="20" />
                             </StyleSpec>

@@ -116,7 +116,12 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite Radius="8" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
+                                <ext:Sprite
+                                    Radius="8"
+                                    FillStyle="#000"
+                                    LineWidth="1"
+                                    StrokeStyle="#888"
+                                    />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data1') + '%');" />
@@ -131,7 +136,12 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
+                                <ext:Sprite
+                                    Radius="5"
+                                    FillStyle="#000"
+                                    LineWidth="1"
+                                    StrokeStyle="#888"
+                                    />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data2') + '%');" />
@@ -146,7 +156,12 @@
                                 <ext:Sprite Radius="4" />
                             </Marker>
                             <HighlightConfig>
-                                <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
+                                <ext:Sprite
+                                    Radius="5"
+                                    FillStyle="#000"
+                                    LineWidth="1"
+                                    StrokeStyle="#888"
+                                    />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data3') + '%');" />
@@ -158,7 +173,12 @@
                                 <ext:Sprite LineWidth="2" FillStyle="none" />
                             </StyleSpec>
                             <HighlightConfig>
-                                <ext:Sprite Radius="5" FillStyle="#000" LineWidth="1" StrokeStyle="#888" />
+                                <ext:Sprite
+                                    Radius="5"
+                                    FillStyle="#000"
+                                    LineWidth="1"
+                                    StrokeStyle="#888"
+                                    />
                             </HighlightConfig>
                             <Tooltip runat="server" TrackMouse="true">
                                 <Renderer Handler="toolTip.setHtml(record.get('month') + ': ' + record.get('data4') + '%');" />

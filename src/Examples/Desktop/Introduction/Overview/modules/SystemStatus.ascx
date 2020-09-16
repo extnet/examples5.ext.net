@@ -235,7 +235,11 @@
 
                     <ext:TaskManager ID="TaskManager1" runat="server">
                         <Tasks>
-                            <ext:Task TaskID="updateCharts" WaitPreviousRequest="true" AutoRun="false" Interval="2000">
+                            <ext:Task
+                                TaskID="updateCharts"
+                                WaitPreviousRequest="true"
+                                AutoRun="false"
+                                Interval="2000">
                                 <DirectEvents>
                                     <Update OnEvent="UpdateTask" />
                                 </DirectEvents>
@@ -254,9 +258,7 @@
                             <ext:HBoxLayoutConfig Align="Stretch" />
                         </LayoutConfig>
                         <Items>
-                            <ext:Container
-                                runat="server"
-                                Flex="1">
+                            <ext:Container runat="server" Flex="1">
                                 <LayoutConfig>
                                     <ext:VBoxLayoutConfig Align="Stretch" />
                                 </LayoutConfig>
@@ -326,9 +328,7 @@
                                 </Items>
                             </ext:Container>
 
-                            <ext:Container
-                                runat="server"
-                                Flex="1">
+                            <ext:Container runat="server" Flex="1">
                                 <LayoutConfig>
                                     <ext:VBoxLayoutConfig Align="Stretch" />
                                 </LayoutConfig>
@@ -377,19 +377,13 @@
                                                 <Label Font="11px Arial" />
                                             </ext:NumericAxis>
 
-                                            <ext:CategoryAxis
-                                                Position="Bottom"
-                                                Fields="Name"
-                                                Title="System Processes">
+                                            <ext:CategoryAxis Position="Bottom" Fields="Name" Title="System Processes">
                                                 <TitleConfig Font="bold 14px Arial" />
                                                 <Label RotationDegrees="45" />
                                             </ext:CategoryAxis>
                                         </Axes>
                                         <Series>
-                                            <ext:BarSeries
-                                                Title="Processes"
-                                                XField="Name"
-                                                YField="Memory">
+                                            <ext:BarSeries Title="Processes" XField="Name" YField="Memory">
                                                 <Renderer Fn="processRenderer" />
                                                 <StyleSpec>
                                                     <ext:Sprite LineWidth="1" />

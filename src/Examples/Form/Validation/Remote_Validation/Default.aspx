@@ -78,11 +78,19 @@
                     <RemoteValidation DirectFn="App.direct.DirectCheckField" />
                 </ext:TextField>
 
-                <ext:TextField runat="server" FieldLabel="Client and server validation" IsRemoteValidation="true" AllowBlank="false">
+                <ext:TextField
+                    runat="server"
+                    FieldLabel="Client and server validation"
+                    IsRemoteValidation="true"
+                    AllowBlank="false">
                     <RemoteValidation OnValidation="CheckField" />
                 </ext:TextField>
 
-                <ext:TextField runat="server" FieldLabel="Client and server validation (web service)" IsRemoteValidation="true" AllowBlank="false">
+                <ext:TextField
+                    runat="server"
+                    FieldLabel="Client and server validation (web service)"
+                    IsRemoteValidation="true"
+                    AllowBlank="false">
                     <RemoteValidation Url="ValidationService.asmx/CheckField" Json="true" />
                 </ext:TextField>
 

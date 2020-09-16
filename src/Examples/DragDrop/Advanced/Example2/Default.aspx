@@ -93,23 +93,39 @@
 
         <%--<a href="http://www.extjs.com/learn/Tutorial:Advanced_Custom_Drag_and_Drop_Part_2">Tutorial:Advanced Custom Drag and Drop Part 2</a>--%>
 
-        <ext:DragZone runat="server" Target="dd1-ct" Group="group" Scroll="false">
+        <ext:DragZone
+            runat="server"
+            Target="dd1-ct"
+            Group="group"
+            Scroll="false">
             <GetDragData Fn="getDragData" />
             <OnInitDrag Fn="onInitDrag" />
             <GetRepairXY Fn="getRepairXY" />
         </ext:DragZone>
 
-        <ext:DragZone runat="server" Target="dd2-ct" Group="group" Scroll="false">
+        <ext:DragZone
+            runat="server"
+            Target="dd2-ct"
+            Group="group"
+            Scroll="false">
             <GetDragData Fn="getDragData" />
             <OnInitDrag Fn="onInitDrag" />
             <GetRepairXY Fn="getRepairXY" />
         </ext:DragZone>
 
-        <ext:DropTarget runat="server" Target="dd1-ct" Group="group" OverClass="dd-over">
+        <ext:DropTarget
+            runat="server"
+            Target="dd1-ct"
+            Group="group"
+            OverClass="dd-over">
             <NotifyDrop Fn="notifyDrop" />
         </ext:DropTarget>
 
-        <ext:DropTarget runat="server" Target="dd2-ct" Group="group" OverClass="dd-over">
+        <ext:DropTarget
+            runat="server"
+            Target="dd2-ct"
+            Group="group"
+            OverClass="dd-over">
             <NotifyDrop Fn="notifyDrop" />
         </ext:DropTarget>
 

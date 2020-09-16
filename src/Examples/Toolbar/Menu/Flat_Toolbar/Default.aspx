@@ -43,15 +43,36 @@
 
             <ext:ToolbarSeparator/>
 
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-add-circle-outline" Pressed="true" />
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-remove-circle-outline" />
-            <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group2" IconCls="x-md md-icon-edit" />
+            <ext:Button
+                runat="server"
+                EnableToggle="true"
+                ToggleGroup="Group2"
+                IconCls="x-md md-icon-add-circle-outline"
+                Pressed="true"
+                />
+            <ext:Button
+                runat="server"
+                EnableToggle="true"
+                ToggleGroup="Group2"
+                IconCls="x-md md-icon-remove-circle-outline"
+                />
+            <ext:Button
+                runat="server"
+                EnableToggle="true"
+                ToggleGroup="Group2"
+                IconCls="x-md md-icon-edit"
+                />
         </Items>
     </ext:Toolbar>
 
     <h2>Panel with Flat Toolbar</h2>
 
-    <ext:Panel runat="server" Title="Panel with toolbar" Width="480" Height="270" Frame="true">
+    <ext:Panel
+        runat="server"
+        Title="Panel with toolbar"
+        Width="480"
+        Height="270"
+        Frame="true">
         <TopBar>
             <ext:Toolbar runat="server" Flat="true">
                 <Items>
@@ -84,9 +105,25 @@
 
                     <ext:ToolbarSeparator/>
 
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-add-circle-outline" Pressed="true" />
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-remove-circle-outline" />
-                    <ext:Button runat="server" EnableToggle="true" ToggleGroup="Group1" IconCls="x-md md-icon-edit" />
+                    <ext:Button
+                        runat="server"
+                        EnableToggle="true"
+                        ToggleGroup="Group1"
+                        IconCls="x-md md-icon-add-circle-outline"
+                        Pressed="true"
+                        />
+                    <ext:Button
+                        runat="server"
+                        EnableToggle="true"
+                        ToggleGroup="Group1"
+                        IconCls="x-md md-icon-remove-circle-outline"
+                        />
+                    <ext:Button
+                        runat="server"
+                        EnableToggle="true"
+                        ToggleGroup="Group1"
+                        IconCls="x-md md-icon-edit"
+                        />
                 </Items>
             </ext:Toolbar>
         </TopBar>

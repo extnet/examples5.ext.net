@@ -52,10 +52,7 @@
 
         </p>
 
-        <ext:Panel
-            runat="server"
-            BodyStyle="background: transparent !important;"
-            Width="650">
+        <ext:Panel runat="server" BodyStyle="background: transparent !important;" Width="650">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
             </LayoutConfig>

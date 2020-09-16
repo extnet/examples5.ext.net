@@ -104,16 +104,29 @@
                                 Filterable="false"
                                 Width="40"
                                 />
-                            <ext:Column runat="server" Text="Company" DataIndex="Company" Width="250">
+                            <ext:Column
+                                runat="server"
+                                Text="Company"
+                                DataIndex="Company"
+                                Width="250">
                                 <Items>
                                     <ext:Container runat="server" Layout="HBox" Margin="2">
                                         <Items>
-                                            <ext:CycleButton runat="server" ShowText="true" Width="70" ForceIcon="#Magnifier">
+                                            <ext:CycleButton
+                                                runat="server"
+                                                ShowText="true"
+                                                Width="70"
+                                                ForceIcon="#Magnifier">
                                                 <Menu>
                                                     <ext:Menu runat="server">
                                                         <Items>
                                                             <ext:CheckMenuItem runat="server" Text="=" ToolTip="Equals" />
-                                                            <ext:CheckMenuItem runat="server" Text="+" Checked="true" ToolTip="Starts with" />
+                                                            <ext:CheckMenuItem
+                                                                runat="server"
+                                                                Text="+"
+                                                                Checked="true"
+                                                                ToolTip="Starts with"
+                                                                />
                                                             <ext:CheckMenuItem runat="server" Text="-" ToolTip="Ends with" />
                                                             <ext:CheckMenuItem runat="server" Text="*" ToolTip="Contains" />
                                                             <ext:CheckMenuItem runat="server" Text="!" ToolTip="Doesn't contain" />
@@ -141,7 +154,11 @@
                                 </Items>
                             </ext:Column>
 
-                            <ext:Column runat="server" Text="Size" DataIndex="Size" Width="120">
+                            <ext:Column
+                                runat="server"
+                                Text="Size"
+                                DataIndex="Size"
+                                Width="120">
                                 <Items>
                                     <ext:Button runat="server" Text="[No Filter]">
                                         <Menu>

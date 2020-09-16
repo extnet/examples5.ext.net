@@ -24,7 +24,12 @@
                         <Click Fn="onBackClick" />
                     </Listeners>
                 </ext:Button>
-                <ext:Button ItemID="btnLoad" runat="server" Disabled="true" Text="Parent association loader" ToolTip="Demonstrate loading parent relationships - A new record will be created so we ignore any previous associations setup">
+                <ext:Button
+                    ItemID="btnLoad"
+                    runat="server"
+                    Disabled="true"
+                    Text="Parent association loader"
+                    ToolTip="Demonstrate loading parent relationships - A new record will be created so we ignore any previous associations setup">
                     <Listeners>
                         <Click Fn="loadItemLoader" />
                     </Listeners>

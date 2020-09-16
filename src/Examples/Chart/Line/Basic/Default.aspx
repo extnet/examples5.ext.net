@@ -110,10 +110,7 @@
                             <Renderer Handler="return layoutContext.renderer(label) + '%';" />
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Position="Bottom"
-                            Fields="Month"
-                            Grid="true">
+                        <ext:CategoryAxis Position="Bottom" Fields="Month" Grid="true">
                             <Label RotationDegrees="-45" />
                         </ext:CategoryAxis>
                     </Axes>
@@ -124,7 +121,12 @@
                             </StyleSpec>
 
                             <HighlightConfig>
-                                <ext:Sprite FillStyle="#000" Radius="5" LineWidth="2" StrokeStyle="#fff" />
+                                <ext:Sprite
+                                    FillStyle="#000"
+                                    Radius="5"
+                                    LineWidth="2"
+                                    StrokeStyle="#fff"
+                                    />
                             </HighlightConfig>
 
                             <Marker>

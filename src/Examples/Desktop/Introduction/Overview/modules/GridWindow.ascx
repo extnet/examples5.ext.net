@@ -56,17 +56,24 @@
                 <TopBar>
                     <ext:Toolbar runat="server">
                         <Items>
-                            <ext:Button runat="server" Text="Add Something" IconCls="x-md md-icon-add-circle-outline" ToolTip="Add a new row">
-                            </ext:Button>
+                            <ext:Button
+                                runat="server"
+                                Text="Add Something"
+                                IconCls="x-md md-icon-add-circle-outline"
+                                ToolTip="Add a new row"
+                                />
 
                             <ext:ToolbarSeparator runat="server" />
 
-                            <ext:Button runat="server" Text="Options" IconCls="x-md md-icon-extension">
-                            </ext:Button>
+                            <ext:Button runat="server" Text="Options" IconCls="x-md md-icon-extension" />
 
                             <ext:ToolbarSeparator runat="server" />
 
-                            <ext:Button runat="server" Text="Remove Something" ToolTip="Remove the selected item" IconCls="x-md md-icon-cancel">
+                            <ext:Button
+                                runat="server"
+                                Text="Remove Something"
+                                ToolTip="Remove the selected item"
+                                IconCls="x-md md-icon-cancel">
                                 <QTipCfg Text="Remove the selected user" />
                             </ext:Button>
                         </Items>
@@ -118,7 +125,13 @@
                                     Sortable="true"
                                     DataIndex="Change"
                                     />
-                                <ext:Column runat="server" Text="% Change" Width="70" Sortable="true" DataIndex="PctChange" />
+                                <ext:Column
+                                    runat="server"
+                                    Text="% Change"
+                                    Width="70"
+                                    Sortable="true"
+                                    DataIndex="PctChange"
+                                    />
                             </Columns>
                         </ColumnModel>
                     </ext:GridPanel>

@@ -116,7 +116,11 @@
             BodyPadding="18">
             <FieldDefaults LabelWidth="110" LabelStyle="color:green;padding-left:4px;" />
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save" IconCls="x-md md-icon-save">
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Save"
+                    IconCls="x-md md-icon-save">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" Before="return this.up('form').isValid();" />
                     </DirectEvents>
@@ -142,7 +146,12 @@
 
                             <Items>
                                 <ext:TextField ID="TextField1" runat="server" FieldLabel="Alignment Test" />
-                                <ext:Checkbox ID="CheckboxDog" runat="server" BoxLabel="Dog" FieldLabel="Favorite Animals" />
+                                <ext:Checkbox
+                                    ID="CheckboxDog"
+                                    runat="server"
+                                    BoxLabel="Dog"
+                                    FieldLabel="Favorite Animals"
+                                    />
                                 <ext:Checkbox ID="CheckboxCat" runat="server" BoxLabel="Cat" />
                                 <ext:Checkbox
                                     ID="CheckboxMonkey"
@@ -168,9 +177,26 @@
 
                             <Items>
                                 <ext:TextField ID="TextField2" runat="server" FieldLabel="Alignment Test" />
-                                <ext:Radio runat="server" BoxLabel="Red" InputValue="Red" Name="fav-color" FieldLabel="Favorite Color" Checked="true" />
-                                <ext:Radio runat="server" BoxLabel="Blue" InputValue="Blue" Name="fav-color" />
-                                <ext:Radio runat="server" BoxLabel="Green" InputValue="Green" Name="fav-color" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Red"
+                                    InputValue="Red"
+                                    Name="fav-color"
+                                    FieldLabel="Favorite Color"
+                                    Checked="true"
+                                    />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Blue"
+                                    InputValue="Blue"
+                                    Name="fav-color"
+                                    />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Green"
+                                    InputValue="Green"
+                                    Name="fav-color"
+                                    />
                             </Items>
                         </ext:FieldSet>
                     </Items>
@@ -193,7 +219,12 @@
                             FieldLabel="Auto Layout">
                             <Items>
                                 <ext:Checkbox ID="Checkbox4" runat="server" BoxLabel="Item 1" />
-                                <ext:Checkbox ID="Checkbox5" runat="server" BoxLabel="Item 2" Checked="true" />
+                                <ext:Checkbox
+                                    ID="Checkbox5"
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    Checked="true"
+                                    />
                                 <ext:Checkbox ID="Checkbox6" runat="server" BoxLabel="Item 3" />
                                 <ext:Checkbox ID="Checkbox7" runat="server" BoxLabel="Item 4" />
                                 <ext:Checkbox ID="Checkbox8" runat="server" BoxLabel="Item 5" />
@@ -207,7 +238,12 @@
                             ColumnsNumber="1">
                             <Items>
                                 <ext:Checkbox ID="Checkbox9" runat="server" BoxLabel="Item 1" />
-                                <ext:Checkbox ID="Checkbox10" runat="server" BoxLabel="Item 2" Checked="true" />
+                                <ext:Checkbox
+                                    ID="Checkbox10"
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    Checked="true"
+                                    />
                                 <ext:Checkbox ID="Checkbox11" runat="server" BoxLabel="Item 3" />
                             </Items>
                         </ext:CheckboxGroup>
@@ -220,7 +256,12 @@
                             Cls="x-check-group-alt">
                             <Items>
                                 <ext:Checkbox ID="Checkbox12" runat="server" BoxLabel="Item 1" />
-                                <ext:Checkbox ID="Checkbox13" runat="server" BoxLabel="Item 2" Checked="true" />
+                                <ext:Checkbox
+                                    ID="Checkbox13"
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    Checked="true"
+                                    />
                                 <ext:Checkbox ID="Checkbox14" runat="server" BoxLabel="Item 3" />
                                 <ext:Checkbox ID="Checkbox15" runat="server" BoxLabel="Item 4" />
                                 <ext:Checkbox ID="Checkbox16" runat="server" BoxLabel="Item 5" />
@@ -235,7 +276,12 @@
                             Vertical="true">
                             <Items>
                                 <ext:Checkbox ID="Checkbox17" runat="server" BoxLabel="Item 1" />
-                                <ext:Checkbox ID="Checkbox18" runat="server" BoxLabel="Item 2" Checked="true" />
+                                <ext:Checkbox
+                                    ID="Checkbox18"
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    Checked="true"
+                                    />
                                 <ext:Checkbox ID="Checkbox19" runat="server" BoxLabel="Item 3" />
                                 <ext:Checkbox ID="Checkbox20" runat="server" BoxLabel="Item 4" />
                                 <ext:Checkbox ID="Checkbox21" runat="server" BoxLabel="Item 5" />
@@ -251,7 +297,12 @@
                             Cls="x-check-group-alt">
                             <Items>
                                 <ext:Checkbox ID="Checkbox22" runat="server" BoxLabel="Item 1" />
-                                <ext:Checkbox ID="Checkbox23" runat="server" BoxLabel="Item 2" Checked="true" />
+                                <ext:Checkbox
+                                    ID="Checkbox23"
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    Checked="true"
+                                    />
                                 <ext:Checkbox ID="Checkbox24" runat="server" BoxLabel="Item 3" />
                                 <ext:Checkbox ID="Checkbox25" runat="server" BoxLabel="Item 4" />
                                 <ext:Checkbox ID="Checkbox26" runat="server" BoxLabel="Item 5" />
@@ -271,8 +322,18 @@
                                 <ext:Container runat="server" ColumnWidth="0.25">
                                     <Items>
                                         <ext:Component runat="server" Html="Heading 1" Cls="x-form-check-group-label" />
-                                        <ext:Checkbox ID="Checkbox27" runat="server" BoxLabel="Item 1" Checked="true" />
-                                        <ext:Checkbox ID="Checkbox28" runat="server" BoxLabel="Item 2" Checked="true" />
+                                        <ext:Checkbox
+                                            ID="Checkbox27"
+                                            runat="server"
+                                            BoxLabel="Item 1"
+                                            Checked="true"
+                                            />
+                                        <ext:Checkbox
+                                            ID="Checkbox28"
+                                            runat="server"
+                                            BoxLabel="Item 2"
+                                            Checked="true"
+                                            />
                                     </Items>
                                 </ext:Container>
                                 <ext:Container runat="server" ColumnWidth="0.5">
@@ -284,7 +345,12 @@
                                 <ext:Container runat="server" ColumnWidth="0.25">
                                     <Items>
                                         <ext:Component runat="server" Html="Heading 3" Cls="x-form-check-group-label" />
-                                        <ext:Checkbox ID="Checkbox1" runat="server" BoxLabel="Item 4" Checked="true" />
+                                        <ext:Checkbox
+                                            ID="Checkbox1"
+                                            runat="server"
+                                            BoxLabel="Item 4"
+                                            Checked="true"
+                                            />
                                         <ext:Checkbox ID="Checkbox2" runat="server" BoxLabel="Item 5" />
                                     </Items>
                                 </ext:Container>
@@ -310,7 +376,12 @@
                             Cls="x-check-group-alt">
                             <Items>
                                 <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    InputValue="2"
+                                    Checked="true"
+                                    />
                                 <ext:Radio runat="server" BoxLabel="Item 3" InputValue="3" />
                                 <ext:Radio runat="server" BoxLabel="Item 4" InputValue="4" />
                                 <ext:Radio runat="server" BoxLabel="Item 5" InputValue="5" />
@@ -325,7 +396,12 @@
                             ColumnsNumber="1">
                             <Items>
                                 <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    InputValue="2"
+                                    Checked="true"
+                                    />
                                 <ext:Radio runat="server" BoxLabel="Item 3" InputValue="3" />
                             </Items>
                         </ext:RadioGroup>
@@ -339,7 +415,12 @@
                             Cls="x-check-group-alt">
                             <Items>
                                 <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    InputValue="2"
+                                    Checked="true"
+                                    />
                                 <ext:Radio runat="server" BoxLabel="Item 3" InputValue="3" />
                                 <ext:Radio runat="server" BoxLabel="Item 4" InputValue="4" />
                                 <ext:Radio runat="server" BoxLabel="Item 5" InputValue="5" />
@@ -355,7 +436,12 @@
                             Vertical="true">
                             <Items>
                                 <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    InputValue="2"
+                                    Checked="true"
+                                    />
                                 <ext:Radio runat="server" BoxLabel="Item 3" InputValue="3" />
                                 <ext:Radio runat="server" BoxLabel="Item 4" InputValue="4" />
                                 <ext:Radio runat="server" BoxLabel="Item 5" InputValue="5" />
@@ -372,7 +458,12 @@
                             Cls="x-check-group-alt">
                             <Items>
                                 <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                <ext:Radio
+                                    runat="server"
+                                    BoxLabel="Item 2"
+                                    InputValue="2"
+                                    Checked="true"
+                                    />
                                 <ext:Radio runat="server" BoxLabel="Item 3" InputValue="3" />
                                 <ext:Radio runat="server" BoxLabel="Item 4" InputValue="4" />
                                 <ext:Radio runat="server" BoxLabel="Item 5" InputValue="5" />
@@ -394,7 +485,12 @@
                                     <Items>
                                         <ext:Component runat="server" Html="Heading 1" Cls="x-form-check-group-label" />
                                         <ext:Radio runat="server" BoxLabel="Item 1" InputValue="1" />
-                                        <ext:Radio runat="server" BoxLabel="Item 2" InputValue="2" Checked="true" />
+                                        <ext:Radio
+                                            runat="server"
+                                            BoxLabel="Item 2"
+                                            InputValue="2"
+                                            Checked="true"
+                                            />
                                     </Items>
                                 </ext:Container>
 

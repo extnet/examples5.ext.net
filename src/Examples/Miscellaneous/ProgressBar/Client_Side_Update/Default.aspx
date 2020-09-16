@@ -110,8 +110,19 @@
 
             <br />
 
-            <ext:Label ID="StatusLabel" runat="server" Cls="status" Text="Nothing to see here." />
-            <ext:ProgressBar ID="Progress1" runat="server" Width="480" Text="Initializing..." Hidden="true" />
+            <ext:Label
+                ID="StatusLabel"
+                runat="server"
+                Cls="status"
+                Text="Nothing to see here."
+                />
+            <ext:ProgressBar
+                ID="Progress1"
+                runat="server"
+                Width="480"
+                Text="Initializing..."
+                Hidden="true"
+                />
         </p>
 
         <p>
@@ -129,7 +140,13 @@
 
             <br />
 
-            <ext:ProgressBar ID="Progress2" runat="server" StyleSpec="width:50%" Text="Ready" Cls="left-align" />
+            <ext:ProgressBar
+                ID="Progress2"
+                runat="server"
+                StyleSpec="width:50%"
+                Text="Ready"
+                Cls="left-align"
+                />
         </p>
 
         <p>
@@ -167,7 +184,14 @@
                 </Listeners>
             </ext:Button>
 
-            <ext:ProgressBar ID="Progress4" runat="server" Width="480" Text="Waiting on you..." TextEl="p4text" Cls="custom" />
+            <ext:ProgressBar
+                ID="Progress4"
+                runat="server"
+                Width="480"
+                Text="Waiting on you..."
+                TextEl="p4text"
+                Cls="custom"
+                />
             <div class="status"><b>Status:</b> <span id="p4text"></span></div>
         </p>
     </form>

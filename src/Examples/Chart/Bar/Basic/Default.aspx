@@ -37,10 +37,7 @@
            along the horizontal axis. Tapping or hovering a bar will highlight it.
         </p>
 
-        <ext:Panel
-            runat="server"
-            Width="960"
-            Height="600">
+        <ext:Panel runat="server" Width="960" Height="600">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
             </LayoutConfig>
@@ -73,10 +70,7 @@
                     Height="500">
                     <AnimationConfig Duration="500" Easing="EaseOut" />
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -124,9 +118,7 @@
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries
-                            XField="Name"
-                            YField="Data1">
+                        <ext:BarSeries XField="Name" YField="Data1">
                             <StyleSpec>
                                 <ext:SeriesSprite Opacity="0.8" MinGapWidth="10" />
                             </StyleSpec>

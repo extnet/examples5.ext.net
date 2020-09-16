@@ -161,7 +161,14 @@
             </SelectionModel>
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="Year" DataIndex="year" Width="70" MinWidth="70" Locked="true" />
+                    <ext:Column
+                        runat="server"
+                        Text="Year"
+                        DataIndex="year"
+                        Width="70"
+                        MinWidth="70"
+                        Locked="true"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Jan"

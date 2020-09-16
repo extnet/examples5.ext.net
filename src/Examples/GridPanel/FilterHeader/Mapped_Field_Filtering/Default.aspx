@@ -226,10 +226,7 @@
         <p>The filter under the 'Department' column crops off the 'Department ' string from the name, so anything not matching A B C D will not return any value.</p>
         <p>The department cells can be edited and switched over other values, from which they will be taken away or included depending on the active filter.</p>
 
-        <ext:GridPanel
-            runat="server"
-            Title="List"
-            IconCls="x-md md-icon-open-in-new">
+        <ext:GridPanel runat="server" Title="List" IconCls="x-md md-icon-open-in-new">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -249,7 +246,11 @@
                     <ext:Column runat="server" Text="ID" DataIndex="ID" />
                     <ext:Column runat="server" Text="NAME" DataIndex="Name" />
                     <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" />
-                    <ext:Column runat="server" Text="DEPARTMENT" DataIndex="DepartmentId" Width="240">
+                    <ext:Column
+                        runat="server"
+                        Text="DEPARTMENT"
+                        DataIndex="DepartmentId"
+                        Width="240">
                         <Renderer Fn="departmentRenderer" />
                         <Editor>
                             <ext:ComboBox

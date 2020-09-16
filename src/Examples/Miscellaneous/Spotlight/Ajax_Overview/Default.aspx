@@ -69,7 +69,11 @@
             </DirectEvents>
         </ext:Button>
 
-        <ext:Panel runat="server" Border="false" Layout="Table" ShrinkWrap="Width">
+        <ext:Panel
+            runat="server"
+            Border="false"
+            Layout="Table"
+            ShrinkWrap="Width">
             <LayoutConfig>
                 <ext:TableLayoutConfig Columns="3" />
             </LayoutConfig>

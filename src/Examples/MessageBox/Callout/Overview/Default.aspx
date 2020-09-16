@@ -75,7 +75,11 @@
 
     <ext:Button runat="server" Text="Click">
         <Callouts>
-            <ext:Callout runat="server" Title="Header" IconCls="x-md md-icon-comment" BodyStyle="padding:1px;">
+            <ext:Callout
+                runat="server"
+                Title="Header"
+                IconCls="x-md md-icon-comment"
+                BodyStyle="padding:1px;">
                 <HeaderToolbar>
                     <ext:Toolbar runat="server" Flat="true">
                         <Items>
@@ -130,19 +134,37 @@
 
             <ext:Button runat="server" Text="Show on Hover">
                 <Callouts>
-                    <ext:Callout runat="server" Html="<%# Template %>" Width="150" Trigger="Hover" />
+                    <ext:Callout
+                        runat="server"
+                        Html="<%# Template %>"
+                        Width="150"
+                        Trigger="Hover"
+                        />
                 </Callouts>
             </ext:Button>
 
             <ext:Button runat="server" Text="Manual" Handler="this.callouts[0].toggle();">
                 <Callouts>
-                    <ext:Callout runat="server" Html="<%# Template %>" Width="150" Trigger="Manual" />
+                    <ext:Callout
+                        runat="server"
+                        Html="<%# Template %>"
+                        Width="150"
+                        Trigger="Manual"
+                        />
                 </Callouts>
             </ext:Button>
 
-            <ext:TextField runat="server" AllowBlank="false" MsgTarget="None" Note="Show on Focus">
+            <ext:TextField
+                runat="server"
+                AllowBlank="false"
+                MsgTarget="None"
+                Note="Show on Focus">
                 <Callouts>
-                    <ext:Callout runat="server" Title="Errors" Width="150" Trigger="Focus">
+                    <ext:Callout
+                        runat="server"
+                        Title="Errors"
+                        Width="150"
+                        Trigger="Focus">
                         <Listeners>
                             <BeforeShow Handler="var errors = this.calloutOwner.getErrors(); if (errors.length == 0) {return false;} this.setHtml(errors.join('<br/>'));" />
                         </Listeners>

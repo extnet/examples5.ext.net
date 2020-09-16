@@ -135,13 +135,25 @@
                             Sortable="true">
                             <Renderer Fn="change" />
                         </ext:Column>
-                        <ext:Column runat="server" Text="Change %" DataIndex="pctChange" Width="75" Sortable="true">
+                        <ext:Column
+                            runat="server"
+                            Text="Change %"
+                            DataIndex="pctChange"
+                            Width="75"
+                            Sortable="true">
                             <Renderer Fn="pctChange" />
                         </ext:Column>
                     </Columns>
                 </ext:Column>
 
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="85" Sortable="true" Format="dd/MM/yyyy" />
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="85"
+                    Sortable="true"
+                    Format="dd/MM/yyyy"
+                    />
             </Columns>
         </ColumnModel>
     </ext:GridPanel>

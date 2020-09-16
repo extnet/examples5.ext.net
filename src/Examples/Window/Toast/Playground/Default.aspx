@@ -134,9 +134,18 @@
             then click <code>Toast!</code> Button.
         </p>
 
-        <ext:Panel runat="server" Width="720" BodyPadding="18" ButtonAlign="Right">
+        <ext:Panel
+            runat="server"
+            Width="720"
+            BodyPadding="18"
+            ButtonAlign="Right">
             <Items>
-                <ext:TextArea ID="toastText" runat="server" FieldLabel="Message" Text="My toast!" />
+                <ext:TextArea
+                    ID="toastText"
+                    runat="server"
+                    FieldLabel="Message"
+                    Text="My toast!"
+                    />
                 <ext:FieldSet runat="server" Title="Title">
                     <Items>
                         <ext:Checkbox ID="enableTitle" runat="server" FieldLabel="Enable" />
@@ -146,7 +155,11 @@
                 <ext:FieldSet runat="server" Title="Position">
                     <Items>
                         <ext:Checkbox ID="enableToastAlign" runat="server" FieldLabel="Enable" />
-                        <ext:ComboBox ID="toastAlign" runat="server" ForceSelection="true" FieldLabel="Position">
+                        <ext:ComboBox
+                            ID="toastAlign"
+                            runat="server"
+                            ForceSelection="true"
+                            FieldLabel="Position">
                             <Items>
                                 <ext:ListItem Text="Bottom Right" Value="br" />
                                 <ext:ListItem Text="Bottom Left" Value="bl" />
@@ -183,7 +196,12 @@
                             </Defaults>
                             <Items>
                                 <ext:Checkbox ID="closemd" runat="server" FieldLabel="Close on page click" />
-                                <ext:Checkbox ID="autoClose" runat="server" FieldLabel="Close after delay" Checked="true" />
+                                <ext:Checkbox
+                                    ID="autoClose"
+                                    runat="server"
+                                    FieldLabel="Close after delay"
+                                    Checked="true"
+                                    />
                             </Items>
                         </ext:Container>
                         <ext:TextField

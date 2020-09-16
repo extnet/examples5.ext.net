@@ -55,7 +55,14 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="url(#sfblackblue)" Path="<%# SAFARI_PATH %>" AutoDataBind="true" Scaling="11.5" TranslationX="280" TranslationY="147" />
+                                        <ext:PathSprite
+                                            FillStyle="url(#sfblackblue)"
+                                            Path="<%# SAFARI_PATH %>"
+                                            AutoDataBind="true"
+                                            Scaling="11.5"
+                                            TranslationX="280"
+                                            TranslationY="147"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>
@@ -92,10 +99,30 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="#C5D83E" Path="<%# SENCHA_PATH1 %>" AutoDataBind="true" TranslationX="190" />
-                                        <ext:PathSprite FillStyle="url(#grad1)" Path="<%# SENCHA_PATH2 %>" AutoDataBind="true" TranslationX="190" />
-                                        <ext:PathSprite FillStyle="url(#grad2)" Path="<%# SENCHA_PATH3 %>" AutoDataBind="true" TranslationX="190" />
-                                        <ext:PathSprite FillStyle="url(#grad3)" Path="<%# SENCHA_PATH4 %>" AutoDataBind="true" TranslationX="190" />
+                                        <ext:PathSprite
+                                            FillStyle="#C5D83E"
+                                            Path="<%# SENCHA_PATH1 %>"
+                                            AutoDataBind="true"
+                                            TranslationX="190"
+                                            />
+                                        <ext:PathSprite
+                                            FillStyle="url(#grad1)"
+                                            Path="<%# SENCHA_PATH2 %>"
+                                            AutoDataBind="true"
+                                            TranslationX="190"
+                                            />
+                                        <ext:PathSprite
+                                            FillStyle="url(#grad2)"
+                                            Path="<%# SENCHA_PATH3 %>"
+                                            AutoDataBind="true"
+                                            TranslationX="190"
+                                            />
+                                        <ext:PathSprite
+                                            FillStyle="url(#grad3)"
+                                            Path="<%# SENCHA_PATH4 %>"
+                                            AutoDataBind="true"
+                                            TranslationX="190"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>
@@ -113,7 +140,14 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="url(#ffblackblue)" Path="<%# FIREFOX_PATH %>" AutoDataBind="true" Scaling="11.5" TranslationX="280" TranslationY="147" />
+                                        <ext:PathSprite
+                                            FillStyle="url(#ffblackblue)"
+                                            Path="<%# FIREFOX_PATH %>"
+                                            AutoDataBind="true"
+                                            Scaling="11.5"
+                                            TranslationX="280"
+                                            TranslationY="147"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>
@@ -131,7 +165,14 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="url(#ieblackblue)" Path="<%# IE_PATH %>" AutoDataBind="true" Scaling="11.5" TranslationX="280" TranslationY="147" />
+                                        <ext:PathSprite
+                                            FillStyle="url(#ieblackblue)"
+                                            Path="<%# IE_PATH %>"
+                                            AutoDataBind="true"
+                                            Scaling="11.5"
+                                            TranslationX="280"
+                                            TranslationY="147"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>
@@ -149,7 +190,14 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="url(#wkblackblue)" Path="<%# CHROME_PATH %>" AutoDataBind="true" Scaling="11.5" TranslationX="280" TranslationY="147" />
+                                        <ext:PathSprite
+                                            FillStyle="url(#wkblackblue)"
+                                            Path="<%# CHROME_PATH %>"
+                                            AutoDataBind="true"
+                                            Scaling="11.5"
+                                            TranslationX="280"
+                                            TranslationY="147"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>
@@ -167,7 +215,14 @@
                                         </ext:LinearGradient>
                                     </Gradients>
                                     <Items>
-                                        <ext:PathSprite FillStyle="url(#opblackblue)" Path="<%# OPERA_PATH %>" AutoDataBind="true" Scaling="11.5" TranslationX="280" TranslationY="147" />
+                                        <ext:PathSprite
+                                            FillStyle="url(#opblackblue)"
+                                            Path="<%# OPERA_PATH %>"
+                                            AutoDataBind="true"
+                                            Scaling="11.5"
+                                            TranslationX="280"
+                                            TranslationY="147"
+                                            />
                                     </Items>
                                 </ext:DrawContainer>
                             </Items>

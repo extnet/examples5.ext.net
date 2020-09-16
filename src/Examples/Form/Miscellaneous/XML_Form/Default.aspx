@@ -60,16 +60,24 @@
             </ErrorReader>
 
             <Items>
-                <ext:FieldSet
-                    runat="server"
-                    Title="Contact Information">
+                <ext:FieldSet runat="server" Title="Contact Information">
                     <Defaults>
                         <ext:Parameter Name="width" Value="280" />
                     </Defaults>
 
                     <Items>
-                        <ext:TextField runat="server" FieldLabel="First Name" EmptyText="First Name" Name="first" />
-                        <ext:TextField runat="server" FieldLabel="Last Name" EmptyText="Last Name" Name="last" />
+                        <ext:TextField
+                            runat="server"
+                            FieldLabel="First Name"
+                            EmptyText="First Name"
+                            Name="first"
+                            />
+                        <ext:TextField
+                            runat="server"
+                            FieldLabel="Last Name"
+                            EmptyText="Last Name"
+                            Name="last"
+                            />
                         <ext:TextField runat="server" FieldLabel="Company" Name="company" />
                         <ext:TextField
                             runat="server"
@@ -86,7 +94,14 @@
                                 <ext:ListItem Text="Ohio" Value="OH" />
                             </Items>
                         </ext:ComboBox>
-                        <ext:DateField runat="server" FieldLabel="Date of Birth" Name="dob" AllowBlank="false" MaxDate="<%# DateTime.Now.Date %>" AutoDataBind="true" />
+                        <ext:DateField
+                            runat="server"
+                            FieldLabel="Date of Birth"
+                            Name="dob"
+                            AllowBlank="false"
+                            MaxDate="<%# DateTime.Now.Date %>"
+                            AutoDataBind="true"
+                            />
                     </Items>
                 </ext:FieldSet>
             </Items>
@@ -98,7 +113,11 @@
                     </Listeners>
                 </ext:Button>
 
-                <ext:Button runat="server" Text="Submit" Disabled="true" FormBind="true">
+                <ext:Button
+                    runat="server"
+                    Text="Submit"
+                    Disabled="true"
+                    FormBind="true">
                     <Listeners>
                         <Click Handler="this.up('form').getForm().submit({ url: 'xml-form-errors.xml', submitEmptyText: false, waitMsg: 'Saving Data...', method: 'GET' });" />
                     </Listeners>

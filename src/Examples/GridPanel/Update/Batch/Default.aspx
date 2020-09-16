@@ -247,7 +247,11 @@
 
         <ext:Store ID="Store1" runat="server">
             <Model>
-                <ext:Model runat="server" IDProperty="Id" Name="Person" ClientIdProperty="PhantomId">
+                <ext:Model
+                    runat="server"
+                    IDProperty="Id"
+                    Name="Person"
+                    ClientIdProperty="PhantomId">
                     <Fields>
                         <ext:ModelField Name="Id" Type="Int" AllowNull="true" />
                         <ext:ModelField Name="Email" />
@@ -331,23 +335,39 @@
             StyleSpec="margin-top: 10px">
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="ID" Width="40" DataIndex="Id">
+                    <ext:Column
+                        runat="server"
+                        Text="ID"
+                        Width="40"
+                        DataIndex="Id">
                         <Renderer Handler="return record.phantom ? '' : value;" />
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="Email" Flex="1" DataIndex="Email">
+                    <ext:Column
+                        runat="server"
+                        Text="Email"
+                        Flex="1"
+                        DataIndex="Email">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="First" Flex="1" DataIndex="First">
+                    <ext:Column
+                        runat="server"
+                        Text="First"
+                        Flex="1"
+                        DataIndex="First">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="Last" Flex="1" DataIndex="Last">
+                    <ext:Column
+                        runat="server"
+                        Text="Last"
+                        Flex="1"
+                        DataIndex="Last">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
@@ -400,7 +420,12 @@
                     <DirectEvents>
                         <Click OnEvent="SaveClick" Before="return #{Store1}.isDirty();">
                             <ExtraParams>
-                                <ext:Parameter Name="data" Value="#{Store1}.getChangedData()" Mode="Raw" Encode="true" />
+                                <ext:Parameter
+                                    Name="data"
+                                    Value="#{Store1}.getChangedData()"
+                                    Mode="Raw"
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                         </Click>
                     </DirectEvents>

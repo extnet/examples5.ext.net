@@ -118,10 +118,7 @@
                         </Gradient>
                     </Background>
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -150,9 +147,7 @@
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:AreaSeries
-                            XField="Name"
-                            YField="Data1,Data2,Data3,Data4,Data5,Data6,Data7">
+                        <ext:AreaSeries XField="Name" YField="Data1,Data2,Data3,Data4,Data5,Data6,Data7">
                         </ext:AreaSeries>
                     </Series>
                 </ext:CartesianChart>

@@ -213,14 +213,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server">
+                <ext:CartesianChart ID="Chart1" runat="server">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -249,17 +244,13 @@
                     <LegendConfig runat="server" Dock="Bottom" />
 
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Left"
-                            Fields="G1,G2,G3"
-                            Minimum="0">
+                        <ext:NumericAxis Position="Left" Fields="G1,G2,G3" Minimum="0">
                             <Listeners>
                                 <RangeChange Fn="rangeChange" />
                             </Listeners>
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis Position="Bottom" Fields="Name" VisibleRange="0,0.75">
-                        </ext:CategoryAxis>
+                        <ext:CategoryAxis Position="Bottom" Fields="Name" VisibleRange="0,0.75" />
                     </Axes>
                     <Series>
                         <ext:LineSeries
@@ -268,7 +259,14 @@
                             Title="Square"
                             Fill="true">
                             <StyleSpec>
-                                <ext:SeriesSprite Smooth="true" MiterLimit="3" LineCap="Miter" StrokeOpacity="1" FillOpacity="0.7" LineWidth="8" />
+                                <ext:SeriesSprite
+                                    Smooth="true"
+                                    MiterLimit="3"
+                                    LineCap="Miter"
+                                    StrokeOpacity="1"
+                                    FillOpacity="0.7"
+                                    LineWidth="8"
+                                    />
                             </StyleSpec>
                             <HighlightConfig>
                                 <ext:Sprite Scaling="0.9" />
@@ -286,10 +284,7 @@
                             </Marker>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            XField="Name"
-                            YField="G2"
-                            Title="Circle">
+                        <ext:LineSeries XField="Name" YField="G2" Title="Circle">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.7" LineWidth="8"  />
                             </StyleSpec>
@@ -309,10 +304,7 @@
                             </Marker>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            XField="Name"
-                            YField="G3"
-                            Title="Pentagon">
+                        <ext:LineSeries XField="Name" YField="G3" Title="Pentagon">
                             <StyleSpec>
                                 <ext:Sprite Opacity="0.7" LineWidth="8"  />
                             </StyleSpec>

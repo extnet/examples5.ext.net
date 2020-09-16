@@ -166,7 +166,11 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Available Countries" DataIndex="Name" Flex="1">
+                            <ext:Column
+                                runat="server"
+                                Text="Available Countries"
+                                DataIndex="Name"
+                                Flex="1">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
@@ -187,8 +191,17 @@
                     Border="false"
                     Layout="Anchor">
                     <Items>
-                        <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" AnchorVertical="40%" />
-                        <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" BodyPadding="18">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            BodyStyle="background-color: transparent;"
+                            AnchorVertical="40%"
+                            />
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            BodyStyle="background-color: transparent;"
+                            BodyPadding="18">
                             <Items>
                                 <ext:Button runat="server" Icon="ResultsetNext" StyleSpec="margin-bottom:2px;">
                                     <Listeners>
@@ -247,7 +260,12 @@
                     </Store>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="Selected Countries"
+                                DataIndex="Name"
+                                Flex="1"
+                                />
                         </Columns>
                     </ColumnModel>
                     <SelectionModel>

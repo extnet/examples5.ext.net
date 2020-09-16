@@ -86,9 +86,17 @@
 
         <h1>Add mode of Store</h1>
 
-        <ext:GridPanel ID="GridPanel1" runat="server" Title="Grid" Width="960">
+        <ext:GridPanel
+            ID="GridPanel1"
+            runat="server"
+            Title="Grid"
+            Width="960">
             <Store>
-                <ext:Store ID="Store1" runat="server" OnReadData="AddRecords" WarningOnDirty="false">
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    OnReadData="AddRecords"
+                    WarningOnDirty="false">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
@@ -116,7 +124,11 @@
             <BottomBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button ID="MoreButton" runat="server" Text="More" IconCls="x-md md-icon-add-circle-outline">
+                        <ext:Button
+                            ID="MoreButton"
+                            runat="server"
+                            Text="More"
+                            IconCls="x-md md-icon-add-circle-outline">
                             <Listeners>
                                 <Click Handler="#{Store1}.reload({addRecords:true, start: #{Store1}.getCount(), params : {count: #{Store1}.getCount()} });" />
                             </Listeners>

@@ -185,7 +185,11 @@
                                     <ext:NumberFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:Column ID="CompanyColumn" runat="server" Text="Company" DataIndex="Company">
+                            <ext:Column
+                                ID="CompanyColumn"
+                                runat="server"
+                                Text="Company"
+                                DataIndex="Company">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
@@ -196,7 +200,12 @@
                                     <ext:NumberFilter />
                                 </Filter>
                             </ext:Column>
-                            <ext:DateColumn runat="server" Text="Date" DataIndex="Date" Align="Center" Format="yyyy-MM-dd">
+                            <ext:DateColumn
+                                runat="server"
+                                Text="Date"
+                                DataIndex="Date"
+                                Align="Center"
+                                Format="yyyy-MM-dd">
                                 <Filter>
                                     <ext:DateFilter />
                                 </Filter>
@@ -206,7 +215,11 @@
                                     <ext:ListFilter Options="extra small,small,medium,large,extra large" />
                                 </Filter>
                             </ext:Column>
-                            <ext:Column runat="server" Text="Visible" DataIndex="Visible" Align="Center">
+                            <ext:Column
+                                runat="server"
+                                Text="Visible"
+                                DataIndex="Visible"
+                                Align="Center">
                                 <Renderer Handler="return (value) ? 'Yes':'No';" />
                                 <Filter>
                                     <ext:BooleanFilter />

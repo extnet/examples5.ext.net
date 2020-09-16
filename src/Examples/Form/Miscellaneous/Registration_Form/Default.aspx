@@ -212,10 +212,7 @@
             </Items>
 
             <DockedItems>
-                <ext:Container
-                    runat="server"
-                    Dock="Bottom"
-                    PaddingSpec="10 10 5">
+                <ext:Container runat="server" Dock="Bottom" PaddingSpec="10 10 5">
 
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Middle" />

@@ -77,12 +77,26 @@
 
         <ext:Toolbar runat="server" Width="822">
             <Items>
-                <ext:Button ID="MenuButton" runat="server" Text="Button w/Menu" IconCls="x-md md-icon-arrow-circle-down">
+                <ext:Button
+                    ID="MenuButton"
+                    runat="server"
+                    Text="Button w/Menu"
+                    IconCls="x-md md-icon-arrow-circle-down">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
-                                <ext:CheckMenuItem runat="server" Checked="true" Text="I like ASP.NET" CheckHandler="onItemCheck" />
-                                <ext:CheckMenuItem runat="server" Checked="true" Text="Item 2" CheckHandler="onItemCheck" />
+                                <ext:CheckMenuItem
+                                    runat="server"
+                                    Checked="true"
+                                    Text="I like ASP.NET"
+                                    CheckHandler="onItemCheck"
+                                    />
+                                <ext:CheckMenuItem
+                                    runat="server"
+                                    Checked="true"
+                                    Text="Item 2"
+                                    CheckHandler="onItemCheck"
+                                    />
                                 <ext:CheckMenuItem runat="server" Text="Item 3" CheckHandler="onItemCheck" />
                                 <ext:MenuSeparator />
                                 <ext:MenuItem runat="server" Text="Radio Options">
@@ -90,10 +104,31 @@
                                         <ext:Menu runat="server">
                                             <Items>
                                                 <ext:MenuItem runat="server" Text="<b class='menu-title'>Choose a Theme</b>" Plain="true" />
-                                                <ext:CheckMenuItem runat="server" Text="Aero Glass" Checked="true" Group="theme" CheckHandler="onItemCheck" />
-                                                <ext:CheckMenuItem runat="server" Text="Vista Black" Group="theme" CheckHandler="onItemCheck" />
-                                                <ext:CheckMenuItem runat="server" Text="Gray Theme" Group="theme" CheckHandler="onItemCheck" />
-                                                <ext:CheckMenuItem runat="server" Text="Default Theme" Group="theme" CheckHandler="onItemCheck" />
+                                                <ext:CheckMenuItem
+                                                    runat="server"
+                                                    Text="Aero Glass"
+                                                    Checked="true"
+                                                    Group="theme"
+                                                    CheckHandler="onItemCheck"
+                                                    />
+                                                <ext:CheckMenuItem
+                                                    runat="server"
+                                                    Text="Vista Black"
+                                                    Group="theme"
+                                                    CheckHandler="onItemCheck"
+                                                    />
+                                                <ext:CheckMenuItem
+                                                    runat="server"
+                                                    Text="Gray Theme"
+                                                    Group="theme"
+                                                    CheckHandler="onItemCheck"
+                                                    />
+                                                <ext:CheckMenuItem
+                                                    runat="server"
+                                                    Text="Default Theme"
+                                                    Group="theme"
+                                                    CheckHandler="onItemCheck"
+                                                    />
                                             </Items>
                                         </ext:Menu>
                                     </Menu>
@@ -150,11 +185,21 @@
                         </ext:Menu>
                     </Menu>
                     <ToolTips>
-                        <ext:ToolTip ID="Tip1" runat="server" Title="Tip Title" Html="This is a an example QuickTip for a toolbar item" />
+                        <ext:ToolTip
+                            ID="Tip1"
+                            runat="server"
+                            Title="Tip Title"
+                            Html="This is a an example QuickTip for a toolbar item"
+                            />
                     </ToolTips>
                 </ext:SplitButton>
                 <ext:ToolbarSeparator />
-                <ext:Button runat="server" Text="Toggle Me" EnableToggle="true" ToggleHandler="onItemToggle" />
+                <ext:Button
+                    runat="server"
+                    Text="Toggle Me"
+                    EnableToggle="true"
+                    ToggleHandler="onItemToggle"
+                    />
                 <ext:ToolbarSeparator />
                 <ext:Button runat="server" IconCls="x-md md-icon-grid-on">
                     <ToolTips>

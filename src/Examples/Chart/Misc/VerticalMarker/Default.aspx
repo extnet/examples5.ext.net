@@ -88,7 +88,11 @@
                         </ext:NumericAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries XField="Date" YField="Visits" Smooth="3" ShowMarkers="false">
+                        <ext:LineSeries
+                            XField="Date"
+                            YField="Visits"
+                            Smooth="3"
+                            ShowMarkers="false">
                         </ext:LineSeries>
                     </Series>
                 </ext:CartesianChart>
@@ -115,8 +119,7 @@
                         <ext:VerticalMarker runat="server" ShowXLabel="false" Snap="true" />
                     </Plugins>
                     <Store>
-                        <ext:Store
-                            runat="server">
+                        <ext:Store runat="server">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -141,10 +144,7 @@
                             </GridConfig>
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Position="Bottom"
-                            Fields="Name"
-                            Title="Month of the Year">
+                        <ext:CategoryAxis Position="Bottom" Fields="Name" Title="Month of the Year">
                             </ext:CategoryAxis>
                     </Axes>
                     <Series>

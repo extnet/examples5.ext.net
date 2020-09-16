@@ -205,7 +205,13 @@
                         DataIndex="rating"
                         Sortable="false"
                         />
-                    <ext:Column runat="server" Text="Salary" Width="125" DataIndex="salary" Sortable="false" Align="End">
+                    <ext:Column
+                        runat="server"
+                        Text="Salary"
+                        Width="125"
+                        DataIndex="salary"
+                        Sortable="false"
+                        Align="End">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                 </Columns>

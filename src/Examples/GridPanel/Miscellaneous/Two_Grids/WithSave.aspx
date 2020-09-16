@@ -117,7 +117,11 @@
                     Flex="1">
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Available Countries" DataIndex="Name" Flex="1">
+                            <ext:Column
+                                runat="server"
+                                Text="Available Countries"
+                                DataIndex="Name"
+                                Flex="1">
                                 <Filter>
                                     <ext:StringFilter />
                                 </Filter>
@@ -131,10 +135,26 @@
                         <ext:GridFilters ID="GridFilters1" runat="server" />
                     </Plugins>
                 </ext:GridPanel>
-                <ext:Panel ID="Panel2" runat="server" Width="35" BodyStyle="background-color: transparent;" Border="false" Layout="Anchor">
+                <ext:Panel
+                    ID="Panel2"
+                    runat="server"
+                    Width="35"
+                    BodyStyle="background-color: transparent;"
+                    Border="false"
+                    Layout="Anchor">
                     <Items>
-                        <ext:Panel runat="server" Border="false" BodyStyle="background-color: transparent;" AnchorVertical="40%" />
-                        <ext:Panel ID="Panel1" runat="server" Border="false" BodyStyle="background-color: transparent;" BodyPadding="18">
+                        <ext:Panel
+                            runat="server"
+                            Border="false"
+                            BodyStyle="background-color: transparent;"
+                            AnchorVertical="40%"
+                            />
+                        <ext:Panel
+                            ID="Panel1"
+                            runat="server"
+                            Border="false"
+                            BodyStyle="background-color: transparent;"
+                            BodyPadding="18">
                             <Items>
                                 <ext:Button runat="server" Icon="ResultsetNext" StyleSpec="margin-bottom:2px;">
                                     <Listeners>
@@ -182,7 +202,12 @@
                     </Listeners>
                     <ColumnModel runat="server">
                         <Columns>
-                            <ext:Column runat="server" Text="Selected Countries" DataIndex="Name" Flex="1" />
+                            <ext:Column
+                                runat="server"
+                                Text="Selected Countries"
+                                DataIndex="Name"
+                                Flex="1"
+                                />
                         </Columns>
                     </ColumnModel>
                     <SelectionModel>
@@ -191,12 +216,20 @@
                 </ext:GridPanel>
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Save Selected Countries" IconCls="x-md md-icon-save">
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Save Selected Countries"
+                    IconCls="x-md md-icon-save">
                     <Listeners>
                         <Click Handler="#{GridPanel2}.store.sync();" />
                     </Listeners>
                 </ext:Button>
-                <ext:Button ID="Button2" runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
+                <ext:Button
+                    ID="Button2"
+                    runat="server"
+                    Text="Cancel"
+                    IconCls="x-md md-icon-cancel">
                     <Listeners>
                         <Click Handler="CountrySelector.removeAll(GridPanel1, GridPanel2);" />
                     </Listeners>

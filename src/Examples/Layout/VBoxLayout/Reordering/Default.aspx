@@ -10,7 +10,11 @@
 <body>
     <ext:ResourceManager runat="server" />
 
-    <ext:Window runat="server" Width="360" Height="500" Title="VBox window (drag below panels)">
+    <ext:Window
+        runat="server"
+        Width="360"
+        Height="500"
+        Title="VBox window (drag below panels)">
         <LayoutConfig>
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
@@ -18,11 +22,36 @@
             <ext:Parameter Name="margin" Value="2" Mode="Raw" />
         </Defaults>
         <Items>
-            <ext:Panel runat="server" Frame="true" Flex="1" Title="Panel 1" />
-            <ext:Panel runat="server" Frame="true" Flex="1" Title="Panel 2" />
-            <ext:Panel runat="server" Frame="true" Flex="1" Title="Panel 3" />
-            <ext:Panel runat="server" Frame="true" Flex="1" Title="Panel 4" />
-            <ext:Panel runat="server" Frame="true" Flex="1" Title="Panel 5" />
+            <ext:Panel
+                runat="server"
+                Frame="true"
+                Flex="1"
+                Title="Panel 1"
+                />
+            <ext:Panel
+                runat="server"
+                Frame="true"
+                Flex="1"
+                Title="Panel 2"
+                />
+            <ext:Panel
+                runat="server"
+                Frame="true"
+                Flex="1"
+                Title="Panel 3"
+                />
+            <ext:Panel
+                runat="server"
+                Frame="true"
+                Flex="1"
+                Title="Panel 4"
+                />
+            <ext:Panel
+                runat="server"
+                Frame="true"
+                Flex="1"
+                Title="Panel 5"
+                />
         </Items>
         <Plugins>
             <ext:BoxReorderer runat="server" />

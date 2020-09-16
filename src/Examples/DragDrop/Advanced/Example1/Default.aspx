@@ -93,13 +93,21 @@
 
         <%--<a href="http://www.extjs.com/learn/Tutorial:Advanced_Custom_Drag_and_Drop_Part_1">Tutorial:Advanced Custom Drag and Drop Part 1</a>--%>
 
-        <ext:DragZone runat="server" Target="dd1-ct" Group="group" Scroll="false">
+        <ext:DragZone
+            runat="server"
+            Target="dd1-ct"
+            Group="group"
+            Scroll="false">
             <GetDragData Fn="getDragData" />
             <OnInitDrag Fn="onInitDrag" />
             <GetRepairXY Fn="getRepairXY" />
         </ext:DragZone>
 
-        <ext:DragZone runat="server" Target="dd2-ct" Group="group" Scroll="false">
+        <ext:DragZone
+            runat="server"
+            Target="dd2-ct"
+            Group="group"
+            Scroll="false">
             <GetDragData Fn="getDragData" />
             <OnInitDrag Fn="onInitDrag" />
             <GetRepairXY Fn="getRepairXY" />

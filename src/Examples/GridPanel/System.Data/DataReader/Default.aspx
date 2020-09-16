@@ -92,7 +92,12 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column runat="server" Text="Supplier ID" DataIndex="SupplierID" />
-                    <ext:Column runat="server" Text="Company Name" DataIndex="CompanyName" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Company Name"
+                        DataIndex="CompanyName"
+                        Flex="1"
+                        />
                     <ext:Column runat="server" Text="Contact Name" DataIndex="ContactName" />
                     <ext:Column runat="server" Text="Contact Title" DataIndex="ContactTitle" />
                 </Columns>

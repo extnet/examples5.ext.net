@@ -142,10 +142,7 @@
             </Items>
 
             <DockedItems>
-                <ext:Toolbar
-                    ID="TopToolbar1"
-                    runat="server"
-                    Dock="Top">
+                <ext:Toolbar ID="TopToolbar1" runat="server" Dock="Top">
                 </ext:Toolbar>
 
                 <ext:PagingToolbar

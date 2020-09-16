@@ -49,10 +49,7 @@
 
         <h2>MultiCombo with WrapBySquareBrackets</h2>
 
-        <ext:MultiCombo
-            runat="server"
-            WrapBySquareBrackets="true"
-            Width="260">
+        <ext:MultiCombo runat="server" WrapBySquareBrackets="true" Width="260">
             <Items>
                 <ext:ListItem Text="Item 1" Value="1" />
                 <ext:ListItem Text="Item 2" Value="2" />

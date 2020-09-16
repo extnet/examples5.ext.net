@@ -88,7 +88,12 @@
 
                 <ext:TextField runat="server" FieldLabel="Custom common placeholder" Note="(999) 999-9999  (Always visible mask)">
                     <Plugins>
-                        <ext:InputMask runat="server" Mask="(999) 999-9999" Placeholder="#" AlwaysShow="true" />
+                        <ext:InputMask
+                            runat="server"
+                            Mask="(999) 999-9999"
+                            Placeholder="#"
+                            AlwaysShow="true"
+                            />
                     </Plugins>
                 </ext:TextField>
 

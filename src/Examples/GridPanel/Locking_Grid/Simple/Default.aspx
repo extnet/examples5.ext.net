@@ -96,7 +96,14 @@
         <ColumnModel>
             <Columns>
                 <ext:RowNumbererColumn runat="server" />
-                <ext:Column runat="server" Text="Company<br>Name" DataIndex="company" Width="200" Locked="true" Sortable="false" />
+                <ext:Column
+                    runat="server"
+                    Text="Company<br>Name"
+                    DataIndex="company"
+                    Width="200"
+                    Locked="true"
+                    Sortable="false"
+                    />
                 <ext:Column
                     runat="server"
                     Text="Price"
@@ -105,13 +112,26 @@
                     Lockable="false">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
-                <ext:Column runat="server" Text="Change" DataIndex="change" Width="125">
+                <ext:Column
+                    runat="server"
+                    Text="Change"
+                    DataIndex="change"
+                    Width="125">
                     <Renderer Fn="change" />
                 </ext:Column>
-                <ext:Column runat="server" Text="% Change" DataIndex="pctChange" Width="125">
+                <ext:Column
+                    runat="server"
+                    Text="% Change"
+                    DataIndex="pctChange"
+                    Width="125">
                     <Renderer Fn="pctChange" />
                 </ext:Column>
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="135" />
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="135"
+                    />
             </Columns>
         </ColumnModel>
     </ext:GridPanel>

@@ -56,7 +56,12 @@
                     <ext:BooleanColumn runat="server" DataIndex="booleanCol" Text="Boolean" />
                     <ext:CheckColumn runat="server" DataIndex="booleanCol" Text="Check" />
                     <ext:DateColumn runat="server" DataIndex="dateCol" Text="Date" />
-                    <ext:NumberColumn runat="server" DataIndex="numberCol" Text="Number" Format="0.00" />
+                    <ext:NumberColumn
+                        runat="server"
+                        DataIndex="numberCol"
+                        Text="Number"
+                        Format="0.00"
+                        />
                     <ext:TemplateColumn runat="server" DataIndex="" MenuDisabled="true" Text="Template">
                         <Template runat="server">
                             <Html>

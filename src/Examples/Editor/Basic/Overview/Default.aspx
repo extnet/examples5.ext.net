@@ -89,7 +89,11 @@
                                     OverCls="editable-over"
                                     Text="Double click editing">
                                     <Editor>
-                                        <ext:Editor runat="server" ActivateEvent="dblclick" Shadow="false" Alignment="tl-tl?">
+                                        <ext:Editor
+                                            runat="server"
+                                            ActivateEvent="dblclick"
+                                            Shadow="false"
+                                            Alignment="tl-tl?">
                                             <AutoSizeConfig Width="BoundEl" />
                                         </ext:Editor>
                                     </Editor>
@@ -114,9 +118,19 @@
                                     Cls="editable editableBlock"
                                     Html="<hr/><p>With TextArea</p><p>Line1</p><p>Line2</p><hr/>">
                                     <Editor>
-                                        <ext:Editor runat="server" Shadow="false" Alignment="tl-tl?" UseHtml="true" AutoSize="true">
+                                        <ext:Editor
+                                            runat="server"
+                                            Shadow="false"
+                                            Alignment="tl-tl?"
+                                            UseHtml="true"
+                                            AutoSize="true">
                                             <Field>
-                                                <ext:TextArea runat="server" Cls="x-form-field-editor" Width="500" ID="TextArea1" />
+                                                <ext:TextArea
+                                                    runat="server"
+                                                    Cls="x-form-field-editor"
+                                                    Width="500"
+                                                    ID="TextArea1"
+                                                    />
                                             </Field>
                                         </ext:Editor>
                                     </Editor>
@@ -142,7 +156,11 @@
                                     Shadow="false"
                                     />
 
-                                <ext:Editor ID="TextBlockEditor" runat="server" AutoSize="true" Shadow="false">
+                                <ext:Editor
+                                    ID="TextBlockEditor"
+                                    runat="server"
+                                    AutoSize="true"
+                                    Shadow="false">
                                     <Field>
                                         <ext:TextArea runat="server" />
                                     </Field>

@@ -134,11 +134,7 @@
             Y="42"
             />
 
-        <ext:ImageSprite
-            Src="sencha.png"
-            X="24"
-            Y="10"
-            />
+        <ext:ImageSprite Src="sencha.png" X="24" Y="10" />
 
         <ext:TextSprite
             Text="={'Forty-three states and the District of Columbia added\njobs in the past 12 months, but the US has 4.8\nmillion fewer jobs than it did in 2008. North Dakota\nled the pack with a 7.2 percent increase, but the\nnational growth rate was only 1.1 percent. Seven\nstates lost jobs.'}"

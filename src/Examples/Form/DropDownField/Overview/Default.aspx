@@ -118,7 +118,11 @@
                             </Menu>
                         </ext:MenuPanel>
 
-                        <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
+                        <ext:MenuPanel
+                            runat="server"
+                            Border="false"
+                            Flex="1"
+                            SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 4" IconCls="x-md md-icon-group" />
@@ -131,7 +135,11 @@
                             </Menu>
                         </ext:MenuPanel>
 
-                        <ext:MenuPanel runat="server" Border="false" Flex="1" SaveSelection="false">
+                        <ext:MenuPanel
+                            runat="server"
+                            Border="false"
+                            Flex="1"
+                            SaveSelection="false">
                             <Menu runat="server" ShowSeparator="false">
                                 <Items>
                                     <ext:MenuItem runat="server" Text="Item 7" IconCls="x-md md-icon-group" />

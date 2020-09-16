@@ -107,10 +107,7 @@
                     Region="Center"
                     BodyPadding="18">
                     <Items>
-                        <ext:Image
-                            ID="Image1"
-                            runat="server"
-                            ImageUrl="../Shared/tokyo-subway-map.jpg">
+                        <ext:Image ID="Image1" runat="server" ImageUrl="../Shared/tokyo-subway-map.jpg">
                             <ResizableConfig runat="server" PreserveRatio="true" HandlesSummary="s e se" />
                             <Listeners>
                                 <Complete Handler="newFactor(#{SizesCombo}, 0);" />

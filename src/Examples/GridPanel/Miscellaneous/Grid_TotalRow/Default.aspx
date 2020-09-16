@@ -150,7 +150,12 @@
                 <ColumnHide Handler="updateTotal(this, #{Container1});" />
             </Listeners>
             <DockedItems>
-                <ext:FieldContainer ID="Container1" runat="server" Layout="HBox" Dock="Bottom" StyleSpec="margin-top:2px;">
+                <ext:FieldContainer
+                    ID="Container1"
+                    runat="server"
+                    Layout="HBox"
+                    Dock="Bottom"
+                    StyleSpec="margin-top:2px;">
                     <Defaults>
                         <ext:Parameter Name="height" Value="24" />
                     </Defaults>

@@ -115,10 +115,7 @@
                          <h3>Click and Drag to Select Items</h3>
                     </Content>
                 </ext:Panel>
-                <ext:Panel
-                    runat="server"
-                    Region="Center"
-                    BodyCssClass="drag-area">
+                <ext:Panel runat="server" Region="Center" BodyCssClass="drag-area">
                     <Listeners>
                         <AfterRender Handler="#{Tpl1}.overwrite(this.body, #{divsData}.divs);#{DragTracker1}.initEl(this.el);" />
                     </Listeners>

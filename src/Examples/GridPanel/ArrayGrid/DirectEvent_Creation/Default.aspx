@@ -176,10 +176,7 @@
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Button
-                        runat="server"
-                        Text="Add GridPanel"
-                        IconCls="x-md md-icon-add-circle-outline">
+                    <ext:Button runat="server" Text="Add GridPanel" IconCls="x-md md-icon-add-circle-outline">
                         <DirectEvents>
                             <Click OnEvent="Button1_Click">
                                 <EventMask ShowMask="true"

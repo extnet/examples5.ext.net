@@ -15,7 +15,11 @@
 
     <h2>Vertical Flat Toolbar</h2>
 
-    <ext:Toolbar runat="server" Layout="Container" Width="25" Flat="true">
+    <ext:Toolbar
+        runat="server"
+        Layout="Container"
+        Width="25"
+        Flat="true">
         <Items>
             <ext:Button runat="server" IconCls="x-md md-icon-check-circle-outline" />
             <ext:Button runat="server" IconCls="x-md md-icon-add-circle-outline" />
@@ -26,11 +30,19 @@
 
     <h2>Table Toolbar</h2>
 
-    <ext:Panel runat="server" Title="Panel" Height="180" Width="360">
+    <ext:Panel
+        runat="server"
+        Title="Panel"
+        Height="180"
+        Width="360">
         <TopBar>
             <ext:Toolbar runat="server">
                 <Items>
-                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="Table">
+                    <ext:Toolbar
+                        runat="server"
+                        Width="109"
+                        Flat="false"
+                        Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="3" />
                         </LayoutConfig>
@@ -52,7 +64,11 @@
 
                     <ext:ToolbarSeparator runat="server" />
 
-                    <ext:Toolbar runat="server" Width="109" Flat="false" Layout="Table">
+                    <ext:Toolbar
+                        runat="server"
+                        Width="109"
+                        Flat="false"
+                        Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="3" />
                         </LayoutConfig>
@@ -78,7 +94,11 @@
 
                     <ext:ToolbarSeparator runat="server" />
 
-                    <ext:Toolbar runat="server" Width="105" Flat="false" Layout="Table">
+                    <ext:Toolbar
+                        runat="server"
+                        Width="105"
+                        Flat="false"
+                        Layout="Table">
                         <LayoutConfig>
                             <ext:TableLayoutConfig Columns="1" />
                         </LayoutConfig>
@@ -119,7 +139,11 @@
 
     <h2>Multiple Toolbars</h2>
 
-    <ext:Panel runat="server" Title="Panel" Width="360" Height="180">
+    <ext:Panel
+        runat="server"
+        Title="Panel"
+        Width="360"
+        Height="180">
         <DockedItems>
             <ext:Toolbar runat="server" Dock="Top">
                 <Items>

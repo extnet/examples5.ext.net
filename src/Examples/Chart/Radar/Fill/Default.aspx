@@ -56,10 +56,7 @@
                     InsetPadding="20">
                     <LegendConfig runat="server" Dock="Right" />
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -76,10 +73,7 @@
                         <ext:RotateInteraction />
                     </Interactions>
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Radial"
-                            Fields="Data1,Data2,Data3"
-                            Grid="true">
+                        <ext:NumericAxis Position="Radial" Fields="Data1,Data2,Data3" Grid="true">
                             <Renderer Handler="return label + '%';" />
                         </ext:NumericAxis>
 

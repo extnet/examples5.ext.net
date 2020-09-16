@@ -46,25 +46,45 @@
             <Items>
                 <ext:Button runat="server" Text="Tooltip: Primary" UI="Primary">
                     <ToolTips>
-                        <ext:ToolTip runat="server" Title="Title" Html="UI = 'Primary'" UI="Primary" />
+                        <ext:ToolTip
+                            runat="server"
+                            Title="Title"
+                            Html="UI = 'Primary'"
+                            UI="Primary"
+                            />
                     </ToolTips>
                 </ext:Button>
 
                 <ext:Button runat="server" Text="Tooltip: Success" UI="Success">
                     <ToolTips>
-                        <ext:ToolTip runat="server" Title="Title" Html="UI = 'Success'" UI="Success" />
+                        <ext:ToolTip
+                            runat="server"
+                            Title="Title"
+                            Html="UI = 'Success'"
+                            UI="Success"
+                            />
                     </ToolTips>
                 </ext:Button>
 
                 <ext:Button runat="server" Text="Tooltip: Info" UI="Info">
                     <ToolTips>
-                        <ext:ToolTip runat="server" Title="Title" Html="UI = 'Info'" UI="Info" />
+                        <ext:ToolTip
+                            runat="server"
+                            Title="Title"
+                            Html="UI = 'Info'"
+                            UI="Info"
+                            />
                     </ToolTips>
                 </ext:Button>
 
                 <ext:Button runat="server" Text="Tooltip: Danger" UI="Danger">
                     <ToolTips>
-                        <ext:ToolTip runat="server" Title="Title" Html="UI = 'Danger'" UI="Danger" />
+                        <ext:ToolTip
+                            runat="server"
+                            Title="Title"
+                            Html="UI = 'Danger'"
+                            UI="Danger"
+                            />
                     </ToolTips>
                 </ext:Button>
 

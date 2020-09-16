@@ -78,7 +78,11 @@
                             InputMaskString="99.999-999"
                             />
 
-                        <ext:TextField runat="server" ID="TextField1" Note="(999) 999-9999" FieldLabel="Masked Input">
+                        <ext:TextField
+                            runat="server"
+                            ID="TextField1"
+                            Note="(999) 999-9999"
+                            FieldLabel="Masked Input">
                             <InputMask Pattern="(999) 999-9999" />
                         </ext:TextField>
                     </Items>

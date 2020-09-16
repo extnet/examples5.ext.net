@@ -41,17 +41,50 @@
             <Items>
                 <ext:CompositeSprite SpriteID="circles" Duration="1000">
                     <Items>
-                        <ext:CircleSprite Radius="10" FillStyle="#f00" CX="10" CY="10" />
-                        <ext:CircleSprite Radius="10" FillStyle="#0f0" CX="50" CY="50" />
-                        <ext:CircleSprite Radius="10" FillStyle="#00f" CX="100" CY="100" />
+                        <ext:CircleSprite
+                            Radius="10"
+                            FillStyle="#f00"
+                            CX="10"
+                            CY="10"
+                            />
+                        <ext:CircleSprite
+                            Radius="10"
+                            FillStyle="#0f0"
+                            CX="50"
+                            CY="50"
+                            />
+                        <ext:CircleSprite
+                            Radius="10"
+                            FillStyle="#00f"
+                            CX="100"
+                            CY="100"
+                            />
                     </Items>
                 </ext:CompositeSprite>
 
                 <ext:CompositeSprite SpriteID="rectangles">
                     <Items>
-                        <ext:RectSprite Width="20" Height="20" FillStyle="#f00" X="10" Y="10" />
-                        <ext:RectSprite Width="20" Height="20" FillStyle="#0f0" X="50" Y="50" />
-                        <ext:RectSprite Width="20" Height="20" FillStyle="#00f" X="100" Y="100" />
+                        <ext:RectSprite
+                            Width="20"
+                            Height="20"
+                            FillStyle="#f00"
+                            X="10"
+                            Y="10"
+                            />
+                        <ext:RectSprite
+                            Width="20"
+                            Height="20"
+                            FillStyle="#0f0"
+                            X="50"
+                            Y="50"
+                            />
+                        <ext:RectSprite
+                            Width="20"
+                            Height="20"
+                            FillStyle="#00f"
+                            X="100"
+                            Y="100"
+                            />
                     </Items>
                 </ext:CompositeSprite>
             </Items>

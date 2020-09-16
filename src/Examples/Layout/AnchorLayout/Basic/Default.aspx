@@ -41,9 +41,26 @@
         --%>
         <ext:Viewport runat="server" Layout="Anchor">
             <Items>
-                <ext:Panel runat="server" Title="Item 1: 100% 20%" AnchorHorizontal="100%" AnchorVertical="20%" />
-                <ext:Panel ID="Panel1" runat="server" Title="Item 2: 50% 30%" AnchorHorizontal="50%" AnchorVertical="30%" />
-                <ext:Panel ID="Panel2" runat="server" Title="Item 3: -100 50%" AnchorHorizontal="-100" AnchorVertical="50%" />
+                <ext:Panel
+                    runat="server"
+                    Title="Item 1: 100% 20%"
+                    AnchorHorizontal="100%"
+                    AnchorVertical="20%"
+                    />
+                <ext:Panel
+                    ID="Panel1"
+                    runat="server"
+                    Title="Item 2: 50% 30%"
+                    AnchorHorizontal="50%"
+                    AnchorVertical="30%"
+                    />
+                <ext:Panel
+                    ID="Panel2"
+                    runat="server"
+                    Title="Item 3: -100 50%"
+                    AnchorHorizontal="-100"
+                    AnchorVertical="50%"
+                    />
             </Items>
         </ext:Viewport>
     </form>

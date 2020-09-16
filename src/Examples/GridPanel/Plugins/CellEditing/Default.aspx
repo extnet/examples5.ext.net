@@ -116,8 +116,12 @@
                     Align="End">
                     <Renderer Format="UsMoney" />
                     <Editor>
-                        <ext:NumberField runat="server" AllowBlank="false" MinValue="0" MaxValue="100000">
-                        </ext:NumberField>
+                        <ext:NumberField
+                            runat="server"
+                            AllowBlank="false"
+                            MinValue="0"
+                            MaxValue="100000"
+                            />
                     </Editor>
                 </ext:Column>
 
@@ -133,8 +137,8 @@
                             Format="yyyy-MM-dd"
                             MinDate="01.01.2006"
                             DisabledDays="0,6"
-                            DisabledDaysText="Plants are not available on the weekends">
-                        </ext:DateField>
+                            DisabledDaysText="Plants are not available on the weekends"
+                            />
                     </Editor>
                 </ext:DateColumn>
 
@@ -149,8 +153,7 @@
 
                 <ext:ImageCommandColumn runat="server" Width="30" Sortable="false">
                     <Commands>
-                        <ext:ImageCommand IconCls="x-md md-icon-cancel" ToolTip-Text="Delete Plant" CommandName="delete">
-                        </ext:ImageCommand>
+                        <ext:ImageCommand IconCls="x-md md-icon-cancel" ToolTip-Text="Delete Plant" CommandName="delete" />
                     </Commands>
                     <Listeners>
                         <Command Handler="this.up('gridpanel').store.removeAt(recordIndex);" />

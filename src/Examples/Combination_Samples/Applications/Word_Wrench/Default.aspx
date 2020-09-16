@@ -342,7 +342,11 @@
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Bin>
-                        <ext:Store ID="Store1" runat="server" AutoLoad="true" SortOnLoad="true">
+                        <ext:Store
+                            ID="Store1"
+                            runat="server"
+                            AutoLoad="true"
+                            SortOnLoad="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -375,17 +379,12 @@
                                     Minimum="0"
                                     MajorTickSteps="1"
                                     />
-                                <ext:CategoryAxis
-                                    Position="Bottom"
-                                    Fields="Text">
+                                <ext:CategoryAxis Position="Bottom" Fields="Text">
                                     <Label RotationDegrees="315" />
                                 </ext:CategoryAxis>
                             </Axes>
                             <Series>
-                                <ext:BarSeries
-                                    Highlight="true"
-                                    XField="Text"
-                                    YField="Count">
+                                <ext:BarSeries Highlight="true" XField="Text" YField="Count">
                                     <Tooltip
                                         runat="server"
                                         TrackMouse="true"

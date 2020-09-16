@@ -73,10 +73,7 @@
                     LeadingBufferZone="1000"
                     PageSize="50">
                     <Proxy>
-                        <ext:JsonPProxy
-                            Url="https://www.sencha.com/forum/topics-remote.php"
-                            SimpleSortMode="true"
-                            FilterParam="query">
+                        <ext:JsonPProxy Url="https://www.sencha.com/forum/topics-remote.php" SimpleSortMode="true" FilterParam="query">
                             <Reader>
                                 <ext:JsonReader RootProperty="topics" TotalProperty="totalCount" />
                             </Reader>
@@ -171,10 +168,7 @@
 
                         <ext:ToolbarFill />
 
-                        <ext:Component
-                            runat="server"
-                            ItemID="status"
-                            StyleSpec="margin-right:5px;">
+                        <ext:Component runat="server" ItemID="status" StyleSpec="margin-right:5px;">
                             <Tpl runat="server">
                                 <Html>
                                     Matching threads: {count}

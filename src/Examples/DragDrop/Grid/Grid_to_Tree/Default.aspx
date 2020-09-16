@@ -130,9 +130,7 @@
                     MultiSelect="true"
                     MarginSpec="5 0 5 5">
                     <Store>
-                        <ext:Store
-                            ID="Store1"
-                            runat="server">
+                        <ext:Store ID="Store1" runat="server">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -190,17 +188,32 @@
                             <Children>
                                 <ext:Node Text="Folder 1" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
-                                        <ext:Node Text="Subleaf 1" Qtip="Subleaf 1 Quick Tip" Leaf="true"  AllowDrag="false" />
+                                        <ext:Node
+                                            Text="Subleaf 1"
+                                            Qtip="Subleaf 1 Quick Tip"
+                                            Leaf="true"
+                                            AllowDrag="false"
+                                            />
                                     </Children>
                                 </ext:Node>
 
                                 <ext:Node Text="Folder 2" Qtip="Rows dropped here will be appended to the folder" AllowDrag="false">
                                     <Children>
-                                        <ext:Node Text="Subleaf 2" Qtip="Subleaf 2 Quick Tip" Leaf="true"  AllowDrag="false" />
+                                        <ext:Node
+                                            Text="Subleaf 2"
+                                            Qtip="Subleaf 2 Quick Tip"
+                                            Leaf="true"
+                                            AllowDrag="false"
+                                            />
                                     </Children>
                                 </ext:Node>
 
-                                <ext:Node Text="Leaf 1" Qtip="Leaf 1 Quick Tip" Leaf="true" AllowDrag="false" />
+                                <ext:Node
+                                    Text="Leaf 1"
+                                    Qtip="Leaf 1 Quick Tip"
+                                    Leaf="true"
+                                    AllowDrag="false"
+                                    />
                             </Children>
                         </ext:Node>
                     </Root>

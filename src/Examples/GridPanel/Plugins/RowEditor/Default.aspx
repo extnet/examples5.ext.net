@@ -161,7 +161,11 @@
                             <ext:TextField runat="server" AllowBlank="false" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Email" DataIndex="email" Width="160">
+                    <ext:Column
+                        runat="server"
+                        Text="Email"
+                        DataIndex="email"
+                        Width="160">
                         <Editor>
                             <ext:TextField runat="server" AllowBlank="false" Vtype="email" />
                         </Editor>

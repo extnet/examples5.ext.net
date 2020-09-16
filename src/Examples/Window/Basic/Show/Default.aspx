@@ -62,7 +62,12 @@
         </p>
 
         <p>
-            <ext:Button runat="server" Text="With PostBack" OnClick="Button1_Click" AutoPostBack="true" />
+            <ext:Button
+                runat="server"
+                Text="With PostBack"
+                OnClick="Button1_Click"
+                AutoPostBack="true"
+                />
         </p>
 
         <br />

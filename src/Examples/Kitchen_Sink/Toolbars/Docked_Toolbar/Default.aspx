@@ -19,10 +19,7 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:Container
-                runat="server"
-                MarginSpec="0 0 10 0"
-                StyleSpec="background: transparent;">
+            <ext:Container runat="server" MarginSpec="0 0 10 0" StyleSpec="background: transparent;">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                 </LayoutConfig>
@@ -75,10 +72,7 @@
                 </Items>
             </ext:Container>
 
-            <ext:Container
-                runat="server"
-                MarginSpec="0 0 10 0"
-                StyleSpec="background: transparent;">
+            <ext:Container runat="server" MarginSpec="0 0 10 0" StyleSpec="background: transparent;">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Middle" Pack="Center" />
                 </LayoutConfig>

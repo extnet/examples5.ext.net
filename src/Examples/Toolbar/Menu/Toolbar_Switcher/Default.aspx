@@ -66,7 +66,12 @@
 
                     <ext:ToolbarSeparator runat="server" />
 
-                    <ext:Toolbar ID="EuropeToolbar" runat="server" Flat="true" Cls="toolbar-switch" Flex="1">
+                    <ext:Toolbar
+                        ID="EuropeToolbar"
+                        runat="server"
+                        Flat="true"
+                        Cls="toolbar-switch"
+                        Flex="1">
                         <Items>
                             <ext:ToolbarTextItem runat="server" Text="Europe" />
                             <ext:ToolbarSpacer runat="server" />
@@ -83,7 +88,14 @@
                         </Items>
                     </ext:Toolbar>
 
-                    <ext:Toolbar ID="NorthAmericaToolbar" runat="server" Flat="true" HideMode="Offsets" Hidden="true" Cls="toolbar-switch" Flex="1">
+                    <ext:Toolbar
+                        ID="NorthAmericaToolbar"
+                        runat="server"
+                        Flat="true"
+                        HideMode="Offsets"
+                        Hidden="true"
+                        Cls="toolbar-switch"
+                        Flex="1">
                         <Items>
                             <ext:ToolbarTextItem runat="server" Text="North America" />
                             <ext:ToolbarSpacer runat="server" />
@@ -97,7 +109,14 @@
                         </Items>
                     </ext:Toolbar>
 
-                    <ext:Toolbar ID="AsiaToolbar" runat="server" Flat="true" HideMode="Offsets" Hidden="true" Cls="toolbar-switch" Flex="1">
+                    <ext:Toolbar
+                        ID="AsiaToolbar"
+                        runat="server"
+                        Flat="true"
+                        HideMode="Offsets"
+                        Hidden="true"
+                        Cls="toolbar-switch"
+                        Flex="1">
                         <Items>
                             <ext:ToolbarTextItem runat="server" Text="Asia" />
                             <ext:ToolbarSpacer runat="server" />

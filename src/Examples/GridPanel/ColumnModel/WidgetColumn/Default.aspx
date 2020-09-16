@@ -110,7 +110,11 @@
 
             <ColumnModel runat="server">
                 <Columns>
-                     <ext:WidgetColumn runat="server" Width="105" DataIndex="progress" Text="Button">
+                     <ext:WidgetColumn
+                         runat="server"
+                         Width="105"
+                         DataIndex="progress"
+                         Text="Button">
                          <Widget>
                              <ext:SplitButton
                                 runat="server"
@@ -121,7 +125,11 @@
                          </Widget>
                      </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="120" DataIndex="progress" Text="Progress">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="120"
+                        DataIndex="progress"
+                        Text="Progress">
                         <Widget>
                             <ext:ProgressBarWidget runat="server" TextTplString="{percent:number('0')}% done" RippleString="blue" />
                         </Widget>
@@ -141,7 +149,11 @@
                          </Widget>
                      </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="120" DataIndex="progress" Text="Slider">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="120"
+                        DataIndex="progress"
+                        Text="Slider">
                         <Widget>
                             <ext:SliderWidget
                                 runat="server"
@@ -156,43 +168,71 @@
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence1" Text="Line">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence1"
+                        Text="Line">
                         <Widget>
                             <ext:LineSparkLine runat="server" TipTplString='Value: {y:number("0.00")}' />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence2" Text="Bar">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence2"
+                        Text="Bar">
                         <Widget>
                             <ext:BarSparkLine runat="server" />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence3" Text="Discrete">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence3"
+                        Text="Discrete">
                         <Widget>
                             <ext:DiscreteSparkLine runat="server" />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence4" Text="Bullet">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence4"
+                        Text="Bullet">
                         <Widget>
                             <ext:BulletSparkLine runat="server" />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="60" DataIndex="sequence5" Text="Pie">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="60"
+                        DataIndex="sequence5"
+                        Text="Pie">
                         <Widget>
                             <ext:PieSparkLine runat="server" />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence6" Text="Box">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence6"
+                        Text="Box">
                         <Widget>
                             <ext:BoxSparkLine runat="server" />
                         </Widget>
                     </ext:WidgetColumn>
 
-                    <ext:WidgetColumn runat="server" Width="100" DataIndex="sequence7" Text="TriState">
+                    <ext:WidgetColumn
+                        runat="server"
+                        Width="100"
+                        DataIndex="sequence7"
+                        Text="TriState">
                         <Widget>
                             <ext:TriStateSparkLine runat="server" />
                         </Widget>

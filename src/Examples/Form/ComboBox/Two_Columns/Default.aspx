@@ -104,7 +104,11 @@
             MatchFieldWidth="false"
             PageSize="10">
             <Store>
-                <ext:Store ID="Store1" runat="server" IsPagingStore="true" PageSize="10">
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    IsPagingStore="true"
+                    PageSize="10">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>

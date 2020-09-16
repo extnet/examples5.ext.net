@@ -172,14 +172,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server">
+                <ext:CartesianChart ID="Chart1" runat="server">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -205,10 +200,7 @@
                     </Interactions>
 
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Left"
-                            Fields="G1,G2"
-                            Minimum="0">
+                        <ext:NumericAxis Position="Left" Fields="G1,G2" Minimum="0">
                         </ext:NumericAxis>
 
                         <ext:CategoryAxis Position="Bottom" Fields="Name">

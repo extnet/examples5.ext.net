@@ -89,10 +89,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    Animate="true">
+                <ext:CartesianChart ID="Chart1" runat="server" Animate="true">
                     <Store>
                         <ext:Store runat="server">
                             <Model>

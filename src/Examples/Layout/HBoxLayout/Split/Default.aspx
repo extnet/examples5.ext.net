@@ -22,11 +22,21 @@
             <ext:Parameter Name="margin" Value="2 0" Mode="Value" />
         </Defaults>
         <Items>
-            <ext:Panel runat="server" Flex="1" Title="Panel 1" CollapseDirection="Left" />
+            <ext:Panel
+                runat="server"
+                Flex="1"
+                Title="Panel 1"
+                CollapseDirection="Left"
+                />
 
             <ext:BoxSplitter runat="server" Collapsible="true" CollapseTarget="Prev" />
 
-            <ext:Panel runat="server" Flex="1" Title="Panel 2" CollapseDirection="Left" />
+            <ext:Panel
+                runat="server"
+                Flex="1"
+                Title="Panel 2"
+                CollapseDirection="Left"
+                />
 
             <ext:BoxSplitter runat="server" Collapsible="true" CollapseTarget="Prev" />
 
@@ -34,7 +44,12 @@
 
             <ext:BoxSplitter runat="server" Collapsible="true" />
 
-            <ext:Panel runat="server" Flex="1" Title="Panel 4" CollapseDirection="Right" />
+            <ext:Panel
+                runat="server"
+                Flex="1"
+                Title="Panel 4"
+                CollapseDirection="Right"
+                />
 
             <ext:BoxSplitter runat="server" Collapsible="true" />
 

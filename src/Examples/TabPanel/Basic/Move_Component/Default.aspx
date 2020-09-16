@@ -114,7 +114,12 @@
                         Width="75"
                         DataIndex="pctChange"
                         />
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

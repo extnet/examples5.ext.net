@@ -30,10 +30,7 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -46,7 +43,11 @@
                     </Store>
 
                     <Axes>
-                        <ext:NumericAxis Position="Left" Minimum="0" Fields="Data1" Grid="true">
+                        <ext:NumericAxis
+                            Position="Left"
+                            Minimum="0"
+                            Fields="Data1"
+                            Grid="true">
                             <Label Font="Arial" FontSize="10" />
                             <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                         </ext:NumericAxis>
@@ -72,7 +73,12 @@
                             </StyleSpec>
 
                             <Marker>
-                                <ext:CircleSprite Radius="4" LineWidth="0" FillStyle="#38B8BF" StrokeStyle="#38B8BF" />
+                                <ext:CircleSprite
+                                    Radius="4"
+                                    LineWidth="0"
+                                    FillStyle="#38B8BF"
+                                    StrokeStyle="#38B8BF"
+                                    />
                             </Marker>
                         </ext:LineSeries>
                     </Series>
@@ -89,10 +95,7 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -105,7 +108,11 @@
                     </Store>
 
                     <Axes>
-                        <ext:NumericAxis Position="Left" Minimum="0" Fields="Data1" Grid="true">
+                        <ext:NumericAxis
+                            Position="Left"
+                            Minimum="0"
+                            Fields="Data1"
+                            Grid="true">
                             <Label Font="Arial" FontSize="10" />
                             <Renderer Handler="return Ext.util.Format.number(label, '0,0');" />
                         </ext:NumericAxis>
@@ -131,7 +138,12 @@
                             </StyleSpec>
 
                              <Marker>
-                                <ext:CircleSprite Radius="4" LineWidth="0" FillStyle="#38B8BF" StrokeStyle="#38B8BF" />
+                                <ext:CircleSprite
+                                    Radius="4"
+                                    LineWidth="0"
+                                    FillStyle="#38B8BF"
+                                    StrokeStyle="#38B8BF"
+                                    />
                             </Marker>
                         </ext:LineSeries>
                     </Series>
@@ -148,10 +160,7 @@
             <Items>
                 <ext:CartesianChart runat="server" InsetPadding="30">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>

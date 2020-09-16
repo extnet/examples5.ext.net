@@ -80,9 +80,25 @@
                     </Store>
                     <ColumnModel>
                         <Columns>
-                            <ext:Column runat="server" Text="Record Name" Width="160" DataIndex="Name" Flex="1" />
-                            <ext:Column runat="server" Text="Column 1" Width="60" DataIndex="Column1" />
-                            <ext:Column runat="server" Text="Column 2" Width="60" DataIndex="Column2" />
+                            <ext:Column
+                                runat="server"
+                                Text="Record Name"
+                                Width="160"
+                                DataIndex="Name"
+                                Flex="1"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Column 1"
+                                Width="60"
+                                DataIndex="Column1"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Column 2"
+                                Width="60"
+                                DataIndex="Column2"
+                                />
                         </Columns>
                     </ColumnModel>
                     <View>
@@ -120,9 +136,25 @@
                     </Store>
                     <ColumnModel>
                         <Columns>
-                            <ext:Column runat="server" Text="Record Name" Width="160" DataIndex="Name" Flex="1" />
-                            <ext:Column runat="server" Text="Column 1" Width="60" DataIndex="Column1" />
-                            <ext:Column runat="server" Text="Column 2" Width="60" DataIndex="Column2" />
+                            <ext:Column
+                                runat="server"
+                                Text="Record Name"
+                                Width="160"
+                                DataIndex="Name"
+                                Flex="1"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Column 1"
+                                Width="60"
+                                DataIndex="Column1"
+                                />
+                            <ext:Column
+                                runat="server"
+                                Text="Column 2"
+                                Width="60"
+                                DataIndex="Column2"
+                                />
                         </Columns>
                     </ColumnModel>
                     <View>

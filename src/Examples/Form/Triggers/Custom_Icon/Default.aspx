@@ -21,10 +21,7 @@
         <p>The icon in this example is designed for the classic themes - Gray and Blue.</p>
         <p>For new themes like Crisp and Neptune, the icon should be adjusted (at least, size).</p>
 
-        <ext:TextField
-            runat="server"
-            Width="200"
-            EmptyText="Click Trigger Button -->">
+        <ext:TextField runat="server" Width="200" EmptyText="Click Trigger Button -->">
             <Triggers>
                 <ext:FieldTrigger IconCls="custom-trigger" />
             </Triggers>

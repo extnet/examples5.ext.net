@@ -84,7 +84,11 @@
                         Width="120"
                         DataIndex="username"
                         />
-                    <ext:Column runat="server" Text="Title" Width="480" DataIndex="title">
+                    <ext:Column
+                        runat="server"
+                        Text="Title"
+                        Width="480"
+                        DataIndex="title">
                         <Renderer Fn="renderTitle" />
                     </ext:Column>
                 </Columns>

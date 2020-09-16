@@ -48,10 +48,7 @@
             TemplateWidget="true"
             TemplateWidgetFnName="getMessageWindow">
             <Items>
-                <ext:FormPanel
-                    runat="server"
-                    BaseCls="x-plain"
-                    Layout="VBox">
+                <ext:FormPanel runat="server" BaseCls="x-plain" Layout="VBox">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

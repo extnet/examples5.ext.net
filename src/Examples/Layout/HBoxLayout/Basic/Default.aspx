@@ -187,7 +187,12 @@
                 <ext:Button runat="server" Text="Button 1" Flex="1" />
                 <ext:Button runat="server" Text="Button 2" Flex="1" />
                 <ext:Button runat="server" Text="Button 3" Flex="1" />
-                <ext:Button runat="server" Text="Button 4" Flex="1" MarginSpec="0" />
+                <ext:Button
+                    runat="server"
+                    Text="Button 4"
+                    Flex="1"
+                    MarginSpec="0"
+                    />
             </Items>
         </ext:Panel>
 
@@ -206,7 +211,12 @@
                 <ext:Button runat="server" Text="Button 1" Flex="1" />
                 <ext:Button runat="server" Text="Button 2" Flex="1" />
                 <ext:Button runat="server" Text="Button 3" Flex="1" />
-                <ext:Button runat="server" Text="Button 4" Flex="3" MarginSpec="0" />
+                <ext:Button
+                    runat="server"
+                    Text="Button 4"
+                    Flex="3"
+                    MarginSpec="0"
+                    />
             </Items>
         </ext:Panel>
 

@@ -133,7 +133,11 @@
                         DataIndex="Name"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="Price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                     <ext:Column

@@ -99,7 +99,14 @@
             Height="480">
             <ColumnModel ID="ColumnModel3" runat="server">
                 <Columns>
-                    <ext:Column ID="label" runat="server" Text="¹" Fixed="true" Sortable="false" MenuDisabled="true" Flex="1">
+                    <ext:Column
+                        ID="label"
+                        runat="server"
+                        Text="¹"
+                        Fixed="true"
+                        Sortable="false"
+                        MenuDisabled="true"
+                        Flex="1">
                         <Renderer Fn="function (v, p, record, rowIndex) {return 'Row ¹'+rowIndex}" />
                     </ext:Column>
                     <ext:Column
@@ -108,16 +115,33 @@
                         DataIndex="company"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        DataIndex="price"
+                        Flex="1">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" DataIndex="change" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        DataIndex="change"
+                        Flex="1">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" DataIndex="pctChange" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        DataIndex="pctChange"
+                        Flex="1">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Flex="1" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        DataIndex="lastChange"
+                        Flex="1"
+                        />
                 </Columns>
             </ColumnModel>
         </ext:GridPanel>

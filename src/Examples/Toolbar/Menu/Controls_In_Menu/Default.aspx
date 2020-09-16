@@ -106,8 +106,18 @@
                     <ext:Menu runat="server" EnableKeyNav="false">
                         <Items>
                             <ext:MenuItem runat="server" IconCls="x-md md-icon-edit" Text="Item" />
-                            <ext:TextField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
-                            <ext:DateField runat="server" Width="200" MarginSpec="0 0 2 30" Focusable="false" />
+                            <ext:TextField
+                                runat="server"
+                                Width="200"
+                                MarginSpec="0 0 2 30"
+                                Focusable="false"
+                                />
+                            <ext:DateField
+                                runat="server"
+                                Width="200"
+                                MarginSpec="0 0 2 30"
+                                Focusable="false"
+                                />
                             <ext:MenuSeparator runat="server" />
                             <ext:TextArea
                                 runat="server"
@@ -136,10 +146,7 @@
                                 </SelectedItems>
                             </ext:ComboBox>
                             <ext:MenuSeparator runat="server" />
-                            <ext:FieldSet
-                                runat="server"
-                                Title="Account Information"
-                                MarginSpec="0 0 2 30">
+                            <ext:FieldSet runat="server" Title="Account Information" MarginSpec="0 0 2 30">
                                 <Items>
                                     <ext:TextField runat="server" Width="170" HideLabel="true" />
                                     <ext:TextField runat="server" Width="170" HideLabel="true" />

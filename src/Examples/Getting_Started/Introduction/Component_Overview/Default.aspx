@@ -228,11 +228,27 @@
                                         <ext:Menu runat="server">
                                             <Items>
                                                 <ext:MenuItem runat="server" Text="Menu Item" />
-                                                <ext:CheckMenuItem ID="Item1" runat="server" Text="Check 1" Checked="true" />
+                                                <ext:CheckMenuItem
+                                                    ID="Item1"
+                                                    runat="server"
+                                                    Text="Check 1"
+                                                    Checked="true"
+                                                    />
                                                 <ext:CheckMenuItem ID="Item2" runat="server" Text="Check 2" />
                                                 <ext:MenuSeparator runat="server" />
-                                                <ext:CheckMenuItem ID="Item3" runat="server" Text="Option 1" Checked="true" Group="opts" />
-                                                <ext:CheckMenuItem ID="Item4" runat="server" Text="Option 1" Group="opts" />
+                                                <ext:CheckMenuItem
+                                                    ID="Item3"
+                                                    runat="server"
+                                                    Text="Option 1"
+                                                    Checked="true"
+                                                    Group="opts"
+                                                    />
+                                                <ext:CheckMenuItem
+                                                    ID="Item4"
+                                                    runat="server"
+                                                    Text="Option 1"
+                                                    Group="opts"
+                                                    />
                                                 <ext:MenuSeparator runat="server" />
                                                 <ext:MenuItem runat="server" Text="Sub-items">
                                                     <Menu>
@@ -258,7 +274,12 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:Button runat="server" Text="Toggle Button" EnableToggle="true" Pressed="true" />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Toggle Button"
+                                    EnableToggle="true"
+                                    Pressed="true"
+                                    />
                             </Items>
                         </ext:Toolbar>
                     </TopBar>
@@ -330,7 +351,11 @@
 
                         <ext:FieldContainer runat="server" FieldLabel="FieldContainer" Layout="HBox">
                             <Items>
-                                <ext:ComboBox runat="server" Width="50" Editable="false" DataIndex="Title">
+                                <ext:ComboBox
+                                    runat="server"
+                                    Width="50"
+                                    Editable="false"
+                                    DataIndex="Title">
                                     <Items>
                                         <ext:ListItem Text="Mr" Value="mr" />
                                         <ext:ListItem Text="Mrs" Value="mrs" />
@@ -384,10 +409,25 @@
                                 <ext:Radio runat="server" BoxLabel="Bar" />
                             </Items>
                         </ext:RadioGroup>
-                        <ext:HtmlEditor runat="server" HideLabel="true" Height="110" Text="Mouse over toolbar for tooltips." />
+                        <ext:HtmlEditor
+                            runat="server"
+                            HideLabel="true"
+                            Height="110"
+                            Text="Mouse over toolbar for tooltips."
+                            />
                         <ext:FieldSet runat="server" Title="Plain Fieldset" Height="50" />
-                        <ext:FieldSet runat="server" Title="Collapsible Fieldset" Height="50" Collapsible="true" />
-                        <ext:FieldSet runat="server" Title="Checkbox Fieldset" Height="50" CheckboxToggle="true" />
+                        <ext:FieldSet
+                            runat="server"
+                            Title="Collapsible Fieldset"
+                            Height="50"
+                            Collapsible="true"
+                            />
+                        <ext:FieldSet
+                            runat="server"
+                            Title="Checkbox Fieldset"
+                            Height="50"
+                            CheckboxToggle="true"
+                            />
                     </Items>
                     <Buttons>
                         <ext:Button runat="server" Text="Toggle Enabled">
@@ -429,10 +469,39 @@
                             Html="Center"
                             Collapsible="false"
                             />
-                        <ext:Panel runat="server" Title="North" Region="North" Html="North" Height="70" MarginSpec="5 5 0 5" />
-                        <ext:Panel runat="server" Title="East" Region="East" Html="East" Width="140" MarginSpec="0 5 0 0" />
-                        <ext:Panel runat="server" Title="West" Region="West" Html="West" Width="140" MarginSpec="0 0 0 5" CollapseMode="Mini" />
-                        <ext:Panel runat="server" Title="South" Region="South" Html="South" Height="70" MarginSpec="0 5 5 5" />
+                        <ext:Panel
+                            runat="server"
+                            Title="North"
+                            Region="North"
+                            Html="North"
+                            Height="70"
+                            MarginSpec="5 5 0 5"
+                            />
+                        <ext:Panel
+                            runat="server"
+                            Title="East"
+                            Region="East"
+                            Html="East"
+                            Width="140"
+                            MarginSpec="0 5 0 0"
+                            />
+                        <ext:Panel
+                            runat="server"
+                            Title="West"
+                            Region="West"
+                            Html="West"
+                            Width="140"
+                            MarginSpec="0 0 0 5"
+                            CollapseMode="Mini"
+                            />
+                        <ext:Panel
+                            runat="server"
+                            Title="South"
+                            Region="South"
+                            Html="South"
+                            Height="70"
+                            MarginSpec="0 5 5 5"
+                            />
                     </Items>
                 </ext:Panel>
 
@@ -477,7 +546,11 @@
                                 DataIndex="company"
                                 Flex="1"
                                 />
-                            <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                            <ext:Column
+                                runat="server"
+                                Text="Price"
+                                Width="75"
+                                DataIndex="price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
                             <ext:Column
@@ -492,7 +565,13 @@
                                 Width="75"
                                 DataIndex="pctChange"
                                 />
-                            <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" Format="H:mm:ss" />
+                            <ext:DateColumn
+                                runat="server"
+                                Text="Last Updated"
+                                Width="85"
+                                DataIndex="lastChange"
+                                Format="H:mm:ss"
+                                />
                         </Columns>
                     </ColumnModel>
                     <SelectionModel>
@@ -537,7 +616,11 @@
                     Layout="Accordion"
                     DefaultBorder="false">
                     <Items>
-                        <ext:TreePanel runat="server" Title="TreePanel" Scrollable="Both" EnableDD="true">
+                        <ext:TreePanel
+                            runat="server"
+                            Title="TreePanel"
+                            Scrollable="Both"
+                            EnableDD="true">
                             <Root>
                                 <ext:Node Text="Root Node" Expanded="true">
                                     <Children>
@@ -552,8 +635,18 @@
                                 </ext:Node>
                             </Root>
                         </ext:TreePanel>
-                        <ext:Panel runat="server" Title="Item 2" BodyPadding="18" Html="Some content" />
-                        <ext:Panel runat="server" Title="Item 3" BodyPadding="18" Html="Some content" />
+                        <ext:Panel
+                            runat="server"
+                            Title="Item 2"
+                            BodyPadding="18"
+                            Html="Some content"
+                            />
+                        <ext:Panel
+                            runat="server"
+                            Title="Item 3"
+                            BodyPadding="18"
+                            Html="Some content"
+                            />
                     </Items>
                 </ext:Panel>
 

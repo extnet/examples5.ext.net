@@ -31,7 +31,12 @@
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -43,7 +48,12 @@
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -57,11 +67,21 @@
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                     <ext:Tab Text="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 5" Closable="true" />
                     <ext:Tab Text="Tab 6" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -73,11 +93,21 @@
                     <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 2" Closable="true" />
                     <ext:Tab Text="Tab 3" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                     <ext:Tab Text="Tab 4" IconCls="x-md md-icon-apps" />
                     <ext:Tab Text="Tab 5" Closable="true" />
                     <ext:Tab Text="Tab 6" />
-                    <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                    <ext:Tab
+                        Text="Disabled"
+                        IconCls="x-md md-icon-apps"
+                        Closable="true"
+                        Disabled="true"
+                        />
                 </Items>
             </ext:TabStrip>
         </div>
@@ -92,7 +122,12 @@
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                        <ext:Tab
+                            Text="Disabled"
+                            IconCls="x-md md-icon-apps"
+                            Closable="true"
+                            Disabled="true"
+                            />
                     </Items>
                 </ext:TabStrip>
 
@@ -101,7 +136,12 @@
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                        <ext:Tab
+                            Text="Disabled"
+                            IconCls="x-md md-icon-apps"
+                            Closable="true"
+                            Disabled="true"
+                            />
                     </Items>
                 </ext:TabStrip>
 
@@ -110,7 +150,12 @@
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                        <ext:Tab
+                            Text="Disabled"
+                            IconCls="x-md md-icon-apps"
+                            Closable="true"
+                            Disabled="true"
+                            />
                     </Items>
                 </ext:TabStrip>
 
@@ -119,7 +164,12 @@
                         <ext:Tab Text="Tab 1" IconCls="x-md md-icon-apps" />
                         <ext:Tab Text="Tab 2" Closable="true" />
                         <ext:Tab Text="Tab 3" />
-                        <ext:Tab Text="Disabled" IconCls="x-md md-icon-apps" Closable="true" Disabled="true" />
+                        <ext:Tab
+                            Text="Disabled"
+                            IconCls="x-md md-icon-apps"
+                            Closable="true"
+                            Disabled="true"
+                            />
                     </Items>
                 </ext:TabStrip>
             </DockedItems>

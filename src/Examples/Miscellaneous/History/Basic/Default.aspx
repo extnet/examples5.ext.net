@@ -69,7 +69,11 @@
             Width="960"
             ActiveTabIndex="0">
             <Items>
-                <ext:Panel ID="Tab1" runat="server" Title="Tab1" Layout="Fit">
+                <ext:Panel
+                    ID="Tab1"
+                    runat="server"
+                    Title="Tab1"
+                    Layout="Fit">
                     <Items>
                         <ext:TabPanel
                             ID="TabPanel2"

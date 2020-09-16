@@ -116,21 +116,33 @@
                     </Editor>
                 </ext:Column>
 
-                <ext:Column runat="server" Text="Change" DataIndex="change" Width="97">
+                <ext:Column
+                    runat="server"
+                    Text="Change"
+                    DataIndex="change"
+                    Width="97">
                     <Renderer Fn="change" />
                     <Editor>
                         <ext:NumberField runat="server" />
                     </Editor>
                 </ext:Column>
 
-                <ext:Column runat="server" Text="% Change" DataIndex="pctChange" Width="97">
+                <ext:Column
+                    runat="server"
+                    Text="% Change"
+                    DataIndex="pctChange"
+                    Width="97">
                     <Renderer Fn="pctChange" />
                     <Editor>
                         <ext:NumberField runat="server" />
                     </Editor>
                 </ext:Column>
 
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="97">
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="97">
                     <Editor>
                         <ext:DateField runat="server" />
                     </Editor>

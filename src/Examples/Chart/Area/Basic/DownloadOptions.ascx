@@ -46,7 +46,14 @@
 
         <ext:FieldSet runat="server" Title="JPEG">
             <Items>
-                <ext:NumberField runat="server" DataIndex="jpeg.quality" FieldLabel="Quality" MinValue="0" MaxValue="100" AllowDecimals="false" />
+                <ext:NumberField
+                    runat="server"
+                    DataIndex="jpeg.quality"
+                    FieldLabel="Quality"
+                    MinValue="0"
+                    MaxValue="100"
+                    AllowDecimals="false"
+                    />
             </Items>
         </ext:FieldSet>
     </Items>

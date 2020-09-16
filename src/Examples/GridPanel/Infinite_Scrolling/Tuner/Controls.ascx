@@ -64,10 +64,7 @@
             MinValue="1"
             />
 
-        <ext:Checkbox
-            runat="server"
-            FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore' target='docs' tabIndex='-1'>BufferedStore</a>"
-            ItemID="buffered">
+        <ext:Checkbox runat="server" FieldLabel="<a href='http://docs.sencha.com/extjs/7.2.0/classic/Ext.data.BufferedStore' target='docs' tabIndex='-1'>BufferedStore</a>" ItemID="buffered">
             <Listeners>
                 <Change Fn="bufferedChange" />
             </Listeners>

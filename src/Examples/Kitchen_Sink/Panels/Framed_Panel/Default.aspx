@@ -19,10 +19,7 @@
             <ext:VBoxLayoutConfig Align="Center" Pack="Center" />
         </LayoutConfig>
         <Items>
-            <ext:Container
-                runat="server"
-                StyleSpec="background:transparent;"
-                MarginSpec="0 0 10 0">
+            <ext:Container runat="server" StyleSpec="background:transparent;" MarginSpec="0 0 10 0">
                 <LayoutConfig>
                     <ext:TableLayoutConfig Columns="3" />
                 </LayoutConfig>
@@ -33,7 +30,12 @@
                     <ext:Parameter Name="Scrollable" Value="both" />
                     <ext:Parameter Name="Margin" Value="10" Mode="Raw" />
                     <ext:Parameter Name="Frame" Value="true" Mode="Raw" />
-                    <ext:Parameter Name="Html" Value="<%# TEST_HTML %>" Mode="Value" AutoDataBind="true" />
+                    <ext:Parameter
+                        Name="Html"
+                        Value="<%# TEST_HTML %>"
+                        Mode="Value"
+                        AutoDataBind="true"
+                        />
                 </Defaults>
                 <Items>
                     <ext:Panel runat="server" />

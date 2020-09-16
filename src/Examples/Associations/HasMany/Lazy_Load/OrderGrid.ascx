@@ -4,7 +4,13 @@
     <ColumnModel>
         <Columns>
             <ext:Column runat="server" Text="Id" DataIndex="Id" />
-            <ext:DateColumn runat="server" Text="Date" DataIndex="Date" Flex="1" Format="yyyy-MM-dd" />
+            <ext:DateColumn
+                runat="server"
+                Text="Date"
+                DataIndex="Date"
+                Flex="1"
+                Format="yyyy-MM-dd"
+                />
         </Columns>
     </ColumnModel>
     <DockedItems>
@@ -15,7 +21,11 @@
                         <Click Fn="onBackClick" />
                     </Listeners>
                 </ext:Button>
-                <ext:Button ItemID="btnLoad" runat="server" Text="Load Order Items" Disabled="true">
+                <ext:Button
+                    ItemID="btnLoad"
+                    runat="server"
+                    Text="Load Order Items"
+                    Disabled="true">
                     <Listeners>
                         <Click Fn="loadItems" />
                     </Listeners>

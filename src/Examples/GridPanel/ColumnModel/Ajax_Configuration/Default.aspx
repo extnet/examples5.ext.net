@@ -177,25 +177,19 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button
-                            runat="server"
-                            Text="Change Header">
+                        <ext:Button runat="server" Text="Change Header">
                             <DirectEvents>
                                 <Click OnEvent="ChangeHeader" Single="true" />
                             </DirectEvents>
                         </ext:Button>
 
-                        <ext:Button
-                            runat="server"
-                            Text="Change Width">
+                        <ext:Button runat="server" Text="Change Width">
                             <DirectEvents>
                                 <Click OnEvent="ChangeWidth" Single="true" />
                             </DirectEvents>
                         </ext:Button>
 
-                         <ext:Button
-                            runat="server"
-                            Text="Change Renderer">
+                         <ext:Button runat="server" Text="Change Renderer">
                             <DirectEvents>
                                 <Click OnEvent="ChangeRenderer" Success="#{GridPanel1}.getView().refresh(false);" />
                             </DirectEvents>

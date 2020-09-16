@@ -64,10 +64,7 @@
                         <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                     </LayoutConfig>
                     <Items>
-                        <ext:Panel
-                            runat="server"
-                            Width="650"
-                            BodyStyle="background: transparent !important">
+                        <ext:Panel runat="server" Width="650" BodyStyle="background: transparent !important">
                             <LayoutConfig>
                                 <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                             </LayoutConfig>
@@ -114,9 +111,7 @@
                                     StyleSpec="background:#fff;"
                                     InsetPadding="40">
                                     <Store>
-                                        <ext:Store
-                                            ID="Store1"
-                                            runat="server">
+                                        <ext:Store ID="Store1" runat="server">
                                             <Model>
                                                 <ext:Model runat="server">
                                                     <Fields>
@@ -161,22 +156,23 @@
                                             <Renderer Handler="return layoutContext.renderer(label) + '%';" />
                                         </ext:NumericAxis>
 
-                                        <ext:CategoryAxis
-                                            Position="Bottom"
-                                            Fields="month"
-                                            Grid="true">
+                                        <ext:CategoryAxis Position="Bottom" Fields="month" Grid="true">
                                             <Label RotationDegrees="-45" />
                                         </ext:CategoryAxis>
                                     </Axes>
                                     <Series>
-                                        <ext:AreaSeries
-                                            XField="month"
-                                            YField="data1">
+                                        <ext:AreaSeries XField="month" YField="data1">
                                             <StyleSpec>
                                                 <ext:Sprite GlobalAlpha="0.8" />
                                             </StyleSpec>
                                             <Marker>
-                                                <ext:CircleSprite GlobalAlpha="0" ScalingX="0.01" ScalingY="0.01" Duration="200" Easing="EaseOut" />
+                                                <ext:CircleSprite
+                                                    GlobalAlpha="0"
+                                                    ScalingX="0.01"
+                                                    ScalingY="0.01"
+                                                    Duration="200"
+                                                    Easing="EaseOut"
+                                                    />
                                             </Marker>
                                             <HighlightDefaults>
                                                 <ext:CircleSprite GlobalAlpha="1" ScalingX="1.5" ScalingY="1.5" />
@@ -188,7 +184,11 @@
                                     </Series>
                                 </ext:CartesianChart>
 
-                                <ext:GridPanel runat="server" StoreID="Store1" StyleSpec="margin-top: 10px;" Width="250">
+                                <ext:GridPanel
+                                    runat="server"
+                                    StoreID="Store1"
+                                    StyleSpec="margin-top: 10px;"
+                                    Width="250">
                                     <ColumnModel>
                                         <Columns>
                                             <ext:Column

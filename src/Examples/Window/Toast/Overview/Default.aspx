@@ -76,11 +76,21 @@
 
         <h2>Server-Side Toast Defined With An Anonymous Object</h2>
 
-        <ext:Button ID="Button4" runat="server" OnDirectClick="Button4_Click" Text="Toast 4" />
+        <ext:Button
+            ID="Button4"
+            runat="server"
+            OnDirectClick="Button4_Click"
+            Text="Toast 4"
+            />
 
         <h2>Server-Side Toast Defined By Config Object</h2>
 
-        <ext:Button ID="Button5" runat="server" OnDirectClick="Button5_Click" Text="Toast 5" />
+        <ext:Button
+            ID="Button5"
+            runat="server"
+            OnDirectClick="Button5_Click"
+            Text="Toast 5"
+            />
 
         <h2>Markup Toast</h2>
 

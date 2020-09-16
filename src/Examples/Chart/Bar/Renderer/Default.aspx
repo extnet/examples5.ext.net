@@ -76,15 +76,9 @@
             </TopBar>
 
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    FlipXY="true">
+                <ext:CartesianChart ID="Chart1" runat="server" FlipXY="true">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -109,9 +103,7 @@
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries
-                            XField="Name"
-                            YField="Data1">
+                        <ext:BarSeries XField="Name" YField="Data1">
                             <Label
                                 Display="InsideEnd"
                                 Field="Data1"

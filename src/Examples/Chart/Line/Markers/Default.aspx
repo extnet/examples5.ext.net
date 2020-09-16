@@ -52,10 +52,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    InsetPadding="40">
+                <ext:CartesianChart ID="Chart1" runat="server" InsetPadding="40">
                     <Store>
                         <ext:Store runat="server">
                             <Model>
@@ -108,18 +105,12 @@
                             <Renderer Handler="return label.toFixed(label < 10 ? 1: 0) + '%'" />
                         </ext:NumericAxis>
 
-                        <ext:CategoryAxis
-                            Position="Bottom"
-                            Fields="Month"
-                            Grid="true">
+                        <ext:CategoryAxis Position="Bottom" Fields="Month" Grid="true">
                             <Label RotationDegrees="-45" />
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:LineSeries
-                            Title="IE"
-                            XField="Month"
-                            YField="Data1">
+                        <ext:LineSeries Title="IE" XField="Month" YField="Data1">
                             <Marker>
                                 <ext:Sprite SpriteType="Square" Duration="200" Easing="BackOut" />
                             </Marker>
@@ -133,10 +124,7 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            Title="Firefox"
-                            XField="Month"
-                            YField="Data2">
+                        <ext:LineSeries Title="Firefox" XField="Month" YField="Data2">
                             <Marker>
                                 <ext:Sprite SpriteType="Triangle" Duration="200" Easing="BackOut" />
                             </Marker>
@@ -150,10 +138,7 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            Title="Chrome"
-                            XField="Month"
-                            YField="Data3">
+                        <ext:LineSeries Title="Chrome" XField="Month" YField="Data3">
                             <Marker>
                                 <ext:Sprite SpriteType="Arrow" Duration="200" Easing="BackOut" />
                             </Marker>
@@ -167,10 +152,7 @@
                             </Tooltip>
                         </ext:LineSeries>
 
-                        <ext:LineSeries
-                            Title="Safari"
-                            XField="Month"
-                            YField="Data4">
+                        <ext:LineSeries Title="Safari" XField="Month" YField="Data4">
                             <Marker>
                                 <ext:Sprite SpriteType="Cross" Duration="200" Easing="BackOut" />
                             </Marker>

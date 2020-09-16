@@ -186,24 +186,45 @@
             Height="320">
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Company" DataIndex="Company" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Company"
+                        DataIndex="Company"
+                        Flex="1">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="Price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="Price">
                         <Renderer Format="UsMoney" />
                         <Editor>
                             <ext:TextField ID="TextField1" runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="Change">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="Change">
                         <Renderer Fn="change" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Change" Width="75" DataIndex="PctChange">
+                    <ext:Column
+                        runat="server"
+                        Text="Change"
+                        Width="75"
+                        DataIndex="PctChange">
                         <Renderer Fn="pctChange" />
                     </ext:Column>
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="LastChange" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="LastChange"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
@@ -213,19 +234,31 @@
                 <ext:Toolbar runat="server">
                     <Items>
                         <ext:ToolbarFill runat="server" />
-                        <ext:Button ID="Button1" runat="server" Text="To XML" IconCls="x-md md-icon-xml">
+                        <ext:Button
+                            ID="Button1"
+                            runat="server"
+                            Text="To XML"
+                            IconCls="x-md md-icon-xml">
                             <Listeners>
                                 <Click Handler="exportData('xml');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button2" runat="server" Text="To Excel" IconCls="x-md md-icon-apps">
+                        <ext:Button
+                            ID="Button2"
+                            runat="server"
+                            Text="To Excel"
+                            IconCls="x-md md-icon-apps">
                             <Listeners>
                                 <Click Handler="exportData('xls');" />
                             </Listeners>
                         </ext:Button>
 
-                        <ext:Button ID="Button3" runat="server" Text="To CSV" IconCls="x-md md-icon-attachment">
+                        <ext:Button
+                            ID="Button3"
+                            runat="server"
+                            Text="To CSV"
+                            IconCls="x-md md-icon-attachment">
                             <Listeners>
                                 <Click Handler="exportData('csv');" />
                             </Listeners>

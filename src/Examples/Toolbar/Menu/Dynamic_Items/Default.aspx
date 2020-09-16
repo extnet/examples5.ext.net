@@ -109,7 +109,13 @@
                     <Menu>
                         <ext:Menu runat="server" TagString="file">
                             <Items>
-                                <ext:MenuItem runat="server" IconCls="x-loading-indicator" Text="Loading..." Focusable="false" HideOnClick="false" />
+                                <ext:MenuItem
+                                    runat="server"
+                                    IconCls="x-loading-indicator"
+                                    Text="Loading..."
+                                    Focusable="false"
+                                    HideOnClick="false"
+                                    />
                             </Items>
                             <Loader Mode="Component" DirectMethod="#{DirectMethods}.Items" RemoveAll="true">
                                 <Params>
@@ -123,7 +129,13 @@
                     <Menu>
                         <ext:Menu runat="server" TagString="edit">
                             <Items>
-                                <ext:MenuItem runat="server" IconCls="x-loading-indicator" Text="Loading..." Focusable="false" HideOnClick="false" />
+                                <ext:MenuItem
+                                    runat="server"
+                                    IconCls="x-loading-indicator"
+                                    Text="Loading..."
+                                    Focusable="false"
+                                    HideOnClick="false"
+                                    />
                             </Items>
                             <Loader Mode="Component" DirectMethod="#{DirectMethods}.Items" RemoveAll="true">
                                 <Params>
@@ -137,7 +149,13 @@
                     <Menu>
                         <ext:Menu runat="server" TagString="insert">
                             <Items>
-                                <ext:MenuItem runat="server" IconCls="x-loading-indicator" Text="Loading..." Focusable="false" HideOnClick="false" />
+                                <ext:MenuItem
+                                    runat="server"
+                                    IconCls="x-loading-indicator"
+                                    Text="Loading..."
+                                    Focusable="false"
+                                    HideOnClick="false"
+                                    />
                             </Items>
                             <Loader Mode="Component" DirectMethod="#{DirectMethods}.Items" RemoveAll="true">
                                 <Params>
@@ -151,7 +169,13 @@
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
-                                <ext:MenuItem runat="server" IconCls="x-loading-indicator" Text="Loading..." Focusable="false" HideOnClick="false" />
+                                <ext:MenuItem
+                                    runat="server"
+                                    IconCls="x-loading-indicator"
+                                    Text="Loading..."
+                                    Focusable="false"
+                                    HideOnClick="false"
+                                    />
                             </Items>
                             <Loader Mode="Component" DirectMethod="#{DirectMethods}.Items" RemoveAll="true">
                                 <Params>

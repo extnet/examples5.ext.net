@@ -64,8 +64,18 @@
             ViewModel="<%# MyModel.Model %>"
             AutoDataBind="true">
             <Items>
-                <ext:TextField runat="server" FieldLabel="Name" MsgTarget="Side" BindString="{theCustomer.name}" />
-                <ext:TextField runat="server" FieldLabel="Phone" MsgTarget="Side" BindString="{theCustomer.phone}" />
+                <ext:TextField
+                    runat="server"
+                    FieldLabel="Name"
+                    MsgTarget="Side"
+                    BindString="{theCustomer.name}"
+                    />
+                <ext:TextField
+                    runat="server"
+                    FieldLabel="Phone"
+                    MsgTarget="Side"
+                    BindString="{theCustomer.phone}"
+                    />
             </Items>
         </ext:Panel>
     </form>

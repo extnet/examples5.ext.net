@@ -116,7 +116,12 @@
                 <ext:Column runat="server" Text="Change" DataIndex="pctChange">
                     <Renderer Fn="pctChange" />
                 </ext:Column>
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="120" />
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="120"
+                    />
             </Columns>
         </ColumnModel>
         <SelectionModel>

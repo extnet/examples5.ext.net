@@ -32,7 +32,11 @@
         <br />
         <br />
 
-        <ext:ComboBox ID="ThemeCombo" runat="server" FieldLabel="Theme" Editable="false">
+        <ext:ComboBox
+            ID="ThemeCombo"
+            runat="server"
+            FieldLabel="Theme"
+            Editable="false">
             <SelectedItems>
                 <ext:ListItem Index="0" />
             </SelectedItems>
@@ -84,10 +88,7 @@
             </Axes>
 
             <Series>
-                <ext:BarSeries
-                    Highlight="true"
-                    XField="Name"
-                    YField="Data1">
+                <ext:BarSeries Highlight="true" XField="Name" YField="Data1">
                     <Label
                         Display="InsideEnd"
                         Field="Data1"

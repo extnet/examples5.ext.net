@@ -100,14 +100,9 @@
             Height="480"
             Layout="Fit">
             <Items>
-                <ext:CartesianChart
-                    runat="server"
-                    Shadow="true">
+                <ext:CartesianChart runat="server" Shadow="true">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -173,7 +168,11 @@
                                                 </Series>
                                             </ext:PolarChart>
 
-                                            <ext:GridPanel ID="Grid1" runat="server" Width="480" Height="130">
+                                            <ext:GridPanel
+                                                ID="Grid1"
+                                                runat="server"
+                                                Width="480"
+                                                Height="130">
                                                 <Store>
                                                     <ext:Store runat="server">
                                                         <Model>

@@ -292,14 +292,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server">
+                <ext:CartesianChart ID="Chart1" runat="server">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -326,28 +321,26 @@
                     </Interactions>
 
                     <Axes>
-                        <ext:NumericAxis
-                            Position="Left"
-                            Fields="G1,G2"
-                            Minimum="0">
+                        <ext:NumericAxis Position="Left" Fields="G1,G2" Minimum="0">
                         </ext:NumericAxis>
 
                         <ext:CategoryAxis Position="Bottom" Fields="Name">
                         </ext:CategoryAxis>
                     </Axes>
                     <Series>
-                        <ext:BarSeries
-                            XField="Name"
-                            YField="G1">
+                        <ext:BarSeries XField="Name" YField="G1">
                             <StyleSpec>
-                                <ext:SeriesSprite LineWidth="2" MaxBarWidth="30" StrokeStyle="dodgerblue" Opacity="0.6" />
+                                <ext:SeriesSprite
+                                    LineWidth="2"
+                                    MaxBarWidth="30"
+                                    StrokeStyle="dodgerblue"
+                                    Opacity="0.6"
+                                    />
                             </StyleSpec>
                             <Renderer Fn="renderer1" />
                         </ext:BarSeries>
 
-                        <ext:BarSeries
-                            XField="Name"
-                            YField="G2">
+                        <ext:BarSeries XField="Name" YField="G2">
                             <StyleSpec>
                                 <ext:SeriesSprite
                                     LineWidth="2"

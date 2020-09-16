@@ -72,10 +72,7 @@
             Y="50"
             Layout="Fit">
             <Items>
-                <ext:GridPanel
-                    runat="server"
-                    Header="false"
-                    Border="false">
+                <ext:GridPanel runat="server" Header="false" Border="false">
                     <Store>
                         <ext:Store ID="Store1" runat="server" PageSize="10">
                             <Model>

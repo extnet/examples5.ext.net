@@ -116,7 +116,11 @@
         </Model>
     </ext:Store>
 
-    <ext:Panel runat="server" Border="false" Width="500" Height="250">
+    <ext:Panel
+        runat="server"
+        Border="false"
+        Width="500"
+        Height="250">
         <LayoutConfig>
             <ext:HBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>

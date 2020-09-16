@@ -126,10 +126,7 @@
                             <Root>
                                 <ext:Node NodeID="root" Expanded="true" AllowDrop="false">
                                     <Children>
-                                        <ext:Node
-                                            AllowDrag="false"
-                                            EmptyChildren="true"
-                                            IconCls="album-btn">
+                                        <ext:Node AllowDrag="false" EmptyChildren="true" IconCls="album-btn">
                                             <CustomAttributes>
                                                 <ext:ConfigItem Name="name" Value="Album 1" Mode="Value" />
                                             </CustomAttributes>

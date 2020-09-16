@@ -96,9 +96,19 @@
                             <ext:Column runat="server" Text="Price" DataIndex="Price">
                                 <Renderer Format="UsMoney" />
                             </ext:Column>
-                            <ext:DateColumn runat="server" Text="Date" DataIndex="Date" Align="Center" Format="yyyy-MM-dd" />
+                            <ext:DateColumn
+                                runat="server"
+                                Text="Date"
+                                DataIndex="Date"
+                                Align="Center"
+                                Format="yyyy-MM-dd"
+                                />
                             <ext:Column runat="server" Text="Size" DataIndex="Size" />
-                            <ext:Column runat="server" Text="Visible" DataIndex="Visible" Align="Center">
+                            <ext:Column
+                                runat="server"
+                                Text="Visible"
+                                DataIndex="Visible"
+                                Align="Center">
                                 <Renderer Handler="return (value) ? 'Yes':'No';" />
                             </ext:Column>
                         </Columns>

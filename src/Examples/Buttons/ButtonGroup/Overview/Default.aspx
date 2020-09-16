@@ -357,7 +357,11 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:SplitButton runat="server" Text="Cut" IconCls="x-md md-icon-content-cut" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="x-md md-icon-content-cut"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -366,8 +370,17 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:Button runat="server" Text="Copy" IconCls="x-md md-icon-content-copy" Cls="x-btn-as-arrow" />
-                                <ext:Button runat="server" Text="Paste" IconCls="x-md md-icon-content-paste" ArrowAlign="Bottom">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="x-md md-icon-content-copy"
+                                    Cls="x-btn-as-arrow"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="x-md md-icon-content-paste"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -386,7 +399,11 @@
                                 <ext:Parameter Name="iconAlign" Value="top" />
                             </Defaults>
                             <Items>
-                                <ext:SplitButton runat="server" Text="Menu Button" IconCls="x-md md-icon-check-circle-outline" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Menu Button"
+                                    IconCls="x-md md-icon-check-circle-outline"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -395,7 +412,11 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:SplitButton runat="server" Text="Cut" IconCls="x-md md-icon-content-cut" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="x-md md-icon-content-cut"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -404,8 +425,17 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:Button runat="server" Text="Copy" IconCls="x-md md-icon-content-copy" Cls="x-btn-as-arrow" />
-                                <ext:Button runat="server" Text="Paste" IconCls="x-md md-icon-content-paste" ArrowAlign="Bottom">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="x-md md-icon-content-copy"
+                                    Cls="x-btn-as-arrow"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="x-md md-icon-content-paste"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -435,9 +465,23 @@
                     <Items>
                         <ext:ButtonGroup runat="server">
                             <Items>
-                                <ext:Button runat="server" Text="Cut" IconCls="x-md md-icon-content-cut" Scale="Medium" />
-                                <ext:Button runat="server" Text="Copy" IconCls="x-md md-icon-content-copy" Scale="Medium" />
-                                <ext:Button runat="server" Text="Paste" IconCls="x-md md-icon-content-paste" Scale="Medium">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="x-md md-icon-content-cut"
+                                    Scale="Medium"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="x-md md-icon-content-copy"
+                                    Scale="Medium"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="x-md md-icon-content-paste"
+                                    Scale="Medium">
                                     <Menu>
                                         <ext:Menu runat="server" Plain="true">
                                             <Items>
@@ -451,7 +495,12 @@
 
                         <ext:ButtonGroup runat="server" Layout="Table">
                             <Items>
-                                <ext:Button runat="server" Text="Format" IconCls="x-md md-icon-create" Scale="Medium" />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Format"
+                                    IconCls="x-md md-icon-create"
+                                    Scale="Medium"
+                                    />
                             </Items>
                         </ext:ButtonGroup>
                     </Items>
@@ -496,7 +545,11 @@
             </TopBar>
         </ext:Panel>
 
-        <ext:TabPanel runat="server" Width="960" Height="300" MarginSpec="20 0 0 0">
+        <ext:TabPanel
+            runat="server"
+            Width="960"
+            Height="300"
+            MarginSpec="20 0 0 0">
             <Items>
                 <ext:Panel runat="server" Title="Home">
                     <TopBar>

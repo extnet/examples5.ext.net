@@ -88,7 +88,11 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="TestCell" DataIndex="TestCell" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="TestCell"
+                        DataIndex="TestCell"
+                        Flex="1">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>

@@ -174,10 +174,7 @@
         Border="false"
         Header="false">
         <Items>
-            <ext:GridPanel
-                runat="server"
-                Cls="x-grid-custom"
-                Border="false">
+            <ext:GridPanel runat="server" Cls="x-grid-custom" Border="false">
                 <Store>
                     <ext:Store ID="Store1" runat="server" PageSize="10" OnReadData=Store1_ReadData>
                         <Model>
@@ -195,7 +192,11 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
+                        <ext:Column
+                            runat="server"
+                            Text="Company"
+                            DataIndex="company"
+                            Flex="1">
                             <Renderer Fn="linkRenderer" />
                         </ext:Column>
                         <ext:Column runat="server" Text="Price" DataIndex="price">

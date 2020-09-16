@@ -55,10 +55,18 @@
     <TopBar>
         <ext:Toolbar runat="server">
             <Items>
-                <ext:Button runat="server" Text="Add feed" IconCls="feed-add" OnDirectClick="AddFeedClick">
+                <ext:Button
+                    runat="server"
+                    Text="Add feed"
+                    IconCls="feed-add"
+                    OnDirectClick="AddFeedClick">
                 </ext:Button>
 
-                <ext:Button runat="server" ItemID="remove" Text="Remove feed" IconCls="feed-remove">
+                <ext:Button
+                    runat="server"
+                    ItemID="remove"
+                    Text="Remove feed"
+                    IconCls="feed-remove">
                     <Listeners>
                         <Click Fn="FeedViewer.FeedPanel.removeFeed" />
                     </Listeners>

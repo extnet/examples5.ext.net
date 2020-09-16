@@ -46,7 +46,13 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Common Name" DataIndex="Common" Sortable="true" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Common Name"
+                        DataIndex="Common"
+                        Sortable="true"
+                        Flex="1"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Botanical"
@@ -66,8 +72,19 @@
                         Width="70"
                         Align="End"
                         />
-                    <ext:DateColumn runat="server" Text="Available" DataIndex="Availability" Width="95" Format="yyyy-MM-dd" />
-                    <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Available"
+                        DataIndex="Availability"
+                        Width="95"
+                        Format="yyyy-MM-dd"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Indoor?"
+                        DataIndex="Indoor"
+                        Width="55"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>

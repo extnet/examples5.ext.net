@@ -99,21 +99,55 @@
         </Store>
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column ID="topic" runat="server" Text="Topic" DataIndex="title" Width="420" Flex="1" Sortable="false">
+                <ext:Column
+                    ID="topic"
+                    runat="server"
+                    Text="Topic"
+                    DataIndex="title"
+                    Width="420"
+                    Flex="1"
+                    Sortable="false">
                     <Renderer Fn="template" />
                 </ext:Column>
-                <ext:Column runat="server" Text="Author" DataIndex="author" Width="100" Hidden="true" Sortable="true" />
-                <ext:Column runat="server" Text="Replies" DataIndex="replycount" Width="70" Align="End" Sortable="true" />
-                <ext:Column runat="server" Text="Last Post" DataIndex="lastpost" Width="150" Sortable="true">
+                <ext:Column
+                    runat="server"
+                    Text="Author"
+                    DataIndex="author"
+                    Width="100"
+                    Hidden="true"
+                    Sortable="true"
+                    />
+                <ext:Column
+                    runat="server"
+                    Text="Replies"
+                    DataIndex="replycount"
+                    Width="70"
+                    Align="End"
+                    Sortable="true"
+                    />
+                <ext:Column
+                    runat="server"
+                    Text="Last Post"
+                    DataIndex="lastpost"
+                    Width="150"
+                    Sortable="true">
                     <Renderer Fn="renderLast" />
                 </ext:Column>
             </Columns>
         </ColumnModel>
         <BottomBar>
-            <ext:PagingToolbar runat="server" DisplayInfo="true" DisplayMsg="Displaying topics {0} - {1} of {2}" EmptyMsg="No topics to display">
+            <ext:PagingToolbar
+                runat="server"
+                DisplayInfo="true"
+                DisplayMsg="Displaying topics {0} - {1} of {2}"
+                EmptyMsg="No topics to display">
                 <Items>
                     <ext:ToolbarSeparator />
-                    <ext:Button runat="server" Text="Show Preview" Pressed="true" EnableToggle="true">
+                    <ext:Button
+                        runat="server"
+                        Text="Show Preview"
+                        Pressed="true"
+                        EnableToggle="true">
                         <Listeners>
                             <Toggle Handler="var view = #{GridPanel1}.view; view.preview = pressed; view.refresh();" />
                         </Listeners>

@@ -124,7 +124,13 @@
                                 Flex="1">
                                 <Renderer Fn="change" />
                             </ext:Column>
-                            <ext:Column runat="server" Text="Rating" Width="50" Sortable="true" DataIndex="rating" Flex="1">
+                            <ext:Column
+                                runat="server"
+                                Text="Rating"
+                                Width="50"
+                                Sortable="true"
+                                DataIndex="rating"
+                                Flex="1">
                                 <Renderer Handler="if (value == 0) return 'A'; if (value == 1) return 'B'; if (value == 2) return 'C';" />
                             </ext:Column>
                         </Columns>
@@ -147,8 +153,17 @@
                         <ext:TextField Name="company" runat="server" FieldLabel="Name" />
                         <ext:TextField Name="price" runat="server" FieldLabel="Price" />
                         <ext:TextField Name="pctChange" runat="server" FieldLabel="Change" />
-                        <ext:DateField Name="lastChange" runat="server" FieldLabel="Last Updated" Format="yyyy-MM-dd" />
-                        <ext:RadioGroup runat="server" FieldLabel="Rating" ColumnsNumber="3" AutomaticGrouping="false">
+                        <ext:DateField
+                            Name="lastChange"
+                            runat="server"
+                            FieldLabel="Last Updated"
+                            Format="yyyy-MM-dd"
+                            />
+                        <ext:RadioGroup
+                            runat="server"
+                            FieldLabel="Rating"
+                            ColumnsNumber="3"
+                            AutomaticGrouping="false">
                             <Items>
                                 <ext:Radio
                                     runat="server"

@@ -36,10 +36,7 @@
 
         <p>Click on <b>Reload Data</b> to update the information.</p>
 
-        <ext:Panel
-            runat="server"
-            Width="960"
-            Height="250">
+        <ext:Panel runat="server" Width="960" Height="250">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
@@ -86,10 +83,7 @@
                     InsetPadding="25"
                     Flex="1">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -101,10 +95,21 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis Position="Gauge" Minimum="0" Maximum="100" MajorTickSteps="10" Margin="-10" />
+                        <ext:NumericAxis
+                            Position="Gauge"
+                            Minimum="0"
+                            Maximum="100"
+                            MajorTickSteps="10"
+                            Margin="-10"
+                            />
                     </Axes>
                     <Series>
-                        <ext:GaugeSeries AngleField="Data1" Donut="0" Colors="#F49D10,#ddd" TotalAngleDegrees="180" />
+                        <ext:GaugeSeries
+                            AngleField="Data1"
+                            Donut="0"
+                            Colors="#F49D10,#ddd"
+                            TotalAngleDegrees="180"
+                            />
                     </Series>
                 </ext:PolarChart>
 
@@ -115,10 +120,7 @@
                     InsetPadding="25"
                     Flex="1">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -139,7 +141,12 @@
                             />
                     </Axes>
                     <Series>
-                        <ext:GaugeSeries AngleField="Data1" Donut="30" Colors="#82B525,#ddd" TotalAngleDegrees="180" />
+                        <ext:GaugeSeries
+                            AngleField="Data1"
+                            Donut="30"
+                            Colors="#82B525,#ddd"
+                            TotalAngleDegrees="180"
+                            />
                     </Series>
                 </ext:PolarChart>
 
@@ -151,10 +158,7 @@
                     Flex="1">
                     <AnimationConfig Easing="BounceOut" Duration="500" />
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -175,7 +179,12 @@
                             />
                     </Axes>
                     <Series>
-                        <ext:GaugeSeries AngleField="Data1" Donut="80" Colors="#3AA8CB,#ddd" TotalAngleDegrees="180" />
+                        <ext:GaugeSeries
+                            AngleField="Data1"
+                            Donut="80"
+                            Colors="#3AA8CB,#ddd"
+                            TotalAngleDegrees="180"
+                            />
                     </Series>
                 </ext:PolarChart>
             </Items>

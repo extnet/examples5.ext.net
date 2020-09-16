@@ -210,7 +210,11 @@
         Width="500">
         <ColumnModel runat="server">
             <Columns>
-                <ext:Column runat="server" Text="Company" DataIndex="company" Flex="1">
+                <ext:Column
+                    runat="server"
+                    Text="Company"
+                    DataIndex="company"
+                    Flex="1">
                     <Editor>
                         <ext:TextField runat="server">
                             <Triggers>
@@ -224,7 +228,11 @@
                     </Editor>
                 </ext:Column>
 
-                <ext:Column runat="server" Text="Rating" DataIndex="rating" Flex="1">
+                <ext:Column
+                    runat="server"
+                    Text="Rating"
+                    DataIndex="rating"
+                    Flex="1">
                     <Editor>
                         <ext:ComboBox
                             runat="server"

@@ -52,7 +52,13 @@
             </Store>
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="Record Name" Width="160" DataIndex="Name" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Record Name"
+                        Width="160"
+                        DataIndex="Name"
+                        Flex="1"
+                        />
                 </Columns>
             </ColumnModel>
             <View>

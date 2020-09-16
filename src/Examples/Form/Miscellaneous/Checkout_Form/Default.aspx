@@ -155,10 +155,7 @@
                                     />
                             </Items>
                         </ext:FieldContainer>
-                        <ext:Container
-                            runat="server"
-                            Layout="HBox"
-                            MarginSpec="0 0 5 0">
+                        <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
                                     runat="server"
@@ -202,10 +199,7 @@
                             </Listeners>
                         </ext:TextField>
 
-                        <ext:Container
-                            runat="server"
-                            Layout="HBox"
-                            MarginSpec="0 0 5 0">
+                        <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
                                     runat="server"
@@ -233,7 +227,11 @@
                                     AllowBlank="false"
                                     ForceSelection="true">
                                     <Store>
-                                        <ext:Store ID="StatesStore" runat="server" Data="<%# States %>" AutoDataBind="true">
+                                        <ext:Store
+                                            ID="StatesStore"
+                                            runat="server"
+                                            Data="<%# States %>"
+                                            AutoDataBind="true">
                                             <Model>
                                                 <ext:Model runat="server">
                                                     <Fields>
@@ -297,10 +295,7 @@
                             AllowBlank="false"
                             />
 
-                        <ext:Container
-                            runat="server"
-                            Layout="HBox"
-                            MarginSpec="0 0 5 0">
+                        <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
                                     runat="server"
@@ -389,10 +384,7 @@
                             AllowBlank="false"
                             />
 
-                        <ext:Container
-                            runat="server"
-                            Layout="HBox"
-                            MarginSpec="0 0 5 0">
+                        <ext:Container runat="server" Layout="HBox" MarginSpec="0 0 5 0">
                             <Items>
                                 <ext:TextField
                                     runat="server"

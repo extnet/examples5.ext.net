@@ -31,7 +31,12 @@
             </Plugins>
 
             <Items>
-                <ext:SplitButton ID="SplitButton1" runat="server" Text="Menu Button" IconCls="x-md md-icon-add-circle-outline" Reorderable="false">
+                <ext:SplitButton
+                    ID="SplitButton1"
+                    runat="server"
+                    Text="Menu Button"
+                    IconCls="x-md md-icon-add-circle-outline"
+                    Reorderable="false">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
@@ -41,7 +46,11 @@
                     </Menu>
                 </ext:SplitButton>
 
-                <ext:SplitButton ID="SplitButton2" runat="server" Text="Cut" IconCls="x-md md-icon-add-circle-outline">
+                <ext:SplitButton
+                    ID="SplitButton2"
+                    runat="server"
+                    Text="Cut"
+                    IconCls="x-md md-icon-add-circle-outline">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
@@ -51,9 +60,18 @@
                     </Menu>
                 </ext:SplitButton>
 
-                <ext:Button ID="Button1" runat="server" Text="Copy" IconCls="x-md md-icon-add-circle-outline" />
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Copy"
+                    IconCls="x-md md-icon-add-circle-outline"
+                    />
 
-                <ext:Button ID="Button2" runat="server" Text="Paste" IconCls="x-md md-icon-add-circle-outline">
+                <ext:Button
+                    ID="Button2"
+                    runat="server"
+                    Text="Paste"
+                    IconCls="x-md md-icon-add-circle-outline">
                     <Menu>
                         <ext:Menu runat="server">
                             <Items>
@@ -62,7 +80,12 @@
                         </ext:Menu>
                     </Menu>
                 </ext:Button>
-                <ext:Button ID="Button3" runat="server" Text="Format" IconCls="x-md md-icon-add-circle-outline" />
+                <ext:Button
+                    ID="Button3"
+                    runat="server"
+                    Text="Format"
+                    IconCls="x-md md-icon-add-circle-outline"
+                    />
             </Items>
         </ext:Toolbar>
 

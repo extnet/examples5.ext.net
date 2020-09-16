@@ -152,7 +152,11 @@
                         <SummaryRenderer Handler="return ((value === 0 || value > 1) ? '(' + value +' Tasks)' : '(1 Task)');" />
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="Project" DataIndex="Name" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Project"
+                        DataIndex="Name"
+                        Flex="1">
                         <SummaryRenderer Handler="return '&nbsp;';" />
                     </ext:Column>
 

@@ -66,7 +66,11 @@
                                 <Click Handler="#{TreeList1}.getStore().getRoot().collapseChildren(true);" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="Button3" runat="server" Text="Toggle Micro" EnableToggle="true">
+                        <ext:Button
+                            ID="Button3"
+                            runat="server"
+                            Text="Toggle Micro"
+                            EnableToggle="true">
                             <Listeners>
                                 <Toggle Handler="#{TreeList1}.setMicro(this.pressed);" />
                             </Listeners>
@@ -78,9 +82,7 @@
                 <ext:StatusBar ID="StatusBar1" runat="server" AutoClear="1500" />
             </BottomBar>
             <Items>
-                <ext:TreeList
-                    ID="TreeList1"
-                    runat="server">
+                <ext:TreeList ID="TreeList1" runat="server">
                     <Store>
                         <ext:TreeStore ID="TreeStore1" runat="server">
                             <Root>

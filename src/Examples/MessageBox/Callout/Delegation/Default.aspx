@@ -187,10 +187,7 @@
 
     <h1>Callout Delegation</h1>
 
-    <ext:GridPanel
-        runat="server"
-        Title="Users"
-        Width="550">
+    <ext:GridPanel runat="server" Title="Users" Width="550">
         <ColumnModel>
             <Columns>
                 <ext:Column
@@ -230,7 +227,11 @@
                 Delegate=".x-grid-cell-Products"
                 BodyStyle="padding:0px;">
                 <BodyWidget>
-                    <ext:DataView runat="server" Width="250" Cls="list" ItemSelector="li">
+                    <ext:DataView
+                        runat="server"
+                        Width="250"
+                        Cls="list"
+                        ItemSelector="li">
                         <Store>
                             <ext:Store runat="server">
                                 <Fields>
@@ -472,7 +473,12 @@
             <FieldErrorChange Handler="if (field.hasFocus && (!this._e || this._e.field != field || this._e.error != error)) {this._e = {field: field, error: error}; var c = this.callouts[0]; c.triggerElement = field.el; error ? (c.hidden ? c.show() : c.setHtml(field.getActiveError())) : c.hide();}" />
         </Listeners>
         <Callouts>
-            <ext:Callout runat="server" Delegate=".x-field" Trigger="Click" Title="Errors" IconCls="x-md md-icon-cancel">
+            <ext:Callout
+                runat="server"
+                Delegate=".x-field"
+                Trigger="Click"
+                Title="Errors"
+                IconCls="x-md md-icon-cancel">
                 <Listeners>
                     <BeforeShow Fn="setFieldErrors" />
                 </Listeners>

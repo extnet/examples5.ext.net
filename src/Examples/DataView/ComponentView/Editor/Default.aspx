@@ -56,7 +56,11 @@
             </Model>
         </ext:Store>
 
-        <ext:DataView runat="server" Padding="6" DisableSelection="true" Width="450">
+        <ext:DataView
+            runat="server"
+            Padding="6"
+            DisableSelection="true"
+            Width="450">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -114,7 +118,12 @@
 
                         <ext:ViewItem Selector="div.cancel-button">
                             <Component>
-                                <ext:Button runat="server" IconCls="x-md md-icon-cancel" Text="Cancel" Handler="this.record.reject();" />
+                                <ext:Button
+                                    runat="server"
+                                    IconCls="x-md md-icon-cancel"
+                                    Text="Cancel"
+                                    Handler="this.record.reject();"
+                                    />
                             </Component>
                         </ext:ViewItem>
 

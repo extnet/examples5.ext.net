@@ -238,10 +238,7 @@
                             </Axes>
 
                             <Series>
-                                <ext:BarSeries
-                                    Highlight="true"
-                                    XField="company"
-                                    YField="price">
+                                <ext:BarSeries Highlight="true" XField="company" YField="price">
                                     <StyleSpec>
                                         <ext:Sprite FillStyle="#456d9f" />
                                     </StyleSpec>
@@ -303,10 +300,7 @@
                                     />
                             </Axes>
                             <Series>
-                                <ext:RadarSeries
-                                    AngleField="Name"
-                                    RadiusField="Data"
-                                    ShowMarkers="true">
+                                <ext:RadarSeries AngleField="Name" RadiusField="Data" ShowMarkers="true">
                                     <Marker>
                                         <ext:CircleSprite Radius="4" FillStyle="rgb(69,109,159)" />
                                     </Marker>

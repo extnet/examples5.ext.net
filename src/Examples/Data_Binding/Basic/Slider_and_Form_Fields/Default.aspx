@@ -47,8 +47,23 @@
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
                     <Items>
-                        <ext:NumberField runat="server" Width="100" BindString="{red}" MarginSpec="0 10 0 0" MinValue="0" MaxValue="255" />
-                        <ext:Slider runat="server" Single="true" Flex="1" BindString="{red}" PublishOnComplete="false" MinValue="0" MaxValue="255" />
+                        <ext:NumberField
+                            runat="server"
+                            Width="100"
+                            BindString="{red}"
+                            MarginSpec="0 10 0 0"
+                            MinValue="0"
+                            MaxValue="255"
+                            />
+                        <ext:Slider
+                            runat="server"
+                            Single="true"
+                            Flex="1"
+                            BindString="{red}"
+                            PublishOnComplete="false"
+                            MinValue="0"
+                            MaxValue="255"
+                            />
                     </Items>
                 </ext:FieldContainer>
 
@@ -57,8 +72,23 @@
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
                     <Items>
-                        <ext:NumberField runat="server" Width="100" BindString="{green}" MarginSpec="0 10 0 0" MinValue="0" MaxValue="255" />
-                        <ext:Slider runat="server" Single="true" Flex="1" BindString="{green}" PublishOnComplete="false" MinValue="0" MaxValue="255" />
+                        <ext:NumberField
+                            runat="server"
+                            Width="100"
+                            BindString="{green}"
+                            MarginSpec="0 10 0 0"
+                            MinValue="0"
+                            MaxValue="255"
+                            />
+                        <ext:Slider
+                            runat="server"
+                            Single="true"
+                            Flex="1"
+                            BindString="{green}"
+                            PublishOnComplete="false"
+                            MinValue="0"
+                            MaxValue="255"
+                            />
                     </Items>
                 </ext:FieldContainer>
 
@@ -67,8 +97,23 @@
                         <ext:HBoxLayoutConfig Align="Middle" />
                     </LayoutConfig>
                     <Items>
-                        <ext:NumberField runat="server" Width="100" BindString="{blue}" MarginSpec="0 10 0 0" MinValue="0" MaxValue="255" />
-                        <ext:Slider runat="server" Single="true" Flex="1" BindString="{blue}" PublishOnComplete="false" MinValue="0" MaxValue="255" />
+                        <ext:NumberField
+                            runat="server"
+                            Width="100"
+                            BindString="{blue}"
+                            MarginSpec="0 10 0 0"
+                            MinValue="0"
+                            MaxValue="255"
+                            />
+                        <ext:Slider
+    runat="server"
+    Single="true"
+    Flex="1"
+    BindString="{blue}"
+    PublishOnComplete="false"
+    MinValue="0"
+    MaxValue="255"
+ />
                     </Items>
                 </ext:FieldContainer>
 

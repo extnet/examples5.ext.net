@@ -166,15 +166,9 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    InsetPadding="40">
+                <ext:CartesianChart ID="Chart1" runat="server" InsetPadding="40">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# GenerateData() %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# GenerateData() %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>

@@ -103,10 +103,7 @@
     <form runat="server">
         <ext:ResourceManager ID="ResourceManager1" runat="server" />
 
-        <ext:Viewport
-            runat="server"
-            StyleSpec="background-color: transparent;"
-            Layout="Border">
+        <ext:Viewport runat="server" StyleSpec="background-color: transparent;" Layout="Border">
             <Items>
                 <ext:Panel
                     ID="pnlNorth"
@@ -189,9 +186,7 @@
                                     Border="false"
                                     BodyStyle="background-color: transparent;">
                                     <Items>
-                                        <ext:PortalColumn
-                                            runat="server"
-                                            ColumnWidth=".33">
+                                        <ext:PortalColumn runat="server" ColumnWidth=".33">
                                             <Items>
                                                 <ext:Portlet
                                                     ID="Portlet1"
@@ -205,17 +200,13 @@
                                                 </ext:Portlet>
                                             </Items>
                                         </ext:PortalColumn>
-                                        <ext:PortalColumn
-                                            runat="server"
-                                            ColumnWidth=".33">
+                                        <ext:PortalColumn runat="server" ColumnWidth=".33">
                                             <Items>
                                                 <ext:Portlet ID="Portlet2" Title="Panel 2" runat="server" />
                                                 <ext:Portlet ID="Portlet3" Title="Another Panel 2" runat="server" />
                                             </Items>
                                         </ext:PortalColumn>
-                                        <ext:PortalColumn
-                                            runat="server"
-                                            ColumnWidth=".34">
+                                        <ext:PortalColumn runat="server" ColumnWidth=".34">
                                             <Items>
                                                 <ext:Portlet ID="Portlet4" Title="Panel 3" runat="server" />
                                                 <ext:Portlet ID="Portlet5" Title="Another Panel 3" runat="server" />

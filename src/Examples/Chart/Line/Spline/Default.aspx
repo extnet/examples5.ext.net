@@ -79,10 +79,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    InsetPaddingSpec="40 40 20 20">
+                <ext:CartesianChart ID="Chart1" runat="server" InsetPaddingSpec="40 40 20 20">
                     <Store>
                         <ext:Store runat="server">
                             <Model>

@@ -58,10 +58,7 @@
 
         <p>For view/edit additional properties please click on the image in last column.</p>
 
-        <ext:GridPanel
-            ID="GridPanel1"
-            runat="server"
-            Title="Employees">
+        <ext:GridPanel ID="GridPanel1" runat="server" Title="Employees">
             <Store>
                 <ext:Store runat="server" PageSize="5">
                     <Proxy>
@@ -105,7 +102,11 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Full Name" DataIndex="LastName" Flex="1">
+                    <ext:Column
+                        runat="server"
+                        Text="Full Name"
+                        DataIndex="LastName"
+                        Flex="1">
                         <Renderer Handler="return '<b>' + record.data['LastName'] + '</b>,' + record.data['FirstName']" />
                     </ext:Column>
                     <ext:Column
@@ -114,7 +115,12 @@
                         DataIndex="Title"
                         Width="150"
                         />
-                    <ext:DateColumn runat="server" Text="Birth Date" DataIndex="BirthDate" Format="yyyy-MM-dd" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Birth Date"
+                        DataIndex="BirthDate"
+                        Format="yyyy-MM-dd"
+                        />
                     <ext:Column
                         runat="server"
                         Text="City"

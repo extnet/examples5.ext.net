@@ -46,10 +46,7 @@
             Width="500"
             StyleSpec="margin-top: 10px">
             <Store>
-                <ext:Store
-                    runat="server"
-                    AutoLoad="true"
-                    AutoSync="true">
+                <ext:Store runat="server" AutoLoad="true" AutoSync="true">
                     <Proxy>
                         <ext:RestProxy Url="RestfulPersons.ashx/person">
                             <Reader>
@@ -82,20 +79,36 @@
             </Store>
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="ID" Width="40" DataIndex="Id">
+                    <ext:Column
+                        runat="server"
+                        Text="ID"
+                        Width="40"
+                        DataIndex="Id">
                         <Renderer Handler="return record.phantom ? '' : value;" />
                     </ext:Column>
-                    <ext:Column runat="server" Text="Email" Flex="1" DataIndex="Email">
+                    <ext:Column
+                        runat="server"
+                        Text="Email"
+                        Flex="1"
+                        DataIndex="Email">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="First" Width="80" DataIndex="First">
+                    <ext:Column
+                        runat="server"
+                        Text="First"
+                        Width="80"
+                        DataIndex="First">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
                     </ext:Column>
-                    <ext:Column runat="server" Text="Last" Width="80" DataIndex="Last">
+                    <ext:Column
+                        runat="server"
+                        Text="Last"
+                        Width="80"
+                        DataIndex="Last">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>
@@ -116,7 +129,11 @@
                                                 grid.editingPlugin.startEdit(0, 0);" />
                             </Listeners>
                         </ext:Button>
-                        <ext:Button ID="btnRemoveEmployee" runat="server" Text="Delete" IconCls="x-md md-icon-error">
+                        <ext:Button
+                            ID="btnRemoveEmployee"
+                            runat="server"
+                            Text="Delete"
+                            IconCls="x-md md-icon-error">
                             <Listeners>
                                 <Click Handler="var selection = #{UserGrid}.getView().getSelectionModel().getSelection()[0];
                                                 if (selection) {

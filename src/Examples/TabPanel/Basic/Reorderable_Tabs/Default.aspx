@@ -52,11 +52,37 @@
             Height="480"
             BodyPadding="18">
             <Items>
-                <ext:Panel runat="server" Title="Tab 1" Html="Test 1" Closable="true" />
-                <ext:Panel runat="server" Title="Tab 2" Html="Test 2" Closable="true" />
-                <ext:Panel runat="server" Title="Tab 3" Html="Test 3" Closable="true" />
-                <ext:Panel runat="server" Title="Non Reorderable" Html="I can't be moved" Closable="true" Reorderable="false" />
-                <ext:Panel runat="server" Title="Tab 4" Html="Test 4" Closable="true" />
+                <ext:Panel
+                    runat="server"
+                    Title="Tab 1"
+                    Html="Test 1"
+                    Closable="true"
+                    />
+                <ext:Panel
+                    runat="server"
+                    Title="Tab 2"
+                    Html="Test 2"
+                    Closable="true"
+                    />
+                <ext:Panel
+                    runat="server"
+                    Title="Tab 3"
+                    Html="Test 3"
+                    Closable="true"
+                    />
+                <ext:Panel
+                    runat="server"
+                    Title="Non Reorderable"
+                    Html="I can't be moved"
+                    Closable="true"
+                    Reorderable="false"
+                    />
+                <ext:Panel
+                    runat="server"
+                    Title="Tab 4"
+                    Html="Test 4"
+                    Closable="true"
+                    />
             </Items>
             <Plugins>
                 <ext:BoxReorderer runat="server" />

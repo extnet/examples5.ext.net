@@ -82,7 +82,11 @@
             following the format #rrggbbaa (lowercase hexadecimal characters).
         </h3>
 
-        <ext:ColorSelector ID="ColorSelector1" runat="server" ShowOkCancelButtons="true" Format="sharplchex8">
+        <ext:ColorSelector
+            ID="ColorSelector1"
+            runat="server"
+            ShowOkCancelButtons="true"
+            Format="sharplchex8">
             <Listeners>
                 <Ok Handler="App.Label3.setText('Clicked OK. Color chosen: ' + color);" />
                 <Cancel Handler="App.Label3.setText('Clicked Cancel. Current color: ' + item.value);" />

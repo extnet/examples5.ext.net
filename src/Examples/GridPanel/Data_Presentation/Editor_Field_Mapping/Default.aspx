@@ -97,10 +97,7 @@
             </Model>
         </ext:Store>
 
-        <ext:GridPanel
-            runat="server"
-            Title="List"
-            IconCls="x-md md-icon-open-in-new">
+        <ext:GridPanel runat="server" Title="List" IconCls="x-md md-icon-open-in-new">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -120,7 +117,11 @@
                     <ext:Column runat="server" Text="ID" DataIndex="ID" />
                     <ext:Column runat="server" Text="NAME" DataIndex="Name" />
                     <ext:Column runat="server" Text="SURNAME" DataIndex="Surname" />
-                    <ext:Column runat="server" Text="DEPARTMENT" DataIndex="DepartmentId" Width="240">
+                    <ext:Column
+                        runat="server"
+                        Text="DEPARTMENT"
+                        DataIndex="DepartmentId"
+                        Width="240">
                         <Renderer Fn="departmentRenderer" />
                         <Editor>
                             <ext:ComboBox

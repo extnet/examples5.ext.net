@@ -35,7 +35,11 @@
                 </Items>
             </ext:Panel>
 
-            <ext:Panel runat="server" MarginSpec="5" Region="Center" BodyPadding="18">
+            <ext:Panel
+                runat="server"
+                MarginSpec="5"
+                Region="Center"
+                BodyPadding="18">
                 <Content>
                     <h1>Original header of the Accordion's item</h1>
                 </Content>

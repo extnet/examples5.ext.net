@@ -83,10 +83,7 @@
             </Model>
         </ext:Store>
 
-        <ext:Panel
-            runat="server"
-            BodyStyle="background: transparent !important"
-            Width="650">
+        <ext:Panel runat="server" BodyStyle="background: transparent !important" Width="650">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
             </LayoutConfig>
@@ -141,10 +138,7 @@
                                     />
                             </Items>
                             <Axes>
-                                <ext:NumericAxis
-                                    Position="Gauge"
-                                    Title="Fuel"
-                                    MajorTickSteps="4">
+                                <ext:NumericAxis Position="Gauge" Title="Fuel" MajorTickSteps="4">
                                     <Renderer Fn="fuelRenderer" />
                                 </ext:NumericAxis>
                             </Axes>

@@ -78,7 +78,11 @@
                         Flex="1"
                         DataIndex="username"
                         />
-                    <ext:Column runat="server" Text="Title" Flex="2" DataIndex="title">
+                    <ext:Column
+                        runat="server"
+                        Text="Title"
+                        Flex="2"
+                        DataIndex="title">
                         <Renderer Fn="renderTitle" />
                     </ext:Column>
                 </Columns>

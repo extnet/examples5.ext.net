@@ -91,7 +91,11 @@
                 </Store>
                 <ColumnModel runat="server">
                     <Columns>
-                        <ext:Column runat="server" DataIndex="CompanyName" Text="Company Name" Flex="1">
+                        <ext:Column
+                            runat="server"
+                            DataIndex="CompanyName"
+                            Text="Company Name"
+                            Flex="1">
                             <Editor>
                                 <ext:TextField ID="TextField1" runat="server" />
                             </Editor>
@@ -166,7 +170,12 @@
                         </Listeners>
                     </ext:Button>
 
-                    <ext:Button ID="btnDelete" runat="server" Text="Delete" IconCls="x-md md-icon-remove-circle-outline" Disabled="true">
+                    <ext:Button
+                        ID="btnDelete"
+                        runat="server"
+                        Text="Delete"
+                        IconCls="x-md md-icon-remove-circle-outline"
+                        Disabled="true">
                         <Listeners>
                             <Click Handler="#{GridPanel1}.deleteSelected();
                                             if (!#{GridPanel1}.hasSelection()) {

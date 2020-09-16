@@ -372,7 +372,11 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:SplitButton runat="server" Text="Cut" IconCls="add24" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="add24"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>
@@ -381,8 +385,17 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:Button runat="server" Text="Copy" IconCls="add24" Cls="x-btn-as-arrow" />
-                                <ext:Button runat="server" Text="Paste" IconCls="add24" ArrowAlign="Bottom">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="add24"
+                                    Cls="x-btn-as-arrow"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="add24"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>
@@ -401,7 +414,11 @@
                                 <ext:Parameter Name="iconAlign" Value="top" />
                             </Defaults>
                             <Items>
-                                <ext:SplitButton runat="server" Text="Menu Button" IconCls="add24" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Menu Button"
+                                    IconCls="add24"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>
@@ -410,7 +427,11 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:SplitButton runat="server" Text="Cut" IconCls="add24" ArrowAlign="Bottom">
+                                <ext:SplitButton
+                                    runat="server"
+                                    Text="Cut"
+                                    IconCls="add24"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>
@@ -419,8 +440,17 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:SplitButton>
-                                <ext:Button runat="server" Text="Copy" IconCls="add24" Cls="x-btn-as-arrow" />
-                                <ext:Button runat="server" Text="Paste" IconCls="add24" ArrowAlign="Bottom">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Copy"
+                                    IconCls="add24"
+                                    Cls="x-btn-as-arrow"
+                                    />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="add24"
+                                    ArrowAlign="Bottom">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>
@@ -429,7 +459,12 @@
                                         </ext:Menu>
                                     </Menu>
                                 </ext:Button>
-                                <ext:Button runat="server" Text="Format" IconCls="add24" Cls="x-btn-as-arrow" />
+                                <ext:Button
+                                    runat="server"
+                                    Text="Format"
+                                    IconCls="add24"
+                                    Cls="x-btn-as-arrow"
+                                    />
                             </Items>
                         </ext:ButtonGroup>
                     </Items>
@@ -462,7 +497,11 @@
                                     IconCls="add24"
                                     Scale="Medium"
                                     />
-                                <ext:Button runat="server" Text="Paste" IconCls="add24" Scale="Medium">
+                                <ext:Button
+                                    runat="server"
+                                    Text="Paste"
+                                    IconCls="add24"
+                                    Scale="Medium">
                                     <Menu>
                                         <ext:Menu runat="server">
                                             <Items>

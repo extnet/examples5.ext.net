@@ -102,10 +102,7 @@
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>
                     <Items>
-                        <ext:GridPanel
-                            runat="server"
-                            Title="Customers Grid"
-                            Flex="1">
+                        <ext:GridPanel runat="server" Title="Customers Grid" Flex="1">
                             <Bind>
                                 <ext:Parameter Name="store" Value="{customers}" />
                                 <ext:Parameter Name="selection" Value="{selectedCustomer}" />

@@ -125,7 +125,11 @@
             Title="Array Grid"
             Width="960">
             <Store>
-                <ext:Store ID="Store1" runat="server" OnReadData="MyData_Refresh" PageSize="10">
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    OnReadData="MyData_Refresh"
+                    PageSize="10">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>

@@ -178,10 +178,7 @@
         <h3>Tasks Emulation</h3>
         <br />
 
-        <ext:GridPanel
-            runat="server"
-            Title="Tasks"
-            Width="320">
+        <ext:GridPanel runat="server" Title="Tasks" Width="320">
             <Bin>
                 <ext:TaskManager runat="server">
                     <Tasks>

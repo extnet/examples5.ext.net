@@ -70,7 +70,11 @@
                     />
             </Items>
             <Buttons>
-                <ext:Button ID="btnLogin" runat="server" Text="Login" IconCls="x-md md-icon-check-circle-outline">
+                <ext:Button
+                    ID="btnLogin"
+                    runat="server"
+                    Text="Login"
+                    IconCls="x-md md-icon-check-circle-outline">
                     <Listeners>
                         <Click Handler="
                             if (!#{txtUsername}.validate() || !#{txtPassword}.validate()) {
@@ -85,7 +89,11 @@
                         </Click>
                     </DirectEvents>
                 </ext:Button>
-                <ext:Button ID="btnCancel" runat="server" Text="Cancel" IconCls="x-md md-icon-cancel">
+                <ext:Button
+                    ID="btnCancel"
+                    runat="server"
+                    Text="Cancel"
+                    IconCls="x-md md-icon-cancel">
                     <Listeners>
                         <Click Handler="#{Window1}.hide();#{lblMessage}.setText('LOGIN CANCELED')" />
                     </Listeners>

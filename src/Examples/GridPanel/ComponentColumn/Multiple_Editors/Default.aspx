@@ -30,10 +30,7 @@
 
         <h1>Multiple Editors</h1>
 
-        <ext:GridPanel
-            runat="server"
-            Title="Multiple Editors"
-            Width="400">
+        <ext:GridPanel runat="server" Title="Multiple Editors" Width="400">
             <Store>
                 <ext:Store ID="Store1" runat="server">
                     <Model>
@@ -55,7 +52,11 @@
                 <Columns>
                      <ext:RowNumbererColumn runat="server" />
 
-                     <ext:ComponentColumn runat="server" Flex="1" Editor="true" DataIndex="Value">
+                     <ext:ComponentColumn
+                         runat="server"
+                         Flex="1"
+                         Editor="true"
+                         DataIndex="Value">
                         <Component>
                             <ext:NumberField runat="server" />
                             <ext:TextField runat="server" />

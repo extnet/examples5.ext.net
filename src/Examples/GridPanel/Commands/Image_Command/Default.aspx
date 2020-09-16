@@ -115,7 +115,11 @@
                             <ext:ImageCommand CommandName="Edit" IconCls="x-md md-icon-edit" Text="Edit">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
-                            <ext:ImageCommand CommandName="Disabled" IconCls="x-md md-icon-edit" Text="Disabled" Disabled="true">
+                            <ext:ImageCommand
+                                CommandName="Disabled"
+                                IconCls="x-md md-icon-edit"
+                                Text="Disabled"
+                                Disabled="true">
                                 <ToolTip Text="Edit" />
                             </ext:ImageCommand>
                         </Commands>

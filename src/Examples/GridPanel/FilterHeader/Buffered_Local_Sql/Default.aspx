@@ -48,10 +48,7 @@
             DisableSelection="true"
             Title="Northwind Data Sample">
             <Store>
-                <ext:Store
-                    ID="Store1"
-                    runat="server"
-                    DataSourceID="SqlDataSource1">
+                <ext:Store ID="Store1" runat="server" DataSourceID="SqlDataSource1">
                     <Model>
                         <ext:Model runat="server" IDProperty="EmployeeID">
                             <Fields>
@@ -70,15 +67,30 @@
             <ColumnModel runat="server">
                 <Columns>
                     <ext:RowNumbererColumn runat="server" Width="40" />
-                    <ext:Column runat="server" Text="Order #" DataIndex="ordernum" Width="70" />
+                    <ext:Column
+                        runat="server"
+                        Text="Order #"
+                        DataIndex="ordernum"
+                        Width="70"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Description"
                         DataIndex="item"
                         Flex="5"
                         />
-                    <ext:Column runat="server" Text="Buying Company" DataIndex="customer_company" Flex="4" />
-                    <ext:Column runat="server" Text="Seller Representative" DataIndex="seller" Flex="4" />
+                    <ext:Column
+                        runat="server"
+                        Text="Buying Company"
+                        DataIndex="customer_company"
+                        Flex="4"
+                        />
+                    <ext:Column
+                        runat="server"
+                        Text="Seller Representative"
+                        DataIndex="seller"
+                        Flex="4"
+                        />
                     <ext:Column
                         runat="server"
                         Text="Price"

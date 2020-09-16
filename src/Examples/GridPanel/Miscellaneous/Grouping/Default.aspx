@@ -143,7 +143,12 @@
             </Store>
             <ColumnModel runat="server">
                 <Columns>
-                    <ext:Column runat="server" Text="Common Name" DataIndex="Common" Flex="1" />
+                    <ext:Column
+                        runat="server"
+                        Text="Common Name"
+                        DataIndex="Common"
+                        Flex="1"
+                        />
 
                     <ext:Column
                         runat="server"
@@ -171,7 +176,12 @@
                         Format="yyyy-MM-dd"
                         />
 
-                    <ext:Column runat="server" Text="Indoor?" DataIndex="Indoor" Width="55" />
+                    <ext:Column
+                        runat="server"
+                        Text="Indoor?"
+                        DataIndex="Indoor"
+                        Width="55"
+                        />
                 </Columns>
             </ColumnModel>
             <View>
@@ -200,7 +210,12 @@
                 </ext:RowBody>
             </Features>
             <Buttons>
-                <ext:Button runat="server" Text="Print" IconCls="x-md md-icon-print" Handler="this.up('grid').print();" />
+                <ext:Button
+                    runat="server"
+                    Text="Print"
+                    IconCls="x-md md-icon-print"
+                    Handler="this.up('grid').print();"
+                    />
 
                 <ext:Button
                     ID="btnToggleGroups"

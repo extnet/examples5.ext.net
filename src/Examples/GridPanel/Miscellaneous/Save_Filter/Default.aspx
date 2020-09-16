@@ -82,7 +82,11 @@
             Width="960"
             Height="480">
             <Store>
-                <ext:Store ID="Store1" runat="server" OnBeforeStoreChanged="BeforeStoreChanged" OnSubmitData="SubmitData">
+                <ext:Store
+                    ID="Store1"
+                    runat="server"
+                    OnBeforeStoreChanged="BeforeStoreChanged"
+                    OnSubmitData="SubmitData">
                     <Model>
                         <ext:Model runat="server" IDProperty="company">
                             <Fields>
@@ -90,7 +94,12 @@
                                 <ext:ModelField Name="price" Type="Float" />
                                 <ext:ModelField Name="change" Type="Float" />
                                 <ext:ModelField Name="pctChange" Type="Float" />
-                                <ext:ModelField Name="lastChange" Type="Date" DateFormat="yyyy-MM-dd hh:mm:tt" DateWriteFormat="c" />
+                                <ext:ModelField
+                                    Name="lastChange"
+                                    Type="Date"
+                                    DateFormat="yyyy-MM-dd hh:mm:tt"
+                                    DateWriteFormat="c"
+                                    />
                             </Fields>
                         </ext:Model>
                     </Model>

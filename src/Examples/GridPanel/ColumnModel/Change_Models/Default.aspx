@@ -150,10 +150,7 @@
             <TopBar>
                 <ext:Toolbar runat="server">
                     <Items>
-                        <ext:Button
-                            runat="server"
-                            Text="Reconfigure"
-                            IconCls="x-md md-icon-check-circle-outline">
+                        <ext:Button runat="server" Text="Reconfigure" IconCls="x-md md-icon-check-circle-outline">
                             <DirectEvents>
                                 <Click OnEvent="Button1_Click">
                                     <EventMask
@@ -168,10 +165,7 @@
                 </ext:Toolbar>
             </TopBar>
             <Items>
-                <ext:GridPanel
-                    ID="GridPanel1"
-                    runat="server"
-                    Border="false">
+                <ext:GridPanel ID="GridPanel1" runat="server" Border="false">
                     <Store>
                         <ext:Store ID="Store1" runat="server">
                             <Model>

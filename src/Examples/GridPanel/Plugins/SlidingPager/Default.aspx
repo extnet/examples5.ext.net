@@ -107,7 +107,11 @@
                         DataIndex="company"
                         Flex="1"
                         />
-                    <ext:Column runat="server" Text="Price" Width="75" DataIndex="price">
+                    <ext:Column
+                        runat="server"
+                        Text="Price"
+                        Width="75"
+                        DataIndex="price">
                         <Renderer Format="UsMoney" />
                     </ext:Column>
                     <ext:Column
@@ -122,7 +126,12 @@
                         Width="75"
                         DataIndex="pctChange"
                         />
-                    <ext:DateColumn runat="server" Text="Last Updated" Width="85" DataIndex="lastChange" />
+                    <ext:DateColumn
+                        runat="server"
+                        Text="Last Updated"
+                        Width="85"
+                        DataIndex="lastChange"
+                        />
                 </Columns>
             </ColumnModel>
             <SelectionModel>
@@ -130,7 +139,12 @@
                     <DirectEvents>
                         <Select OnEvent="GridPanel1_RowSelect">
                             <ExtraParams>
-                                <ext:Parameter Name="record" Value="record.data" Mode="Raw" Encode="true" />
+                                <ext:Parameter
+                                    Name="record"
+                                    Value="record.data"
+                                    Mode="Raw"
+                                    Encode="true"
+                                    />
                             </ExtraParams>
                             <EventMask ShowMask="true" MinDelay="250" />
                         </Select>

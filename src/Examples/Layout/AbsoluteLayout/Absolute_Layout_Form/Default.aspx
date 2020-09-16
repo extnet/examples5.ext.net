@@ -52,13 +52,48 @@
                             <Items>
                                 <ext:Container runat="server" Layout="Absolute">
                                     <Items>
-                                        <ext:Label runat="server" X="0" Y="10" Text="From:" />
-                                        <ext:TextField runat="server" X="55" Y="10" AnchorHorizontal="100%" />
-                                        <ext:Label runat="server" X="0" Y="38" Text="To:" />
-                                        <ext:Button runat="server" Text="Contacts..." X="55" Y="37" />
-                                        <ext:TextField runat="server" X="135" Y="37" AnchorHorizontal="100%" />
-                                        <ext:Label runat="server" X="0" Y="65" Text="Subject:" />
-                                        <ext:TextField runat="server" X="55" Y="64" AnchorHorizontal="100%" />
+                                        <ext:Label
+                                            runat="server"
+                                            X="0"
+                                            Y="10"
+                                            Text="From:"
+                                            />
+                                        <ext:TextField
+                                            runat="server"
+                                            X="55"
+                                            Y="10"
+                                            AnchorHorizontal="100%"
+                                            />
+                                        <ext:Label
+                                            runat="server"
+                                            X="0"
+                                            Y="38"
+                                            Text="To:"
+                                            />
+                                        <ext:Button
+                                            runat="server"
+                                            Text="Contacts..."
+                                            X="55"
+                                            Y="37"
+                                            />
+                                        <ext:TextField
+                                            runat="server"
+                                            X="135"
+                                            Y="37"
+                                            AnchorHorizontal="100%"
+                                            />
+                                        <ext:Label
+                                            runat="server"
+                                            X="0"
+                                            Y="65"
+                                            Text="Subject:"
+                                            />
+                                        <ext:TextField
+                                            runat="server"
+                                            X="55"
+                                            Y="64"
+                                            AnchorHorizontal="100%"
+                                            />
                                         <ext:TextArea
                                             runat="server"
                                             X="0"

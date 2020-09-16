@@ -187,7 +187,11 @@
 
             <ColumnModel>
                 <Columns>
-                    <ext:TreeColumn runat="server" DataIndex="text" Text="Text" Flex="1">
+                    <ext:TreeColumn
+                        runat="server"
+                        DataIndex="text"
+                        Text="Text"
+                        Flex="1">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>

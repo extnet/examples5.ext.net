@@ -54,9 +54,7 @@
             Height="500"
             InsetPadding="40">
             <Store>
-                <ext:Store
-                    ID="Store1"
-                    runat="server">
+                <ext:Store ID="Store1" runat="server">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
@@ -111,10 +109,7 @@
                     <Renderer Handler="return label + '%';" />
                 </ext:NumericAxis>
 
-                <ext:CategoryAxis
-                    Fields="month"
-                    Position="Bottom"
-                    Grid="true">
+                <ext:CategoryAxis Fields="month" Position="Bottom" Grid="true">
                     <Label RotationDegrees="-45" />
                 </ext:CategoryAxis>
             </Axes>

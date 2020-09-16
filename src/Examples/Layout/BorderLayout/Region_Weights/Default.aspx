@@ -40,7 +40,11 @@
             <ext:VBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
         <Items>
-            <ext:Panel ID="BorderLayoutPanel" runat="server" Flex="1" Layout="Border">
+            <ext:Panel
+                ID="BorderLayoutPanel"
+                runat="server"
+                Flex="1"
+                Layout="Border">
                 <Items>
                     <ext:Panel
                         runat="server"
@@ -71,12 +75,21 @@
                 </Items>
             </ext:Panel>
 
-            <ext:Panel runat="server" Title="Settings" Height="180" BodyPadding="18" PaddingSpec="5 0 0 0">
+            <ext:Panel
+                runat="server"
+                Title="Settings"
+                Height="180"
+                BodyPadding="18"
+                PaddingSpec="5 0 0 0">
                 <LayoutConfig>
                     <ext:HBoxLayoutConfig Align="Stretch" />
                 </LayoutConfig>
                 <Items>
-                    <ext:FormPanel ID="Weights" runat="server" Border="false" Width="480">
+                    <ext:FormPanel
+                        ID="Weights"
+                        runat="server"
+                        Border="false"
+                        Width="480">
                         <Defaults>
                             <ext:Parameter Name="allowBlank" Value="false" Mode="Raw" />
                         </Defaults>

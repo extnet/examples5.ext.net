@@ -101,12 +101,20 @@
                     <Menu>
                         <ext:Menu runat="server" ShowSeparator="false">
                             <Items>
-                                <ext:Container runat="server" Width="400" Height="470" Layout="VBox">
+                                <ext:Container
+                                    runat="server"
+                                    Width="400"
+                                    Height="470"
+                                    Layout="VBox">
                                     <LayoutConfig>
                                         <ext:VBoxLayoutConfig Align="Stretch" />
                                     </LayoutConfig>
                                     <Items>
-                                        <ext:Container runat="server" Flex="1" Layout="Hbox" MarginSpec="0 0 5 0">
+                                        <ext:Container
+                                            runat="server"
+                                            Flex="1"
+                                            Layout="Hbox"
+                                            MarginSpec="0 0 5 0">
                                             <Defaults>
                                                 <ext:Parameter Name="Height" Value="230" Mode="Raw" />
                                                 <ext:Parameter Name="Flex" Value="1" Mode="Raw" />

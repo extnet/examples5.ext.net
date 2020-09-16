@@ -345,11 +345,19 @@
             StyleSpec="margin-top: 10px">
             <ColumnModel>
                 <Columns>
-                    <ext:Column runat="server" Text="ID" Width="40" DataIndex="Id">
+                    <ext:Column
+                        runat="server"
+                        Text="ID"
+                        Width="40"
+                        DataIndex="Id">
                         <Renderer Handler="return record.phantom ? '' : value;" />
                     </ext:Column>
 
-                    <ext:Column runat="server" Text="Email" Flex="1" DataIndex="Email">
+                    <ext:Column
+                        runat="server"
+                        Text="Email"
+                        Flex="1"
+                        DataIndex="Email">
                         <Editor>
                             <ext:TextField runat="server" />
                         </Editor>

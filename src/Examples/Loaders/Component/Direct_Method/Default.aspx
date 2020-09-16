@@ -112,10 +112,7 @@
 
     <p>Load Tab from the Page (persist current items)</p>
 
-    <ext:TabPanel
-        runat="server"
-        Height="180"
-        Width="500">
+    <ext:TabPanel runat="server" Height="180" Width="500">
         <Loader
             runat="server"
             AutoLoad="false"

@@ -82,7 +82,11 @@
                     />
             </Items>
             <Buttons>
-                <ext:Button ID="Button1" runat="server" Text="Login" IconCls="x-md md-icon-check-circle-outline">
+                <ext:Button
+                    ID="Button1"
+                    runat="server"
+                    Text="Login"
+                    IconCls="x-md md-icon-check-circle-outline">
                     <DirectEvents>
                         <Click OnEvent="Button1_Click" Success="#{Window1}.close();">
                             <EventMask ShowMask="true" Msg="Verifying..." MinDelay="1000" />

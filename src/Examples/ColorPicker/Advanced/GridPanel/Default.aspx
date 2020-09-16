@@ -108,17 +108,38 @@
                     DataIndex="company"
                     Flex="4"
                     />
-                <ext:Column runat="server" Text="Price" DataIndex="price" Flex="1">
+                <ext:Column
+                    runat="server"
+                    Text="Price"
+                    DataIndex="price"
+                    Flex="1">
                     <Renderer Format="UsMoney" />
                 </ext:Column>
-                <ext:Column runat="server" Text="Change" DataIndex="change" Flex="1">
+                <ext:Column
+                    runat="server"
+                    Text="Change"
+                    DataIndex="change"
+                    Flex="1">
                     <Renderer Fn="change" />
                 </ext:Column>
-                <ext:Column runat="server" Text="Change" DataIndex="pctChange" Flex="1">
+                <ext:Column
+                    runat="server"
+                    Text="Change"
+                    DataIndex="pctChange"
+                    Flex="1">
                     <Renderer Fn="pctChange" />
                 </ext:Column>
-                <ext:DateColumn runat="server" Text="Last Updated" DataIndex="lastChange" Width="120" />
-                <ext:ComponentColumn runat="server" Text="Company Color" DataIndex="color" Flex="2">
+                <ext:DateColumn
+                    runat="server"
+                    Text="Last Updated"
+                    DataIndex="lastChange"
+                    Width="120"
+                    />
+                <ext:ComponentColumn
+                    runat="server"
+                    Text="Company Color"
+                    DataIndex="color"
+                    Flex="2">
                     <Component>
                         <ext:ColorField runat="server" />
                     </Component>

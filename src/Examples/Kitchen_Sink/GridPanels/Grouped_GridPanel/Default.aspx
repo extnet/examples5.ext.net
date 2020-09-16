@@ -94,10 +94,7 @@
                 Resizable="true"
                 Collapsible="true">
                 <Store>
-                    <ext:Store
-                        runat="server"
-                        Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>"
-                        GroupField="cuisine">
+                    <ext:Store runat="server" Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>" GroupField="cuisine">
                         <Model>
                             <ext:Model runat="server">
                                 <Fields>
@@ -145,7 +142,11 @@
                     <ext:Toolbar runat="server">
                         <Items>
                             <ext:ToolbarFill runat="server" />
-                            <ext:Button ID="ButtonToggleMenu" runat="server" Text="Toggle groups..." DestroyMenu="true">
+                            <ext:Button
+                                ID="ButtonToggleMenu"
+                                runat="server"
+                                Text="Toggle groups..."
+                                DestroyMenu="true">
                                 <Menu>
                                     <ext:Menu runat="server" />
                                 </Menu>

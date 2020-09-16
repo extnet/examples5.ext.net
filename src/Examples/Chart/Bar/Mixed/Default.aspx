@@ -64,10 +64,7 @@
                     StyleSpec="background:#fff;"
                     StandardTheme="Category1">
                     <Store>
-                        <ext:Store
-                            runat="server"
-                            Data="<%# Ext.Net.Examples.ChartData.GenerateData(8) %>"
-                            AutoDataBind="true">
+                        <ext:Store runat="server" Data="<%# Ext.Net.Examples.ChartData.GenerateData(8) %>" AutoDataBind="true">
                             <Model>
                                 <ext:Model runat="server">
                                     <Fields>
@@ -81,7 +78,12 @@
                         </ext:Store>
                     </Store>
                     <Axes>
-                        <ext:NumericAxis Position="Left" Fields="Data1,Data2,Data3" Title="Number of Hits" Grid="true" />
+                        <ext:NumericAxis
+                            Position="Left"
+                            Fields="Data1,Data2,Data3"
+                            Title="Number of Hits"
+                            Grid="true"
+                            />
                         <ext:CategoryAxis Position="Bottom" Fields="Name" Title="Month of the Year" />
                     </Axes>
                     <Series>
@@ -91,7 +93,11 @@
                                 <ext:CircleSprite Radius="5" />
                             </Marker>
                         </ext:ScatterSeries>
-                        <ext:LineSeries Smooth="3" Fill="true" XField="Name" YField="Data3">
+                        <ext:LineSeries
+                            Smooth="3"
+                            Fill="true"
+                            XField="Name"
+                            YField="Data3">
                             <Marker>
                                 <ext:Sprite SpriteType="Cross" />
                             </Marker>

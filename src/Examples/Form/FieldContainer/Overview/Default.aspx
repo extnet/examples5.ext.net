@@ -115,27 +115,18 @@
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer
-                runat="server"
-                FieldLabel="Mix"
-                Layout="HBox">
+            <ext:FieldContainer runat="server" FieldLabel="Mix" Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:ComboBox runat="server" Width="150" />
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer
-                runat="server"
-                FieldLabel="With toolbar"
-                Layout="HBox">
+            <ext:FieldContainer runat="server" FieldLabel="With toolbar" Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:DateField runat="server" Width="150" MarginSpec="0 3 0 0" />
-                    <ext:Toolbar
-                        runat="server"
-                        Flex="1"
-                        Flat="true">
+                    <ext:Toolbar runat="server" Flex="1" Flat="true">
                         <Items>
                             <ext:Button runat="server" Text="Button" IconCls="x-md md-icon-add-circle-outline" />
                             <ext:SplitButton runat="server" Text="Split" IconCls="x-md md-icon-arrow-circle-down">
@@ -153,10 +144,7 @@
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer
-                runat="server"
-                FieldLabel="With button"
-                Layout="HBox">
+            <ext:FieldContainer runat="server" FieldLabel="With button" Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Width="150" MarginSpec="0 3 0 0" />
                     <ext:DateField runat="server" Width="150" MarginSpec="0 3 0 0" />
@@ -164,27 +152,41 @@
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer
-                runat="server"
-                FieldLabel="IP Address"
-                Layout="HBox">
+            <ext:FieldContainer runat="server" FieldLabel="IP Address" Layout="HBox">
                 <Items>
-                    <ext:NumberField runat="server" Width="40" MarginSpec="0 3 0 0" HideTrigger="true" />
+                    <ext:NumberField
+                        runat="server"
+                        Width="40"
+                        MarginSpec="0 3 0 0"
+                        HideTrigger="true"
+                        />
                     <ext:DisplayField runat="server" Text="." Cls="dot-label" />
-                    <ext:NumberField runat="server" Width="40"  MarginSpec="0 3 0 3" HideTrigger="true" />
+                    <ext:NumberField
+                        runat="server"
+                        Width="40"
+                        MarginSpec="0 3 0 3"
+                        HideTrigger="true"
+                        />
                     <ext:DisplayField runat="server" Text="." Cls="dot-label" />
-                    <ext:NumberField runat="server" Width="40"  MarginSpec="0 3 0 3" HideTrigger="true" />
+                    <ext:NumberField
+                        runat="server"
+                        Width="40"
+                        MarginSpec="0 3 0 3"
+                        HideTrigger="true"
+                        />
                     <ext:DisplayField runat="server" Text="." Cls="dot-label" />
-                    <ext:NumberField runat="server" Width="40"  MarginSpec="0 0 0 3" HideTrigger="true" />
+                    <ext:NumberField
+                        runat="server"
+                        Width="40"
+                        MarginSpec="0 0 0 3"
+                        HideTrigger="true"
+                        />
                 </Items>
             </ext:FieldContainer>
 
             <ext:FieldContainer runat="server" Layout="Anchor" Cls="note">
                 <Items>
-                    <ext:FieldContainer
-                        runat="server"
-                        FieldLabel="Long note"
-                        Layout="HBox">
+                    <ext:FieldContainer runat="server" FieldLabel="Long note" Layout="HBox">
                         <Items>
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
                             <ext:TextField runat="server" MarginSpec="0 3 0 0" />
@@ -195,10 +197,7 @@
                 </Items>
             </ext:FieldContainer>
 
-            <ext:FieldContainer
-                runat="server"
-                FieldLabel="Several notes"
-                Layout="HBox">
+            <ext:FieldContainer runat="server" FieldLabel="Several notes" Layout="HBox">
                 <Items>
                     <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0" />
                     <ext:TextField runat="server" Note="Note" MarginSpec="0 3 0 0" />
@@ -238,7 +237,13 @@
                     <ext:Parameter Name="HideLabel" Value="true" Mode="Raw" />
                 </Defaults>
                 <Items>
-                    <ext:DateField runat="server" FieldLabel="Start" Name="StartDate" AllowBlank="false" MarginSpec="0 5 0 0" />
+                    <ext:DateField
+                        runat="server"
+                        FieldLabel="Start"
+                        Name="StartDate"
+                        AllowBlank="false"
+                        MarginSpec="0 5 0 0"
+                        />
                     <ext:DateField runat="server" FieldLabel="End" Name="EndDate" />
                 </Items>
             </ext:FieldContainer>

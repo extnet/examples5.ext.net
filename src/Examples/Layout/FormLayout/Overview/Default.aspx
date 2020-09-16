@@ -54,7 +54,11 @@
                         <ext:ConfigItem Name="tooltip" Value="Enter your employer's name" />
                     </CustomConfig>
                 </ext:TextField>
-                <ext:TextField runat="server" FieldLabel="Email" Vtype="email" AllowBlank="false">
+                <ext:TextField
+                    runat="server"
+                    FieldLabel="Email"
+                    Vtype="email"
+                    AllowBlank="false">
                     <CustomConfig>
                         <ext:ConfigItem Name="tooltip" Value="Enter your email address" />
                     </CustomConfig>
@@ -69,12 +73,20 @@
                         <ext:ConfigItem Name="tooltip" Value="Enter your date of birth" />
                     </CustomConfig>
                 </ext:DateField>
-                <ext:NumberField runat="server" MinValue="0" MaxValue="100" FieldLabel="Age">
+                <ext:NumberField
+                    runat="server"
+                    MinValue="0"
+                    MaxValue="100"
+                    FieldLabel="Age">
                     <CustomConfig>
                         <ext:ConfigItem Name="tooltip" Value="Enter your age" />
                     </CustomConfig>
                 </ext:NumberField>
-                <ext:TimeField runat="server" FieldLabel="Time" MinTime="08:00" MaxTime="18:00">
+                <ext:TimeField
+                    runat="server"
+                    FieldLabel="Time"
+                    MinTime="08:00"
+                    MaxTime="18:00">
                     <CustomConfig>
                         <ext:ConfigItem Name="tooltip" Value="Enter a time" />
                     </CustomConfig>
@@ -159,13 +171,21 @@
             <Items>
                 <ext:Container runat="server" Layout="Column">
                     <Items>
-                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5" Padding="5">
+                        <ext:Container
+                            runat="server"
+                            Layout="Form"
+                            ColumnWidth=".5"
+                            Padding="5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="First Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Company" LabelAlign="Top" />
                             </Items>
                         </ext:Container>
-                        <ext:Container runat="server" Layout="Form" ColumnWidth=".5" Padding="5">
+                        <ext:Container
+                            runat="server"
+                            Layout="Form"
+                            ColumnWidth=".5"
+                            Padding="5">
                             <Items>
                                 <ext:TextField runat="server" FieldLabel="Last Name" LabelAlign="Top" />
                                 <ext:TextField runat="server" FieldLabel="Email" LabelAlign="Top" />
@@ -285,7 +305,12 @@
                                 <ext:Parameter Name="LabelAlign" Value="top" Mode="Value" />
                             </Defaults>
                             <Items>
-                                <ext:TextField runat="server" FieldLabel="First Name" AllowBlank="false" Width="230" />
+                                <ext:TextField
+                                    runat="server"
+                                    FieldLabel="First Name"
+                                    AllowBlank="false"
+                                    Width="230"
+                                    />
                                 <ext:TextField runat="server" FieldLabel="Last Name" Width="230" />
                                 <ext:TextField runat="server" FieldLabel="Company" Width="230" />
                                 <ext:TextField runat="server" FieldLabel="Email" Width="230" />
@@ -301,7 +326,12 @@
                                 <ext:Parameter Name="LabelAlign" Value="top" Mode="Value" />
                             </Defaults>
                             <Items>
-                                <ext:TextField runat="server" FieldLabel="Home" Text="(888) 555-1212" Width="230" />
+                                <ext:TextField
+                                    runat="server"
+                                    FieldLabel="Home"
+                                    Text="(888) 555-1212"
+                                    Width="230"
+                                    />
                                 <ext:TextField runat="server" FieldLabel="Business" Width="230" />
                                 <ext:TextField runat="server" FieldLabel="Mobile" Width="230" />
                                 <ext:TextField runat="server" FieldLabel="Fax" Width="230" />

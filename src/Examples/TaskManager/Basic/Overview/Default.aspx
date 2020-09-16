@@ -48,10 +48,7 @@
                                         <Click Handler="this.disable();#{TaskManager1}.startAll();#{btnStopAll}.enable()" />
                                     </Listeners>
                                 </ext:Button>
-                                <ext:Button
-                                    ID="btnStopAll"
-                                    runat="server"
-                                    Text="Stop All Tasks">
+                                <ext:Button ID="btnStopAll" runat="server" Text="Stop All Tasks">
                                     <Listeners>
                                         <Click Handler="this.disable();#{TaskManager1}.stopAll();#{btnStartAll}.enable();" />
                                     </Listeners>
@@ -73,7 +70,13 @@
                                 <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                             </LayoutConfig>
                             <Items>
-                                <ext:Label ID="LocalTimeLabel" runat="server" StyleSpec="font-weight:bold;font-size:500%;" Width="280" Height="50" />
+                                <ext:Label
+                                    ID="LocalTimeLabel"
+                                    runat="server"
+                                    StyleSpec="font-weight:bold;font-size:500%;"
+                                    Width="280"
+                                    Height="50"
+                                    />
                             </Items>
                             <BottomBar>
                                 <ext:Toolbar runat="server">
@@ -103,7 +106,13 @@
                                 <ext:VBoxLayoutConfig Pack="Center" Align="Center" />
                             </LayoutConfig>
                             <Items>
-                                <ext:Label ID="ServerTimeLabel" runat="server" StyleSpec="font-weight:bold;font-size:500%;" Width="280" Height="50" />
+                                <ext:Label
+                                    ID="ServerTimeLabel"
+                                    runat="server"
+                                    StyleSpec="font-weight:bold;font-size:500%;"
+                                    Width="280"
+                                    Height="50"
+                                    />
                             </Items>
                             <BottomBar>
                                 <ext:Toolbar runat="server">
@@ -139,12 +148,10 @@
 
         <ext:TaskManager ID="TaskManager1" runat="server">
             <Tasks>
-                <ext:Task
-                    OnStart="
+                <ext:Task OnStart="
                         #{StartLocalTime}.setDisabled(true);
                         #{StopLocalTime}.setDisabled(false);
-                        msg('Start Client');"
-                    OnStop="
+                        msg('Start Client');" OnStop="
                         #{StartLocalTime}.setDisabled(false);
                         #{StopLocalTime}.setDisabled(true);
                         msg('Stop Client');">

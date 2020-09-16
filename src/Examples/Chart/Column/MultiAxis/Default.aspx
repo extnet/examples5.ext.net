@@ -132,28 +132,19 @@
                             </Listeners>
                         </ext:NumericAxis>
 
-                        <ext:NumericAxis
-                            AxisID="celsius-axis"
-                            TitleMargin="20"
-                            Position="Right">
+                        <ext:NumericAxis AxisID="celsius-axis" TitleMargin="20" Position="Right">
                             <TitleConfig FillStyle="red" Text="Temperature in °C" />
                         </ext:NumericAxis>
 
                         <ext:CategoryAxis AxisID="months-axis" Position="Bottom" />
 
-                        <ext:CategoryAxis
-                            LinkedToID="months-axis"
-                            Position="Top"
-                            TitleMargin="20">
+                        <ext:CategoryAxis LinkedToID="months-axis" Position="Top" TitleMargin="20">
                             <TitleConfig FillStyle="green" Text="Climate data for Redwood City, California" />
                         </ext:CategoryAxis>
                     </Axes>
 
                     <Series>
-                        <ext:BarSeries
-                            XField="Month"
-                            YField="HighF"
-                            YAxisID="fahrenheit-axis">
+                        <ext:BarSeries XField="Month" YField="HighF" YAxisID="fahrenheit-axis">
                             <StyleSpec>
                                 <ext:SeriesSprite MinGapWidth="10" />
                             </StyleSpec>
@@ -163,10 +154,7 @@
                             </SubStyle>
                         </ext:BarSeries>
 
-                        <ext:BarSeries
-                            XField="Month"
-                            YField="LowF"
-                            YAxisID="fahrenheit-axis">
+                        <ext:BarSeries XField="Month" YField="LowF" YAxisID="fahrenheit-axis">
                             <StyleSpec>
                                 <ext:SeriesSprite MinGapWidth="10" />
                             </StyleSpec>

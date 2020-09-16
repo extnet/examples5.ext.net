@@ -38,7 +38,12 @@
 
         <h2>HyperlinkButton with Right Aligned Icon</h2>
 
-        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-check-circle-outline" IconAlign="Right" Text="Click" />
+        <ext:HyperlinkButton
+            runat="server"
+            IconCls="x-md md-icon-check-circle-outline"
+            IconAlign="Right"
+            Text="Click"
+            />
 
         <h2>HyperlinkButton with Menu</h2>
 
@@ -55,9 +60,24 @@
 
         <h2>HyperlinkButton in a ToggleGroup</h2>
 
-        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-add-circle-outline" Text="Add group" ToggleGroup="Group1" />&nbsp;&nbsp;
-        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-remove-circle-outline" Text="Delete group" ToggleGroup="Group1" />&nbsp;&nbsp;
-        <ext:HyperlinkButton runat="server" IconCls="x-md md-icon-edit" Text="Edit group" ToggleGroup="Group1" />
+        <ext:HyperlinkButton
+            runat="server"
+            IconCls="x-md md-icon-add-circle-outline"
+            Text="Add group"
+            ToggleGroup="Group1"
+            />&nbsp;&nbsp;
+        <ext:HyperlinkButton
+            runat="server"
+            IconCls="x-md md-icon-remove-circle-outline"
+            Text="Delete group"
+            ToggleGroup="Group1"
+            />&nbsp;&nbsp;
+        <ext:HyperlinkButton
+            runat="server"
+            IconCls="x-md md-icon-edit"
+            Text="Edit group"
+            ToggleGroup="Group1"
+            />
     </form>
 </body>
 </html>

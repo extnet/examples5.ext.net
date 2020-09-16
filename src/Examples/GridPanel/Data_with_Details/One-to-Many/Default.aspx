@@ -86,9 +86,7 @@
                     Layout="Fit"
                     MarginSpec="0 5 0 5">
                     <Items>
-                        <ext:GridPanel
-                            ID="GridPanel1"
-                            runat="server">
+                        <ext:GridPanel ID="GridPanel1" runat="server">
                             <Store>
                                 <ext:Store
                                     ID="Store1"
@@ -117,7 +115,12 @@
                             </Store>
                             <ColumnModel runat="server">
                                 <Columns>
-                                    <ext:Column runat="server" DataIndex="CompanyName" Text="Company Name" Flex="1" />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="CompanyName"
+                                        Text="Company Name"
+                                        Flex="1"
+                                        />
                                     <ext:Column runat="server" DataIndex="ContactName" Text="Contact Name" />
                                     <ext:Column runat="server" DataIndex="ContactTitle" Text="Contact Title" />
                                     <ext:Column runat="server" DataIndex="Address" Text="Address" />
@@ -159,10 +162,7 @@
                     Split="true"
                     MarginSpec="0 5 5 5">
                     <Items>
-                        <ext:GridPanel
-                            ID="GridPanel2"
-                            runat="server"
-                            Border="false">
+                        <ext:GridPanel ID="GridPanel2" runat="server" Border="false">
                             <Store>
                                 <ext:Store
                                     ID="Store2"
@@ -201,11 +201,31 @@
                             </Store>
                             <ColumnModel runat="server">
                                 <Columns>
-                                    <ext:Column runat="server" DataIndex="ProductName" Text="Product Name" Flex="1" />
-                                    <ext:Column runat="server" DataIndex="QuantityPerUnit" Text="Quantity Per Unit" Width="120" />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="ProductName"
+                                        Text="Product Name"
+                                        Flex="1"
+                                        />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="QuantityPerUnit"
+                                        Text="Quantity Per Unit"
+                                        Width="120"
+                                        />
                                     <ext:Column runat="server" DataIndex="UnitPrice" Text="Unit Price" />
-                                    <ext:Column runat="server" DataIndex="UnitsInStock" Text="Units In Stock" Width="110" />
-                                    <ext:Column runat="server" DataIndex="UnitsOnOrder" Text="Units On Order" Width="110" />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="UnitsInStock"
+                                        Text="Units In Stock"
+                                        Width="110"
+                                        />
+                                    <ext:Column
+                                        runat="server"
+                                        DataIndex="UnitsOnOrder"
+                                        Text="Units On Order"
+                                        Width="110"
+                                        />
                                     <ext:Column runat="server" DataIndex="ReorderLevel" Text="Reorder Level" />
                                     <ext:CheckColumn runat="server" DataIndex="Discontinued" Text="Discontinued" />
                                 </Columns>

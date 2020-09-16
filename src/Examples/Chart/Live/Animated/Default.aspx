@@ -122,10 +122,7 @@
             Height="600"
             Layout="Fit">
             <Items>
-                <ext:CartesianChart
-                    ID="Chart1"
-                    runat="server"
-                    StyleSpec="background:#fff;">
+                <ext:CartesianChart ID="Chart1" runat="server" StyleSpec="background:#fff;">
                     <Store>
                         <ext:Store runat="server">
                             <Model>
