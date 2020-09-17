@@ -18,7 +18,7 @@
             runat="server"
             Width="480"
             Height="480"
-            IconCls="x-md md-icon-arrow-menu-book"
+            IconCls="x-md md-icon-menu-book"
             Title="Catalog"
             Scrollable="Both">
             <TopBar>
