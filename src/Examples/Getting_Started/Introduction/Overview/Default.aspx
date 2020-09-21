@@ -27,7 +27,7 @@
         <li>.NET Framework 3.5, 4.0* or 4.5</li>
     </ol>
 
-    <p>*minimum required for Ext.NET MVC</products>
+    <p>*minimum required for Ext.NET MVC</p>
 
     <h2>Getting Started (NuGet)</h2>
 
@@ -215,12 +215,12 @@
 
     renderScripts : ResourceLocationType
         Whether to have the Ext.NET controls output the required JavaScript includes or not.
-        Gives a developer the option of manually including the required <script> files.
+        Gives a developer the option of manually including the required &lt;script> files.
         Default is Embedded. Options include [Embedded|File|CDN|None]
 
     renderStyles : ResourceLocationType
         Whether to have the Ext.NET controls output the required StyleSheet includes or not.
-        Provides a developer with the option to include the required <script> files manually.
+        Provides a developer with the option to include the required &lt;script> files manually.
         Default is Embedded. Options include [Embedded|File|CDN|None]
 
     resourcePath : string
