@@ -80,7 +80,7 @@
         <ext:FileUploadField
             ID="BasicField"
             runat="server"
-            Width="400"
+            Width="480"
             IconCls="x-md md-icon-attach-file"
             />
 

@@ -107,7 +107,7 @@
         <ext:MultiSelector
             ID="Selector1"
             runat="server"
-            Width="400"
+            Width="480"
             Height="480"
             Title="Selected Employees"
             FieldName="Name">

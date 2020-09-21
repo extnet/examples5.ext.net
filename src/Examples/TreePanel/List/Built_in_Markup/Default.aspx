@@ -45,7 +45,7 @@
         <ext:Panel
             ID="Panel1"
             runat="server"
-            Width="400"
+            Width="480"
             Height="480"
             IconCls="x-fa fa-list"
             Title="Catalog"

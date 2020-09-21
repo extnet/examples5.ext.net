@@ -57,7 +57,7 @@
         <ext:TabPanel
             runat="server"
             Width="960"
-            Height="250"
+            Height="360"
             Title="TabPanel">
             <Items>
                 <ext:Panel runat="server" Title='Default' Html="Default" />

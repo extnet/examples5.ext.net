@@ -20,7 +20,7 @@
                 Title="Contact Us"
                 Frame="true"
                 Height="480"
-                Width="400"
+                Width="480"
                 Border="false"
                 BodyPadding="18"
                 DefaultAnchor="100%">

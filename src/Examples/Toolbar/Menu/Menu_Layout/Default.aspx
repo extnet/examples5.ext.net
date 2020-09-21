@@ -103,7 +103,7 @@
                             <Items>
                                 <ext:Container
                                     runat="server"
-                                    Width="400"
+                                    Width="480"
                                     Height="470"
                                     Layout="VBox">
                                     <LayoutConfig>

@@ -19,8 +19,8 @@
                 runat="server"
                 Title="Restaurants"
                 Frame="true"
-                Width="400"
-                Height="295">
+                Width="480"
+                Height="360">
                 <Store>
                     <ext:Store runat="server" Data="<%# Ext.Net.Examples.KitchenSink.Restaurants.GetAllRestaurants() %>">
                         <Model>

@@ -19,7 +19,7 @@
         <ext:TabPanel
             runat="server"
             Title="Examples"
-            Width="400"
+            Width="480"
             Height="480"
             TabBarHeaderPosition="2">
             <Defaults>

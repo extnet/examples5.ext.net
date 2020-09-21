@@ -16,7 +16,7 @@
         <ext:Window
             runat="server"
             Title="Parent"
-            Width="400"
+            Width="480"
             Height="180">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />

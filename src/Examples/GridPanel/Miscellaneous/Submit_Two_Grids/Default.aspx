@@ -89,7 +89,7 @@
             StoreID="Store1"
             Title="Grid"
             Width="960"
-            Height="250">
+            Height="360">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column
@@ -121,7 +121,7 @@
             StoreID="Store2"
             Title="Grid"
             Width="960"
-            Height="250">
+            Height="360">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column

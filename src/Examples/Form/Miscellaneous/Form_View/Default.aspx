@@ -77,7 +77,7 @@
         <ext:Window
             runat="server"
             Title="Form View"
-            Width="400"
+            Width="480"
             Height="240"
             BodyPadding="18"
             Resizable="false"

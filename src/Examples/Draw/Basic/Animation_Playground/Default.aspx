@@ -53,7 +53,7 @@
                                 <ext:TextField
                                     ID="toConfig"
                                     runat="server"
-                                    Width="400"
+                                    Width="480"
                                     Text="{fill: '#223fa3', stroke: '#000', 'stroke-width': 80, 'stroke-opacity': 0.5}"
                                     />
                                 <ext:NumberField

@@ -13,7 +13,7 @@
     <ext:Window
         ID="Window1"
         runat="server"
-        Width="400"
+        Width="480"
         Height="480"
         Title="Move/Resize Window"
         BodyPadding="18">

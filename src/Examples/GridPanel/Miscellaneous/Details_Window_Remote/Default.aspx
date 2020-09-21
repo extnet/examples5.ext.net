@@ -97,7 +97,7 @@
             runat="server"
             StoreID="Store1"
             Title="Employees"
-            Height="250">
+            Height="360">
             <ColumnModel runat="server">
                 <Columns>
                     <ext:Column

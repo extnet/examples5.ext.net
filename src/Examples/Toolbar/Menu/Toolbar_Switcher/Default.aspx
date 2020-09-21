@@ -28,7 +28,7 @@
         ID="Panel1"
         runat="server"
         Title="Regions"
-        Height="250"
+        Height="360"
         Width="750">
         <TopBar>
             <ext:Toolbar runat="server">

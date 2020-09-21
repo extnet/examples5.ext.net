@@ -53,7 +53,7 @@
         Title="Categories"
         Frame="true"
         Height="480"
-        Width="400">
+        Width="480">
         <Store>
             <ext:Store runat="server">
                 <Proxy>

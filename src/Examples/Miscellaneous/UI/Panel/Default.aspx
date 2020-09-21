@@ -42,7 +42,7 @@
         <ext:Panel
             runat="server"
             Width="960"
-            Height="250"
+            Height="360"
             Title="Simple">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
@@ -64,7 +64,7 @@
         <ext:Panel
             runat="server"
             Width="960"
-            Height="250"
+            Height="360"
             Title="Framed">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />

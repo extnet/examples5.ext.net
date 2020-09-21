@@ -153,7 +153,7 @@
                     <Items>
                         <ext:TextField
                             runat="server"
-                            Width="400"
+                            Width="480"
                             FieldLabel="Search"
                             LabelWidth="50">
                             <Triggers>

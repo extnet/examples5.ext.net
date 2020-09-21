@@ -53,7 +53,7 @@
             ID="FormPanel1"
             runat="server"
             Title="Color Chooser"
-            Width="400"
+            Width="480"
             Height="480"
             ButtonAlign="Left"
             BodyPadding="18"

@@ -1,11 +1,11 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:CartesianChart 
+<ext:CartesianChart
     runat="server"
     X="300"
     Y="700"
     Width="350"
-    Height="250"
+    Height="360"
     Animation="false">
     <Axes>
         <ext:NumericAxis

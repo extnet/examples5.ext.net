@@ -18,7 +18,7 @@
             <ext:FormPanel
                 runat="server"
                 Title="Login"
-                Width="400"
+                Width="480"
                 Frame="true"
                 BodyPadding="18"
                 DefaultAnchor="100%">

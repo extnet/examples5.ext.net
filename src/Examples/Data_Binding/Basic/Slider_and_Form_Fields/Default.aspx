@@ -34,7 +34,7 @@
 
         <ext:Panel
             runat="server"
-            Width="400"
+            Width="480"
             BodyPadding="18"
             Title="Color Components"
             Layout="Anchor"

@@ -28,7 +28,7 @@
             runat="server"
             Title="Standard"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -74,7 +74,7 @@
             runat="server"
             Title="Multi columns"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -161,7 +161,7 @@
             runat="server"
             Title="Multi columns (No titles, double stack)"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -249,7 +249,7 @@
             runat="server"
             Title="Mix and match icon sizes"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -346,7 +346,7 @@
             runat="server"
             Title="Medium icons, arrows to the bottom"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -476,7 +476,7 @@
             runat="server"
             Title="Medium icons, text and arrows to the left"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">
@@ -532,7 +532,7 @@
             runat="server"
             Title="Small icons, text and arrows to the left"
             Width="900"
-            Height="250"
+            Height="360"
             StyleSpec="margin-top:15px"
             BodyPadding="18"
             Scrollable="Both">

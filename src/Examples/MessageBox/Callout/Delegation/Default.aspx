@@ -187,7 +187,7 @@
 
     <h1>Callout Delegation</h1>
 
-    <ext:GridPanel runat="server" Title="Users" Width="550">
+    <ext:GridPanel runat="server" Title="Users" Width="640">
         <ColumnModel>
             <Columns>
                 <ext:Column

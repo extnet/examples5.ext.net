@@ -135,7 +135,7 @@
                     BodyStyle="background-color: #284051;"
                     Collapsible="true"
                     Split="true"
-                    MinWidth="175"
+                    MinWidth="180"
                     MaxWidth="480"
                     MarginSpec="5 0 5 5"
                     Layout="Accordion">

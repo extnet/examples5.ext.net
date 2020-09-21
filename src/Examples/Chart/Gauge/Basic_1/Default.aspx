@@ -36,7 +36,7 @@
 
         <p>Click on <b>Reload Data</b> to update the information.</p>
 
-        <ext:Panel runat="server" Width="960" Height="250">
+        <ext:Panel runat="server" Width="960" Height="360">
             <LayoutConfig>
                 <ext:HBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>

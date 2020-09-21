@@ -70,7 +70,7 @@
         <ext:FormPanel
             runat="server"
             Title="Form"
-            Width="400"
+            Width="480"
             BodyPadding="18"
             LabelWidth="150">
             <Items>

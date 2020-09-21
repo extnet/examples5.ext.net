@@ -191,7 +191,7 @@
                                                 runat="server"
                                                 Text="Complaint"
                                                 DataIndex="complaint"
-                                                Width="175"
+                                                Width="180"
                                                 Sortable="false"
                                                 MenuDisabled="true"
                                                 />
@@ -213,7 +213,7 @@
                                                 runat="server"
                                                 Text="Cumulative %"
                                                 DataIndex="cumpercent"
-                                                Width="175"
+                                                Width="180"
                                                 Sortable="false"
                                                 MenuDisabled="true">
                                                 <Renderer Handler="return value + '%';" />

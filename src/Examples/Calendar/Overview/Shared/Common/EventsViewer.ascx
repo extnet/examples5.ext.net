@@ -1,20 +1,20 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EventsViewer.ascx.cs" Inherits="Ext.Net.Calendar.Demo.EventsViewer" %>
 
-<ext:Window 
-    ID="Window1" 
+<ext:Window
+    ID="Window1"
     runat="server"
     Title="Events"
     Modal="true"
     BodyStyle="background:#fff;"
     CloseAction="Destroy"
-    Width="600"
-    Height="400"
+    Width="720"
+    Height="480"
     Layout="Fit">
     <Items>
-        <ext:DataView 
-            ID="DataView1" 
-            runat="server" 
-            ItemSelector="div.event" 
+        <ext:DataView
+            ID="DataView1"
+            runat="server"
+            ItemSelector="div.event"
             Scrollable="Both">
             <Store>
                 <ext:Store ID="SubmittedEventsStore1" runat="server">
@@ -35,7 +35,7 @@
                         </ext:Model>
                     </Model>
                 </ext:Store>
-            </Store>            
+            </Store>
             <Tpl runat="server">
                 <Html>
                     <tpl for=".">
@@ -69,7 +69,7 @@
                                 <tr>
                                     <th>Reminder</th>
                                     <td>{Reminder}</td>
-                                </tr>                                
+                                </tr>
                             </table>
                         </div>
                     </tpl>

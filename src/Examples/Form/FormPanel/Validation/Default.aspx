@@ -26,7 +26,7 @@
             runat="server"
             Layout="Fit"
             Width="960"
-            Height="250">
+            Height="360">
             <Items>
                 <ext:FormPanel
                     ID="FormPanel1"

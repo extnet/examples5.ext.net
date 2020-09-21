@@ -209,7 +209,7 @@
             </LayoutConfig>
 
             <Items>
-                <ext:Panel runat="server" Height="250" MarginSpec="0 0 3 0">
+                <ext:Panel runat="server" Height="360" MarginSpec="0 0 3 0">
                     <LayoutConfig>
                         <ext:HBoxLayoutConfig Align="Stretch" />
                     </LayoutConfig>

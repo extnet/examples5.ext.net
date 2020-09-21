@@ -6,11 +6,11 @@
         <Window>
             <ext:Window
                 runat="server"
-                Width="600" 
-                Height="250" 
+                Width="720"
+                Height="360"
                 AnimCollapse="false"
-                ConstrainHeader="true"         
-                Border="false"                       
+                ConstrainHeader="true"
+                Border="false"
                 StyleHtmlContent="true"
                 Title="What's New">
                 <Content>
@@ -32,7 +32,7 @@
                         </li>
                         <li>
                             Quick lanch and tray
-                        </li>                        
+                        </li>
                     </ul>
                 </Content>
             </ext:Window>

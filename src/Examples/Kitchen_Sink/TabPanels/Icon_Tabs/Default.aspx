@@ -41,8 +41,8 @@
         <Items>
             <ext:TabPanel
                 runat="server"
-                Width="400"
-                Height="295"
+                Width="480"
+                Height="360"
                 MarginSpec="0 0 20 0">
                 <Defaults>
                     <ext:Parameter Name="bodyPadding" Value="10" Mode="Raw" />
@@ -69,8 +69,8 @@
 
             <ext:TabPanel
                 runat="server"
-                Width="400"
-                Height="295"
+                Width="480"
+                Height="360"
                 MarginSpec="0 0 20 0"
                 Plain="true">
                 <Defaults>

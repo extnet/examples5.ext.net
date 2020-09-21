@@ -31,7 +31,7 @@
 
         <ext:Slider
             runat="server"
-            Width="400"
+            Width="480"
             MinValue="0"
             MaxValue="360"
             Number="0">

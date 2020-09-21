@@ -120,7 +120,7 @@
         runat="server"
         Border="false"
         Width="500"
-        Height="250">
+        Height="360">
         <LayoutConfig>
             <ext:HBoxLayoutConfig Align="Stretch" />
         </LayoutConfig>
@@ -177,7 +177,7 @@
         StoreID="Store1"
         Title="Users with RowExpander"
         Width="500"
-        Height="250">
+        Height="360">
         <ColumnModel>
             <Columns>
                 <ext:Column

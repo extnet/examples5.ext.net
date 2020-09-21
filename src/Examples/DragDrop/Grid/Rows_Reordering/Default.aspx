@@ -37,7 +37,7 @@
             runat="server"
             MultiSelect="true"
             Title="Grid"
-            Width="400"
+            Width="480"
             Height="480">
             <Store>
                 <ext:Store ID="Store1" runat="server">

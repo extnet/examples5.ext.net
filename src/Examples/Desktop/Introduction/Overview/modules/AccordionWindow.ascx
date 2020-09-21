@@ -6,9 +6,9 @@
         tree.setLoading(true, tree.body);
 
         var root = tree.getRootNode();
-        
+
         root.collapseChildren(true, false);
-        
+
         Ext.Function.defer(function () { // mimic a server call
             tree.setLoading(false);
             root.expand(true, true);
@@ -21,10 +21,10 @@
         <Shortcut Name="Accordion Window" IconCls="x-im-shortcut" QTip="List of Online Users" SortIndex="0" />
         <Launcher Text="Accordion Window" IconCls="x-md md-icon-person" />
         <Window>
-            <ext:Window 
-                runat="server" 
-                Width="250" 
-                Height="400" 
+            <ext:Window
+                runat="server"
+                Width="250"
+                Height="480"
                 Layout="Accordion"
                 Title="Accordion Window">
                 <TopBar>
@@ -48,9 +48,9 @@
                 </TopBar>
 
                 <Items>
-                    <ext:TreePanel 
-                        ID="UsersTree" 
-                        runat="server" 
+                    <ext:TreePanel
+                        ID="UsersTree"
+                        runat="server"
                         RootVisible="false"
                         Lines="false"
                         Scrollable="Both"
@@ -90,7 +90,7 @@
                                     </ext:Node>
                                 </Root>
                             </ext:TreeStore>
-                        </Store>                        
+                        </Store>
                     </ext:TreePanel>
 
                     <ext:Panel runat="server" Title="Settings">

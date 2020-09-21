@@ -30,8 +30,8 @@
     <ext:Window
         runat="server"
         Title="Window"
-        Width="400"
-        Height="295"
+        Width="480"
+        Height="360"
         BodyPadding="18"
         Scrollable="Both"
         Html="<%# TEST_HTML %>"

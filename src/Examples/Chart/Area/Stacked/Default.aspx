@@ -54,8 +54,8 @@
 
         <ext:Panel
             runat="server"
-            Width="850"
-            Height="650"
+            Width="960"
+            Height="720"
             Layout="Fit">
             <Items>
                 <ext:CartesianChart

@@ -38,7 +38,7 @@
             Title="Compose message"
             Collapsible="true"
             Maximizable="true"
-            Width="550"
+            Width="640"
             Height="480"
             CloseAction="Destroy"
             Layout="Fit"

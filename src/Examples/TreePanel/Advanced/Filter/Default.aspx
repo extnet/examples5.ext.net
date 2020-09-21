@@ -109,7 +109,7 @@
             runat="server"
             RootVisible="false"
             Height="480"
-            Width="400"
+            Width="480"
             UseArrows="true">
             <TopBar>
                 <ext:Toolbar runat="server">

@@ -79,7 +79,7 @@
             ID="Window1"
             runat="server"
             Width="500"
-            Height="250"
+            Height="360"
             Title="DisplayTime"
             IconCls="x-md md-icon-calendar-today"
             Closable="false"

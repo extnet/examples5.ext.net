@@ -1,11 +1,11 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Window 
+<ext:Window
     runat="server"
     Title="Compose message"
     Collapsible="true"
     Maximizable="true"
-    Width="550"
+    Width="640"
     Height="300"
     CloseAction="Destroy"
     Layout="Fit"
@@ -18,10 +18,10 @@
                 <ext:VBoxLayoutConfig Align="Stretch" />
             </LayoutConfig>
             <Items>
-                <ext:ComboBox 
-                    runat="server" 
+                <ext:ComboBox
+                    runat="server"
                     LabelWidth="55"
-                    FieldLabel="Send To"                            
+                    FieldLabel="Send To"
                     Name="sendTo">
                     <Items>
                         <ext:ListItem Text="test@example.com" />
@@ -31,7 +31,7 @@
 
                 <ext:TextField
                     runat="server"
-                    LabelWidth="55" 
+                    LabelWidth="55"
                     FieldLabel="Subject"
                     Name="subject">
                     <Plugins>
@@ -51,7 +51,7 @@
         <ext:Button runat="server" Text="Cancel" Handler="this.up('window').close();" />
     </Buttons>
     <Plugins>
-        
+
     </Plugins>
     <Factory Alias="mywindow" Instance="My.Window" />
 </ext:Window>

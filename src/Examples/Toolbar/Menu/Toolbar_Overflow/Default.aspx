@@ -28,7 +28,7 @@
             runat="server"
             Title="Standard"
             Closable="false"
-            Height="250"
+            Height="360"
             Width="500"
             BodyPadding="18"
             Scrollable="Both">

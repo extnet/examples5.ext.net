@@ -121,7 +121,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect runat="server">
@@ -139,7 +139,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect runat="server" MultiSelect="true">
@@ -172,7 +172,7 @@
                             Border="false"
                             Layout="Fit"
                             Width="480"
-                            Height="250">
+                            Height="360">
                             <TopBar>
                                 <ext:Toolbar runat="server">
                                     <Items>
@@ -201,7 +201,7 @@
                             Border="false"
                             Layout="Fit"
                             Width="480"
-                            Height="250">
+                            Height="360">
                             <Items>
                                 <ext:MultiSelect ID="MultiSelect2" runat="server">
                                     <Items>
@@ -244,7 +244,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect runat="server" DragGroup="grp1" MultiSelect="true">
@@ -262,7 +262,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
@@ -298,7 +298,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
@@ -320,7 +320,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect
@@ -356,7 +356,7 @@
                             runat="server"
                             Border="false"
                             Width="480"
-                            Height="250"
+                            Height="360"
                             Layout="Fit">
                             <Items>
                                 <ext:MultiSelect ID="MultiSelect3" runat="server" SubmitText="false">

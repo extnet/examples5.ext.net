@@ -32,7 +32,7 @@
             runat="server"
             Layout="Border"
             Width="960"
-            Height="250"
+            Height="360"
             IconCls="x-md md-icon-tab"
             Title="Moving tabs"
             X="100"

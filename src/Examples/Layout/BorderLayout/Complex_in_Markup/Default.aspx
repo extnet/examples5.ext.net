@@ -132,7 +132,7 @@
                 Collapsible="true"
                 Title="South"
                 Html="South"
-                Height="250"
+                Height="360"
                 BodyPadding="18"
                 />
         </Items>

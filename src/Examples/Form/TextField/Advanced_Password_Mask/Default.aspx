@@ -23,7 +23,7 @@
 
         <ext:Window
             runat="server"
-            Width="400"
+            Width="480"
             Title="Password Mask"
             Closable="false"
             BodyPadding="18"

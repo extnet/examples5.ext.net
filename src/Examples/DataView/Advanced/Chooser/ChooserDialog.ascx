@@ -3,8 +3,8 @@
 <ext:Window
     ID="ImgChooserDlg"
     runat="server"
-    Height="400"
-    Width="600"
+    Height="480"
+    Width="720"
     Cls="img-chooser-dlg"
     Title="Choose an Image"
     Layout="Border"
@@ -20,13 +20,13 @@
                         <ext:TextField
                             runat="server"
                             FieldLabel="Filter"
-                            Width="150" 
-                            LabelAlign="Right" 
+                            Width="150"
+                            LabelAlign="Right"
                             LabelWidth="35">
                             <Listeners>
                                 <Change Handler="var dataview = App.ImgChooserDlg.down('[cls=img-chooser-view]'),
                                                     store = dataview.store;
-                                    
+
                                                 if (!Ext.isEmpty(newValue)) {
                                                     store.suspendEvents();
                                                     store.clearFilter();
@@ -39,7 +39,7 @@
                                                     });
                                                 } else {
                                                     store.clearFilter();
-                                                }" 
+                                                }"
                                     Buffer="50"
                                     />
                             </Listeners>

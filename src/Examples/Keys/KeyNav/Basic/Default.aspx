@@ -58,7 +58,7 @@
     <ext:Window
         ID="Window1"
         runat="server"
-        Width="400"
+        Width="480"
         Height="480"
         Closable="false"
         Title="Move Window"

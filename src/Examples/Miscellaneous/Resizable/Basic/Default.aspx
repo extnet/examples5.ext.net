@@ -187,7 +187,7 @@
             ID="ExtNetSite"
             runat="server"
             Title="Resizable panel"
-            Width="400"
+            Width="480"
             Height="180">
             <Loader
                 runat="server"

@@ -60,7 +60,7 @@
             runat="server"
             IconCls="x-md md-icon-anchor"
             Title="Tree"
-            Width="550"
+            Width="640"
             RootVisible="false"
             OnSubmit="SubmitNodes">
             <Fields>

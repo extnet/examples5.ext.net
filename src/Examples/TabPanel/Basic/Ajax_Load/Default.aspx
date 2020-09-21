@@ -22,7 +22,7 @@
                 runat="server"
                 ActiveTabIndex="0"
                 Width="960"
-                Height="250"
+                Height="360"
                 Plain="true">
                 <Items>
                     <ext:Panel

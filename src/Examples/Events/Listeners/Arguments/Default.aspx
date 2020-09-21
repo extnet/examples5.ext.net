@@ -119,7 +119,7 @@
         <ext:FormPanel
             runat="server"
             Title="Listener Arguments"
-            Width="400"
+            Width="480"
             BodyPadding="18"
             DefaultAnchor="100%">
             <FieldDefaults LabelWidth="60" />

@@ -86,8 +86,8 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Width="400"
-            Height="250"
+            Width="480"
+            Height="360"
             Closable="false"
             Title="Example"
             Layout="Fit">

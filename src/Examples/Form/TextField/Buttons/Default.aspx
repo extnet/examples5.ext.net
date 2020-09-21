@@ -14,7 +14,7 @@
 
         <ext:Window
             runat="server"
-            Width="550"
+            Width="640"
             Title="Buttons of Field"
             Closable="false"
             Layout="Form"

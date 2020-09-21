@@ -39,7 +39,7 @@
         <ext:Window
             ID="Window1"
             runat="server"
-            Width="550"
+            Width="640"
             Title="Input Mask"
             Closable="false"
             BodyPadding="18">

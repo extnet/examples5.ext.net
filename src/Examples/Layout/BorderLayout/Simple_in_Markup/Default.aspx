@@ -38,9 +38,9 @@
                 runat="server"
                 Region="West"
                 Collapsible="true"
-                MinWidth="175"
+                MinWidth="180"
                 Split="true"
-                Width="175"
+                Width="180"
                 Title="Navigation"
                 />
             <ext:TabPanel runat="server" Region="Center" ActiveTabIndex="0">

@@ -80,8 +80,8 @@
         <Items>
             <ext:FormPanel
                 runat="server"
-                Width="400"
-                Height="295"
+                Width="480"
+                Height="360"
                 Frame="true"
                 Title="Register"
                 BodyPadding="18"

@@ -116,7 +116,7 @@
             runat="server"
             Title="Complete Check Out"
             Frame="true"
-            Width="550"
+            Width="640"
             BodyPadding="18">
 
             <FieldDefaults LabelAlign="Right" LabelWidth="90" MsgTarget="Qtip" />
