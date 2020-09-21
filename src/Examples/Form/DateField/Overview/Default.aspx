@@ -61,7 +61,6 @@
                 </ext:Panel>
             </Items>
         </ext:Container>
-    </Items>
     </form>
 </body>
 </html>

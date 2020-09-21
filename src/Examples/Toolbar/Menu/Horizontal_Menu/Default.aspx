@@ -36,7 +36,7 @@
             <ext:Parameter Name="MenuAlign" Value="tl-bl?" Mode="Value" />
         </Defaults>
         <Items>
-            <ext:MenuItem runat="server" Text="Item 1"">
+            <ext:MenuItem runat="server" Text="Item 1">
                 <Menu>
                     <ext:Menu runat="server">
                         <Items>

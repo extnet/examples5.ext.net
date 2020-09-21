@@ -35,8 +35,8 @@
 
         <ul>
             <li>String: =(equals), +(starts with), -(ends with), *(contains), !(doesn't contain)</li>
-            <li>Date: >, <, >=, <= or a specific date for equals</li>
-            <li>Number: >, <, >=, <= or a specific number for equals</li>
+            <li>Date: >, &lt;, >=, &lt;= or a specific date for equals</li>
+            <li>Number: >, &lt;, >=, &lt;= or a specific number for equals</li>
             <li>Boolean: 1, 0, true, false</li>
         </ul>
 
