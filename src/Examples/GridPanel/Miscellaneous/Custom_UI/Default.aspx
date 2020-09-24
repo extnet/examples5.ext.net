@@ -179,7 +179,7 @@
                 Cls="x-grid-custom"
                 Border="false">
                 <Store>
-                    <ext:Store ID="Store1" runat="server" PageSize="10" OnReadData=Store1_ReadData>
+                    <ext:Store ID="Store1" runat="server" PageSize="10" OnReadData="Store1_ReadData">
                         <Model>
                             <ext:Model runat="server" IDProperty="company">
                                 <Fields>
