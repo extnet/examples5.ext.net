@@ -26,14 +26,9 @@
     <ext:Window
         runat="server"
         Title="Collapsed Region Image"
-        IconCls="x-md md-icon-open-in-new"
-        Width="960"
+        Width="720"
         Height="480"
-        Border="false"
         Closable="false"
-        X="100"
-        Y="100"
-        Plain="true"
         Layout="Border">
         <Items>
             <ext:Panel
@@ -41,30 +36,28 @@
                 runat="server"
                 Region="West"
                 Collapsible="true"
-                MinWidth="180"
                 Split="true"
-                Width="180"
+                Width="270"
                 Title="Navigation"
                 TitleCollapse="false"
                 Floatable="false"
                 Collapsed="true"
                 BodyPadding="18"
-                Html="Collapse Panel to see image.">
+                Html="Collapse Panel to see image">
                 <Listeners>
                     <AfterRender Handler="this.setTitle('');" />
                     <BeforeCollapse Handler="this.setTitle('');" />
                     <BeforeExpand Handler="this.setTitle(this.initialConfig.title);" />
                 </Listeners>
             </ext:Panel>
-            <ext:Panel runat="server" Region="Center" Title="Center region" />
+            <ext:Panel runat="server" Region="Center" Title="Center" />
             <ext:Panel
                 ID="SouthPanel"
                 runat="server"
                 Region="South"
                 Collapsible="true"
-                MinHeight="100"
                 Split="true"
-                Height="100"
+                Height="180"
                 Title="Footer"
                 TitleCollapse="false"
                 Floatable="false"

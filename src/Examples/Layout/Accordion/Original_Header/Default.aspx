@@ -16,7 +16,7 @@
                 runat="server"
                 Width="480"
                 Border="false"
-                Region="West"
+                Region="East"
                 Layout="Fit"
                 BodyPadding="18">
                 <Items>
@@ -41,7 +41,11 @@
                 Region="Center"
                 BodyPadding="18">
                 <Content>
-                    <h1>Original header of the Accordion's item</h1>
+                    <p>
+                        Configuring the accordion layout to render the panel headers using their original
+                        header style instead of the default accordion layout style by setting
+                        <code>OriginalHeader="true"</code>.
+                    </p>
                 </Content>
             </ext:Panel>
         </Items>

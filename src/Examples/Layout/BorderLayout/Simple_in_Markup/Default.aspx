@@ -26,21 +26,19 @@
         ID="Window1"
         runat="server"
         Title="Simple Layout"
-        IconCls="x-md md-icon-open-in-new"
-        Width="960"
+        Width="720"
         Height="480"
         Border="false"
         Collapsible="true"
-        Plain="true"
         Layout="Border">
         <Items>
             <ext:Panel
                 runat="server"
                 Region="West"
                 Collapsible="true"
-                MinWidth="180"
                 Split="true"
-                Width="180"
+                MinWidth="270"
+                Width="270"
                 Title="Navigation"
                 />
             <ext:TabPanel runat="server" Region="Center" ActiveTabIndex="0">
@@ -58,14 +56,6 @@
                         Title="Another Tab"
                         BodyPadding="18"
                         Html="Another Tab"
-                        />
-                    <ext:Panel
-                        ID="Tab3"
-                        runat="server"
-                        Title="Closeable Tab"
-                        Closable="true"
-                        BodyPadding="18"
-                        Html="Closable Tab"
                         />
                 </Items>
             </ext:TabPanel>

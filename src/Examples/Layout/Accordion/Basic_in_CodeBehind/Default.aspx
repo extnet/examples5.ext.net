@@ -3,140 +3,56 @@
 <script runat="server">
     protected void Page_Load(object sender, EventArgs e)
     {
-        TreePanel tree = new TreePanel();
+        var panel1 = new Panel("Users");
+        var panel2 = new Panel("Settings");
+        var panel3 = new Panel("Security");
+        var panel4 = new Panel("Documents");
 
-        tree.Title = "Online Users";
-        tree.RootVisible = false;
+        var toolbar = new Toolbar();
 
-        tree.Tools.Add(new Tool(ToolType.Refresh,X.Msg.Alert("Message", "Refresh Tool Clicked!").ToScript(), ""));
+        var button1 = new Button
+        {
+            IconCls = "x-md md-icon-add-circle-outline"
+        };
 
-        Ext.Net.Node root = new Ext.Net.Node();
-        root.NodeID = "root";
-        root.Expanded = true;
-
-        tree.Root.Add(root);
-
-        Ext.Net.Node node1 = new Ext.Net.Node();
-
-        node1.Text = "Friends";
-        node1.Expanded = true;
-
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "George",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Brian",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Jon",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Tim",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Brent",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Fred",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node1.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Bob",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-
-        root.Children.Add(node1);
-
-        Ext.Net.Node node2 = new Ext.Net.Node();
-        node2.Text = "Family";
-        node2.Expanded = true;
-
-        node2.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Kelly",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node2.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Sara",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node2.Children.Add(new Ext.Net.Node()
-            {
-                Text = "Zack",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-        node2.Children.Add(new Ext.Net.Node()
-            {
-                Text = "John",
-                IconCls = "x-md md-icon-person",
-                Leaf = true
-            });
-
-        root.Children.Add(node2);
-
-        Ext.Net.Panel panel1 = new Ext.Net.Panel("Settings");
-        Ext.Net.Panel panel2 = new Ext.Net.Panel("Even More Stuff");
-        Ext.Net.Panel panel3 = new Ext.Net.Panel("My Stuff");
-
-        Toolbar toolbar = new Toolbar();
-
-        Ext.Net.Button button1 = new Ext.Net.Button();
-        button1.Icon = Icon.Connect;
-
-        ToolTip tooltip = new ToolTip();
-        tooltip.Title = "Rich ToolTips";
-        tooltip.Html = "Let your users know what they can do!";
+        var tooltip = new ToolTip
+        {
+            Title = "Rich ToolTips",
+            Html = "Let your users know what they can do!"
+        }
 
         button1.ToolTips.Add(tooltip);
 
-        Ext.Net.Button button2 = new Ext.Net.Button();
-        button2.IconCls = "x-md md-icon-person";
+        var button2 = new Button
+        {
+            IconCls = "x-md md-icon-person"
+        };
 
-        Ext.Net.Button button3 = new Ext.Net.Button();
-        button3.IconCls = "x-md md-icon-person";
+        var button3 = new Button
+        {
+            IconCls = "x-md md-icon-person"
+        };
 
         toolbar.Items.Add(button1);
         toolbar.Items.Add(button2);
         toolbar.Items.Add(button3);
 
-        Window window = new Window();
-
-        window.Title = "Accordion Window";
-        window.Width = Unit.Pixel(250);
-        window.Height = Unit.Pixel(400);
-        window.Maximizable = true;
-        window.BodyBorder = 0;
-        window.Layout = "Accordion";
+        var window = new Window
+        {
+            Title = "Accordion Window",
+            Width = Unit.Pixel(360),
+            Height = Unit.Pixel(600),
+            Maximizable = true,
+            BodyBorder = 0,
+            Layout = "Accordion"
+        }
 
         window.TopBar.Add(toolbar);
 
-        window.Items.Add(tree);
         window.Items.Add(panel1);
         window.Items.Add(panel2);
         window.Items.Add(panel3);
+        window.Items.Add(panel4);
 
         this.PlaceHolder1.Controls.Add(window);
     }
