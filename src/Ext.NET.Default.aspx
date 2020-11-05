@@ -44,7 +44,7 @@
             Cls="box"
             BodyPadding="5"
             DefaultButton="0"
-            Layout="AnchorLayout"
+            Layout="Anchor"
             DefaultAnchor="100%">
             <Items>
                 <ext:TextArea
