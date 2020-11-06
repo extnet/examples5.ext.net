@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0
 
     - name: Deploy Examples Explorer to https://examples5.ext.net/
-      uses: objectdotnet/action-ftp-deploy-then-slack-notification@0.2.0
+      uses: objectdotnet/action-ftp-deploy-then-slack-notification@0.3.0
       with:
         repo-root: src
         ftp-host: ${{ secrets.iis_ftp_host }}
