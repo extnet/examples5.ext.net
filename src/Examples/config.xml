@@ -5,12 +5,38 @@
     <folder name="Kitchen_Sink" />
   </order>
 
+  <updated version="5.3.0">
+    <folder name="GridPanel\Miscellaneous\Custom_UI" />
+    <folder name="GridPanel\FilterHeader\Remote" />
+    <folder name="GridPanel\FilterHeader\Overview" />
+    <folder name="GridPanel\FilterHeader\Infinite_Remote_Sql" />
+    <folder name="GridPanel\FilterHeader\Buffered_Local_Sql" />
+    <folder name="Getting_Started\Introduction\Overview" />
+    <folder name="TreePanel\List\Built_in_Markup" />
+    <folder name="Chart\Misc\VerticalMarker" />
+    <folder name="TreePanel\Basic\Editors" />
+    <folder name="TreePanel\Basic\Checkbox_Nodes" />
+    <folder name="Form\DropDownField\ValueText_Mode" />
+    <folder name="Form\DropDownField\Overview" />
+    <folder name="GridPanel\ColumnModel\WidgetColumn" />
+    <folder name="GridPanel\ColumnModel\RatingColumn" />
+    <folder name="Form\TextField\InputMask_Native" />
+    <folder name="Form\TextField\Buttons" />
+    <folder name="Miscellaneous\Bin_HtmlBin\Overview" />
+    <folder name="Form\Triggers\Trigger_Icons" />
+    <folder name="Action\Basic\Grid" />
+    <folder name="Editor\Basic\Overview" />
+  </updated>
+
+  <!--
   <new version="5.2.0">
     <folder name="GridPanel\FilterHeader\Infinite_Remote_Sql" />
     <folder name="GridPanel\FilterHeader\Buffered_Local_Sql" />
   </new>
+  -->
 
   <!-- Way too many changed examples, EE became a christmas tree -->
+  <!--
   <!--
   <updated version="5.2.0">
     <folder name="Chart\Bar\Mixed" />
@@ -201,6 +227,7 @@
     <folder name="Layout\BorderLayout\Complex_in_CodeBehind" />
     <folder name="GridPanel\Infinite_Scrolling\Remote_Filter" />
   </updated>
+  -->
   -->
 
   <!--
