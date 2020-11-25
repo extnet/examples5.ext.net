@@ -241,7 +241,7 @@
                         <li><a href="https://mvc.ext.net/">MVC Examples</a></li>
                         <li class="separator"></li>
                         <li><a href="https://docs.sencha.com/extjs/7.3.1/classic/Ext.html">EXT JS Documentation</a></li>
-                        <li><a href="https://docs.ext.net/">Ext.NET Documentation</a></li>
+                        <li><a href="https://docs5.ext.net/">Ext.NET Documentation</a></li>
                         <li class="separator"></li>
                         <li><a href="https://forums.ext.net/">Community Forums</a></li>
                         <li><a href="https://ext.net/faq/">FAQ</a></li>
