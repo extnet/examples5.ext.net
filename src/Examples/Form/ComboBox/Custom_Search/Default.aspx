@@ -45,6 +45,7 @@
             ID="ComboBox2",
             DisplayField = "Common",
             ValueField = "Common",
+            AutoSelect = false,
             TypeAhead = false,
             Width = 570,
             PageSize = 10,
@@ -135,6 +136,7 @@
                 PageSize="10"
                 HideTrigger="true"
                 MinChars="0"
+                AutoSelect="false"
                 TriggerAction="Query">
                 <ListConfig  LoadingText="Searching...">
                     <ItemTpl runat="server">
@@ -143,7 +145,8 @@
                                 <h3><span>${Price}</span>{Common}</h3>
                                 {Botanical}
                             </div>
-                        </html>                    </ItemTpl>
+                        </html>
+                    </ItemTpl>
                 </ListConfig>
                 <Store>
                     <ext:Store runat="server" AutoLoad="false">
