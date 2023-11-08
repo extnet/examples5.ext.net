@@ -1,7 +1,0 @@
-src/Web.config
-src/Ext.Net.Examples.csproj
-src/packages.config
-src/bin
-src/obj
-src/Properties
-src/*.cs
